@@ -16,20 +16,23 @@ def pdf_to_text(pdf_path, output_txt):
             page_text = page.extract_text()
 
             # Check if the page contains the target line
-            if "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI" or "INTRODUCTION" in page_text:
+            if "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI" in page_text:
+                found_count += 1
+            if "INTRODUCTION" in page_text:
                 found_count += 1
 
             # Once the second occurrence is found, start adding text
             if found_count >= 2:
-                text += page_text
+                # text = text + page_text[:-1] + '\n'
+                text = text + page_text[:-1]
 
         # Write the extracted text to a text file
         with open(output_txt, 'w', encoding='utf-8') as txt_file:
             txt_file.write(text)
 
 if __name__ == "__main__":
-    pdf_path = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/input2.pdf'
-    output_txt = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/output2.txt'
+    pdf_path = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/input4.pdf'
+    output_txt = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/output4.txt'
 
     pdf_to_text(pdf_path, output_txt)
 
