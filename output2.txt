@@ -1,0 +1,1461 @@
+CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
+Chươngđầutiêncủađồántốtnghiệp,emsẽgiớithiệuvềđềtài“Hệthốngtuyển
+dụng điều dưỡng”. Trong chương này, em sẽ nêu vấn đề dẫn đến việc em xây dựng
+hệthốngnày.Sauđó,đặtramụctiêucầnđạtđượcvàđềcậpđếnbốcụccácchương
+của đồ án.
+1.1 Tổng quan
+Nhật Bản hiện nay là một trong những quốc gia có độ tuổi trung bình cao nhất
+trên thế giới và đang trong tình trạng già hóa dân số. Nhiều người cao tuổi ở Nhật
+Bản gặp khó khăn do tuổi cao sức yếu nên không thể tự chăm sóc bản thân trong
+sinh hoạt hàng ngày và cần phải có sự trợ giúp của những người khác, công việc
+trợ giúp người già như vậy được gọi là Hộ Lý hay Điều Dưỡng.
+Thống kê cho thấy nguồn nhân lực Điều Dưỡng viên tại Nhật Bản đang thiếu
+hụt trầm trọng, nhu cầu nhân lực trong lĩnh vực này vào năm 2025 được dự tính sẽ
+thiếu đến 377000 người.
+Ước tính đến năm 2050 số người cao tuổi tại Nhật Bản sẽ chiếm gần 40% dân
+số cả nước. Nhằm bù đắp sự thiếu hụt nhân lực điều dưỡng trong nước, Nhật Bản
+đang tăng cường tuyển dụng điều dưỡng viên tại một số quốc gia Châu Á trong đó
+có Việt Nam.
+Ngoài ra, tại Việt Nam, theo thống kê, hiện nay tỷ lệ điều dưỡng trung bình trên
+10.000 dân ở nước ta là 11,4%. So sánh với tỷ lệ trên thế giới thì con số này của
+Việt Nam là thấp hơn rất nhiều. Do đó, để đảm bảo đáp ứng một cách tốt nhất nhu
+cầu chăm sóc y tế cho người dân thì cần phải có thêm gấp 2-3 lần số lượng điều
+dưỡng viên so với hiện nay.
+Ngành điều dưỡng nay đã được coi là một ngành độc lập trong hệ thống y tế
+đóng vai trò quan trọng trong việc chăm sóc bệnh nhân, hỗ trợ bác sĩ trong công
+tác điều trị. Bên cạnh việc được cống hiến, được sống với đam mê nghề nghiệp,
+điều dưỡng viên cũng có mức thu nhập cao, cơ hội thăng tiến, có thể lựa chọn làm
+việc trong nước hay nước ngoài, được coi là nghề cao quý, được xã hội tôn trọng.
+Hiện nay có rất nhiều trường đào tạo ngành điều dưỡng khắp cả nước với chất
+lượng đào tạo tốt trong việc đào tạo kiến thức và đi kèm với đó là kỹ năng, cung
+cấp nguồn nhân lực chất lượng cao cho ngành điều dưỡng.
+Ngoài ra, với nhu cầu, mong muốn được phát triển bản thân cũng như có được
+thu nhập tốt hơn, các điều dưỡng viên có thể tham gia các chương trình tuyển dụng
+điều dưỡng viên làm việc tại nước ngoài với mức lương hấp dẫn mà tiêu biểu là
+1CHƯƠNG1. GIỚITHIỆUĐỀTÀI
+Nhật Bản.
+Tuynhiên,hiệnnaycórấtítnhữngtrangchuyêntuyểndụngđiềudưỡngviên,đa
+số đều là những trang web của các công ty mở ra để giới thiệu công việc cũng như
+tuyển người cho công ty mình. Tiêu biểu là trang https://www.dieuduongvien.info/
+Trước thực trạng trên, em quyết định tạo một hệ thống tuyển dụng điều dưỡng
+tạo một cầu nối cho các điều dưỡng viên và các cơ sở điều dưỡng.
+1.2 Mục tiêu nghiên cứu
+Để giải quyết thực trạng nêu trên, đồ án này được thực hiện với mục tiêu:
+Xây dựng trang dịch vụ tuyển dụng trong lĩnh vực điều dưỡng ở Nhật và Việt
+Nam. Dịch vụ này sẽ làm cầu nối cho điều dưỡng viên và cơ sở điều dưỡng.
+Sovớinhữngsảnphẩmkháccótrênthịtrường,hệthốngtuyểndụngđiềudưỡng
+hỗ trợ đa ngôn ngữ, điều hướng rõ ràng, thân thiện với người dùng. Hơn nữa, hệ
+thống có chức năng đánh giá nhà tuyển dụng giúp ứng viên có thể chọn được công
+việc phù hợp với mình tại cơ sở tuyển dụng uy tín. Bên cạnh đó, nhà tuyển dụng
+cũng có thể tìm được ứng viên tiềm năng dựa trên đánh giá trước đó.
+1.3 Định hướng giải pháp
+Để xây dựng trang web cho phép người dùng có thể truy cập trên các thiết bị
+điện tử khác nhau thì em đã thiết kế hệthống theo phong cách Responsive (thiết kế
+web đáp ứng) và xây dựng hệ thống bằng Laravel Framework.
+Responsive (thiết kế web đáp ứng) để phù hợp trên tất cả các thiết bị, mọi độ
+phân giải màn hình, tăng tính tương thích cho trang web. Vì thế, có thể tiết kiệm
+được cả chi phí, thời gian, công sức mà vẫn có thể duy trì nhiều phiên bản khác
+nhau dành riêng cho điện thoại/laptop. Hơn nữa, Responsive hỗ trợ cho SEO trang
+web nhờ mọi luồng đều dẫn đến một URL duy nhất, tăng tỷ lệ người dùng ở lại
+trang web, còn có thể tạo độ tin cậy và sự chuyên nghiệp với người dùng.
+Em chọn sử dụng Laravel Framework để xây dựng hệ thống vì Laravel là một
+PHP framework mã nguồn mở miễn phí, hỗ trợ phát triển các ứng dụng web dựa
+trênmôhìnhModel–View–Controller(MVC)-dễquảnlývàpháttriểnhệthống.
+Laravel có tốc độ xử lý nhanh, dễ sử dụng, di chuyển cơ sở dữ liệu dễ dàng và tính
+bảo mật cao. Trên đây, em đã trình bày sơ lược về những ưu điểm của Laravel
+Framework, chi tiết về công nghệ này sẽ được trình bày ở chương 3 mục 3.1.
+1.4 Kết quả dự kiến đạt được
+Dựa trên mục tiêu nghiên cứu và định hướng giải pháp của đồ án, kết quả dự
+kiến đạt được của đồ án này sẽ đảm bảo một các yêu cầu như:
+2CHƯƠNG1. GIỚITHIỆUĐỀTÀI
+Tạo ra một trang web mà các nhà tuyển dụng có thể đăng ký tài khoản, đăng ký
+tin tuyển dụng, quản lý danh sách các ứng viên đã ứng tuyển, xem thông tin các
+ứng viên, lưu các ứng viên tiềm năng, đánh giá ứng viên đã ứng tuyển vào công ty.
+Cácứngviêncóthểđăngkýtàikhoản,tìmkiếmcôngviệctheotỉnhthành,theo
+loại hình công việc, có thể lưu công việc, ứng tuyển công việc, đánh giá công việc
+mà mình đã ứng tuyển.
+Ngoài ra còn có nhà quản trị để quản lý người dùng, quản lý các bài đăng chia
+sẻ kinh nghiệm, quản lý địa điểm làm việc, quản lý các mục quảng cáo trên trang
+chủ của hệ thống.
+1.5 Cấu trúc đồ án
+Phần còn lại của đồ án tốt nghiệp được tổ chức như sau:
+Chương 2 trình bày về kết quả khảo sát hiện trạng của một số trang web tuyển
+dụng hiện nay. Từ đó, phân tích thiết kế về chức năng hệ thống. Ở đây em sẽ sử
+dụng các biểu đồ như biểu đồ use case, biểu đồ hoạt động,... và chi tiết các quy
+trình sử dụng hệ thống.
+Chương 3 trình bày về các công nghệ được sử dụng để xây dựng hệ thống bao
+gồm Laravel Framework, Hệ quản trị cơ sở dữ liệu MySQL, Pusher.
+Chương 4 trình bày về kiến trúc hệ thống và thiết kế chi tiết của hệ thống. Em
+sẽ trình bày về thiết kế được lựa chọn cho kiến trúc tổng quan của hệ thống thông
+qua các biểu đồ và thiết kế các lớp chi tiết, các công cụ được sử dụng cho đồ án,
+môi trường, dữ liệu thực nghiệm và kết quả đạt được cùng với minh họa các chức
+năng chính của hệ thống.
+Chương 5 trình bày những đóng góp nổi bật của đồ án và những khó khăn gặp
+phải trong quá trình thực hiện đồ án cùng phương án khắc phục.
+Chương 6 đưa ra kết luận và hướng phát triển của đồ án trong tương lai.
+Trong chương 1, em đã trình bày chi tiết tổng quan, mục tiêu nghiên cứu, định
+hướng giải pháp, kết quả dự kiến đạt được và cấu trúc của đồ án. Sau đây, em sẽ
+trình bày nội dung của Chương 2 - Khảo sát và phân tích yêu cầu.
+3CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
+Trongchươngnày,emsẽđềcậpđếnkếtquảkhảosáthiệntrạngvớicáchệthống
+đang có mặt trên thị trường hiện nay để so sánh sự tương đồng và khác biệt. Từ đó
+đưa ra ý tưởng cải tiến cho hệ thống của mình. Tiếp đó, em xây dựng biểu đồ use
+case tổng quan để mô tả sự tương tác đặc trưng giữa người dùng và hệ thống. Cuối
+cùng, em sẽ mô tả quy trình nghiệp vụ của một số chức năng chính trong hệ thống.
+2.1 Khảo sát hiện trạng
+Hiện nay, việc tuyển điều dưỡng sang Nhật trở nên phổ biến, vì thế có rất nhiều
+công ty tại Việt Nam được thành lập với mục đích đưa người Việt Nam sang Nhật
+Bản làm việc. Tuy nhiên, khi có nhiều công ty được thành lập, những ứng viên
+muốn tìm một công ty uy tín để ứng tuyển sẽ trở nên khó khăn. Hơn nữa, tại Việt
+Nam, khi công việc bận rộn không có thời gian chăm sóc người bệnh thì việc tìm
+điều dưỡng tại nhà cũng trở nên phổ biến. Nắm bắt được những vấn đề trên, Hệ
+thống tuyển dụng điều dưỡng đã ra đời nhằm mục đích là cầu nối giữa nhà tuyển
+dụng và ứng viên.
+Em đã trải nghiệm thử một số những trang web hỗ trợ tìm kiếm việc làm nổi
+tiếng tại Việt Nam như TopCV [1] , Vietnamworks [2] và một số trang web của
+những công ty hỗ trợ đưa người Việt Nam sang Nhật Bản làm việc như trang CEO
+(https://ceos.com.vn/), https://dieuduongvien.info/. Từ đó, xác định những yếu tố,
+tính năng cải tiến cần có trong hệ thống của mình.
+Dưới đây là một số so sánh giữa các hệ thống mà em rút ra được:
+TopCV và Vietnamworks là hai trang web tuyển dụng hàng đầu tại Việt Nam
+hiệnnay.TrongkhiTopCVlấycôngnghệlàmnềntảngpháttriểncốtlõi,vìvậyvới
+tính năng nổi bật như các dữ liệu người dùng ghi lại trong CV đều được hệ thống
+thu thập và phân loại để bóc tách, xử lý. Dựa trên mô tả công việc và yêu cầu cho
+ứngviên,côngnghệcủaTopCVsẽđưaranhữngphântíchchuẩnsáttheothờigian
+thực và đưa ra gợi ý nhà tuyển dụng phù hợp cho ứng viên và ngược lại. Hơn nữa,
+TopCVcógiaodiệnđẹp,hiệnđại.Tuynhiên,hệthốngchưacótínhnăngđánhgiá,
+mà chỉ có tính năng báo cáo những công việc có dấu hiệu lừa đảo. Vietnamworks
+có giao diện trực quan, dễ sử dụng, thông tin hiển thị khá chi tiết. Có tính năng
+tuyển dụng nhân sự cấp cao riêng. Tuy nhiên, hệ thống không có tính năng đánh
+giá, cũng chưa có tính năng báo cáo những công việc có dấu hiệu lừa đảo.
+CEO và dieuduongvien.info là hai trang web hỗ trợ đưa người Việt Nam sang
+Nhật Bản làm việc. Hai trang web này có bố cục, giao diện đơn giản. Tuy nhiên,
+4CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+khôngcótínhnăngtạoCVchoứngviên,vàkhônggợiýnhữngcôngviệcliênquan
+đến công việc ứng viên vừa xem.
+Từ những nhược điểm mà em nhận thấy ở trên, em đã xác định được những vấn
+đề cần giải quyết và hình thành ý tưởng về hệ thống tuyển dụng điều dưỡng bao
+gồm quy trình tuyển dụng đầy đủ, tính năng đánh giá công việc mà ứng viên đã
+ứng tuyển, tạo CV để nhà tuyển dụng có thể tìm kiếm những ứng viên tiềm năng.
+2.2 Các tác nhân của hệ thống
+2.2.1 Biểu đồ use case tổng quan
+Hình2.1:Biểuđồusecasetổngquát
+Từ biểu đồ use case hình 2.1 (Hình ảnh hiển thị rõ hơn được trình bày ở phần
+phụ lục), ta có thể thấy các tác nhân chính trong hệ thống này bao gồm có Người
+dùng, Ứng viên, Nhà tuyển dụng và Nhà quản trị hệ thống (Admin) .
+Admin: Thực hiện nhiệm vụ quản lý đối với hệ thống, bao gồm các nhiệm vụ
+như quản lý người dùng; tạo, sửa, xóa địa điểm làm việc; tạo, sửa, xóa nội dung
+quảng cáo ở trang chủ; tạo, sửa, xóa các bài chia sẻ thông tin hữu ích; cập nhật
+thông tin liên lạc của hệ thống; xem các phản hồi từ người dùng hệ thống.
+Người dùng: là người dùng nói chung khi chưa đăng nhập vào hệ thống. Đối
+với người dùng dạng này, người dùng có thể đăng nhập vào hệ thống, đăng ký tài
+khoản, xem danh sách công việc, liên hệ với admin hay xem các bài đăng chia sẻ
+kinh nghiệm.
+Nhà tuyển dụng: đóng vai trò tham gia sử dụng các tính năng, tiện ích được
+cungcấptừhệthốngdànhchonhàtuyểndụng.Saukhiđăngnhập,nhàtuyểndụng
+5CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+có thể tạo, sửa, xóa công việc của công ty mình; tìm kiếm ứng viên, đánh dấu các
+ứng viên tiềm năng, quản lý các đơn ứng tuyển, quản lý tài khoản, gửi góp ý cho
+người quản trị hệ thống.
+Ứng viên: đóng vai trò tham gia sử dụng các tính năng, tiện ích được cung cấp
+từhệthốngdànhchoứngviên.Saukhiđăngnhập,ứngviêncóthểtạohồsơlýlịch
+của bản thân, xem chi tiết các công việc, xem đánh giá từ những ứng viên khác,
+đánh dấu công việc, thêm công việc vào danh sách yêu thích, ứng tuyển công việc
+đã xem, quản lý tài khoản, gửi góp ý cho người quản trị hệ thống.
+2.2.2 Biểu đồ use case phân rã
+a, Phân rã chức năng xem công việc
+Hình2.2:Biểuđồphânrãchứcnăngxemcôngviệc
+Tại use case xem công việc ở hình 2.2 người dùng có thể sử dụng chức năng: đánh
+dấucôngviệc,ứngtuyểncôngviệcđãxem.Vớichứcnăngđánhgiácôngviệc,ứng
+viên ứng tuyển công việc mới có thể đánh giá công việc cũng như nhà tuyển dụng
+đăngtảicôngviệcđó.Bảng2.1làbảngmôtảchứcnăngtừngusecasekhitácnhân
+tương ứng tương tác:
+6CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+Tên use case Mô tả chức năng
+Xem công việc Ứng viên có thể xem nội dung chi tiết công việc đã
+được đăng tải lên hệ thống. Mỗi công việc được hiển
+thị với thông tin như mô tả công việc, yêu cầu của
+công ty, địa chỉ làm việc, xem thông tin công ty, trạng
+thái tuyển dụng, các đánh giá từ những ứng viên đã
+ứng tuyển công việc đó.
+Đánh dấu công việc Ứng viên có thể lưu công việc từ trang danh sách công
+việc hay trang chi tiết công việc.
+Ứng tuyển Khi xác định được công việc muốn ứng tuyển, ứng
+viên gửi đơn ứng tuyển cho nhà tuyển dụng từ thông
+tin đã cập nhật sẵn trên hệ thống hoặc tải CV từ thiết
+bị cá nhân của mình.
+Đánh giá công việc Khi đơn ứng tuyển được gửi thành công, ứng viên có
+quyền gửi đánh giá công việc hay công ty.
+Bảng2.1:Môtảusecasexemcôngviệc
+b, Phân rã chức năng quản lý tài khoản
+Hình2.3:Biểuđồphânrãchứcnăngquảnlýtàikhoản
+Ở hình 2.3 sau khi đăng nhập, ứng viên hay nhà tuyển dụng có thể quản lý tài
+khoản cá nhân của mình. Ứng viên có thể lấy lại mật khẩu, đổi mật khẩu hay cập
+nhật thông tin cá nhân của mình.
+Bảng 2.2 mô tả chức năng từng use case khi tác nhân tương ứng tương tác:
+7CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+Tên use case Mô tả chức năng
+Quên mật khẩu Người dùng có thể click vào “Quên mật khẩu?”, người
+dùng sẽ nhận được một email gửi về mail đã đăng ký
+để lấy lại mật khẩu.
+Đổi mật khẩu Mật khẩu mới sẽ được cập nhật khi sử dụng chức năng
+đổi mật khẩu.
+Cập nhật thông tin cá nhân Người dùng có thể đổi ảnh đại diện, thay đổi các thông
+tin cá nhân. Sau khi lưu thay đổi, thông tin vừa cập
+nhật sẽ được lưu.
+Bảng2.2:Môtảusecasequảnlýtàikhoản
+2.2.3 Đặc tả use case
+a, Use case Quản lý CV
+Tên Use case Quản lý CV
+Tóm tắt Ứng viên muốn tạo, xem, sửa, xóa CV.
+Tác nhân chính Ứng viên
+Người chịu trách nhiệm Ứng viên
+Tên điều kiện Ứng viên muốn tạo mới, chỉnh sửa CV để hiển thị lên
+hệ thống.
+Độ ưu tiên Phải có
+Người dùng đã đăng nhập thành công vào hệ thống.
+Đảm bảo tối thiểu Tài khoản được phân quyền tương ứng.
+Thiết bị của người dùng đã được kết nối internet.
+Đảm bảo thành công CV được hiển thị trên hệ thống.
+1. Ứng viên chọn chức năng "Hồ sơ của tôi".
+2. Ứng viên thêm các thông tin cần thiết.
+Chuỗi sự kiện chính
+3. Ứng viên ấn lưu để lưu những thông tin vừa thêm.
+4. Hệ thống kiểm tra tính hợp lệ, tiến hành lưu trữ
+thông tin vào hệ thống sau đó hiển thị ở những trang
+tương ứng.
+1.1. Hệ thống sẽ hiển thị lỗi với những mục nhập
+thông tin: Thiếu những thông tin cần thiết, nhập sai
+Ngoại lệ
+định dạng và yêu cầu nhập đầy đủ thông tin.
+1. Ứng viên chỉnh sửa lại thông tin không chính xác ->
+tiếp tục bước 1
+2. Ứng viên hủy bỏ thao tác đang thực hiện
+-> Use case dừng lại.
+Bảng2.3:ĐặctảusecaseQuảnlýCV
+8CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+b, Use case Quản lý công việc
+Tên Use case Quản lý công việc
+Tóm tắt Nhà tuyển dụng muốn tạo, xem, sửa, xóa công việc.
+Tác nhân chính Nhà tuyển dụng
+Người chịu trách nhiệm Nhà tuyển dụng
+Tên điều kiện Nhà tuyển dụng muốn tạo mới, chỉnh sửa nội dung
+công việc để hiển thị lên hệ thống.
+Độ ưu tiên Phải có
+Người dùng đã đăng nhập thành công vào hệ thống.
+Đảm bảo tối thiểu Tài khoản được phân quyền tương ứng.
+Thiết bị của người dùng đã được kết nối internet.
+Đảm bảo thành công Công việc được hiển thị trên hệ thống
+1. Nhà tuyển dụng chọn chức năng "Tạo công việc
+mới".
+Chuỗi sự kiện chính
+2. Nhà tuyển dụng thêm các thông tin cần thiết.
+3. Nhà tuyển dụng ấn lưu để lưu những thông tin vừa
+thêm.
+4.Hệ thống kiểm tra tính hợp lệ, tiến hành lưu trữ
+thông tin vào hệ thống sau đó hiển thị ở những trang
+tương ứng.
+1.1. Hệ thống sẽ hiển thị lỗi với những mục nhập
+thông tin: Thiếu những thông tin cần thiết, nhập sai
+Ngoại lệ
+định dạng và yêu cầu nhập đầy đủ thông tin.
+1.Nhà tuyển dụng chỉnh sửa lại thông tin không chính
+xác -> tiếp tục bước 1
+2. Nhà tuyển dụng hủy bỏ thao tác đang thực hiện
+-> Usecase dừng lại.
+Bảng2.4:ĐặctảusecaseQuảnlýcôngviệc
+9CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+c, Use case Ứng tuyển
+Tên Use case Ứng tuyển
+Tác nhân chính Ứng viên
+Tên điều kiện Ứng viên muốn ứng tuyển công việc.
+Độ ưu tiên Phải có
+Ứng viên phải đăng nhập vào hệ thống.
+Đảm bảo tối thiểu
+Ứng viên đang ở trang "Công việc", trang "Chi tiết
+côngviệc",hayđãđánhdấucôngviệcđịnhứngtuyển.
+Đảm bảo thành công Đơn ứng tuyển được gửi đến nhà tuyển dụng, ứng viên
+nhận được email xác nhận đã ứng tuyển thành công.
+1. Ứng viên chọn chức năng ứng tuyển.
+Chuỗi sự kiện chính 2. Ứng viên hoàn thiện các thông tin trên trang ứng
+tuyển.
+3. Hệ thống kiểm tra tính hợp lệ sau đó gửi thông tin
+đến nhà tuyển dụng và mail xác nhận cho ứng viên.
+1a. Ứng viên chọn "Ứng tuyển ngay" ở trang "Công
+việc".
+1a1. Hệ thống chuyển sang màn hình ứng tuyển.
+1b. Ứng viên chọn chức năng ứng tuyển ở màn “Công
+việc đã lưu”.
+Chuỗi sự kiện thay thế
+1b1. Hệ thống chuyển sang màn hình ứng tuyển.
+1c. Ứng viên chọn chức năng ứng tuyển ngay ở màn
+“chi tiết công việc”.
+1c1. Hệ thống chuyển sang màn hình ứng tuyển.
+2a. Ứng viên chưa cập nhật thông tin cá nhân và CV
+trên hệ thống.
+2a1. Ứng viên thêm các thông tin tương ứng.
+2b. Ứng viên đã cập nhật thông tin cá nhân trên hệ
+thống.
+2b1. Hệ thống hiển thị các thông tin tương ứng trên
+trang ứng tuyển.
+2a1. Hệ thống sẽ hiển thị lỗi với những mục nhập
+Ngoại lệ
+thông tin: Thiếu những thông tin cần thiết, nhập sai
+định dạng và yêu cầu nhập đầy đủ thông tin.
+2c. Ứng viên hủy bỏ thao tác đang thực hiện
+-> Usecase dừng lại.
+Bảng2.5:ĐặctảusecaseỨngtuyển
+10CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+d, Use case Đánh giá công việc
+Tên Use case Đánh giá công việc
+Tác nhân chính Ứng viên
+Tên điều kiện Ứng viên muốn đánh giá công việc đã ứng tuyển.
+Độ ưu tiên Phải có
+Ứng viên phải đăng nhập vào hệ thống.
+Đảm bảo tối thiểu
+Ứng viên đã ứng tuyển công việc thành công.
+Đảm bảo thành công Đánh giá của ứng viên được hiển thị ở trang chi tiết
+công việc.
+1. Ứng viên chọn chức năng xem "Đơn ứng tuyển của
+tôi".
+2. Ứng viên chọn "Xem chi tiết" đơn ứng tuyển.
+Chuỗi sự kiện chính 3. Ứng viên chọn "Viết bình luận".
+4. Ứng viên nhập các thông tin mà hệ thống yêu cầu.
+5. Hệ thống kiểm tra tính hợp lệ, tiến hành lưu trữ
+thông tin vào hệ thống sau đó hiển thị đánh giá ở trang
+chi tiết công việc.
+4a. Hệ thống sẽ hiển thị lỗi với những mục nhập thông
+Ngoại lệ
+tin: Thiếu những thông tin cần thiết, nhập sai định
+dạng và yêu cầu nhập đầy đủ thông tin.
+4b. Ứng viên hủy bỏ thao tác đang thực hiện
+=> Use case dừng lại.
+Bảng2.6:Đặctảusecaseđánhgiácôngviệc
+11CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+e, Use case Đánh giá ứng viên
+Tên Use case Đánh giá ứng viên
+Tác nhân chính Nhà tuyển dụng
+Tên điều kiện Nhà tuyển dụng muốn đánh giá ứng viên đã ứng tuyển.
+Độ ưu tiên Phải có
+Nhà tuyển dụng phải đăng nhập vào hệ thống.
+Đảm bảo tối thiểu
+Ứng viên đã nộp đơn ứng tuyển thành công công việc
+mà nhà tuyển dụng đã đăng tải lên hệ thống.
+Đảm bảo thành công Đánh giá của nhà tuyển dụng được hiển thị ở trang chi
+tiết ứng viên .
+1.Nhà tuyển dụng chọn chức năng xem "Tất cả các
+tuyển dụng".
+2. Nhà tuyển dụng chọn "Xem chi tiết" đơn ứng tuyển.
+Chuỗi sự kiện chính 3. Nhà tuyển dụng chọn "Viết bình luận".
+4. Nhà tuyển dụng nhập các thông tin mà hệ thống yêu
+cầu.
+5. Hệ thống kiểm tra tính hợp lệ, tiến hành lưu trữ
+thông tin vào hệ thống sau đó hiển thị đánh giá ở trang
+chi tiết ứng viên.
+4a. Hệ thống sẽ hiển thị báo lỗi với những mục nhập
+Ngoại lệ
+thông tin: Thiếu những thông tin cần thiết, nhập sai
+định dạng và yêu cầu nhập đầy đủ thông tin.
+4b. Nhà tuyển dụng hủy bỏ thao tác đang thực hiện
+=> Use case dừng lại.
+Bảng2.7:ĐặctảusecaseĐánhgiáứngviên
+2.3 Quy trình nghiệp vụ
+2.3.1 Quy trình sử dụng hệ thống
+Hình 2.4 mô tả quy trình sử dụng hệ thống. Khách có thể đăng ký để tạo ra tài
+khoảnchomình.Sauđócóthểđăngnhậpđểsửdụngcácchứcnăngcủaphầnmềm.
+Nếu khách quên mật khẩu, khách có thể yêu cầu hệ thống cho phép mình thiết lập
+lại mật khẩu. Lúc này, hệ thống sẽ gửi token trong liên kết kèm gửi qua email đã
+đăng ký. Khách có thể vào liên kết đó để thực hiện việc thiết lập lại mật khẩu.
+Sau khi đăng nhập thành công vào hệ thống, người dùng có thể sử dụng các
+chức năng như Xem và cập nhật thông tin cá nhân của mình, thay đổi mật khẩu, và
+cácchứcnăngđượcngườiquảntrịcấpphépchocácnhómngườidùngmàhọtham
+gia. Kết thúc quá trình sử dụng hệ thống, người dùng thực hiện đăng xuất khỏi hệ
+thống.
+12CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+Hình2.4:Quytrìnhsửdụnghệthống
+2.3.2 Quy trình quản lý CV, quản lý công việc
+Hình 2.5 mô tả quy trình quản lý CV, quản lý công việc. Khi người dùng di
+chuyển tới trang chủ, người dùng phải đăng nhập để có quyền thực hiện chức năng
+quảnlýCVvàquảnlýcôngviệc.Saukhiđãđăngnhập,ngườidùngthựchiệnchức
+năng dựa vào phân quyền của mình:
+Nếu là ứng viên: thực hiện chức năng quản lý CV. Ứng viên di chuyển tới trang
+“Hồ sơ của tôi”. Ứng viên chọn các mục tương ứng để điền thông tin hoàn thiện
+CV, sau khi kết thúc quá trình điền thông tin ở từng mục, người dùng bấm nút
+"Lưu" để lưu vào hệ thống. Trong trường hợp có lỗi thì người dùng nhập lại các
+thông tin, sau khi kiểm tra đúng thì hệ thống sẽ lưu các thông tin và hiển thị lên
+trên hệ thống.
+Nếu là nhà tuyển dụng: thực hiện chức năng quản lý công việc. Nhà tuyển dụng
+di chuyển tới trang “Tất cả công việc”. Nhà tuyển dụng chọn chức năng tạo công
+việc mới để điền thông tin cần thiết, sau khi kết thúc quá trình điền thông tin người
+dùng bấm nút "Lưu" để lưu vào hệ thống. Trong trường hợp có lỗi thì người dùng
+nhập lại các thông tin, sau khi kiểm tra đúng thì hệ thống sẽ lưu các thông tin và
+hiển thị lên trên hệ thống.
+13CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+Hình2.5:QuytrìnhquảnlýCV,quảnlýcôngviệc
+2.3.3 Quy trình ứng tuyển
+Hình 2.6 mô tả quy trình ứng tuyển. Khi người dùng di chuyển tới trang chủ,
+người dùng phải đăng nhập để có quyền thực hiện chức năng ứng tuyển. Sau khi
+đã đăng nhập, người dùng thực hiện chức năng dựa vào phân quyền của mình. Lúc
+này với vai trò là ứng viên, ứng viên thực hiện chức năng ứng tuyển bằng 1 trong
+3 cách sau: ứng viên xem danh sách công việc ở trang công việc hoặc danh sách
+công việc đã lưu hoặc trang chi tiết công việc. Ứng viên chọn mục ứng tuyển để
+thực hiện ứng tuyển, điền các thông tin được yêu cầu từ hệ thống trên trang ứng
+tuyển. Kết thúc quá trình nhập thông tin, ứng viên bấm "Ứng tuyển ngay" để gửi
+cho hệ thống. Trong trường hợp có lỗi thì ứng viên sẽ phải nhập lại các thông tin,
+sau khi đã được kiểm tra đúng thì hệ thống sẽ cập nhật thông tin và gửi thông báo
+đến cho nhà tuyển dụng, đồng thời gửi một email xác nhận ứng tuyển thành công
+cho ứng viên.
+14CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+Hình2.6:Quytrìnhứngtuyển
+2.3.4 Quy trình đánh giá công việc, đánh giá ứng viên
+Hình2.7môtảquytrìnhđánhgiácôngviệc,đánhgiáứngviên.Khingườidùng
+di chuyển tới trang chủ, người dùng phải đăng nhập để có quyền thực hiện chức
+năng đánh giá. Sau khi đã đăng nhập, người dùng thực hiện chức năng dựa vào
+phân quyền của mình:
+Nếulàứngviên:thựchiệnchứcnăngđánhgiácôngviệc.Saukhiđãđăngnhập,
+ứng viên xem danh sách đơn ứng tuyển và chọn xem chi tiết đơn ứng tuyển muốn
+đánh giá. Ứng viên chọn mục viết bình luận để thực hiện đánh giá, điền các thông
+tinđượcyêucầutừhệthống.Kếtthúcquátrìnhviếtđánhgiá,ứngviênbấmSubmit
+đểgửichohệthống.Trongtrườnghợpcólỗithìứngviênsẽphảinhậplạicácthông
+tin, sau khi đã được kiểm tra đúng thì hệ thống sẽ cập nhật bài viết và hiển thị lên
+trên trang chi tiết công việc đó.
+Nếu là nhà tuyển dụng: thực hiện chức năng đánh giá ứng viên. Sau khi đã đăng
+nhập, nhà tuyển dụng xem danh sách đơn ứng tuyển và chọn xem chi tiết đơn ứng
+tuyển của ứng viên muốn đánh giá. Nhà tuyển dụng chọn mục viết bình luận để
+thực hiện đánh giá, điền các thông tin được yêu cầu từ hệ thống. Kết thúc quá trình
+viết đánh giá, nhà tuyển dụng bấm Submit để gửi cho hệ thống. Trong trường hợp
+có lỗi thì nhà tuyển dụng sẽ phải nhập lại các thông tin, sau khi đã được kiểm tra
+15CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+đúngthìhệthốngsẽcậpnhậtbàiviếtvàhiểnthịlêntrêntrangchitiếtứngviênđó.
+Hình2.7:Quytrìnhđánhgiácôngviệc,đánhgiáứngviên
+2.4 Yêu cầu chức năng và phi chức năng
+2.4.1 Yêu cầu chức năng
+Hệ thống tuyển dụng điều dưỡng được xây dựng nhằm mục đích giải quyết các
+yêu cầu sau:
+1. Giúp ứng viên có thể đăng ký tài khoản, quản lý CV, xem thông tin tuyển
+dụng,đánhdấucôngviệc,gửiđơnứngtuyểnđếnnhàtuyểndụng,xemcácbài
+chia sẻ thông tin hữu ích.
+2. Nhà tuyển dụng có thể đăng ký tài khoản, đăng tin tuyển dụng, xem CV của
+ứng viên, đánh dấu CV của ứng viên tiềm năng, quản lý công việc của mình,
+quản lý các ứng viên hiện có và quản lý các đơn ứng tuyển được gửi qua hệ
+thống, xem các bài chia sẻ thông tin hữu ích.
+3. Hệthốngthốngkê,phânloạithôngtintuyểndụngtheotỉnhthành,mứclương,
+loại hình công việc.
+4. Hệ thống thống kê, phân loại ứng viên theo các tiêu chí như mức lương mong
+muốn, địa điểm làm việc mong muốn, trình độ ngoại ngữ, trình độ học vấn,...
+5. Hệ thống cập nhật trạng thái đơn tuyển dụng của ứng viên: chưa được tuyển
+dụng, đã được tuyển dụng, đang xử lý, bị hủy.
+16CHƯƠNG2. KHẢOSÁTVÀPHÂNTÍCHYÊUCẦU
+6. Hỗ trợ chức năng quản trị chung hệ thống (admin) trong đó người quản trị
+chung có thể đăng các bài chia sẻ kinh nghiệm, quản lý người dùng, quản lý
+cácđịađiểm,quảnlýphầnquảngcáoởtrangchủ,quảnlýcácphảnhồitừứng
+viên và nhà tuyển dụng.
+2.4.2 Yêu cầu phi chức năng
+a, Tính dễ dùng (Usability)
+1. Các chức năng cần được thiết kế sao cho dễ thao tác. Cần có thông báo cụ thể
+lỗi sai của người dùng để người dùng biết định vị lỗi, biết lỗi gì và biết cách
+sửa lỗi.
+2. Trong một màn hình cần giới hạn thông tin cung cấp cho người dùng.
+(Ví dụ: Trong danh sách các công việc (ứng viên) hiển thị tối đa 12 công việc
+(ứng viên), trường hợp người dùng muốn xem nhiều hơn phải bấm vào phân
+trang đã được thiết kế).
+3. Yêu cầu cần phải có khả năng chọn ngôn ngữ cho người dùng (đối với người
+nướcngoài)vàdễhiểuđểnhữngngườikhôngcókhảnăngngônngữcóthểsử
+dụng. Cụ thể ở “Hệ thống tuyển dụng điều dưỡng” có 3 ngôn ngữ: Tiếng Việt,
+Tiếng Anh, Tiếng Nhật.
+b, Tính dễ bảo trì (Maintainability)
+Hệ thống phải dễ bảo trì các thành phần mà không ảnh hưởng đến hoạt động
+của toàn hệ thống. Các chức năng, thành phần phải được phân chia riêng biệt. Độc
+lập với nhau để có thể dễ dàng bảo trì chức năng, thành phần này mà không ảnh
+hưởng đến toàn bộ hệ thống.
+Như vậy, trong chương 2 này em đã trình bày về kết quả khảo sát hiện trạng và
+rútranhữngthôngtinvàyêucầuchứcnăng,phichứcnăngchohệthốngcủamình.
+Các chức năng của hệ thống được biểu diễn qua biểu đồ use case với 3 tác nhân
+chính là admin (quản trị viên), ứng viên và nhà tuyển dụng. Tiếp theo, các công
+nghệ mà em đã sử dụng để xây dựng hệ thống điều dưỡng sẽ được trình bày chi tiết
+ở chương 3 - Công nghệ sử dụng.
+17CHƯƠNG 3. CÔNG NGHỆ SỬ DỤNG
+Từ việc khảo sát hiện trạng, đặc tả và phân tích chức năng hệ thống được nêu ở
+chương 2, qua quá trình tìm hiểu, nghiên cứu, để thực hiện giải quyết bài toán trên,
+nhằm mục đích đơn giản hóa quá trình phát triển sản phẩm em đã lựa chọn Laravel
+Framework để phát triển hệ thống, Hệ quản trị cơ sở dữ liệu MySQL để quản lý dữ
+liệu và Pusher để hỗ trợ chức năng thông báo real-time.
+3.1 Laravel Framework
+PHP framework là thư viện làm cho sự phát triển của những ứng dụng web viết
+bằngngônngữPHPtrởnêntrôichảyhơn.Bằngcáchcungcấp1cấutrúccơbảnđể
+xây dựng những ứng dụng đó. Hay nói cách khác, PHP framework giúp lập trình
+viên thúc đẩy nhanh chóng quá trình phát triển ứng dụng. Giúp tiết kiệm được thời
+gian, tăng sự ổn định cho ứng dụng. Giảm thiểu số lần phải viết lại code cho lập
+trình viên.
+Laravel là một PHP framework mã nguồn mở miễn phí, được sử dụng để phát
+triển ứng dụng web theo mô hình Model – View – Controller (MVC). Laravel có
+cú pháp dễ hiểu, rõ ràng, có khả năng mở rộng tốt thông qua việc đóng gói các
+module chức năng riêng biệt, đồng thời cung cấp sự kết nối với các CSDL một
+cách dễ dàng. Bên cạnh đó, Laravel giúp việc phát triển ứng dụng web trở nên
+nhanh chóng khi đã tích hợp sẵn việc xử lý các tác vụ cơ bản như authentication,
+routing, sessions,...[3] Chính vì vậy, đối với Hệ thống tuyển dụng điều dưỡng sẽ
+được phát triển một cách nhanh chóng với nguồn lực tối thiểu, đồng thời vẫn đảm
+bảo khả năng mở rộng và linh hoạt cao trong tương lai.
+Ngoài ra, Laravel còn có những ưu điểm nổi bật khác như: Sử dụng các tính
+năng (feature) mới nhất của PHP; Cộng đồng hỗ trợ đông đảo; Tích hợp công cụ
+Artisan – Công cụ quản lý dòng lệnh; Sử dụng composer để quản lý PHP package;
+Sử dụng npm để quản lý các gói Javascript, giao diện.
+Cụ thể, để xây dựng hệ thống này, em đã sử dụng Laravel Livewire. Laravel
+Livewire là một thư viện giúp đơn giản hóa việc xây dựng các giao diện [4]. Nói
+một cách tóm tắt, Laravel Livewire sẽ render đầu ra component ban đầu cho trang,
+giống như mẫu Blade được kết xuất bởi máy chủ điển hình. Khi một tương tác xảy
+ra, Livewire thực hiện một yêu cầu AJAX tới máy chủ với dữ liệu được cập nhật .
+Máy chủ render component và phản hồi bằng HTML được cập nhật. Livewire sau
+đó biến đổi DOM một cách thông minh theo những gì đã thay đổi. Nó giống như
+đặt frontend và backend ở một nơi, không cần lặp lại logic.
+18CHƯƠNG3. CÔNGNGHỆSỬDỤNG
+Ngoài ra, em đã sử dụng Laravel Jetstream để khởi đầu cho việc xây dựng hệ
+thống. Laravel Jetstream là một bộ khung được xây dựng cho Laravel bao gồm các
+chức năng đăng nhập, đăng ký, xác thực địa chỉ email, xác thực 2 lớp (two-factor
+authentication), quản lý session, hỗ trợ API thông qua Laravel Sanctum, và tuỳ
+chọnquảnlýteam[5].LaravelJetstreamthaythếvàcảitiếndựatrênauthentication
+UI có sẵn ở phiên bản Laravel trước. Để hiểu một cách đơn giản hơn thì nó là một
+package dựng sắn hỗ trợ các chức năng cơ bản cho người dùng.
+3.2 Hệ quản trị cơ sở dữ liệu MySQL
+MySQL là hệ quản trị cơ sở dữ liệu được cộng đồng các lập trình viên tin dùng
+cho việc phát triển ứng dụng. MySQL có nhiều điểm mạnh, có thể hoạt động trên
+nhiều hệ điều hành khác nhau bao gồm cả Linux, UNIX và Windows, cung cấp hệ
+thống đa dạng các tiện ích cho người dùng một cách miễn phí[6]. MySQL có tốc
+độxửlýcao,làmộthệthốngcơsởdữliệu,đơngiản,càiđặtnhanhchóng.MySQL
+sử dụng cú pháp của SQL, là ngôn ngữ của sự chọn lựa cho tất cả các hệ thống
+cơ sở dữ liệu hiện đại. Với MySQL, số lượng lớn client có thể truy cập vào server
+trong cùng một thời điểm. Các cơ sở dữ liệu của MySQL có thể truy cập được từ
+mọi nơi trên Internet, do đó có thể chia sẻ dữ liệu một cách rộng rãi mọi lúc mọi
+nơi. Đồng thời, với tính phân quyền, MySQL có thể kiểm soát quyền truy cập giữa
+các người dùng khác nhau, người không có quyền sẽ không truy cập được dữ liệu,
+đảm bảo an toàn thông tin. Với đặc trưng miễn phí, tốc độ cao và tính bảo mật của
+MySQL, em đã chọn MySQL làm hệ quản trị cơ sở dữ liệu cho hệ thống này.
+3.3 Pusher
+Pusher [7] là công nghệ được sử dụng để hỗ trợ chức năng thông báo real-time.
+Pusher là một dịch vụ cloud, tạo ra một server trung gian giúp chúng ta có thể xử
+lý các tác vụ thời gian thực. Dữ liệu được gửi tới pusher, và pusher lại gửi nó đi tới
+các client đã subscribe (đăng ký) và các channel. Trong đó Pusher Channel cung
+cấp giao tiếp thời gian thực giữa các máy chủ, ứng dụng và thiết bị. Các kênh được
+sử dụng cho các biểu đồ thời gian thực, danh sách người dùng thời gian thực, bản
+đồ thời gian thực, chơi trò chơi nhiều người chơi và nhiều loại cập nhật giao diện
+người dùng khác. Nó có một thư viện hỗ trợ mọi thứ như trình duyệt web, ứng
+dụng iOS và Android, khung PHP, chức năng đám mây, tập lệnh bash, thiết bị IoT.
+Pusher Channel hoạt động ở mọi nơi vì nó sử dụng WebSockets và HTTP và cung
+cấp dự phòng cho các thiết bị không hỗ trợ WebSockets. Chi tiết về Pusher và cách
+cài đặt sẽ được trình bày chi tiết ở mục 5.2 thuộc chương 5 - Các giải pháp và đóng
+góp nổi bật.
+Như vậy, trong chương 3 em đã giới thiệu về các công nghệ và lý do lựa chọn
+19CHƯƠNG3. CÔNGNGHỆSỬDỤNG
+cáccôngnghệnàyđểxâydựnghệthốngtuyểndụngquảnlýđiềudưỡng.Tiếptheo,
+ở chương 4 em sẽ trình bày về kiến trúc phần mềm MVC, thiết kế giao diện, thiết
+kế cơ sở dữ liệu, kết quả xây dựng hệ thống và kết quả kiểm thử hệ thống.
+20CHƯƠNG 4. THIẾT KẾ VÀ TRIỂN KHAI
+Trongchương4emsẽtrìnhbàychitiếtvềthiếtkếhệthốngtheomôhìnhMVC,
+thiết kế biểu đồ gói tổng quan và biểu đồ gói chi tiết theo từng module, thiết kế
+giao diện và thiết kế cơ sở dữ liệu cho hệ thống. Cuối cùng là kết quả xây dựng hệ
+thống gồm thư viện, công cụ sử dụng, ảnh chụp minh họa các chức năng chính và
+kiểm thử hệ thống.
+4.1 Thiết kế kiến trúc
+4.1.1 Sử dụng kiến trúc phần mềm MVC
+Hệ thống trong đồ án này được triển khai dựa trên kiến trúc phần mềm MVC.
+Mô hình MVC (model, controller, view) là mô hình chuẩn cho ứng dụng web được
+sử dụng nhiều nhất ngày nay.
+Mô hình MVC là viết tắt của 3 chữ Model, View, Controller. Mô hình này tách
+một ứng dụng web ra làm 3 thành phần đảm nhiệm chức năng tách biệt, thuận tiện
+cho việc xử lý và bảo trì.
+Model (M): Là bộ phận có chức năng lưu trữ toàn bộ dữ liệu của ứng dụng. Bộ
+phận này là một cầu nối giữa 2 thành phần bên dưới là View và Controller. Model
+thể hiện dưới hình thức là một cơ sở dữ liệu hoặc có khi chỉ đơn giản là một file
+XML bình thường. Model thể hiện rõ các thao tác với cơ sở dữ liệu như cho phép
+xem, truy xuất, xử lý dữ liệu,...
+View(V):Đâylàphầngiaodiện(theme)dànhchongườisửdụng.Nơimàngười
+dùng có thể lấy được thông tin dữ liệu của MVC thông qua các thao tác truy vấn
+như tìm kiếm hoặc sử dụng thông qua các website. Thông thường, các ứng dụng
+web sử dụng MVC View như một phần của hệ thống, nơi các thành phần HTML
+được tạo ra. Bên cạnh đó, View cũng có chức năng ghi nhận hoạt động của người
+dùng để tương tác với Controller. Tuy nhiên, View không có mối quan hệ trực tiếp
+với Controller, cũng không được lấy dữ liệu từ Controller mà chỉ hiển thị yêu cầu
+chuyển cho Controller mà thôi.
+Controller (C): Bộ phận có nhiệm vụ xử lý các yêu cầu người dùng đưa đến
+thông qua view. Từ đó, C đưa ra dữ liệu phù hợp với người dùng. Bên cạnh đó,
+Controller còn có chức năng kết nối với model.
+Trong Laravel, các yêu cầu từ người dùng đều phải qua route, sau đó yêu cầu
+được gửi tới Controller để xử lý, dữ liệu sẽ được lấy từ Model lên hoặc cập nhật
+dữ liệu mới xuống Model, kết quả gửi ra View hiển thị cho người sử dụng. Người
+dùng tiếp tục tương tác và gửi yêu cầu tới router.
+21CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+MVC bố trí mã nguồn thành các thành phần độc lập giúp việc phát triển, quản
+lý, vận hành, bảo trì thuận lợi hơn. MVC cho phép dữ liệu thay đổi độc lập với việc
+biểudiễncủanóvàngượclại;hỗtrợbiểudiễntheonhiềucáchkhácnhautrêncùng
+một dữ liệu. MVC tránh để việc từ V tương tác trực tiếp tới cơ sở dữ liệu, thay vào
+đó, việc tương tác này sẽ thông qua C đảm bảo việc vận hành ổn định và tránh các
+sai sót dữ liệu phát sinh từ người dùng. MVC có trình tự xử lý rõ ràng giúp dễ dàng
+trong việc kiểm soát luồng xử lý. Mô hình khá đơn giản nên dễ dàng tiếp cận.
+Hình4.1:MôhìnhMVCtrongLaravel
+4.1.2 Cấu trúc tổng quan
+Hình 4.2 mô tả tổng quan sự phân chia các thành phần trong hệ thống bằng biểu
+đồ gói UML.
+Hình4.2:Biểuđồgóitổngquanhệthống
+Hệ thống được xây dựng dựa trên kiến trúc MVC. Mã nguồn của ứng dụng
+được chia thành module để dễ quản lý nhờ khả năng module hóa của Laravel. Mỗi
+module lại được xây dựng theo kiến trúc MVC nên vẫn đảm bảo như thiết kế.
+0Nguồn:https://allaravel.com/blog/laravel-eloquent-orm-phan-1-t
+hao-tac-voi-database-qua-eloquent-model
+22CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Ứng dụng có các module là “Admin, Candidate, Employer”. Module “Admin”
+chứa các lớp, hàm xử lý các dữ liệu liên quan đến quản lý người dùng, quản lý bài
+đăng, quản lý địa điểm, ... . Module “Candidate” chứa các lớp, hàm xử lý các dữ
+liệu liên quan quản lý việc ứng tuyển, quản lý tài khoản, quản lý CV, ... Module
+“Employer” chứa các lớp hàm xử lý các dữ liệu liên quan đến quản lý đơn ứng
+tuyển, quản lý công việc, ...
+Với từng module, có thể truy cập tới các thành phần M, V, C như sau:
+(i) Modules/Admin|Candidate|Employer/Entities
+(ii) Modules/Admin|Candidate|Employer/Resources/views
+(iii) Modules/Admin|Candidate|Employer/Http/Controllers
+Trongđó,Gói“Model”chứacácclassnhưUser,Category,Recruitment...tham
+chiếu tới các bảng tương ứng trong cơ sở dữ liệu (CSDL).
+Gói “Controller” chứa các class như RecruitmentJobController, CategoryCon-
+troller, JobBookmarkController ... là class xử lý nghiệp vụ logic, lấy dữ liệu từ
+Model, gửi dữ liệu đến View.
+Ngoài ra, gói “View” chứa các file định nghĩa cách hiển thị dữ liệu tới người
+dùng như các file HTML ...
+Tiếp theo, em sẽ trình bày biểu đồ chi tiết các gói theo từng module
+4.1.3 Cấu trúc chi tiết các gói theo từng module
+Hình4.3:BiểuđồchitiếtgóiởmoduleCandidate(Ứngviên)
+23CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình 4.3 mô tả chi tiết gói "Controller" và gói "Model" ở module Candidate
+(Ứng viên).
+Gói "Controller" của module Candidate (Ứng viên) chứa các gói Quản lý đơn
+ứng tuyển, Quản lý CV, Quản lý tài khoản và Tìm kiếm công việc. Gói Quản
+lý đơn ứng tuyển chứa các class như RecruitmentJobController, RecruitmentCon-
+troller, RecruitmentDetailController và ReviewController. Gói Quản lý CV chứa
+class ExperienceController. Gói Quản lý tài khoản chứa class ProfileController và
+ChangPasswordController. Gói Tìm kiếm công việc chứa class JobBookmarkCon-
+troller và DetailJobController.
+Gói "Model" của module Candidate (Ứng viên) cũng chứa các gói Quản lý đơn
+ứng tuyển, Quản lý CV, Quản lý tài khoản và Tìm kiếm công việc. Các gói này
+chứa các class như Recruitment, Review, Job,... tham chiếu tới các bảng tương ứng
+trong cơ sở dữ liệu.
+Hình4.4:BiểuđồchitiếtgóiởmoduleEmployer(Nhàtuyểndụng)
+Hình 4.4 mô tả chi tiết gói "Controller" và gói "Model" ở module Employer
+(Nhà tuyển dụng).
+Gói "Controller" của module Employer (Nhà tuyển dụng) chứa các gói Quản
+lý đơn ứng tuyển, Quản lý công việc, Quản lý tài khoản và Tìm kiếm ứng viên.
+Gói Quản lý đơn ứng tuyển chứa các class như RecruitmentController, Recruit-
+mentDetailController và ReviewController. Gói Quản lý công việc chứa class Job-
+Controller,AddJobController,EditJobController.GóiQuảnlýtàikhoảnchứaclass
+ProfileControllervàChangePasswordController.GóiTìmkiếmứngviênchứaclass
+24CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+CandidateCotroller, CandidateBookmarkController và DetailCandidateController.
+Gói "Model" của module Employer (Nhà tuyển dụng) cũng chứa các gói Quản
+lýđơnứngtuyển,Quảnlýcôngviệc,QuảnlýtàikhoảnvàTìmkiếmứngviên.Các
+gói này chứa các class như Recruitment, Review, Job,... tham chiếu tới các bảng
+tương ứng trong cơ sở dữ liệu.
+Hình4.5:BiểuđồchitiếtgóiởmoduleAdmin(quảntrịviên)
+Hình 4.5 mô tả chi tiết gói "Controller" và gói "Model" ở module Admin(quản
+trị viên).
+Gói "Controller" của module Admin(quản trị viên) chứa các gói Quản lý người
+dùng, Quản lý bài đăng, Quản lý phần quảng cáo và Quản lý địa điểm. Gói Quản
+lý người dùng chứa class như ManageUserController. Gói Quản lý bài đăng chứa
+cácclassPostController,AddPostController,EditPostController.GóiQuảnlýphần
+quảng cáo chứa các class HomeSliderController và HomeCategoryController. Gói
+Quản lý địa điểm chứa các class CategoryController, AddCategoryController, Ed-
+itCategoryController.
+Gói"Model"củamoduleAdmin(quảntrịviên)cũngchứacácgóiQuảnlýngười
+dùng, Quản lý bài đăng, Quản lý phần quảng cáo và Quản lý địa điểm. Các gói này
+chứacácclassnhưUser,Post,Category,...thamchiếutớicácbảngtươngứngtrong
+cơ sở dữ liệu.
+25CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+4.2 Thiết kế chi tiết
+4.2.1 Thiết kế giao diện người dùng
+Để đáp ứng nhu cầu cũng như sự trải nghiệm của người dùng, hệ thống hướng
+tới việc phù hợp với các thiết bị khác nhau.
+Hình 4.6, hình 4.7 minh họa thiết kế giao diện trang chủ và trang Hồ sơ của tôi
+cho module ứng viên.
+Hình4.6:Thiếtkếgiaodiệntrangchủứngviên
+26CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.7:Thiếtkếgiaodiệntranghồsơcủatôi
+Hình 4.8 minh họa thiết kế giao diện tạo công việc của nhà tuyển dụng. Trang
+chỉnh sửa công việc có giao diện tương tự.
+27CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.8:Thiếtkếgiaodiệntrangtạocôngviệc
+Hình 4.9 minh họa thiết kế giao diện trang ứng viên thuộc module Employer
+(nhà tuyển dụng).
+28CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.9:Thiếtkếgiaodiệntrangứngviên
+Hình 4.10 minh họa thiết kế giao diện trang quản lý bài đăng của nhà quản trị hệ
+thống. Cac trang quản lý khác như quản lý người dùng, quản lý slide ở trang chủ,
+quản lý địa điểm hay quản lý đơn ứng tuyển có giao diện tương tự.
+29CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.10:Thiếtkếgiaodiệntrangquảnlýbàiđăng
+4.2.2 Thiết kế cơ sở dữ liệu
+Hình 4.11 dưới đây mô tả biểu đồ thực thể liên kết của hệ thống.
+Hình4.11:Môhìnhcơsởdữliệu
+Cơ sở dữ liệu bao gồm 22 bảng như hình vẽ, gồm có các bảng sau:
+1. Bảng Users: lưu trữ dữ liệu của người dùng trên hệ thống, bao gồm các thông
+tin khi người dùng đăng ký tài khoản.
+30CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+2. Bảng profiles: lưu trữ thông tin cá nhân của người dùng trên hệ thống.
+3. Bảng education: lưu trữ dữ liệu về trình độ học vấn của ứng viên.
+4. Bảng skills: lưu trữ dữ liệu về kỹ năng của ứng viên.
+5. Bảng activities: lưu trữ dữ liệu về các hoạt động của ứng viên.
+6. Bảng references: lưu trữ dữ liệu về người tham khảo của ứng viên.
+7. Bảng work_histories: lưu trữ kinh nghiệm làm việc của ứng viên.
+8. Bảng languages: lưu trữ khả năng ngoại ngữ của ứng viên.
+9. Bảng work_preferences: lưu trữ dữ liệu về công việc mong muốn của ứng
+viên.
+10. Bảng certifications: lưu trữ dữ liệu về các chứng chỉ của ứng viên.
+11. Bảng contacts: lưu trữ những phản hồi của người dùng gửi đến admin.
+12. Bảng reviews: lưu trữ những đánh giá của ứng viên dành cho nhà tuyển dụng.
+13. Bảngreview_candidates:lưutrữnhữngđánhgiánhàtuyểndụngdànhchoứng
+viên.
+14. Bảng recruitments: lưu trữ thông tin của ứng viên ứng tuyển.
+15. Bảng recruitment_jobs: lưu trữ thông tin về công việc mà ứng viên ứng tuyển.
+16. Bảng jobs: lưu trữ nội dung công việc mà nhà tuyển dụng đăng tải.
+17. Bảng home_categories: lưu trữ những địa điểm được hiển thị ở trang home.
+18. Bảng home_sliders: lưu trữ thông tin về nội dung sliders được hiển thị ở trang
+home.
+19. Bảng posts: lưu trữ nội dung các bài đăng chia sẻ kinh nghiệm.
+20. Bảng settings: lưu trữ thông tin liên lạc của hệ thống.
+21. Bảng categories: lưu trữ các địa điểm làm việc.
+22. Bảng subcategories: lưu trữ các địa điểm làm việc con.
+Dựavàobiểuđồthựcthểliênkết,emsẽtrìnhbàycụthểbảngdữliệutươngứng
+cùng mô tả các thuộc tính. Các bảng này được khởi tạo trong hệ quản trị cơ sở dữ
+liệu MySQL.
+Bảng 4.1 mô tả chi tiết bảng users:
+31CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id INTEGER Mã ID của người dùng
+name VARCHAR(255) Tên của người dùng
+email VARCHAR(255) Email của người dùng
+password VARCHAR(255) Mật khẩu sử dụng của người dùng
+role_id INTEGER Xác định xem người dùng là admin, ứng
+viên hay nhà tuyển dụng.
+status ENUM Xác định trạng thái của người dùng là hoạt
+động hay bị block
+Bảng4.1:Chitiếtbảngusers
+Bảng 4.2 mô tả chi tiết bảng profiles:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của profile
+Khóa ngoại liên kết với bảng users để truy
+user_id BIGINTEGER
+vấn người tạo profile
+image STRING Ảnh đại diện của người tạo profile
+date_of_birth DATE Ngày, tháng, năm sinh của người tạo profile
+intro TEXT Giới thiệu bản thân
+gender ENUM Giới tính
+marital_status ENUM Tình trạng hôn nhân
+city VARCHAR(255) Thành phố đang ở hiện tại
+province VARCHAR(255) Tỉnh thành đang ở hiện tại
+country VARCHAR(255) Đất nước đang ở hiện tại
+address VARCHAR(255) Địa chỉ hiện nay
+Bảng4.2:Chitiếtbảngprofiles
+Bảng 4.3 mô tả chi tiết bảng education:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của education
+Khóa ngoại liên kết với bảng users để truy
+user_id BIGINTEGER
+vấn người tạo mới trình độ học vấn
+subject VARCHAR(255) Chuyên ngành
+school VARCHAR(255) Nơi học chuyên ngành nêu trên
+qualifications ENUM Bằng cấp
+from_month DATE Thời gian bắt đầu học
+to_month DATE Thời gian tốt nghiệp
+achievements TEXT Thành tích nổi bật trong khi học
+Bảng4.3:chitiếtbảngeducation
+32CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Bảng 4.4 mô tả chi tiết bảng skills:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của skills
+Khóa ngoại liên kết với bảng users để truy
+user_id BIGINTEGER
+vấn người tạo mới kỹ năng
+skill_name VARCHAR(255) Tên kỹ năng
+proficiency ENUM Mức độ thành thạo
+Bảng4.4:Chitiếtbảngskills
+Bảng 4.5 mô tả chi tiết bảng activities:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của activities
+Khóa ngoại liên kết với bảng users để
+user_id BIGINTEGER
+truy vấn người tạo hoạt động
+activity_name VARCHAR(255) Tên hoạt động ứng viên đã tham gia
+description TEXT Mô tả chi tiết hoạt động đã tham gia
+Bảng4.5:Chitiếtbảngactivities
+Bảng 4.6 mô tả chi tiết bảng references:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của references
+Khóa ngoại liên kết với bảng users để truy
+user_id BIGINTEGER
+vấn người tạo hoạt động
+name VARCHAR(255) Tên người tham chiếu
+position VARCHAR(255) Chức vụ của người tham chiếu
+company VARCHAR(255) Công ty người tham chiếu đang làm việc
+email VARCHAR(255) Địa chỉ email người tham chiếu
+phone VARCHAR(255) Số điện thoại người tham chiếu
+Bảng4.6:Chitiếtbảngreferences
+Bảng 4.7 mô tả chi tiết bảng work_histories:
+33CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của work_histories
+Khóa ngoại liên kết với bảng users để truy
+user_id BIGINTEGER
+vấn người thêm kinh nghiệm làm việc
+position VARCHAR(255) Chức vụ đã đảm nhận
+company VARCHAR(255) Nơi làm việc
+from_month DATE Thời gian bắt đầu làm việc
+to_month DATE Thời gian nghỉ việc
+description TEXT Mô tả về công việc đã làm
+Bảng4.7:Chitiếtbảngwork_histories
+Bảng 4.8 mô tả chi tiết bảng languages:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của languages
+Khóa ngoại liên kết với bảng users để truy
+user_id BIGINTEGER
+vấn người thêm khả năng ngoại ngữ
+language VARCHAR(255) Tên ngôn ngữ
+proficiency ENUM Trình độ ngoại ngữ
+Bảng4.8:Chitiếtbảnglanguages
+Bảng 4.9 mô tả chi tiết bảng work_preferences:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của work_preferences
+Khóa ngoại liên kết với bảng users để
+user_id BIGINTEGER truy vấn người thêm công việc mong
+muốn
+Khóa ngoại liên kết với bảng categories
+category_id BIGINTEGER
+để truy vấn địa điểm có trong hệ thống
+expected_location VARCHAR(255) Trình độ ngoại ngữ
+expected_salary DECIMAL(8,2) Mức lương mong muốn
+type INTEGER loại hình công việc mong muốn
+Bảng4.9:Chitiếtbảngwork_preferences
+Bảng 4.10 mô tả chi tiết bảng certifications:
+34CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của certifications
+Khóa ngoại liên kết với bảng users để
+user_id BIGINTEGER
+truy vấn người thêm chứng chỉ
+certification_name VARCHAR(255) Tên chứng chỉ
+description TEXT Mô tả về chứng chỉ
+Bảng4.10:Chitiếtbảngcertification
+Bảng 4.11 mô tả chi tiết bảng contacts:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của contacts
+name VARCHAR(255) Tên người gửi liên hệ
+email VARCHAR(255) Email người gửi liên hệ
+phone VARCHAR(255) Số điện thoại người gửi liên hệ
+comment LONGTEXT Nội dung liên hệ
+Bảng4.11:Chitiếtbảngcontacts
+Bảng 4.12 mô tả chi tiết bảng reviews, bảng review_candidates có nội dung
+tương tự:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của reviews
+Khóa ngoại liên kết với bảng
+recruitment_job_id BIGINTEGER recruitmentJobs để truy vấn công việc
+đã ứng tuyển
+rating INT Số sao đánh giá
+comment TEXT Nội dung đánh giá
+Bảng4.12:Chitiếtbảngreviews
+Bảng 4.13 mô tả chi tiết bảng recruitments:
+35CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id INTEGER Mã ID của đơn ứng tuyển
+firstname VARCHAR(255) Họ của người ứng tuyển
+lastname VARCHAR(255) Tên của người ứng tuyển
+mobile VARCHAR(255) Số điện thoại của người ứng tuyển
+email VARCHAR(255) Email của người ứng tuyển
+intro LONGTEXT Giới thiệu bản thân người ứng tuyển
+city VARCHAR(255) Thành phố người ứng tuyển đang sống
+province VARCHAR(255) Tỉnh thành người ứng tuyển đang sống
+country VARCHAR(255) Quốc gia người ứng tuyển đang sống
+file VARCHAR(255) CV của người ứng tuyển
+processed_date DATE Ngày đơn ứng tuyển được xử lý
+canceled_date DATE Ngày đơn ứng tuyển bị hủy
+status ENUM Trạng thái của đơn ứng tuyển: đang
+chờ xử lý, đang được xử lý, đã ứng
+tuyển thành công hay bị hủy
+user_id INTEGER Khóa ngoại liên hết với bảng users để
+truy vấn tài khoản ứng viên ứng tuyển
+Bảng4.13:Chitiếtbảngrecruitments
+Bảng 4.14 mô tả chi tiết bảng recruitment_jobs:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của reviews
+Khóa ngoại liên kết với bảng
+recruitment_id BIGINTEGER recruitmentJobs để truy vấn đơn ứng
+tuyển
+Khóa ngoại liên kết với bảng jobs để
+job_id BIGINTEGER
+truy vấn công việc vừa ứng tuyển
+salary DECIMAL(8,2) Lương của công việc vừa ứng tuyển
+Bảng4.14:Chitiếtbảngrecruitment_jobs
+Bảng 4.15 mô tả chi tiết bảng jobs:
+36CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id INTEGER Mã ID của công việc
+name VARCHAR(255) Tiêu đề của công việc
+slug VARCHAR(255) phần đặt ngay sau tên miền để tạo
+thànhliênkếtpermalinkdẫnđếntrang
+nguồn
+short_description VARCHAR(1000) Mô tả ngắn công việc
+description TEXT Mô tả chi tiết công việc.
+regular_salary DECIMAL(8,2) Mức lương của công việc
+stock_status ENUM Xác định xem công việc có đang được
+tuyển dụng hay không
+quantity INTEGER Số lượng người cần tuyển
+image VARCHAR(255) Hình ảnh của công việc
+totalviews INTEGER Tổng số lượt xem công việc
+type INTEGER Loại hình công việc
+category_id INTEGER Khóa ngoại liên kết với bảng cate-
+gories để truy vấn địa điểm làm việc
+sub_category_id INTEGER Khóa ngoại liên kết với bảng subcate-
+gories để truy vấn địa điểm làm việc
+con
+user_id INTEGER Khóa ngoại liên hết với bảng users để
+truy vấn người tạo công việc
+Bảng4.15:Chitiếtbảngjobs
+Bảng 4.16 mô tả chi tiết bảng home_categories:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của home_categories
+sel_categories VARCHAR(255) Danh sách công ty đăng kí hiển thị ở trang
+chủ
+no_of_jobs INTEGER Số lượng công việc hiển thị
+Bảng4.16:Chitiếtbảnghome_categories
+Bảng 4.17 mô tả chi tiết bảng home_sliders:
+37CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của home_sliders
+title VARCHAR(255) Tiêu đề quảng cáo
+subtitle VARCHAR(255) Tiêu đề phụ
+salary VARCHAR(255) Mức lương
+Đường dẫn tới công việc được quảng
+link VARCHAR(255)
+cáo
+image VARCHAR(255) Ảnh bìa quảng cáo
+status INTEGER Trạng thái hiển thị của quảng cáo
+Bảng4.17:Chitiếtbảnghome_sliders
+Bảng 4.18 mô tả chi tiết bảng posts:
+Thuộc tính Kiểu dữ liệu Mô tả
+id INTEGER Mã ID của bài đăng
+title VARCHAR(255) Tiêu đề của bài đăng
+slug VARCHAR(255) phần đặt ngay sau tên miền để tạo
+thànhliênkếtpermalinkdẫnđếntrang
+nguồn
+image VARCHAR(255) Ảnh bìa của bài đăng
+short_description TEXT Mô tả ngắn bài đăng
+description LONGTEXT Chi tiết bài đăng
+status BOOLEAN Trạng thái bài đăng
+totalviews_post INTEGER Số lượt xem của bài đăng
+Bảng4.18:Chitiếtbảngposts
+Bảng 4.19 mô tả chi tiết bảng settings:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của settings
+email VARCHAR(255) email của hệ thống
+phone VARCHAR(255) số điện thoại liên hệ của hệ thống
+phone2 VARCHAR(255) số điện thoại liên hệ 2 của hệ thống
+address VARCHAR(255) Địa chỉ văn phòng
+map TEXT Bản đồ chỉ đường đến văn phòng
+twitter VARCHAR(255) Tài khoản twitter của hệ thống
+facebook VARCHAR(255) Tài khoản facebook của hệ thống
+printerest VARCHAR(255) Tài khoản printerest của hệ thống
+instagram VARCHAR(255) Tài khoản instagram của hệ thống
+Bảng4.19:Chitiếtbảngsettings
+Bảng 4.20 mô tả chi tiết bảng categories:
+38CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của categories
+name VARCHAR(255) Tên địa điểm
+phần đặt ngay sau tên miền để tạo thành liên
+slug VARCHAR(255)
+kết permalink dẫn đến trang nguồn
+Bảng4.20:Chitiếtbảngcategories
+Bảng 4.21 mô tả chi tiết bảng subcategories:
+Thuộc tính Kiểu dữ liệu Mô tả
+id BIGINTEGER Mã id của categories
+Khóa ngoại liên kết với bảng categories để
+category_id BIGINTEGER
+truy vấn đến địa điểm cha
+name VARCHAR(255) Tên địa điểm
+phần đặt ngay sau tên miền để tạo thành liên
+slug VARCHAR(255)
+kết permalink dẫn đến trang nguồn
+Bảng4.21:Chitiếtbảngsubcategories
+4.3 Kết quả xây dựng hệ thống
+4.3.1 Thư viện và công cụ sử dụng
+Bảng 4.22 liệt kê các công cụ và thư viện em đã sử dụng để thực hiện, nghiên
+cứu, thiết kế, khảo sát, lập trình và triển khai hệ thống này.
+Mục đích Công cụ Địa chỉ URL
+Vẽ biểu đồ Draw.io https://app.diagrams.net/
+Thiết kế balsamiq mockups 3 https://balsamiq.com/wireframes/desktop/
+giao diện
+Code Edi- Visual Studio Code [8] https://code.visualstudio.com/
+tor
+Lưu trữ MySQL https://www.mysql.com/
+CSDL
+Bảng4.22:Danhsáchthưviệnvàcôngcụsửdụng
+Draw.io là một công cụ vẽ sơ đồ rất mạnh mẽ, hỗ trợ nhiều hình khối, chạy
+onlinekhôngcầncàiđặtmàlạimiễnphívàkhôngbịgiớihạnsốbiểuđồnhưnhiều
+công cụ vẽ nền web khác. Vì vậy, em đã sử dụng để vẽ các biểu đồ use case, biểu
+đồ hoạt động, biểu đồ gói cho đồ án này.
+Balsamiq mockups là một phần mềm dùng để phác thảo, vẽ Wireframe rất tiện
+dụng, mãnh mẽ và đặc biệt dễ dàng sử dụng. Giao diện của Balsamiq đơn giản,
+39CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+dễ dàng kéo thả và giúp người dùng thao tác nhanh để phác thảo bố cục hoặc thiết
+kế wireframe nhanh chóng. Vì vậy, em đã sử dụng Balsamiq mockup 3 để thiết kế
+giao diện cho hệ thống.
+4.3.2 Minh họa các chức năng chính
+Đầu tiên, em sẽ minh họa các chức năng chính mà ứng viên được hệ thống cấp
+quyền bằng những hình ảnh dưới đây.
+Hình4.12:MànhìnhDanhsáchcôngviệc
+Hình 4.12 - Màn hình danh sách công việc hiển thị toàn bộ công việc mà nhà
+tuyểndụngđãtạođangởtrạngtháihoạtđộngbìnhthườngcótrênhệthống,từđây,
+ứng viên có thể tìm công việc, truy cập xem thông tin chi tiết từng công việc, lưu
+công việc cũng như ứng tuyển công việc.
+40CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.13:MànhìnhChitiếtcôngviệc
+Hình 4.13 - Màn hình chi tiết công việc hiển thị chi tiết thông tin công việc,
+thông tin về nhà tuyển dụng đã đăng tải công việc, cũng như đánh giá của những
+ứng viên đã đánh giá công việc này. Ở màn hình này, người dùng có thể lưu công
+việc hay đánh giá công việc này. Ngoài ra người dùng cũng có thể xem các công
+việc có địa điểm làm việc giống với công việc đang xem.
+41CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.14:MànhìnhCôngviệcđãlưu
+Hình 4.14 - Màn hình Công việc đã lưu hiển thị toàn bộ những công việc mà
+ứng viên đã đánh dấu. Tại màn hình này, ứng viên có thể ứng tuyển, xem chi tiết,
+xóa công việc đã đánh dấu.
+42CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.15:MànhìnhHồsơcủatôi
+Hình 4.15 - Màn hình Hồ sơ của tôi hiển thị những thông tin mà ứng viên đã
+nhập để tạo sơ yếu lý lịch cho mình. Tại đây ứng viên cũng có thể tải xuống ở dạng
+pdf sơ yếu lí lịch đã tạo.
+Tiếp theo, em sẽ minh họa các chức năng chính mà của admin bằng những hình
+ảnh dưới đây.
+43CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.16:MànhìnhQuảnlýngườidùng
+Hình 4.16 - Màn hình quản lý người dùng hiển thị những thông tin cơ bản của
+người dùng. Admin có thể khóa người dùng để chặn người dùng khỏi một số thao
+tác.
+44CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.17:MànhìnhQuảnlýbàiđăng
+Hình 4.17 - Màn hình quản lý bài đăng hiển thị tất cả các bài đăng mà admin đã
+tạo để hiển thị ở trang thông tin hữu ích. Tại đây admin có thể thêm, sửa, xóa các
+bài đăng.
+Cuối cùng, em sẽ minh họa các chức năng chính mà nhà tuyển dụng được hệ
+thống cấp quyền bằng những hình ảnh dưới đây.
+45CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.18:MànhìnhỨngviên
+Hình 4.18 - Màn hình ứng viên hiển thị tất cả các ứng viên đã cập nhật công việc
+mong muốn trên hệ thống. Tại đây, nhà tuyển dụng có thể tìm kiếm ứng viên theo
+các tiêu chí, lưu lại những ứng viên tiềm năng.
+Hình4.19:Mànhìnhquảnlýcôngviệc
+Hình 4.19 - Màn hình quản lý công việc hiển thị tất cả những công việc mà nhà
+tuyển dụng đã tạo. Tại đây, nhà tuyển dụng thể thêm công việc mới, sửa, xóa, tìm
+kiếm các công việc đã tạo.
+46CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.20:MànhìnhQuảnlýcácđơnứngtuyển
+Hình 4.20 - Màn hình quản lý các đơn ứng tuyển hiển thị tất cả các đơn ứng
+tuyển được gửi đến cho nhà tuyển dụng. Tại đây nhà tuyển dụng có thể tìm kiếm,
+cập nhật trạng thái cho các đơn ứng tuyển.
+Hình4.21:MànhìnhLiênhệ
+Ngoài ra, Hình 4.21 - Màn hình Liên hệ hiển thị trang liên hệ để ứng viên và
+nhà tuyển dụng có thể gửi những thắc mắc, đánh giá cho nhà quản trị hệ thống.
+47CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Hình4.22:MànhìnhĐánhgiá
+Hình 4.22 - Màn hình đánh giá hiển thị trang đánh giá, để bình luận, đánh giá
+về công việc mà ứng viên đã ứng tuyển hay đánh giá về ứng viên.
+4.4 Kiểm thử hệ thống
+Sau đây, em sẽ trình bày kịch bản kiểm thử của một số chức năng quan trọng
+của hệ thống.
+STT Chức năng Kịch bản kiểm thử Kết quả mong đợi
+1. Vào màn hình 1. Hiển thị danh sách tất cả
+Xem chi tiết công việc công việc
+1
+công việc 2. Click vào một 2. Hiển thị thông tin chi tiết
+công việc công việc
+1. Hiển thị giao diện màn hình
+1. Vào màn hình ứng
+ứng tuyển
+tuyển
+2. Thông tin được hiển thị như
+2. Nhập thông tin cần
+người dùng đã nhập
+2 Ứng tuyển thiết
+3. Tải lên CV thành công, hiển
+3. Tải CV lên
+thị tên file
+4. Click nút
+4. Chuyển tới trang cảm ơn, ứng
+"Ứng tuyển ngay"
+viên nhận được email xác nhận
+48CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+1. Vào xem chi tiết đơn 1. Hiển thị giao diện màn hình
+ứng tuyển chi tiết đơn ứng tuyển
+2. Click vào "viết bình 2. Hiển thị trang đánh giá
+3 Đánh giá luận" 3. Thông tin hiển thị như người
+3. Nhập thông tin cần dùng đã nhập
+thiết 4. Hiển thị thông báo đánh giá
+4. Click nút "Submit" thành công
+Chức năng tạo CV Chức năng tạo CV
+1. Vào màn hình 1. Hiển thị giao diện màn hình
+"Hồ sơ của tôi" "Hồ sơ của tôi"
+2. Chọn mục cần thêm 2. Hiển thị giao diện mục cần
+3. Click "Thêm thông thêm
+tin" 3. Hiển thị các thông tin cần
+4. Nhập thông tin cần thêm
+thiết 4. Thông tin hiển thị như người
+5. Click nút "Lưu" dùng đã nhập
+4 Quản lý CV 6. Chọn mục "sơ yếu 5. Hiển thị thông báo lưu thành
+lý lịch" công
+6. Hiển thị ra CV của ứng viên
+Chức năng tải CV Chức năng tải CV
+1. Vào màn hình "Hồ sơ 1. Hiển thị giao diện màn hình
+của tôi" "Hồ sơ của tôi"
+2. Chọn mục "sơ yếu 2. Hiển thị CV của ứng viên
+lý lịch" 3. Tải xuống 1 file có định
+3. Click nút "Tải CV" dạng pdf thành công
+49CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+Chức năng tạo công việc Chức năng tạo công việc
+1. Vào màn hình "Tất cả 1. Hiển thị giao diện màn hình
+công việc" "Tất cả công việc"
+2. Click "Tạo công việc 2. Hiển thị trang tạo mới công
+mới" việc
+3. Nhập thông tin cần 3.Thông tin hiển thị như người
+thiết dùng đã nhập
+4. Click nút "Lưu" 4. Hiển thị thông báo tạo công
+Quản lý công việc thành công
+5
+việc
+Chức năng sửa công việc Chức năng sửa công việc
+1. Vào màn hình "Tất cả 1. Hiển thị giao diện màn hình
+công việc" "Tất cả công việc"
+2. Click biểu tượng "edit" 2. Hiển thị trang sửa công việc
+công việc 3. Thông tin hiển thị như người
+3. Nhập thông tin cần dùng đã nhập
+thiết 4. Hiển thị thông báo sửa công
+4. Click nút "Lưu" việc thành công
+1. Hiển thị giao diện màn hình
+1. Admin vào màn hình
+"Quản lý người dùng".
+"Quản lý người dùng"
+Quản lý người 2. Trạng thái người dùng thay
+6 2. Admin cập nhật trạng
+dùng đổi, người dùng vừa được Admin
+thái hoạt động cho người
+cập nhật trạng thái nhận được
+dùng
+thông báo từ hệ thống
+Bảng4.23:Kịchbảnkiểmthửhệthống
+Bảng 4.24 là kết quả kiểm thử hệ thống:
+Trường hợp kiểm thử Edge Firefox Safari Chrome
+1 Pass Pass Pass Pass
+2 Pass Pass Pass Pass
+3 Pass Pass Pass Pass
+4 Pass Pass Pass Pass
+5 Pass Pass Pass Pass
+6 Pass Pass Pass Pass
+Bảng4.24:Kếtquảkiểmthửhệthống
+Các kịch bản kiểm thử trong bảng 4.24 đã thực hiện đều cho kết quả mong đợi
+50CHƯƠNG4. THIẾTKẾVÀTRIỂNKHAI
+trên 4 trình duyệt web khác nhau. Tuy nhiên có thể phát sinh lỗi trong quá trình
+người dùng sử dụng mà chưa được tìm ra trong những phương án kiểm thử nêu
+trên.
+4.5 Triển khai
+Trang web hiện tại chưa được trển khai trên thực tế. Hệ thống hiện đang được
+thử nghiệm ở máy chủ chạy trên máy tính cá nhân (localhost).
+ViệccàiđặtlocalhostđượcthựchiệnbằngXAMPP.XAMPPhoạtđộngdựatrên
+sự tích hợp của 5 phần mềm chính là Cross-Platform (X), Apache (A), MariaDB
+(M), PHP (P) và Perl (P), nên tên gọi XAMPP cũng là viết tắt từ chữ cái đầu của 5
+phần mềm này.
+Vì chạy localhost nên thời gian phản hồi người dùng nhanh.
+Như vậy, trong chương 4 em đã trình bày tổng quan về thiết kế biểu đồ gói, thiết
+kế cơ sở dữ liệu, thiết kế giao diện cho hệ thống cùng kết quả xây dựng hệ thống.
+Hệ thống được lập trình trên kiến trúc MVC. Trong chương 5, em sẽ trình bày về
+những đóng góp nổi bật của đồ án cũng như khó khăn đã gặp phải.
+51CHƯƠNG 5. CÁC GIẢI PHÁP VÀ ĐÓNG GÓP NỔI BẬT
+Trong Chương 5, em sẽ giới thiệu về đóng góp nổi bật của đồ án. Đồng thời
+cũng sẽ đề cập đến khó khăn gặp phải trong quá trình thực hiện đồ án và phương
+án khắc phục.
+5.1 Xây dựng quy trình tuyển dụng
+5.1.1 Đặt vấn đề
+Trong thời đại ngày nay, internet trở nên phổ biến, công nghệ cũng có những
+thay đổi mạnh mẽ nhằm hướng tới một thế giới tiện lợi và tiến bộ hơn. Chính vì
+vậy, việc tìm kiếm việc làm online càng ngày càng không còn xa lạ với mọi người.
+Đặc biệt, hình thức tìm việc online cũng giúp những ứng viên cụ thể là những điều
+dưỡng muốn ra nước ngoài làm việc trở nên dễ dàng hơn.
+Vậy những lợi ích của việc tìm việc online nói chung là gì?
+Thứ nhất, do nhu cầu tìm việc tăng cao, internet như một cánh đồng bao la với
+nhất nhiều các công việc từ các công ty khác nhau. Điều này giúp ứng viên tìm
+kiếm công việc dễ dàng hơn.
+Thứ hai, chỉ cần một chiếc máy tính hay một chiếc điện thoại được kết nối
+internetlàứngviênđãnắmtrongtaycơhộitìmđượcviệclàmtốtrấtcao.Điềunày
+sẽ giúp ứng viên trong việc cập nhật các cập nhật liên tục về các việc làm dù bạn
+đang ở bất cứ đâu, tránh để tuột mất những cơ hội tốt.
+Thứ ba, khi ứng viên tạo một một bản sơ yếu lí lịch thật tốt, thể hiện được năng
+lựccủabảnthân,cácnhàtuyểndụngsẽtựđộngliênlạcvớibạn,ứngviênsẽkhông
+phải lo sợ không tìm được một công việc ưng ý.
+Thứ tư, ứng viên có thể nộp đơn cho hàng chục thậm chí hàng trăm công việc
+mỗi ngày, tăng cơ hội đạt được một công việc mà ứng viên rất mong muốn.
+Ngoài ra, các nhà tuyển dụng cũng có thể tìm kiếm được những ứng viên tiềm
+năng một cách nhanh chóng và tiết kiệm thời gian, chi phí cho nhà tuyển dụng.
+Bên cạnh những lợi ích, thì còn những nhược điểm, rủi ro tiềm ẩn như:
+Đây có thể là công cụ cho những người có suy nghĩ không tốt thực hiện ý định
+xấucủamìnhnhưviệclừađảotuyểndụng,nhấtlàvớinhữngcôngviệctuyểnngười
+ra nước ngoài làm việc. Họ đưa ra một công việc với mức lương thật cao, điều kiện
+làm việc thật tốt nhưng khi đến phỏng vấn thì không được như vậy, ngược lại còn
+bắt các ứng viên đóng thêm nhiều khoản phí vô lý khác.
+52CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Khi đăng tin tuyển dụng trên các trang thông tin mạng xã hội, các nhà tuyển
+dụng có thể sẽ không thể tránh khỏi những tin đồn không đáng có, thậm chí là có
+những thành phần bịa đặt, bôi nhọ, làm ảnh hưởng đến danh tiếng công ty. Người
+lao động kiếm việc làm cũng sẽ trở nên e dè với công ty hơn cho dù họ chưa tiếp
+xúc hay tìm hiểu kỹ càng hơn về công ty.
+Hay có những ứng viên tạo CV ảo, rải CV khắp nơi nhưng đến khi liên lạc lại
+không liên lạc được.
+Hiện nay, khi muốn ứng tuyển ra nước ngoài làm việc, cụ thể là sang Nhật Bản
+làm điều dưỡng, ứng viên chỉ gửi một số thông tin liên lạc của bản thân cho công
+ty rồi chờ công ty liên lạc, tư vấn, sau đó mới nộp sơ yếu lý lịch cho công ty. Quy
+trình như vậy khá mất thời gian và có thể đem lại hiệu quả không tốt.
+Hay tại Việt Nam, một số gia đình do công việc bận rộn, không có thời gian
+chăm sóc người thân đang bệnh tại nhà được, thì họ phải tìm điều dưỡng tại nhà
+thông qua trung tâm giới thiệu việc làm. Việc này có một số rủi ro nhất định như
+lừađảo. Ngoàira,người tìmviệc còntốnkém mộtkhoảnphí đểnộpcho trungtâm
+mà còn mất thời gian chờ đợi. Người tìm điều dưỡng cũng chưa chắc có thể tìm
+được điều dưỡng ưng ý ngay từ đầu.
+Từ những lợi ích, nhược điểm và rủi ro nêu trên, xem đã xây dựng quy trình
+tuyển dụng làm cầu nối cho những điều dưỡng viên muốn tìm việc làm ở trong
+nước hay nước ngoài và các nhà tuyển dụng, các gia đình muốn tìm điều dưỡng
+viên làm việc tại cơ sở y tế hay tại nhà một cách tiết kiệm thời gian và chi phí hơn.
+5.1.2 Giải pháp
+Với quy trình tuyển điều dưỡng sang Nhật làm việc thì mỗi công ty có một quy
+trình khác nhau. Mỗi quy trình đều được xây dựng cho phù hợp với công ty. Các
+quy trình đều có những ưu, nhược điểm khác nhau. Song, đồ án này, em xây dựng
+quy trình tuyển dụng nhằm mục đích thống nhất quy trình tuyển dụng trong hệ
+thống, tiết kiệm thời gian và chi phí cho ứng viên cũng như nhà tuyển dụng.
+Về quy trình tuyển dụng trong hệ thống, đầu tiên nhà tuyển dụng đăng tải công
+việc lên hệ thống dựa vào nhu cầu tuyển dụng, phân tích các đặc điểm của công
+việc bao gồm kiến thức, kỹ năng và kinh nghiệm cần thiết. Tiếp theo, nhà tuyển
+dụng xây dựng bản mô tả công việc toàn diện (JD) sẽ cung cấp cho ưng viên tiềm
+năng một danh sách kiểm tra xem có đáp ứng được yêu cầu không trước khi nộp
+đơn. Các nhà tuyển dụng cũng có thể tiến hành tìm kiếm nguồn nhân sự tài năng
+thu hút họ và thúc đẩy họ nộp đơn là những khía cạnh quan trọng nhất của quá
+trình tuyển dụng. Sau khi nhận được đơn ứng tuyển từ ứng viên, nhà tuyển dụng
+53CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+tiến hành sàng lọc các đơn ứng tuyển. Cuối cùng, nhà tuyển dụng có thể tiến hành
+đánh giá ứng viên hay ứng viên cũng có thể đánh giá nhà tuyển dụng.
+Hình5.1:Quytrìnhtuyểndụng
+Về việc tiết kiệm thời gian và chi phí cho ứng viên cũng như nhà tuyển dụng.
+Hệ thống triển khai chức năng tìm kiếm công việc theo các tiêu chí như địa điểm
+làm việc, mức lương, loại hình công việc để ứng viên có thể tìm kiếm công việc
+một cách nhanh chóng và dễ dàng. Ngoài ra, khi xem chi tiết công việc nào đó,
+ứng viên cũng sẽ nhận được gợi ý từ hệ thống những công việc ở cùng khu vực với
+công việc mà ứng viên đang xem. Việc gợi ý như vậy giúp cho ứng viên có nhiều
+thêm nhiều lựa chọn và cơ hội tìm việc hơn. Hệ thống cũng triển khai chức năng
+tìm kiếm ứng viên dựa vào các tiêu chí như địa điểm làm việc mong muốn, mức
+lương mong muốn, trình độ học vấn, trình độ ngoại ngữ, loại hình công việc mong
+muốn để nhà tuyển dụng có thể nhanh chóng tìm được các ứng viên tiềm năng phù
+hợp với tiêu chí tuyển dụng.
+Về việc nộp sơ yếu lí lịch khi ứng tuyển, hệ thống triển khai chức năng tạo và
+tải CV ngay trên hệ thống để tiết kiệm thời gian cho ứng viên. Việc tạo CV cũng
+được chia nhỏ ra thành những mục nhỏ để ứng viên dễ dàng thao tác và quản lý.
+Chức năng tải CV giúp ứng viên lưu được CV của mình dưới định dạng file PDF
+giúp chia sẻ qua mạng dễ dàng, tính bảo mật cao và có thể hiển thị trên những môi
+trường khác nhau.
+Hình 5.2 mô tả kết quả sau khi tải CV về máy tính.
+54CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Hình5.2:MànhìnhhiểnthịkếtquảtảixuốngCV
+Hệ thống còn tích hợp chức năng hỗ trợ đa ngôn ngữ cụ thể là tiếng Việt, tiếng
+Nhật và tiếng Anh. Việc tích hợp đa ngôn ngữ giúp hệ thống tiếp cận được nhiều
+đốitượngngườidùnghơn,xóabỏràocảnngônngữvàtạoniềmtinvớingườidùng
+hơn.
+Hình 5.3, hình 5.4 là màn hình nội dung được hiển thị bằng tiếng Anh và tiếng
+Nhật.
+Hình5.3:MànhìnhnộidungđượchiểnthịbằngtiếngAnh
+55CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Hình5.4:MànhìnhnộidungđượchiểnthịbằngtiếngNhật
+Hiệu quả nổi bật của toàn bộ quy trình này là tính năng đánh giá. Việc đánh
+giá ứng viên hay công việc mà ứng viên đã ứng tuyển sẽ là nguồn tham khảo quan
+trọng cho những nhà tuyển dụng xem hồ sơ ứng viên hay ứng viên định ứng tuyển
+công việc. Nó còn là căn cứ quan trọng để nhà quản trị hệ thống đưa ra quyết định
+khóa tài khoản người dùng nếu có nhiều đánh giá không tốt.
+Hình 5.5 là màn hình hiển thị đánh giá của nhà tuyển dụng dành cho ứng viên
+đã nộp đơn ứng tuyển cho nhà tuyển dụng.
+Hình5.5:Mànhìnhhiểnthịđánhgiácủanhàtuyểndụng
+5.1.3 Kết quả đạt được
+Từgiảiphápnêutrên,Hệthốngđãxâydựngmộtquytrìnhtuyểndụngkháhoàn
+chỉnh, đảm bảo việc ứng tuyển được tiến hành một cách nhanh chóng và tiết kiệm
+chi phí.
+56CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Vềmặthạnchế,hệthốngchưatínhđượctổngđiểmđánhgiácủanhàtuyểndụng
+dựatrêntừngcôngviệc,vìvậykhikhóanhàtuyểndụng,nhàquảntrịhệthốngphải
+dựa vào phản hồi từ người dùng hay vào xem chi tiết từng công việc để xem tổng
+điểm đánh giá.
+5.2 Khó khăn khi thiết lập chức năng gửi thông báo thời gian thực cho ứng
+viên và nhà tuyển dụng
+5.2.1 Đặt vấn đề
+Trong hệ thống, nhà tuyển dụng sẽ nhận được thông báo mỗi khi ứng viên gửi
+đơn ứng tuyển, hủy đơn ứng tuyển hay quản trị hệ thống chặn hoặc bỏ chặn nhà
+tuyển dụng trên hệ thống. Ứng viên cũng sẽ nhận được thông báo khi nhà tuyển
+dụng cập nhật trạng thái đơn ứng tuyển hay quản trị hệ thống chặn hoặc bỏ chặn
+ứngviêntrênhệthống.Việctạothôngbáothờigianthực(real-time)giúpứngviên
+và nhà tuyển dụng nắm bắt được các trạng thái một cách nhanh nhất.
+Vì có khá nhiều cách để thiết lập chức năng gửi thông báo real-time nên em đã
+phân vân và gặp khó khăn trong việc quyết định cách thiết lập.
+5.2.2 Giải pháp
+Có một số giải pháp để xây dựng thông báo real-time ở PHP như sau:
+Sử dụng ajax request dữ liệu liên tục sau mỗi giây. Ưu điểm là nhanh gọn, dễ
+dùng. Tuy nhiên, Do phải yêu cầu dữ liệu liên tục như thế sẽ rất tốn tài nguyên
+sever.
+Sau khi tìm hiểu thêm, em biết đến công nghệ websocket. WebSoket là công
+nghệ hỗ trợ giao tiếp hai chiều giữa client và server bằng cách sử dụng một TCP
+socket để tạo một kết nối hiệu quả và ít tốn kém. WebSockets cho phép các kênh
+giao tiếp song song hai chiều và hiện đã được hỗ trợ trong nhiều trình duyệt như
+Firefox, Google Chrome, Safari,... Websocket có ưu điểm là cung cấp khả năng
+giao tiếp hai chiều mạnh mẽ, có độ trễ thấp và dễ xử lý lỗi. Ngoài ra, thông tin trả
+về từ websocket là vô cùng nhanh chóng nên nó được sử dụng trong nhiều trường
+hợp cần thời gian thực như là thông báo, chat, hiển thị biểu đồ hay thông tin chứng
+khoán...
+Tuy nhiên, việc tự xây dựng một hệ thống websocket là rất khó khăn nên em
+dùng một bên thứ ba là Pusher.
+Pusher là nhà cung cấp dịch vụ lưu trữ web đáng tin cậy giúp tạo ứng dụng thời
+gian thực thông qua API. Nó hoạt động hiệu quả cho cả ứng dụng di động và web.
+Khi nói về phần phụ trợ, Pusher đóng vai trò như một lớp giữa máy chủ và máy
+khách để tương tác 2 chiều trong thời gian thực [7] .
+57CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Sau khi dành thời gian nghiên cứu, tìm hiểu em thấy cách xử lý khả quan nhất
+là sử dụng Pusher. Lí do em sử dụng Pusher là vì do trong laravel đã được tích hợp
+sẵn một số config và thư viện cần thiết để kết nối với Pusher.
+Quy trình hoạt động của Pusher được thể hiện qua sơ đồ sau:
+Hình5.6:QuytrìnhhoạtđộngcủaPusher
+Khi Client duyệt web, dữ liệu sẽ được chuyến đến sever. Sau đó, sever chuyển
+tiếp đến Pusher thông qua pusher API. Cuối cùng, Pusher trả kết lại cho client
+(hoặc client khác).
+Sau đây, em xin trình bày các bước thực hiện việc sử dụng Pusher để tạo thông
+báo real-time (thời gian thực), ở đây em xin giả định là đã cài đặt một dự án laravel
+thành công:
+Bước 1: Để dùng được Pusher, chúng ta sẽ cài đặt gói thư viện Pusher PHP,
+mở command line và chạy lệnh:
+composer require pusher/pusher-php-server
+Tiếp theo, cài đặt Javascript dependencies:
+0Nguồn:https://viblo.asia/p/realtime-apps-with-laravel-5-and-pu
+sher-XL6lAgjRKek
+58CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+npm install
+Thao tác cuối cùng ở bước 1 là cài đặt 2 thư viện javascript cần thiết cho việc
+xử lý sự kiện thời gian thực đó làLaravel Echo và Pusher JS:
+npm install --save laravel-echo pusher-js
+Bước 2: Cài đặt Pusher:
+Muốn cài đặt được Pusher đầu tiên chúng ta cần có một tài khoản Pusher hoặc
+chúng ta có thể đăng nhập bằng tài khoản GitHub hay tài khoản Google.
+Sau đó, chúng ta sẽ tạo một Pusher Channels mới. Một lưu ý nhỏ là nếu ở Việt
+Nam thì chọn location là ap1(Singapore) để tốc độ truy cập được nhanh nhất.
+Sau khi tạo xong, ở tab App Keys sẽ có app_id, key, secret, cluster xuất hiện.
+Chúng ta sử dụng những kết quả xuất hiện ở trên chỉnh sửa vào file .env trong dự
+án laravel. Và cũng trong file .env sửa dòng BROADCAST_DRIVER=log thành
+BROADCAST_DRIVER=pusher.
+Sau khi chỉnh sửa xong ta chạy hai lệnh sau:
+$php artisan config:clear
+$php artisan cache:clear
+Bước3:ĐểcóthểlàmviệcđượcvớiBroadcasttatiếptụcmởfileconfig/app.php,
+tìm đến dòng App\Providers\BroadcastServiceProvider::class, dòng này ban
+đầu đang được comment lại, chúng ta bỏ comment nó đi. Sau đó kéo xuống dưới
+và thêm dòng sau vào cuối mảng aliases:
+’Pusher’ => Pusher\Pusher::class,
+Bước 4: Để xác định location và mã hóa dữ liệu trên đường truyền ta mở file
+config/broadcasting.php, thêm 2 dòng dưới đây vào "options" array trong mục
+cấu hình pusher:
+’cluster’ => ’ap1’,
+’encrypted’ => true
+Bước5:Tạomộtevent(sựkiện)mới,sẽcómộtfileNotificationEvent.phpđược
+tạo ra trong thư mục app\Events sau khi ta chạy lệnh
+php artisan make:event NotificationEvent
+Khi sự kiện NotificationEvent ở trên được chạy, một message trong hàm khởi
+tạo__constructcủachúngtasẽđượctruyềnlênserverPusherthôngquamộtkênh
+chung có tên là "send-message" và chúng ta có thể đặt tên cho kênh này tùy ý.
+Hình 5.6 minh họa đoạn code em viết trong file NotificationEvent.php
+59CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Hình5.7:NotificationEvent.php
+Bước 6: Cuối cùng, tạo Controller, View cho thông báo của chúng ta.
+Hình5.7minhhọađoạncodeởcontrollerđểthựchiệnchứcnăngthôngbáocho
+nhà tuyển dụng khi ứng viên hủy ứng tuyển.
+60CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Hình5.8:Pushertrongcontroller
+Hình5.8minh họađoạncodeởphần Viewđểhiểnthịnội dungthôngbáotrong
+thời gian thực đến nhà tuyển dụng khi ứng viên hủy ứng tuyển (Hình ảnh hiển thị
+rõ hơn được trình bày ở phần phụ lục).
+61CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Hình5.9:PushertrongphầnView
+5.2.3 Kết quả đạt được
+Sau khi nhà tuyển dụng, ứng viên hay nhà quản trị hệ thống thực hiện các thao
+tác trong phân quyền được sử dụng thì ngay lập tức bên tương ứng sẽ nhận được
+thông báo. Đây là phương án không tốn nhiều công sức lập trình, thời gian xây
+dựng ngắn, dễ bảo trì và mở rộng trong tương lai.
+Hình 5.10 mô tả chức năng thông báo thời gian thực mà nhà tuyển dụng nhận
+được khi ứng viên hủy ứng tuyển.
+62CHƯƠNG5. CÁCGIẢIPHÁPVÀĐÓNGGÓPNỔIBẬT
+Hình5.10:Minhhọachứcnăngthôngbáothờigianthực
+Trong chương này, em đã trình bày về những khó khăn và đóng góp của đồ án.
+Ở Chương 6, em sẽ kết luận và đưa ra định hướng phát triển tương lai cho đồ án.
+63CHƯƠNG 6. KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+Ở chương cuối cùng này, em sẽ đưa ra kết luận và hướng phát triển trong tương
+lai cho hệ thống.
+6.1 Kết luận
+Trong quá trình thực hiện đồ án, với mục tiêu xây dựng một hệ thống giúp
+những điều dưỡng viên tìm được công việc phù hợp cũng như các nhà tuyển dụng
+tìm được những ứng viên tiềm năng, em đã xây dựng được một trang web đáp ứng
+được những yêu cầu của bài toán.
+Hệ thống được xây dựng có những ưu điểm đáng chú ý sau:
+• Hệ thống hỗ trợ 3 ngôn ngữ Việt-Anh-Nhật cho người dùng.
+• Thiết kế giao diện của trang web đơn giản, tập trung vào các chức năng chính
+giúp người dùng dễ dàng sử dụng, tương tác.
+• Việc cấp lại mật khẩu được thực hiện thông qua email.
+• Hỗ trợ ứng viên tạo CV và tải CV về thiết bị dưới định dạng file PDF.
+• Cập nhật nhanh nhất những thông tin liên quan đến tuyển dụng cho người
+dùng.
+• Gợi ý những công việc cùng địa điểm với công việc mà ứng viên đang xem.
+Song, do hạn chế về thời gian và năng lực cũng như có định hướng sẵn, nên hệ
+thống vẫn còn những điểm hạn chế sau:
+• Chưa có nhiều mẫu CV cho ứng viên lựa chọn.
+• Về chức năng ứng tuyển, chưa lấy trực tiếp CV mà ứng viên tạo từ hệ thống
+mà khi ứng tuyển phải tải lên từ thiết bị của mình.
+Qua quá trình thực hiện đồ án tốt nghiệp này, em đã học hỏi được nhiều kiến
+thức, kỹ năng từ thầy cô, bạn bè. Ngoài ra, em cũng hiểu sâu hơn những kiến thức
+chuyên ngành như đặc tả yêu cầu, thiết kế và lập trình; những kỹ năng mềm như
+giaotiếp,phỏngvấnngườidùng,kháchhàng...;Quanhữngbàihọcvàkinhnghiệm
+quýbáunày,khảnăngcủabảnthâncũngđượcnângcao,từđó,giúpíchtrongcuộc
+sống cũng như công việc sau này.
+64CHƯƠNG6. KẾTLUẬNVÀHƯỚNGPHÁTTRIỂN
+6.2 Hướng phát triển
+Trong thời gian cho phép của đồ án, hệ thống được xây dựng đã đáp ứng, hoàn
+thiện được những yêu cầu cơ bản đối với bài toán được đặt ra về mặt chức năng.
+Tuy nhiên, so sánh với các ứng dụng tương tự hiện có trên thị trường, hệ thống cần
+phải cải thiện rất nhiều để có thể được áp dụng vào thực tế. Với hệ thống tại thời
+điểm hiện tại, em có 2 định hướng phát triển: cải thiện các chức năng của hệ thống
+và phát triển thêm các tính năng mới đáp ứng yêu cầu người dùng.
+Về định hướng cải thiện các chức năng của hệ thống: Phát triển tính năng gợi
+ý người dùng dựa trên kết quả tìm kiếm, có thêm nhiều mẫu CV cho ứng viên lựa
+chọn, người dùng có thể chỉnh sửa đánh giá của mình,...
+Về định hướng phát triển thêm các tính năng mới: hệ thống cần thêm những
+chức năng như nhà tuyển dụng và ứng viên có thể trao đổi trực tiếp với nhau qua
+hệ thống, xây dựng chatbot để người dùng có thể nhận được phản hồi sớm nhất khi
+sử dụng hệ thống,...
+Trên đây, em đã trình bày kết luận về đồ án cùng những hạn chế, thiếu sót và
+định hướng phát triển tương lai. Em xin phép được tạm kết phần nội dung chính
+của đồ án tốt nghiệp này. Em mong sẽ nhận được sự góp ý, đánh giá của các thầy
+cô, để sản phẩm của em được hoàn thiện hơn.
+65TÀI LIỆU THAM KHẢO
+[1] Topcv. [Online]. Available: https://www.topcv.vn/viec-lam.
+[2] Vietnamworks. [Online]. Available: https://www.vietnamworks.
+com/.
+[3] Laravelversion8.x.[Online].Available:https://laravel.com/docs/
+8.x/releases.
+[4] Livewire. [Online]. Available: https://laravel-livewire.com/.
+[5] Laraveljetstream.[Online].Available:https://jetstream.laravel.
+com/2.x/introduction.html.
+[6] Mysql. [Online]. Available: https://www.mysql.com/.
+[7] Pusher. [Online]. Available: https://pusher.com/docs/.
+[8] Visualstudiocode.[Online].Available:https://code.visualstudio.
+com/.
+66PHỤ LỤC
+67A. BIỂU ĐỒ USE CASE TỔNG QUÁT
+68B. PUSHER TRONG PHẦN VIEW
+69
