@@ -16,9 +16,7 @@ def pdf_to_text(pdf_path, output_txt):
             page_text = page.extract_text()
 
             # Check if the page contains the target line
-            if "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI" in page_text:
-                found_count += 1
-            if "INTRODUCTION" in page_text:
+            if "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI" in page_text or "INTRODUCTION" in page_text:
                 found_count += 1
 
             # Once the second occurrence is found, start adding text
@@ -28,7 +26,7 @@ def pdf_to_text(pdf_path, output_txt):
                 # print(first_line)
                 # remaining_text = '\n'.join(lines[1:])
                 
-                if first_line[:7] == "CHAPTER": 
+                if first_line[:7] == "CHAPTER" or first_line[:6] == "CHƯƠNG":
                     page_text = '\n'.join(lines[1:])
                     # print(page_text)
                 if page_text[-2] >= '0' and page_text[-2] <= '9':
@@ -42,8 +40,8 @@ def pdf_to_text(pdf_path, output_txt):
             txt_file.write(text)
 
 if __name__ == "__main__":
-    pdf_path = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/input4.pdf'
-    output_txt = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/output4.txt'
+    pdf_path = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/input2.pdf'
+    output_txt = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/output2.txt'
 
     pdf_to_text(pdf_path, output_txt)
 
