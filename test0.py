@@ -16,9 +16,9 @@ def pdf_to_text(pdf_path, output_txt):
                 word_count = len(line.split())
                 if "REFERENCE" in line:
                     break
-                if "..............." in line or "CHƯƠNG" in line or "Biểu đồ" in line or "Figure" in line or "Table" in line or "Ảnh" in line or "Bảng" in line or "Hình" in line:
+                if ". . . . " in line or "..............." in line or "CHƯƠNG" in line or "Biểu đồ" in line or "Figure" in line or "Table" in line or "Ảnh" in line or "Bảng" in line or "Hình" in line:
                     continue
-                if word_count > 10:
+                if word_count > 9:
                     text = text + line + " "
 
             if len(text) > 1:
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     output_dir = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/'
 
     # Process multiple input files
-    for i in range(1, 4):  # Adjust the range as needed
+    for i in range(1, 5):  # Adjust the range as needed
         pdf_path = os.path.join(input_dir, f'input{i}.pdf')
         output_txt = os.path.join(output_dir, f'output{i}.txt')
         pdf_to_text(pdf_path, output_txt)
