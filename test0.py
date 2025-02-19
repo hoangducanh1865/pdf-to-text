@@ -39,4 +39,4 @@ if __name__ == "__main__":
         pdf_path = os.path.join(input_dir, f'input{i}.pdf')
         output_txt = os.path.join(output_dir, f'output{i}.txt')
         pdf_to_text(pdf_path, output_txt)
-        print(f"PDF {pdf_path} converted to text successfully!")
+        print(f"PDF {i} converted to text successfully!")
