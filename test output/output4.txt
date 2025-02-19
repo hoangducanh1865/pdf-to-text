@@ -149,7 +149,6 @@ Finally, Conclusions summarizes the key findings of the thesis, highlighting the
 importance of diversity in LLM-EPS frameworks and the effectiveness of the pro-
 posed HSEvo framework. It also suggests potential directions for future research in
 the field of AHD.
-CHAPTER 1. LITERATURE REVIEW
 Artificial Intelligence (AI) is evolving at an extraordinary pace, inspiring inno-
 vative methods that blend disparate computational fields to tackle some of the most
 demanding challenges. In this rapidly shifting landscape, two particular paradigms
@@ -184,7 +183,6 @@ tions whether code snippets, pseudo-code, or textual explanations, and evolution
 ary frameworks guide these outputs toward continuous improvement.
 Recent studies show this collaboration. In code generation, studies [7], [16], [17]
 showcase evolutionary strategies that refine LLM suggested programs for enhanced
-CHAPTER 1. LITERATURE REVIEW
 quality and resilience. In text generation [18], [19] illustrates how evolutionary
 refinement can produce more precise and diverse linguistic outputs. Together, these
 works point to tangible gains, including improved error resolution, larger solution
@@ -220,7 +218,6 @@ tained during the above step are taken as the initial solutions, and the compu-
 tation process returns to step 2.
 Generally, as one global optimization method, EC has the following characteris-
 tics: (i) The search process begins from one group and not from one point; (ii) only
-CHAPTER 1. LITERATURE REVIEW
 the objective function is used in the search process; and (iii) the random method is
 used in the search process. Therefore, this method has the following advantages: (i)
 Highly versatile and can be used for different problems; (ii) it can solve problems
@@ -240,7 +237,6 @@ must be represented by its genotype. Therefore, the binary encoding method
 is generally applied, which is one string of numbers 0 and 1. However, for a
 complicated engineering problem, the real encoding method is always used,
 which is one string of a real number.
-CHAPTER 1. LITERATURE REVIEW
 2.Crossover operation. This operation is completed to mimic the genetic re-
 combination during biological mating. Generally, random pairing is applied.
 For different encoding methods, the crossover operation is different. For bi-
@@ -276,7 +272,6 @@ tence of a non-feasible individual can not only make the result incorrect but
 also make the efficiency low. To overcome this problem, a simple and easy
 method is proposed [23]. If the new mutated individual is non-feasible, it will
 be replaced by a randomly created feasible individual. However, this technique
-CHAPTER 1. LITERATURE REVIEW
 may have a very low efficiency for certain problems.
 3.Selection operation. The selection operation is a stochastic tournament model,
 where individuals are probabilistically chosen based on their fitness, ensuring
@@ -310,7 +305,6 @@ sophisticated neural network-based approaches:
 •Statistical language models: Early models, such as n-grams, estimated the
 probability of a word based on its preceding words but struggled with data
 sparsity and limited context understanding.
-1CHAPTER 1. LITERATURE REVIEW
 •Neural network models: The introduction of neural networks allowed for
 continuous word representations, alleviating some limitations of statistical
 language models. Recurrent neural networks and long short-term memory net-
@@ -344,7 +338,6 @@ where Q(queries), K(keys), and V(values) are matrices derived from the input
 embeddings, and dkis the dimensionality of the keys.
 Training LLMs involves several key steps. First, data collection is essential, as
 it requires aggregating extensive text data from diverse sources to capture a wide
-1CHAPTER 1. LITERATURE REVIEW
 range of language patterns. Once the data is collected, model training begins, uti-
 lizing high-performance computing resources to optimize the model’s parameters
 through techniques such as gradient descent. Additionally, scaling laws have been
@@ -364,7 +357,6 @@ straints or style guides must be applied, can be non-trivial to implement. Regar
 less, their unprecedented ability to generate complex textual or code-based artifacts
 has spurred interest in integrating LLMs into evolutionary workflows, particularly
 for tasks that benefit from a human-like creative spark.
-1CHAPTER 1. LITERATURE REVIEW
 𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛0
 ···
 ···LLM-based EPS: better heuristics are created via prompting LLMsover program codes.evolve···𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛0exchange sub-parts···𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛1selectionGenetic Programming: better heuristics are created through genetic operations over trees.···𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛𝑛
@@ -404,7 +396,6 @@ skeleton encapsulates known functional structures and isolates the critical logi
 for optimization, thereby reducing the search space and improving accuracy. The
 system employs an island-based model to maintain a diverse pool of candidate pro-
 grams, as shown in Figure 1.5. By avoiding local optima and encouraging diversity
-1CHAPTER 1. LITERATURE REVIEW
 Figure 1.4: The FunSearch process [13]. The LLM is shown a selection of the best pro-
 grams it has generated so far (retrieved from the programs database), and asked to generate
 an even better one. The programs proposed by the LLM are automatically executed, and
@@ -424,7 +415,6 @@ to handle computationally intensive tasks efficiently.
 FunSearch’s iterative process integrates several innovative techniques. Best-shot
 prompting ensures that high-quality programs guide the evolution process, while
 clustering within islands helps preserve program diversity. The inclusion of Boltz-
-1CHAPTER 1. LITERATURE REVIEW
 mann selection mechanisms and fitness-based sampling further refines the evolu-
 tionary trajectory, favoring both performance and interpretability. The system’s dis-
 tributed nature supports scalability, enabling it to tackle large, complex problems
@@ -492,7 +482,6 @@ Another noteworthy approach is Evolution of Heuristics (EoH), aimed explicitly
 at AHD while minimizing manual labor. EoH represents heuristics both as natural
 language “thoughts” and as executable code, mirroring the way human experts
 conceptualize and then implement strategies. By employing a population-based
-1CHAPTER 1. LITERATURE REVIEW
 algorithm, EoH evolves these heuristics over successive generations with selection,
 crossover, and mutation operations guided by LLMs.
 EoH employs a population-based evolutionary model where heuristics evolve
@@ -575,7 +564,6 @@ ReEvo employs two types of LLMs: a Generator LLM, which produces initial code
 snippets or heuristics, and a Reflector LLM, which provides both short-term and
 long-term reflections to guide iterative improvements.
 The genetic cycle in ReEvo, as shown in Figure 1.8 consists of the following
-1CHAPTER 1. LITERATURE REVIEW
 steps: (i) Population Initialization: Prompts generate initial heuristic candidates.
 (ii) Selection: Parent heuristics are chosen based on their performance. (iii) Short-
 term Reflection: Comparative analysis of parent performance informs offspring
@@ -612,7 +600,6 @@ able outcomes.
 This chapter has charted the emerging partnership between EC and LLMs, show-
 casing how their combined strengths can transform AHD. In LLM-EPS, LLMs
 contribute a wellspring of fresh heuristic ideas, and evolutionary methods system-
-1CHAPTER 1. LITERATURE REVIEW
 atically sharpen and validate these concepts. Yet, to extract maximum value from
 this synergy, careful attention must be paid to diversity the balancing force that
 fosters both robust exploration and refined exploitation.
@@ -622,7 +609,6 @@ avoid becoming trapped in suboptimal solutions. Diversity is the crucial compo-
 nent that integrates a genuinely adaptive search process, facilitating breakthroughs
 in problem-solving. In the following chapter, advanced methods for incorporating
 diversity into LLM-EPS will be examined.
-1CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 This chapter introduces a method for encoding the LLM-EPS population and
 proposes two metrics for measuring diversity: SWDI and CDI. Following this, a
 diversity analysis will be conducted on previous LLM-EPS frameworks, including
@@ -655,7 +641,6 @@ This index serves as a crucial metric in maintaining the balance between explo-
 ration and exploitation within heuristic search spaces. A higher index score sug-
 gests a more uniform distribution of individuals across the search space, thus pro-
 1https://peps.python.org/pep-0008
-1CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 moting exploration. Conversely, a lower index score indicates concentration around
 specific regions, which may enhance exploitation but also increase the risk of pre-
 mature convergence.
@@ -689,7 +674,6 @@ particles locations decreases while, missing information or uncertainty increase
 In graph theory, each edge can be assigned a weight representing, for example,
 the energy required to traverse that edge. A graph with a complex structure and
 varying edge weights exhibits higher entropy, indicating a more disordered system.
-2CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 Conversely, a simpler structure with uniformly distributed weights corresponds to
 lower entropy.
 An Minimum Spanning Tree (MST) of a connected, edge-weighted graph is a
@@ -721,7 +705,6 @@ i∈ {1,2, . . . , #A−1}. The probability distribution of these distances is g
 pi=diP#A−1
 j=1dj(2.7)
 The cumulative diversity is then calculated using the Shannon entropy:
-2CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 H(X) =−#A−1X
 i=1pilog(pi) (2.8)
 This method enables the collection of the complete diversity present in the
@@ -757,7 +740,6 @@ OP are presented in Figure 2.1, Figure 2.2, and Figure 2.3, respectively.
 From figure 2.1, there are a few observations that can be drawn. First, the two di-
 versity measurement metrics have a noticeable correlation with the objective scores
 2https://huggingface.co/Salesforce/codet5p-110m-embedding
-2CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 100K 200K 300K 400K
 T otal tokens1.01.52.02.53.03.54.0Objective score
 100K 200K 300K 400K
@@ -806,7 +788,6 @@ To analyze the overall diversity of previous LLM-EPS frameworks, experiments
 were conducted on three distinct LLM-EPS frameworks: FunSearch [13], ReEvo
 [15], and EoH [14], focusing on three separate AHD problems (BPO, TSP, OP).
 The details of each experiment are presented in Section 4.1. Note that, as high-
-2CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 100K 200K 300K 400K
 T otal tokens14.5
 14.0
@@ -873,14 +854,12 @@ suring diversity within LLM-EPS frameworks, focusing on SWDI and CDI. The
 proposed population encoding method addresses the unique challenge of repre-
 senting code snippets as vectors, enabling the application of these diversity met-
 rics. Through extensive experiments on various AHD problems, the correlation
-2CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 between diversity metrics and objective scores has been explored, revealing the
 delicate balance between exploration and exploitation in heuristic search spaces.
 The analysis of previous LLM-EPS frameworks, including FunSearch, ReEvo, and
 EoH, underscores the trade-offs between diversity and performance, highlighting
 the importance of maintaining an optimal level of diversity to avoid premature con-
 vergence and enhance solution quality.
-2CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 This chapter introduces a novel LLM-EPS framework called Harmony Search
 Evolution (HSEvo). HSEvo aims to enhance the diversity of the population while
 improving optimization performance and relieving the trade-off between these two
@@ -914,7 +893,6 @@ instructions (e.g., "You are an expert in the domain of optimization heuristics.
 "You are Albert Einstein, developer of relativity theory..."), details instructions in
 the next Section 3.2.1. This approach aims to enrich the heuristic generation pro-
 cess by incorporating diverse perspectives and expertise.
-2CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Initiation 
 population 
 of heur isticx NSelec tionCr osso v erFlash Reflec tion
@@ -950,7 +928,6 @@ Later, [15] also proposed integrating Reflections into LLM-EPS in ReEvo as an
 approach analogous to providing “verbal gradient” information within heuristic
 spaces. HSEvo argue that reflecting on each pair of heuristic parents individually
 is not generalized and wastes resources. To address these issues flash reflection
-2CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 proposed to alternative Reflection method for LLM-EPS. The flash reflection pro-
 cess is structured into two distinct steps.
 •First, at each time step t, the individuals selected during the selection phase
@@ -987,7 +964,6 @@ which can potentially lead to better-performing heuristics. The prompt includes
 task specifications, a pair of parent heuristics, guide information part of flash re-
 flection, and generation instructions.
 Elitist mutation. HSEvo employs an elitist mutation strategy, focusing its muta-
-2CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 tion efforts on the "elite" individual, which represents the best-performing heuris-
 tic found so far. This approach leverages the generator LLM to mutate this elite
 individual, incorporating insights derived from the LLM-analyzed flash reflec-
@@ -1024,7 +1000,6 @@ stores a set of parameter combinations, and iteratively generating new har-
 monies by adjusting existing ones or creating new ones randomly. The per-
 formance of each harmony is evaluated, and the harmony memory is updated
 with better-performing combinations. This iterative process continues for a
-2CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 predefined number of iterations, allowing the HS algorithm to explore param-
 eter space and identify optimal or near-optimal parameter settings.
 •After the parameter optimization is complete, the optimized individual is marked
@@ -1048,7 +1023,6 @@ An overview of the flow of HSEvo is also described through pseudo-algorithm
 1, where function_evals <max_fe serves as the stopping condition. Here,
 function_evals is a counter variable tracking the number of evaluated indi-
 viduals, and max_fe is the maximum number of individuals HSEvo will evaluate.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Algorithm 1: HSEvo Framework
 Data: Configuration files, problem-specific parameters
 Result: Best code found and its path
@@ -1085,7 +1059,6 @@ Increment iteration count and log results;
 Check and update reflection lists based on elitist changes;
 end
 Return the best code found and its path;
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 3.2 HSEvo prompt examples
 This section synthesizes the prompts used in the HSEvo framework. The HSEvo
 prompt system includes four stages: initialization, population, flash reflection, crossover,
@@ -1117,7 +1090,6 @@ robin sequence from the list:
 Variable function_name ,problem_description andfunction_description
 correspond to the heuristic function name, the specific problem description, and
 the function description, respectively, which will be detailed in the section 3.2.7.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 3.2.2 Population initialization prompt
 Prompt 3: User prompt for population initialization.
 {task_description}
@@ -1131,7 +1103,6 @@ ial heuristic function for the corresponding problem.
 Prompt 4: System prompt for reflector LLM.
 You are an expert in the domain of optimization heuristics. Your task is to
 provide useful advice based on analysis to design better heuristics.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Prompt 5: User prompt for flash reflection pharse 1.
 ### List heuristics
 Below is a list of design heuristics ranked from best to worst.
@@ -1157,7 +1128,6 @@ I’m going to tip $999K for a better heuristics! Let’s think step by step.
 list_ranked_heuristics is a list of heuristic functions obtained by group-
 ing parent pairs from selection, removing duplicates, and ranking based on the
 objective scores.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Prompt 6: User prompt for flash reflection pharse 2.
 Your task is to redefine ‘Current self-reflection’ paying attention to avoid all
 things in ‘Ineffective self-reflection’ in order to come up with ideas to design
@@ -1193,7 +1163,6 @@ and docstring ( <50 words) to description key idea of heuristics design.
 I’m going to tip $999K for a better heuristics! Let’s think step by step.
 function_signature_better ,code_better andfunction_ sig-
 nature_worse ,code_worse are the function signatures and code of the better
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 and worse parent individuals, respectively. flash_refection is the output of
 the flash reflection step 2 from the current generation.
 3.2.5 Elitist mutation prompt
@@ -1227,7 +1196,6 @@ element is end value corresponding with parameter.
 other Python code block: “‘python ... “‘ .
 elitist_code is the snippet/string code of the elitist individual in the cur-
 rent population that has not yet undergone harmony search.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Table 3.1: Problem descriptions used in prompts
 Problem Problem description
 BPO Solving online Bin Packing Problem (BPP). BPP requires packing a
@@ -1264,7 +1232,6 @@ Problem-specific prompts are given below:
 •Figure 3.3 shows the function_signature , which also includes the func-
 tion_name of each problem.
 •Figure 3.6 shows the seed_function used for each problem.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 3.3 Generated heuristics
 The best heuristics generated by HSEvo for all problem settings are presented
 in Figure 3.9, 3.10, 3.11, 3.12, 3.13, and 3.14.
@@ -1279,7 +1246,6 @@ vergence. By incorporating the HS algorithm for fine-tuning parameters, HSEvo
 further optimizes its best-performing heuristics, achieving a synergy between ex-
 ploration and exploitation. Along with this, detailed descriptions of prompts, pseu-
 docode, and the best heuristics on various benchmarks using HSEvo are provided.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1import numpy as np
 2
 3def heuristics_v2(prize: np.
@@ -1344,7 +1310,6 @@ Figure 3.3: Function signatures used in HSEvo for BPO.
 local_opt_tour: np.ndarray, edge_n_used: np.ndarray) -> np.
 ndarray:
 Figure 3.4: Function signatures used in HSEvo for TSP.
-3CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1def heuristics_v{version}(node_attr: np.ndarray, edge_attr: np.
 ndarray, node_constraint: float )->np.ndarray:
 Figure 3.5: Function signatures used in HSEvo for OP.
@@ -1366,7 +1331,6 @@ of each bin.
 13 priorities = -log_ratios
 14 return priorities
 Figure 3.6: Seed heuristics used in HSEvo for BPO.
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1def update_edge_distance(edge_distance: np.ndarray,
 local_opt_tour: np.ndarray, edge_n_used: np.ndarray) -> np.
 ndarray:
@@ -1400,7 +1364,6 @@ Figure 3.7: Seed heuristics used in HSEvo for TSP.
 edge_constraint: float )->np.ndarray:
 2 return np.ones_like(edge_attr)
 Figure 3.8: Seed heuristics used in HSEvo for OP.
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1import numpy as np
 2import random
 3import math
@@ -1444,7 +1407,6 @@ item)), 0)
 28
 29 # ...
 Figure 3.9: The best heuristic for BPO found by HSEvo.
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1 #....
 2
 3
@@ -1470,7 +1432,6 @@ np.min(scores)) ifmax_score > np. min(scores) else scores
 17
 18 return inverted_priorities
 Figure 3.10: The best heuristic for BPO found by HSEvo (continue).
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1import numpy as np
 2
 3
@@ -1518,7 +1479,6 @@ penalty # Ensure symmetry
 30
 31 # ...
 Figure 3.11: The best heuristic for TSP found by HSEvo.
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1 # ...
 2
 3
@@ -1548,7 +1508,6 @@ adjustment_factor)
 19
 20 return updated_edge_distance
 Figure 3.12: The best heuristic for TSP found by HSEvo (continue).
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1import numpy as np
 2
 3
@@ -1592,7 +1551,6 @@ adjusted_edge + normalization_epsilon)
 35
 36 # ...
 Figure 3.13: The best heuristic for OP found by HSEvo.
-4CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1 # ...
 2
 3
@@ -1620,7 +1578,6 @@ normalization_epsilon)
 20
 21 return score_matrix
 Figure 3.14: The best heuristic for OP found by HSEvo (continue).
-4CHAPTER 4. NUMERICAL RESULTS
 To unveil the potential of the HSEvo framework. This chapter presents a series
 of experiments designed to benchmark its performance against existing LLM-EPS
 methodologies. By tackling a range of optimization challenges, including BPO,
@@ -1653,7 +1610,6 @@ lenge is particularly focused on the online packing scenario, where items are in
 troduced one at a time and must be packed immediately upon arrival without prior
 knowledge of future items. This contrasts with the offline scenario, where all items
 are available beforehand and can be optimized together.
-4CHAPTER 4. NUMERICAL RESULTS
 Table 4.1: Summary of parameters settings
 Description of Setting Value
 LLM (generator and reflector) gpt-4o-mini-2024-07-18
@@ -1693,7 +1649,6 @@ tion, generated by Concorde [45], is used as the objective score.
 Solver. GLS was used as the solver for this benchmark. GLS explores the so-
 lution space using local search operations guided by heuristics. The idea behind
 using this solver is to explore the potential of search penalty heuristics for LLM-
-4CHAPTER 4. NUMERICAL RESULTS
 Table 4.2: Problems parameters used for heuristic evaluations
 Problem Problem size # of iterations Other
 BPO 5000 - C=100
@@ -1728,7 +1683,6 @@ an evolutionary algorithm that integrates solution sampling with pheromone trail
 updates. It employs stochastic solution sampling, which is biased towards more
 promising solution spaces based on heuristics. The population size is set at 20 for
 ACO to solve OP50.
-5CHAPTER 4. NUMERICAL RESULTS
 Table 4.3: Experiment results on different AHD problems
 MethodBPO TSP OP
 CDI (↑) Obj. (↓) CDI (↑) Obj. (↓) CDI (↑) Obj. (↓)
@@ -1775,7 +1729,6 @@ To investigate the impact of my framework on the diversity of the population,
 Figure 4.1, 4.2, and 4.3 was plotted to illustrate the diversity metrics and objective
 1Extending FunSearch to solve the OP problem with an ACO solver caused conflicts that could
 not be resolved with reasonable effort.
-5CHAPTER 4. NUMERICAL RESULTS
 100K 200K 300K 400K
 T otal tokens−14.5−14.0−13.5−13.0−12.5Objective score
 100K 200K 300K 400K
@@ -1816,7 +1769,6 @@ eliminated from HSEvo; instead, an experimental setup will incorporate harmony
 search into the ReEvo framework. The results of the experiment concerning the OP
 problem are summarized in Table 4.4. The findings indicate that HSEvo surpasses
 both ReEvo and the variant of ReEvo that includes harmony search, in terms of both
-5CHAPTER 4. NUMERICAL RESULTS
 Table 4.5: Ablation results on flash reflection
 MethodOP
 CDI (↑) Obj. (↓)
@@ -1853,7 +1805,6 @@ AHD problems. The results reveal HSEvo’s ability to consistently achieve super
 objective scores while maintaining robust diversity indices. These outcomes val-
 idate the hypothesis that diversity-driven optimization strategies, as embodied in
 HSEvo, are instrumental in advancing AHD and evolutionary processes.
-5CHAPTER 4. NUMERICAL RESULTS
 Furthermore, the ablation studies emphasize the pivotal contributions of the har-
 mony search and flash reflection components in enhancing performance of HSEvo.
 While harmony search bolsters the optimization process by promoting diversity,
@@ -1862,7 +1813,7 @@ tions. Together, these components elevate HSEvo’s capabilities, establishing i
 robust framework for optimizing heuristic design. The results of this chapter lay a
 solid foundation for future exploration of HSEvo’s potential in broader optimiza-
 tion domains, reinforcing its role as a transformative advancement in LLM-EPS.
-5CONCLUSIONS
+CONCLUSIONS
 This thesis provides the pivotal role of population diversity in enhancing the
 performance of LLM-EPS for AHD. Two novel diversity measurement metrics,
 the SWDI and CDI, were introduced to analyze and monitor population diversity
@@ -1897,7 +1848,6 @@ Gemini, and others could significantly reinforce the robustness of the findings 
 this thesis. Another area of concern is parameter sensitivity. The harmony search
 component introduces additional hyperparameters HMCR, PAR, and bandwidth
 that influence performance. This is a gap that persists across the LLM-EPS, in-
-5CHAPTER 4. NUMERICAL RESULTS
 cluding in prior works like FunSearch, EoH, and ReEvo. Addressing parameter
 sensitivity represents a promising avenue for future research.
 Publication
@@ -1907,7 +1857,7 @@ AAAI Conference on Artificial Intelligence (AAAI-25):
 evating Automatic Heuristic Design with Diversity-Driven Harmony Search
 and Genetic Algorithm Using LLMs", The 39th Annual AAAI Conference on
 Artificial Intelligence , (AAAI-25), 2025. (accepted, rank A* ).
-5REFERENCE
+REFERENCE
 [1] N. Pillay and R. Qu, Hyper-heuristics: theory and applications . Springer,
 2018.
 [2] E. K. Burke, M. Gendreau, M. Hyde, et al. , “Hyper-heuristics: A survey of
@@ -1942,7 +1892,7 @@ Learning , vol. 4, no. 4, pp. 1–40, 2024.
 [12] A. Chen, D. Dohan, and D. So, “Evoprompting: Language models for code-
 level neural architecture search,” Advances in Neural Information Processing
 Systems , vol. 36, 2024.
-5REFERENCE
+REFERENCE
 [13] B. Romera-Paredes, M. Barekatain, A. Novikov, et al. , “Mathematical dis-
 coveries from program search with large language models,” Nature , vol. 625,
 no. 7995, pp. 468–475, 2024.
@@ -1980,7 +1930,7 @@ survey,” ACM Computing Surveys , vol. 55, no. 6, 1–28, Dec. 2022, ISSN:
 dx.doi.org/10.1145/3530811 .
 [27] R. Zhang, F. Liu, X. Lin, Z. Wang, Z. Lu, and Q. Zhang, “Understanding the
 importance of evolutionary search in automated heuristic design with large
-5REFERENCE
+REFERENCE
 language models,” in International Conference on Parallel Problem Solving
 from Nature , Springer, 2024, pp. 185–202.
 [28] F. Liu, X. Tong, M. Yuan, and Q. Zhang, “Algorithm evolution using large
@@ -2018,7 +1968,7 @@ Processing Systems , vol. 36, 2024.
 [39] Y. Wang, H. Le, A. D. Gotmare, N. D. Bui, J. Li, and S. C. Hoi, “Codet5+:
 Open code large language models for code understanding and generation,”
 arXiv preprint arXiv:2305.07922 , 2023.
-5REFERENCE
+REFERENCE
 [40] N. Shinn, F. Cassano, A. Gopinath, K. Narasimhan, and S. Yao, “Reflexion:
 Language agents with verbal reinforcement learning,” Advances in Neural
 Information Processing Systems , vol. 36, 2024.
@@ -2040,4 +1990,3 @@ routing problem,” Computers & Operations Research , vol. 105, pp. 32–46,
 2019.
 [47] W. Kool, H. Van Hoof, and M. Welling, “Attention, learn to solve routing
 problems!” arXiv preprint arXiv:1803.08475 , 2018.
-6

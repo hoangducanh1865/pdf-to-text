@@ -23,8 +23,19 @@ def pdf_to_text(pdf_path, output_txt):
 
             # Once the second occurrence is found, start adding text
             if found_count >= 2:
-                # text = text + page_text[:-1] + '\n'
-                text = text + page_text[:-1]
+                lines = page_text.split('\n')
+                first_line = lines[0]
+                # print(first_line)
+                # remaining_text = '\n'.join(lines[1:])
+                
+                if first_line[:7] == "CHAPTER": 
+                    page_text = '\n'.join(lines[1:])
+                    # print(page_text)
+                if page_text[-2] >= '0' and page_text[-2] <= '9':
+                    text = text + page_text[:-2]
+                else:
+                    text = text + page_text[:-1]
+                
 
         # Write the extracted text to a text file
         with open(output_txt, 'w', encoding='utf-8') as txt_file:
