@@ -16,7 +16,7 @@ def pdf_to_text(pdf_path, output_txt):
             page_text = page.extract_text()
 
             # Check if the page contains the target line
-            if "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI" in page_text:
+            if "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI" or "INTRODUCTION" in page_text:
                 found_count += 1
 
             # Once the second occurrence is found, start adding text
