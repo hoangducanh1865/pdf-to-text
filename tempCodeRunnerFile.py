@@ -1,2 +1,4 @@
- # if first_line[:7] == "CHAPTER":
-                #     page_text = '\n'.join(lines[1:])
+import google.generativeai as genai
+
+# genai.configure(api_key="AIzaSyAffpVvFOy8fa1z1apVEvbWzjGUnWfzwVw")
+# model = genai.GenerativeModel("gemini-2.0-flash-exp")

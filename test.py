@@ -40,8 +40,8 @@ def pdf_to_text(pdf_path, output_txt):
             txt_file.write(text)
 
 if __name__ == "__main__":
-    pdf_path = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/input2.pdf'
-    output_txt = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/output2.txt'
+    pdf_path = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/input4.pdf'
+    output_txt = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/output4.txt'
 
     pdf_to_text(pdf_path, output_txt)
 
