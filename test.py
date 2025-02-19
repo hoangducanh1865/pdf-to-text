@@ -1,15 +1,18 @@
-import pdfplumber
+import PyPDF2
 
 def pdf_to_text(pdf_path, output_txt):
-    # Open the PDF file using pdfplumber
-    with pdfplumber.open(pdf_path) as pdf:
+    # Open the PDF file in read-binary mode
+    with open(pdf_path, 'rb') as pdf_file:
+        # Create a PdfReader object instead of PdfFileReader
+        pdf_reader = PyPDF2.PdfReader(pdf_file)
+
         # Initialize an empty string to store the text
         text = ''
         found_count = 0  # Counter to track occurrences of "CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI"
         
         # Loop through the pages starting from the first page
-        for page_num in range(len(pdf.pages)):
-            page = pdf.pages[page_num]
+        for page_num in range(len(pdf_reader.pages)):
+            page = pdf_reader.pages[page_num]
             page_text = page.extract_text()
 
             # Check if the page contains the target line
