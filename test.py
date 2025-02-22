@@ -16,12 +16,13 @@ def pdf_to_text(pdf_path, output_txt):
             txt_file.write(text)
 
 if __name__ == "__main__":
-    input_dir = '/Users/hoangducanh/Documents/Hoc o HUST/pdf_to_text/test_input/'
-    output_dir = '/Users/hoangducanh/Documents/Hoc o HUST/pdf_to_text/test_output/'
+    input_dir = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/'
+    output_dir = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/'
 
     # Process multiple input files
-    for i in range(1, 6):  # Adjust the range as needed
+    for i in range(1, 5):  # Adjust the range as needed
         pdf_path = os.path.join(input_dir, f'input{i}.pdf')
         output_txt = os.path.join(output_dir, f'output{i}.txt')
         pdf_to_text(pdf_path, output_txt)
         print(f"PDF {i} converted to text successfully!")
+        
