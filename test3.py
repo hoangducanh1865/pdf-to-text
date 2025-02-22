@@ -252,7 +252,7 @@ if __name__ == "__main__":
     input_dir = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test input/'
     output_dir = '/Users/hoangducanh/Library/Mobile Documents/com~apple~CloudDocs/Hoc o HUST <3/Nhóm anh Minh/pdf to text/test output/'
     
-    for i in range(1, 6):
+    for i in range(1, 5):
         pdf_path = os.path.join(input_dir, f'input{i}.pdf')
         output_txt = os.path.join(output_dir, get_file_name(pdf_path))
         pdf_to_text(pdf_path, output_txt)

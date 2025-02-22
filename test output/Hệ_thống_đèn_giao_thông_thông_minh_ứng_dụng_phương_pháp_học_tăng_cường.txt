@@ -71,15 +71,6 @@ I hope that my thesis and the result I managed to achieve will play a part in
 future optimizing solution that help to solve the problem in real-world. From that,
 everyone can join traffic with fast, safe, and please manner.
 
-DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT
-API Giao diện lập trình ứng dụng
-DQN Phương pháp Deep Q Network
-MDP Quá trình quyết định Markov (Markov
-ML-Agents Framework học máy của Unity
-PoC Bằng chứng khái niệm (Proof of
-PPO Phương pháp Proximal Policy
-SDK Bộ công cụ phát triển phần mềm
-CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
 Hiện nay, trong thời đại cách mạng công nghiệp 4.0, sự phát triển và ứng dụng
 công nghệ trở thành một trong những yếu tố tiên quyết dẫn đến thành công của
 nhiều ngành nghề và lĩnh vực. Trong số đó, trí tuệ nhân tạo (AI [1]) được xem là
@@ -111,7 +102,6 @@ tính một cách trung bình với các mốc thời gian lớn, điều này d
 thực tế. Bởi vì bản chất của phương pháp trên không thể hiện được các thông tin
 về tình trạng giao thông thực tế ở ngoài môi trường, do đó sẽ không thể đưa ra các
 tín hiệu chuẩn xác và phù hợp nếu các ước lượng trên không được thoả mãn. Bên
-CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
 cạnh đó thì việc tính toán trên cũng phải diễn ra thường xuyên để có thể theo kịp
 với những thay đổi ngoài thực tế, điều này cũng yêu cầu có một nguồn nhân lực và
 Với các hạn chế được nêu trong phần 1.2, em đã đi đến một hướng giải quyết
@@ -141,7 +131,6 @@ Thông qua chương này, người đọc có thể hiểu rõ hơn về nền t
 trình bày, có khả năng hiểu các khái niệm, kiến thức, thuật toán được sử dụng trong
 đồ án này. Đồng thời, em cũng trình bày một số phương pháp đã và đang được phát
 triển để giải quyết bài toán, cùng với đó là những điểm mạnh và hạn chế của các
-CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
 Chương 3 sẽ bao gồm thông tin chi tiết về giải pháp mà em đưa ra và quá trình
 phát triển nó. Người đọc có thể hiểu được tư tưởng cốt lõi của giải pháp, đồng thời
 cũng có khả năng kết hợp với lý thuyết để có thể tái tạo lại được các kết quả mà em
@@ -153,7 +142,6 @@ Trong phần tổng kết em sẽ tổng kết lại thông tin về đồ án, 
 trình bày một số hướng phát triển trong tương lai.
 Cuối báo cáo sẽ là danh sách các tài liệu tham khảo mà em sử dụng trong quá
 trình phát triển đồ án cũng như thực hiện viết báo cáo cho đồ án.
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Đối với bài toán đã được giới thiệu trong Chương 1, để giải quyết được bài toán,
 trước hết ta cần tìm hiểu một số nền tảng lý thuyết. Từ những lý thuyết này, ta có
 thể hiểu hơn về bài toán đặt ra cũng như có cái nhìn tổng quan các hướng đi cho
@@ -181,7 +169,6 @@ Học tăng cường đã được ứng dụng trong kiểm soát tín hiệu �
 một số nghiên cứu khoa học trước đây tuy nhiên còn tương đối đơn giản với môi
 trường mô phỏng thiếu thực tế. Học tăng cường đã bắt đầu được ứng dụng trong
 kiểm soát tín hiệu đèn giao thông từ những năm của thập niên 90. Nghiên cứu [2]
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 tổng hợp các phương pháp từ 1997 tới năm 2010 sử dụng học tăng cường trong lĩnh
 vực này. Trong giai đoạn này, các phương pháp phần lớn bị giới hạn ở Q-learning
 [3] dạng bảng với giá trị Q được tính toán bằng một hàm tuyến tính. Bên cạnh đó,
@@ -216,7 +203,6 @@ nên khá nổi tiếng nhờ một số những kết quả đạt được nh�
 nhất trong trò chơi DOTA2. Trong phần này, chúng ta sẽ tìm hiểu về các kiến thức
 nền tảng của học tăng cường từ đó đi đến một thuật toán nổi tiếng trong nhóm này
 là Proximal Policy Optimization [13].
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Trong phần lớn các phương pháp, giải thuật trong trí tuệ nhân tạo và đặc biệt
 là trong học máy, ta thường hay mô hình hoá bài toán bằng các mô hình toán học.
 Do đó, đối với học tăng cường, việc mô hình hoá bài toán bằng toán học cũng là
@@ -244,7 +230,6 @@ Bài toán cốt lõi của MDP đó là tìm ra một nguyên tắc (policy) π
 hành động a=π(s). Mục đích của bài toán là tìm được policy πtối ưu sao cho hàm
 tích luỹ điểm thưởng được tối ưu hoá.
 t=0γtRat(st, st+1)(trong đó ta chọn at=π(st))
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Trong học tăng cường, điều tiên quyết mà ta hướng đến là tìm ra một policy tối
 ưu. Từ đó, agent có thể biết được nên đưa ra các hành động như thế nào trong từng
 trạng thái cụ thể của môi trường.
@@ -266,7 +251,6 @@ Trong bài toán này, ta biết trước được mô hình gồm các tính ch
 từ đó, ta có thể dự đoán được trạng thái tiếp theo khi ta đưa ra một hành động. Một
 ví dụ điển hình cho bài toán này là cờ vua. Trong cờ vua, với mỗi trạng thái slà thế
 cờ hiện tại, khi ta đưa ra hành động a, một nước đi nào đó, ta có thể biết được trạng
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Điểm cốt lõi của học tăng cường dựa và mô hình là sử dụng các tính chất đã biết
 của môi trường, cùng với đó là xây dựng các hàm giá trị để tìm ra một chuỗi các
 trạng thái và thành động (trajectory τ) tối ưu.
@@ -295,7 +279,6 @@ Trong một số môi trường, số lượng trạng thái là rất lớn. Đ
 lưu trữ giá trị cho từng trạng thái trở thành một việc bất khả thi. Để giải quyết vấn
 đề này, ta có thể ứng dụng các kết quả đã đạt được trong học giám sát (supervised
 learning) và huấn luyện một mô hình có khả năng ước lượng được V.
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 •ylà giá trị mục tiêu và ta có thể dùng các phương pháp như Monte Carlo [15],
 Temoral Difference [16] để tính toán.
 c, Hàm giá trị hành động
@@ -318,7 +301,6 @@ hành động atrong trạng thái sso với mức điểm thưởng kỳ vọng
 thể nhận được từ trạng thái s.
 •Vπ(st)là lượng điểm thưởng kỳ vọng mà ta có thể đạt được từ trạng thái stvà
 làm theo policy πtừ đó trở đi.
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 •Qπ(st, at)là lượng điểm thưởng kỳ vọng mà ta có thể đạt được nếu thực hiện
 hành động attrong trạng thái stvà làm theo policy từ đó trở đi.
 •Aπ(st, at)là lượng lợi thế khi ta thực hiện hành động attại trạng thái stvà làm
@@ -349,7 +331,6 @@ Với xác suất ϵ, chọn một hành động ngẫu nhiên at,
 hoặc chọn at= max a(Q(st, a))
 Thực hiện hành động at, theo dõi điểm thưởng rt, trạng thái mới st+1
 Cập nhật Q(st, at)←Q(st, at) +α[rt+γmax aQ(st+1, a)−Q(st, at)
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Bên cạnh học tăng cường dựa vào mô hình và giá trị, còn một nhánh các nhóm
 phương pháp học tăng cường nữa là nhóm học tăng cường dựa vào policy. Các
 phương pháp này tập trung vào việc trực tiếp tối ưu hoá policy πthay vì tìm policy
@@ -362,7 +343,6 @@ của một chuỗi hành động và trạng thái τnhân với khả năng m�
 Mục tiêu của ta là tìm được bộ tham số θcho policy πθ, sao cho từ policy này ta
 tìm được chuỗi τmà cho ta lượng điểm thưởng lớn nhất.
 Việc tối ưu hoá bài toán trên cần ta phải sử dụng một số biến đổi toán học đã
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Bài toán tối ưu khi này trở thành
 Ta viết lại hàm mục tiêu J(θ)
 Ta tính gradient để sử dụng cho việc tối ưu
@@ -372,7 +352,6 @@ lấy mẫu (sampling) để tính toán xấp xỉ giá trị đó.
 πθ(s1,a1, . . . , sT,aT)| {z }
 logπθ(τ) = log p(s1) +TX
 logp(s1)vlogp(st+1|st,at)không phụ thuộc vào θnên ta có thể bỏ, khi đó
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Ta dùng policy gradient đã tính toán được này để tối ưu hoá policy.
 Policy Gradient sử dụng Monte Carlo
 Thuật toán REINFORCE [19] sử dụng Monte Carlo để tính toán các giá trị điểm
@@ -393,7 +372,6 @@ Tính giá trị điểm thưởng chiết khấu Gt←PT
 Tính giá trị mất mát policy cho toàn bộ các tập trong bộ các tập
 Ta có thể sử dụng hàm lợị thế Agiống ý tưởng khi sử dụng nó trong Q-learning.
 Khi này policy gradient trở thành
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Bằng cách này, ta cân bằng được các giá trị điểm thưởng và giúp cho việc học
 của agent được dễ dàng hơn.
 b, Vấn đề của các thuật toán Policy Gradient
@@ -407,7 +385,6 @@ cho phép ta tính toán lượng điểm thưởng kỳ vọng bằng một pol
 Điều này hoàn toàn đúng với kết quả mà ta có được về policy gradient thông
 Khi này, policy gradient trở thành:
 Như vậy, với hàm mục tiêu ban đầu
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Áp dụng importance sampling ta có:
 Nếu ta có thể ràng buộc sự thay đổi của policy, ta có thể bỏ qua phần
 Khi đó bài toán trở thành:
@@ -425,7 +402,6 @@ Tuy nhiên, khi ta cập nhập policy mới trong mỗi bước tối ưu, kho�
 2 policy ngày càng xa, sự ước lượng của importance sampling ngày càng lớn. Do
 đó, sau một số bước tối ưu hoá policy mới, ta lại phải cập nhật lại policy tương tác
 với môi trường để lấy dữ liệu:
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Để giải quyết vấn đề này, ta thêm vào bước giới hạn sự thay đổi policy. Ta giới
 hạn điểm lợi thế tính được nếu khoảng cách giữa 2 policy là quá xa. Khi đó, ta sử
 dụng một hàm mục tiêu mới:
@@ -447,7 +423,6 @@ so với kỳ vọng. rt(θ)lớn đồng nghĩa với việc hành động này
 năng được chọn cao hơn nhiều so với policy trước. Đây là điều tốt, tuy nhiên,
 vì ngay thời điểm này nó đã đang làm khá tốt rồi, ta không muốn model tiếp
 tục học theo hướng này quá nhiều vì điều đó có khả năng dẫn đến việc bước
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 quá xa và dễ dẫn đến một bước cập nhật policy quá mức, dẫn đến hỏng quá
 trình huấn luyện. Do đó ta giới hạn giá trị này lại ở mức (1 +ϵ).
 2.A > 0, rt(θ)≤(1 + epsilon ): Cùng cách đánh giá như trên, khi này ta thấy
@@ -479,9 +454,6 @@ thể được sử dụng để làm nhiều việc, không chỉ bị giới h
 Unity3D gồm 5 thánh phần chính là project view, scene view, game view, heirarchy
 Đây là phần chính mà ta sử dụng trong quá trình phát triển ứng dụng. Scene
 view cung cấp cho ta một cái nhìn tổng quát về ngữ cảnh của môi trường, trong đó
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.1: Scene View trong Unity
-Hình 2.2: Game View trong Unity
 ta có thể thấy các vật thể và vị trí của chúng. Scene view được thể hiện trong hình
 Scene view cho phép người dùng sử dụng các thao tác kéo thả để di chuyển và
 định hình các vật thể trong môi trường được thực hiện thông qua một số công cụ
@@ -495,8 +467,6 @@ các thông tin phục vụ cho việc sửa các lỗi trong quá trình phát 
 Game view là phần mà người chơi sẽ nhìn thấy khi tương tác với trò chơi được
 tạo ra. View này cho phép người dùng có thể xem trước được góc nhìn của người
 chơi, từ đó có thể điều chỉnh các hành động của trò chơi cũng như các vật thể trong
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.3: Heirarchy View trong Unity
 trò chơi một cách hiệu quả. Góc nhìn này được lấy thông qua camera chính của trò
 chơi được thiết lập vị trí ở trong scene view, qua đó ta có thể giới hạn không gian
 mà người dùng có thể nhìn thấy trong sản phẩm hoàn thiện, thay vì cho họ nhìn
@@ -507,8 +477,6 @@ con. Các vật thể con sẽ được nằm trong cha và có thể được m
 Trong heirachy view được thể hiện trong hình 2.3, ta có thể thấy tổng quát các vật
 thể trong môi trường, trong đó các vật thể cha được gắn hình mũi tên ở bên trái, thể
 hiện nó có thể được mở để ta thấy các vật thể con trong đó.
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.4: Project View trong Unity
 Project view 2.4 chứa toàn bộ các thông tin liên quan đến dự án hiện tại của ta,
 bao gồm các cảnh, đoạn mã nguồn, hay các mô hình đồ hoạ, và toàn bộ các dữ
 liệu khác mà ta sử dụng trong dự án. Project view hoạt động gần tương tự như các
@@ -528,10 +496,7 @@ Các thao tác này được thực hiện nhờ vào hệ thống xây dựng c
 thể thông qua mã nguồn trong Unity.
 Trong Unity, mỗi vật thể đều có thể được gắn một thành phần cấu tạo là một
 hoặc nhiều tập mã nguồn C #. Mã nguồn này sẽ quản lý các hành vi của vật trong
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.5: Inspector View trong Unity
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.6: Collider của một cá thể xe taxi
+
 môi trường theo yêu cầu của người lập trình. Trong đó, vật thể của ta sẽ kế thừa
 lớpMonoBehavior , đây là một lớp được thiết kế để thực hiện các công việc như
 hiển thị vật, thực hiện các sự thay đổi của vật do ta lập trình. Để cho lập trình viên
@@ -551,8 +516,6 @@ a, Nhận diện va chạm
 Nhận diện va chạm là nhận biết khi có hai vật thể lấn chiếm lên nhau. Điều này
 xảy ra khi hai vật có vị trí gần nhau hơn là mức kích thước của chúng cho phép.
 Trong Unity, cơ chế này thường được lập trình theo hướng sử dụng hệ thống khung
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.7: Máy trạng thái hữu hạn cho hệ thống đèn giao thông
 va chạm (collider) của Unity.
 Khung va chạm (hình 2.6) có thể hiểu là một bộ khung do người dùng tự định
 nghĩa cho mỗi vật thể, đây là yếu có tố thể thêm vào hoặc không tuỳ thuộc vào mục
@@ -581,7 +544,6 @@ tra trạng thái hiện tại và hoạt động theo logic của trạng thái
 c, Hệ thống đếm giờ
 Hệ thống đếm giờ là phương pháp được sử dụng khá nhiều trong Unity. Phương
 pháp này được sử dụng khi ta cần thực hiện một việc nào đó sau một khoảng thời
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 gian cho trước. Các ví dụ có thể kể đến như các đồng hồ đếm giờ, đồng hồ đếm
 ngược, hay hệ thống điểm thưởng theo giờ,... Chính vì việc có nhiều trường hợp sử
 dụng như vậy, Unity cung cấp cho ta một số giải pháp liên quan đến tính toán thời
@@ -614,8 +576,6 @@ quá trình tạo vật thể trong môi trường, rất hữu dụng trong m�
 Bộ công cụ Unity ML-Agents [23] cung cấp một SDK được phát triển bởi Unity
 và được sử dụng trong các môi trường Unity để tạo ra một môi trường học máy. Bộ
 công cụ cho phép ta tạo ra một môi trường mô phỏng trong Unity có các yếu tố để
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
-Hình 2.8: Sự tương tác của các thành phần trong bộ công cụ ML-Agents
 hỗ trợ cho việc học máy, bên cạnh đó cũng cung cấp cho ta một hệ thống giao tiếp
 với môi trường này thông qua các Python API. Các thành phần chính trong Unity
 ML-Agents là cảm biến, các chủ thể hành động (agent), và một hệ thống học viện
@@ -638,7 +598,6 @@ kiện nhất định để đạt được các cơ chế hoạt động mong m
 nhận được trong mỗi lần yêu cầu hành động, ở đây ta có thể hiểu là tương ứng
 •OnActionReceived : Trả về cho ta hành động của agent và cho phép ta
 thực hiện thay đổi môi trường tương ứng với hành động đó.
-CHƯƠNG 2. NỀN TẢNG LÝ THUYẾT
 Bên cạnh đó, ta cũng được quyền thay đổi một số thông tin liên quan đến hành
 vi của agent thông qua một số thuộc tính công khai của agent trong Inspector View
 •Kích thước số chiều của các quan sát về môi trường.
@@ -670,7 +629,6 @@ hiểu về các kĩ thuật cơ bản trong Unity và gói công cụ Unity ML-
 ta có khả năng phát triển một môi trường hoàn thiện và kết nối tới các thuật toán
 huấn luyện. Những kiến thức này sẽ được sử dụng trong chương tiếp theo để phát
 triển và giải quyết bài toán đề ra.
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 Với những kiến thức nền tảng được trình bày từ Chương 2, em tiến hành áp dụng
 chúng vào việc phát triển môi trường và sử dụng phương pháp Proximal Policy
 Optimization để giải bài toán trên môi trường đã được xây dựng. Trong chương
@@ -699,11 +657,7 @@ cho ta một số API để lấy được điểm nằm trên đường cong tr
 các phương tiện, giúp các phương tiện của ta có thể di chuyển trong môi trường
 một cách hợp lý, góp phần giúp cho môi trường trở nên thêm chân thực và thể hiện
 được đúng các tính chất của việc di chuyển ngoài đời thực.
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
-Hình 3.1: Gói đồ hoạ giao thông đơn giản
-Hình 3.2: Nền của môi trường ngã tư đơn giản
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
-Hình 3.3: Hệ thống lộ trình
+
 Với bài toán đặt ra là hệ thống đèn giao thông tại một ngã tư đơn giản, em đã
 xây dựng một ngã tư có với 4 hướng đường hai chiều, trong đó mỗi chiều có 2 làn
 đường xe chạy. Cụ thể phần nền của môi trường được trình bày như hình 3.2. Như
@@ -726,7 +680,6 @@ ta cần phải hiểu là đây không thể là các object cố định luôn
 trường được, ta cần liên tục sinh ra vật thể và xoá chúng đi sau khi đã đi ra khỏi
 môi trường. Bên cạnh đó thì mỗi cá thể phương tiện sẽ là yếu tố chịu trách nhiệm
 cho việc đảm bảo các yêu cầu của môi trường giao thông, các cơ chế tránh va chạm
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 a, Hệ thống quản lý phương tiện
 Để đảm bảo môi trường có tính bao quát, thể hiện được toàn bộ các tình huống
 của có thể xảy ra của môi trường thực tế, em sử dụng một số thông số để kiểm soát
@@ -757,7 +710,6 @@ Với phương pháp trên, sau 24 tập của môi trường, ta có được �
 mật độ khác nhau cho các mức ưu tiên. Kết hợp với giãn cách tạo xe, sau 48 tập
 của môi trường, ta có thể có được toàn bộ các trạng thái về mặt lưu lượng ở từng
 làn có thể xuất hiện trong môi trường.
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 Sau khi đảm bảo được tính bao quát trên, tiếp đến là bước thực hiện sinh xe. Với
 việc các mô hình xe khác nhau được thiết kế hoàn thiện, sau mỗi khoảng giãn cách
 được định nghĩa ở trên, ta tiến hành tạo ra xe, đồng thời gắn cho mỗi xe một lộ
@@ -791,7 +743,6 @@ các cơ chế tránh va chạm, các xe sẽ hoạt động theo cơ chế máy
 •VEHICLE_COLLISION_STOP: vào trạng thái dừng do gặp phương tiện.
 •ACCELERATE: vào trạng thái tăng tốc để chuyển từ trạng thái dừng sang di
 Quá trình thay đổi trạng thái này được thực hiện thông qua một cảm biến được
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 gắn ở đầu xe, cảm biến này cho ta biết trong đoạn thẳng trước mặt có vật thể nào
 không và đồng thời biết được phân loại của object đó. Việc này được thực hiện
 thông qua hệ thống RaycastHit của Unity, cho phép ta kiểm tra thông tin trên
@@ -825,7 +776,6 @@ thống trên. Đồng thời, ta cần có thay đổi để có thể dễ dà
 hơn, do khi đặt hệ thống máy quay lên trên cao thì mô hình đèn trở nên khá nhỏ và
 khó quan sát. Để khắc phục vấn đề này, ở mỗi đèn ta thêm một khối cầu đơn giản
 có tác dụng thể hiện màu đèn. Sự thay đổi màu của khối cầu cùng đồng thời được
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 thực hiện cùng với việc thay đổi trạng thái đèn, đảm bảo cung cấp được các thông
 tin chính xác về môi trường.
 Các logic trên được chuyển hoá thành một API, từ đó bất kỳ vật thể nào có quyền
@@ -856,7 +806,6 @@ lớpAgent được cung cấp bởi gói ML-Agents, giúp ta thực hiện vi�
 trường và giao tiếp với agent từ mã nguồn trong python.
 Mỗi tập của môi trường sẽ bao gồm 64 bước. Điều này giúp cho mỗi tập sẽ
 bao quát được một mức thứ tự ưu tiên của các phần đường, giúp cho việc quản lý
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 môi trường dễ dàng hơn. Mỗi tập sẽ bắt đầu bằng một môi trường trống không có
 phương tiện, và từ đây là các phương tiện sẽ được sinh ra theo quy luật đã được
 trình bày ở trên. Ở đây, do đặc thù của bài toán, ta không có các bước thời gian kết
@@ -887,7 +836,6 @@ thông tin này sẽ được chuyển thành một vector rồi gửi tới cho
 ra giá trị 0 hoặc 1 tương ứng với việc cặp đèn 0 hoặc 1 chuyển thành màu đỏ. Khi
 đó, sử dụng API ta có từ script gốc của hệ thống đèn giao thông, ta có thể thực hiện
 hành động này lên môi trường.
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 Điểm thưởng cho agent trong từng hành động sẽ được tích luỹ trong vòng 5 giây
 sau khi thực hiện hành động đó. Ở đây, điểm thưởng được sử dụng chính là âm của
 tổng thời gian mà từng phương tiện phải dừng lại từ hệ quả của đèn đỏ. Bên cạnh
@@ -921,7 +869,6 @@ ra tỉ lệ hợp lý là0.55+0 .25+0 .15+0 .25
 thời gian đèn một cách hợp lý. Tất nhiên, với chỉ tỉ lệ trên thì ta không đủ để xây
 dựng một bộ hệ số tối ưu, do đó, em đã thử nhiều bộ số thời gian khác nhau để tìm
 ra được bộ số tối ưu nhất cho các đoạn đường. Với bài toán này, em chọn quy luật
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 phân chia thời gian như sau:
 •Đối với 2 phía đường không được ưu tiên về mặt tạo xe: 2.5 +ratio×5, tương
 ứng với 7.5 giây đối với ví dụ trên do ratio ở đây là 1.
@@ -952,7 +899,6 @@ mỗi bước thời gian mà agent trải qua, ta lưu lại các giá trị:
 •π(at|st)- xác suất chọn hành động attrong trạng thái stvới policy hiện tại.
 Thông tin này sẽ được sử dụng trong việc tính ra tỉ lệ giữa hai policy trong quá
 trình tính toán hàm mục tiêu của PPO.
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 •Giá trị thể hiện bước thời gian hiện tại có phải bước kết thúc hay không.
 Các thông tin này sẽ được lưu lại dưới dạng một bộ dữ liệu, khi số lượng đủ lớn,
 ta tiến hành lấy mẫu các thông tin từ đây theo từng bước thời gian để sử dụng cho
@@ -985,14 +931,12 @@ với giá trị lợi thế và phiên bản bị chặn của tích trên.
 đã được chuẩn hoá (nhận được từ Monte Carlo).
 Sau khi có 2 hàm mất mát trên, ta sử dụng phương pháp tối ưu Adam để tiến
 hành tối ưu hoá policy cũng như hàm giá trị.
-CHƯƠNG 3. PHƯƠNG PHÁP ĐỀ XUẤT
 Trong chương này, em đã trình bày về quá trình phát triển môi trường và huấn
 luyện mô hình giải quyết bài toán. Trong đó, em đã trình bày về các bước cơ sở như
 phát triển nền môi trường, thêm các logic về hệ thống đèn giao thông và hệ thống
 quản lý phương tiện. Sau đó, môi trường được phát triển thành một quá trình quyết
 định Markov đóng vai trò là môi trường học cho agent. Từ đó, ta tiến hành huấn
 luyện agent và tìm được policy tối ưu cho bài toán.
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
 Với môi trường và thuật toán đã được phát triển trong chương 3, em tiến hành
 thử nghiệm huấn luyện mô hình với một số cấu hình khác nhau của môi trường và
 giải thuật. Các thử nghiệm này được thực hiện theo hướng phát triển mô hình và
@@ -1019,8 +963,6 @@ các xe đang chờ đèn đỏ càng lớn có nghĩa là số lượng các xe
 điểm đèn đỏ càng lớn. Điều này gây ra sự trì hoãn khi chuỗi xe nhận được tín hiệu
 đèn xanh để đi, do các xe đều có khoảng thời gian chờ xe phía trước cách xa trước
 khi nhấn ga. Bên cạnh đó, khi chuỗi xe dài không được giải phóng cùng lúc sẽ gây
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.1: Hiệu năng cơ sở
 ra tình trạng tăng tốc rồi giảm tốc liên tục, kết hợp với sự trì hoãn đã giải thích ở
 trên, khiến cho đoạn đường càng thêm tắc nghẽn, cùng với đó là thải ra nhiều loại
 khí thải có hại cho sức khoẻ và môi trường.
@@ -1038,7 +980,6 @@ giúp ta đảm bảo được môi trường giống nhau giữa các lần đ�
 sự công bằng cho các phương pháp.
 Bên cạnh đó, môi trường được xây dựng thành một ứng dụng, nâng cao hiệu
 năng và độ chính xác cho đánh giá.
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
 Với môi trường được thiết kế cho việc đưa ra các quyết định giống với cơ chế
 hiện tại ở ngoài thực tế, sau quá trình đánh giá, hệ thống đạt được hiệu năng không
 tốt và không ổn định được thể hiện trong hình 4.1. Như ta có thể thấy, tổng điểm
@@ -1064,9 +1005,6 @@ sử dụng kết quả huấn luyện để tiếp tục quá trình tối ưu 
 có hệ thống cảm biến rất dày, được đặt ở hầu hết các vị trí trong môi trường. Trong
 đó, mỗi hướng đường bao gồm 63 cảm biến trong đoạn đường dài 100m và rộng
 15m được thể hiện trong hình 4.2. Điều này đảm bảo agent có đủ thông tin nhận
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.2: Hệ thống 252 cảm biến
-Hình 4.3: Kết quả với hệ thống môi trường nhiều cảm biến
 thức về môi trường do hệ thống cảm biến rất dày và không bị mất mát trong các
 Với cấu hình môi trường này, em sử dụng một kiến trúc mạng neuron đơn giản
 với 5 lớp ẩn, trong đó mỗi lớp có 128 đơn vị ẩn và với các giá trị siêu tham số cơ
@@ -1077,8 +1015,6 @@ Với kết quả khá tốt, đạt giá trị điểm thưởng trung bình -2
 hiệu năng cơ sở. Bên cạnh đó, sau khi hội tụ, lượng điểm thưởng nhận được của
 mô hình này cũng rất ổn định, thay đổi trong khoảng 216. Sự vượt trội này được
 thể hiện rõ trong hình 4.3 so sánh kết quả của hai hệ thống. Những kết quả này thể
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.4: Hệ thống 104 cảm biến
 hiện hiệu năng áp đảo của hệ thống thông minh so với hệ thống truyền thống về
 cả số điểm thưởng trung bình lẫn sự ổn định. Với hệ thống này, ta có thể đảm bảo
 được việc tối ưu các quyết định với mục đích hướng tới là sự thoải mái của người
@@ -1099,9 +1035,6 @@ biến dày đặc, được thể hiện trong hình 4.5 Chỉ với lượng c
 về môi trường, agent vẫn có thể đưa ra được các quyết định hợp lý và đạt kết quả
 Khi giảm kích thước mô hình một cách tương đối nhiều với số lượng lớp ẩn giảm
 từ 5 xuống 2. Hiệu năng trên đã có giảm nhẹ và có sự thay đổi về quá trình hội tụ
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.5: Kết quả với hệ thống 104 cảm biến
-Hình 4.6: Hệ thống 36 cảm biến
 của mô hình. Hình 4.5 thể hiện rõ sự so sánh giữa 3 hệ thống thông minh với các
 cấu hình khác nhau và với kết quả của hệ thống cơ sở. Khi giảm kích thước mô
 hình, hiệu năng của hệ thống khi hội tụ có sự giảm nhẹ so với hai hệ thống trước.
@@ -1112,8 +1045,6 @@ Tuy nhiên, với những kết quả trên, ta vẫn có thể đánh giá rằ
 một số lượng đủ để agent có thể nắm bắt được các thông tin cần thiết về lưu lượng
 giao thông trong thời gian thực trong môi trường. Do đó, ta có thể thử nghiệm tiếp
 tục giảm số lượng cảm biến.
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.7: Kết quả của hệ thống cảm biến tối giản
 Để cắt giảm số lượng cảm biến trong môi trường. Ta tiến hình cắt giảm 2 dải
 cảm biến xuống một, từ đó ta chọn điểm trung tâm 2 làn đường để đặt cảm biến,
 từ đó có thể nhận được thông tin về cả 2 làn đường. Hệ thống được thể hiện trong
@@ -1133,8 +1064,6 @@ trường với các tình trạng môi trường khác nhau, thể hiện đư�
 hình với mọi tính huống trong môi trường. Những kết quả đạt được vẫn là tương
 đối tốt so với hệ thống tốt nhất, giảm 12%. Và so với mức hiệu năng cơ sở thì ta
 vẫn đạt mức rất tốt, tăng 51%.
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.8: Giá trị điểm thưởng trung bình cho các cấu hình khác nhau của hệ thống
 Sau quá trình huấn luyện mô hình, em tiến hành đánh giá kết quả của các cấu
 hình hệ thống khác nhau trên môi trường kiểm tra. Hình 4.8 thể hiện cái nhìn tổng
 quan về kết quả của các cấu hình khác nhau của hệ thống cảm biến cũng như kích
@@ -1153,8 +1082,6 @@ so với mức hiệu năng tối đa của hệ thống cảm biến dày đặ
 lượng cảm biến giảm đáng kể, với cùng một số lượng đơn vị ẩn trong mỗi lớp và
 số lớp ẩn trong mô hình, lượng tham số của mô hình cũng giảm đi đáng kể. Ở một
 mức lượng tham số khá tương đồng, hệ thống này đạt hiệu năng tương đương với
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.9: Thời gian chờ trung bình
 hệ thống cảm biến dày đặc với cùng kích thước mô hình.
 Hệ thống 36 cảm biến có lượng điểm thưởng thấp hơn so với hai hệ thống kể
 trên. Mặc dù có số lượng cảm biến khá ít và thông tin đầu vào từ môi trường rất
@@ -1173,8 +1100,6 @@ tiêu của bài toán là giảm giá trị này tới mức tối thiểu, đ�
 tham gia giao thông có thể lưu thông một cách nhanh và thoải mái hơn, đồng thời
 tiết kiệm được lượng thời gian tham gia giao thông hằng ngày. Sau quá trình đánh
 giá hệ số này trên nhiều cấu hình hệ thống và kích thước của mô hình, một số kết
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
-Hình 4.10: Chiều dài hàng chờ trung bình
 quả tiêu biểu được thể hiện trong hình 4.9.
 Ta có thể thấy, hàm mục tiêu của mô hình ta đặt ra có phần khác so với hệ số
 đánh giá này, trong đó hàm mục tiêu của ta có đưa thêm một trọng số liên quan đến
@@ -1193,7 +1118,6 @@ ra kết quả các mức hiệu năng khác nhau với từng cấu hình. Đ�
 hình cũng sẽ phù hợp với từng điều kiện thực tế của bài toán như mức hiệu
 năng yêu cầu, mức chi phí.
 •Với các độ lớn khác nhau của mô hình, kết quả thử nghiệm cho thấy hiệu năng
-CHƯƠNG 4. ĐÁNH GIÁ THỰC NGHIỆM
 tăng lên khi ta tăng kích thước của mô hình. Trong đó, mức kích thước với 5
 lớp ẩn gồm 128 đơn vị ẩn là một mốc giới hạn mà từ đó khi tăng kích thước
 mô hình hiệu năng không có nhiều thay đổi.
@@ -1256,47 +1180,3 @@ thể tiếp tục phát triển bài toán và tiến đến ứng dụng vào 
 hội. Do thời gian thực hiện đồ án có hạn nên kết quả của đồ án còn có những hạn
 chế. Em mong có thể có được sự góp ý và hỗ trợ từ thầy cô, bạn vè để giúp em phát
 triển đồ án thành một dự án lớn hơn, mang lại những giá trị cho xã hội.
-[1] S. Dick, “Artificial intelligence,” 2019.
-[2] S. El-Tantawy, B. Abdulhai, and H. Abdelgawad, “Design of reinforcement
-learning parameters for seamless application of adaptive traffic signal control,”
-Journal of Intelligent Transportation Systems , vol. 18, no. 3, pp. 227–245,
-[3] C. J. Watkins and P. Dayan, “Q-learning,” Machine learning , vol. 8, no. 3,
-[4] J. Gao, Y. Shen, J. Liu, M. Ito, and N. Shiratori, “Adaptive traffic signal
-control: Deep reinforcement learning algorithm with experience replay and
-target network,” arXiv preprint arXiv:1705.02755 , 2017.
-[5] C.-H. Wan and M.-C. Hwang, “Value-based deep reinforcement learning
-for adaptive isolated intersection signal control,” IET Intelligent Transport
-Systems , vol. 12, no. 9, pp. 1005–1010, 2018.
-[6] X. Liang, X. Du, G. Wang, and Z. Han, “Deep reinforcement learning for
-traffic light control in vehicular networks,” arXiv preprint arXiv:1803.11115 ,
-[7] H. Van Hasselt, A. Guez, and D. Silver, “Deep reinforcement learning with
-double q-learning,” in Proceedings of the AAAI conference on artificial intelligence ,
-[8] T. Schaul, J. Quan, I. Antonoglou, and D. Silver, “Prioritized experience
-replay,” arXiv preprint arXiv:1511.05952 , 2015.
-[9] R. S. Sutton and A. G. Barto, Reinforcement learning: An introduction . MIT
-[10] T. M. Mitchell, Machine learning , 9. McGraw-hill New York, 1997, vol. 1.
-[11] D. Silver, A. Huang, C. J. Maddison, et al., “Mastering the game of go with
-deep neural networks and tree search,” nature , vol. 529, no. 7587, pp. 484–
-[12] C. Berner, G. Brockman, B. Chan, et al. , “Dota 2 with large scale deep
-reinforcement learning,” arXiv preprint arXiv:1912.06680 , 2019.
-[13] J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, “Proximal
-policy optimization algorithms,” arXiv preprint arXiv:1707.06347 , 2017.
-[14] M. L. Puterman, Markov decision processes: discrete stochastic dynamic
-programming . John Wiley & Sons, 2014.
-[15] N. Metropolis and S. Ulam, “The monte carlo method,” Journal of the American
-statistical association , vol. 44, no. 247, pp. 335–341, 1949.
-[16] G. Tesauro et al., “Temporal difference learning and td-gammon,” Communications
-of the ACM , vol. 38, no. 3, pp. 58–68, 1995.
-[17] S. Ruder, “An overview of gradient descent optimization algorithms,” arXiv
-[18] V. Mnih, K. Kavukcuoglu, D. Silver, et al., “Playing atari with deep reinforcement
-learning,” arXiv preprint arXiv:1312.5602 , 2013.
-[19] R. S. Sutton, D. McAllester, S. Singh, and Y. Mansour, “Policy gradient
-methods for reinforcement learning with function approximation,” Advances
-in neural information processing systems , vol. 12, 1999.
-[20] S. T. Tokdar and R. E. Kass, “Importance sampling: A review,” Wiley Interdisciplinary
-Reviews: Computational Statistics , vol. 2, no. 1, pp. 54–60, 2010.
-[21] J. K. Haas, “A history of the unity game engine,” 2014.
-[22] X. Lin, “Multi-behaviors finite state machine,” in 2009 IEEE Youth Conference
-on Information, Computing and Telecommunication , 2009, pp. 201–203. DOI:
-[23] A. Juliani, V.-P. Berges, E. Teng, et al., “Unity: A general platform for intelligent
-agents,” arXiv preprint arXiv:1809.02627 , 2018.

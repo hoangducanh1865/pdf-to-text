@@ -39,18 +39,6 @@ lý các hoạt động học tập một cách dễ dàng và hiệu quả. Đ�
 trực tuyến trong bối cảnh hiện đại(trực tuyến) giúp người dùng có thể học tập mọi
 (Ký và ghi rõ họ tên)
 
-DANH MỤC THUẬT NGỮ VÀ TỪ VIẾT TẮT
-API Giao diện lập trình ứng dụng
-CSS Ngôn ngữ định kiểu theo tầng
-EUD Phát triển ứng dụng người dùng
-GWT Công cụ lập trình Javascript bằng Java
-của Google (Google Web Toolkit)
-HTML Ngôn ngữ đánh dấu siêu văn bản
-JSON Định dạng dữ liệu JavaScript Object
-SQL Ngôn ngữ truy vấn có cấu trúc
-UI Giao diện người dùng (User Interface)
-UX Trải nghiệm người dùng (User
-CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
 Trong bối cảnh giáo dục hiện đại, nhu cầu học tập trực tuyến ngày càng tăng
 cao. Sự phát triển của công nghệ thông tin và internet đã mở ra nhiều cơ hội mới
 cho việc học tập và giảng dạy. Tuy nhiên, nhiều nền tảng học tập trực tuyến hiện tại
@@ -79,7 +67,6 @@ dùng. Trước những vấn đề trên, công việc của đồ án là đư
 tập trực tuyến giúp người học dễ dàng hơn trong việc quản lí tiến độ học tập, tăng
 sự tương tác giữa người học và giáo viên và chi phí được đưa ra với các khóa học
 là phù hợp và đảm bảo về chất lượng khóa học luôn cải thiện.
-CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
 Về phần tìm hiểu bài toán, nghiên cứu về cơ chế hoạt động và các thành phần
 liên quan đến lĩnh vực học tập trực tuyến. Tìm hiểu về các hệ thống học tập trực
 tuyến hiện đang được sử dụng. Về phần triển khai, tìm hiểu về quy trình phát triển
@@ -103,7 +90,6 @@ kế các lớp và quá trình kiểm thử và triển khai hệ thống.
 Chương 5: Ở chương cuối, em tổng kết lại toàn bộ quá trình thực hiện đồ án,
 những kết quả đạt được, những kinh nghiệm cũng bài học rút ra. Đồng thời đề xuất
 các hướng phát triển của hệ thống trong tương lai.
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
 *Phương pháp giảng truyền thống
 Người học tham gia trực tiếp tại lớp học theo thời khóa biểu đã được sắp xếp để
 thực hiện hoạt động học tập. Ngoài ra người học có thể giành thêm thời gian ở nhà
@@ -134,7 +120,6 @@ thực hiện hoạt động học tập từ xa thông qua các thiết bị gi
 nhất với điều kiện của mình. Và việc lựa chọn thời gian học tập phù hợp cũng là
 một yếu tố quan trọng giúp nâng cao hiệu quả học tập của người học. Một ưu điểm
 tiếp theo, phương pháp này giúp giảm thiểu chi phí tổ chức học tập, đồng thời tiếp
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
 cận với một số lượng lớn người học và không bị phụ thuộc vào vị trí, vùng miền.
 Nhược điểm: Việc duy trì động lực học tập cho người học trong môi trường trực
 tuyến là một vấn đề khó khăn. Nếu việc thiết kế và triển khai các khóa học chưa tốt
@@ -166,7 +151,6 @@ và có thể được sử dụng vào mục đích nghề nghiệp.
 chất lượng và uy tín.
 Nhược điểm: Chỉ có các đối tác của Coursera mới đưa được khóa học lên nền
 tảng này, do đó hiện tại chưa thể áp dụng phổ biến trong các tổ chức giáo dục khác.
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
 Udemy là một nền tảng học trực tuyến rất phong phú về chủng loại và đến từ
 nhiều ngành nghề, ngôn ngữ khác nhau dành cho nhiều đối tượng. Cơ chế hỗ trợ
 giáo viên xây dựng các khóa học của Udemy cũng được thực hiện rất tốt.
@@ -174,7 +158,6 @@ Từ những phân tích trên, Các tính năng cơ bản cần được quan t
 khóa học bao gồm tạo các tài liệu, bài tập, quản lí tiến độ người học, phần trao đổi,
 giải đáp liên quan đến khóa học, môn học và về phía người quản lí bao gồm việc
 quản lí người dùng như người học giáo viên và các tính năng của hệ thống.
-Hình 2.1: Usecase tổng quan hệ thống
 Biểu đồ use case tổng quan xác định các tác nhân chính của hệ thống là người
 học, giáo viên và quản trị. Người học có các hoạt động trên hệ thống như xem
 thông tin khóa học, tìm kiếm khóa học. Khi người học đã đăng kí và đăng nhập
@@ -185,31 +168,23 @@ trong khóa học. Giáo viên có thể quản lí khóa học, quản lí các
 học, trao đổi thông qua khung chat, tìm kiếm người dùng, tạo và quản lí bài tập,
 câu hỏi và điểm của học viên trong khóa học. Với người quản trị có thể thực hiện
 các chức năng quản lí tài khoản người dùng, quản lí các khóa học
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Hình 2.2: Use case phân rã Quản lí khóa học
 Phân rã use case quản lý khóa học có các use case con cụ thể như:
 Thêm (tạo mới) khóa học: Giáo viên, quản trị nhập thông tin khóa học để tạo
 Chỉnh sửa khóa học: Giáo viên, quản trị chỉnh sửa thông tin của khóa học. Hệ
 thống lưu lại các thay đổi.
 Xóa khóa học: Giáo viên, quản trị yêu cầu xóa khóa học khỏi hệ thống. Hệ thống
 xác nhận và xóa khóa học khỏi cơ sở dữ liệu.
-Hình 2.3: Use case phân rã Quản lí tài khoản
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
 Phân rã use case quản lý tài khoản có các use case con cụ thể hơn. Thêm (Đăng
 ký) tài khoản: Người dùng nhập thông tin cá nhân.Hệ thống kiểm tra thông tin và
 Chỉnh sửa tài khoản: Người dùng chỉnh sửa thông tin cá nhân. Hệ thống lưu lại
 Xóa tài khoản: Người dùng yêu cầu xóa tài khoản. Hệ thống xác nhận và xóa tài
 khoản khỏi cơ sở dữ liệu.
-Hình 2.4: Use case phân rã Quản lí điểm
 Phân rã use case quản lý điểm có các use case con cụ thể hơn. Giáo viên quản lí
 các điểm thành phần thông qua các bài tập và tính ra được điểm tổng kết.
-Hình 2.5: Use case phân rã Quản lí câu hỏi
 Phân rã use case quản lý câu hỏi có các use case con cụ thể hơn.
 Thêm câu hỏi mới cho khóa học tương ứng: câu hỏi được thêm thủ công hoặc
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
 Chỉnh sửa câu hỏi: Giáo viên chỉnh sửa các câu hỏi và đáp án, hệ thống sẽ lưu
 Xóa câu hỏi: Giáo viên chọn xóa câu hỏi và hệ thống yêu cầu xác nhận xóa câu
-Hình 2.6: Use case phân rã Quản lí câu hỏi
 Phân rã use case quản lý bài tập có các use case con cụ thể hơn.
 Thêm bài tập mới cho khóa học tương ứng: bài tập được thêm tự động hoặc thêm
 Chỉnh sửa bài tập: Giáo viên chỉnh sửa các bài tập bằng việc thay đổi sô lượng
@@ -224,206 +199,19 @@ phí thì người học thanh toán phí. Sau khi thanh toán thành công, ng�
 Quy trình nghiệp vụ tạo khóa học: Giáo viên thiết kế nội dung bao gồm tài liệu,
 video, thời gian hoàn thành khóa học và các tài nguyên khác mà người học sử dụng.
 Mỗi khóa học có thể được quản lí bởi nhiều giáo viên, tính năng có thể giúp các
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-giáo viên hợp tác và chia sẻ trong quá trình xây dựng cũng như triển khai khóa
-Mục tiêu Người dùng có thể đăng nhập vào hệ thống
-bằng tài khoản đã đăng ký
-Tác nhân chính Người học, giáo viên, quản trị
-Tiền điều kiện Người dùng đã đăng ký tài khoản
-Hậu điều kiện Người dùng được xác thực và chuyển đến
-trang tùy theo vai trò của tài khoản
-chính1. Người dùng chọn chức năng đăng nhập.
-trả về trang đăng nhập
-khẩu đã đăng kí và gửi thông tin đăng nhập
-ngoại lệe4.1. Hệ thống kiểm tra thông tin đăng nhập
-e4.2 Hệ thống trả về thông báo lỗi, yêu cầu
-người dùng đăng nhập lại.
-Bảng 2.1: Đặc tả use case Đăng nhập
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Mục tiêu Người dùng có thể đăng kí tài khoản
-Tác nhân chính Người học, giáo viên
-Tiền điều kiện Người dùng muốn đăng nhập để sử dụng các
-chức năng của hệ thống
-Hậu điều kiện Người dùng đăng kí thành công và chuyển
-chính1. Người dùng chọn chức năng đăng kí.
-trả về trang đăng kí
-và gửi thông tin đăng kí tới hệ thống
-chuyển đến trang đăng nhập
-ngoại lệe4.1. Hệ thống kiểm tra thông tin đăng kí
-e4.2 Hệ thống trả về thông báo lỗi, yêu cầu
-người dùng nhập lại thông tin.
-Bảng 2.2: Đặc tả use case Đăng kí
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
 e6.2 Hệ thống trả về thông báo lỗi, yêu cầu người dùng nhập lại thông tin
 e3.1.4.1 Hệ thống kiểm tra thông tin muốn chỉnh sửa không hợp lệ
 e3.1.4.2 Hệ thống trả về thông báo lỗi, yêu cầu người dùng nhập lại thông tin
 e3.2.3.1 Tác nhân chọn hủy yêu cầu xóa khóa học
 e3.2.3.2 Hệ thống hủy yêu cầu xóa khóa học
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Mục tiêu Người dùng có thể thao tác với các chức năng liên quan đến quản
-kiệnNgười dùng với vai trò là quản trị
-kiệnThông tin tài khoản được thêm mới hoặc chỉnh sửa hoặc hủy thành
-kiện chính1. Tác nhân chọn chức năng quản lý tài khoản.
-2. Hệ thống xác nhận và xử lí yêu cầu và trả về trang quản lí tài
-khoản bao gồm danh sách các tài khoản hiện có và các tùy chọn
-thêm mới, chỉnh sửa, xóa tài khoản
-5. Tác nhân nhập thông tin theo yêu cầu và gửi thông tin tới hệ
-7. Hệ thống xác nhận thông tin hợp lệ và tài khoản được thêm
-thếalt3.1.1 Tác nhân chọn chức năng chỉnh sửa tài khoản
-alt3.1.2 Hệ thống trả về trang chỉnh sửa tài khoản tương ứng
-alt3.1.3 Tác nhân chỉnh sửa các thông tin cần thiết và gửi yêu cầu
-cập nhập tới hệ thống
-alt3.1.4 Hệ thống nhận và kiểm tra thông tin. [e3.1.4]
-alt3.1.5 Hệ thống xác nhận thông tin hợp lệ và tài khoản được
-alt3.1.6 Cập nhập lại thông tin của tài khoản hiện được chỉnh sửa
-alt3.2.1 Tác nhân chọn chức năng xóa tài khoản
-alt3.2.2 Hệ thống hiển thị thông báo xác nhận lại “Bạn muốn xóa
-alt3.2.3 Tác nhân xác nhận xóa tài khoản [e3.2.3.1]
-alt3.2.4 Hệ thống nhận và thực hiện xóa tài khoản
-alt3.2.5 Hệ thống cập nhập lại danh sách tài khoản
-Bảng 2.4: Đặc tả use case Quản lí tài khoản
-Luồng sự kiện ngoại lệ
-e6.1. Hệ thống kiểm tra thông tin không hợp lệ
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-e6.2 Hệ thống trả về thông báo lỗi, yêu cầu người dùng nhập lại thông tin
-e3.1.4.1 Hệ thống kiểm tra thông tin muốn chỉnh sửa không hợp lệ
-e3.1.4.2 Hệ thống trả về thông báo lỗi, yêu cầu người dùng nhập lại thông tin
-e3.2.3.1 Tác nhân chọn hủy yêu cầu xóa tài khoản
-e3.2.3.2 Hệ thống hủy yêu cầu xóa tài khoản
-Tên usecase Đăng kí khóa học
-Mục tiêu Người học có thể đăng kí các khóa học hiện mở để tham gia
-Tác nhân chính Người dùng
-Tiền điều kiện Người học đã đăng nhập và chọn được khóa học muốn đăng
-Hậu điều kiện Người học đăng kí khóa học thành công
-chính1. Tác nhân chọn chức năng đăng kí khóa học
-2. Hệ thống gửi thông báo xác nhận yêu cầu đăng kí
-4. Hệ thống kiểm tra khóa học có phí và trả về trang thanh
-6. Ngân hàng xác thực thông tin và hoàn tất giao dịch và trả
-về trạng thái cho hệ thống[e.6.1]
-8. Hệ thống thông báo thành công và thêm khóa học vào mục
-khóa học đã đăng kí
-thay thếAlt4.1.1 Hệ thống kiểm tra khóa học miễn phí
-Alt4.1.2 Hệ thống gửi yêu cầu đăng kí đến trang quản lí khóa
-Alt4.1.3 Người quản lí khóa học chấp nhận yêu cầu đăng kí
-ngoại lệe3.1 Tác nhân chọn hủy yêu cầu đăng kí
-e3.2 Hệ thống hủy yêu cầu
-e6.1 Thông tin thanh toán không hợp lệ
-Bảng 2.5: Đặc tả use case Đăng kí khóa học
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Tên usecase Quản lí câu hỏi
-Mục tiêu Người học có thể tạo các câu hỏi với các khóa học tương ứng
-kiệnTác nhân muốn thêm hoặc chỉnh sửa hoặc xóa câu hỏi
-kiệnCâu hỏi được thêm mới hoặc chỉnh sửa hoặc xóa thành công
-kiện chính1. Tác nhân chọn chức năng quản lý câu hỏi.
-2. Hệ thống xác nhận và xử lí yêu cầu và trả về trang quản lí câu
-hỏi bao gồm danh sách các câu hỏi hiện có và các tùy chọn thêm
-mới, chỉnh sửa, xóa câu hỏi
-6. Tác nhân nhập thông tin theo yêu cầu và gửi thông tin tới hệ
-8. Hệ thống xác nhận thông tin hợp lệ và câu hỏi được thêm thành
-kiện thay thếalt3.1.1 Tác nhân chọn chức năng chỉnh sửa câu hỏi
-alt3.1.2 Hệ thống trả về trang chỉnh sửa câu hỏi tương ứng
-alt3.1.3 Tác nhân chỉnh sửa các thông tin cần thiết và gửi yêu cầu
-cập nhập tới hệ thống
-alt3.1.4 Hệ thống nhận và kiểm tra thông tin. [e3.1.4]
-alt3.1.5 Hệ thống xác nhận thông tin hợp lệ và câu hỏi được chỉnh
-alt3.1.6 Cập nhập lại thông tin của câu hỏi hiện được chỉnh sửa
-alt3.2.1 Tác nhân chọn chức năng xóa câu hỏi
-alt3.2.2 Hệ thống hiển thị thông báo xác nhận lại “Bạn muốn xóa
-alt3.2.3 Tác nhân xác nhận xóa câu hỏi [e3.2.3.1]
-alt3.2.4 Hệ thống nhận và thực hiện xóa câu hỏi
-alt3.2.5 Hệ thống cập nhập lại danh sách câu hỏi
-alt4.1.1 Tác nhân chọn thêm câu hỏi từ file excel
-alt4.1.2 Tác nhân nhập dữ liệu vào file excel theo định dạng có sẵn
-Bảng 2.6: Đặc tả use case Quản lí câu hỏi
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Luồng sự kiện ngoại lệ
-E7.1. Hệ thống kiểm tra thông tin không hợp lệ
-E7.2 Hệ thống trả về thông báo lỗi, yêu cầu người dùng nhập lại thông tin
-E3.1.4.1 Hệ thống kiểm tra thông tin muốn chỉnh sửa không hợp lệ
-E3.1.4.2 Hệ thống trả về thông báo lỗi, yêu cầu người dùng nhập lại thông tin
-e3.2.3.1 Tác nhân chọn hủy yêu cầu xóa câu hỏi
-e3.2.3.2 Hệ thống hủy yêu cầu xóa câu hỏi
-Tên usecase Làm bài tập
-Mục tiêu Người học thực hiện việc làm bài tập dưới
-hình thức câu hỏi trắc nghiệm
-Tác nhân chính Người học
-Tiền điều kiện Tác nhân đã tham gia ít nhất 1 khóa học
-Hậu điều kiện Tác nhân hoàn thành và nộp bài tập thành
-chính1. Tác nhân chọn bài tập cần làm
-hiển thị đề bài với các câu hỏi tương ứng
-nộp bài thành công [e7.1]
-ngoại lệE7.1. Hệ thống kiểm tra chưa hoàn thành hết
-tất cả các câu hỏi
-E7.2 Hệ thống trả về thông báo, yêu cầu tác
-nhân hoàn thành hết các câu hỏi
-Bảng 2.7: Đặc tả use case Làm bài tập
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Tên usecase Quản lí bài tập
-Mục tiêu Người học có thể tạo các bài tập với các khóa học tương ứng
-Tác nhân chính Giáo viên, quản trị
-Tiền điều kiện Tác nhân muốn thêm hoặc chỉnh sửa hoặc xóa bài tập
-Hậu điều kiện Bài tập được thêm mới hoặc chỉnh sửa hoặc xóa thành công
-chính1. Tác nhân chọn chức năng quản lý bài tập.
-2. Hệ thống xác nhận và xử lí yêu cầu và trả về trang quản lí bài
-tập bao gồm danh sách các bài tập hiện có và các tùy chọn thêm
-mới, chỉnh sửa, xóa bài tập
-6. Tác nhân nhập chọn các câu hỏi và gửi thông tin tới hệ thống
-8. Hệ thống xác nhận thông tin hợp lệ và bài tập được thêm thành
-thay thếalt3.1.1 Tác nhân chọn chức năng chỉnh sửa bài tập
-alt3.1.2 Hệ thống trả về trang chỉnh sửa bài tập tương ứng
-alt3.1.3 Tác nhân chỉnh sửa các thông tin cần thiết và gửi yêu cầu
-cập nhập tới hệ thống
-alt3.1.4 Hệ thống nhận và kiểm tra thông tin. [e3.1.4]
-alt3.1.5 Hệ thống xác nhận thông tin hợp lệ và bài tập được chỉnh
-alt3.1.6 Cập nhập lại thông tin của bài tập hiện được chỉnh sửa
-alt3.2.1 Tác nhân chọn chức năng xóa bài tập
-alt3.2.2 Hệ thống hiển thị thông báo xác nhận lại “Bạn muốn xóa
-alt3.2.3 Tác nhân xác nhận xóa bài tập [e3.2.3.1]
-alt3.2.4 Hệ thống nhận và thực hiện xóa bài tập
-alt3.2.5 Hệ thống cập nhập lại danh sách bài tập
-alt4.1.1 Tác nhân chọn thêm bài tập tự động
-alt4.1.2 Hệ thống yêu cầu tác nhân nhập số lượng câu hỏi
-alt4.1.3 Tác nhân nhập số lượng câu hỏi mong muốn
-alt4.1.4 Hệ thống chọn ngẫu nhiên các câu hỏi để cấu thành bài
-Bảng 2.8: Đặc tả use case Quản lí bài tập
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Luồng sự kiện ngoại lệ
-E7.1. Hệ thống kiểm tra thông tin không hợp lệ
-E7.2 Hệ thống trả về thông báo lỗi, yêu cầu tác nhân thực hiện lại
-E3.1.4.1 Hệ thống kiểm tra thông tin muốn chỉnh sửa không hợp lệ
-E3.1.4.2 Hệ thống trả về thông báo lỗi, yêu cầu tác nhân thực hiện lại
-e3.2.3.1 Tác nhân chọn hủy yêu cầu xóa bài tập
-e3.2.3.2 Hệ thống hủy yêu cầu xóa bài tập
-Tên usecase Quản lí điểm
-Mục tiêu Giáo viên có thể quản lí điểm từng bài tập
-với khóa học tương ứng
-Tác nhân chính Giáo viên, quản trị
-Tiền điều kiện Tác nhân muốn quản lí điểm của người học
-Hậu điều kiện Tác nhân có thể thao tác với điểm của người
-chính1. Tác nhân chọn chức năng quản lý điểm
-về trang quản lí điểm bao gồm danh sách các
-các bài tập mà các người học đã thực hiện,
-và tùy chọn hiển thị điểm chi tiết của người
-người học đã lựa chọn
-đáp án mà người học đã lựa chọn
-Bảng 2.9: Đặc tả use case Quản lí điểm
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Hình 2.7: Biểu đồ hoạt động cho đăng nhập
-Hình 2.8: Biểu đồ hoạt động cho đăng kí
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Hình 2.9: Biểu đồ hoạt động cho Quản lí khóa học
-Hình 2.10: Biểu đồ hoạt động cho Quản lí tài khoản
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Hình 2.11: Biểu đồ hoạt động cho Quản lí câu hỏi
-Hình 2.12: Biểu đồ hoạt động cho Quản lí điểm
-CHƯƠNG 2. KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU
-Hình 2.13: Biểu đồ hoạt động cho Quản lí câu hỏi
+
+
+
 Bảo mật: Bảo vệ thông tin người dùng, mã hóa dữ liệu nhạy cảm, và tuân thủ
 các quy định về bảo mật thông tin.
 Hiệu suất: Hệ thống cần hoạt động ổn định, xử lý đồng thời nhiều người dùng
 Khả năng mởrộng: Dễ dàng thêm người dùng, khóa học và tính năng mới trong
 Tương thích: Hệ thống cần tương thích với nhiều trình duyệt và thiết bị (máy
-CHƯƠNG 3. CÔNG NGHỆ SỬ DỤNG
 Các công nghệ sử dụng phát triển hệ thống: Frontend(Giao diện): HTML, CSS,
 Javascript và một số thư viện khác. Backend : sử dụng ngôn ngữ PHP để phát triển
 hệ thống và framework Laravel. Và sử dụng SQL Server để lưu trữ và quản lí dữ
@@ -451,7 +239,6 @@ nhúng vào HTML để tạo ra các trang web động. Quản lý cơ sở dữ
 được sử dụng cùng với MySQL để quản lý cơ sở dữ liệu. Xử lý biểu mẫu: PHP có
 thể xử lý dữ liệu từ các biểu mẫu HTML và lưu trữ chúng vào cơ sở dữ liệu. Tạo
 API: PHP có thể được sử dụng để tạo các API RESTful cho các ứng dụng web và
-CHƯƠNG 3. CÔNG NGHỆ SỬ DỤNG
 Ưu Điểm của PHP: Mã nguồn mở và miễn phí: PHP là ngôn ngữ mã nguồn mở
 và miễn phí, giúp tiết kiệm chi phí phát triển. Dễ học và sử dụng: PHP có cú pháp
 đơn giản và dễ hiểu, phù hợp cho cả người mới bắt đầu và lập trình viên có kinh
@@ -461,7 +248,6 @@ cấp nhiều tài liệu, hướng dẫn và hỗ trợ.
 Nhược Điểm của PHP: PHP có thể gặp phải các vấn đề bảo mật nếu không được
 cấu hình và lập trình đúng cách. PHP có thể không hiệu quả bằng một số ngôn ngữ
 lập trình khác trong các ứng dụng yêu cầu hiệu năng cao.
-Hình 3.1: Mô hình MVC
 Model: Quản lý dữ liệu và logic nghiệp vụ của ứng dụng. Model tương tác với
 cơ sở dữ liệu để truy xuất và lưu trữ dữ liệu.
 View là các tệp HTML/CSS/JavaScript được sử dụng để tạo giao diện người
@@ -470,7 +256,34 @@ Controller: Xử lý các yêu cầu từ người dùng, tương tác với Mod
 và trả về View để hiển thị.
 Laravel là một framework PHP mã nguồn mở, được thiết kế để phát triển các
 ứng dụng web theo mô hình MVC (Model-View-Controller).
-CHƯƠNG 3. CÔNG NGHỆ SỬ DỤNG
+Các tính năng chính của Laravel
+Routing: Laravel cung cấp một hệ thống định tuyến mạnh mẽ, cho phép
+bạn định nghĩa các URL và ánh xạ chúng tới các hành động cụ thể trong
+Eloquent ORM: Hệ thống ORM (Object-Relational Mapping) của Laravel, giúp tương tác với cơ sở dữ liệu một cách dễ dàng và trực quan.
+Engine: Công cụ tạo mẫu Blade của Laravel cho phép bạn sử dụng các
+cấu trúc điều khiển và biến trong các tệp HTML.
+Middleware: Cho phép bạn lọc các yêu cầu HTTP vào ứng dụng của
+mình, ví dụ như xác thực người dùng hoặc kiểm tra quyền truy cập.
+Artisan CLI: Công cụ dòng lệnh của Laravel, cung cấp nhiều lệnh hữu
+ích để phát triển và quản lý ứng dụng.
+Dễ học và sử dụng: Laravel có cú pháp rõ ràng và dễ hiểu, giúp lập trình
+viên nhanh chóng làm quen và phát triển ứng dụng.
+Cộng đồng lớn: Laravel có một cộng đồng lớn và năng động, cung cấp
+nhiều tài liệu, hướng dẫn và hỗ trợ.
+Tích hợp tốt với các công cụ khác: Laravel tích hợp tốt với các công cụ
+như Redis, Memcached, và các dịch vụ email, giúp bạn xây dựng ứng
+dụng nhanh chóng và hiệu quả.
+Server SQL Server là một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS)được phát
+triển bởi Microsoft. Nó hỗ trợ nhiều tính năng mạnh mẽ để quản lý và truy vấn dữ
+Cấu Trúc Cơ Bản: Database: (Là một tập hợp các bảng, chỉ mục, và các đối
+tượng khác liên quan đến dữ liệu), Table: (Là một tập hợp các hàng và cột, nơi
+dữ liệu được lưu trữ), Column: (Là một trường trong bảng, đại diện cho một loại
+dữ liệu cụ thể), Row: (Là một bản ghi trong bảng, chứa dữ liệu cho một mục cụ
+thể) Các loại dữ liệu: SQL Server hỗ trợ nhiều loại dữ liệu khác nhau như: INT(Số
+nguyên), VARCHAR(Chuỗi ký tự có độ dài thay đổi), DATETIME(Ngày và giờ),
+FLOAT(Số thực) Một số khái niệm nâng cao như: Stored Procedures: (Là các tập
+lệnh SQL được lưu trữ và có thể tái sử dụng), Triggers: Là các thủ tục tự động thực
+thi khi có sự kiện cụ thể xảy ra trong cơ sở dữ liệu, Views: (Là các truy vấn SQL
 được lưu trữ dưới dạng bảng ảo), Indexes: (Là các cấu trúc dữ liệu giúp tăng tốc độ
 Các Phép Toán Tập Hợp: SQLServer hỗ trợ các phép toán tập hợp như UNION,
 INTERSECT và EXCEPT, giúp kết hợp và so sánh các tập dữ liệu2. Quản Lý Giao
@@ -501,7 +314,6 @@ thường ở định dạng XML, JSON hoặc HTML.
 dung trang web một cách mượt mà mà không cần tải lại toàn bộ trang. Tiết kiệm
 băng thông: Chỉ các phần dữ liệu cần thiết được trao đổi giữa máy chủ và trình
 duyệt, giúp tiết kiệm băng thông. Tăng hiệu suất: Giảm thời gian tải trang và tăng
-CHƯƠNG 3. CÔNG NGHỆ SỬ DỤNG
 hiệu suất của ứng dụng web.
 Nhược điểm của AJAX: Phụ thuộc vào JavaScript: AJAX yêu cầu JavaScript để
 hoạt động, do đó nếu người dùng tắt JavaScript, ứng dụng sẽ không hoạt động đúng
@@ -513,7 +325,6 @@ MVC.Với các tính năng mạnh mẽ, laravel giúp phát hệ thống nhanh c
 quả. Cơ sở dữ liệu SQL hỗ trợ việc lưu trữ dữ liệu với nhiều tính năng hỗ trợ. Sử
 dụng AJAX gửi yêu cầu như xóa các đối tượng, hỗ trợ chức năng chat realtime mà
 không phải tải lại trang web giúp trải nghiệm người dùng tốt hơn và tiết kiệm băng
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 Kiến trúc MVC (Model-View-Controller) là một phương pháp thiết kế phổ biến
 bởi khả năng tách biệt rõ ràng giữa các thành phần khác nhau của ứng dụng. Điều
 này không chỉ giúp cho việc phát triển và bảo trì ứng dụng trở nên dễ dàng hơn
@@ -537,7 +348,6 @@ Xử lý logic nghiệp vụ: Model chứa các quy tắc và logic nghiệp v�
 Nó thực hiện các phép tính, kiểm tra điều kiện và xử lý dữ liệu trước khi gửi đến
 Entities: Các đối tượng dữ liệu đại diện cho các bảng trong cơ sở dữ liệu. Mỗi
 entity thường tương ứng với một bảng và chứa các thuộc tính (fields) đại diện cho
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 Repositories: Các lớp hoặc đối tượng chịu trách nhiệm truy xuất và lưu trữ dữ
 liệu từ cơ sở dữ liệu. Repositories cung cấp các phương thức để thực hiện các thao
 Services: Các lớp hoặc đối tượng chứa logic nghiệp vụ của ứng dụng. Services
@@ -565,7 +375,6 @@ các tương tác động trên trang web, chẳng hạn như xử lý sự ki�
 và cập nhật nội dung mà không cần tải lại trang.
 Trong hệ thống đang triển khai sẽ có các view bao gồm các trang như trang quản
 lí khóa học(quản trị), quản lí người dùng(quản trị), trang chủ, danh sách khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 Controller đóng vai trò trung gian giữa model và view giúp táchbiệt logic nghiệp
 vụ và giao diện người dùng. Nó chịu trách nhiệm xử lý các yêu cầu từ người dùng
 từ view, tương tác với Model để lấy dữ liệu và trả về View để hiển thị.
@@ -595,7 +404,6 @@ Với gói User: mục đích chứa các đối tượng người dùng trong h
 trị, giáo viên, người học giúp quản lí thông tin người dùng và xác thực người dùng.
 Course pakage: quản lí thông tin khóa học và các thành phần liên quan đến khóa
 học như nội dung tài liệu, bài tập, câu hỏi
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 Role pakage: quản lí thông tin về vai trò của từng loại người dùng trong hệ thống
 mỗi vai trò được gắn với các quyền tương ứng.
 Payment pakage: quản lí viêc thanh toán khóa học nếu khóa học trả phí giúp
@@ -624,45 +432,34 @@ Thiết kế nút: Hình chữ nhật với góc bo tròn, chiều cao và chi�
 chiều cao tối đa , Các form với chiều cao tự động theo nội dung.
 Vị trí hiển thị thông điệp phản hồi: thông điệp sẽ được hiển thị ở phía trên và ở
 Phối màu: Sử dụng chủ yếu nền trắng để nổi bật nội dung và có thể đổi qua nền
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 * Thiết kế trang Đăng nhập
-Hình 4.1: Thiết kế trang đăng nhập
 Trang đăng nhập được thiết kế với các trường nhập cho tên đăng nhập, mật khẩu
 và một nút để gửi yêu cầu đăng nhập. Ngoài ra còn có ô check ghi nhớ đăng nhập
 và liên kết đến trang đăng kí nếu chưa có tài khoản và 1 liên kết đến chức năng
 * Thiết kế trang danh sách khóa học
-Hình 4.2: Thiết kế danh sách khóa học
 Giao diện hiển thị danh sách các khóa học hiện có và các thông tin đi kèm trong
 1 thẻ khóa học gồm ảnh đại diện của giáo viên và ảnh đại diện khóa học kèm học
 phí khóa học (nếu có) gắn kèm ở góc trái của ảnh cùng với tên khóa học và mô tả
 về khóa học và có một nút để gửi yêu cầu đăng kí khóa học.
 * Thiết kế trang quản lí khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Hình 4.3: Thiết kế trang quản lí khóa học
 Giao diện gồm 3 phần: thanh bên trái gồm avatar và vai trò của người đăng nhập
 là quản trị hay giáo viên cùng với avatar và tên của người đăng nhập và ở dưới là
 danh sách các chức năng của người quản lí có thể chọn để sử dụng, Thanh ở trên
 gồm ôtìm kiếm như tìm kiếm khóa học hoặc giáo viên và 2 biểu tượng tin nhắn và
 ô menu thu gọn. Phần còn lại chứa nội dung tương ứng với chức năng đã chọn.
 * Thiết kế trang Tạo khóa học
-Hình 4.4: Thiết kế trang Tạo khóa học
 Giao diện tạo khóa học bao gồm form với các trường cần thiết để tạo một khóa
 học và 1 nút để gửi yêu cầu tạo khóa học
 Minh họa một số phương thức qua biểu đồ hoạt động
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Hình 4.5: Biểu đồ lớp cho hệ thống
 * Phương thức đăng kí khóa học: Người học chọn khóa học và gửi yêu cầu đăng
 kí.Nếu khóa học miễn phí thì yêu cầu được gửi đến giáo viên quản lí để xác nhận.
 Nếu khóa học có phí thì gọi phương thức thanh toán khóa học. Sau khi đăng kí
 thành công thì người học sẽ được thêm vào khóa học
-Hình 4.6: Biểu đồ hoạt động đăng kí khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 * Phương thức làm bài tập: Người học sau khi được thêm vào khóa học và chọn
 chức năng làm bài tập. Hệ thống chuyển đến giao diện bài tập tương ứng. Người
 học sau khi làm bài và chọn nộp bài. Hệ thống xác nhận xem người học đã hoàn
 thành hết các câu hỏi chưa. Nếu đã hoàn thành thì xác nhận nộp bài thành công và
 tiến hành nộp bài và lưu điểm. Nếu chưa thì yêu cầu hoàn thành tiếp
-Hình 4.7: Biểu đồ hoạt động làm bài tập
 *Biểu đồ thực thể liên kết
 Các thực thể chủ đạo như course (khóa học) và user (người dùng). Thực thể user
 được phân quyền theo từng vai trò nhất, mỗi loại người dùng thì có một vai trò
@@ -670,59 +467,9 @@ tương ứng. Trong mỗi vai trò thì lại có các quyền khác nhau để
 đối với loại người dùng là người học thì các thanh toán học phí phát sinh và mỗi
 người dùng có các thông báo và tin nhắn đến và đi. Đối với thực thể khóa học, mỗi
 khóa học thuộc về một danh mục lĩnh vực lớn và ngược lại mỗi danh mục thì bao
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Hình 4.8: Biểu đồ thực thể liên kết
 gồmnhiều khóa học. Về phần học liệu thì mỗi khóa học lại có nhiều phần nội dung
 tài liệu và các câu hỏi và bài tập tương ứng.
 * Cơ sở dữ liệu cho hệ thống
-Hình 4.9: Lưu thông tin khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Hình 4.10: Lưu thông tin vai trò người dùng
-Hình 4.11: Lưu điểm và đáp án
-* Chi tiết các bảng
-Lưu các thông tin của người dùng email, mật khẩu, tên, ảnh đại diện
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Tên cột Kiểu dữ liệu
-Bảng 4.1: Bảng người dùng
-Bảng course lưu thông tin cơ bản của khóa học như tên, mô tả khóa học, chi phí
-khóa học, ảnh đại diện khóa học.
-Tên cột Kiểu dữ liệu
-Bảng 4.2: Bảng khóa học
-Bảng score_exercise lưu thông tin về điểm của các lần làm bài tập của người
-Tên cột Kiểu dữ liệu
-Bảng 4.3: Bảng lưu điểm
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-d, Bảng question Bảng câu hỏi lưu thông tin về các câu hỏi và có 1 bảng answer
-để ánh xạ sang bảng câu hỏi với khóa ngoài là id của câu hỏi.
-Tên cột Kiểu dữ liệu
-Bảng 4.4: Bảng câu hỏi
-Bảng vai trò lưu thông tin của các vai trò ứng với từng loại người dùng khác
-Tên cột Kiểu dữ liệu
-Bảng 4.5: Bảng vai trò
-Tên cột Kiểu dữ liệu
-Bảng 4.6: Bảng quyền theo từng vai trò
-Bảng lưu các nội dung tổng quát về nội dung của khóa học và mã của bảng
-section sẽ là khóa ngoài tới bảng lưu các file tương ứng.
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Tên cột Kiểu dữ liệu
-Bảng 4.7: Bảng nội dung khóa học
-h, Bảng course_file Bảng lưu thông tin về các file thuộc vào các khóa học tương
-Tên cột Kiểu dữ liệu
-Bảng 4.8: Bảng File của khóa học
-Bảng bài tập lưu thông tin về các bài tập tương ứng với khóa học và mà bài tập
-sẽ là khóa ngoài ánh xạ tới bảng câu hỏi để lấy câu hỏi tương ứng.
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Tên cột Kiểu dữ liệu
-Bảng 4.9: Bảng bài tập
-Mục đích Công cụ Địa chỉ URL
-Bảng 4.10: Thư viện và công cụ sử dụng
-Sản phẩm của đồ án: Hệ thống học tập trực tuyến trên nền Website. Hệ thống
-cung cấp nền tảng trực tuyến cho người dùng có nhu cầu học tập và các giáo viên
-muốn tạo các khóa học online chất lượng hoặc có thể chia sẻ và trao đổi kiến thức
-qua những câu hỏi trong group cộng đồng. Người học có thể truy cập vào các khóa
-học từ bất kỳ đâu và bất kỳ lúc nào, chỉ cần có kết nối internet. Người học và giáo
-viên có thể chủ động hơn trong quá trình học và dạy của mình. Hệ thống giúp giảng
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 viên dễ dàng quản lý khóa học, theo dõi tiến độ học tập của học viên, và đánh giá
 kết quả học tập. Hệ thống có thể cung cấp các tính năng tương tác thời gian thực.
 Học viên có thể học theo tốc độ của riêng mình và lựa chọn các khóa học phù
@@ -754,78 +501,31 @@ người dùng dễ sử dụng, thao tác và vẫn đáp ứng đầy đủ c�
 * Màn hình trang chủ
 Cung cấp các thông tin cơ bản của một hệ thống học tập như hiển thị các khóa
 học, phần đăng nhập cho người dùng và người dùng có thể tìm kiếm các khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 * Màn hình khi người dùng đã vào hệ thống
 Người học sau khi đã đăng nhập vào hệ thống thì đưa đến trang chủ cá nhân.
 Các chức năng bao gồm như hiển thị các khóa học đang tham gia, có thể tìm kiếm
 các khóa học, nhận thông báo (nếu có), tìm kiếm giáo viên và chức năng cập nhập
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Hình 4.14: Màn hình sau khi đăng nhập
 * Màn hình làm bài tập
 Thành phần hiển thị gồm các câu hỏi và đáp án tương ứng với bài tập, các ô
 chọn đáp án sẽ tương ứng với loại câu hỏi( 1 hay nhiều đáp án ) giúp người học dễ
 dàng hơn trong việc học tập và củng cố và cuối cùng là nút gửi bài tập khi gửi hệ
 thống sẽ kiểm tra các câu hỏi đã được hoàn thành hết chưa và xác nhận lại yêu cầu
-Hình 4.15: Trang làm bài tập
 * Màn hình quản lí khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 Hiển thị đầy đủ thông tin về các khóa học hiện có. Giúp người quản lí hoặc giáo
 viên dễ dàng quản lí hoặc chỉnh sửa nếu có nhầm lẫn. Các chức năng có bản như
 chỉnh sửa, xóa đi kèm với từng khóa học giúp quản lí dễ dàng chỉnh sửa hoặc xóa
 bỏ. Bên trái trang là các liên kết đến các chức năng mà người quản lí có thể theo
-Hình 4.16: Trang quản lí khóa học
 * Màn hình Thêm khóa học
 Hiển thị các trường cần thiết khi tạo một khóa học mới bao gồm tên, học phí,
 ảnh đại diện(nếu có). Trong ô nhập liệu giáo viên cùng quản lí, đưa ra danh sách
 các giáo viên để người tạo lựa chọn và nút để xác nhận gửi yêu cầu tạo khóa học
 với các nội dung đã khai báo.
-Hình 4.17: Trang tạo khóa học
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
 * Màn hình chat của khóa học
 Giúp người học và giáo viên trao đổi các vấn đề thắc mắc liên quan trong khóa
 học tương ứng. Bao gồm các nội dung tên, nội dung người gửi và người nhận cùng
-Hình 4.18: Trang chat khóa học
 * Màn hình thanh toán
 Trang thanh toán học phí của khóa học (nếu có). Hiển thị các nội dung cơ bản
 về thông tin thanh toán và nội dung thanh toán.
-Hình 4.19: Trang Thanh toán
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Phần này có độ dài từ hai đến ba trang. Sinh viên thiết kế các trường hợp kiểm
-thử cho hai đến ba chức năng quan trọng nhất. Sinh viên cần chỉ rõ các kỹ thuật
-kiểm thử đã sử dụng. Chi tiết các trường hợp kiểm thử khác, nếu muốn trình bày,
-sinh viên đưa vào phần phụ lục. Sinh viên sau cùng tổng kết về số lượng các trường
-hợp kiểm thử và kết quả kiểm thử. Sinh viên cần phân tích lý do nếu kết quả kiểm
-* Kiểm thử chức năng Đăng nhập và đăng kí
-STT Mô tả Dữ liệu đầu vào Kết quả mong
-đã tồn tại"Hiển thị thông
-Mật khẩu: 123Thông báo tài
-khẩu bị saiHiển thị lỗi
-Bảng 4.11: Kiểm thử chức năng đăng nhập, đăng kí
-STT Mô tả Dữ liệu đầu vào Kết quả mong
-các câu hỏiChọn thiếu câu
-các câu hỏiThông báo chưa
-cả các câu hỏiChọn hết các
-Bảng 4.12: Kiểm thử chức năng nộp bài tập
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-STT Mô tả Dữ liệu đầu vào Kết quả mong
-trang xác nhậnHệ thống xác
-Bảng 4.13: Kiểm thử chức năng thanh toán
-STT Mô tả Dữ liệu đầu vào Kết quả mong
-cầu nhập thêmThông báo thiếu
-theo yêu cầuNhập đủ các
-Bảng 4.14: Kiểm thử chức năng tạo khóa học mới
-*Phân tích kết quả kiểm thử Trong quá trình kiểm thử thì tất cả các trường hợp
-kiểm thử đều đạt kết quả mong đợi,không có lỗi xảy ra.Điều này chứng tỏ rằng hệ
-thống đã hoạt động ổn định và đúng như yêu cầu.
-Hệ thống được triển khai và thử nghiệm thực tế trên máy tính cá nhân có những
-cấu hình và thống số như sau:
-CHƯƠNG 4. THIẾT KẾ, TRIỂN KHAI VÀ ĐÁNH GIÁ HỆ THỐNG
-Hệ điều hành Win 11 64 bit
-CPU 12th Gen Intel(R) Core(TM) i5-12450HX
-Cơ sở dữ liệu SQL Server
-Phần mềm khác SQL Server , VS code
-Bảng 4.15: Cấu hình máy tính triển khai hệ thống
-CHƯƠNG 5. KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
 Trong quá trình làm đồ án, em có gặp một vài vấn đề khó khăn như ở chức năng
 chat giữa người học và giáo viên làm cách nào để giáo viên và người học có thể
 trao đổi qua lại mà không phải tải lại trang website khi có một tin nhắn mới được
@@ -858,7 +558,6 @@ hướng các lĩnh vực được quan tâm nhiều tại từng thời điểm
 thời giữa người chia sẻ kiến thức và người có nhu cầu học tập. Ngoài ra, em cũng
 nhận thấy cần thực hiện kiểm thử và đánh giá một cách tổng quan hơn hệ thống khi
 đưa vào bộ kiểm thử với số lượng người dùng lớn để kịp thời phát hiện những vấn
-CHƯƠNG 5. KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
 đề tiềm ẩn cũng như khả năng chịu tải của hệ thống. Mặc dù đã thực hiện các kiểm
 thử cơ bản và đánh giá hiệu suất nhưng chưa đủ chi tiết và bao quát để có thể đảm
 bảo được hệ thống có thể hoạt động ổn định và hiệu quả với tất cả các tình huống

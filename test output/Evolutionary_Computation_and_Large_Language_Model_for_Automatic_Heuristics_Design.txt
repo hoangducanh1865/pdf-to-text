@@ -11,76 +11,110 @@ source of emotional support and encouragement during the most challenging times.
 Thank you all from the bottom of my heart!
 Automatic Heuristic Design (AHD) is an active research area due to its utility in
 solving complex search and NP-hard combinatorial optimization problems in the
-real world. Recent advances in Large Language Models (LLMs) introduce new possibilities by coupling LLMs with Evolutionary Computation (EC) to automatically
+real world. Recent advances in Large Language Models (LLMs) introduce new pos-
+sibilities by coupling LLMs with Evolutionary Computation (EC) to automatically
 generate heuristics, known as LLM-based Evolutionary Program Search (LLM-
 EPS). While previous LLM-EPS studies obtained great performance on various
 tasks, there is still a gap in understanding the properties of heuristic search spaces
 and achieving a balance between exploration and exploitation, which is a critical
-factor in large heuristic search spaces. This research addresses this gap by proposing two diversity measurement metrics and performing an analysis of previous
-LLM-EPS approaches, including FunSearch, EoH, and ReEvo. Results on blackbox AHD problems reveal that while EoH demonstrates higher diversity than FunSearch and ReEvo, its objective score is unstable. Conversely, ReEvo’s reflection
+factor in large heuristic search spaces. This research addresses this gap by propos-
+ing two diversity measurement metrics and performing an analysis of previous
+LLM-EPS approaches, including FunSearch, EoH, and ReEvo. Results on black-
+box AHD problems reveal that while EoH demonstrates higher diversity than Fun-
+Search and ReEvo, its objective score is unstable. Conversely, ReEvo’s reflection
 mechanism yields good objective scores but fails to optimize diversity effectively.
-In light of these findings, HSEvo was introduced as an adaptive LLM-EPS framework that strikes a balance between diversity and convergence through the use of
+In light of these findings, HSEvo was introduced as an adaptive LLM-EPS frame-
+work that strikes a balance between diversity and convergence through the use of
 a harmony search algorithm. Experimentation demonstrated that HSEvo achieved
 high diversity indices and good objective scores while remaining cost-effective.
 These results underscore the importance of balancing exploration and exploitation
 and understanding heuristic search spaces in designing frameworks in LLM-EPS.
-NP-hard Combinatorial Optimization Problems (COPs) frequently arise in realworld scenarios. Examples include groups of problems such as routing and logistics, scheduling and planning, network design, and others. To address these problems, heuristic methods are among the most commonly employed approaches due
+
+NP-hard Combinatorial Optimization Problems (COPs) frequently arise in real-
+world scenarios. Examples include groups of problems such as routing and logis-
+tics, scheduling and planning, network design, and others. To address these prob-
+lems, heuristic methods are among the most commonly employed approaches due
 to their superior efficiency in terms of time and resources needed to find solutions
 that approximate the optimal. Over the past few decades, significant efforts have
 been dedicated to designing effective search methods, resulting in techniques such
-as simulated annealing, tabu search, and iterated local search, among many others. These manually crafted methods have been successfully applied in numerous
+as simulated annealing, tabu search, and iterated local search, among many oth-
+ers. These manually crafted methods have been successfully applied in numerous
 However, due to the diverse nature of practical problems, each application comes
 with its constraints and objectives, often requiring customization or the selection of
 specific search methods tailored to the situation at hand. Manually creating, tuning,
 and configuring search methods for particular problems is not only labor-intensive
 but also demands deep expertise. This represents a bottleneck in many application
-domains. Consequently, AHD has emerged as a promising solution, aiming to automate the selection, tuning, or construction of efficient search methods for specific
+domains. Consequently, AHD has emerged as a promising solution, aiming to auto-
+mate the selection, tuning, or construction of efficient search methods for specific
 The goal of AHD is to address the difficulties involved in the creation of manual
 heuristics by utilizing computational methods to automatically generate or enhance
 heuristics. Among the various approaches within AHD, both Hyper-Heuristics
 (HHs) [1], [2] and Neural Combinatorial Optimization (NCO) [3]–[5] have gained
 substantial attention for their potential to address the limitations of traditional
-HHs operate within predefined heuristic spaces curated by human experts, selecting or generating heuristics from these established sets. While HHs have demonstrated success, their performance is inherently limited by the scope and quality of
-the predefined heuristic space, often restricting the discovery of novel or more efOn the other hand, NCO employs neural networks to learn patterns and predict
+HHs operate within predefined heuristic spaces curated by human experts, se-
+lecting or generating heuristics from these established sets. While HHs have demon-
+strated success, their performance is inherently limited by the scope and quality of
+the predefined heuristic space, often restricting the discovery of novel or more ef-
+On the other hand, NCO employs neural networks to learn patterns and predict
 solutions for COPs. By leveraging data-driven models, NCO seeks to generalize
-across problem instances, offering a more dynamic approach to heuristic development. Despite its promise, NCO faces significant challenges. Effective generalization across diverse problem instances requires robust inductive biases [6], which
-are difficult to design and implement. Additionally, the interpretability and explainability of the learned models remain pressing concerns [5], making it challenging
+across problem instances, offering a more dynamic approach to heuristic devel-
+opment. Despite its promise, NCO faces significant challenges. Effective general-
+ization across diverse problem instances requires robust inductive biases [6], which
+are difficult to design and implement. Additionally, the interpretability and explain-
+ability of the learned models remain pressing concerns [5], making it challenging
 to validate or trust the solutions produced. These limitations highlight the need for
 NCO frameworks to evolve further, incorporating mechanisms that enhance their
 The constraints associated with HHS and NCO underscore the need for more
 flexible, adaptive, and innovative methods in AHD. Addressing these limitations
-can unlock the full potential of heuristic design, enabling the development of systems that not only adapt to complex and evolving problem landscapes but also expand the horizons of heuristic discovery beyond current boundaries. Such advancements will play a crucial role in shaping the future of optimization and decisionmaking in both academic research and practical applications.
-Recently, the rise of LLMs has opened up new possibilities for AHD. It is believed that LLMs [7], [8] could be a powerful tool for generating new ideas and
+can unlock the full potential of heuristic design, enabling the development of sys-
+tems that not only adapt to complex and evolving problem landscapes but also ex-
+pand the horizons of heuristic discovery beyond current boundaries. Such advance-
+ments will play a crucial role in shaping the future of optimization and decision-
+making in both academic research and practical applications.
+Recently, the rise of LLMs has opened up new possibilities for AHD. It is be-
+lieved that LLMs [7], [8] could be a powerful tool for generating new ideas and
 heuristics. However, standalone LLMs with prompt engineering can be insufficient
 for producing novel and useful ideas beyond existing knowledge [9]. Some attempts
 have been made to couple LLMs with EC to automatically generate heuristics,
-known as LLM-EPS [10]–[12]. Initial works such as FunSearch [13] and subsequent developments like Evolution of Heuristic (know as EoH) [14] and Reflective
+known as LLM-EPS [10]–[12]. Initial works such as FunSearch [13] and subse-
+quent developments like Evolution of Heuristic (know as EoH) [14] and Reflective
 Evolution (know as ReEvo) [15] have demonstrated significant improvements over
-previous approaches, generating quality heuristics that often surpass current methods. Even so, ReEvo yields state-of-the-art and competitive results compared with
+previous approaches, generating quality heuristics that often surpass current meth-
+ods. Even so, ReEvo yields state-of-the-art and competitive results compared with
 evolutionary algorithms, neural-enhanced meta-heuristics, and neural solvers.
 A key difference between LLM-EPS and classic AHD lies in the search spaces
 of heuristics. Classic AHD typically operates within well-defined mathematical
-spaces such as Rn, whereas LLM-EPS involves searching within the space of functions, where each function represents a heuristic as a program. This functional
+spaces such as Rn, whereas LLM-EPS involves searching within the space of func-
+tions, where each function represents a heuristic as a program. This functional
 search space introduces unique challenges and opportunities, necessitating a deeper
 understanding of the properties and characteristics of heuristics within this domain.
-Despite the advancements made by LLM-EPS frameworks, there remains a significant gap in foundational theories and principles that underpin AHD within these
+Despite the advancements made by LLM-EPS frameworks, there remains a signif-
+icant gap in foundational theories and principles that underpin AHD within these
 expansive and complex search spaces.
-This research focuses on the intersection of EC and LLMs, exploring their potential synergy in AHD. History has demonstrated that evolutionary algorithms
-excel in optimization tasks ranging from combinatorial problems and image e
-hancement to industrial scheduling thanks to their population-based search mechanisms that balance exploration and exploitation. Simultaneously, LLMs such as
-ChatGPT, Claude, and Gemini have achieved remarkable advancements in natural language processing and code generation, showcasing their ability to produce
+This research focuses on the intersection of EC and LLMs, exploring their po-
+tential synergy in AHD. History has demonstrated that evolutionary algorithms
+excel in optimization tasks ranging from combinatorial problems and image en-
+hancement to industrial scheduling thanks to their population-based search mech-
+anisms that balance exploration and exploitation. Simultaneously, LLMs such as
+ChatGPT, Claude, and Gemini have achieved remarkable advancements in natu-
+ral language processing and code generation, showcasing their ability to produce
 coherent and contextually relevant outputs.
 The primary objective of this research is to explore how these two fields can
 collaborate to design heuristics for solving COPs. While current research has made
 progress in metrics such as solution quality and runtime efficiency, maintaining
 and leveraging diversity among candidate solutions remains underexplored. This
-oversight may limit the range of potential solutions, ultimately hindering opportuThus, the scope of this study aims at three objectives. First, "tools" should be developed to measure the diversity level promoted by various methods within LLM-
+oversight may limit the range of potential solutions, ultimately hindering opportu-
+Thus, the scope of this study aims at three objectives. First, "tools" should be de-
+veloped to measure the diversity level promoted by various methods within LLM-
 EPS frameworks. This quantification will enable straightforward comparison and
-selection of suitable diversity-enhancing methods, while also serving as a foundation for assessing the balance between exploration and exploitation. Second, the
+selection of suitable diversity-enhancing methods, while also serving as a founda-
+tion for assessing the balance between exploration and exploitation. Second, the
 study seeks to analyze how varying levels of diversity impact the search quality of
 different LLM-EPS frameworks. Finally, this work aims to design and evaluate a
-new LLM-EPS framework that balances exploration and exploitation, incorporating insights drawn from the second objective through the tools developed in the
-first objective. This framework will be tested on AHD problems, with results compared against existing LLM-EPS methods. This comparison will help evaluate the
+new LLM-EPS framework that balances exploration and exploitation, incorporat-
+ing insights drawn from the second objective through the tools developed in the
+first objective. This framework will be tested on AHD problems, with results com-
+pared against existing LLM-EPS methods. This comparison will help evaluate the
 proposed framework and provide evidence of its potential contributions based on
 This thesis makes three key contributions to the field of AHD:
 •Two new metrics are the Shannon-Wiener Diversity Index (SWDI) and the
@@ -88,73 +122,104 @@ Cumulative Diversity Index (CDI) proposed to evaluate and track the diversity
 of heuristic populations in LLM-EPS frameworks. SWDI evaluates diversity
 based on the distribution of heuristic clusters, encouraging a balance between
 exploration and exploitation. CDI assesses the overall spread and uniformity
-of heuristics in the search space by analyzing their distribution through a minimum spanning tree. These metrics address challenges in quantifying diversity in function-based search spaces. Both metrics offer practical insights into
+of heuristics in the search space by analyzing their distribution through a min-
+imum spanning tree. These metrics address challenges in quantifying diver-
+sity in function-based search spaces. Both metrics offer practical insights into
 population dynamics, revealing how diverse heuristics contribute to escaping
 local optima and improving optimization outcomes.
 •A comprehensive analysis of heuristic search spaces has been conducted. This
 investigation explores the relationship between the proposed diversity metrics
-and the performance of various LLM-EPS frameworks across different optimization problems. The analysis highlights that while higher diversity generally supports exploration, excessive diversity without proper optimization can
-hinder performance. Conversely, frameworks that overly prioritize exploitation risk premature convergence. These findings establish the significance of
+and the performance of various LLM-EPS frameworks across different opti-
+mization problems. The analysis highlights that while higher diversity gener-
+ally supports exploration, excessive diversity without proper optimization can
+hinder performance. Conversely, frameworks that overly prioritize exploita-
+tion risk premature convergence. These findings establish the significance of
 balanced diversity in heuristic design.
 •Introduce a novel framework called HSEvo. HSEvo integrates the Harmony
 Search (HS) algorithm to optimize diversity and convergence within LLM-
-EPS frameworks. It refines traditional evolutionary phases such as initialization, crossover, and mutation by incorporating advanced techniques like
-flash reflection and elitist mutation. Flash reflection uses LLM-driven analyses to guide heuristic improvements, while elitist mutation focuses on refining
+EPS frameworks. It refines traditional evolutionary phases such as initial-
+ization, crossover, and mutation by incorporating advanced techniques like
+flash reflection and elitist mutation. Flash reflection uses LLM-driven analy-
+ses to guide heuristic improvements, while elitist mutation focuses on refining
 top-performing heuristics. The HS component tunes heuristic parameters to
 enhance population quality while maintaining diversity. Experimental results
 demonstrate that HSEvo outperforms existing frameworks by achieving high
 diversity indices and superior objective scores, providing a cost-effective and
 The remainder of this thesis is organized as follows.
-Chapter 1 offers a thorough review of relevant literature, focusing on the foundational concepts of EC and LLMs. It also explores the emerging field of LLM-
+Chapter 1 offers a thorough review of relevant literature, focusing on the foun-
+dational concepts of EC and LLMs. It also explores the emerging field of LLM-
 EPS and emphasizes the significance of diversity in evolutionary algorithms. The
-chapter concludes by identifying gaps in current research and laying the groundwork for the proposed work.
+chapter concludes by identifying gaps in current research and laying the ground-
+work for the proposed work.
 Chapter 2 introduces two novel diversity metrics SWDI and CDI to measure
-and analyze the diversity of heuristic populations in LLM-EPS frameworks. Additionally, it explores the correlation between these diversity metrics and the objective scores of various optimization problems, providing insights into the role of
+and analyze the diversity of heuristic populations in LLM-EPS frameworks. Ad-
+ditionally, it explores the correlation between these diversity metrics and the ob-
+jective scores of various optimization problems, providing insights into the role of
 diversity in heuristic search spaces.
-Chapter 3 explains the proposed HSEvo framework, which integrates the HS algorithm with EC to balance exploration and exploitation in heuristic search spaces.
+Chapter 3 explains the proposed HSEvo framework, which integrates the HS al-
+gorithm with EC to balance exploration and exploitation in heuristic search spaces.
 It provides detailed descriptions of HSEvo, including population initialization,
 flash reflection, crossover, elitist mutation, and harmony search.
 Chapter 4 presents the experimental setup, benchmark datasets, and results of
-applying HSEvo to various AHD problems, including Bin Packing Online, Traveling Salesman Problem, and Orienteering Problem. After that, compares the performance of HSEvo with previous LLM-EPS frameworks and includes an ablation
+applying HSEvo to various AHD problems, including Bin Packing Online, Trav-
+eling Salesman Problem, and Orienteering Problem. After that, compares the per-
+formance of HSEvo with previous LLM-EPS frameworks and includes an ablation
 study to evaluate the effectiveness of the proposed components.
 Finally, Conclusions summarizes the key findings of the thesis, highlighting the
-importance of diversity in LLM-EPS frameworks and the effectiveness of the proposed HSEvo framework. It also suggests potential directions for future research in
-Artificial Intelligence (AI) is evolving at an extraordinary pace, inspiring innovative methods that blend disparate computational fields to tackle some of the most
+importance of diversity in LLM-EPS frameworks and the effectiveness of the pro-
+posed HSEvo framework. It also suggests potential directions for future research in
+Artificial Intelligence (AI) is evolving at an extraordinary pace, inspiring inno-
+vative methods that blend disparate computational fields to tackle some of the most
 demanding challenges. In this rapidly shifting landscape, two particular paradigms
 stand out for their strengths yet have traditionally advanced on separate tracks: EC
 and LLMs. EC, inspired by natural evolution, explores populations of candidate
-solutions to discover high-quality outcomes, whereas LLMs are adept at generating coherent, context-aware outputs ranging from textual prose to executable code.
+solutions to discover high-quality outcomes, whereas LLMs are adept at generat-
+ing coherent, context-aware outputs ranging from textual prose to executable code.
 As AI applications become more ambitious, a growing area of research, known as
 LLM-EPS, seeks to harness the best of both worlds: leveraging the adaptive search
 prowess of EC and the creative and generative capabilities of LLMs. This emerging
 fusion offers a novel route for solving challenges in AHD.
 Initial research indicates that aligning the iterative adjustments of EC with the
-adaptable generation abilities of LLMs can lead to significant advancements, especially in the creation of heuristic programs, code fragments, or even written solutions. Nevertheless, an essential question persists: How can diversity be ensured
-throughout the evolutionary process? This is particularly important when candidate solutions are no longer merely simple numeric vectors but are instead diverse
+adaptable generation abilities of LLMs can lead to significant advancements, es-
+pecially in the creation of heuristic programs, code fragments, or even written so-
+lutions. Nevertheless, an essential question persists: How can diversity be ensured
+throughout the evolutionary process? This is particularly important when candi-
+date solutions are no longer merely simple numeric vectors but are instead diverse
 forms of code or text. Preserving diversity is paramount to avoid converging too
-quickly on suboptimal solutions and to maintain an expansive search of the solution landscape. The subsequent sections provide an overview of EC principles,
+quickly on suboptimal solutions and to maintain an expansive search of the so-
+lution landscape. The subsequent sections provide an overview of EC principles,
 discuss the capabilities and constraints of modern LLMs, and survey recent strides
 in LLM-EPS research, with special attention to how future investigations might
 harness diversity to unlock even more powerful solutions.
 Although the convergence of EC and LLMs for optimization and AI is still a
 relatively new domain, it builds upon two longstanding bodies of research that
-have more often evolved in isolation. EC traditionally tackles numerical or combinatorial challenges, while LLMs excel at text-oriented tasks like language translation, content generation, and summarization. Current work in LLM-EPS illustrates how these fields can be merged: LLMs become generators of candidate solutions whether code snippets, pseudo-code, or textual explanations, and evolutionary frameworks guide these outputs toward continuous improvement.
+have more often evolved in isolation. EC traditionally tackles numerical or com-
+binatorial challenges, while LLMs excel at text-oriented tasks like language trans-
+lation, content generation, and summarization. Current work in LLM-EPS illus-
+trates how these fields can be merged: LLMs become generators of candidate solu-
+tions whether code snippets, pseudo-code, or textual explanations, and evolution-
+ary frameworks guide these outputs toward continuous improvement.
 Recent studies show this collaboration. In code generation, studies [7], [16], [17]
 showcase evolutionary strategies that refine LLM suggested programs for enhanced
 quality and resilience. In text generation [18], [19] illustrates how evolutionary
 refinement can produce more precise and diverse linguistic outputs. Together, these
 works point to tangible gains, including improved error resolution, larger solution
-Nevertheless, most existing research [13]–[15] focuses on performance indicators without explicitly examining how population diversity can be steered or maintained when solutions take the form of human-readable code or text. This missing
+Nevertheless, most existing research [13]–[15] focuses on performance indica-
+tors without explicitly examining how population diversity can be steered or main-
+tained when solutions take the form of human-readable code or text. This missing
 piece is critical for keeping evolutionary searches from prematurely collapsing on
 local optima and for fostering creative, wide-ranging solution sets. Future efforts,
 therefore, might delve deeper into incorporating diversity metrics to ensure that
 LLM-driven evolutionary processes not only excel in performance but also yield
 robust and flexible results across numerous domains.
-EC [20] is one computational intelligence model used to mimic the biological evolution phenomenon. Currently, EC includes four algorithms: Genetic Algorithm (GA), Evolutionary Programming (EP), Evolution Strategies (ES), and
+EC [20] is one computational intelligence model used to mimic the biologi-
+cal evolution phenomenon. Currently, EC includes four algorithms: Genetic Al-
+gorithm (GA), Evolutionary Programming (EP), Evolution Strategies (ES), and
 Genetic Programming (GP). GA was proposed by the American scholar Holland
 in the 1950s in a study of self-adapting control. To study the finite-state machine of
 AI, the American scholar Fogel proposed EP in the 1960s. At nearly the same time,
-the German scholars Rechenberg and Schwefel proposed ES to solve numerical optimization. In the 1990s, based on the GA, the American scholar Koza proposed
+the German scholars Rechenberg and Schwefel proposed ES to solve numerical op-
+timization. In the 1990s, based on the GA, the American scholar Koza proposed
 GP to study the automatic design of computer programs.
 Although the four algorithms were proposed by different scholars for different
 purposes, their computing processes are similar and can be described as follows.
@@ -163,15 +228,21 @@ purposes, their computing processes are similar and can be described as follows.
 3. The initial solutions are selected according to their evaluation results;
 4. The selected solutions are conducted by the evolutionary operations and the
 next generation of feasible solutions can be obtained;
-5. If the feasible solutions obtained during the above step can meet the requirements, then the computation will stop. Otherwise, the feasible solutions obtained during the above step are taken as the initial solutions, and the computation process returns to step 2.
-Generally, as one global optimization method, EC has the following characteristics: (i) The search process begins from one group and not from one point; (ii) only
+5. If the feasible solutions obtained during the above step can meet the require-
+ments, then the computation will stop. Otherwise, the feasible solutions ob-
+tained during the above step are taken as the initial solutions, and the compu-
+tation process returns to step 2.
+Generally, as one global optimization method, EC has the following characteris-
+tics: (i) The search process begins from one group and not from one point; (ii) only
 the objective function is used in the search process; and (iii) the random method is
 used in the search process. Therefore, this method has the following advantages: (i)
 Highly versatile and can be used for different problems; (ii) it can solve problems
 that are highly nonlinear and nonconvex; and (iii) the model’s plasticity is very
 high and can be deserialized very easily.
 The three evolutionary computation algorithms related to the research on this
-LLM-EPS include GA, EP, and GP. In the next section of the chapter, these algoAs the most widely used EC method, GA has a solid biologic foundation. Its
+LLM-EPS include GA, EP, and GP. In the next section of the chapter, these algo-
+Figure 1.1: Flow chart of GA.
+As the most widely used EC method, GA has a solid biologic foundation. Its
 basic principles are from Darwin’s evolution theory and Mendel’s genetic theory
 [21]. The basic GA flow chart is shown in Figure 1.1. The main operations of GA
 1.Individual encoding. According to Mendel’s genetic theory, the individual
@@ -179,8 +250,10 @@ must be represented by its genotype. Therefore, the binary encoding method
 is generally applied, which is one string of numbers 0 and 1. However, for a
 complicated engineering problem, the real encoding method is always used,
 which is one string of a real number.
-2.Crossover operation. This operation is completed to mimic the genetic recombination during biological mating. Generally, random pairing is applied.
-For different encoding methods, the crossover operation is different. For binary encoding, the point crossover is utilized. For real encoding, the discrete
+2.Crossover operation. This operation is completed to mimic the genetic re-
+combination during biological mating. Generally, random pairing is applied.
+For different encoding methods, the crossover operation is different. For bi-
+nary encoding, the point crossover is utilized. For real encoding, the discrete
 crossover and arithmetic crossover are always used. Moreover, this operation
 is conducted with a large probability.
 3.Mutation operation. This operation is completed to mimic the gene mutation
@@ -188,17 +261,24 @@ during the genetic process. Generally, for binary encoding, the simple point
 mutation is utilized. For real encoding, the uniform mutation and non-uniform
 mutation are always used. Moreover, this operation is conducted with a little
 4.Selection operation. This operation is completed to mimic the environment
-selection of Darwin’s evolution theory. Therefore, it is also called the reproduction operation. Generally, roulette wheel selection is widely used. However, stochastic tournament selection is a better operation for complicated en5.Termination criterion. Generally, the termination criterion specifies that the
+selection of Darwin’s evolution theory. Therefore, it is also called the repro-
+duction operation. Generally, roulette wheel selection is widely used. How-
+ever, stochastic tournament selection is a better operation for complicated en-
+5.Termination criterion. Generally, the termination criterion specifies that the
 difference between the maximum fitness value and average fitness value of
-one group is less than one error ϵ. To avoid infinite iteration, a maximum number of evolutionary generations is also specified. Moreover, there are some
-parameters to be determined: the number of individuals, crossover probability, mutation probability, ϵand maximum number of evolutionary generations.
+one group is less than one error ϵ. To avoid infinite iteration, a maximum num-
+ber of evolutionary generations is also specified. Moreover, there are some
+parameters to be determined: the number of individuals, crossover probabil-
+ity, mutation probability, ϵand maximum number of evolutionary generations.
 Generally, these parameters are determined based on experience and a test.
 The main operations of EP are as follow [22], [23].
 1.Mutation operation. This operation is the sole optimization operation; this is
 the specialty of the EP. Generally, Gauss random mutation is utilized.
-2.Testing feasibility of the individual. The fundamental nature of mutation involves a type of random alteration to the original individual, which means
+2.Testing feasibility of the individual. The fundamental nature of mutation in-
+volves a type of random alteration to the original individual, which means
 it cannot ensure that the newly mutated individual remains within the search
-space; in other words, a non-feasible individual could be generated. The existence of a non-feasible individual can not only make the result incorrect but
+space; in other words, a non-feasible individual could be generated. The exis-
+tence of a non-feasible individual can not only make the result incorrect but
 also make the efficiency low. To overcome this problem, a simple and easy
 method is proposed [23]. If the new mutated individual is non-feasible, it will
 be replaced by a randomly created feasible individual. However, this technique
@@ -207,37 +287,48 @@ may have a very low efficiency for certain problems.
 where individuals are probabilistically chosen based on their fitness, ensuring
 a balance between exploration and exploitation.
 4.Termination condition. This is the same as that of the GA. Moreover, there
-are some parameters to be determined: the number of individuals, ϵand maximum number of evolutionary generations. Thus, the number of parameters
+are some parameters to be determined: the number of individuals, ϵand max-
+imum number of evolutionary generations. Thus, the number of parameters
 for EP is less than that for the GA. Generally, these parameters can also be
 determined based on experience and a test.
 Because GP is proposed based on the basic GA principles, the procedures of
 two algorithms are nearly the same [24]. The main operations of GP are as follows.
 1.Individual encoding. The tree encoding method is applied. In other words,
 the layering tree structure expression is applied, which is shown in top of
-2.Crossover operation. Generally, random pairing and point crossover are utilized. This operation is also conducted with a large probability.
-3.Mutation operation. Generally, simple point mutation is utilized. This operation is conducted with a little probability.
+2.Crossover operation. Generally, random pairing and point crossover are uti-
+lized. This operation is also conducted with a large probability.
+3.Mutation operation. Generally, simple point mutation is utilized. This oper-
+ation is conducted with a little probability.
 4.Selection operation. Generally, roulette wheel selection is used.
-5.Termination criterion. This is the same as that of GA. Moreover, the parameters are the same as those of GA.
+5.Termination criterion. This is the same as that of GA. Moreover, the param-
+eters are the same as those of GA.
 LLMs are sophisticated AI systems that specialize in understanding, generating,
 and predicting human-like text. By analyzing extensive datasets, these models have
-made remarkable strides in various natural language processing tasks. Their capabilities include text generation, translation, and summarization, enhancing communication and information retrieval across different applications.
+made remarkable strides in various natural language processing tasks. Their capa-
+bilities include text generation, translation, and summarization, enhancing commu-
+nication and information retrieval across different applications.
 The evolution of language models has progressed from statistical methods to
 •Statistical language models: Early models, such as n-grams, estimated the
 probability of a word based on its preceding words but struggled with data
 sparsity and limited context understanding.
 •Neural network models: The introduction of neural networks allowed for
 continuous word representations, alleviating some limitations of statistical
-language models. Recurrent neural networks and long short-term memory networks were employed to capture sequential data dependencies.
+language models. Recurrent neural networks and long short-term memory net-
+works were employed to capture sequential data dependencies.
 •Transformer architecture: Introduced in [25], transformers utilize self-attention
-mechanisms to process input data in parallel, enabling the capture of longrange dependencies more effectively. This architecture underpins many modLLMs are built upon several key concepts. Fristly, LLMs assign probabilities to
+mechanisms to process input data in parallel, enabling the capture of long-
+range dependencies more effectively. This architecture underpins many mod-
+LLMs are built upon several key concepts. Fristly, LLMs assign probabilities to
 sequences of words, modeling the likelihood of a word following a given context.
 where P(wi|w1, w2, . . . , w i−1)represents the conditional probability of word wi
-Secondly, LLMs employ deep neural networks with multiple layers and parameters to learn complex language patterns. The training process involves adjusting
+Secondly, LLMs employ deep neural networks with multiple layers and param-
+eters to learn complex language patterns. The training process involves adjusting
 these parameters to minimize a loss function, typically the cross-entropy loss:
 where Nis the number of words in the training corpus.
 Finally the heart of modern LLMs lies the Transformer architecture (Figure 1.2).
 Transformers use self-attention mechanisms to weigh the importance of different
-words in a sequence, enabling the model to capture contextual relationships effectively. The self-attention mechanism is computed as:
+words in a sequence, enabling the model to capture contextual relationships effec-
+tively. The self-attention mechanism is computed as:
 where Q(queries), K(keys), and V(values) are matrices derived from the input
 embeddings, and dkis the dimensionality of the keys.
 Training LLMs involves several key steps. First, data collection is essential, as
@@ -246,6 +337,7 @@ it requires aggregating extensive text data from diverse sources to capture a wi
 Generate a heuristicinspired by the given examples
 Function setadd  subfor  sum  ⋯⋯Terminal setbins itemstrue false⋯⋯specified byhuman experts
 definitial_heuristic(item: float, bins: list) -> list:```Define priority with which we assign an item to each bin.:param item: Size of item to be added to the bin.:param bins: List of capacities for each bin.:return: a list showing priority score of each bin.```return[0] * len(bins)
+Figure 1.3: An illustration of the LLM-based EPS paradigm, with respect to the GP-based
 paradigm (top section), for AHD [27].
 LLM-EPS combines the adaptive search capabilities of evolutionary algorithms
 with the generative power of LLMs, unlocking new possibilities for AHD. Unlike
@@ -258,10 +350,11 @@ At the core of FunSearch’s architecture, as shown in Figure 1.4, is its evolut
 skeleton encapsulates known functional structures and isolates the critical logic
 for optimization, thereby reducing the search space and improving accuracy. The
 system employs an island-based model to maintain a diverse pool of candidate programs, as shown in Figure 1.5. By avoiding local optima and encouraging diversity
-grams it has generated so far (retrieved from the programs database), and asked to generate
+Figure 1.4: The FunSearch process [13]. The LLM is shown a selection of the best programs it has generated so far (retrieved from the programs database), and asked to generate
 an even better one. The programs proposed by the LLM are automatically executed, and
 evaluated. The best programs are added to the database, for selection in subsequent cycles.
 The user can at any point retrieve the highest-scoring programs discovered so far.
+Figure 1.5: Program clusters within islands of FunSearch [13].
 through genetic-like operations, FunSearch achieves robust exploration across a
 wide range of program variations.
 The distributed architecture of FunSearch enhances scalability and efficiency.
@@ -290,7 +383,9 @@ thedestination node .•Code :defname (input1, …, inputI)
 node that with thesmallest ratio ofthe
 distance tothecurrent node divided by
 thedistance tothedestination node•Code :defname (input1, …, inputI)
+Figure 1.6: An illustration of the AEL framework [28], which serves as a foundational
 Prompt Strategies:1)Exploration: E1        E22)Modification: M1       M2       M3
+Figure 1.7: EoH evolves both thoughts and codes using LLMs [14].
 Another noteworthy approach is Evolution of Heuristics (EoH), aimed explicitly
 at AHD while minimizing manual labor. EoH represents heuristics both as natural
 language “thoughts” and as executable code, mirroring the way human experts
@@ -307,6 +402,7 @@ This method requires fewer queries to LLMs compared to previous techniques
 such as FunSearch. Additionally, it eliminates the need for custom-crafted features
 or additional training. The upshot is a more streamlined method that outperforms
 manually created heuristics across diverse optimization benchmarks. As EoH reduces the overhead of domain-specific engineering, it underscores the breadth of
+Figure 1.8: ReEvo pipeline [15].
 In pursuit of state-of-the-art results, Reflective Evolution (ReEvo) integrates
 LLMs with a GP foundation to tackle NP-hard combinatorial optimization tasks.
 ReEvo employs two types of LLMs: a Generator LLM, which produces initial code
@@ -342,6 +438,7 @@ the literature consistently highlights the importance of extensive exploration t
 avoid becoming trapped in suboptimal solutions. Diversity is the crucial component that integrates a genuinely adaptive search process, facilitating breakthroughs
 in problem-solving. In the following chapter, advanced methods for incorporating
 diversity into LLM-EPS will be examined.
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 This chapter introduces a method for encoding the LLM-EPS population and
 proposes two metrics for measuring diversity: SWDI and CDI. Following this, a
 diversity analysis will be conducted on previous LLM-EPS frameworks, including
@@ -360,6 +457,7 @@ community, or archive, it is first necessary to determine the probability distri
 of individuals across the clusters. This is represented as:
 where Ciis a cluster of individuals and Mrepresents the total number of individuals across all clusters {C1, . . . , C N}. The SWDI, H(X), is then calculated using the
 This index serves as a crucial metric in maintaining the balance between exploration and exploitation within heuristic search spaces. A higher index score suggests a more uniform distribution of individuals across the search space, thus pr
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 moting exploration. Conversely, a lower index score indicates concentration around
 specific regions, which may enhance exploitation but also increase the risk of preTo obtain the SWDI score, at each time step t, all individuals Ri={r1, . . . , r n}
 generated during that time step are added to an archive. The population encoding
@@ -386,6 +484,7 @@ particles locations decreases while, missing information or uncertainty increase
 In graph theory, each edge can be assigned a weight representing, for example,
 the energy required to traverse that edge. A graph with a complex structure and
 varying edge weights exhibits higher entropy, indicating a more disordered system.
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 Conversely, a simpler structure with uniformly distributed weights corresponds to
 An Minimum Spanning Tree (MST) of a connected, edge-weighted graph is a
 subset of the edges that connects all vertices without any cycles and with the minimum possible total edge weight. Constructing an MST can be seen as a process
@@ -403,6 +502,7 @@ using Euclidean distance. This MST provides a structure to assess the diversity 
 the population. Let direpresent the distance of an edge within the MST, where
 i∈ {1,2, . . . , #A−1}. The probability distribution of these distances is given by:
 The cumulative diversity is then calculated using the Shannon entropy:
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 This method enables the collection of the complete diversity present in the
 search space, offering valuable information about the range of solutions. Higher
 CDI values indicate a more distributed and diverse population, which is essential
@@ -427,6 +527,8 @@ with the code embedding model used is CodeT5+2[39], and similarity threshold
 objective scores and the two diversity metrics from these runs on BPO, TSP, and
 OP are presented in Figure 2.1, Figure 2.2, and Figure 2.3, respectively.
 From figure 2.1, there are a few observations that can be drawn. First, the two diversity measurement metrics have a noticeable correlation with the objective scores
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
+Figure 2.1: Diversity indices and objective scores of ReEvo framework on BPO problem
 of the problem. When the objective score is converged into a local optima, the
 framework either tries to focus on the exploration by increasing the diversity of the
 population, through the increase of SWDI in the first and second runs or tries to
@@ -437,13 +539,17 @@ stuck in local optima for an extended period. However, if the whole population i
 not diverse enough, as can be seen with the low CDI of the second run, the population might not be able to escape the local optima. These observations about
 the correlation between the objective score and diversity measurement metrics are
 similarly reflected in Figures 2.2 and 2.3.
+Figure 2.2: Diversity indices and objective scores of ReEvo framework on TSP through
 To analyze the overall diversity of previous LLM-EPS frameworks, experiments
 were conducted on three distinct LLM-EPS frameworks: FunSearch [13], ReEvo
 [15], and EoH [14], focusing on three separate AHD problems (BPO, TSP, OP).
 The details of each experiment are presented in Section 4.1. Note that, as hig
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
+Figure 2.3: Diversity indices and objective scores of ReEvo framework on OP through
 lighted in the previous section, SWDI focuses on understanding the diversity of
 the population during a single run. As such, it may not help quantify the diversity
 across multiple experiment runs. Fig. 2.4 presents the experiment results.
+Figure 2.4: CDI and objective scores of previous LLM-EPS on different AHD problems.
 In BPO and TSP, EoH obtained the highest CDI but got the worst objective
 score. This implies that EoH does not focus enough on exploitation to optimize
 the population better. In contrast, while ReEvo and FunSearch obtain lower CDI
@@ -454,11 +560,13 @@ frameworks. However, for the OP problem, it is evident that a high CDI is necess
 to achieve a better objective score, which aligns with the findings discussed in
 In conclusion, this chapter has introduced a comprehensive approach to measuring diversity within LLM-EPS frameworks, focusing on SWDI and CDI. The
 proposed population encoding method addresses the unique challenge of representing code snippets as vectors, enabling the application of these diversity metrics. Through extensive experiments on various AHD problems, the correlation
+CHAPTER 2. DIVERSITY MEASUREMENT METRICS
 between diversity metrics and objective scores has been explored, revealing the
 delicate balance between exploration and exploitation in heuristic search spaces.
 The analysis of previous LLM-EPS frameworks, including FunSearch, ReEvo, and
 EoH, underscores the trade-offs between diversity and performance, highlighting
 the importance of maintaining an optimal level of diversity to avoid premature convergence and enhance solution quality.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 This chapter introduces a novel LLM-EPS framework called Harmony Search
 Evolution (HSEvo). HSEvo aims to enhance the diversity of the population while
 improving optimization performance and relieving the trade-off between these two
@@ -482,10 +590,12 @@ of the heuristic function to be searched. Additionally, to leverage existing kno
 instructions (e.g., "You are an expert in the domain of optimization heuristics...",
 "You are Albert Einstein, developer of relativity theory..."), details instructions in
 the next Section 3.2.1. This approach aims to enrich the heuristic generation process by incorporating diverse perspectives and expertise.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 of heur isticx NSelec tionCr osso v erFlash Reflec tion
 Elitist MutationHar m on y Se ar c h
 Se ar c h*T r y _ HS 
 Heur isticDeep analy sisLLMElitist Heur isticReflec tionFlo w dir ec tionSt opThe Last
+Figure 3.1: Overview of the HSEvo framework.
 Selection. In HSEvo, the selection of parent pairs for crossover is performed
 using a random selection strategy. This approach involves choosing two individuals from current population with equal probability, without any bias towards their
 fitness or performance. The primary goal of this random selection is to maintain a
@@ -507,6 +617,7 @@ Later, [15] also proposed integrating Reflections into LLM-EPS in ReEvo as an
 approach analogous to providing “verbal gradient” information within heuristic
 spaces. HSEvo argue that reflecting on each pair of heuristic parents individually
 is not generalized and wastes resources. To address these issues flash reflection
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 proposed to alternative Reflection method for LLM-EPS. The flash reflection process is structured into two distinct steps.
 •First, at each time step t, the individuals selected during the selection phase
 are grouped, and any duplicate individuals are removed. This ensures that the
@@ -535,6 +646,7 @@ two parents via guide result guide information part of flash reflections. Throug
 this step, HSEvo hopes to produce offspring that inherit the strengths of both,
 which can potentially lead to better-performing heuristics. The prompt includes
 task specifications, a pair of parent heuristics, guide information part of flash reElitist mutation. HSEvo employs an elitist mutation strategy, focusing its mut
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 tion efforts on the "elite" individual, which represents the best-performing heuristic found so far. This approach leverages the generator LLM to mutate this elite
 individual, incorporating insights derived from the LLM-analyzed flash reflections. The mutation process is not random; instead, it is guided by the accumulated knowledge and feedback from the flash reflection, aiming to enhance the
 elite heuristic’s performance. Each mutation prompt includes detailed task specifications, the code of the elite heuristic, the deep analysis from the flash reflections,
@@ -557,6 +669,7 @@ and defining a range for each parameter (Figure 3.2).
 their defined ranges, aiming to find a combination that maximizes the heuristic’s performance. This process involves creating a "harmony memory," which
 stores a set of parameter combinations, and iteratively generating new harmonies by adjusting existing ones or creating new ones randomly. The performance of each harmony is evaluated, and the harmony memory is updated
 with better-performing combinations. This iterative process continues for a
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 predefined number of iterations, allowing the HS algorithm to explore parameter space and identify optimal or near-optimal parameter settings.
 •After the parameter optimization is complete, the optimized individual is marked
 to prevent it from being optimized again in future time steps. This ensures that
@@ -576,6 +689,7 @@ the discovery of more robust and high-performing heuristics.
 An overview of the flow of HSEvo is also described through pseudo-algorithm
 1, where function_evals <max_fe serves as the stopping condition. Here,
 function_evals is a counter variable tracking the number of evaluated individuals, and max_fe is the maximum number of individuals HSEvo will evaluate.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Data: Configuration files, problem-specific parameters
 Result: Best code found and its path
 Initialization : Load configuration, initialize LLM prompts, and generate
@@ -593,6 +707,7 @@ Update : Update the best individual (elitist);
 Increment iteration count and log results;
 Check and update reflection lists based on elitist changes;
 Return the best code found and its path;
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 This section synthesizes the prompts used in the HSEvo framework. The HSEvo
 prompt system includes four stages: initialization, population, flash reflection, crossover,
 Prompt 1: System prompt for generator LLM.
@@ -613,6 +728,7 @@ perspectives and promote population diversity. The roles are chosen in a roundro
 •You are Ada Lovelace, computer programming pioneer.
 correspond to the heuristic function name, the specific problem description, and
 the function description, respectively, which will be detailed in the section 3.2.7.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Prompt 3: User prompt for population initialization.
 Refer to the format of a trivial design above. Be very creative and give ‘{function_name}_v2’. Output code only and enclose your code with Python code
 block: “‘python ... “‘ .
@@ -620,6 +736,7 @@ Here, task_description refer to Prompt 2, seed_ function is a trivial heuristic 
 Prompt 4: System prompt for reflector LLM.
 You are an expert in the domain of optimization heuristics. Your task is to
 provide useful advice based on analysis to design better heuristics.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Prompt 5: User prompt for flash reflection pharse 1.
 Below is a list of design heuristics ranked from best to worst.
 - Keep in mind, list of design heuristics ranked from best to worst. Meaning
@@ -632,6 +749,7 @@ worst) ...; Comparing (1st) vs (2nd), I see ...; (3rd) vs (4th) ...; Comparing
 to **Experience:** ( <60 words).
 I’m going to tip $999K for a better heuristics! Let’s think step by step.
 list_ranked_heuristics is a list of heuristic functions obtained by grouping parent pairs from selection, removing duplicates, and ranking based on the
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 Prompt 6: User prompt for flash reflection pharse 2.
 Your task is to redefine ‘Current self-reflection’ paying attention to avoid all
 things in ‘Ineffective self-reflection’ in order to come up with ideas to design
@@ -648,6 +766,7 @@ Output the code within a Python code block: “‘python ... “‘, has comment
 and docstring ( <50 words) to description key idea of heuristics design.
 I’m going to tip $999K for a better heuristics! Let’s think step by step.
 nature_worse ,code_worse are the function signatures and code of the better
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 and worse parent individuals, respectively. flash_refection is the output of
 the flash reflection step 2 from the current generation.
 Prompt 8: System prompt for elitist mutation.
@@ -668,6 +787,37 @@ element is end value corresponding with parameter.
 - Output ’parameter_ranges’ dictionary only and enclose your code with
 other Python code block: “‘python ... “‘ .
 elitist_code is the snippet/string code of the elitist individual in the current population that has not yet undergone harmony search.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
+Table 3.1: Problem descriptions used in prompts
+BPO Solving online Bin Packing Problem (BPP). BPP requires packing a
+set of items of various sizes into the smallest number of fixed-sized
+bins. Online BPP requires packing an item as soon as it is received.
+TSP Solving Traveling Salesman Problem (TSP) via guided local search.
+TSP requires finding the shortest path that visits all given nodes and
+returns to the starting node.
+OP Solving a black-box graph combinatorial optimization problem via
+stochastic solution sampling following “heuristics".
+Table 3.2: Function descriptions used in prompts
+BPO The priority function takes as input an item and an array of
+bins_remain_cap (containing the remaining capacity of each bin) and
+returns a priority score for each bin. The bin with the highest priority
+score will be selected for the item.
+TSP The ‘update_edge_distance’ function takes as input a matrix of edge
+distances, a locally optimized tour, and a matrix indicating the number of times each edge has been used. It returns an updated matrix of
+edge distances that incorporates the effects of the local optimization
+and edge usage. The returned matrix has the same shape as the input ‘edge_distance’ matrix, with the distances adjusted based on the
+provided tour and usage data.
+OP The ‘heuristics’ function takes as input a vector of node attributes
+(shape: n), a matrix of edge attributes (shape: n by n), and a constraint
+imposed on the sum of edge attributes. A special node is indexed
+by 0. ‘heuristics’ returns prior indicators of how promising it is to
+include each edge in a solution. The return is of the same shape as
+the input matrix of edge attributes.
+Problem-specific prompts are given below:
+•Table 3.1 presents problem_description for all problems.
+•Table 3.2 lists the function_description for all problem settings.
+•Figure 3.3 shows the function_signature , which also includes the func•Figure 3.6 shows the seed_function used for each problem.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 The best heuristics generated by HSEvo for all problem settings are presented
 in Figure 3.9, 3.10, 3.11, 3.12, 3.13, and 3.14.
 To summarize, this chapter presented HSEvo, an innovative LLM-EPS framework that transforms heuristic optimization by integrating population diversity and
@@ -676,18 +826,26 @@ search. HSEvo utilizes code-based individual encoding to enhance its adaptabilit
 in addressing a wide range of intricate optimization challenges. Key components,
 such as the random selection mechanism, flash reflection, and elitist mutation, ensure thorough exploration of the heuristic space while preventing premature convergence. By incorporating the HS algorithm for fine-tuning parameters, HSEvo
 further optimizes its best-performing heuristics, achieving a synergy between exploration and exploitation. Along with this, detailed descriptions of prompts, pseudocode, and the best heuristics on various benchmarks using HSEvo are provided.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 8 heuristics = (prize *
 (a)Origin Code1import numpy as np
 11 heuristics = (prize *
+Figure 3.2: An example of how the harmony search component works in HSEvo.
 1def priority_v{version}(item: float , bins_remain_cap: np.ndarray)
+Figure 3.3: Function signatures used in HSEvo for BPO.
 local_opt_tour: np.ndarray, edge_n_used: np.ndarray) -> np.
+Figure 3.4: Function signatures used in HSEvo for TSP.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 1def heuristics_v{version}(node_attr: np.ndarray, edge_attr: np.
+Figure 3.5: Function signatures used in HSEvo for OP.
 1def priority_v1(item: float , bins_remain_cap: np.ndarray) -> np.
 2 """Returns priority with which I want to add item to each bin
 5 item: Size of item to be added to the bin.
 6 bins_remain_cap: Array of capacities for each bin.
 9 Array of same size as bins_remain_cap with priority score
 11 ratios = item / bins_remain_cap
+Figure 3.6: Seed heuristics used in HSEvo for BPO.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 local_opt_tour: np.ndarray, edge_n_used: np.ndarray) -> np.
 4 edge_distance (np.ndarray): Original edge distance matrix
 5 local_opt_tour (np.ndarray): Local optimal solution path.
@@ -698,7 +856,10 @@ of times each edge is used.
 16 next_node = local_opt_tour[i + 1]
 17 updated_edge_distance[current_node, next_node] *= (1 +
 *= (1 + edge_n_used[local_opt_tour[-1], local_opt_tour
+Figure 3.7: Seed heuristics used in HSEvo for TSP.
 1def heuristics_v1(node_attr: np.ndarray, edge_attr: np.ndarray,
+Figure 3.8: Seed heuristics used in HSEvo for OP.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 8def priority_v2(item: float , bins_remain_cap: np.ndarray,
 overflow_threshold: float = 1.0987600915713542, mild_penalty:
 float = 0.5567025232550017, adaptability_lower: float =
@@ -716,6 +877,8 @@ selection in online BPP with a more holistic approach."""
 overflow_threshold, mild_penalty * (occupancy_ratio -
 25 # Logarithmic penalty for remaining capacity to encourage
 26 log_penalty = np.where(bins_remain_cap > 0, np.log1p(
+Figure 3.9: The best heuristic for BPO found by HSEvo.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 4 # Adaptability based on remaining mean capacity
 5 remaining_mean = np.mean(bins_remain_cap[bins_remain_cap >
 6 adaptability_factor = np.where(bins_remain_cap <
@@ -728,6 +891,8 @@ overflow_penalty * log_penalty * adaptability_factor, -np.
 np.min(scores)) ifmax_score > np. min(scores) else scores
 15 # Invert scores for selecting the highest priority bin
 16 inverted_priorities = 1 - prioritized_scores
+Figure 3.10: The best heuristic for BPO found by HSEvo (continue).
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 9 Update edge distances using adaptive penalties and bonuses,
 10 while ensuring nuanced performance in line with real-time
 15 # Calculate average usage for dynamic adjustments
@@ -737,6 +902,8 @@ np.min(scores)) ifmax_score > np. min(scores) else scores
 23 # Adaptive penalty for overused edges
 25 # Penalty increases exponentially with usage
 26 penalty = penalty_factor * (usage_count -
+Figure 3.11: The best heuristic for TSP found by HSEvo.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 4 elif usage_count < boost_threshold:
 5 # Apply a bonus to underused edges
 6 boost = bonus_factor * (1 + (boost_threshold -
@@ -746,6 +913,8 @@ decay_factor ** (usage_count - avg_usage))
 14 adjustment_factor = scaling_factor * (1 +
 decay_factor ** (avg_usage - usage_count))
 16 # Update the distance with adjustment and ensure non17 updated_edge_distance[current_node, next_node] = max(
+Figure 3.12: The best heuristic for TSP found by HSEvo (continue).
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 4def heuristics_v2(node_attr: np.ndarray, edge_attr: np.ndarray,
 node_constraint: float ) -> np.ndarray:
 6 Enhanced heuristics incorporating contextual adjustments,
@@ -762,6 +931,8 @@ node_constraint: float ) -> np.ndarray:
 29 # Multi-dimensional scaling based on edge and node
 31 scaling_factor = np.sqrt(adjusted_edge +
 33 scaling_factor = influence_threshold / (
+Figure 3.13: The best heuristic for OP found by HSEvo.
+CHAPTER 3. AUTOMATIC HEURISTIC DESIGN WITH HSEVO
 4 # Layered logic for combined node influence using non
 6 (normalized_node_attr[i] ** non_linearity_base) +
 8 ) ** 1.5 # Further amplify the influence
@@ -769,6 +940,129 @@ node_constraint: float ) -> np.ndarray:
 14 penalty_base = np.log1p(dynamic_edge) # Non15 penalty_factor = 1 / (1 + penalty_base ** 2) #
 18 # Normalization to retain meaningful scale
 19 score_matrix[i, j] = score / (dynamic_edge +
+Figure 3.14: The best heuristic for OP found by HSEvo (continue).
+To unveil the potential of the HSEvo framework. This chapter presents a series
+of experiments designed to benchmark its performance against existing LLM-EPS
+methodologies. By tackling a range of optimization challenges, including BPO,
+TSP, and OP, this thesis examines how effective HSEvo is in improving heuristic
+Benchmarks: To evaluate the diversity and objective scores of HSEvo in comparison to earlier LLM-EPS frameworks, the same benchmarks outlined in Section
+[42], TSP [43], and OP [38].
+•BPO: packing items into bins of fixed capacity in real-time without prior
+knowledge of future items. In this benchmark, LLM-EPS frameworks need
+to design deterministic constructive heuristics to solve.
+•TSP: find the shortest possible route that visits each city exactly once and
+returns to the starting point. In this setting, LLM-EPS frameworks need to
+design heuristics to enhance the perturbation phase for the GLS solver.
+•OP: find the most efficient path through a set of locations, maximizing the
+total score collected within a limited time or distance. This setting requires
+LLM-EPS frameworks to design herustics used by the ACO solver.
+Experiment settings: All frameworks were executed under identical environmental settings listed in Table 4.1. The heuristic search processes across the LLM-
+EPS frameworks and the evaluations of heuristics were conducted using a single
+core of an Xeon Processors CPU.
+Definition. The objective of this problem is to effectively assign a diverse collection of items, each with its own specific size and weight, into the smallest possible number of containers, each having a fixed capacity denoted by C. This challenge is particularly focused on the online packing scenario, where items are introduced one at a time and must be packed immediately upon arrival without prior
+knowledge of future items. This contrasts with the offline scenario, where all items
+are available beforehand and can be optimized together.
+Table 4.1: Summary of parameters settings
+LLM (generator and reflector) gpt-4o-mini-2024-07-18
+LLM temperature (generator and reflecMaximum budget tokens 425K tokens
+Population size (for EoH, ReEvo and
+HSEvo)30 (initial stage), 10 (other stages)
+Mutation rate (for ReEvo and HSEvo) 0.5
+# of islands, # of samples per prompt (for
+Number of independent runs per experiHS size, HMCR, PAR, bandwidth, max iterations (for Harmony Search)5, 0.7, 0.5, 0.2, 5
+Maximum evaluation time for each heuristic100 sec (TSP-GLS), 50 sec (Other)
+Dataset generation. Following [13], this experiment randomly generates five
+Weibull instances of size 5k with a capacity of C= 100 . The objective score is
+nof five instances, where lbrepresents the lower bound of the
+optimal number of bins computed [44] and nis the number of bins used to pack all
+the items by the evaluated heuristic.
+Solver. LLM-EPS is used to design heuristic functions that are able to solve this
+problem directly without any external solver.
+Definition. The TSP is a well-known combinatorial optimization issue in the
+field of computer science and operations research. It involves a scenario where a
+salesman must visit a given set of cities, with the objective of finding the shortest
+possible route that allows him to visit each city exactly once before returning to his
+starting point, which is often referred to as the origin city.
+Dataset generation. Following [37], this experiment generates a set of 64 TSP
+instances with 100 nodes (TSP100). The node locations in these instances are randomly sampled from [0,1]2. This means that the nodes are positioned within a
+square area bounded by (0, 0) and (1, 1). The average gap from the optimal solution, generated by Concorde [45], is used as the objective score.
+Solver. GLS was used as the solver for this benchmark. GLS explores the solution space using local search operations guided by heuristics. The idea behind
+using this solver is to explore the potential of search penalty heuristics for LLM-
+Table 4.2: Problems parameters used for heuristic evaluations
+Problem Problem size # of iterations Other
+EPS. In this experiment, the traditional GLS algorithm was modified by including
+perturbation phases [46], where edges with higher heuristic values are given priority for penalization. Settings parameters are listed in Table 4.2, and the number of
+Definition. In the OP at hand, the primary aim is to maximize the cumulative
+score achieved by visiting a series of designated nodes. This objective is subject to
+the condition that the total length of the tour does not exceed a specified maximum
+limit. The nodes represent key points of interest, each contributing a certain score,
+and the challenge lies in strategically planning the route to optimize the overall
+score while adhering to the constraints of the maximum allowable tour length.
+Dataset generation. Following the process of DeepACO [38] during the generation of this synthetic dataset. In each problem instance, uniform distribution is
+used to sample 50 nodes (OP50), including the depot node, from the unit interval
+[0,1]2. This means that the nodes are positioned within a square area bounded by
+(0, 0) and (1, 1). Especially, a challenging prize distribution [47] also adopt:
+where d0irepresents the distance between the depot and node i, and the maximum tour length constraint is 3.
+Solver. For this problem, ACO is used as a solver for this benchmark. ACO is
+an evolutionary algorithm that integrates solution sampling with pheromone trail
+updates. It employs stochastic solution sampling, which is biased towards more
+promising solution spaces based on heuristics. The population size is set at 20 for
+Table 4.3: Experiment results on different AHD problems
+CDI (↑) Obj. (↓) CDI (↑) Obj. (↓) CDI (↑) Obj. (↓)
+FunSearch 4.97±0.24 2.05±2.01 5.24±0.14 0.09±0.06 - -
+EoH 5.86±0.49 3.17±2.97 5.81±0.23 1.09±3.11 6.17±0.42−14.62±0.22
+ReEvo 4.91±0.53 2.48±3.74 5.15±0.19 0.05±0.06 5.02±0.13−14.54±0.21
+HSEvo 5.68±0.35 1.07±1.11 5.41±0.21 0.02±0.03 5.67±0.41−14.62±0.12
+Table 4.3 present experiment results on all three AHD problems1. From the table, it was observed that while HSEvo still hasn’t obtained better CDI than EoH,
+HSEvo is able to achieve the best objective score on all tasks. On BPO, HSEvo
+outperforms both FunSearch and ReEvo by a huge margin. This highlights the importance of my findings from the analysis in Section 2.5, where it is crucial to
+improve diversity in order to optimize the population better.
+Diversity indexObjective score ↓ SWDI ↑ CDI ↑
+Figure 4.1: Diversity indices and objective scores of HSEvo framework on BPO problem
+Diversity indexObjective score ↓ SWDI ↑ CDI ↑
+Figure 4.2: Diversity indices and objective scores of HSEvo framework on TSP problem
+To investigate the impact of my framework on the diversity of the population,
+Figure 4.1, 4.2, and 4.3 was plotted to illustrate the diversity metrics and objective
+1Extending FunSearch to solve the OP problem with an ACO solver caused conflicts that could
+not be resolved with reasonable effort.
+Diversity indexObjective score ↓ SWDI ↑ CDI ↑
+Figure 4.3: Diversity indices and objective scores of HSEvo framework on OP problem
+Table 4.4: Ablation results on harmony search
+score of HSEvo through different runs on BPO, TSP, OP problems, respectively.
+It can draw a similar observation with findings in Section 2.4, where with a high
+SWDI and CDI, the objective score can be optimized significantly. One thing to
+note here is that in HSEvo first run in Figure 4.1 and ReEvo third run in Figure
+at around 3.0 when the objective score improves significantly, then only decreases
+marginally after that. In ReEvo, the objective score improves when SWDI is at
+around 3.0 and 2.7, and the magnitude of the improvement is not as large as HSEvo,
+which implies the importance of diversity in the optimization of the problem and
+also the impact of the proposed harmony search.
+To gain a better understanding of novel framework HSEvo, The experiment extends to conduct ablation studies on proposed components, the harmony search,
+As harmony search is a vital component in HSEvo framework, it will not be
+eliminated from HSEvo; instead, an experimental setup will incorporate harmony
+search into the ReEvo framework. The results of the experiment concerning the OP
+problem are summarized in Table 4.4. The findings indicate that HSEvo surpasses
+both ReEvo and the variant of ReEvo that includes harmony search, in terms of both
+Table 4.5: Ablation results on flash reflection
+objective score and CDI. Here, notice that harmony search can only marginally
+improve ReEvo. This can be explained that ReEvo does not have any mechanism
+to promote diversity, therefore it does not benefit from the advantage of harmony
+An additional experiment was conducted in which the reflection component
+used in ReEvo was replaced with a flash reflection component. Since flash reflection is more cost-effective than the original reflection, reducing the number of
+tokens utilized for optimization to 150K tokens serves as a method to validate this.
+Table 4.5 presents experiment results on OP problem. The results show that given
+a smaller number of the timestep, ReEvo with flash reflection mechanism can outperform HSEvo in optimization performance while obtaining comparable results
+on CDI. However, when running with a larger number of tokens, ReEvo with flash
+reflection cannot improve on both objective score and CDI, while HSEvo improves
+both metrics to 5.67 and -14.62, respectively. This implies that without a diversitypromoting mechanism, flash reflection is not enough to improve the optimization
+The experiments confirm that HSEvo consistently achieves superior objective
+scores across BPO, TSP, and OP benchmarks while maintaining strong diversity
+indices. Additionally, the ablation studies highlight the critical roles of harmony
+search and flash reflection in enhancing HSEvo’s performance. These results validate HSEvo’s effectiveness and its potential to advance LLM-EPS frameworks in
+To sum up, experimental findings presented in this chapter underscore the significant advantages of the HSEvo in addressing COPs. By systematically benchmarking HSEvo against established LLM-EPS methodologies across three distinct
+AHD problems. The results reveal HSEvo’s ability to consistently achieve superior
+objective scores while maintaining robust diversity indices. These outcomes validate the hypothesis that diversity-driven optimization strategies, as embodied in
+HSEvo, are instrumental in advancing AHD and evolutionary processes.
 Furthermore, the ablation studies emphasize the pivotal contributions of the harmony search and flash reflection components in enhancing performance of HSEvo.
 While harmony search bolsters the optimization process by promoting diversity,
 flash reflection offers a cost-effective yet impactful mechanism for refining solutions. Together, these components elevate HSEvo’s capabilities, establishing it as a
@@ -806,3 +1100,101 @@ AAAI Conference on Artificial Intelligence (AAAI-25):
 1.Pham Vu Tuan Dat , Long Doan, and Huynh Thi Thanh Binh, "HSEvo: Elevating Automatic Heuristic Design with Diversity-Driven Harmony Search
 and Genetic Algorithm Using LLMs", The 39th Annual AAAI Conference on
 Artificial Intelligence , (AAAI-25), 2025. (accepted, rank A* ).
+[1] N. Pillay and R. Qu, Hyper-heuristics: theory and applications . Springer,
+[2] E. K. Burke, M. Gendreau, M. Hyde, et al. , “Hyper-heuristics: A survey of
+the state of the art,” Journal of the Operational Research Society , vol. 64,
+no. 12, pp. 1695–1724, 2013.
+[3] R. Qu, G. Kendall, and N. Pillay, “The general combinatorial optimization
+problem: Towards automated algorithm design,” IEEE Computational Intelligence Magazine , vol. 15, no. 2, pp. 14–23, 2020.
+[4] I. Bello, H. Pham, Q. V. Le, M. Norouzi, and S. Bengio, “Neural combinatorial optimization with reinforcement learning,” arXiv preprint arXiv:1611.09940 ,
+[5] S. Liu, Y. Zhang, K. Tang, and X. Yao, “How good is neural combinatorial
+optimization? a systematic evaluation on the traveling salesman problem,”
+IEEE Computational Intelligence Magazine , vol. 18, no. 3, pp. 14–28, 2023.
+[6] D. Drakulic, S. Michel, F. Mai, A. Sors, and J.-M. Andreoli, “Bq-nco: Bisimulation quotienting for efficient neural combinatorial optimization,” Advances
+in Neural Information Processing Systems , vol. 36, 2024.
+[7] M. Nejjar, L. Zacharias, F. Stiehle, and I. Weber, “Llms for science: Usage
+for code generation and data analysis,” Journal of Software: Evolution and
+[8] J. Austin, A. Odena, M. Nye, et al., “Program synthesis with large language
+models,” arXiv preprint arXiv:2108.07732 , 2021.
+[9] K. Mahowald, A. A. Ivanova, I. A. Blank, N. Kanwisher, J. B. Tenenbaum,
+and E. Fedorenko, “Dissociating language and thought in large language
+models,” Trends in Cognitive Sciences , 2024.
+[10] S. Liu, C. Chen, X. Qu, K. Tang, and Y.-S. Ong, “Large language models as
+evolutionary optimizers,” in 2024 IEEE Congress on Evolutionary Computation (CEC) , IEEE, 2024, pp. 1–8.
+[11] E. Meyerson, M. J. Nelson, H. Bradley, et al. , “Language model crossover:
+Variation through few-shot prompting,” ACM Transactions on Evolutionary
+Learning , vol. 4, no. 4, pp. 1–40, 2024.
+[12] A. Chen, D. Dohan, and D. So, “Evoprompting: Language models for codelevel neural architecture search,” Advances in Neural Information Processing
+Systems , vol. 36, 2024.
+[13] B. Romera-Paredes, M. Barekatain, A. Novikov, et al. , “Mathematical discoveries from program search with large language models,” Nature , vol. 625,
+no. 7995, pp. 468–475, 2024.
+[14] F. Liu, T. Xialiang, M. Yuan, et al. , “Evolution of heuristics: Towards efficient automatic algorithm design using large language model,” in Forty-first
+International Conference on Machine Learning , 2024.
+[15] H. Ye, J. Wang, Z. Cao, and G. Song, “Reevo: Large language models as
+hyper-heuristics with reflective evolution,” arXiv preprint arXiv:2402.01145 ,
+[16] Y. J. Ma, W. Liang, G. Wang, et al., “Eureka: Human-level reward design via
+coding large language models,” arXiv preprint arXiv:2310.12931 , 2023.
+[17] E. Hemberg, S. Moskal, and U.-M. O’Reilly, “Evolving code with a large
+language model,” Genetic Programming and Evolvable Machines , vol. 25,
+no. 2, p. 21, 2024.
+[18] Q. Guo, R. Wang, J. Guo, et al. , “Connecting large language models with
+evolutionary algorithms yields powerful prompt optimizers,” arXiv preprint
+[19] M. Yuksekgonul, F. Bianchi, J. Boen, et al., “Textgrad: Automatic" differentiation" via text,” arXiv preprint arXiv:2406.07496 , 2024.
+[20] A Kenneth, De jong. evolutionary computation. a unified approach , 2006.
+[21] M. Melanie, “An introduction to genetic algorithms,” A Bradford Book The
+MIT Press. Cambridge, Massachusetts •London, England. Fifth printing.[GS
+[22] D. B. Fogel, Evolutionary computation: toward a new philosophy of machine
+intelligence . John Wiley & Sons, 2006.
+[23] W. Gao and Z. Yin, “Modern intelligent bionics algorithm and its applications,” Science Pres: Beijing, China , 2011.
+[24] J. Koza, “On the programming of computers by means of natural selection,”
+[25] A Vaswani, “Attention is all you need,” Advances in Neural Information Pro[26] Y. Tay, M. Dehghani, D. Bahri, and D. Metzler, “Efficient transformers: A
+survey,” ACM Computing Surveys , vol. 55, no. 6, 1–28, Dec. 2022, ISSN:
+1557-7341. DOI:10.1145/3530811 . [Online]. Available: http://
+[27] R. Zhang, F. Liu, X. Lin, Z. Wang, Z. Lu, and Q. Zhang, “Understanding the
+importance of evolutionary search in automated heuristic design with large
+language models,” in International Conference on Parallel Problem Solving
+from Nature , Springer, 2024, pp. 185–202.
+[28] F. Liu, X. Tong, M. Yuan, and Q. Zhang, “Algorithm evolution using large
+language model,” arXiv preprint arXiv:2311.15249 , 2023.
+[29] E. J. Solteiro Pires, J. A. Tenreiro Machado, and P. B. de Moura Oliveira,
+“Diversity study of multi-objective genetic algorithm based on shannon entropy,” in 2014 Sixth World Congress on Nature and Biologically Inspired
+Computing (NaBIC 2014) , 2014, pp. 17–22. DOI:10 . 1109 / NaBIC .
+[30] E. Pires, J. Tenreiro Machado, and P. Moura Oliveira, “Dynamic shannon
+performance in a multiobjective particle swarm optimization,” Entropy , vol. 21,
+p. 827, Aug. 2019. DOI:10.3390/e21090827 .
+[31] L. Wang and Y. Chen, “Diversity based on entropy: A novel evaluation criterion in multi-objective optimization algorithm,” International Journal of Intelligent Systems and Applications , vol. 4, no. 10, 113–124, Sep. 2012, ISSN:
+2074-9058. DOI:10.5815/ijisa.2012.10.12 . [Online]. Available:
+[32] K. Nolan and J. Callahan, “Beachcomber biology: The shannon-weiner species
+diversity index,” Proc. Workshop ABLE , vol. 27, Jan. 2006.
+[33] L. Jost, “Entropy and diversity,” Oikos , vol. 113, no. 2, pp. 363–375, 2006.
+[34] Y. Sheng, G. Shi, and D. A. Ralescu, “Entropy of uncertain random variables
+wi h application to minimum spanning tree problem,” International journal of uncertainty, fuzziness and knowledge-based systems , vol. 25, no. 04,
+[35] A. Ben-Naim, Entropy and the second law: interpretation and misss-interpretationsss .
+World Scientific Publishing Company, 2012.
+[36] C. H. Heip, P. M. Herman, K. Soetaert, et al., “Indices of diversity and evenness,” Oceanis , vol. 24, no. 4, pp. 61–88, 1998.
+[37] C. Voudouris and E. Tsang, “Guided local search and its application to the
+traveling salesman problem,” European journal of operational research , vol. 113,
+no. 2, pp. 469–499, 1999.
+[38] H. Ye, J. Wang, Z. Cao, H. Liang, and Y. Li, “Deepaco: Neural-enhanced ant
+systems for combinatorial optimization,” Advances in Neural Information
+Processing Systems , vol. 36, 2024.
+[39] Y. Wang, H. Le, A. D. Gotmare, N. D. Bui, J. Li, and S. C. Hoi, “Codet5+:
+Open code large language models for code understanding and generation,”
+arXiv preprint arXiv:2305.07922 , 2023.
+[40] N. Shinn, F. Cassano, A. Gopinath, K. Narasimhan, and S. Yao, “Reflexion:
+Language agents with verbal reinforcement learning,” Advances in Neural
+Information Processing Systems , vol. 36, 2024.
+[41] M. Shanahan, K. McDonell, and L. Reynolds, “Role play with large language
+models,” Nature , vol. 623, no. 7987, pp. 493–498, 2023.
+[42] S. S. Seiden, “On the online bin packing problem,” Journal of the ACM
+(JACM) , vol. 49, no. 5, pp. 640–671, 2002.
+[43] K. L. Hoffman, M. Padberg, G. Rinaldi, et al. , “Traveling salesman problem,” Encyclopedia of operations research and management science , vol. 1,
+[44] S. Martello and P. Toth, “Lower bounds and reduction procedures for the bin
+packing problem,” Discrete applied mathematics , vol. 28, no. 1, pp. 59–70,
+[45] B. T ¨u˝u-Szabó, P. F ¨oldesi, and L. T. Kóczy, “Analyzing the performance
+of tsp solver methods,” in Computational Intelligence and Mathematics for
+Tackling Complex Problems 2 , Springer, 2022, pp. 65–71.
+[46] F. Arnold and K. S ¨orensen, “Knowledge-guided local search for the vehicle
+routing problem,” Computers & Operations Research , vol. 105, pp. 32–46,
+[47] W. Kool, H. Van Hoof, and M. Welling, “Attention, learn to solve routing
+problems!” arXiv preprint arXiv:1803.08475 , 2018.
