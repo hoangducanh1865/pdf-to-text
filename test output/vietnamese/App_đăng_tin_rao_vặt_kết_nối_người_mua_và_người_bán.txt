@@ -1,0 +1,416 @@
+
+Họ và tên sinh viên : Bùi Minh Tuấn
+Điện thoại liên lạc : 0932333703
+Lớp : KHMT 04 - K62
+Hệ đào tạo : Chính quy
+Tôi – Bùi Minh Tuấn – cam kết Đồ án Tốt nghiệp (ĐATN) là công trình nghiên
+cứu của bản thân tôi dưới sự hướng dẫn của TS. Nguyễn Nhất Hải . Các kết quả
+nêu trong ĐATN là trung thực, là thành quả của riêng tôi, không sao chép theo bất
+kỳ công trình nào khác. Tất cả những tham khảo trong ĐATN – bao gồm hình ảnh,
+bảng biểu, số liệu, và các câu từ trích dẫn – đều được ghi rõ ràng và đầy đủ nguồn
+gốc trong danh mục tài liệu tham khảo. Tôi xin hoàn toàn chịu trách nhiệm với dù
+chỉ một sao chép vi phạm quy chế của nhà trường.
+Hà Nội, ngày 30 tháng 7 năm 202
+Trong suốt quá trình thực hiện đồ án tốt nghiệp, em đã nhận được sự giúp đỡ , quan
+tâm hướng dẫn của thầy cô hướng dẫn cùng với sự động viên giúp đỡ của bạn bè
+Em xin gửi lời cảm ơn tới TS. Nguyễn Nhất Hải. Thầy đã chấp nhận đề tài của
+em, tận tình giúp đỡ, hướng dẫn em hoàn thành đồ án tốt nghiệp của mình.
+Bên cạnh đấy, em cũng xin gửi lời cảm ơn tới thầy cô trường CNTT && TT đã
+tận tình chỉ bảo, dạy cho em nền tảng kiến thức để em có thể hoàn thành đồ án tốt
+nghiệp này. Em xin chân thành cảm ơn gia đình, bạn bè đã luôn động viên, chia sẻ
+với em trong suốt 5 năm học ở trường cũng như quá trình hoàn thành đồ án.
+Tuy nhiên , trong quá trình hoàn thiện đồ án, do kiến thức còn hạn chế, nên đồ
+án của em không thể tránh khỏi sai sót. Em rất mong nhận được sự góp ý chân
+thành của các thầy cô và hội đồng tốt nghiệp để đề tài của em được đầy đủ và hoàn
+Em xin chân thành cảm ơn.
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Trong cuộc sống hiện nay, nhu cầu mua bán các mặt hàng , sản phẩm cả cũ và
+mới đều rất lớn. Mọi người có nhiều sản phẩm không còn dùng đến, có thể là đồ
+cũ cần bán nhưng lại không tìm được đối tượng mua. và cũng có nhiều trường hợp,
+những người mua có nhu cầu mua những sản phẩm đấy, với mức giá rẻ hơn các sản
+phẩm mới trên thị trường. Đặc biệt trong thời gian hiện nay, sau đại dịch COVID ,
+khả năng tài chính của người mua còn hạn hẹp.
+Vì vậy, việc kết nối các nhu cầu giữa người mua và người bán là sẽ đảm bảo thoả
+mãn nhu cầu giữa hai bên. Hiện tại trên thị trường có rất nhiều app về đăng tin rao
+vặt, nhưng hiện tại chưa tập trung vào vấn đề là hướng đến người dùng là sinh viên
+với nhiều sản phẩm riêng biệt như giáo trình học tập, ... Để giải quyết vấn đề này,
+em đã đề xuất xây dựng hệ thông đăng tin rao vặt kết nối người mua và người bán.
+Em tập trung xây dựng app trên thiết bị di động và hệ thống server. Kết quả mong
+muốn của đồ án là một hệ thống với ứng dụng di động có thể giải quyết được vấn
+đề ở trên. Sau cùng Kết quả đạt được đó là ứng dụng đáp ứng đầy đủ các tiêu chí
+chức năng và phi chức năng đề ra. Đồng thời , ứng dụng có khả năng mở rộng, bảo
+
+Trong cuộc sống hiện đại,nhu cầu mua bán hàng hoá, sản phẩm của mọi người
+là rất lớn.Riêng đối với sinh viên , nhu cầu một số hàng hoá sẽ nhiều hơn như các
+đồ dùng học tập,đồ điện tử, hàng tiêu dùng,.... Tuy nhiên với việc thiếu thông tin
+thị trường, việc mua các sản phẩm cần thiết trên với giá tốt thường gặp nhiều khó
+khăn. Bên cạnh đấy, có nhiều người bán có những sản phẩm, đồ dùng không dùng
+đến có nhu cầu bán nhưng họ gặp khó khăn trong việc tìm kiếm người mua.
+Xuất phát từ nhu cầu thực tế trên, đồ án muốn tạo ra hệ thống có thể đáp ứng
+việc kết nối giữa người mua và người bán sản phẩm, đồ dùng , đặc biệt là với sinh
+viên, đối tượng với nguồn tài chính eo hẹp. Đồ án hướng tới đem lại lợi ích cho mọi
+người khi tham gia hệ thống,đối với người mua là tìm được sản phẩm mình muốn
+với thời gian và mức giá tốt nhất, còn đối với người bán là bán được sản phẩm của
+mình với mức giá tốt mà không tốn quá nhiều thời gian.Bên phát triển ứng dụng
+tìm kiếm doanh thu từ phía người đăng tin.
+Hiện nay, trên thị trường hiện tại, đã có các ứng dụng về đăng tin rao mặt, tuy
+nhiên các app này chưa triệt để trong việc hỗ trợ đăng tin rao vặt là đồ cũ và người
+đăng tin là sinh viên. Ứng dụng sẽ cung cấp các tính năng chủ yếu việc kết nối giữa
+người mua và người bán với cùng sản phẩm qua các chức năng đăng bài, quản lí
+tin, thông báo,các chức năng kết nối người dùng : chat, gọi điện ,... Ứng dụng sẽ
+sử dụng mô hình C2C, người dùng giao dịch với nhau, không qua bên trung gian.
+Nhiệm vụ của ứng dụng sẽ là cung cấp các kết nối để người mua và người bán tìm
+thấy nhu cầu của họ.Ứng dụng sẽ không có trách nhiệm về các giao dịch liên quan
+đến vấn đề mua bán các sản phẩm.
+Người bán và người mua đều là người dùng cuối của hệ thống. Ở đây đồ án của
+em phân kịch bản sử dụng theo vai trò, nhu cầu của người dùng.
+•Người mua có thể thực hiện các chức năng đối với tài khoản như đăng kí ,
+•Người mua có thể quản lí thông tin cá nhân như xem thông tin, thay đổi thông
+•Người mua xem các bài tin ưu tiên và tin đăng thường.
+•Người mua tìm kiếm, lọc các tin đăng về sản phẩm mà mình cần mua , có thể
+tham gia đánh giá tin đăng mà mình mua.
+•Người mua có thể lưu , xoá, chọn lại lịch sử tìm kiếm tin của mình.
+•Người mua có thể xem thông tin chi tiết tin, lưu tin, báo cáo tin đăng.
+•Người mua có thể gửi thông báo mua sản phẩm, gọi điện hoặc nhắn tin SMS.
+•Người mua có thể tạo phòng Chat, tìm kiếm, xoá phòng Chat, nhắn tin cho
+•Người mua xem thông tin cá nhân của người bán và theo dõi người bán, quản
+lí danh sách bạn bè.
+•Người bán có thể thực hiện các chức năng đối với tài khoản như đăng kí , đăng
+•Người bán có thể quản lí thông tin cá nhân như xem thông tin, thay đổi thông
+•Người bán có thể đăng tin.
+•Người bán có thể quản lí vòng đời tin đăng của mình như gia hạn, huỷ, bán tin
+•Người bán có thể thực hiện các chức năng kết nối với người mua tương tự như
+người mua như nhắn tin, chat, gọi điện,...
+•Người bán quản lí danh sách bạn bè.
+Đồ án định ứng giải quyết vấn đề bằng việc xây dựng hệ thống mobile app sử
+dụng công nghệ đa nền tảng Flutter và hệ thống server Spring boot.
+Công nghệ Flutter được sử dụng nhắm mục đích có thể chạy ứng dụng trên nhiều
+nền tảng từ web, desktop cho đến mobile app.Spring boot được lựa chọn bởi vì thời
+gian xây dựng ứng dụng nhanh, dễ dàng khi không phải cấu hình server .
+•Giao diện được thiết kế nhất quán, các phần cùng nhóm chức năng được nhóm
+•Giao diện phải đơn giản, trực quan và dễ nhìn.
+•ứng dụng được thiết kế theo nguyên tắc phản hồi. Các thông báo , thành phần
+giao diện dễ hiểu và giống nhau trong toàn ứng dụng.
+•Tối ưu hoá UX để tăng trải nghiệm người dùng.
+Về hệ thống Server :
+•Hệ thống phản hồi nhanh các yêu cầu của người dùng trong thời gian không
+•Đối với các chức năng yêu cầu xử lí thời gian thực như nhắn tin, hệ thống phải
+đảm bảo được về tốc độ
+•Hệ thống phải được thiết kế và lập trình để có thể dễ dàng cho việc bảo trì và
+nâng cấp các tính năng sau này.
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2 : Khảo sát và phân tích yêu cầu. Chương này trình bày đóng góp về
+khảo sát hiện trạng thị trường hiện nay, đưa ra các góc nhìn về tổng quan trước năng
+của hệ thống thông qua các biểu đồ use case. Chương này cũng sẽ trình bày các quy
+trình nghiệp vụ quan trọng của ứng dụng, đồng thời đặc tả các use case đã được
+nêu ra trong chương. Cuối cùng, các yêu cầu về giao diện, hệ thống, hiệu năng và
+các yêu cầu phi chức năng khác của ứng dụng sẽ được trình bày trong chương này.
+Trong Chương 3, sẽ giới thiệu về các công nghệ được sử dụng trong đồ án, lí do
+tại sao chọn công nghệ đó, có giải pháp thay thế cho các công nghệ được lựa chọn
+đấy không và đưa ra giải thích sự phù hợp của công nghệ đối với đề tài ứng dụng.
+Chương 4: Kết quả thực nghiệm. Ở chương này,sẽ trình bày về mô hình kiến
+trúc phần mềm được lựa chọn bao gồm về kiến trúc tổng quan MVC , thiết kế tổng
+quan và chi tiết gói . Bên cạnh đấy, chương này cũng trình bày về thiết kế giao diện
+bao gồm đặc tả các thông tin về màn hình và các hình ảnh minh hoạ thiết kế. Tiếp
+theo, để giải thích rõ cho các thiết kế tổng quan ở trên,chương sẽ trình bày thiết kế
+lớp bao gồm các biểu đồ hoạt động và biểu đồ lớp cho các chức năng quan trọng,
+thiết kế cơ sở dữ liệu, bao gồm sơ đồ thực thể liên kết và đặc tả các bảng dữ liệu.
+Cuối cùng, trong chương này sẽ trình bày về kết quả đạt được, minh hoạt các chức
+năng chính, kiểm thử và triển khai ứng dụng.
+Chương 5: Các giải pháp và đóng góp nổi bật. Trong chương này sẽ trình bày về
+các đóng góp nổi bật của sinh viên trong ứng dụng này, đấy chính là sử dụng stomp
+socket để thực hiện chức năng chat thời gian thực.
+Chương 6: Kết luận và hướng phát triển, chương này sẽ trình bày các điểm yếu cố
+hữu của đồ án và hướng phát triển trong tương lai.
+
+
+
+
+
+a, Quy trình đăng nhập
+b, Quy trình đăng kí
+c, Quy trình đăng tin
+d, Quy trình gia hạn
+e, Quy trình thay đổi địa chỉ
+Tên ca sử dụng Đăng kí
+Mô tả Người dùng đăng kí tài khoản
+hoạtNgười dùng chọn nút đăng kí ở màn hình đăng nhập khi vào App
+dùngChọn nút đăng kí ở màn hình đăng nhập
+2 Hệ thống Hệ thống hiển thị giao diện đăng kí
+dùngNhập họ và tên của mình
+4 Hệ thống Kiểm tra định dạng tên và họ của người
+6 Hệ thống Hệ thống hiển thị giao diện nhập thông
+dùngNhập số điện thoại và mật khẩu
+8 Hệ thống Kiểm tra định dạng số điện thoại và mật
+10 Hệ thống Hệ thống hiển thị giao diện nhập thông
+dùngChọn ngày sinh và giới tính và chọn tiếp
+12 Hệ thống Hiển thị trang đăng ký
+13 Hệ thống Kiểm tra thông tin và chuyển sang màn
+•Yêu cầu về độ tin cậy
+–Các thông tin cá nhân người dùng được tuyệt đối bảo mật
+–Thông tin về các tin đăng, đoạn tin nhắn ... đều được bảo mật đối với bên
+–Chỉ có quản trị viên mới có quyền can thiệp vào dữ liệu tin đăng ....
+•Yêu cầu về vận hành
+–Hệ thống có thể chạy được trên nhiều nền tảng như mobile, web, des
+Dart [1] là một ngôn ngữ hướng đối tượng được tối ưu hóa cho ứng dụng client
+để phát triển các ứng dụng nhanh trên mọi nền tảng. Mục tiêu của nó là cung cấp
+ngôn ngữ lập trình hiệu quả nhất để phát triển đa nền tảng (web, di động, máy tính
+để bàn) kết hợp với nền tảng thời gian chạy thực thi linh hoạt cho các khuôn khổ
+ứng dụng từ một mã nguồn duy nhất.
+Dart cũng là nền tảng của Flutter. Dart cung cấp ngôn ngữ và thời gian chạy
+cung cấp năng lượng cho các ứng dụng Flutter, nhưng Dart cũng hỗ trợ nhiều tác
+vụ cốt lõi của nhà phát triển như phân tích và kiểm tra mã.
+Phiên bản sử dụng là 2.16.2 (stable) windown x64.
+Lập trình app sử dụng trên nền tảng framework là Flutter sử dụng ngôn ngữ
+Hướng tiếp cận thay thế có thể được chọn là JavaScirpt (React Native). Dart
+được chọn sử dụng trong đồ án này vì Flutter sử dụng Dart và Dart là một ngôn
+ngữ hướng đối tượng tương tự như Java , giúp dễ dàng trong việc bảo trì và nâng
+cấp hệ thống so với JavaScript.
+Flutter [2] là một khung phần mềm mã nguồn mở của Google để xây dựng các
+ứng dụng đa nền tảng(web, di động , windowns,...), từ một mã nguồn duy nhất .Mã
+Flutter biên dịch sang mã máy ARM hoặc Intel cũng như JavaScript, để có hiệu
+suất nhanh trên mọi thiết bị. Flutter hỗ trợ Hot Reload cho phép cập nhật mã và
+xem các thay đổi gần như ngay lập tức mà không mất các trạng thái của ứng dụng.
+Flutter kiểm soát mọi pixel để tạo ra các giao diện thích ứng với bất kì màn hình
+Phiên bản sử dụng là Flutter 2.10.4 •channel stable .
+Flutter là framework để phát triển ứng dụng app.
+Hướng tiếp cận thay thế có thể được chọn là React Native. Flutter được lựa chọn
+trong đồ án này vì Flutter có nhiều ưu điểm nổi trội hơn React Native như là hiệu
+năng cao và có thể chạy trên nhiều môi trường hơn so với React Native.
+MySQL [3], hệ quản trị cơ sở dữ liệu SQL nguồn mở phổ biến nhất, được phát
+triển, phân phối và hỗ trợ bởi Oracle Corporation. MySQL là một hệ quản trị cơ sở
+dữ liệu quan hệ.Các dữ liệu được lưu trữ trong các bảng riêng biệt thay vì đặt tất cả
+trong một kho lưu trữ lớn.
+Phần mềm MySQL là Mã nguồn mở . Máy chủ cơ sở dữ liệu MySQL rất nhanh,
+đáng tin cậy, có thể mở rộng và dễ sử dụng.MySQL sử dụng SQL là ngôn ngữ để
+truy cập cơ sở dữ liệu. Phiên bản sử dụng là 8.0.
+MySql được sử dụng trong đồ án là hệ quản trị cơ sở dữ liệu cho hệ thống ứng
+Hướng tiếp cận thay thế có thể được chọn là SQL Sever hoặc PostgreSQL.
+MySql được chọn sử dụng trong đồ án này vì MySql dễ cài đặt, dễ sử dụng, tính ổn
+định và tốc độ cao.
+Java [4] là một ngôn ngữ lập trình và nền tảng máy tính được phát hành lần đầu
+tiên bởi Sun Microsystems vào năm 1995.Nó là một ngôn ngữ lập trình hướng đối
+tượng, dựa trên lớp được thiết kế để có càng ít phụ thuộc thực thi càng tốt. Java
+mục đích chung cho phép các nhà phát triển ứng dụng viết một lần, chạy ở mọi nơi
+(WORA, nghĩa là mã Java đã biên dịch có thể chạy trên tất cả các nền tảng hỗ trợ
+Java mà không cần biên dịch lại.
+Phiên bản sử dụng là Java 11
+Java được sử dụng làm ngôn ngữ lập trình chính để xây dựng nên các Restful
+Hướng tiếp cận thay thế có thể được chọn là JavaScirpt. Java được chọn sử dụng
+trong đồ án này bởi tính hướng đối tượng của nó, tốc độ cũng như sự ổn định được
+Spring Boot [5] là một dự án phát triển bởi JAV (ngôn ngữ java) trong hệ sinh
+thái Spring frameworkSpring Boot giúp bạn dễ dàng tạo các Ứng dụng , độc lập
+mà bạn có thể "chỉ cần chạy". Đặc trưng của Spring Boot là tạo ra các ứng dụng
+Spring độc lập , nhúng trực tiếp Tomcat.
+•Cung cấp các thư viện ban đầu được xác định để đơn giản hóa cấu hình xây
+•Tự động định cấu hình thư viện Spring và bên thứ 3 bất cứ khi nào có thể.
+•Cung cấp các tính năng sẵn sàng cho sản xuất như chỉ số, kiểm tra tình trạng
+và cấu hình bên ngoài
+•Hoàn toàn không tạo mã và không yêu cầu cấu hình XML
+Phiên bản sử dụng là 2.6.5
+Spring Boot được dùng để xây dựng các Restful API , nhận, xử lí các yêu cầu từ
+Hướng tiếp cận thay thế có thể được chọn là Express Framework. SpringBoot
+được lựa chọn bởi vì sự đơn gian trong việc cài đặt và triển khai, không mất quá
+nhiều thời gian cho việc cấu hình thay vào đấy, dành thời gian cho các tính năng.
+Spring Boot hướng tới các tính năng ứng dụng so với Express JS.
+Cloud Storage [6] cho Firebase được xây dựng để lưu trữ và truy vấn nội dung
+do người dùng tạo, chẳng hạn như ảnh hoặc video. Cloud Storage của Firebase là
+một dịch vụ lưu trữ đối tượng mạnh mẽ, đơn giản và tiết kiệm chi phí được xây
+Cloud Storage được sử dụng như là server thứ 3 để lưu ảnh và video.
+Cloud Storage được lựa chọn trong đồ án do chi phí thấp , cũng như sự ổn định
+AWS là là nền tảng dịch vụ đám mây an toàn, mang đến khả năng tính toán, lưu
+Amazon Elastic Beanstalk [7] là một dịch vụ dễ sử dụng để triển khai và mở rộng
+các ứng dụng và dịch vụ web được phát triển bằng Java, .NET, PHP, Node.js,
+Python, Ruby, Go và Docker trên các máy chủ quen thuộc như Apache, Nginx,
+Lập trình viên chỉ cần tải lên file mã nguồn của mình và Elastic Beanstalk tự động
+xử lý việc triển khai, từ cung cấp dung lượng, cân bằng tải, tự động mở rộng quy
+mô đến theo dõi tình trạng ứng dụng. Đồng thời, lập trình viên giữ toàn quyền kiểm
+soát các tài nguyên AWS cung cấp năng lượng cho ứng dụng của mình và có thể
+truy cập các tài nguyên cơ bản bất kỳ lúc nào.
+Không có phí bổ sung cho Elastic Beanstalk - người dùng chỉ trả tiền cho các tài
+nguyên AWS cần thiết để lưu trữ và chạy các ứng dụng của họ.
+Elastic Beanstalk được sử dụng để chạy server Spring Boot của đồ án.
+Hướng tiếp cận thay thế có thể được chọn là Heroku. Elastic Beanstalk hoàn
+toàn miễn phí, phí chỉ được tính dựa trên lưu trữ, xử lí dữ liệu trên hệ thống.
+Amazon Relational Database Service (Amazon RDS) [8] là một dịch vụ được
+quản lý giúp lập trình viên dễ dàng thiết lập, vận hành và thay đổi quy mô cơ sở dữ
+liệu quan hệ trên đám mây. Dịch vụ này cung cấp tính năng hiệu quả về chi phí và
+có thể thay đổi quy mô, trong khi vẫn quản lý được các tác vụ quản trị cơ sở dữ liệu
+tiêu tốn nhiều thời gian, giúp lập trình viên thoải mái tập trung vào các ứng dụng
+và công việc của họ.
+Amazon RDS cho phép lập trình viên truy cập các tính năng của một cơ sở dữ
+liệu quen thuộc như MySQL, MariaDB, Oracle, SQL Server hay PostgreSQL.
+Amazon RDS được sử dụng để lưu trữ , truy vấn dữ liệu của đồ án.
+Amazon RDS ngoài cung cấp các tính năng ổn định, còn cung cấp rất nhiều các
+gói chi phí phù hợp với từng nhu cầu khác nhau của người dùng.
+STOMP [9] là một giao thức con hoạt động trên WebSocket cấp thấp hơn, được
+tích hợp và sử dụng trong Spring Boot.
+STOMP được sử dụng để gửi và nhận các yêu cầu trong thời gian thực, được sử
+Phiên bản sử dụng là 5.2.2.
+a, Mô tả kiến trúc tổng quan
+Trong đồ án này, em sử dụng kiến trúc ba lớp MVC.
+•View : Phần này có nhiệm vụ tương tác với người dùng, ghi nhận và phản hồi
+các hành vi của người dùng, gửi các yêu cầu đến Controller.
+•Controller: Là bộ phận xử lí yêu cầu người dùng thao tác trên ứng dụng thông
+•Model: Là bộ phận thực hiện các chức năng liên quan đến cơ sở dữ liệu như
+đọc, ghi ,sửa , xoá.
+b, Mô tả kiến trúc ứng dụng
+•View (App) : Phần này có nhiệm vụ hiển thị thông tin, nhận các tương tác của
+người dùng và gửi đến Controller.
+•Controller (App): Là bộ phận xử lí yêu cầu người dùng thao tác trên ứng dụng
+thông qua thành phần View, xử lí dữ liệu nhận được từ Repository va hiển thị
+•Repository(App) : Là bộ phận thực hiện các chức năng kết nối với server thông
+•Service (Server) : Phần này có nhiệm vụ xử lí logic, các yêu cầu, từ phía ứng
+•Controller (Server): Là bộ phận nhận các yêu cầu từ phía ứng dụng gửi lên và
+•Repository(Server) : Là bộ phận thực hiện các chức năng kết nối với database,
+thực hiện truy vấn dữ liệu.
+
+Thông tin màn hình mà ứng dụng hướng tới : màn hình điện thoại di động
+•Độ phân giải màn hình : 1440x2560:560 dpi.
+•Kích thước màn hình : 5,5 inch.
+•Font chữ : Sarabun Google Fonts.
+a, Một số hình ảnh minh hoạ thiết kế giao diện
+
+
+
+
+
+
+a, Thiết kế đánh giá tin đăng
+b, Thiết kế thay đổi địa chỉ
+c, Thiết kế đăng nhập
+d, Thiết kế đăng kí
+e, Thiết kế đăng bài
+f, Thiết kế gia hạn tin đăng
+g, Thiết kế tìm kiếm tin đăng
+h, Thiết kế xem chi tiết tin đăng
+i, Thiết kế báo cáo tin đăng
+j, Thiết kế theo dõi người dùng
+a, Sơ đồ thực thể liên kết
+Do việc thể hiện các thuộc tính vào biểu đồ thực thể liên kết này sẽ làm cho khó
+theo dõi và không đủ diện tích để có thể thể hiện được hết. Vì vậy, các thuộc tính
+của các thực thể sẽ được em trình bày chi tiết trong sơ đồ ER Diagrams, còn lại ở
+sơ đồ này , em chỉ trình bày các thực thể và các mối quan hệ giữa chúng.
+b, Giao diện màn hình đăng ký
+c, Giao diện màn hình thêm tin đăng
+
+d, Giao diện màn hình thêm địa chỉ
+e, Giao diện màn hình xem thông tin người khác
+f, Giao diện màn hình chỉnh sửa thông tin cá nhân
+g, Giao diện màn hình nhắn tin
+h, Giao diện màn hình phòng chat
+i, Giao diện màn hình chi tiết bài đăng
+j, Giao diện màn hình lọc tin đăng
+k, Giao diện màn hình tìm kiếm tin đăng
+l, Giao diện màn hình báo cáo tin đăng
+m, Giao diện màn hình màn Home
+n, Giao diện màn hình danh sách địa chỉ
+o, Giao diện màn hình danh sách bạn bè
+p, Giao diện màn hình danh sách thông báo
+q, Giao diện màn hình quản lí bài đăng
+a, Lựa chọn mô hình
+AWS Elastic Beanstalk là một dịch vụ dễ sử dụng để triển khai và mở rộng các
+ứng dụng web và dịch vụ được phát triển bằng Java, .NET, PHP, Node.js, Python,
+Ruby, Go và Docker trên những máy chủ quen thuộc như Apache, Nginx, Passenger
+Việc cần làm chỉ là tải mã của bạn lên và Elastic Beanstalk sẽ tự động xử lý
+việc triển khai, từ cung cấp công suất, cân bằng tải, tự động điều chỉnh quy mô đến
+giám sát trạng thái ứng dụng. Đồng thời, bạn vẫn có toàn quyền kiểm những tài
+nguyên AWS vận hành ứng dụng của bạn và có thể truy cập các tài nguyên quan
+trọng vào bất kỳ lúc nào.
+Không tính thêm phí khi sử dụng Elastic Beanstalk – bạn chỉ phải trả phí cho
+những tài nguyên AWS mà bạn cần để lưu trữ và chạy ứng dụng của mình.
+RDS là viết tắt của Amazon Relational Database Service là một web service cho
+phép bạn dễ dàng setup thao tác, scale cơ sở dữ liệu quan hệ trên AWS Cloud.
+b, Cách thức triển khai
+Việc đâu tiền cần làm là : Build file Jar của Source Code Spring Boot
+Để làm được việc này, ta cần chạy lệnh mvn clean install. Sau khi chạy một thời
+gian thì hệ thống sẽ tạo ra file Jar ở thư mục target như hình ảnh minh hoạ.
+Tiếp theo , em sẽ truy cập vào AWS, chọn location ở Singapore để có thể tối ưu
+tốc độ của các request. Truy cập vào RDS và khởi tạo database.
+Sau đấy, cài đặt các thông số và phiên bản cho RDS.
+Tiếp theo, ta cài đặt các thông tin admin của database.
+Cuối cùng, ta cần phải cài đặt địa chỉ ip ở mục security cho database.
+Sau đấy, em chọn Elastic Beanstalk của AWS để khởi tạo môi trường cho ứng
+dụng, cần phải nhập thông tin ứng dụng, cơ sở dữ liệu và upload file jar của đồ án
+Kêt quả cần đạt được khi hệ thống thống báo Health là OK có nghĩa là đã deploy
+thành công.Từ các phiên bản sau, khi muốn update một version, em chỉ cần build
+file Jar và upload file lên môi trường .
+a, Cách bước triển khai
+Đầu tiên, em sẽ tạo ra file apk của đồ án bằng cách chạy lệnh fluttter build apk.
+File apk sinh ra ở thư mục build của đồ án.
+Do hệ thống đang trong quá trình phát triển và thử nghiệm , nên hiện tại em
+chưa đưa lên trên CH Play.
+Để người mua và người bán có thể trao đổi thông tin về tin đăng nhiều hơn,
+ngoài các hình thức như gọi điện , SMS hay gửi thông báo mua sản phẩm thì nhắn
+tin là một hình thức không thể thiếu. Chức năng nhắn tin đòi hỏi thời gian phản hồi
+của hệ thống nhanh, chính xác, ổn định. Đối với các loại tin nhắn dạng video hay
+ảnh thì cũng đòi hỏi các yêu cầu tương tự như trên. Vì vậy, trong đồ án, em đã sử
+dụng công nghệ Web Socket cho chức năng này.
+Socket IO là một thư viện rất nổi tiếng để xử lí các trường hợp xảy ra trong thời
+gian thực. Tuy nhiên, do lựa chọn của em, Server được viết trên framework Spring
+Boot nên không thể sử dụng thư viện này.Spring Boot đã cung cấp một thư viện
+khác có chức năng tương tự như Socket IO đó là STOMP. Stream Text-Oriented
+Messaging Protocol (STOMP) [9] là một giao thức trực tuyến cho phép tương tác
+giữa máy khách và máy chủ. STOMP định nghĩa một cách thức cho client giao
+tiếp sử dụng ngữ nghĩa nhắn tin. Ngữ nghĩa này được ánh xạ vào các Web Socket
+b, stomp dart client là gì
+Stomp dart client [10] là thư viện này cung cấp một triển khai cho một ứng
+dụng khách STOMP kết nối với một máy chủ từ xa. Nó sẽ hoạt động cho cả dart và
+c, Mô tả hoạt động luồng chức năng
+•Ở app người gửi, đầu tiên, khi khởi tạo hàm Main của app , sẽ khởi tạo Socket
+và Stream Chat Message. Trong đó, Stream Chat Mesage là một stream của
+Flutter, có nhiệm vụ truyền dữ liệu nhận được sang Chat Controller của màn
+hình Chat. Dưới đây là ảnh minh hoạ về khởi tạo Socket và StreamController
+•Khi người dùng nhập tin nhắn và ấn gửi,App sẽ kiểm tra tính hợp lệ của tin
+nhắn, với mỗi tin nhắn, em đã quy định chỉ mang một dạng text, video, hoặc
+ảnh,.. Mỗi tin nhắn chỉ có một ảnh hoặc một video duy nhất.
+•Ở Server, Chat Controller sẽ nhận request từ App và chuyển tới ChatService,
+ChatService sẽ gọi hàm save của ChatRepository để lưu vào database và đồng
+thời trả về dữ liệu tin nhắn trên Socket.
+•Ở app của người nhận, do các tin nhắn đều được gửi lên Socket , vì vậy, ở trên
+Socket này , còn có những tin nhắn không cùng Room Chat của người gửi và
+người nhận. Vì thế, khi lắng nghe ở Socket , em đã lọc theo Room Id của tin
+nhắn, để tìm được tin nhắn chính xác.Hàm onSocket được khởi tạo ngay đầu
+tiên khi người dùng vào màn hình Chat.Sau khi tin nhắn được thêm vào danh
+sách tin nhắn, các widget sẽ được tự build và hiển thị nội dung tin nhắn.
+•Đối với trường hợp, tin nhắn là các định dạng Media như ảnh hay video,... thì
+các File này sẽ được kiểm tra về dung lượng sau đấy đưa lên Firebase Storage
+để lưu trữ. Firebase sẽ trả về URL của các file này. Sau đấy , thì em sẽ xem
+các url này như tin nhắn dạng text để xử lí.
+Việc lập trình thành công chức năng Chat giúp cho người mua và người bán có
+thêm một kênh thông tin liên lạc, trao đổi về sản phẩm một cách nhanh nhất và
+hoàn toàn miễn phí so với gọi điện hoặc nhắn tin SMS. Chức năng này cũng là một
+phần quan trọng về mục đích của ứng dụng được tạo ra đó là kết nối nhu cầu giữa
+người mua và người bán.
+Qua kiểm thử chức năng, chức năng hoạt động tốt với thời gian nhận được tin
+nhắn với tốc độ mạng cao là không quá 3 giây.
+Trong suốt quá trình thực hiện đồ án tốt nghiệp, em đã đạt được các yêu cầu về
+chức năng và phi chức năng khi khảo sát đồ án đặt ra.
+Những điểm mà em còn chưa làm được trong đồ án này là
+•Chức năng duyệt bài đăng chưa được xây dựng. Khi người dùng đăng bài, cần
+có người hoặc hệ thống duyệt bài đăng, để tránh các bài đăng không đúng sự
+thật về sản phẩm hay các bài đăng có nội dung phản cảm , trái với pháp luật,
+hay thuần phong mỹ tục.
+•Chức năng liên quan đến thanh toán khi đăng bài. App sử dụng một loại điểm
+để có thể đăng bài hoặc sử dụng một số chức năng khác.
+•Chức năng xác thức tài khoản sử dụng OTP.
+•Chức năng thông báo Push Notification.
+•Hoàn thiện ứng dụng để có thể phát hành trên CH Play.
+Tổng hợp những bài học kinh nghiệm mà em rút ra được
+•Quản lí cấu trúc phần mềm, quản lí code, phân chia module, tái sử dụng mã
+nguồn. Bằng cách áp dụng những kiến thức đã được học ở môn mẫu thiết kế
+•Kiến thức về BackEnd, một hệ thống Backend hoạt động như thế nào,thiết kế,
+lập trình một API .
+•Kỹ năng, tư duy thiết kế hướng đối tượng trong phát triển phần mềm.
+•Kỹ năng quản lí thời gian, sắp xếp và phân chia công việc.
+Trong phần này, sinh viên trình bày định hướng công việc trong tương lai để
+hoàn thiện sản phẩm hoặc nghiên cứu của mình.
+Trước tiên, sinh viên trình bày các công việc cần thiết để hoàn thiện các chức
+năng/nhiệm vụ đã làm. Sau đó sinh viên phân tích các hướng đi mới cho phép cải
+thiện và nâng cấp các chức năng/nhiệm vụ đã làm.
+Trong tương lai, để hoàn thiện sản phẩm của mình, em cần đảm bảo để App và
+hệ thống hoạt động ổn định
+•Cần phải xây dựng trang Admin để có thể thực hiện chức năng duyệt bài.
+•Nghiên cứu , tích hợp chức năng thanh toán, nạp điểm cho tài khoản.
+•Xây dựng hệ thống xác thực số điện thoại bằng mã OTP.
+•Hoàn thiện để có thể đưa ứng dụng phát hành trên CH Play.

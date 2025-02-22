@@ -1,0 +1,875 @@
+
+Vậy là thoáng cái, năm năm học đã trôi qua. Mới ngày nào còn bỡ ngỡ, bước chân
+vào cổng Trường Đại học Bách Khoa Hà Nội, choáng ngợp trước sự đẹp đẽ và rộng
+lớn của ngôi trường. Vậy mà giờ đây, em đã và đang trải qua những chặng đường
+cuối cùng để chuẩn bị cho một hành trình mới, một hành trình mà ở đó không có
+thầy cô tận tình chỉ bảo, không có những tháng ngày thi cử mệt nhọc, nhưng đó sẽ
+là hành trình mà em có thể chứng tỏ bản thân thông qua việc áp dụng những kiến
+thức đã được học vào trong công việc và cuộc sống hàng ngày.
+Trước hết, em xin được gửi lời cảm ơn sâu sắc nhất tới thầy giáo, PGS.TS Cao
+Tuấn Dũng đã giúp đỡ và hướng dẫn em trong suốt quá trình thực hiện đồ án tốt
+nghiệp. Thầy luôn tận tình, chỉ bảo, đôn đúc em xây dựng một lộ trình làm đồ án tốt
+nghiệp. Bên cạnh đó, thầy cũng thường xuyên đưa ra những nhận xét, định hướng
+giúp em hoàn thành đồ án một cách tốt nhất. Nếu không có những lời góp ý của
+thầy thì chắc chắn sản phẩm của em sẽ không có kết quả như ngày hôm nay. Em
+cảm thấy rất biết ơn vì đã được thầy hướng dẫn trong quá trình hoàn thành đồ án
+tốt nghiệp này. Em chúc thầy luôn mạnh khỏe, công tác tốt để có thể xây dựng một
+ngôi Trường Công nghệ thông tin và Truyền thông vững mạnh, đào tạo được thêm
+nhiều thế hệ sinh viên Bách Khoa bay cao, bay xa, góp phần xây dựng sự tiến bộ
+Công nghệ kĩ thuật của nước nhà!
+Tiếp theo, em xin gửi lời cảm ơn đến tổ chức Lớp học Cầu Vồng – The Rainbow
+Class đã đồng ý hợp tác cùng em để có thể xây dựng, hoàn thành hệ thống quản lý
+dành riêng cho Lớp học Cầu Vồng. Thông qua những buổi nói chuyện, phỏng vấn
+cùng người phụ trách của tổ chức, em đã có một cái nhìn tổng quan hơn về công
+việc phân tích yêu cầu của khách hàng, góp phần tích lũy kinh nghiệm thực tế, áp
+dụng vào công việc sau này. Chúc Lớp học Cầu Vồng ngày càng phát triển, có thể
+giúp đỡ được nhiều mảnh đời kém may mắn, luôn lan tỏa những điều tốt đẹp và
+tích cực đến với cộng đồng!
+Cuối cùng, xin được cảm ơn tới những người bạn yêu quý đã luôn kề vai sát cánh
+trong những năm tháng sinh viên tại trường Đại học Bách Khoa Hà Nội. Không
+chỉ trong học tập, cảm ơn các bạn đã chia sẻ cùng tôi những niềm vui, nỗi buồn,
+những trải nghiệm của năm tháng sinh viên không thể nào quên. Ai cũng có những
+quyết định, có lối đi riêng mình, hy vọng tất cả chúng ta đều thành công và vững
+bước trên con đường mình đã chọn!
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Lớp học Cầu vồng là một tổ chức từ thiện phi lợi nhuận được thành lập nhằm tạo
+điều kiện giúp đỡ, động viên những mảnh đời kém may mắn về cả vật chất lẫn tình
+thương. Bên cạnh đó Lớp học tìm kiếm những bạn Tình nguyện viên hỗ trợ dạy
+học, giúp đỡ các em nhỏ có thêm cơ hội mở rộng cánh cửa tương lai.
+Hiện nay, Lớp học Cầu Vồng đang tổ chức các lớp học tình thương, giảng dạy
+trực tiếp cho các em tại các tỉnh thành như Hà Nội, Đà Nẵng và Lào Cai cùng
+nhiều lớp học trực tuyến khác. Với số lượng gần 200 tình nguyện viên đang tham
+gia giảng dạy cho nhiều trẻ em có hoàn cảnh khó khăn, việc quản lý lớp học và các
+buổi học cho các lớp cũng trở nên phức tạp bởi vì cách thức quản lý hiện nay của
+Lớp học Cầu Vồng chủ yếu là sử dụng các dịch vụ của Google hoặc liên lạc thông
+qua các trang mạng xã hội như Facebook, Zalo,. . . hoặc các phương tiện cá nhân,
+chưa có một hệ thống riêng đặc trưng phục vụ việc quản lý và liên lạc.
+Chính vì vậy, với mong muốn đóng góp một phần công sức giúp đỡ Lớp học
+Cầu Vồng có thể dễ dàng hơn trong việc quản lý dạy học và nhân sự, cũng là đóng
+góp một phần giúp cho tổ chức ngày càng thêm lớn mạnh, em đã có mong muốn
+phát triển một hệ thống quản lý dạy học và nhân sự dành riêng cho Lớp học Cầu
+Vồng, trước hết hướng tới đối tượng là người quản trị viên, các tình nguyện viên
+tham gia tổ chức, những đối tượng có hứng thú với Lớp học Cầu Vồng và có mong
+muốn trở thành Tình nguyện viên của tổ chức trên nền tảng Web. Hệ thống sẽ có
+các chức năng quản lý nhân sự, quản lý lớp và các bài học dựa theo đặc thù và các
+quy trình nghiệp vụ mà tổ chức đã quy định. Bên cạnh đó cải thiện và tự động hóa
+một số quy trình nghiệp vụ, giúp người sử dụng giảm bớt khối lượng công việc, tiết
+kiệm thời gian hơn để thực hiện các nghiệp vụ quản lý khác.
+
+LHCV Lớp học Cầu Vồng
+VCC Vietnam Volunteer Center - Trung tâm tình nguyện
+CV Curriculum Vitae - Hồ sơ ứng tuyển
+CSDL Cơ sở dữ liệu
+ĐATN Đồ án tốt nghiệp
+Framework Các đoạn code đã được viết sẵn, cấu thành nên bộ
+khung và các thư viện được đóng gói
+Backend Tầng truy cập xử lý dữ liệu, xử lý nghiệp vụ của phần
+API Application Programming Interface - Giao diện lập
+Frontend Tầng trình diễn (giao diện người dùng)
+Component Các thành phần giao diện độc lập có thể tái sử dụng
+Lớp học Cầu Vồng là một tổ chức từ thiện phi lợi nhuận, là thành viên mạng lưới
+Tình nguyện Quốc gia khu vực miền Bắc trực thuộc VCC, được thành lập nhằm
+tạo điều kiện giúp đỡ, động viên những mảnh đời kém may mắn về cả vật chất lẫn
+tình thương. Đồng thời, lớp học cũng tìm kiếm những bạn tình nguyện viên tình
+nguyện tham gia hỗ trợ dạy học, giúp đỡ các em nhỏ có thêm cơ hội mở rộng cánh
+Hiện nay, Lớp học Cầu Vồng đang tổ chức các lớp học tình thương, giảng dạy
+cho các em tại nhiều tỉnh thành trên cả nước. Với số lượng 18 lớp học trực tiếp cùng
+với hơn 200 bạn tình nguyện viên đang hoạt động, quy mô của Lớp học Cầu Vồng
+ngày càng được mở rộng, số lượng thành viên đông đảo khiến cho việc quản lý các
+buổi học, nhân dự của các lớp cũng dần trở nên phức tạp.
+miền Bắc trực thuộc VCC1.
+Cách tổ chức hiện tại của Lớp học Cầu Vồng trước hết là chọn ra những tình
+nguyện viên ưu tú của từng lớp để trực tiếp quản lý các hoạt động như tuyển tình
+nguyện viên mới hay xây dựng các lịch trình giảng dạy cho lớp học đó. Các lớp
+học như vậy sẽ tổ chức các hoạt động một cách độc lập, riêng lẻ. Bên cạnh đó các
+tình nguyện viên thuộc ban quản lý sẽ tham gia một nhóm chat chung để có thể
+chia sẻ, cập nhật thông tin và các thành viên thuộc ban quản lý cũng phải tham gia
+nhiều nhóm chat riêng của các lớp. Như vậy, cách thức hoạt động này không phải
+là phương án tiện nhất và ban quản lý của Lớp học Cầu Vồng sẽ gặp khó khăn trong
+việc chủ động theo dõi được các kế hoạch, lịch trình của từng lớp học. Thêm vào
+đó, việc tương tác để sắp xếp lịch dạy giữa các thành viên trong một lớp thông qua
+các trang mạng xã hội phải thực hiện các bước lặp đi lặp lại hằng tuần (ví dụ như
+tạo các khảo sát hàng tuần trên Facebook để xác nhận các tình nguyện viên đăng
+ký dạy trong tuần rồi sau đó phải tổng hợp lại vào Google sheet) khiến khối lượng
+công việc quản lý trở nên nhiều hơn.
+Bên cạnh đó, việc theo dõi, quản lý các tình nguyện viên mới cũng khó khăn do
+các hồ sơ đăng ký ứng tuyển vào tổ chức đều được gửi đến một địa chỉ email nhất
+định trong khi các lớp học hoạt động riêng lẻ. Những người phụ trách sẽ phải thực
+hiện các hành động thủ công để tìm kiếm, chọn lọc những hồ sơ rồi phân loại hồ
+sơ, trả về cho từng lớp học để thực hiện liên hệ và phỏng vấn.
+Chính vì vậy, xét đến sự phát triển của Lớp học Cầu Vồng trong tương lai vẫn
+được duy trì và mở rộng quy mô hoạt động, nếu chỉ sử dụng những dịch vụ của
+Google, các hệ thống mạng xã hội như Zalo, Facebook,. . . để quản lý những công
+việc trên thì sẽ mang lại nhiều khó khăn như tốn thời gian sắp xếp nhân sự cũng
+như các tiết giảng dạy đối với ban quản lý nói riêng và các bạn tình nguyện viên
+nói chung. Nếu có một hệ thống đặc thù hỗ trợ việc quản lý cho Lớp học Cầu Vồng
+được phát triển thì sẽ có thể cải tiến các quy trình nghiệp vụ và tiết kiệm được
+thêm nhiều thời gian hơn cho các thành viên của tổ chức trong các hoạt động thiện
+nguyện. Đó chính là lý do và động lực khiến em thực hiện đồ án "Hệ thống quản lý
+dạy học và nhân sự cho Lớp học Cầu Vồng" này.
+Chính vì những khó khăn được nêu như ở trên, em nhận thấy Lớp học Cầu Vồng
+cần có một hệ thống đặc thù hỗ trợ công việc quản lý dạy học và nhân sự riêng,
+trước hết hướng tới đối tượng là người quản trị và các tình nguyện viên tham gia lớp
+học trên nền tảng Web và mở rộng đối tượng là các em học sinh hoặc phụ huynh.
+Hệ thống này sẽ tập trung giải quyết hai vấn đề chính là vấn đề quản lý lớp học và
+vấn đề quản lý nhân sự.
+Vấn đề quản lý dạy học : Hệ thống cần hỗ trợ ban quản lý và các bạn tình
+nguyện viên trong công việc quản lý lớp học và những vấn đề liên quan đến lớp
+học như cho phép quản lý lịch học của từng lớp; quản lý nội dung các bài học và
+thống kê những tình nguyện viên đăng kí tham gia dạy học; quản lý báo cáo sau
+mỗi buổi học; quản lý thành tích của từng học sinh tham gia lớp học theo từng thời
+kì; tự động đặt lịch, thông báo, nhắc nhở các tình nguyện viên hoàn thành các công
+việc cá nhân cũng như các công việc chung của lớp học.
+Về vấn đề quản lý nhân sự : Hệ thống cần hỗ trợ ban quản lý trong công việc
+quản lý nhân sự của các lớp học và các vấn đề liên quan cơ bản nhất như thông tin
+cơ bản và số lượng các tình nguyện viên; thông tin cá nhân và thông tin về thành
+tích các học sinh tham gia lớp học. Bên cạnh đó, một trong những điểm nổi bật của
+hệ thống là việc hệ thống hỗ trợ nhận, lưu trữ các hồ sơ đăng kí tham gia làm tình
+nguyện viên của Lớp học Cầu Vồng. Với chức năng này, ban quản lý có thể theo dõi
+được thông tin và lịch phỏng vấn các tình nguyện viên mới một cách nhanh chóng,
+chủ động nhất. Bên cạnh đó, có thể giúp cải tiến, hệ thống hóa quy trình nghiệp vụ
+xét duyệt hồ sơ đăng ký ứng tuyển làm tình nguyện viên.
+Riêng đối với học sinh tham gia học tập tại Lớp học Cầu Vồng, do phần lớn các
+em có hoàn cảnh khó khăn và là đối tượng yếu thế trong xã hội nên không phải học
+sinh nào cũng được tiếp xúc với các thiết bị thông minh để dùng hệ thống. Chính
+vì vậy, trong phạm vi đồ án, em chỉ xây dựng một vài tính năng cơ bản hướng tới
+đối tượng là học sinh.
+Từ những vấn đề đã được nêu ở mục 1.1, với mong muốn đóng góp một phần
+công sức giúp đỡ Lớp học Cầu Vồng có thể dễ dàng hơn trong việc quản lý dạy
+học và nhân sự, cũng là đóng góp một phần giúp cho Lớp học Cầu Vồng thêm lớn
+mạnh, giải pháp em đặt ra là xây dựng một hệ thống Web bao gồm một website
+quản lý dạy học và nhân sự dành cho những thành viên thuộc Lớp học Cầu Vồng
+và một website hỗ trợ những người dùng có mong muốn tham gia làm tình nguyện
+viên của tổ chức đăng ký tham gia làm tình nguyện viên. Hai trang web này sẽ sử
+dụng chung một Backend để lấy các API thực hiện các chức năng chính. Nội dung
+cụ thể của hai trang web này như sau:
+Tạitrang web quản lý dạy học và nhân sự dành cho các tình nguyện viên
+thuộc Lớp học Cầu Vồng, mỗi tình nguyện viên sẽ được cung cấp một tài khoản
+với các vai trò khác nhau, tùy vào chức vụ của tình nguyện viên trong tổ chức. Khi
+đăng nhập vào hệ thống, các tình nguyện viên sẽ có thể thực hiện được các thao tác
+liên quan đến quản lý dạy học hoặc quản lý nhân sự tùy thuộc vào quyền hạn mà
+tình nguyện viên đó được cấp. Các tài khoản được cấp sẽ được chia thành ba vai
+trò chính:(i) Quản trị viên – những tình nguyện viên quản lý tổ chức: có mọi quyền
+hạn sử dụng các chức năng trong hệ thống ; (ii) Quản lý lớp (thường được gọi là
+cán sự lớp, lớp trưởng, lớp phó): có mọi quyền hạn sử dụng các chức năng của lớp
+mà họ quản lý; (iii) Tình nguyện viên – những tình nguyện viên chỉ tham gia dạy
+học: đăng kí tham gia dạy học tại lớp mà họ tham gia.
+Trang web hỗ trợ đăng ký làm tình nguyện viên thu thập hồ sơ đăng ký từ
+những người dùng quan tâm và có mong muốn tham gia làm tình nguyện viên của
+Lớp học Cầu Vồng, người dùng không cần đăng nhập vào hệ thống mà vẫn có thể
+xem được các thông tin giới thiệu về lớp học, các hoạt động thường niên mà lớp học
+tổ chức. Bên cạnh đó, những người dùng có nhu cầu đăng kí trở thành tình nguyện
+viên của Lớp học Cầu Vồng có thể điền form thông tin, gửi CV của bản thân về hệ
+thống và chờ thông tin phản hồi.
+Trong phạm vi đồ án, hệ thống quản lý dạy học và nhân sự cho Lớp học Cầu
+Vồng được xây dựng bằng cách sử dụng NodeJS ứng dụng ExpressJS framework ở
+phía backend và ReactJS framework ở phía frontend.
+Sau khi xác định được vấn đề, mục tiêu, phạm vi đề tài và định hướng giải pháp,
+phần còn lại của đồ án được trình bày theo cấu trúc như sau:
+Trong Chương 2, em sẽ trình bày chi tiết quá trình phân tích ứng dụng. Trước
+hết là việc khảo sát hiện trạng thực tế cách quản lý lớp học của Lớp học Cầu Vồng,
+những vấn đề mà Lớp học Cầu Vồng gặp phải và cần giải quyết để từ đó phân tích
+các tác nhân và các chức năng chính của hệ thống thông qua các biểu đồ use case
+và biểu đồ phân tích nghiệp vụ.
+Chương 3 giới thiệu cụ thể hơn về các công nghệ sử dụng để xây dựng được hệ
+thống đảm bảo được mục tiêu đề ra ở phần 2.2. Trong chương này em sẽ trình bày
+các công nghệ được sử dụng để phát triển ứng dụng và lý do tại sao lựa chọn các
+Chương 4 trình bày về cách kết hợp những công nghệ đã được trình bày ở
+Chương 3 để tạo nên kiến trúc cho toàn bộ hệ thống. Phần Backend và Frontend
+được phát triển độc lập, giao tiếp với nhau thông qua API. Từ kiến trúc đó em sẽ
+trình bày thêm về việc phát triển từng chức năng của ứng dụng, cùng với đó là quá
+trình kiểm thử để đi đến kết quả hoàn thiện.
+Chương 5, em sẽ trình bày tất cả những nội dung đóng góp mà mình thấy tâm
+đắc nhất trong suốt quá trình làm ĐATN. Cụ thể là phân tích các chức năng được
+cải tiến và hệ thống hóa một số quy trình nghiệp vụ, giúp người dùng bỏ qua những
+bước lặp lại thường xuyên, tiết kiệm thời gian và tối ưu hóa công việc quản lý.
+Cuối cùng, chương 6 là chương kết của báo cáo đồ án. Thông qua chương này,
+em nhìn lại một cách tổng quan kết quả mình đã đạt được, tổng kết kiến thức đã học
+và các kinh nghiệm rút ra trong quá trình làm ĐATN. Cuối cùng là một vài hướng
+phát triển để cải thiện, nâng cao chất lượng hệ thống cũng như quy trình nghiệp vụ
+mà em đã chưa kịp thực hiện được.
+Lớp học Cầu vồng - The Rainbow Class là một dự án từ thiện phi lợi nhuận
+được thành lập nhằm tạo điều kiện giúp đỡ, động viên những mảnh đời kém may
+mắn về cả vật chất lẫn tình thương, đặc biệt là những trẻ em chậm phát triển, không
+có cơ hội được đến trường; đồng thời tìm kiếm những bạn tình nguyện viên để hỗ
+trợ dạy học, giúp đỡ các em nhỏ có thêm cơ hội mở rộng cánh cửa tương lai. Chính
+vì vậy, hoạt động chính của Lớp học Cầu Vồng chính là dạy học tình nguyện.
+Hiện tại Lớp học Cầu Vồng đang tổ chức 19 lớp học tình thương giảng dạy trực
+tiếp trên 3 tỉnh thành: Hà Nội, Lào Cai, Đà Nẵng. Bao gồm: Lớp Phúc Xá, Lớp
+Phúc Tuệ, Blossom House, Ánh sáng Kim Ngưu (3 lớp), Bright Future, Lớp Cánh
+Diều, Lớp Ong Mật, Lớp Bắc Hà, Lớp Sa Pa, Lớp Simacai, Lớp Y Tý, Lớp Rồng
+Xanh, Lớp Bốn Mùa, Lớp Quán Thánh, Lớp Hàn Gắn, Lớp Tiếng Anh online cho
+trẻ em nông thôn và chấn thương cột sống, Lớp Tiếng Anh online cho người khiếm
+Ngoài ra Lớp học Cầu Vồng có tổ chức các lớp học trực tuyến dành cho các học
+sinh không thuộc ba tỉnh thành trên và sắp tới cũng có dự định mở rộng hoạt động
+tại Thành phố Hồ Chí Minh.
+Các lớp học của Lớp học Cầu Vồng có thể tổ chức dạy học theo hình thức tập
+trung (nhiều tình nguyện viên tham gia dạy học nhiều học sinh tại một địa điểm)
+hoặc hình thức dạy kèm 1-1 (một tình nguyện viên tham gia dạy học cho một học
+sinh tại nhà riêng của học sinh hoặc trực tuyến)
+Cơ cấu tổ chức của Lớp học Cầu Vồng bao gồm: ban quản lý của tổ chức, ban
+quản lý của từng lớp học, các bạn tình nguyện viên tham gia dạy học và các em học
+sinh tham gia lớp học.
+Với những người thuộc ban quản lý của Lớp học Cầu Vồng, họ sẽ thường xuyên
+kiểm tra báo cáo, đánh giá điểm của các tình nguyện viên cho mỗi học sinh sau các
+buổi học định kỳ; tuyên dương, trao học bổng, quà tặng đến những em học sinh có
+học lực tốt, có tiến bộ trong học tập; tổ chức các buổi từ thiện tặng quà đến cho các
+em có hoàn cảnh khó khăn.
+Lớp học Cầu Vồng bao gồm một hệ thống các lớp học (trực tuyến hoặc trực
+tiếp) hoạt động một cách độc lập nên mỗi lớp học nhỏ thường có một ban quản lý
+riêng, chính là các bạn tình nguyện viên được gọi là “Lớp trưởng” và “Lớp phó”
+(gọi chung là "Cán sự lớp"). Ban cán sự lớp này sẽ có nhiệm vụ quản lý các hoạt
+động chung của lớp (tuyển tình nguyện viên mới, tổ chức các buổi họp nội bộ trong
+lớp, tổ chức dạy học cho các em, . . . ), là cầu nối giữa những em học sinh, các bạn
+tình nguyện viên tham gia lớp học với ban quản lý tổ chức Lớp học Cầu Vồng.
+Các bạn tình nguyện viên tham gia Lớp học Cầu Vồng sẽ tham gia các hoạt động
+dạy học, các sự kiện chung của lớp. Ngoài việc dạy học, các bạn tình nguyện viên
+có thể tham gia các hoạt động thiện nguyện khác như trao quà đến các em học sinh
+có hoàn cảnh khó khăn, thành tích tốt trong học tập,. . .
+Lớp học Cầu Vồng được thành lập với mục đích là chia sẻ tri thức đến với những
+trẻ em có hoàn cảnh kém may mắn nên đối tượng chính mà Lớp học Cầu Vồng
+hướng tới là những trẻ em nghèo, trẻ em khuyết tật trí tuệ, trẻ em nông thôn và
+chấn thương cột sống, người khiếm thị, trẻ em ung thư,. . . Lớp học Cầu Vồng sẽ
+đem đến tri thức cho các trẻ em yếu thế trong xã hội với mong muốn lan tỏa những
+hình thức dạy-học trực tiếp sang dạy học trực tuyến. Cũng chính vì thế nên việc
+quản lý các lớp học cũng trực tuyến hoàn toàn.
+b, Hoạt động tuyển tình nguyện viên
+Lớp học Cầu Vồng thường đăng các bài tuyển tình nguyện viên lên trang fanpage
+chính thức của tổ chức trên Facebook3. Các bài tuyển tình nguyện viên thường có
+chung một mẫu. Những người có mong muốn tham gia trở thành tình nguyện viên
+của Lớp học Cầu Vồng sẽ phải gửi CV của bản thân và câu trả lời cho những câu
+hỏi được đưa trên bài đăng về một địa chỉ email của tổ chức. Ngoài ra đối với những
+bạn ứng tuyển làm tình nguyện viên dạy tiếng Anh sẽ cần phải gửi kèm thêm một
+bản ghi âm giới thiệu bản thân bằng tiếng Anh.
+Cách thức phỏng vấn được diễn ra bằng hình thức trực tuyến. Do các lớp học
+hoạt động độc lập và riêng lẻ nên công việc chọn và duyệt hồ sơ đăng ký được ban
+nhân sự phụ trách. Sau khi duyệt xong, ban nhân sự sẽ chuyển tiếp các hồ sơ đó
+cho ban quản lý của lớp học liên quan để liên hệ và lên lịch phỏng vấn. Ban quản lý
+của Lớp học Cầu Vồng không trực tiếp tham gia quá trình phỏng vấn mà chỉ theo
+3Link fanpage của Lớp học Cầu Vồng: https://www.facebook.com/therainbowc
+dõi, xem kết quả. Chính vì vậy, việc gửi email hồ sơ đăng ký về chung một email
+của tổ chức sẽ dẫn đến mất thời gian và bất tiện cho các tình nguyện viên quản lý
+Trên đây là một số khảo sát4về đối tượng mà Lớp học Cầu Vồng hướng tới,
+cách quản lý công việc hiện nay của lớp, và một số vấn đề xung quanh mà em đã
+thu thập được. Số lượng người tham gia khảo sát trên là các bạn tình nguyện viên
+đang tham gia giảng dạy tại Lớp học Cầu Vồng (chủ yếu là các bạn tình nguyện
+viên tham gia quản lý lớp). Tuy số lượng người tham gia khảo sát không khá nhiều,
+nhưng cũng giúp hiểu được phần nào các vấn đề thực tế còn tồn tại khi tổ chức các
+hoạt động tại Lớp học Cầu Vồng.
+Dựa trên các khảo sát sơ bộ về các hoạt động hiện tại của Lớp học Cầu Vồng,
+và khảo sát các chức năng cần thiết, em đã phân tích yêu cầu về quản lý nhân sự và
+quản lý giảng dạy của tổ chức, từ đó đưa ra các giả thiết về một số chức năng chính
+và thực hiện khảo sát mức độ ưu tiên của từng chức năng đối với quản lý của Lớp
+học Cầu Vồng dựa theo chức vụ hiện có của người dùng.
+•Đối với quản trị viên:
+–Theo dõi được lịch dạy học, lịch phỏng vấn của từng lớp thuộc tổ chức.
+–Theo dõi được nội dung bài học, báo cáo sau mỗi buổi học của từng lớp.
+–Theo dõi được đánh giá, nhận xét của từng tình nguyện viên tham gia dạy
+học cho các học sinh theo từng buổi.
+–Thêm, cập nhật các thông tin, danh sách các tình nguyện viên/học sinh
+–Chỉnh sửa quyền cho các tình nguyện viên tham gia dạy học trở thành
+–Xem xét, duyệt hồ sơ, theo dõi lịch phỏng vấn đối với những người có
+mong muốn tham gia làm tình nguyện viên.
+–Tùy chỉnh những câu hỏi trong form đăng kí làm Tình nguyện viên.
+•Đối với quản lý lớp:
+–Theo dõi, thay đổi được lịch dạy, nội dung bài học của lớp mà họ phụ
+–Theo dõi được các báo cáo, đánh giá, nhận xét của những tình nguyện
+4Các kết quả khảo sát: https://sal.vn/oyNef7 ,https://sal.vn/rMSW0d
+viên tham gia dạy học cho học sinh tham gia lớp mà họ phụ trách.
+–Thêm, cập nhật các thông tin, danh sách tình nguyện viên/học sinh tham
+gia lớp mà họ phụ trách.
+–Xem xét, duyệt hồ sơ, theo dõi lịch phỏng vấn đối với những người có
+mong muốn tham gia làm tình nguyện viên tại lớp mà họ phụ trách.
+–Xem xét, duyệt hồ sơ, theo dõi lịch phỏng vấn đối với những người có
+mong muốn tham gia làm tình nguyện viên tại lớp mà họ phụ trách.
+•Đối với tình nguyện viên:
+–Theo dõi lịch học, nội dung bài học và đăng kí tham gia dạy học của lớp
+mà họ đang tham gia.
+–Thực hiện nộp báo cáo, đánh giá, nhận xét học sinh định kỳ sau mỗi buổi
+–Xem thông tin các học sinh, tình nguyện viên thuộc lớp mà họ đang tham
+–Theo dõi lịch học của bản thân.
+–Theo dõi thông tin các bài giảng.
+–Theo dõi các đánh giá của tình nguyện viên sau mỗi buổi học.
+–Xem được các thông tin cơ bản, công khai về tổ chức.
+–Đăng kí làm tình nguyện viên.
+Biểu đồ use case tổng quát của hệ thống được biểu diễn như hình 2.
+Mô tả biểu đồ use case tổng quát
+Tác nhân Super Admin: Quản lý các tài khoản quản trị viên bằng cách đưa
+một tài khoản tình nguyện viên trở thành một tài khoản quản trị viên hoặc đưa một
+tài khoản quản trị viên trở thành một tài khoản tình nguyện viên. Hệ thống sẽ có
+một tài khoản Super Admin duy nhất được cung cấp bởi nhà phát triển.
+Tác nhân Quản trị viên: Tất cả các chức năng của quản trị viên phải đăng nhập
+vào hệ thống mới có thể thực hiện được.
+Tên use case Mô tả tóm tắt
+Quản lý tình nguyện viên Quản trị viên có thể thêm, sửa, xóa thông tin tất cả tình
+Quản lý học sinh Quản trị viên có thể thêm, sửa, xóa thông tin tất cả học
+Quản lý CV Quản trị viên có thể xem, duyệt, lên lịch phỏng vấn
+cho các CV; thêm, sửa, xóa các câu hỏi cho form đăng
+kí làm tình nguyện viên
+Tên use case Mô tả tóm tắt
+Xem, duyệt CV + Xem CV. Trạng thái của những CV chưa được duyệt
++ Sau khi xem CV, quản trị viên hoặc cán sự lớp có thể
+duyệt CV theo 3 trạng thái: “Chờ phỏng vấn”, “Đỗ”,
++ Chỉ có thể chuyển CV từ trạng thái “Chưa duyệt”
+sang trạng thái “Chờ phỏng vấn” hoặc “Trượt”
++ Chỉ có thể chuyển CV từ trạng thái “Chờ phỏng vấn”
+sang trạng thái “Trượt” hoặc “Đỗ”
++ CV đang ở trạng thái “Trượt” hoặc “Đỗ” không thể
++ Hệ thống sẽ tự động gửi mail đến gười đăng kí làm
+tình nguyện viên (người gửi CV) với nội dung tương
+ứng với 3 trạng thái trên.
++ Nếu CV được duyệt, chuyển qua trạng thái đỗ thì hệ
+thống tự động thêm tình nguyện viên mới với các
+thông tin đã được đăng kí.
+Tác nhân: Quản trị viên/Cán sự lớp
+Mô tả: Khi quản trị viên/Cán sự lớp duyệt CV, thay đổi trạng thái của CV thì
+ứng với mỗi trạng thái khác nhau, hệ thống phải xử lý theo các hướng khác nhau.
+
+
+Bên cạnh các yêu cầu về chức năng, hệ thống còn đáp ứng các yêu cầu phi chức
+•Tính dễ dùng: Hệ thống có giao dễ sử dụng, thân thiện với người dùng, có sự
+thống nhất về màu sắc, vị trí, kích thước của các phần tử trong một trang và giữa
+các trang với nhau; có hỗ trợ responsive màn hình mobile đối với trang web hỗ trợ
+đăng ký làm tình nguyện viên
+•Tính riêng tư, an toàn: hệ thống có xác thực người dùng với từng chức năng
+của họ cả phía Backend và Fronend
+•Tính dễ bảo trì: hệ thống được chia thành các module và component cụ thể nên
+việc bảo trì trở nên dễ dàng hơn.
+Trong chương này, em đã tìm hiểu và rút ra một số yêu cầu cần thiết cho hệ
+thống. Các chức năng của hệ thống cũng được biểu diễn qua biểu đồ use case và
+quy trình nghiệp vụ. Tiếp theo, ở chương 3 em sẽ trình bày về công nghệ sử dụng
+và các thuật toán áp dụng trong hệ thống.
+Mô hình client-server [1] là một mô hình mạng máy tính được sử dụng rộng rãi.
+Bản chất của mô hình client-server là các máy tính, bao gồm một máy chủ (server)
+và nhiều máy khách (client) giao tiếp, trao đổi dữ liệu với nhau thông qua môi
+trường mạng. Các máy client khi cần thông tin sẽ gửi các yêu cầu đến máy chủ.
+Máy chủ luôn luôn trong trạng thái sẵn sàng nhận request, sẽ xử lý yêu cầu được
+gửi đến từ client rồi sau đó trả về kết quả lại trong thời gian ngắn nhất.
+Để mô hình client-server hoạt động thì giữa các máy server và client cần có một
+chuẩn nhất định gọi là giao thức (ví dụ như HTTPS, TCP/IP, FPT,. . . ) Bên cạnh
+đó, cấu hình của server phải cao hơn cấu hình của các client.
+Mô hình client-server giúp chúng ta có thể làm việc trên bất kỳ một máy tính
+nào có hỗ trợ truyền thông. Chúng chỉ mang đặc điểm của phần mềm mà không hề
+liên quan đến phần cứng, có thể hỗ trợ người dùng sử dụng các dịch vụ một cách
+đa dạng và tiện dụng nhờ khả năng truy cập từ xa.
+MERN Stack [2] là một thuật ngữ chỉ một bộ các công nghệ mã nguồn mở
+liên quan đến Javascript, bao gồm MongoDB, ExpressJS, React JS/React Native,
+Nodejs. Những ứng dụng được xây dựng từ MERN Stack được gọi là React Un
+MERN Stack được tạo ra để cung cấp quá trình phát triển mượt mà hơn. Stack
+Development này cung cấp một khuôn khổ end-to-end cho các nhà phát triển và
+đang được phổ biến ngày càng rộng rãi.
+MongoDB [3] là hệ quản trị cơ sở dữ liệu mã nguồn mở phi quan hệ (NoSQL -
+None-Relational SQL) và hướng tài liệu (document). Các dữ liệu được MongoDB
+lưu trữ được lưu dưới dạng JSON (cụ thể là BSON) trong document.
+BSON (Binary JSON) là dữ liệu có định dạng kiểu JSON theo dạng (key: value).
+Dữ liệu được lưu trong MongoDB được gọi là các BSON document. Các dữ liệu
+kiểu BSON ở đây có thể dạng chuỗi, mảng, document khác, hoặc mảng document. . . Dưới đây là ví dụ một dữ liệu kiểu BSON:
+Một số thuật ngữ được dùng trong MongoDB:
+_id:trường bắt buộc có trong mỗi document. Đây là trường được MongoDB tự
+động sinh ra mỗi khi thêm mới một document vào collection. Giá trị _id này là duy
+nhất trong cơ sở dữ liệu MongoDB nên nó cũng có thể được hiểu là khóa chính
+trong document, đại diện cho document.
+document: là một bản ghi thuộc một collection, bao gồm các cặp giá trị (key:
+value) lưu dưới dạng BSON. collection: Nếu cơ sở dữ liệu quan hệ sử dụng các bảng
+(table) để lưu trữ dữ liệu thì MongoDB sử dụng collection. Collection là nhóm của
+nhiều document, và ta cũng không cần phải định nghĩa các cột, hàng hay kiểu dữ
+database : chứa các collection.
+Do MongoDB lưu trữ dữ liệu dưới dạng Document JSON, không có tính ràng
+buộc nên việc lưu trữ và truy vấn dữ liệu trở lên nhanh và linh hoạt. Việc mở
+rộng dữ liệu cũng trở nên dễ dàng hơn. Từ những thử nghiệm cho thấy tốc độ của
+MongoDB có thể nhanh gấp 100 lần so với My SQL. Chính vì vậy mà MongoDB
+đã trở thành một trong những NoSQL database nổi bật nhất, được dùng cho nhiều
+website như eBay, The New York Times,. . .
+Tuy nhiên, bên cạnh những ưu điểm vượt trội nêu trên, MongoDB vẫn có một số
+nhược điểm nhất định. Do không có ràng buộc nên MongoDB không được sử dụng
+cho các mô hình giao dịch yêu cầu độ chính xác cao. Việc lưu trữ các bản ghi dưới
+dạng (key: value) dẫn đến việc tốn bộ nhớ và dư thừa dữ liệu. Bên cạnh đó chính là
+nguy cơ mất dữ liệu khi chưa hoàn thành bản lưu do quá trình truy vấn dữ liệu của
+MongoDB không cập nhật ngay xuống ổ cứng nên nếu xảy ra mất điện trong khi
+truy vấn thì sẽ bị mất dữ liệu.
+NodeJS [4] là một nền tảng phát triển độc lập được xây dựng trên Javascript
+Runtime của Chrome (V8) với mục đích xây dựng các ứng dụng mạng nhanh chóng
+và có thể mở rộng một cách dễ dàng. NodeJS sử dụng mô hình event driven (mô
+hình lập trình hướng sự kiện), non-blocking nên tiết kiệm được dữ liệu và hiệu
+quả, là công cụ hoàn hảo cho các ứng dụng thời gian thực. NodeJS cũng cung cấp
+một thư viện bao gồm các module Javascript khác nhau nhằm đơn giản hóa việc
+phát triển ứng dụng web. Ngoài ra, hệ thống sử dụng ReactJS/React Native ở tầng
+frontend, việc sử dụng đồng nhất Javascript ở cả hai phía Backend và Frontend sẽ
+thuận tiện cho việc viết phần mềm, tối ưu hóa thời gian phát triển hệ thống.
+Một số thuật ngữ dùng trong NodeJS [5]:
+NPM (Node Package Manager): là chương trình quản lý thư viện ngầm định
+trong môi trường NodeJS, được tích hợp sẵn trong gói cài đặt NodeJS. NPM gồm
+hai thanh phần quan trọng: Kho chứa các gói (module, thư viện, framework) mã
+nguồn mở cho nền tảng NodeJS và chương trình chạy ở chế độ dòng lệnh (command
+line -npm) để tương tác với các kho chứa nhằm mục đích cài đặt, quản lý các phiên
+bản và dependency cho các gói.
+Module: là các phần mã nguồn riêng biệt, được kết hợp với nhau để tạo một
+chương tình hoàn chỉnh. Lập trình theo hướng module hóa có nghĩa là chia chương
+trình thanh các module nhỏ nhằm dễ kiểm soát và tái sử dụng.
+Require: là một hàm gọi module trong NodeJS. NodeJS có các tính năng nổi
+Lập trình hướng sự kiện và bất đồng bộ: Toàn bộ API trong thư viện NodeJS
+đều bất đồng bộ. Một server sử dụng NodeJS sẽ không bao giờ chờ một API trả
+về dữ liệu mà sẽ chuyển sang API kế tiếp sau đó và cơ chế thông báo Events trong
+NodeJS sẽ giúp server nhận được phản hồi từ lần gọi API trước.
+Nhanh chóng: Được xây dựng trên công cụ Javascript V8 của Google Chrome,
+thư viện Node.js có khả năng xử lý mã vô cùng nhanh.
+Đơn luồng nhưng có khả năng mở rộng cao: NodeJS sử dụng mô hình đơn luồng
+với vòng lặp sự kiện/event. Cơ chế event cho phép máy chủ phản hồi non-blocking
+và cũng cho phép khả năng mở rộng cao hơn so với các server truyền thống hỗ
+trợ giới hạn các thread để xử lý yêu cầu. Không có buffer: Các ứng dụng NodeJS
+không có vùng nhớ tạm thời cho bấy kỳ dữ liệu nào mà chỉ xuất dữ liệu theo khối.
+Nhờ những tính năng nổi bật trên mà NodeJS có rất nhiều ưu điểm như nhận và
+xử lý nhiều kết nối chỉ với một single-thread giúp ngốn ít RAM nhất và chạy nhanh
+nhất, phù hợp xây dựng các ứng dụng Single Page Application; nhờ non-blocking
+I/O của Javascript nên NodeJS tận dụng tài nguyên của server một cách tối đa mà
+không tạo ra độ trễ; chạy đa nền tảng trên Windows, MAC hoặc Linux.
+Bên cạnh đó, NodeJS tồn tại một vài nhược điểm như việc triển khai trên Host
+không dễ dàng; NodeJS không sử dụng để xây dựng các ứng dụng nặng và tốn tài
+nguyên; thiếu sự kiểm duyệt chất lượng các module NodeJS. Một số công ty/tổ
+chức hiện đang sử dụng NodeJS có thể kể đển eBay, Microsoft, PayPal, Uber,
+ExpressJS [6] là một framework mã nguồn mở, được xây dựng trên nền tảng
+NodeJS, cung cấp các tính năng mạnh mẽ để phát triển các ứng dụng Web hoăc
+ExpressJS giúp tổ chức các ứng dụng web ở phía server thành kiến trúc MVC
+(Model - View - Controller). Bên cạnh đó ExpressJS hỗ trợ các phương thức HTTP
+và middleware tạo ra API mạnh mẽ và dễ sử dụng. Nếu không sử dụng ExpressJS,
+thì lập trình viên sẽ phải thực hiện các bước phức tạp để xây dựng một API hiệu
+quả. ExpressJS có thể làm giảm một nửa thời gian viết mã mà vẫn có thể xây dựng
+ứng dụng web hiệu quả.
+ReactJS là một thư viện mã nguồn mở dựa trên JavaScript, được tạo ra từ Facebook. ReactJS được sử dụng để xây dựng các thành phần giao diện người dùng có
+thể tái sử dụng và hiển thị thay đổi theo thời gian. ReactJS thường được sử dụng
+thay thế cho View trong mô hình kiến trúc MVC do hiệu suất và tốc độ nhanh, hiệu
+quả cao, bên cạnh đó là khả năng xử lý bất đồng bộ.
+React cho phép chia giao diện trang web thành các component. Các component
+có đặc điểm nhỏ gọn và có thể tái sử dụng. React có hai loại component là Class
+Component (Stateful) và Functional Component (Stateless). Với Class Component,
+chúng ta có thể sử dụng được state một cách dễ dàng khi có thể khởi tạo ngay trong
+phương thức constructor của Class Component. Ngược lại, Functional Component
+không thể làm nhiều công việc quản lý state phức tạp giống như Class Component.
+Tuy nhiên, từ version 16.8, với sự ra đời của React Hooks thì việc quản lý state đã
+trở nên dễ dàng không kém gì Class Component. Bên cạnh đó, với quan điểm cá
+nhân, Functional Component tiện lợi cho việc bảo trì cũng như dễ hiểu hơn Class
+Component nên em đã chọn sử dụng Functional để phát triển ứng dụng này.
+Bên cạnh đó, để cải tiến hiệu năng cho các trang web, React đã sử dụng Virtual
+DOM giúp lưu lại cấu trúc giao diện và đồng bộ với cấu trúc DOM. Mỗi khi có sự
+thay đổi, React chỉ render lại các phần tử cần thay đổi mà không render lại toàn bộ
+trang web. Điều này khiến giảm thời gian tính toán và tang hiệu năng trang web
+Báo cáo Khảo sát dành cho nhà phát triển StackOverflow mới nhất năm 2021
+đã khẳng định React là web frameworkđược các nhà phát triển lựa chọn nhiều nhất.
+Theo báo cáo này, ở vị trí dẫn đầu, với khoảng 40.14% lập trình viên chọn dùng
+React để phát triển cho ứng dụng của mình.
+Chính vì mang lại được hiệu suất và khả năng xử lý bất đồng bộ nên em đã chọn
+dung framework ReactJS để phát triển cho hệ thống của mình.
+Azure Blob Storage [7] là một công cụ cho phép lưu trữ các dữ liệu phi cấu
+trúc trên cloud. Các dữ liệu đó có thể là text, dữ liệu nhị phân, tệp tài liệu hay tệp
+phương tiện,. . . được lưu dưới dạng object, được gọi là blob object.
+Azure Blob Storage lưu trữ dữ liệu theo kiểu thư mục – file. Mỗi file dữ liệu lưu
+trữ được gọi là blob. Các blob nằm trong một container tương tự như một tệp nằm
+trong thư mục. Các container nằm trong storage account.
+Azure Blob Storage chia blob ra thành 3 loại:
+Block blob dùng để lưu trữ text hoặc các file đã xác định độ lớn.
+Append blob dùng để lưu các file logging, có thể thay đổi độ lớn liên tục.
+Page blob sử dụng cho cơ chế đọc viết, với dung lượng lớn lên đên 1TB.
+Thư viện Ant Design là tập hợp các components của React, được xây dựng
+theo chuẩn thiết kế của Ant UED Team. Các component của Ant Design đều là các
+component thông dụng trong web hiện đại ví dụ như Layout, Button, Icon,. . . Bên
+cạnh đó, Ant Design cho phép người dùng tùy chỉnh các thuộc tính một cách dễ
+Thư viện axios là một thư viện HTTP Client, được dùng để hỗ trợ cho việc xây
+dựng các ứng dụng API.
+Thư viện react-i18next cung cấp một số hàm để cấu hình đa ngôn ngữ.
+Thư viện Formik và Yup hỗ trợ quản lý form như nhận giá trị trong form, xác
+thực dữ liệu và đưa ra lỗi, xử lý việc gửi form
+Thư viện @azure/storage-blob giúp kết nối lưu trữ dữ liệu lên Azure Blob
+Thư viện bcrypt hỗ trợ mã hóa mật khẩu dựa trên thuật toán Bcrypt. Thuật toán
+Bcrypt được đánh giá là bảo mật và an toàn bởi mỗi lần thực hiện hàm băm nó lại
+trả về một giá trị khác nhau, khiến cho việc dò tìm mật khẩu trở nên khó hơn.
+Thư viện multer như một middle ware hỗ trợ Express JS và Node JS dễ dàng
+xử lý dữ liệu dưới dạng multipart/form-data khi người dùng tải lên các file từ phía
+Thư viện nodemailer sử dụng giao thức SMTP để hỗ trợ Node JS khi gửi email.
+Thư viện socket.io hỗ trợ xây dựng ứng dụng thời gian thực. Socket.io giúp các
+máy kết nối và truyền dữ liệu với nhau ngay lập tức thông qua server trung gian.
+OAuth 2 (Open Authentication/Authorization) [8] là một phương thức chứng
+thực giúp các ứng dụng chia sẻ tài nguyên với nhau mà không cần chia sẻ thông tin
+Cách đăng nhập bằng phương thức OAuth được đánh giá là an toàn cho người
+dùng cuối. Đầu tiên, các ứng dụng (các website, mobile app) yêu cầu ủy quyền để
+truy cập vào resource Server như (Gmail, Facebook, Github,. . . ) thông qua user.
+Sau khi user ủy quyền cho yêu cầu trên thì một token string sẽ được sinh ra. Khi
+ứng dụng gửi thông tin định danh (ID) của mình kèm theo token string ủy quyền
+tới Authorization Server, nếu thông tin định danh được xác thực và ủy quyền hợp
+lệ thì Authorization Server sẽ trả vể cho ứng dụng một access token. Như vậy, quá
+trình ủy quyền được hoàn tất.
+Để truy cập vào tàu nguyên từ Resource Server và lấy thông tin thì ứng dụng sẽ
+sử dụng access token để xác thực. Sau khi kiểm tra tính hợp lệ của access token thì
+Resource server sẽ trả về dữ liệu của tài nguyên đã được yêu cầu cho ứng dụng.
+Chính vì vậy, trong trường hợp website bị tấn công thì chỉ có các thông tin hay
+hoạt động của user trên website đó bị lộ, ngoài ra thì không ảnh hưởng đến các
+website khác mà user đang sử dụng.
+Trong hệ thống này, em đã lựa chọn kiến trúc phần mềm là kiến trúc nguyên
+khối (Monolithic Architecture). Trước microservices[9], kiến trúc chính cho các
+dịch vụ web là kiến trúc nguyên khối. Thông thường, ứng dụng nguyên khối bao
+gồm giao diện người dùng, ứng dụng phía máy chủ và cơ sở dữ liệu. Tất cả các bộ
+phận của phần mềm được hợp nhất và tất cả các chức năng của phần mềm được
+quản lý ở một nơi. Điều đó có nghĩa là tất cả các thành phần nguyên khối được kết
+nối và phụ thuộc lẫn nhau, các tính toán hay biến đổi,. . . đều được xảy ra trong một
+Client sẽ gửi các HTTP Request tới cổng API của server để lấy dữ liệu. Phía
+server sẽ nhận các request đó, tính toán và xử lý rồi phản hồi Client dưới dạng
+JSON. Dựa trên những dữ liệu trả về, client sẽ hiển thị UI tương ứng.
+Hệ thống em xây dựng tuân thủ theo kiến trúc Monolithic. Chi tiết các thiết kế,
+em sẽ trình bày tại các phần 4.1.2, 4.1.3 và 4.
+Hệ thống bao gồm giao diện phía người dùng, web server, databases và storage.
+Có hai giao diện phía người dùng đó là: giao diện website quản lý và giao diện
+website hỗ trợ đăng ký làm tình nguyện viên.
+Website quản lý cung cấp tất cả các chức năng liên quan đến quản lý dạy học
+và nhân sự. Website này hướng tới người dùng là quản trị viên, tình nguyện viên
+tham gia dạy học và học sinh tham gia học.
+Website hỗ trợ đăng kí làm tình nguyện viên hướng tới người dùng là những
+người có hứng thú tìm hiểu về Lớp học Cầu Vồng, mong muốn trở thành tình
+nguyện viên của tổ chức. Website này không yêu cầu người dùng phải đăng nhập
+mà vẫn có thể xem được các thông tin giới thiệu về tổ chức và gửi CV/hồ sơ đăng
+ký về hệ thống và chờ duyệt.
+Hai website này sử dụng chung một backend server . Backend server này cung
+cấp các api để thực hiện xử lý các request được gửi lên từ client, truy vấn dữ liệu từ
+phía database hoặc tương tác với Storage để lưu các dữ liệu dạng Blob.
+Tại backend server được chia thành ba module chính là module quản lý module
+đăng ký hồ sơ làm Tình nguyện viên và module gửi email.
+Module quản lý cung cấp các chức năng dành cho quản trị viên và những người
+dùng bắt buộc phải đăng nhập hệ thống (tại website quản lý) ví dụ như quản lý tình
+nguyện viên, quản lý học sinh, quản lý CV, quản lý lớp học hay quản lý thông tin
+cá nhân. Đối với những user thuộc role khác nhau thì các quyền hạn và chức năng
+Module đăng ký cung cấp chức năng dành cho những người dùng là khách,
+không cần đăng nhập, có nguyện vọng đăng ký trở thành tình nguyện viên của tổ
+chức (tại website tổng quan và hỗ trợ đăng ký làm Tình nguyện viên) ví dụ như
+nhập liệu đăng ký các thông tin cá nhân, tải lên file CV và audio.
+Module gửi email sử dụng Oauth 2 của Google để xác minh tài khoản rồi sau
+đó hỗ trợ hệ thống gửi email một cách tự động đến user trong các tình huống khác
+nhau như: kích hoạt tài khoản, đặt lại mật khẩu khi quên mật khẩu, thông báo quá
+trình xử lý tiếp nhận hồ sơ đăng ký làm tình nguyện viên và thông báo lịch phỏng
+Web server được thiết kế và chia thành các gói router, controller, service, reposRouter là một bộ định tuyến giúp cho chúng ta định danh ra các url api được
+gửi từ client và hành động kèm theo nó.
+Controller tiếp nhận các request chứa yêu cầu, điều hướng xử lý tới Service
+hoặc xử lý logic nghiệp vụ bằng Repository và trả về response.
+Service tiếp nhận, xử lý các yêu cầu được gửi từ Controller.
+Repository nhận yêu cầu từ Controller và tương tác trực tiếp với Database trả
+về dữ liệu được yêu cầu.
+TạiModule gửi mail , hệ thống quản lý sẽ trở thành ứng dụng bên thứ ba, kết
+nối với ứng dụng gốc là gmail của Google. Nhờ Oauth2, ta có thể lấy được ủy
+quyền gửi email từ một địa chỉ email nhất định thông qua client_id, client_secret,
+access_token, refresh_token. Sau khi lấy được ủy quyền gửi mail rồi, thông qua
+nodemailer để gửi các email đến người dùng
+Module tải lên tệp tin bao gồm 4 thành phần chính là Route, Controller, Services và Storage. Khi client gửi một tệp tin lên server, uploadRoute sẽ định tuyến
+và gọi đến UploadController để xử lý. Controller sẽ lấy các dữ liệu cần thiết để gọi
+đến UploadService. Dịch vụ này không kết nối đến cơ sở dữ liệu mà sử dụng kho
+lưu trữ Blob Storage của Azure để lưu trữ tài nguyên.
+Module quản lý được chia thành 4 thành phần chính là Routes, Controllers,
+Repositories và Models. Routes được chia thành các module nhỏ hơn như User
+Route, Volunteer Route, Student Route, Class Route, CV Route, Lesson Route,
+Schedule Route . . . Và tương ứng với mỗi modules nhỏ của Route thì các thành
+phần Controllers, Responsitory, Model cũng có những modules tương ứng để tương
+tác. Do số lượng các phần tử thuộc module quản lý nhiều và cách thức hoạt động
+giống nhau nên em sẽ chỉ tập trung mô tả một vài thành phần quan trọng.
+Khi client gửi request đến server thông qua REST API, các Routers sẽ định
+tuyến và gọi đến các Controllers tương ứng xử lý. Controllers sẽ có nhiệm vụ lấy
+các dữ liệu đầu vào cần thiết và chuyển đến Repositories. Repositories sẽ là nơi xử
+lý tất cả nhưng logic liên quan đến nghiệp vụ của ứng dụng và cũng thực hiện truy
+vấn tới cơ sở dữ liệu MongoDB thông qua Models. Ngoài ra, User Controller và
+CV Controller cũng sẽ tương tác với module gửi mail.
+Đối với website hỗ trợ đăng kí làm Tình nguyện viên , do không yêu cầu đăng
+nhập và ít chức năng nên hệ thống hỗ trợ cả giao diện mobile lẫn giao diện desktop,
+hiển thị trên mọi màn hình với kích thước khác nhau để bất kỳ ai cũng có thể xem
+được thông tin về lớp học và đăng ký trở thành tình nguyện viên. Hơn nữa, website
+này hướng tới đối tượng người dùng là bất kỳ ai nên cũng được thiết kế một cách
+đẹp và bắt mắt hơn. Các trình duyệt hỗ trợ như Chrome, Firefox, Safari, Microsoft
+Ngoài ra, tại màn hình mobile và màn hình desktop có một sự khác biệt giữa
+thanh navigation bar đó là: màn hình desktop có 3 button là “Trang chủ”, “Nộp
+CV”, “Đăng nhập” trong khi đó ở màn hình mobile chỉ xuất hiện hai button “Trang
+Dưới đây là thiết kế mockup màn hình mobie và desktop của màn đăng kí làm
+Đối với website quản lý , hệ thống chỉ hỗ trợ giao diện desktop. Website quản
+lý bao gồm 2 layout chính: layout cho trang login, reset password và layout cho các
+Layout cho trang login hoặc reset password gồm hai thành phần chính là logo
+của Lớp học Cầu Vồng (nằm phía bên phải) và form login/reset password (nằm
+Với giao diện cho các màn hình quản lý thì ở mỗi trang đều có header menu
+(bao gồm tên tổ chức, icon thông báo, avatar, họ tên và role của login user), một
+menu sidebar ở phía bên trái để người dùng có thể truy cập các màn quản lý và
+Oauth2 (Đối tượng ủy quyền cho phép email được chỉ định tự động gửi email),
+NotificationRespository (Đối tượng thực hiện tạo mới và lưu thông báo đến người
+Luồng xử lý có thể diễn tả như sau: Người dùng thao tác với giao diện đăng
+ký CV yêu cầu sử dụng chức năng “đăng ký làm Tình nguyện viên” . UI đăng ký
+CV sẽ gửi yêu cầu đăng ký đến UploadController. Sau đó, UploadControlelr gọi
+đến upload service để lưu file mà người dùng gửi lên trên Azure Blob Storage.
+Sau khi hoàn thành lưu file, Upload Service sẽ trả về các đường link tương ứng
+với các file đã được lưu trên AzureBlob Storage cho Upload Controller. Lúc này,
+Upload Controller ra lệnh cho CVRepository lưu thông tin CV vào cơ sở dữ liệu.
+Sau khi CVRepository lưu CV thì nó sẽ gọi đến Email Service để gửi email thông
+báo với người dùng là hệ thống là đã nhận được email. Sau khi gửi email xong thì
+CVRepository lại gửi yêu cầu đến NotificationRepository tạo các thông báo đến
+những người liên quan (cụ thể là quản trị viên và cán sự lớp phụ trách lớp mà khách
+đăng ký). Sau khi hoàn thành tạo thông báo thì UploadController gửi đến UI thông
+điệp thành công. UI lúc này có nhiệm vụ thông báo cho người dùng (khách) rằng
+yêu cầu đã được xử lý thành công.
+Thông qua các khảo sát, để có thể thấy được các thực thể, thuộc tính và mối liên
+hệ giữa các thực thể, trước hết em xây dựng biểu đồ thực thể - liên kết như hình
+a, Website hỗ trợ đăng ký làm Tình nguyện viên
+Màn hình giới thiệu về tổ chức trên mobile và desktop:
+Tại đây, người dùng có thể xem được toàn bộ các thông tin công khai, giới thiệu
+về tổ chức Lớp học Cầu Vồng.
+Màn hình hỗ trợ đăng ký làm TNV trên mobile và desktop:
+Tại đây, người dùng có thể điền form để đăng ký làm Tình nguyện viên. Màn
+hình đăng ký gồm có 3 trang chính: (i) trang điền thông tin cá nhân và lớp học đăng
+ký, (ii) trang điền các câu trả lời cho câu hỏi bắt buộc được quản trị viên thiết lập
+sẵn, (iii) trang điền thông tin về thời gian rảnh của ứng viên, tải lên file audio giới
+thiệu bản thân bằng tiếng Anh và file CV.
+Màn hình đăng nhập vào hệ thống
+Tại đây, người dùng nhập các thông tin như email, mật khẩu để đăng nhập vào
+hệ thống. Trong trường hợp người dùng quên mật khẩu, khi ấn vào nút "Quên mật
+khẩu?" sẽ có một popup hiển thị yêu cầu người dùng nhập vào địa chỉ email của
+mình để đặt lại mật khẩu. Sau khi người dùng nhấn nút submit thì hệ thống sẽ gửi
+mail đặt lại mật khẩu đến tài khoản email đó.
+Màn hình dashboard (chức vụ quản trị viên) giúp người quản trị viên nắm
+được những thông tin tổng thể của lớp học, bao gồm hai thành phần chính: Phần
+thống kê (nằm phía trên) có thống kê tổng số và phân loại lớp học, số Tình nguyện
+viên đã và đang hoạt động dạy học tại tổ chức, số Học sinh đã và đang học, số
+lượng CV ở trạng thái chưa duyệt và chờ phỏng vấn.Người dùng là quản trị viên có
+thể truy cập nhanh đến các màn hình tương ứng.
+Phần tổng quan lịch học các lớp (nằm phía bên dưới) là một lịch tổng quan các
+hoạt động, sự kiện diễn ra tại các lớp học trực thuộc tổ chức. Các hoạt động sự kiện
+đó có thể là lịch dạy học hay lịch phỏng vấn. Quản trị viên có thể chọn xem lịch
+dạy của tất cả các lớp hoặc của từng lớp học thuộc tổ chức thông qua select box.
+Lịch hoạt động của mỗi lớp học được quy định bằng một màu sắc khác nhau giúp
+cho người quản trị có thể nắm được một cách tổng quát.
+Màn hình dashboard (cho chức vụ tình nguyện viên, cán sự lớp, học sinh)
+hiển thị lịch hoạt động cá nhân của người dùng. Đó có thể là lịch dạy học, lịch
+phỏng vấn (đối với tình nguyện viên hoặc cán sự lớp) hay lịch học cá nhân (đối với
+Màn hình quản lý lịch lớp (cho chức vụ cán sự lớp) hiển thị toàn bộ lịch hoạt
+động của lớp học mà người dùng là cán sự lớp (Lớp trưởng hoặc lớp phó) đang
+quản lý. Các hoạt động ở đây bao gồm lịch phỏng vấn và lịch dạy học.
+Chức năng quản lý người dùng (dành cho người dùng có chức vụ là quản
+trị viên hoặc cán sự lớp) chia người dùng thành ba đối tượng chính là quản trị
+viên tình nguyện viên và học sinh. Tương ứng với mỗi đối tượng tình nguyện viên
+và học sinh sẽ có các màn danh sách, thêm, sửa, chi tiết thông tin tương ứng. Riêng
+đối với đối tượng là quản trị viên thì người dùng chỉ có thể xem được danh sách các
+Dưới đây là các hình minh họa cho màn hình danh sách Quản trị viên (Hình
+Màn hình chi tiết thông tin tình nguyện viên hiển thị các thông tin cơ bản
+về tình nguyện viên và trạng thái hoạt động của tình nguyện viên đó. Nếu đã được
+nhập vào ngày nghỉ hoạt động thì sẽ hiển thị thêm ngày nghỉ hoạt động và thông
+tin về người đã cập nhật thông tin về ngày nghỉ hoạt động của tình nguyện viên đó.
+Chức năng quản lý lớp học (cho chức vụ quản trị viên và cán sự lớp) bao
+gồm các màn hình như: danh sách các lớp học, thêm, sửa, chi tiết lớp học. Tại màn
+chi tiết lớp học thì được chia ra thành các tab khác nhau, tùy theo chức vụ người
+dùng hay hình thức dạy học của lớp (dạy tập trung hay dạy kèm 1-1) mà cách hiển
+thị cũng khác nhau. Ví dụ, ở vai trò quản trị viên màn chi tiết thông tin lớp học
+theo hình thức dạy tập trung sẽ có 3 tab: thông tin cơ bản, danh sách các bài học,
+thành tích của lớp học (Hình 4.21); tuy nhiên cũng ở vai trò quản trị viên màn chi
+tiết thông tin lớp học theo hình thức dạy kèm 1-1 sẽ hiển thị 2 tab là thông tin cơ
+bản và danh sách các cặp dạy kèm (Hình 4.22).
+Màn hình danh sách CV hiển thị các thông tin cơ bản về hồ sơ đăng ký làm
+tình nguyện viên như thông tin cá nhân người gửi đăng ký, lớp học họ đăng ký, thời
+gian tạo và trạng thái duyệt của hồ sơ đó. Người dùng có thể tìm kiếm CV theo tên,
+địa chỉ email hoặc số điện thoại của người đăng ký hoặc có thể lọc theo trạng thái
+CV, lớp học đăng ký. Dưới đây là hình ảnh minh họa cho những hồ sơ có trạng thái
+Chức năng Cài đặt chung hỗ trợ quản trị viên chỉnh sửa, cài đặt các thông tin
+chung như: phân loại học sinh, môn học, kỳ học, khối lớp mà học sinh đang theo
+học. Các thông tin chung được chia thành các tab. Quản trị viên có thể thực hiện
+các thao tác thêm, sửa, xóa những thông tin chung ấy.
+Chức năng gửi email : Mỗi khi người dùng kích hoạt tài khoản hoặc đặt lại mật
+khẩu thì hệ thống sẽ gửi một email đến địa chỉ email của người dùng kèm theo một
+đường link dẫn đến trang đặt lại mật khẩu.
+Do hệ thống có nhiều chức năng nên tại đây, em sẽ trình bày nội dung kiểm thử
+của 3 chức năng chính là chức năng đăng ký tình nguyện viên, chức năng duyệt hồ
+sơ đăng ký làm Tình nguyện viên và chức năng quản lý bài học(với lớp dạy theo
+Kiểm thử chức năng đăng ký làm tình nguyện viên
+Kiểm thử chức năng duyệt CV
+STT Kịch bản kiểm thử Kết quả mong muốn
+1 Chuyển đổi trạng thái CV
+thái "Chờ phỏng vấn" hoặc
+thành "Trượt"1. Khi chọn option “Trượt” thì hiển thị
+popup xác nhận đổi trạng thái. Nếu người
+dùng ấn “Cancel” thì trạng thái của CV
+không bị thay đổi. Nếu người dùng ấn
+“Submit” thì trạng thái CV thay đổi thành
+trạng thái, người đăng ký nhận được email
+2 Chuyển đổi trạng thái CV từ
+thành "Chờ phỏng vấn"1. Khi chọn option “Chờ phỏng vấn” thì
+hiển thị popup điền thông tin thời gian, link
+phỏng vấn online và người phụ trách. Nếu
+người dùng ấn “Cancel” thì trạng thái của
+CV không bị thay đổi. Nếu người dùng ấn
+“Submit” thì trạng thái CV thay đổi thành
+vấn nhận được thông báo, người đăng ký
+thì nhận được email chứa các thông tin
+phỏng vấn (thời gian và link phỏng vấn)
+vận hảnh bởi máy ảo Ubuntu với cấu hình 2 CPU, 4G RAM và chạy hệ điều hành
+- Tải code từ github
+- Install Nginx và pm2
+- Vào thư mục API service, install các thư viện cần thiết, cấu hình file .env và
+- Vào thư mục chứa source code trang quản lý, install các thư viện cần thiết, cấu
+hình file .env và build hệ thống. Sau đó config file conf.d tại thư mục ./etc/nginx,
+chọn đường dẫn đến file build
+- Vào thư mục chứa source code trang đăng ký làm tình nguyện viên, install các
+thư viện cần thiết, cấu hình file .env và build hệ thống. Sau đó config file conf.d
+tại thư mục ./etc/nginx, chọn đường dẫn đến file build
+- Khởi động lại nginx service
+Cách thức tuyển tình nguyện viên của tổ chức khi không sử dụng hệ thống là
+đăng bài tuyển tình nguyện viên trên fanpage chính thức của Lớp học Cầu Vồng
+trên trang mạng xã hội Facebook. Mọi bài đăng tuyển tình nguyện viên cho các lớp
+học có cấu trúc như nhau, bao gồm 6 phần chính:
+(i) Giới thiệu về Lớp học Cầu Vồng và lý do cần tuyển tình nguyện viên
+(ii) Liệt kê các lớp học cần tuyển tình nguyện viên, số lượng tình nguyện viên
+cần tuyển, hình thức dạy học, môn học, địa chỉ, thời gian dạy.
+(iii) Yêu cầu chung khi trở thành tình nguyện viên của Lớp học Cầu Vồng
+(iv) Quyền lợi của tình nguyện viên khi tham gia Lớp học Cầu Vồng
+(v) Cách thức đăng ký trở thành tình nguyện viên của Lớp học Cầu Vồng.
+(vi) Một số lưu ý khác khi tham gia làm thành viên của Lớp học Cầu Vồng.
+Trong đó, mục (v) cách thức đăng ký trở thành tình nguyện viên là mục em
+chú trọng cải tiến quy trình nghiệp vụ. Cụ thể quy trình như sau: các bạn có mong
+muốn trở thành tình nguyện viên của Lớp học Cầu Vồng phải gửi CV cá nhân và
+câu trả lời cho các câu hỏi mà ban quản lý Lớp học Cầu Vồng đưa ra tới địa chỉ
+email: lophoccauvong15@gmail.com; với tiêu đề: "[The Rainbow Class] Vị Trí
+Ứng Tuyển-Họ Tên" (Ví Dụ: [The Rainbow Class] Lớp Học Phúc Xá-Nguyễn Thị
+A). Nếu đơn đăng ký không có CV hoặc thiếu câu trả lời sẽ bị loại.
+1Tham khảo bài đăng tuyển tình nguyện viên đầy đủ tại đường dẫn https://www.facebo
+Chính vì tất cả các CV của người đăng ký đều được gửi về chung một địa chỉ
+email nên công việc quản lý, theo dõi và lọc các CV sẽ trở nên phức tạp và tốn thời
+gian đối với các quản trị viên (ban nhân sự) nói chung và quản lý từng lớp học nói
+Hệ thống quản lý dạy học và nhân sự cho Lớp học Cầu Vồng đã hỗ trợ cải tiến
+và hệ thống hóa quy trình thu thập hồ sơ đăng ký làm Tình nguyện viên. Quy trình
+được mô hình hóa tại hình 2.10, cụ thể như sau:
+Website hỗ trợ đăng ký làm tình nguyện viên có chức năng chính là thu thập
+các hồ sơ đăng ký của người có nguyện vọng trở thành Tình nguyện viên của Lớp
+Vớitính năng xác thực các trường bắt buộc trước khi gửi form , hệ thống
+yêu cầu người dùng phải điền đầy đủ các thông tin cá nhân (như tên, email, số điện
+thoại), thông tin lớp học đăng ký, trả lời tất cả các câu hỏi mà Quản trị viên đã cài
+đặt sẵn trên website quản lý và bắt buộc upload file CV cá nhân dưới dạng PDF.
+Điều này sẽ giúp quản trị viên và người duyệt CV tránh được những trường hợp
+phải mất thời gian duyệt và loại những CV không có đầy đủ thông tin, giúp nâng
+cao chất lượng cho các hồ sơ gửi về hệ thống. Bên cạnh đó, website cũng bắt buộc
+người đăng ký phải điền vào khung giờ rảnh của mình để hỗ trợ người duyệt hồ
+sơ có thể chủ động sắp xếp lịch phỏng vấn một cách dễ dàng và chủ động hơn.
+Một tính năng giúp quản trị viên có thể linh động hơn trong việc đặt ra các câu
+hỏi bắt buộc chính là chức năng cài đặt các câu hỏi phỏng vấn trong phần quản
+Với tính năng này, quản trị viên có thể dễ dàng thêm, sửa, xóa các câu hỏi mà
+người đăng ký cần phải trả lời khi đăng ký làm Tình nguyện viên.
+Vớitính năng phân quyền ở màn hình quản lý CV người quản trị viên có thể
+xem được tất cả các hồ sơ gửi về hệ thống và theo dõi trực tiếp các trạng thái hồ sơ
+hay lịch phỏng vấn của tất cả các lớp. Ngoài ra, quản trị viên cũng có thể tìm kiếm,
+lọc các hồ sơ một cách dễ dàng. Bên cạnh đó cán sự lớp thì chỉ có thể xem được
+các hồ sơ đăng ký thuộc về lớp mà họ đang quản lý, không cần qua bất kỳ bước
+trung gian nào mà vẫn có thể chủ động xét duyệt hồ sơ và lên lịch phỏng vấn với
+Với quy trình nghiệp vụ thủ công, sau mỗi lần duyệt hồ sơ hay phỏng vấn, người
+phụ trách phải có nhiệm vụ gửi thông báo về cho người đăng ký ứng tuyển kết quả
+cuối cùng hoặc phải liên lạc và sắp xếp thời gian phỏng vấn với ứng viên. Tuy nhiên
+nếu sử dụng hệ thống thì người phụ trách sẽ được giảm thiểu đi các bước như gửi
+thông báo hoặc hạn chế trao đổi về lịch phỏng vấn với ứng viên. Các bước hệ thống
+hóa quy trình xét duyệt hồ sơ được mô tả ở hình ??, cụ thể như sau:
+Trước hết, tại màn hình đăng ký hồ sơ ứng tuyển, hệ thống yêu cầu người dùng
+điền vào khung thời gian rảnh của mình theo các ngày trong tuần. Kèm theo đó
+là một trường nhập vào note dành cho những buổi ngoại lệ. Ví dụ: người dùng có
+khung thời gian rảnh vào lúc 8h – 11h sáng thứ ba, thứ năm, thứ bảy; tuy nhiên
+riêng thứ bảy ngày (11/8) thì ngoại lệ là phải tham gia đám cưới anh trai nên sẽ
+không rảnh. Việc thu thập khung thời gian rảnh không chỉ hỗ trợ người phụ trách
+chủ động sắp xếp lịch phỏng vấn hạn chế việc liên lạc trao đổi không cần thiết, mà
+còn giúp cho người duyệt hồ sơ phán đoán với số lượng thời gian rảnh trong một
+tuần như vậy thì ứng viên có đủ thời gian để duy trì hoạt động dạy học tại Lớp học
+Tiếp đến, hệ thống hỗ trợ tự động gửi email đến các ứng viên sau mỗi bước
+thay đổi trạng thái của hồ sơ. Dưới đây là bảng so sánh ưu điểm khi sử dụng hệ
+thống và khi không sử dụng hệ thống quản lý trong việc gửi mail xét duyệt hồ sơ
+theo các trường hợp cụ thể.
+STT Hoàn cảnh Khi không sử dụng
+hệ thốngKhi sử dụng hệ thống
+Cầu VồngNgười phụ trách gửi
+nhận được hồ sơ đến
+ứng viênHệ thống tự động gửi email xác
+nhận đã nhận được hồ sơ đến
+2 Hồ sơ của ứng
+viên không đạtNgười phụ trách gửi
+email thông báo hồ sơ
+viênNgười phụ trách chuyển trạng
+thái hồ sơ thành “Trượt”, hệ
+thống tự động gửi mail thông
+báo hồ sơ không đạt đến ứng
+3 Hồ sơ của ứng
+phỏng vấnNgười phụ trách liên
+lạc với ứng viên và
+trao đổi, sắp xếp thời
+gian phỏng vấn.Người phụ trách chuyển trạng
+thái hồ sơ thành “Chờ phỏng
+vấn”, dựa vào bảng lịch rảnh của
+ứng viên lên lịch phỏng vấn. Hệ
+thống tự động gửi email thông
+báo thời gian, cách thức phỏng
+vấn đến ứng viên. Chỉ trong
+trường hợp ứng viên có nhu cầu
+thay đổi thời gian phỏng vấn thì
+sẽ liên lạc và thảo luận lại thời
+phỏng vấnNgười phụ trách gửi
+đỗ phỏng vấn đến ứng
+viênNgười phụ trách chuyển trạng
+thái hồ sơ thành “Trượt”, hệ
+thống tự động gửi email thông
+báo không đỗ phỏng vấn đến
+khi không sử dụng hệ thống
+Với việc sử dụng hệ thống quản lý dạy học và nhân sự cho Lớp học Cầu Vồng,
+các cán sự lớp chỉ cần tạo bài học mới. Sau đó hệ thống sẽ gửi thông báo đăng ký
+dạy học đến cho các tình nguyện viên liên quan. Sau khi các tình nguyện viên đăng
+ký dạy học thì hệ thống tự cập nhật danh sách những tình nguyện viên tham gia dạy
+học vào buổi đó. Như vậy, các cán sự lớp cũng không cần trải qua bước tổng hợp
+và điền danh sách vào Google Sheet nữa.
+Bên cạnh đó, với danh sách các tình nguyện viên tham gia dạy học, các cán sự
+lớp cũng có thể thêm, sửa, xóa tình nguyện viên phụ trách bài học một cách chủ
+động, quản trị viên cũng có thể trực tiếp theo dõi danh sách các tình nguyện viên
+tham gia giảng dạy thông qua các bài học. Sau khi tình nguyện viên được phân
+công phụ trách thì cũng có thông báo gửi đến cho tình nguyện viên đó.
+Trong suốt quá trình thực hiện xây dựng hệ thống quản lý dạy học và nhân sự
+cho Lớp học Cầu Vồng, em đã có cơ hội tự xây dựng một ứng dụng quản lý không
+chỉ dựa trên những kiến thức đã được học tại trường lớp, mà còn thực hành trao đổi,
+khảo sát trực tiếp với khách hàng, cụ thể là quản lý và các bạn Tình nguyện viên
+đang tham gia hoạt động giảng dạy tại Lớp học Cầu Vồng.
+Trong quá trình phát triển hệ thống, phân tích và định nghĩa yêu cầu người dùng
+là bước đầu tiên nhưng cũng là một bước quan trọng và không hề đơn giản. Hoạt
+động này đòi hỏi sự kết hợp chặt chẽ giữa khách hàng và người phân tích để có thể
+rút ra được những yêu cầu của khách hang, sắp xếp độ ưu tiên cho các chức năng
+cần thực hiện. Thoạt nhìn, quá trình này có vẻ đơn giản và dễ làm nhưng thực tế lại
+khó khăn hơn những gì mà ta tưởng tượng.
+Trên thực tế, quá trình phân tích yêu cầu người dùng được diễn ra từ khâu khảo
+sát hiện trạng dạy-học và cơ cấu nhân sự của tổ chức với mục đích là tìm hiểu yêu
+cầu của hệ thống. Tiếp đến là phân tích các yêu cầu, xây dựng giả thiết cho các
+chức năng cần thiết. Sau đó mô hình hóa và thực hiện khảo sát để xác định yêu cầu
+và độ ưu tiên cho các chức năng. Sau đó là phát triển hệ thống và tiếp nhận phản
+hồi. Đối tượng của các cuộc khảo sát chính là các Tình nguyện viên đang hoạt động
+và quản trị viên, những người trực tiếp tham gia các nghiệp vụ của tổ chức. Thông
+qua các cuộc khảo sát, em đã tiếp thu được những kiến thức như phân tích, xây
+dựng các chức năng của hệ thống dưới góc nhìn của người dùng và học hỏi được
+thêm về việc tư vấn cải thiện quy trình nghiệp vụ tới người dùng.
+Ngoài những kiến thức về phân tích, yêu cầu người dùng, em đã có thêm cơ hội
+học hỏi thêm các công nghệ về lập trình, triển khai ứng dụng web, hay những công
+nghệ mà trước đó chưa sử dụng, cách kết hợp các các công nghệ và ứng dụng chúng
+để xây dựng hệ thống.
+Sau quá trình làm đồ án, em đã tạo ra một hệ thống quản lý dạy học và nhân
+sự cho Lớp học Cầu Vồng có đầy đủ các tính năng cơ bản, cần thiết như quản lý
+nguyện viên, quản lý học sinh, quản lý lớp học, bài học,... Bên cạnh đó là một số
+tính năng giúp hỗ trợ cải thiện quy trình nghiệp vụ như hỗ trợ đăng ký tình nguyện
+viên, quản lý hồ sơ đăng ký làm tình nguyện viên, hỗ trợ gửi email/thông báo đến
+người dùng, thống kê báo cáo sau buổi học. Tuy nhiên, hệ thống vẫn còn nhiều
+điểm hạn chế như: Giao diện website quản lý còn chưa được đẹp, vẫn còn xảy ra
+một vài lỗi nhất định và vẫn còn đang trong quá trình tiếp nhận phản hồi nên chưa
+được triển khai thực nghiệm.
+Trong phạm vi đồ án, em đã hoàn thành cơ bản những chức năng cần có của một
+hệ thống quản lý dạy học và nhân sự cho Lớp học Cầu Vồng nhưng vì thời gian còn
+hạn chế, vẫn còn những chức năng chưa kịp phát triển. Em xin đề xuất hướng phát
+triển tiếp theo cho bài toán như sau:
+- Phát triển hệ thống quản lý trên web mobile
+- Thêm chức năng liên kết với Google Calendar tại trang quản lý với các lịch
+trình sự kiện của tổ chức.
+- Thêm chức năng record video trên trình duyệt giúp người dùng đăng ký làm
+tình nguyện viên có thể thu video giới thiệu bản thân bằng tiếng Anh trực tiếp trên
+- Thêm chức năng cho người dùng là các nhà hảo tâm, khách có thể xem các
+hoạt động giảng dạy ở Lớp học Cầu Vồng
+- Thêm các chức năng nộp bài tập về nhà đối với người dùng là học sinh
+- Thêm chức năng quản lý các bài đăng trên trang website hỗ trợ đăng kí làm
+- Cải thiện giao diện người dùng trang quản lý
+- Triển khai thực nghiệm hệ thống
+Qua quá trình làm đồ án, dưới sự hướng dẫn tận tình của PGS.TS. Cao Tuấn
+Dũng, em đã hoàn thành hệ thống quản lý dạy học và nhân sự cho Lớp học Cầu
+Vồng. Đồng thời em học thêm được rất nhiều kiến thức mới, khả năng phân tích và
+giải quyết vấn đề, kỹ năng lập trình cũng được nâng cao. Em mong rằng hệ thống
+của em sẽ sớm được quản trị viên Lớp học Cầu Vồng phê duyệt và sớm đi vào hoạt
+động, hỗ trợ cải tiến và hệ thống hóa quy trình nghiệp vụ, góp phần xây dựng một
+Lớp học Cầu Vồng lớn mạnh.

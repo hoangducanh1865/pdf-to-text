@@ -1,0 +1,656 @@
+
+Lời đầu tiên, em xin gửi lời cảm ơn sâu sắc đến thầy giáo TS.Đỗ Quốc Huy đã
+trực tiếp hướng dẫn và tạo mọi điều kiện thuận lợi cho em trong quá trình thực hiện
+Em cũng xin gửi lời cảm ơn tới các thầy cô trong trường đại học Bách Khoa
+Hà Nội, đặc biệt là các thầy cô thuộc Viện công nghệ thông tin và truyền thông đã
+truyền đạt cho em những kiến thức và kinh nghiệm làm nền tảng cho việc thực hiện
+đồ án tốt nghiệp cũng như trong quá trình công tác sau này.
+Cuối cùng, em xin cảm ơn đến gia đình, bạn bè đã giúp đỡ, động viên và đóng
+góp ý kiến để em có thể hoàn thành đồ án tốt nghiệp này. Em xin chân thành cảm
+tảng web với dịch vụ của Digital Ocean [8].
+Thông qua quá trình khảo sát thực trạng hiện nay, phân tích các hệ thống đã có,
+đồ án đưa ra các mục tiêu cần phát triển cho hệ thống, qua đó thực hiện phân tích
+yêu cầu, thiết kế hệ thống, phát triển và triển khai hệ thống. Đồng thời, đồ án cũng
+đưa ra các giải pháp và đóng góp đã được xây dựng và triển khai trong quá trình
+phát triển hệ thống liên quan tới các giải pháp tối ưu trải nghiệm người dùng và
+tối ưu quy trình phát triển hệ thống. Kết quả của quá trình phân tích, phát triển và
+triển khai nêu trên là thành công trong việc xây dựng nên hệ thống cộng đồng chia
+sẻ bài dịch tài liệu tiếng Nhật mang tên SunShare.
+
+Trong 5 năm trở lại đây, Nhật Bản – đất nước đang trong giai đoạn già hóa dân
+số đang tích cực đưa ra các chính sách nhằm thu hút nhân lực lao động từ nước
+ngoài đến hỗ trợ phát triển trong mọi lĩnh vực: CNTT, dệt may, xây dựng, điều
+dưỡng,. . . Thực tế hiện nay có thể thấy: nhu cầu học và ôn thi tiếng Nhật tài Việt
+Nam đang là rất lớn, số lượng người học và số lượng cơ sở đào tạo tiếng Nhật đang
+ngày một tăng lên. Chỉ sau 20 năm số cơ sở đào tạo tiếng Nhật tăng hơn 26 lần và
+số lượng người học tăng lên hơn 17 lần. Đây chính là nguồn cơn thôi thúc các mô
+hình, các hệ thống chia sẻ kiến thức và tài liệu học tiếng Nhật ra đời và phát triển
+với tốc độ cực kỳ nhanh chóng nhằm đáp ứng nhu cầu của thị trường.[1] [2] [9]
+Đối với những người mới học tiếng Nhật, không thể tránh khỏi việc gặp khó
+khăn trong việc đọc hiểu các tài liệu thuần Nhật. Từ đó phát sinh ra nhu cầu cần
+tìm kiếm các tài liệu dịch sang tiếng Việt để hỗ trợ người học dễ dàng hiểu và rút
+gọn thời gian học hơn. Tuy nhiên bản thân em hiểu rõ và sâu sắc khó khăn trong
+việc thiếu tài liệu dịch và việc bị “lạc” trong tràn lan các tài liệu dịch khác trên
+internet, không biết được đâu là tài liệu chính xác. Hơn nữa, đa phần các tài liệu
+dịch hiện nay đều do các cá nhân tự đăng trên các mạng xã hội như Facebook,
+Zalo,. . . hay rải rác trên các website nên việc tìm tài liệu dịch đối với một người
+mới học sẽ trở nên cực kỳ khó khăn vì không quen thuộc với việc tìm tài liệu.
+Vì vậy, em lựa chọn nghiên cứu và phát triển đề tài Xây dựng hệ thống cộng
+đồng chia sẻ tài liệu dịch Tiếng Nhật với mục đích tạo dựng một hệ thống cộng
+đồng chung hỗ trợ người đang học tiếng Nhật có thể hỏi/đáp và tìm kiếm các giải
+pháp trong việc hiểu tài liệu tiếng Nhật trong quá trình học. Trong một hệ thống
+cộng đồng như vậy, việc đảm bảo số lượng và chất lượng các bài viết/bài dịch thiết
+nghĩ là một vấn đề chính cần được chú trọng và quan tâm xây dựng.
+Hiện nay, đáp ứng xu hướng toàn cầu hóa, với nhu cầu ngày càng lớn của việc
+học ngôn ngữ mới, các hệ thống cộng đồng chia sẻ tài liệu và kiến thức của những
+người học ngôn ngữ đang ngày càng xuất hiện nhiều và đa dạng. Người dùng inter-
+net có thể chia sẻ kiến thức và tài liệu ở mọi nền tảng bao gồm: mạng xã hội như
+Facebook (facebook.com), Twitter (twitter.com),.. (2) các website blogs và các we-
+biste cộng đồng như: Viblo (viblo.asia), NihonBlog (nihonblog.com),. . . Ngoài ra,
+các hệ thống dịch tài liệu cũng phát triển mạnh mẽ điển hình như: Google Translate
+(translate.goolgle.com), Deepl (deepl.com),. . . Tuy nhiên để đáp ứng các vấn đề đã
+nêu ở mục 1.1, các hệ thống trên vẫn còn tồn tại một số vấn đề như (i) không tập
+trung chuyên về chức năng chia sẻ tài liệu về ngôn ngữ, (ii) nội dung chia sẻ tràn
+lan và không cụ thể chức năng, (iii) thiếu sự tương tác giữa người với người – yếu
+tố cần thiết trong việc học ngôn ngữ.
+Nhận thức được các vấn đề trên, đồ án đưa ra 2 mục đích chính của hệ thống:
+(i) là một hệ thống cộng đồng chia sẻ tài liệu và kiến thức, cụ thể là về ngôn ngữ
+Nhật, (ii) là một hệ thống giúp người dùng có thể tìm kiếm hoặc ngược lại là cung
+cấp các bài dịch từ tiếng Nhật sang tiếng Việt.
+Hệ thống được xây dựng gồm ba đối tượng chính tham gia:
+1. Người dùng khách: tác nhân không có tài khoản trong hệ thống, có thể sử dụng
+một số chức năng chính cơ bản của hệ thống.
+2. Người dùng đã đăng ký (Người dùng): tác nhân đã tạo và sử dụng tài khoản hệ
+thống, có thể tạo yêu cầu bài viết, tạo bài dịch hay quản lý thông tin tài khoản
+và lưu trữ bài viết/bài dịch theo bộ sưu tập.
+3. Quản trị viên: tác nhân phụ trách quản lý các thông tin về bài viết, người dùng,
+danh mục, . . . có trong hệ thống.
+Hệ thống được xây dựng theo bộ công cụ lập trình mã nguồn mởi liên quan tới
+Javascript là MERN Stack bao gồm M (MongoDB), E (ExpressJs), R (ReactJs) và
+N (NodeJs). Hệ thống gồm hai phần chính:
+•Backend: là phần xử lý của hệ thống được viết bằng ngôn ngữ NodeJs, sử dụng
+framework là ExpressJs. ExpressJs là một framework được xây dựng trên nền
+tảng NodeJs, cung cấp các thành phần định tuyến và phần mềm trung gian
+(middleware) để hỗ trợ giúp phát triển ứng dụng web một cách dễ dàng hơn.
+•Frontend: được phát triển bằng thư viện ReactJs – một thư viện mã nguồn mở
+Javascript hiệu quả được phát triển bởi Facebook, được sử dụng phổ biến để
+phát triển xây dựng giao diện người dùng hay UI. ReactJs cung cấp khả năng
+tái sử dụng code (Reusable Code) giúp tăng tốc quả trình phát triển và giảm
+thiểu những rủi ro có thể xảy ra trong quá trình phát triển.
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2 mô tả kết quả khảo sát một số trang web cộng đồng chia sẻ tài liệu có
+cùng ý tưởng đã tồn tại được đánh giá cao và nhiều người sử dụng. Trên cơ sở đó,
+đồ án đưa ra các chức năng cần thiết và biểu đồ use case để thấy rõ tương tác của
+ba tác nhân người dùng khách, người dùng đã đăng ký và quản trị viên đối với hệ
+thống và đồng thời đưa ra một số điều kiện của hệ thống đáp ứng các yêu cầu phi
+Chương 3 giới thiệu về các công nghệ được sử dụng để xây dựng hệ thống như:
+mô hình Client Server, thư viện lập trình, công cụ triển khai, ...và các công nghệ
+được sử dụng để thiết kế hệ thống. Việc hiểu rõ trước mục đích sử dụng và nội
+dung của các hệ thống này là tiền đề để đi tới bước tiếp theo ở Chương 4: Thiết kế
+Chương 4 cũng là chương quan trọng nhất, đi sâu vào chi tiết thiết kế hệ thống,
+cách thức hệ thống được triển khai và sự áp dụng các công nghệ đã nêu lên ở
+Chương 3 vào việc thiết kế hệ thống này.
+Chương 5 đóng vai trò tổng kết, trình bày về các đóng góp nổi bật của cả hệ
+thống. Đó là giải pháp giải quyết vấn đề người dùng trong hệ thống, các vấn đề hệ
+thống đã giải quyết được và đồng thời cũng đưa ra những tâm đắc của em khi phát
+Chương 6, chương kết của báo cáo đồ án, để thông qua đó em nhìn lại kết quả
+mình đã đạt được, tổng kết kiến thức đã học và các kinh nghiệm rút ra.
+Như vậy, trong chương 1 đã thể hiện rõ được các vấn đề xung quanh đề tài,
+hướng đi của đề tài và bố cục đề tài. Tiếp nối định hướng trong chương 1, ở chương
+2 đồ án sẽ trình bày về kết quả khảo sát hiện trạng và phân tích chi tiết từng chức
+
+Viblo Cộng đồng chia sẻ bài viết
+đa chủ đề (công nghệ, tiếng
+Chức năng lưu lại các bài viết
+yêu thích hoặc đã bình luận.
+Có sự tương tác giữa người
+với người thông qua bình luận,
+chia sẻ,. . .Là một hệ thống chia sẻ đa
+chủ đề không chuyên về tiếng
+Qua quá trình khảo sát thực tế và phân tích hệ thống hiện có, các chức năng của
+hệ thống được thể hiện qua biểu đồ use case tổng quan ở Hình 2.1.
+Mô tả biểu đồ usecase tổng quan:
+•Tác nhân: Quản trị viên hệ thống và người dùng khách và người dùng.
+•Điều kiện: Đối với người dùng và quản trị viên hệ thống, tất cả các usecase
+được thực hiện đều bắt buộc phải đăng nhập.
+
+BF-7 Cập nhật lại danh sách bản ghi
+thỏa mãn điều kiện được lựa
+•Luồng sự kiện ngoại lệ :
+–AF-1: Trường hợp không có bản ghi nào thuộc mục dữ liệu đã chọn trong
+hệ thống, không hiển thị bảng (table), thay vào đó hiển thị mô tả không
+có dữ liệu về mục dữ liệu đã chọn trong hệ thống
+–AF-2: Trường hợp lỗi hiển thị danh sách bản ghi, hiển thị thông báo lỗi và
+hiển thị bảng (table) không có nội dung (chỉ có tên cột)
+•Tiền điều kiện : Quản trị viên đã đăng nhập thành công vào hệ thống bằng tài
+–Nếu thành công, hiển thị giao diện danh sách bản ghi của mục dữ liệu đã
+chọn trong hệ thống theo dạng bảng (table)
+–Nếu thất bại, hiển thị thông báo lý do
+Bên cạnh các yêu cầu về chức năng, hệ thống còn đáp ứng các yêu cầu phi chức
+–Hệ thống cung cấp trang web có giao diện thân thiện với người dùng,
+thống nhất về màu sắc, vị trí.
+–Sự phân chia phân quyền chức năng và giao diện giữa quản trị viên và
+người dùng mạch lạc và chặt chẽ giúp quản lí hệ thống dễ dàng.
+–Trang web dự kiến sẽ được đẩy lên server, có tên miền cụ thể nên người
+dùng có thể truy cập mọi lúc, mọi nơi.
+–Việc phát triển riêng biệt Front-end và Back-end giúp cho hệ thống chạy
+ổn định, tăng khả năng trải nghiệm của người dùng
+–Qua quá trình kiểm thử, các lỗi phát sinh cơ bản của hệ thống đã được sửa
+toàn bộ giúp hệ thống có độ tin cậy cao.
+–Hệ thống cung cấp giao diện web tương thích hết với tất cả các trình duyệt
+hiện nay như Chrome, Microsoft Edge.
+–Hệ thống cung cấp giao diện responsive tương thích với mọi màn hình có
+độ rộng khác nhau của mọi thiết bị
+Trong chương này, đồ án đã trình bày về quá trình tìm hiểu và rút ra các yêu cầu
+cần thiết cho hệ thống. Các chức năng của trang web cũng được biểu diễn qua biểu
+đồ use case với các tác nhân.
+Tiếp theo, ở chương 3 đồ án sẽ trình bày về các công nghệ sử dụng cho để phát
+triển và triển khai hệ thống.
+
+Từ việc khảo sát và phân tích yêu cầu , tiếp theo em sẽ giới thiệu về một số lý
+thuyết và công nghệ sử dụng. Đó là công nghệ lập trình Web, em xin trình bày dưới
+MERN là một thuật ngữ rút gọn của MongoDB (M) [6], ExpressJS (E) [4],
+ReactJs (R) react-js và NodeJs (N) [5]. MERN Stack là một stack Javascript được
+thiết kế để giúp phát triển ứng dụng web toàn ngăn xếp dễ dàng hơn và nhanh hơn.
+Tất cả bốn công nghệ này cung cấp một khuôn khổ hoàn chỉnh cho các nhà phát
+triển để tạo ra bất kỳ ứng dụng web nào. MERN đang tuân theo kiến trúc 3 tầng
+truyền thống, bao gồm tầng hiển thị front-end (ReactJs), tầng ứng dụng (ExpressJs
+và NodeJs) và tầng cơ sở dữ liệu (MongoDB). Kiến trúc mô hình của MERN Stack
+được mô tả trong Hình 3.1
+MERN Stack cho phép nhà phát triển dễ dàng phát triển hệ thống web với
+kiến trúc 3 tầng bao gồm front-end, back-end và cơ sở dữ liệu bằng cách sử dụng
+JavaScript và JSON. Trong đó:
+•MongoDB, là cơ sở của ngăn xếp MERN, được thiết kế để lưu trữ dữ liệu
+JSON nguyên bản. Mọi thứ trong đó, bao gồm CLI và ngôn ngữ truy vấn,
+được xây dựng bằng JSON và JS. Hệ quản trị cơ sở dữ liệu NoSQL hoạt động
+tốt với NodeJS và do đó, cho phép thao tác, biểu diễn và lưu trữ dữ liệu JSON
+ở mọi cấp của ứng dụng.
+•ExpressJs là một web application framework cho NodeJs, cung cấp các tính
+năng mạnh mẽ cho việc xây dựng một ứng dụng web đúng nghĩa hoặc ngược
+lại. ExpressJs cũng có thể sử dụng để xây dựng bộ APIs mạnh mẽ và thân
+thiện với người dùng, vì nó cung cấp rất nhiều tiện ích HTTP và middleware
+cho việc kết nối. Điều này bổ sung hoàn hảo cho khung ReactJS, một khung
+JS front-end để phát triển giao diện người dùng tương tác trong HTML trong
+khi giao tiếp với máy chủ.
+Khi hai công nghệ này hoạt động với JSON, dữ liệu sẽ được lưu chuyển liên
+tục, giúp hệ thống có thể phát triển nhanh chóng và gỡ lỗi dễ dàng. Hơn nữa, để
+hiểu toàn bộ hệ thống, thay vì phải tìm hiểu và phát triển bằng nhiều ngôn ngữ,
+nhiều công nghệ và thư viện, với MERN Stack ta chỉ cần hiểu một ngôn ngữ, tức là
+JavaScript và cấu trúc tài liệu JSON. Điều này giúp giảm đáng kể khó khăn trong
+việc phát triển hệ thống đối với lập trình viên và cũng nhờ vậy MERN Stack đang
+ngày càng được sử dụng rộng rãi.
+NodeJS là một môi trường runtime chạy JavaScript đa nền tảng và có mã nguồn
+mở, được sử dụng để chạy các ứng dụng web bên ngoài trình duyệt của client. Nền
+tảng này được phát triển bởi Ryan Dahl vào năm 2009, được xem là một giải pháp
+hoàn hảo cho các ứng dụng sử dụng nhiều dữ liệu nhờ vào mô hình hướng sự kiện
+Nodejs được xây dựng trên V8 JavaScript Engine – trình thông dịch thực thi mã
+JavaScript giúp chúng ta có thể xây dựng được các ứng dụng web như các trang
+video clip, các forum và đặc biệt là trang mạng xã hội phạm vi hẹp một cách nhanh
+chóng và dễ dàng mở rộng.
+NodeJS cung cấp các thư viện phong phú ở dạng Javascript Module khác nhau
+giúp đơn giản hóa việc lập trình và giảm thời gian ở mức thấp nhất, vì vậy NodeJs
+được ưa chuộng và ngày càng được sử dụng rộng rãi nhờ các đặc điểm (i) IO
+hướng sự kiện không đồng bộ, cho phép xử lý nhiều yêu cầu đồng thời, (ii) sử dụng
+Javascript – một ngôn ngữ lập trình dễ học và (iii) NPM (Node Package Manager)
+và module Node đang ngày càng phát triển mạnh mẽ.
+Từ các đặc điểm trên, tôi đã chọn NodeJs là công cụ phát triển môi trường
+Expressjs là một framework được xây dựng trên nền tảng của Nodejs. Nó cung
+cấp các tính năng mạnh mẽ để phát triển web hoặc mobile. Expressjs hỗ trợ các
+method HTTP và midleware tạo ra API vô cùng mạnh mẽ và dễ sử dụng.
+Một số chức năng chính của Express bao gồm:
+•Thiết lập các lớp trung gian để trả về các HTTP request.
+•Định nghĩa router cho phép sử dụng với các hành động khác nhau dựa trên
+phương thức HTTP và URL.
+•Cho phép trả về các trang HTML dựa vào các tham số.
+Vì ExpressJs chỉ yêu cầu ngôn ngữ lập trình Javascript nên việc xây dựng các
+ứng dụng web và API trở nên đơn giản hơn với các lập trình viên và nhà phát triển.
+Expressjs cũng là một khuôn khổ của Node.js do đó hầu hết các mã code đã được
+viết sẵn cho các lập trình viên có thể làm việc. Nhờ vậy, nhà phát triển có thể dễ
+dàng tạo các ứng dụng 1 web, nhiều web hoặc kết hợp. Do có dung lượng khá nhẹ,
+Expressjs giúp cho việc tổ chức các ứng dụng web thành một kiến trúc MVC có tổ
+chức hơn. Từ các ưu điểm và tính năng trên, tôi đã lựa chọn ExpressJs là framework
+hỗ trợ phát triển môi trường backend cho hệ thống.
+MongoDB là một chương trình cơ sở dữ liệu mã nguồn mở được thiết kế theo
+kiểu hướng đối tượng trong đó các bảng được cấu trúc một cách linh hoạt cho phép
+các dữ liệu lưu trên bảng không cần phải tuân theo một dạng cấu trúc nhất định
+nào. Chính do cấu trúc linh hoạt này nên MongoDB có thể được dùng để lưu trữ
+các dữ liệu có cấu trúc phức tạp và đa dạng và không cố định.
+MongoDB là một NoSQL, mang một số lợi thế hơn so với các cơ sở dữ liệu
+dạng quan hệ SQL (RDBMS) bao gồm:
+•Ít Schema hơn: MongoDB là một cơ sở dữ liệu dựa trên Document, trong đó
+một Collection giữ các Document khác nhau. Số trường, nội dung và kích cỡ
+của Document này có thể khác với Document khác.
+•Cấu trúc của một đối tượng là rõ ràng.
+•Không có các Join phức tạp.
+•Khả năng truy vấn sâu hơn. MongoDB hỗ trợ các truy vấn động trên các
+Document bởi sử dụng một ngôn ngữ truy vấn dựa trên Document mà mạnh
+•Sử dụng bộ nhớ nội tại để lưu giữ phần công việc, giúp truy cập dữ liệu nhanh
+Qua các lợi thế nêu trên có thể nhận thấy đặc điểm của MongoDB là có tốc
+độ truy xuất dữ liệu nhanh, phù hợp cho các ứng dụng cần tốc độ phản hồi nhanh
+và realtime (Facebook, Blogs,. . . ). Hơn nữa, xét thấy đặc điểm của hệ thống này
+không cần quá chú trọng vào tính toàn vẹn của dữ liệu như các hệ thống tính toán
+(ví dụ banking, . . . ) nên tôi đã lựa chọn MongoDB là cơ sở dữ liệu của hệ thống.
+ReactJS là một opensource được phát triển bởi Facebook, ra mắt vào năm 2013,
+bản thân nó là một thư viện Javascript được dùng để để xây dựng các tương tác với
+các thành phần trên website. Một trong những điểm nổi bật nhất của ReactJS đó là
+việc render dữ liệu không chỉ thực hiện được trên tầng Server mà còn ở dưới Client
+ReactJS ra đời với mục đích chính là cải thiện quá trình phát triển UI. Để tăng
+tốc quá trình phát triển và giảm thiểu những rủi ro có thể xảy ra trong khi coding,
+React cung cấp cho lập trình viên khả năng Reusable Code (tái sử dụng code) bằng
+cách đưa ra 2 khái niệm quan trọng bao gồm: JSX và Virtual DOM. Nhờ vậy, React
+được đánh giá cao trong việc hỗ trợ xây dựng giao diện nhanh, hạn chế lỗi trong
+quá trình code và cải thiện hiệu năng (performance) của website. Ngoài ra một số
+tính năng đặc biệt khác của ReactJS cũng là lý do tôi lựa chọn thư viện này để phát
+triển Front-end cho hệ thống:
+•Phù hợp với đa dạng thể loại website: ReactJS cung cấp đủ các công cụ để
+dễ dàng khởi tạo phát triển một website thay vì phải code nhiều như khi tạo
+website thuần với HTML và Javascript
+•Thân thiện với SEO: Bản chất ReactJS là một thư viện JavaScript, Google
+Search Engine hiện nay đã crawl và index được code JavaScript
+Docker là một nền tảng cho lập trình viên và quản trị viên hệ thống phát triển
+và triển khai hệ thống. Nó cho phép tạo các môi trường độc lập và tách biệt để
+khởi chạy và phát triển ứng dụng và môi trường này được gọi là container. Khi cần
+triển khai hệ thống lên bất kỳ máy chủ (server) nào chỉ cần khởi chạy container của
+Docker thì hệ thống ứng dụng sẽ được khởi chạy ngay lập tức.
+Việc thiết lập và triển khai hệ thống ứng dụng lên một hoặc nhiều server rất vất
+vả từ việc phải cài đặt các công cụ, môi trường cần cho hệ thống, đến việc chạy
+được ứng dụng. Chưa kể việc không đồng nhất giữa các môi trường trên nhiều
+server khác nhau. Chính vì lý do đó Docker được ra đời để giải quyết vấn đề này.
+Hơn nữa, nhờ sử dụng Docker, việc thiết lập môi trường phát triển sẽ trở nên dễ
+dàng. Chỉ cần thiết lập một lần duy nhất và không bao giờ phải cài đặt lại các thư
+viện môi trường lại. Vì vậy, tôi đã lựa chọn Docker là công cụ chính để thiết lập và
+triển khai hệ thống lên server thực tế.
+DigitalOcean VPS là một nhà cung cấp dịch vụ máy chủ ảo, tương tự như các
+nhà cung cấp dịch vụ máy chủ ảo khác như Microsoft Azure hay Amazon VPS,
+DigitalOcean VPS cung cấp các dịch vụ Cloud Server VPS của họ dựa trên nền
+tảng điện toán đám mây giúp triển khai và mở rộng ứng dụng chạy đồng thời trên
+nhiều máy tính với các tính năng tối ưu từ đám mây (Cloud).
+Nói tới điện toán đám mây thì ta có thể hình dung rằng mọi ứng dụng được cung
+cấp dưới dạng dịch vụ, lập trình viên sẽ tiết kiệm chi phí, thay vì cần có một máy
+chủ thật, ta sẽ không cần phải quản lý máy chủ vật lý, mọi việc được DigitalOcean
+đơn giản hóa, ta có thể mở rộng server, nâng cấp cấu hình,.. dễ dàng nhờ việc sử
+dụng các dịch vụ được cung cấp bởi các nhà cung cấp dịch vụ máy chủ ảo. Việc
+này, với máy chủ thật ta sẽ mất hàng giờ, thậm chí hàng ngày để thực hiện.
+Hơn nữa, đặc điểm của OceanDigital VPS là cung cấp các dịch vụ phù hợp với
+các doanh nghiệp hay cá nhân sở hữu website với mức lưu lượng truy cập ổn định
+mà không cần mở rộng quy mô động, có thể dễ dàng nâng cấp VPS từ bảng điều
+khiển quản trị với giao diện thân thiện tương thích mọi thiết bị. Vì vậy tôi đã lựa
+chọn sử dụng dịch vụ máy chủ ảo của OceanDigital VPS để thiết lập và triển khai
+NGINX là một phần mềm web server mã nguồn mở, sử dụng kiến trúc hướng sự
+kiện (event-driven) không đồng bộ (asynchronous). Mục tiêu ban đầu để phục vụ
+HTTP cache nhưng sau được áp dụng vào reverse proxy, HTTP load balancer và
+các giao thức truyền mail như IMAP4, POP3, và SMTP. Tôi sử dụng Nginx Server
+trong hệ thống này với mục đích thiết kế cân bằng tải HTTP load balancer cho hệ
+Loadbalancing hay còn được biết đến với tên Cân bằng tải là một kĩ thuật được
+sử dụng cực kì phổ biến của các web developer nhằm mục đích tối ưu hóa việc sử
+dụng tài nguyên , băng thông, giảm độ trễ cũng như khả năng xử lý lỗi của của 1
+website. Thay vì sử dụng một server cho một website, ta sẽ sử dụng nhiều server
+để làm việc đó. Cùng với sự gia tăng về web server ta sẽ cần có 1 máy chủ để phân
+phối các lưu lượng truy cập cho các server một cách hợp lý . Máy chủ này gọi là
+Loadbalancer. Vì vậy để phục vụ thiết kế hệ thống hiện tại với số lượng người lớn
+và để tăng tính ổn định của hệ thống, tôi đã quyết định sử dụng Nginx Server làm
+load balancer cho hệ thống.
+Trong chương này tôi đã trình bày về khái niệm và lý do lựa chọn của những
+công nghệ chính được sử dụng trong hệ thống. Tiếp theo trong Chương tới, tôi sẽ
+trình bày thiết kế chi tiết và quá trình triển khai hệ thống.
+Trong Chương 3, tôi đã giới thiệu các công nghệ được sử đụng để phát triển hệ
+thống. Ở Chương này, tôi sẽ trình bày về thiết kế chi tiết hệ thống, quá trình phát
+triển và triển khai hệ thống.
+Hệ thống được thiết kế theo kiến trúc phân lớp (Layered Pattern). Đây là một
+hệ thống mang tính phân lớp, mỗi lớp sẽ phụ thuộc vào các lớp bên dưới nó nhưng
+không biết và không phụ thuộc vào các lớp bên trên sử dụng nó. Kiến trúc này được
+mô tả trong hình 4.1
+Mô hình này thể hiện tính chuyên nghiệp trong lập trình và phân tích thiết kế.
+Do hệ thống được chia thành các lớp nhỏ nên giúp phát triển ứng dụng nhanh, đơn
+giản, sản phẩm dễ nâng cấp, bảo trì. Hệ thống em xây dựng tuân thủ theo đúng kiến
+trúc phân lớp Layered Pattern. Kiến trúc này được chia làm 3 lớp chính bao gồm:
+•User Interface Layer : đóng vai trò là Client, là những chương trình chạy trên
+desktop / CLI hoặc các web page. Các chương trình client lúc này thường là
+các rich client (nơi luồng công việc và kiểm tra input đầu vào đặt ở client). Client
+ở đây là hệ thống Front-end application chạy trên Web Browser, làm nhiệm vụ
+render giao diện và gửi / nhận request tới Server.
+•Business Logic Layer : đóng vai trò là Backend Server, là nơi đặt các logic về
+nghiệp vụ chính của hệ thống. Server ở đây là hệ thống Back-end application,
+làm nhiệm vụ tiếp nhận các request từ phía Client, xử lý và lưu trữ data thông
+•Data Source Layer : đóng vai trò là Database, được tối ưu cho mục đích lưu
+trữ dữ liệu của hệ thống. . Nhiệm vụ chính là nhận yêu cầu thao tác với dữ liệu
+từ Backend Server và thực thi các tác vụ lưu trữ dữ liệu..
+Cấu trúc kiến trúc ba tầng sử dụng trong hệ thống được mô tả trong Hình 4.2
+Thiết kế tổng quan của hệ thống được biểu diễn qua biểu đồ UML (UML package diagram) biểu thị sự phụ thuộc giữa các gói (package) như Hình 4.3
+Hệ thống bao gồm 6 gói (package) không phụ thuộc lẫn nhau: Route, Controller,
+Repository, Model, Middleware và Interface. Nhiệm vụ chính và mục đích của từng
+gói được mô tả như dưới đây:
+•Gói Route: định nghĩa các API endpoint – làm nhiệm vụ điều hướng các request đến Controller tương ứng.
+•Gói Controller: định nghĩa các xử lý nhận request và trả response – làm nhiệm
+vụ xử lý nhận request, điều hướng tới xử lý ở gói Repository, nhận kết quả và
+•Gói Repository: định nghĩa các xử lý chính liên quan tới dữ liệu – làm nhiệm
+vụ thao tác với các gói khác và CSDL, trả về kết quả cho các gói tầng trên.
+•Gói Model: định nghĩa thuộc tính và thể hiện mối liên hệ của các thực thể
+•Gói Middleware: định nghĩa các middleware chung thực hiện xử lý trung gian
+•Gói Interface: khai báo các phương thức cho gói Repository
+gia nhóm chức năng liên quan tới bài viết/bài dịch.
+Cụ thể, mối quan hệ giữa các gói và các lớp trong gói được biểu diễn trong hình
+•Tại gói Route: Khi một request yêu cầu dữ liệu được gửi tới hệ thống, hệ thống
+sẽ kiểm tra loại dữ liệu mà request yêu cầu và điều hướng request tới xử lý ở
+•Nút hủy bỏ: chữ đỏ nền trắng như trong Hình 4.7 . Được sử dụng trong trường
+•Nút biểu tượng: Không sử dụng text, chỉ sử dụng biểu tượng để thể hiện ý
+nghĩa của nút như trong Hình 4.8. Chức năng giống các nút ở trên, được sử
+dụng thay cho các nút ở trên tránh giao diện bị trùng lặp và căn chỉnh tốt hơn
+khi thiết kế giao diện màn hình nhỏ.
+Thông điệp phản hồi được sử dụng để hiển thị thông báo trạng thái thành công
+hoặc lỗi của một tác vụ. Được hiển thị ở chính giữa trên cùng màn hình, bao gồm
+icon trạng thái và nội dung thông điệp. Hình 4.9 là ví dụ mô tả thông điệp khi tác
+vụ thành công. Hình 4.10 là ví dụ mô tả thông điệp khi tác vụ thất bại.
+Giao diện chung của hệ thống được thiết kế như Hình 4.11. Giao diện bao gồm
+Header nằm trên cùng và nội dung chính của giao diện ở giữa màn hình dưới
+Header. Trong thiết kế Header, trên cùng bên trái là Logo của hệ thống cùng thanh
+tìm kiếm, trên cùng bên phải là nút đăng nhập và nút đăng ký (trường hợp chưa
+đăng nhập) hoặc danh mục lựa chọn chức năng người dùng và hiển thị danh sách
+thông báo (trường hợp đã đăng nhập). Bên dưới là thanh Navbar nằm ngang chứa
+các nút điều hướng, khi ấn vào sẽ điều hướng người dùng tới các giao diện khác
+Dưới đây tôi xin đưa ra thiết kế giao diện của một số chức năng chính quan trọng
+Giao diện màn danh sách bài viết được thiết kế như Hình 4.12 . Giao diện hiển
+thị danh sách các bài viết được phân chia theo nhiều danh mục. Mỗi danh mục
+hiển thị tối đa 8 bài viết được chia làm 2 cột và 4 hàng, trong trường hợp danh
+mục đó có nhiều bài viết, người dùng có thể điều hướng thông qua mục Phân
+trang (PAGINATION). Mỗi bài viết sẽ hiển thị các thông tin cơ bản bao gồm ảnh
+thumbnail, tiêu đề, mô tả, thông tin người viết, danh mục, ..
+Giao diện màn Chi tiết bài viết được thiết kế như Hình 4.13. Trên cùng là thông
+tin về tiêu đề và thumbnail của bài viết. Tiếp đến giao diện được hiển thị thành 2
+mục: bên trái chiếm 2/3 màn hình là nội dung chính của bài viết, bên phải chiếm
+1/3 màn hình là các thông tin khác của bài viết bao gồm thông tin người viết, mô
+tả bài viết và danh sách từ vựng của bài viết. Cuối cùng là mục danh sách các bình
+luận của người dùng về bài viết. Giao diện Chi tiết bài viết được hiển thị thành các
+phần mục rõ ràng, không quá nhiều thông tin khiến cho người dùng dễ nắm bắt
+được các thông tin chính của bài viết.
+Giao diện màn danh sách và chi tiết bộ sưu tập được hiển thị như Hình 4.14.
+Giao diện được chia ra làm 2 phần rõ ràng gồm: bên trái là danh sách các bộ sưu
+tập người dùng đã tạo, bên phải hiển thị danh sách các bài viết của một bộ sưu tập.
+Khi người dùng lựa chọn một bộ sưu tập từ danh sách bộ sưu tập, mục bên phải
+giao diện sẽ cập nhật và hiển thị danh sách các bài viết của bộ sưu tập đó. Thiết
+kế được chia phần rõ ràng, đồng thời khi muốn xem chi tiết một bộ sưu tập người
+dùng không cần phải điều hướng sang một giao diện khác là một điểm nổi bật của
+
+
+dùng truy cập màn hình trang chủ, mặc định hệ thống hiển thị tab “List actions”,
+hiển thị danh sách các bài viết theo từng danh mục (category). Mỗi danh mục hiển
+thị tối đa 8 bài viết. Trong trường hợp số lượng bài viết của một danh mục lớn hơn
+8, người dùng có thể duyệt danh sách bài viết của danh mục đó thông qua chức
+năng phân trang. Người dùng cũng có thể sử dụng chức năng tìm kiếm theo bộ lọc
+là danh mục để tìm kiếm bài viết phù hợp.
+Chức năng xem chi tiết bài viết
+Khi lựa chọn một bài viết từ danh sách bài viết, giao diện chi tiết bài viết được
+hiển thị như Hình 4.19 và Hình 4.20. Tại đây người dùng có thể duyệt nội dung bài
+viết, xem các thông tin liên quan như từ vựng, thông tin tác giả, danh sách bài dịch
+. . . Trường hợp đã đăng nhập vào hệ thống, người dùng có thể tương tác với bài
+viết thông qua các chức năng: tương tác thích, bình luận, thêm bài viết vào bộ sưu
+Chức năng tạo bài viết mới
+Người dùng có thể tạo bài viết cho riêng mình thông qua chức năng tạo bài viết
+mới. Giao diện tạo bài viết mới được hiển thị như Hình 4.21. Sau khi nhập đầy đủ
+các thông tin về bài viết như tiêu đề, nội dung, danh mục,. . . người dùng có thể tạo
+bài viết mới. Ngoài ra, thông qua chức năng mời chỉnh sửa, người dùng có thể cấp
+quyền chỉnh sửa bài viết cho nhiều người dùng khác trong hệ thống.
+Chức năng quản lý thông tin cá nhân
+Người dùng có thể quản lý và cập nhật thông tin cá nhân, thông tin tài khoản khi
+cần thiết. Giao diện cập nhật thông tin cá nhân và thay đổi mật khẩu được hiển thị
+như Hình 4.22 và Hình 4.23.
+
+
+
+(Chung)1. Truy cập màn hình chi tiết
+detail” (xem thông tin người
+đã tạo bài viết hoặc có quyền
+phải là người tạo bài viết hoặc
+không có quyền sửa bài viết.
+lựa chọn một bài dịch bất kỳ.1. 1. Hiển thị các thông tin
+chính của bài viết tương tự
+diện xem thông tin người
+nhập)1. Sử dụng các chức năng
+yêu thích, bình luận, thêm bài
+dịch, thêm vào bộ sưu tập. . .1. Hiển thị thông báo “Please
+login to use this featue!” (yêu
+cầu đăng nhập để sử dụng
+nhập)1. Ấn nút có biểu tượng trái
+tim (yêu thích bài viết).
+của bài dịch và ấn nút “Crebài viết.1. Hiển thị giao diện người
+dùng đã yêu thích bài viết và
+luận của bài viết và hiển thị
+dịch tại tab mới trong danh
+sách các tab bài dịch của bài
+và hiển thị thông báo.
+sách bài viết của bộ sưu tập
+đã chọn thành công và hiển thị
+Tạo mới bài viết Đạt Đạt
+Trang web của hệ thống SunShare đã được triển khai trên server của Digital
+Ocean. Cụ thể cấu hình của server như dưới đây:
+•Hệ điều hành: Ubuntu 20.04 LTS
+Các bước triển khai hệ thống bao gồm:
+•Bước 1: Tải về các images của hệ thống Front-end và Back-end và các dịch vụ
+liên quan (MongoDB, Nginx, . . . ) từ DockerHub
+•Bước 2: Khởi chạy các images của hệ thống và các dịch vụ liên quan tạo ra
+•Bước 3: Khởi chạy các container tạo ra các dịch vụ (service). Các dịch vụ giao
+tiếp với nhau tạo nên hệ thống.
+Quy trình khởi chạy hệ thống Front-end : Chi tiết quy trình khởi chạy hệ thống
+Front-end được mô tả như trong Hình 4.24
+Thiết lập docker để thực hiện tạo một docker image chứa hệ thống frontend sẽ
+được khởi chạy theo các bước dưới đây:
+•Bước 1: Khởi tạo môi trường Node.
+•Bước 2: Sao chép tệp package.json từ thư mục dự án sang thư mục của con•Bước 3: Container cài đặt các thư viện hệ thống được định nghĩa trong tệp
+•Bước 4: Sao chép mã nguồn của dự án vào container.
+•Bước 5: Thực hiện tác vụ build các tệp html, css và js của hệ thống.
+•Bước 6: Sao chép các tệp đã build được sang thư mục quản lý thiết lập của của
+•Bước 7: Khởi tạo docker container.
+•Bước 8: Khởi chạy docker container đã được tạo.
+Quy trình khởi chạy hệ thống Back-end : chi tiết quy trình khởi chạy hệ thống
+Back-end được mô tả như trong Hình 4.25
+Thiết lập docker để thực hiện tạo một docker image chứa hệ thống backend sẽ
+được khởi chạy theo các bước dưới đây:
+•Bước 1: Khởi tạo môi trường Node.
+•Bước 2: Sao chép tệp package.json từ thư mục dự án sang thư mục của con•Bước 3: Container cài đặt các thư viện hệ thống được định nghĩa trong tệp
+•Bước 4: Sao chép mã nguồn của dự án vào container.
+•Bước 5: Khởi tạo docker container.
+•Bước 6: Khởi chạy docker container đã được tạo.
+
+Ở chương 4 tôi đã trình bày chi tiết về các phương pháp và công cụ sử dụng khi
+thiết kế kiến trúc hệ thống, các thức kiểm thử và triển khai hệ thống. Trong chương
+này tôi sẽ trình bày về những vấn đề đã gặp phải khi xây dựng hệ thống và giải
+pháp giải quyết. Đồng thời tôi cũng sẽ trình bày về những nội dung chức năng của
+hệ thống mà tôi nghĩ rằng sẽ là điểm đặc biệt cần được chú ý của hệ thống này.
+Theo kết quả khảo sát của dự án ’Khảo sát dành cho các cơ quan đào tạo tiếng
+Nhật’ được tổ chức bởi Japan Foundation - Quỹ Giao lưu Quốc tế Nhật Bản, tính
+đến năm 2018, Việt Nam đứng thứ 6 trên thế giới về số lượng người học tiếng Nhật
+với khoảng 174.500 học viên và 818 cơ quan dạy tiếng Nhật. Chiếm số lượng lớn
+trong số đó là các học viên thuộc độ tuổi từ 16-35 tuổi. Vì vậy, hướng tới một hệ
+thống có tính ứng dụng cao dành cho những người học tiếng Nhật, tôi mong muốn
+xây dựng một hệ thống đáp ứng được hành vi của tập người dùng này, tức là những
+người thuộc độ tuổi từ 16-35 tuổi.[9] [12]
+Trong bối cảnh số hóa công nghệ như hiện nay, những người thuộc độ tuổi này
+thường sở hữu ít nhất là 1 thiết bị số, đa phần là điện thoại thông minh. Ngoài ra
+còn nhiều thiết bị khác cũng được sử dụng chiếm số lượng nhiều là máy tính, máy
+tính bảng, . . . Với mục tiêu chính nhất của hệ thống là xây dựng một website cung
+cấp giao diện bài dịch tiếng Nhật cho người học tiếng Nhật, tức là hành vi chính
+của người dùng đối với hệ thống là “đọc”, thì một hệ thống có thể sử dụng được với
+bất cứ thiết bị nào là phù hợp với tập đối tượng của hệ thống này. Nhờ vậy, người
+sử dụng có thể học tiếng Nhật ở bất cứ đâu với bất cứ thiết bị nào, và trải nghiệm
+của người dùng đối với hệ thống sẽ được nâng cao.
+Để đáp ứng được mục tiêu trên, đồ án đã đưa ra thiết kế giao diện hệ thống theo
+Web Responsive là phong cách thiết kế trang web sao cho các nội dung có
+thể hiển thị tương thích trên nhiều loại thiết bị khác nhau. Nói cách khác, bố cục
+của trang web sẽ được tự động thay đổi, điều chỉnh để xuất hiện vừa in trên màn
+hình của máy tính, điện thoại hay bất kỳ thiết bị nào mà bạn sử dụng. Ngày nay,
+responsive đang dần trở thành một trong những yếu tố chính để đánh giá sự hiệu
+
+Trong quá trình phát triển, React cung cấp cho lập trình viên câu lệnh khởi
+chạy hệ thống sử dụng server phát triển của React được gọi là React Development
+Server. Cấu trúc hệ thống Front-end sử dụng React Development Server được mô
+tả như Hình 5.3. Tuy nhiên, khi sử dụng server phát triển sẵn có của React trong
+môi trường production, đối với hệ thống Front-end có 2 vấn đề:
+•Thứ nhất là sử dụng React Development Server không phù hợp cho môi trường
+production, vì đây là máy chủ dành cho phát triển, vì vậy khi số lượng người
+tăng thì khả năng quá tải của hệ thống sẽ tăng lên.
+•Thứ hai là React cung cấp câu lệnh giúp nhà phát triển build mã nguồn hệ
+thống sang các tệp html, css và js. Tuy nhiên nếu không sử dụng server của
+React, ta cần sử dụng một server khác để phục vụ các tệp trên khi có yêu cầu
+phục vụ hệ thống được gửi tới máy chủ production.
+Đối với Backend, khi số lượng người dùng tăng lên, nếu chỉ có một Back-end
+service phụ trách xử lý yêu cầu thì sẽ dễ xảy ra tình trạng hệ thống bị quá tải. Vì
+vậy ta cần khởi chạy thêm back-end service để có thể xử lý trong trường hợp có
+nhiều yêu cầu được gửi đến máy chủ trong một thời gian ngắn. Cơ bản ý tưởng sẽ
+được mô tả như Hình 5.4:
+Ý tưởng trên tồn tại một vấn đề đó là cần mở nhiều port (cổng) trong máy chủ
+để có thể chạy nhiều dịch vụ back-end. Mỗi dịch vụ yêu cầu mở một port. Điều này
+là không hợp lý đối với hệ thống vì tồn tại các vấn đề sau:
+•Hệ thống Front-end không thể biết được có bao nhiêu dịch vụ back-end đang
+được khởi chạy và chạy ở những port nào để có thể gửi yêu cầu tới
+•Liên quan tới vấn đề bảo mật hệ thống vì nếu ta chuyển xử lý sang hệ thống
+Front-end, Front-end cần biết về số lượng và định danh của các dịch vụ back•Khó quản lý số lượng và định danh của các dịch vụ back-end đang được khởi
+chạy trong trường hợp có quá nhiều dịch vụ và cần mở nhiều port để khởi chạy
+số lượng lớn dịch vụ back-end
+Đối với hệ thống Front-end, ta thay thế React Development Server với Nginx
+theo cấu trúc được mô tả như trong Hình 5.5:
+Ta cần cấu hình Docker để sử dụng dịch vụ máy chủ nginx server trong hệ
+thống. Máy chủ Nginx mang nhiều ưu điểm thích hợp để sử dụng làm một máy chủ
+production nên nhờ vậy hệ thống có thể xử lý tốt hơn nhờ có máy chủ Nginx.
+Đối với hệ thống Back-end, ta sử dụng Nginx để giải quyết vấn đề cân bằng tải
+hệ thống đã nêu trên theo như mô tả trong Hình 5.6:
+Ở đây, Nginx đóng vai trò là một máy chủ trung gian có nhiệm vụ nhận yêu cầu
+từ các máy chủ khác và điều hướng các yêu cầu đó tới với các dịch vụ back-end
+đang khởi chạy. Nhờ vậy ta đã giải quyết được các vấn đề đã nêu lên ở trên.
+Nhờ sử dụng máy chủ Nginx, ta đã tối ưu hóa được hệ thống trên máy chủ
+production một cách hiệu quả hơn và đem lại các lợi ích sau:
+•Các tệp mã nguồn Front-end được phục vụ bởi máy chủ mang tính “produc•Nhờ đặc điểm của máy chủ Nginx là một máy chủ trung giản có thể điều phối
+các yêu cầu, hệ thống Back-end được cân bằng tải tốt hơn.
+•Tăng yêu tố bảo mật: Các hệ thống bên ngoài chỉ có thể giao tiếp với hệ thống
+Back-end qua cổng mặc định của máy chủ Nginx là cổng 80, và không thể biết
+được số lượng và định danh của các dịch vụ back-end đang được chạy trong
+Ngoài việc tối ưu hóa hệ thống như đã nêu ở mục trên, việc tối ưu hóa quy trình
+phát triển và triển khai hệ thống cũng đóng một vai trò quan trọng giúp giảm đáng
+kể công sức bảo trì và sửa chữa hệ thống.
+Quy trình phát triển ban đầu của hệ thống được mô tả như Hình 5.7. Cụ thể, khi
+một thay đổi được tạo ra trên mã nguồn hệ thống, ta cần push thay đổi đó lên git.
+Sau đó, ta cần đăng nhập vào máy chủ production, thực hiện thao tác pull các thay
+đổi trong mã nguồn về và bắt đầu thực hiện build docker images và khởi chạy lại
+docker container để khởi chạy lại hệ thống. Tuy nhiên, quy trình này tồn tại một số
+vấn đề liên quan tới hiệu năng của máy chủ production. Vấn đề chính là tác vụ build
+docker image được thực hiện ngay tại máy chủ production. Điều này làm giảm hiệu
+năng của máy chủ vì để build một image máy chủ cần tiêu tốn các tài nguyên hệ
+thống, bộ nhớ và cpu. Dẫn đến tài nguyên của máy chủ dùng cho việc xử lý các tác
+vụ khác như xử lý yêu cầu từ các máy chủ khác sẽ bị giảm, dẫn đến giảm hiệu năng
+Để giải quyết vấn đề nêu trên, hệ thống cần đưa ra một mục tiêu chính là chuyên
+môn hóa hệ thống. Tất cả tài nguyên của máy chủ cần được tập trung sử dụng cho
+việc xử lý các yêu cầu gửi tới máy chủ hay dành cho việc khởi chạy hệ thống.
+Phương pháp giải quyết tôi đã áp dụng là chuyển tác vụ build docker image từ máy
+chủ production sang một máy chủ khác (máy tính local hoặc máy chủ development,
+Quy trình phát triển mới đã cải tiến của hệ thống được mô tả như Hình 5.8:
+Quy trình trên gồm các bước như sau:
+•Bước 1: Thực hiện tác vụ build image trên máy chủ development.
+•Bước 2: Lưu trữ image trên tại dockerHub – kho lưu trữ images của Docker
+•Bước 3: Tại máy chủ production, tải image mới về và khởi chạy để rebuild lại
+Sau khi áp dụng quy trình phát triển trên, quy trình phát triển và triển khai hệ
+thống đã trở nên hiệu quả, gọn và dễ hiểu hơn. Sử dụng quy trình phát triển mới
+đem lại một số lợi ích sau:
+•Tăng hiệu năng của máy chủ production: Chuyển công việc tiêu tốn nhiều tài
+nguyên máy chủ là build image sang máy chủ khác, dành tài nguyên máy chủ
+cho các tác vụ khác.
+•Chuyên môn hóa máy chủ production: Máy chủ production chỉ có một nhiệm
+vụ chính là thực hiện khởi chạy hệ thống và không cần thực hiện các tác vụ
+xây dựng hệ thống nào.
+•Tận dụng được ưu điểm của việc Docker hóa hệ thống: Hệ thống được đóng
+gói và lưu trữ dưới dạng image sử dụng kho lưu trữ DockerHub giúp chuyên
+môn hóa quá trình phát triển và quá trình triển khai.
+Như đã trình bày ở trên, hệ thống được xây dựng hướng tới đối tượng là những
+người học tiếng Nhật, với mục đích chia sẻ các bài dịch văn bản tiếng Nhật sang
+ngôn ngữ khác. Vì vậy, hiển nhiên nếu có thể thiết kế hệ thống được hiển thị với
+giao diện là ngôn ngữ tiếng Nhật thì trải nghiệm của người dùng sẽ mong đợi tăng
+lên đáng kể. Vì vậy hệ thống đã được thiết kế sử dụng 2 ngôn ngữ chính là tiếng
+Nhật và Tiếng Anh với mục đích: sử dụng tiếng Nhật với người dùng muốn chuyên
+môn hóa trải nghiệm tiếng Nhật và sử dụng tiếng Anh với người dùng chưa có
+nhiều vốn từ vựng tiếng Nhật và hướng tới việc quốc tế hóa trang web.
+Sau thời gian tìm hiểu, tôi đã lựa chọn sử dụng thư viện React-intl – thư viện hỗ
+trợ đa ngôn ngữ hóa website sử dụng thư viện ReactJS. Thư viện React-intl cung
+cấp các component và các APIs để định dạng ngày, tháng, số và chuỗi, bao gồm cả
+xử lý chuyển đổi, xứ lý văn bản một cách đa dạng. Thư viện được thiết kế dựa trên
+thư viện FormatJS – thư viện hỗ trợ đa ngôn ngữ hóa hệ thống sử dụng Javascript.
+Mô tả ý tưởng về cách thức hoạt động của việc đa ngôn ngữ hóa được FormatJS
+định nghĩa như Hình 5.9. Chi tiết ý tưởng được trình bày rõ hơn trong tài liệu thiết
+Ý nghĩa của sơ đồ trên được giải thích như sau: Khi xây dựng hệ thống, những
+chuỗi ký tự cần được đa ngôn ngữ hóa sẽ được định nghĩa dưới dạng chuỗi ký tự
+mặc định, được gọi là defaultMessage. Những chuỗi ký tự này được sử dụng như
+ngôn ngữ mặc định của hệ thống. Khi một yêu cầu chuyển đổi ngôn ngữ được đưa
+ra, các bước sau sẽ được thực hiện:
+•Bước 1: Extraction (trích xuất): tổng hợp tất cả các chuỗi ký tự mặc định trong
+hệ thống thành một tệp JSON, sẵn sàng chờ được xử lý dịch
+•Bước 2: Upload Messages (Gửi lên thông điệp): gửi tệp JSON lên bộ phận xử
+•Bước 3: Download Translations (Tải về bản dịch): kết nối với bộ phận xử lý
+dịch lấy về tệp JSON chứa các chuỗi ký tự đã được xử lý dịch
+•Bước 4: Commit: Trả về kết quả đã dịch cho hệ thống.
+Dựa trên ý tưởng như trên, sử dụng thư viện React-intl ta có thể thiết kế đa ngôn
+ngữ hóa cho hệ thống. Về cơ bản, khi sử dụng các phương thức được cung cấp bởi
+React-intl, công việc ta cần làm là:
+•Định nghĩa các chuỗi ký tự mặc định trong code base: hỗ trợ thư viện trích
+xuất chuối ký tự mặc định từ hệ thống.
+•Cung cấp tệp JSON định nghĩa kết quả dịch của chuỗi ký tự mặc định: thay
+cho tác vụ kết nối với bộ phận xử lý dịch để nhận về tệp JSON chứa kết quả
+Sau khi áp dụng thiết kế đa ngôn ngữ cho hệ thống, hiện nay hệ thống đã có thể
+sử dụng 2 ngôn ngữ là Tiếng Anh (English) và Tiếng Nhật (Japanese). Việc chuyển
+đổi giữa 2 ngôn ngữ cũng rất dễ dàng làm tăng trải nghiệm của người dùng đối với
+hệ thống. Giao diện hệ thống khi hiện thị dưới 2 ngôn ngữ, được mô tả qua Hình
+Như vậy, Chương 5 đã trình bày về các vấn đề, giải pháp, các đóng góp và ưu
+điểm nổi bật của hệ thống. Các vấn đề và giải pháp được đưa ra đều gắn liền với
+thực tế và nhằm mục đích cải thiện chất lượng của hệ thống, nâng cao trải nghiệm
+của người dùng, nâng cao hiệu suất phát triển và bảo trì hệ thống. Đây đều là những
+yêu cầu thiết yếu trong quá trình phát triển phần mềm. Trong Chương 6, tôi xin tổng
+kết lại và đưa ra hướng phát triển tiếp theo của đồ án.
+
+Nhờ sự giúp đỡ tận tình của TS. Đỗ Quốc Huy trong suốt quá trình làm đồ án tốt
+nghiệp, tôi đã hoàn thành hệ thống cộng đồng chia sẻ bài dịch tiếng Nhật SunShare
+với đầy đủ tính năng cần thiết và đáp ứng các yêu cầu đề ra ban đầu mang các đặc
+•Là một hệ thống cộng đồng chia sẻ về tài liệu và kiến thức về ngôn ngữ - cụ
+•Là một hệ thống giúp người dùng có thể tìm kiếm và khảo bài dịch của người
+khác hoặc ngược lại có thể cung cấp các bài dịch từ tiếng Nhật sang tiếng Việt.
+Đồng thời hệ thống đã giải quyết được các vấn đề tồn đọng của các hệ thống
+sẵn có và cung cấp thêm nhiều tính năng nổi bật:Là một hệ thống có sự phân
+quyền giúp ngăn chặn các nội dung rác, nội dung không lành mạnh đồng thời
+đảm bảo thông tin người dùng được quản lý tốt. Là một hệ thống đa ngôn ngữ
+phù hợp với đối tượng người dùng hệ thống đang hướng tới là những người
+đang học tiếng Nhật. Là một hệ thống có sự tương tác giữa người với người,
+không đơn thuần chỉ là một hệ thống dịch tài liệu thuần. Mang tính năng
+responsive, có thể sử dụng được ở nhiều thiết bị với độ rộng màn hình khác
+nhau, giúp tăng trải nghiệm của người dùng
+Thông qua quá trình xây dựng và phát triển đồ án, tôi đã học hỏi thêm được rất
+nhiều điều và rút ra được cho mình thêm nhiều bài học kinh nghiệm:
+• • • • •Thiết kế giao diện cần phù hợp với yêu cầu người dùng, thiết kế đẹp là chưa
+đủ, cần đáp ứng hành vi của người dùng.
+•Cần đặt mục tiêu đáp ứng yêu cầu và trải nghiệm của người dùng lên là yếu tố
+quan trọng nhất chứ không phải số lượng tính năng. Dù hệ thống có nhiều tính
+năng nhưng nếu không đem lại trải nghiệm tốt cho người dùng thì hệ thống
+cũng không được sử dụng.
+•Quá trình xây dựng và phát triển một hệ thống cần lên kế hoạch và bám sát
+theo một quy trình để đảm bảo chất lượng sản phẩm.
+•Việc phát triển sản phẩm là quan trọng nhưng việc bảo trì hệ thống trong tương
+lai cũng là một yếu tố không thể bỏ qua.
+Bên cạnh những tính năng nổi bật đã được phát triển như trên, thông qua tham
+khảo ý kiến của TS. Đỗ Quốc Huy và của những người dùng thử hệ thống khác,
+có thể thấy hệ thống vẫn còn tồn tại nhiều hạn chế và cần tiếp tục cải thiện trong
+•Chức năng của tác nhân quản trị viên vẫn còn hạn chế, không đóng nhiều vai
+•Cần có chức năng phê duyệt mỗi khi một bài viết hoặc bài dịch được người
+dùng tạo mới nhằm mục đích hạn chế các nội dung không phù hợp với yêu cầu
+•Tài liệu có thể dịch của hệ thống hiện tại chỉ là văn bản, cần thêm các chức
+năng hỗ trợ dịch các dữ liệu khác như dữ liệu âm thanh, dữ liệu video, . . . .
+Các góp ý và phản hồi trên đều là những đánh giá thực tế và hợp lý của mọi
+người dưới vai trò là những người trải nghiệm sản phẩm hệ thống. Vì vậy, để tiếp
+tục phát triển nhằm mục đích cải thiện hệ thống phù hợp hơn với yêu cầu của người
+dùng và cung cấp trải nghiệm người dùng tốt nhất, việc lên kế hoạch, thiết kế quy
+trình và phát triển cải thiện các phản hồi trên sẽ là hướng phát triển tiếp theo của
+đồ án. Bên cạnh việc cải thiện trải nghiệm người dùng, việc cải thiện quy trình phát
+triển để bảo trì và phát triển hệ thống trong tương lai hiệu quả cũng là một điều
+thiết yếu cần lên kế hoạch của đồ án trong tương lai. Trước mắt các điểm cần cải
+•Hệ thống chưa tự động triển khai lại sau khi có thay đổi mới trong mã nguồn
+mà cần khởi động lại một cách thủ công.
+•Cơ sở dữ liệu MongoDB của hệ thống đang chưa được triển khai trên máy chủ.
+Trên đây là tổng kết lại những điểm đã hoàn thành và kế hoạch phát triển trong
+tương lai của đồ án. Với các tính năng mà hệ thống đem lại, mong rằng hệ thống
+SunShare sẽ phát triển thành một cộng đồng mang nhiều lợi ích cho những người
+học tiếng Nhật. Hệ thống sẽ tiếp tục được duy trì và cải thiện trong tương lai để
+tiếp tục đem lại trải nghiệm tốt nhất cho người dùng và đem lại những tính năng
+tốt đáp ứng nhu cầu của người dùng.

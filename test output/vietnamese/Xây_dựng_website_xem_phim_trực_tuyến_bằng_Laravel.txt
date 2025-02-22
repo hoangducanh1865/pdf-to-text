@@ -1,0 +1,298 @@
+
+Trong quá trình học tập, nghiên cứu tại trường em luôn nhận được sự quan tâm,
+hướng dẫn và giúp đỡ tận tình của các thầy cô, bạn bè. Lời đầu tiên em xin được
+bày tỏ lòng biết ơn sâu sắc đến ban giám hiệu Trường Đại Học Bách Khoa Hà Nội,
+các thầy cô Viện Công Nghệ Thông Tin Và Truyền Thông đã tận tình chỉ dạy em
+trong suốt những năm tháng học tập tại trường. Đặc biệt, em xin bày tỏ lòng biết
+ơn chân thành sâu sắc đến thầy giáo TS. Ngô Lam Trung đã tận tình hướng dẫn,
+giúp đỡ em hoàn thành đồ án tốt nghiệp này. Em cũng xin gửi lời cảm ơn đến gia
+đình, người thân, bạn bè đã hỗ trợ động viên tinh thần giúp em hoàn thành đồ án.
+Qua đây em cũng cảm ơn bản thân mình đã nổ lực cố gắng hết mình để hoàn thành
+đồ án một cách trọn vẹn nhất!
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Ngày nay nhu cầu giải trí của con người ngày càng cao, một trong số đó là xem
+phim. Khi mà TV dần ít được mọi người sử dụng, nhiều người ngại ra rạp xem
+phim không chỉ vì tốn kém chi phí, thời gian đi lại mà bởi vì họ thích sự riêng tư
+cho nên nhiều người đã lựa chọn xem phim trực tuyến. Phim trực tuyến giúp mọi
+người có thể xem bất cứ thể loại nào họ thích ở mọi lúc mọi nơi chỉ với thiết bị
+kết nối internet. Xuất phát từ nhu cầu thực tiễn đó, em đã khảo sát, phân tích, thiết
+kế và xây dựng một website xem phim trực tuyến bằng Frameworl Laravel. Dự án
+này giúp cho mọi người có thể xem đa dạng các thể loại phim, với chất lượng cao
+và đặc biệt là miễn phí. Và kết quả đạt được sau cùng là em đã hoàn thành được
+website xem phim không chỉ có giao diện bắt mắt mà còn tương đối đầy đủ tính
+năng và có tốc độ xử lý nhanh.
+Ngày nay, khi mọi người dần ít sử dụng TV thì phim truyền hình ngày càng ít
+được ưa chuộng mà thay vào đó là xu hướng xem phim online. Từ nhu cầu đó các
+công ty giải trí lớn như FPT hay Netflix đã có các website xem phim online của
+riêng mình. Dựa trên ý tưởng đó em cũng đã thực hiện xây dựng website xem phim
+trực tuyến trong đồ án này.
+Mục tiêu đồ án này em sẽ xây dựng một website xem phim trực tuyến chạy trên
+nền tảng web với các chức năng chính như sau:
+- Về phía quản trị viên có thể quản lý và vận hành website.
+- Về phía người dùng có thể tìm kiếm và xem phim theo yêu cầu.
+Bên cạnh đó, một website xem phim trực tuyến không chỉ với giao diện đẹp, bắt
+mắt, cung cấp nhiều thể loại phim mà còn dễ dùng, tính tương thích cao và tốc độ
+nhanh. Ngoài ra website không quá phức tạp để có thể dễ dàng vận hành, quản lý
+Xuất phát từ nhiệm vụ yêu cầu ở trên, em đã khảo sát, phân tích, thiết kế và xây
+dựng một website xem phim trực tuyến. Tổng quan giải pháp là em đã lựa chọn
+phát triển website theo mô hình MVC dựa trên nền tảng Framework Laravel để
+xử lý back-end. Bên cạnh đó em xây dựng front-end bằng Html, Css, Javascript,
+Boostrap, jQuery. . . .Về quản lý dữ liệu em sử dụng phpMyAdmin. Và kết quả em
+đã hoàn thành được website xem phim tương đối đầy đủ tính năng và có tốc độ xử
+Chương 2: Khảo sát và phân tích yêu cầu hệ thống.
+Khảo sát hiện trạng từ đó đưa ra giải pháp của hệ thống, từ đó chỉ ra đối tượng
+sử dụng, trình bày tổng quan, phân tích, làm rõ các chức năng nghiệp vụ, phân tích
+quy trình nghiệp vụ, đặc tả các chức năng và các yêu cầu phi chức năng, . . .
+Chương 3: Công nghệ sử dụng.
+Trong chương này em sẽ trình bày về các công nghệ mà em đã sử dụng để xây
+dựng website của mình. Các ngôn ngữ dùng để xử lý front-end, back-end, xử lý cơ
+sở dữ liệu và quản lý video.
+Chương 4: Xây dựng hệ thống
+Trình bày về thiết kế hệ thống gồm: Mô hình tổng quan và mô hình hóa cấu trúc.
+Bên cạnh đó em sẽ trình bày chi tiết về thiết kế cơ sở dữ liệu, các biểu đồ lớp, biểu
+đồ thực thể liên kết, thiết kế giao diện. Ở chương này em cũng sẽ nói về các thư
+viện và công cụ đã sử dụng để xây dựng ứng dụng, nêu lên các chức năng chính đã
+đạt được. Đồng thời kiểm thử và triển khai dự án.
+Chương 5: Kết luận và hướng phát triển
+Chương này em trình bày về đóng góp trong quá trình làm đồ án, kết luận những
+gì đã làm được, những gì chưa làm được, và đưa ra kế hoạch phát triển trong tương
+Biểu đồ use case tổng quan gồm người dùng vào xem trang web, có thể tìm kiếm,
+xem phim miễn phí, và bình luận. Còn quản trị viên là người quản trị website, có
+quyền thêm, sửa, xóa các danh mục , thể loại, quốc gia, phim và tập phim.
+a, Phân rã use case "Quản lý danh mục"
+b, Phân rã use case "Quản lý thể loại"
+c, Phân rã use case "Quản lý quốc gia"
+d, Phân rã use case "Quản lý bộ phim"
+e, Phân rã use case "Quản lý tập phim"
+a, Quy trình "Xem phim"
+b, Quy trình "Thêm bộ phim"
+c, Quy trình "Thêm tập phim"
+HTML là viết tắt của Hypertext Markup Language [1] (hay là Ngôn ngữ đánh
+dấu siêu văn bản) được tạo ra bởi nhà vật lý học Tim Berners-Lee năm 1980 dùng
+để xây dựng và cấu trúc các thành phần trong trang web. Người ta thường sử dụng
+HTML trong việc phân chia các đoạn văn, heading, links, blockquotes, . . .
+Năm 1991, biên bản đầu tiên của HTML được công bố gồm 18 tag HTML.
+Hiện nay, HTML được xem như là một chuẩn Internet do tổ chức W3C (World
+Wide Web Consortium) vận hành và phát triển. Nó có thể được trợ giúp bởi các
+công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.
+Trong đồ án này, em sử dụng HTML5 được nâng cấp lên từ năm 2014 với nhiều
+tag được thêm vào markup, mục đích là để xác định rõ nội dung thuộc loại gì.
+Css là viết tắt của Cascading Style Sheets [2], được phát triển bởi, World Wide
+Web Consortium (W3C) vào năm 1996 vì HTML không được thiết kế để gắn tag
+để giúp định dạng trang web. Có thể hiểu đơn giản rằng nếu HTML đóng vai trò
+định dạng các phần tử trên website như việc tạo ra các tiêu đề , văn bản, bảng biểu,
+. . . thì CSS sẽ thêm style vào các phần tử HMTL đó như: bố mục, màu sắc, phông
+nền, kiểu chữ, . . .
+Cách thức hoạt động của CSS là tương tác với các thành phần HTML riêng lẻ
+được gọi là các phần tử. Nó cho phép tách nội dung và trình bày, điều này giúp cải
+thiện khả năng truy cập và hiệu xuất xử lý của website. CSS cũng cung cấp tính
+linh hoạt hơn trên nhiều trang và giảm sự lặp lại trong mã HTML.
+Trong đồ án này em sử dụng CSS3 là phiên bản thay thế cho CSS2, mở rộng các
+tính năng đã có .Và đặc biệt CSS3 mang đến các bộ chọn (selector) và thuộc tính
+(properties) mới cho phép linh hoạt hơn với bố cục và trình bày trang.
+Bên cạnh HTML và CSS thì JavaScript chính là một trong 3 ngôn ngữ chính
+trong lập trình website. JaveScript được phát triển bởi Brendan Eich với tiền thân
+là Mocha. JavaScript được tích hợp đồng thời nhúng vào HTML để hỗ trợ cho
+website trở nên sống động hơn, giúp tăng trải nghiệm cho người dùng [3].
+Năm 1996, Javascript được chính thức đặt tên là ECMAScript. Năm 2016,
+JavaScript đã đạt kỷ lục lên tới 92% website sử dụng, đồng thời cũng được đánh
+giá là một công cụ cực kỳ quan trọng đối với lập trình viên.
+Javascript được trình duyệt web biên dịch thông qua HTML, các đoạn mã HTML
+được tải về máy khách và xử lý tại đó thay vì xử lý trên server.
+Bootstrap là một framework được xây dựng dựa trên HTML, CSS và JavaScript
+tập trung vào việc đơn giản hóa việc phát triển các trang web. Bootstrap là sản
+phẩm của Mark Otto và Jacob Thornton tại Twitter. Năm 2011, Bootstrap được
+xuất bản như là một mã nguồn mở với tên gọi Twitter Blueprint trên GitHub [4].
+Cơ chế hoạt động của Bootstrap là dựa trên xu hướng mã nguồn mở HTML,
+CSS và JavaScript. Với kiến thức cơ bản của 3 ngôn ngữ trên chúng ra có thể dễ
+dàng sử dụng Boostrap một cách hiệu quả.
+Bootstrap được tạo ra từ các mã nguồn mở cho phép designer linh hoạt hơn. Ưu
+điểm lớn nhất của Bootstrap là khả năng tương thích với mọi trình duyệt và nền
+tảng, giúp nâng cao trải nghiệm người dùng. Bởi vì những lý do trên em đã sử dụng
+Bootstrap 4 cho dự án của mình.
+jQuery là một thư viện JavaScript được thiết kế đơn giản hóa thao tác HTML
+DOM, cũng như xử lý sự kiện, hoạt ảnh CSS và Ajax. jQuery giúp việc xây dựng
+các chức năng bằng JavaScript dễ dàng, nhanh chóng và đa dạng tính năng.
+Ngày nay, hầu hết các website đều sử dụng jQuery. jQuery được tích hợp từ
+module hiệu ứng cho đến module truy vấn selector. Các module chính của jQuery
+•Ajax – xử lý Ajax
+•DOM – xử lý Data Object Model
+•Form – xử lý liên quan tới form
+•Event – xử lý sự kiện
+•Effect – xử lý hiệu ứng
+•Selector – xử lý luồng giữa các đối tượng HTML
+•Atributes – xử lý các thuộc tính của đối tượng HTML
+Cùng với HTML, CSS, JavaScript, Bootstrap em đã lựa chọn jQuery để xử lý
+phần front-end giúp cho người dùng có những trải nghiệm tốt nhất trên website của
+Laravel là một PHP framework có mã nguồn mở miễn phí, được xây dựng nhằm
+hỗ trợ lập trình phía server khi phát triển các phần mềm, ứng dụng theo mô hình
+kiến trúc MVC (Model - View - Controller). Năm 2011, Laravel được tạo ra bởi
+Taylor Otwell như một giải pháp thay thế cho Codelgniter. Hiện nay, Laravel là một
+trong những PHP Web Framework phổ biến nhất, nó giúp việc code sẽ được giảm
+thiểu, tiết kiệm thời gian [6].
+Một số tính năng nổi bật của Laravel:
+•Composer: sử dụng để nâng cấp và cài đặt
+•View: giúp code gọn gàng hơn
+•Migrations: hỗ trợ cho việc tạo CSDL
+•Authentication: cung cấp sẵn tính năng phần đăng ký, đăng nhập, . . .
+•Unit Testing: dễ dàng tìm và sửa lỗi
+Laravel giúp các lập trình viên tiếp cận với những tính năng mới nhất mà PHP
+cung cấp ví dụ: Namespace, Interface, Overloading, . . . Không chỉ có tốc độ xử lý
+nhanh, dễ dàng sử dụng, nguồn tài nguyên lớn và sẵn có, mà Laravel còn được tích
+hợp với dịch vụ mail cho phép lập trình viên có thể gửi thư qua các dịch vụ dựa
+trên nền tảng đám mây hoặc local. Những yếu tố trên giúp Laravel được cộng đồng
+đông đảo lập trình viên sử dụng. Trong dự án của mình em sử dụng Laravel 8 một
+trong những phiên bản mới nhất của Laravel để xử lý phần back-end cho website
+xem phim trực tuyến của mình.
+My SQL là hệ quản trị cơ sở dữ liệu mã nguồn mở phổ biến nhất trên thế giới.
+Năm 1994, My SQL được công ty Thụy Điển MySQL AB phát triển. Từ năm 2010
+đến nay My SQL được Oracle mua lại và phát triển [7]. Kể từ khi ra đời My SQL
+được các nhà phát triển rất ưa và chuộng sử dụng trong quá trình phát triển ứng
+My SQL là một hệ thống quản trị cơ sở dữ liệu mã nguồn mở (Relational
+Database Management System) hoạt động theo mô hình client-server. Cho phép
+tạo và quản lý các cơ sở dữ liệu theo hình thức quản lý mối liên hệ giữa chúng.
+Bên cạnh là tiêu chuẩn trong ngành, My SQL linh hoạt và dễ dùng với hiệu năng
+cao và đặc biệt là khả năng an toàn dữ liệu. MySQL hoạt động được trên hầu hết
+các nền tảng, hệ điều hành như Windows, Linux, Mac OS, ...
+Với những tính năng và ưu điểm vượt trội kể trên MySQL là giải pháp phù
+hợp để sử dụng kết hợp với Laravel Framework trong việc xử lý phần dữ liệu của
+JW Player là một chương trình flash mã nguồn mở dùng để phát nhạc, video,
+streaming được sử dụng phổ biến ở các trang web, blog, diễn đàn, . . . JW Player
+được phát triển vào năm 2005 được phát triển bởi công ty cùng tên tại Mỹ. JW
+Player cho phép người dùng lưu trữ, quản lý video và nhúng video vào các trang
+Các tính năng chính của JW Player:
+•Quản lý thư viện bằng API
+•Nhúng nội dung với API phân phối
+•Bảo vệ nội dung bằng các URL đã đăng ký
+•Thêm và tùy chỉnh phụ đề
+Trong đồ án này em sử dụng JW Player để lưu trữ và quản lý các video phim
+Em sử dụng Framework Laravel để xây dựng back-end, một thư viện được tạo
+nên từ ngôn ngữ lập trình PHP theo mô hình MVC (Model-View-Controller). Trong
+Laravel khi có một Request từ phía người dùng qua Route sau đó dữ liệu được gửi
+xuống Controller để xử lý. Request có thể được xử lý ngay tại Controller. Nếu
+không không xử lý được, dữ liệu sẽ được lấy hoặc nhập xuống Model, sau đó kết
+quả được trả ra View và hiển thị ra trang website cho người dùng.
+
+Website hướng đến các loại màn hình laptop hiện nay, tự động co giãn để phù
+hợp mọi loại kích thước màn hình. Thiết kế giao diện:
+a, Biểu đồ lớp chính
+b, Biểu đồ lớp tham gia ca sử dụng "Thêm bộ phim"
+c, Biểu đồ lớp tham gia ca sử dụng "Thêm tập phim"
+d, Biểu đồ lớp tham gia ca sử dụng "Tìm kiếm phim"
+e, Biểu đồ lớp tham gia ca sử dụng "Xem bộ phim"
+f, Biểu đồ lớp tham gia ca sử dụng "Xem tập phim"
+g, Biểu đồ trình tự cho ca sử dụng "Thêm bộ phim"
+h, Biểu đồ trình tự cho ca sử dụng "Tìm kiếm phim"
+i, Biểu đồ trình tự cho ca sử dụng "Xem phim"
+a, Biểu đồ thực thể liên kết
+Biểu đồ thực thể liên kết gồm các thực thể: Người dùng, Quản trị viên, Danh
+mục, Thể loại, Quốc gia, Bộ phim và Tập phim. Một người dùng có thể xem nhiều
+danh mục, thể loại, quốc gia, bộ phim và tập phim. Một danh mục và quốc gia thì
+có nhiều bộ phim. Một thể loại có có nhiều bộ phim và một bộ phim có thể có
+nhiều thể loại. Một bộ phim có nhiều tập phim. Quản trị viên có thể thêm nhiều
+danh mục, thể loại, quốc gia, bộ phim và tập phim.
+Các chức năng chính của website mà em đã xây dựng được như sau:
+
+
+STT Chức năng Đầu vào Đầu ra Kết quả
+1 Đăng kýĐiền email không
+email đã tồn tạiThông báo mail
+Nhập mật khẩu yếu Thông báo lỗi
+2 Đăng nhậpNhập sai email
+hoặc mật khẩuThông báo lỗiĐạt
+và mật khẩuĐăng nhập thành
+3 Đăng xuấtChọn button đăng
+theo từ khóaNhập ký tự vào mục
+tìm kiếmTrả kết quả các
+các ký tự tìm kiếmĐạt
+5 Phim theo mụcChọn phim theo
+quốc giaTrả về phim theo
+6 Phim topviewChọn phim topview
+7 Xem phimChọn button phát
+8 Xem trailerChọn button phát
+9 Bình LuậnBình luận đánh
+10 Quản lý danh mụcThêm, sửa, xóa
+danh mụcThay đổi thành công Đạt
+11 Quản lý thể loạiThêm, sửa, xóa
+thể loạiThay đổi thành công Đạt
+12 Quản lý quốc giaThêm, sửa , xóa
+quốc giaThay đổi thành công Đạt
+STT Chức năng Đầu vào Đầu ra Kết quả
+13 Thêm phimNhập thiếu trường
+14 Sửa phimThay đổi các trường
+15 Xóa Phim Chọn button xóa phim Xóa luôn bộ phim Đạt
+16 Thêm tập phimNhập thiếu trường
+17 Sửa tập phimThay đổi các trường
+dữ liệuThay đổi tập phim
+18 Xóa tập phimChọn button xóa
+19 Sắp xếp danh mụcThay đổi vị trí
+danh mụcSắp xếp danh mục
+Em đã sử dụng Xampp để tạo web server để chạy giả lập website xem phim trực
+tuyến của mình trên browser. Website được chạy thử trên laptop, lượng người dùng
+chỉ có cá nhân với mục đích chính là thử nghiệm. Các kết quả thử nghiệm đều tốt,
+thời gian phản hồi nhanh, tốc độ load video mượt mà.
+Website xem phim online được các lập trình viên đánh giá là một trong những
+website khó thiết kế nhất. Bởi nó hướng tới mọi đối tượng, ở bất cứ độ tuổi, ngành
+nghề nào. Một website xem phim tốt đòi hỏi phải đáp ứng được rất nhiều yếu tố:
+•Thứ nhất là giao diện website bắt mắt, sắp xếp bố cục hợp lý, dễ dàng tìm kiếm.
+•Thứ hai đáp ứng được lượng truy cập cùng lúc lớn, tốc độ load phim ổn định,
+mượt mà, tốc độ tải nhanh.
+•Thứ ba duy trì link phim, rất nhiều trang web có các bộ phim chỉ truy cập được
+trong thời gian ngắn, sau đó link bị die và không truy cập được.
+•Thứ tư web phim không được chứa các mã độc và virus, rất nhiều web phim
+không kiểm soát được dẫn đến gây hại cho máy tính hoặc điện thoại của người
+•Thứ năm là vấn đề quảng cáo, người dùng thì rất ghét việc quảng cáo xuất hiện
+khắp mặt web, gây khó chịu khi thực hiện các thao tác tìm kím, phát video trên
+website, người dùng cũng có thiện cảm không tốt khi đang xem phim mà xuất hiện
+nhiều quảng cáo. Tuy nhiên đây lại là nguồn thu chính của các đơn vị phát hành
+website xem phim miễn phí.
+•Thứ sáu đó là vấn đề bản quyền, do pháp lý về vấn đề ở Việt Nam chưa cao,
+nên hầu hết các trang web xem phim hiện nay rất ít coi trọng vấn đề đó. Rất ít
+website xem phim trực tuyến mua bản quyền từ các nhà phát hành phim.
+Giải pháp cho những vấn đề trên là phải xây dựng một website xem phim trực
+tuyến xịn xò đồng thời chèn quảng cáo một cách hợp lý. Khi đó người dùng sẽ hạn
+chế các cảm giác tiêu cực khi đang xem phim và các đơn vị quản lý website sẽ có
+nguồn tiền để mua bản quyền. Có thể đem những bộ phim mới nhất, hot nhất đến
+người xem một cách sớm nhất.
+Tuy nhiên làm thể nào để bảo vệ nội dung, bảo vệ những bộ phim mà đơn vị
+đã phải bỏ tiền ra mua, không để các đối tượng khác đánh cắp với mục đích chuộc
+lợi. Để giải quyết vấn đề đó các website xem phim có thể sử dụng JW Player hoặc
+Wowza. Các nền tảng này không chỉ giúp các đơn vị bảo vệ nội dung của mình
+mà nó còn cho phép lưu trữ, quản lý các video mà không cần thực hiện trên server,
+giúp giảm tải cho phía server. Chúng ta có thể phát nhạc, video, hoặc streaming
+trên các nền tảng này.
+Trong đồ án của mình em đã sử dụng JW Player để quản lý nội dụng cho website
+xem phim trực tuyến, tuy nhiên trong quá trình triển khai em đã gặp một số khó
+khăn khi tiếp cận. Vì đây là một kiến thức mới đối với em, các tài liệu hướng dẫn
+trên internet cũng rất hạn chế. Tuy nhiên với sự chỉ bảo của thầy TS. Ngô Lam
+Trung, em đã làm quen được với nền tảng và đưa nó vào website của mình.
+Xuất phát từ bài toán thực tiễn là cần một website xem phim để mọi người có
+thể xem phim ở mọi lúc mọi nơi, em đã thiết kế và xây dựng một website xem phim
+trực tuyến. Website của em đã tương đối đầy đủ các chức năng như các trang web
+khác trên thị trường. Với các chức năng chính như cho phép người dùng tìm kiếm,
+xem phim và bình luận. Cho phép quản trị viên đưa những bộ phim mới nhất đến
+người dùng, quản lý website một cách dễ dàng nhất.
+Tuy nhiên do hạn chế về thời gian làm đồ án, cũng như kiến thức chuyên môn
+của bản thân chưa đủ nhiều nên website của em còn những thiếu xót về chức năng
+đã thiết kễ nhưng chưa được triển khai, cũng như không có các tính năng hiện đại
+như các trang web khác. Những thiếu xót này sẽ được em tiếp tục phát triển sau
+này và sẽ được nói rõ ở phần sau.
+Trong suốt quá trình làm đồ án, ngoài những kiến thức mới em học được, em
+còn trau dồi thêm được những kinh nghiệm, kỹ năng quý báu gồm:
+1. Kỹ năng xây dựng một hệ thống hoàn hiện từ các bước như khảo sát, phân
+tích, thiết kế, kiểm thử và triển khai.
+2. Kỹ năng quản lý thời gian, và làm việc theo kế hoạch.
+3. Kỹ năng giải quyết các vấn đề, và trải ngiệm làm việc dưới áp lực.
+4. Nâng cao được kỹ năng lập trình, tư duy logic, khả năng tự học, tìm kiếm và
+Để hoàn thiện website một cách đầy đủ tính năng hơn giúp người dùng có những
+trải nghiệm một cách trọng ven nhất thì trong tương lai hướng phát triển của em sẽ
+1. Xây dựng tính năng đăng ký cho người dùng, cho phép người dùng nạp tiền
+để có thể xem phim với hình thức trả phí, để xem các bộ phim hot với chất lượng
+2. Thêm tính năng thống kê, quản lý thu thập cho quản trị viên.
+3. Nâng cấp trong jwplayer để có thể giúp quản lý video hiệu quả hơn, cho phép
+người dùng đa dạng lựa chọn chất lượng phim, giúp quản trị viên bảo vệ nội dung
+của mình một cách tốt hơn.
+4. Đưa website lên hosting, phát triển thêm tính năng cho phép người dùng
+download phim. Đồng thời tìm giải pháp để đáp ứng lượng người truy cập cùng
+thời điểm lớn. Cho phép người dùng xem phim với chất lượng cao nhưng vẫn đảm
+5. Bổ sung tính năng chia sẽ để giúp trang web tiếp cận đến nhiều đối tượng

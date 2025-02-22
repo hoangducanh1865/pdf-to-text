@@ -1,0 +1,374 @@
+
+Đầu tiên,em xin phép được gửi lời cảm ơn chân thành đến các thầy cô trong trường
+Đại học Bách Khoa Hà Nội nói chúng và các thầy cô trong viện Công nghệ Thông
+tin và Truyền thông nói riêng,vì những kiến thức,những kỹ năng mà em đã nhận
+được trong suốt 5 năm ngồi trên ghế nhà trưởng.
+Em xin được gửi lời cảm ơn đến thầy giáo TS. NGUYỄN THANH HÙNG không
+những đã giúp em định hướng được mục tiêu mà còn tận tỉnh hướng dẫn,giúp đỡ
+em trong suốt quá trình làm đồ án.
+Cuối cùng,xin được gửi lời cảm ơn đến toàn thể bạn bè,những người anh em
+đã cùng nhau học tập, nghiên cứu,các bạn đã luôn luôn ở bên tôi suốt những năm
+tháng sinh viên. 5 năm, không quá ngắn nhưng cũng không dài,quãng thời gian đó
+em đã học được rất nhiều từ các bạn ,không chỉ kiến thức mà những kỹ năng sống
+Trong quá trình phát triển sản phẩm cũng như viết báo cáo,mặc dù em đã cố
+gắng hết sức nhưng vẫn không thể tránh khỏi những sai sót,mong các thầy cô và
+bạn đọc thông cảm và góp ý để em có thể chỉnh sửa và hoàn thiện hơn nữa sản
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Trong thế giới hiện đại ngày nay chúng ta luôn tràn ngập trong 1 số lượng lớn các
+thông tin từ rất nhiều người khác nhau như tivi, máy tính, sách báo, truyền thông,
+người thân, bạn bè, .... John Naisbitt- nhà tương lai học đã từng nhận định rằng:
+Chúng ta chết đuối trong thông tin, nhưng chết đói về tri thức. Nhờ các phương tiện
+truyền thông, sự phát triển của công nghệ, hàng ngày chúng ta cập nhật rất nhiều
+thông tin khác nhau (thậm chí bị bão hòa thông tin) nhưng thường lại là thông tin
+bề nổi, mà thiếu sự hiểu sâu và bản chất vấn đề.
+Vì vậy mỗi người cần xác định đâu là thông tin hữu ích với mình và nên tiếp cận
+nó từ đâu. Và đối với các doanh nghiệp các marketer cũng vậy họ cùng cần biết đâu
+là thông tin hữu dụng với mình và đố là thông tin và người dùng. Mặc dù nghe có
+vẻ hiển nhiên, nhưng việc thấu hiểu khách hàng của bạn là ai,họ ở đâu, họ muốn gì
+và cách họ sử dụng sản phẩm của bạn là cực kì có giá trị khi nói đến việc mở rộng
+quy mô kinh doanh. Những thông tin chi tiết này có thể khó thu thập, nhưng cho
+phép bạn phân khúc khách hàng và cải thiện hiệu quả công ty một cách dễ dàng.
+Theo dõi siêu dữ liệu khách hàng giúp bạn xác định các cơ hội để cải thiện hiệu
+quả bán hàng, mở rộng doanh thu và tăng tỷ lệ giữ chân khách hàng.
+Với mong muốn giúp các doanh nghiệp hiểu rõ người dùng của họ hơn, đồ án
+tốt nghiệp của em tập trung vào việc xây dụng 1 hệ thống thu thập các dữ liệu của
+người dùng khi họ truy cập vào website của doanh nghiệp bằng trình duyệt. Các
+dữ liệu của người dùng sau khi được thu thập sẽ được biểu diễn bằng các biểu đồ,
+sơ đồ, bảng biểu trực quan dễ tương tác đem lại cho các doanh nghiệp 1 cách nhìn
+mới mẻ về người dùng của họ. Sau đó các doanh nghiệp có thể tiến hành thống
+nhất các dữ liệu đó và dữ liệu của chính hệ thống của mình để tạo ra 1 dữ liệu hoàn
+chỉnh thống nhất về từng người dùng. Sau khi đã có được cái nhìn sâu sắc về thông
+tin địa lý, hành vi, sở thích, thói quen của khách hàng các doanh nghiệp có thể tiến
+hành nâng cấp website tạo trải nghiệm tốt hơn cho người dùng. Không những vậy
+họ còn có thể tiến hành các chiến dịch marketing, quảng cáo nhằm vào 1 đối tượng
+khách hàng nhất định. Vì nắm rõ thông tin người dùng nên các chiến dịch đó sẽ đạt
+kết quả cao hơn và người dùng cũng cảm thấy vui vẻ khi nhận được các thông tin
+về sản phẩm mình yêu thích.
+Trong thời đại hiện nay thì dữ liệu rất quan trọng, từ dữ liệu thu thập được có
+thể suy ra được nhiều thông tin có giá trị. Vì vậy dữ liệu của người dùng truy cập
+vào 1 website luôn được các quản trị viên website quan tâm.Thu thập dữ liệu rất
+hữu ích cho các doanh nghiệp muốn hiểu rõ hơn về hành vi của người dùng. Nó
+cung cấp cho các doanh nghiệp cái nhìn sâu sắc về hành vi của khách hàng trên
+các trang web, các bài viết trên blog của họ, v.v. để họ có thể mang lại trải nghiệm
+được nhắm mục tiêu, được cá nhân hóa và thú vị.Tuy rằng hiện nay có nhiều công
+cụ giúp thu thập dữ liệu người dùng nhưng những dữ liệu đó vẫn còn rời rạc và
+chưa được khai thác hết các giá trị ẩn sâu từ người dùng.
+Dựa vào những vấn đề đã phân tích nêu trên, mục tiêu của đồ án sẽ bao gồm
+4 mục dưới đây: Thứ nhất hệ thống của em sẽ tiến hành thu nhập các dũ liệu của
+người dùng truy cập vào trang web của khách hàng, các dữ liệuliệu thu thập được
+sẽ được chia làm 3 nhóm chính: dữ liệu về vị trí địa lý; Dữ liệu về thiết bị, công
+nghệ; Dữ liệu về hành vi. Đặc biệt các dữ liệu sẽ thông qua 1 hàm hash để tạo ra 1
+ID (browser fingerprint ) giúp nhận diện người dùng kể cả khi họ chưa đăng nhập.
+Thứ hai hệ thống sẽ dựa trên những dữ liệu đã thu thập được tiến hành phân
+tích, thống kê các dữ liệu, xây dựng nên các biểu đồ mô hình. Các biểu đồ mô hình
+này sẽ giúp người quản trị website biết được số lượng người truy cập hệ thống, đó
+là những người như thế nào, họ truy cập vào những trang nào và họ đến từ đâu,
+.... .Không những thế hiệu năng của hệ thống những chỗ tốt và chưa tốt cũng được
+Thứ ba hệ thống sẽ thống nhất các dữ liệu về người dùng thu thập được với dữ
+liệu về người dùng của hệ thống khách hàng. Từ đó đưa ra 1 cái nhìn tổng quan cho
+người quản trị website về các người dùng của mình.Ở bước này các dữ liệu về hành
+vi của người dùng ở các website khác cũng sẽ được thống nhất.
+Thứ tư sau khi có được dữ liệu tổng quát thống nhất về người dùng, người quản
+trị có thể tiến hành phân loại người dùng theo vị trí địa lý, công nghệ, hành vi,sở
+thích, mối quan tâmtâm... rồi tiến hành các chiến dịch marketing, quảng cáo,... đến
+các người dùng tương ứng thông qua email, thông báo và sms.
+Từ việc xác định rõ nhiệm vụ cần giải quyết ở phần 1.2,em xin được đề xuất định
+hướng giải pháp của mình như sau:Em sẽ chia hệ thống của mình thành 3 module
+(i) Module thứ nhất có chức năng thu thập dữ liệu người dùng được viết dưới
+dạng 1 package để có thể nhứng vào trang web của khách hàng. Module này sẽ thu
+thập các dữ liệu sẵn có từ trình duyệt, các dữ liệu được người dùng tạo ra khi truy
+cập trang web và gửi về phía module thứ hai.
+(ii) Module thứ 2 là 1 server được viết bằng NodeJs có 2 nhiệm vụ chính: Một
+là nhận dữ liệu thu thập được từ module thứ nhất và lưu vào cơ sở dữ liệu. Hai là
+đảm nhận việc xử lý các request đến từ module thứ 3.
+(iii) Module thứ 3 là hệ thống được viết bằng ReactJs chạy trên trình duyệt giúp
+khách hàng tương tác được với hệ thống 1 cách trực quan.
+Đi theo định hướng giáp pháp đó hệ thống sẽ đem lại cho các doanh nghiệp các
+dữ liệu, thông tin về người sử dụng, từ đó hiêu hơn về người sử dụng và có thể tiến
+hành các chiến dịch marketing, quảng cáo 1 cách hiệu quả nhất.
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2 trình bày về vấn đề khảo sát hiện trạng và yêu cầu của hệ thống dựa
+trên các hệ thống đã có. Sau đó em sẽ trình bày về các chức năng chính của hệ
+thống bằng biểu đồ use case tổng quát. Rồi tiếp đó sẽ đi sâu phân tích 1 số use case
+quan trọng của hệ thống.
+Trong Chương 3, em xin được giới thiệu về các công nghệ, nền tảng sử dụng
+Tiếp sau là Chương 4 , chương này em sẽ trình bày về thiết kế của hệ thống bao
+gồm: Thiết kế về kiến trúc của hệ thống, thiết kế về giao diện và thiết kế về cơ sở
+Và cuối cùng, trong chương 5 em sẽ trình bày về sẽ nói về các vấn đề khó khăn
+găp phải khi thực hiện đồ án lần này và những điều đã làm được và chưa làm được
+trong đồ án cũng như là hướng phát triển đồ án trong tương lai.
+Sau khi khảo sát 1 số phầm mềm, ứng dụng thu thập và phân tích dữ liệu của
+người dùng tiêu biểu như Google Analytics, Matomo,KeenJs,.. thì em nhận thấy
+hầu như các hệ thống này sau khi thu thập dữ liệu thì chỉ đưa ra các báo cáo bằng
+text và đồ thị, mô hình về các dữ liệu đã thu thập được mà chưa biết làm gì tiếp theo
+với lượng dữ liệu đã thu thập được.Bên cạnh đó thì các dữ liệu khá rời rạc chưa có
+Bên cạnh đó cũng có 1 số hệ thống như Adoble Analytics, Exponea,.. có phần
+tích hợp marketing, xử lý dữ liệu nhưng khá là phức tạp và lằng nhằng.
+Với mong muốn tạo được hệ thống có quy mô vừa phải, phù hợp với các cá
+nhân, doanh nghiệp nhỏ, thì em đã phát triển hệ thống này.
+
+SSR (Server side rendering) là kỹ thuật không còn xa lạ gì với các bạn lập trình
+viên nữa. Nó có từ thủa sơ khai của website, và còn được sử dụng rỗng rãi cho đến
+ngày nay và chưa có dấu hiệu bị thay thế hoàn toàn. Nhưng càng ngày, những trang
+web càng giống ứng dụng hơn là nơi hiển thị nội dung, bạn có thể xử lý ảnh, chat,
+soạn thảo văn bản . . . Dần dần cách thức hoạt động của SSR tỏ ra nặng nề hơn và
+bộc lộ những nhược điểm nhất định.Đầu tiên nói về cách hoạt động của SSR: Đầu
+tiên: Browser sẽ gửi một request lên web server; Tiếp theo: Web server sẽ trả về
+toàn bộ code bao gồm html js css đã được render sẵn;Lúc này nội dung HTML đã
+hoàn chỉnh và được hiển thị ngay khi nó được load về máyTuy nhiên lúc này trang
+web mới chỉ xem được nội dung, người dùng chưa thể tương tác được. Ngay trong
+lúc này, trình duyệt vẫn âm thầm tải tiếp JS và thực thi nó ngay khi hoàn tất, một
+khi hoàn tất quá trình này người dùng mới có thể tương tác được.
+Phương pháp này có nhiều lợi ích trong đó phải kể đến việc load website lần đầu
+tiên khá là nhanh giúp người dùng không phải chờ đợi lâu. Tiếp đến là khả năng
+tối ưu SEO, website của bạn do được render trên server nên khi những công cụ tìm
+kiếm như Google, Big, . . . craw qua thì sẽ đọc được hết nội dung website.Bên cạnh
+đó thì còn có cả những điểm mà nó chưa làm tốt. Có thể kể đến như, do render trên
+server nên thời gian phản hồi TTFB(Time To First Byte) sẽ chậm .Web server của
+bạn sẽ tốn băng thông hơn vì truyền tải lượng thông tin lớn hơn. Mọi thay đổi đều
+nhỏ nhất đều phải load lại trang, do việc xử lý render do server đảm nhận.
+CSR ra đời sau SSR để giải quyết các vấn đề bất cập ở SSR. Ngược lại với SSR,
+CSR thực hiện rendering chủ yếu ở phía client. Phía client thì chỉ nhận được 1 trang
+html trống và 1 tệp tin javascript sau đó trình duyệt sẽ bắt đầu chạy tập tin Reactjs,
+và xong xuôi hết thì mới hiển thị giao diện ra cho người dùng.Dù cho lần đầu load
+sẽ hơi lâu nhưng những lần load trang tiếp theo sẽ nhanh hơn nhiều và đem lại trải
+nghiệm người dùng tốt hơn nhiều so với SSR.ReacJs là 1 thư viện javascript tiên
+phong trong việc sử dụng công nghệ CSR đó để nâng cao trải nghiệm và kết quả
+đã được chứng minh qua facebook(Cha đẻ của ReactJs).
+ReactJs là một thư viện Javascript với xu hướng Single Page Application. Trong
+khi những framework khác cố gắng hướng đến một mô hình MVC hoàn thiện thì
+React nổi bật với sự đơn giản và dễ dàng phối hợp với những thư viện Javascript
+khác. Nếu như AngularJS là một Framework cho phép nhúng code javasscript trong
+code html thông qua các attribute như ng-model, ng-repeat...thì với react là một
+library cho phép nhúng code html trong code javascript nhờ vào JSX, bạn có thể
+dễ dàng lồng các đoạn HTML vào trong JS.Tích hợp giữa javascript và HTML vào
+trong JSX làm cho các component dễ hiểu hơn.ReactJs cũng nổi tiếng với công
+nghệ DOM ảo giúp tăng hiệu năng cho ứng dụng. Việc chỉ node gốc mới có trạng
+thái và khi nó thay đổi sẽ tái cấu trúc lại toàn bộ, đồng nghĩa với việc DOM tree
+cũng sẽ phải thay đổi một phần, điều này sẽ ảnh hưởng đến tốc độ xử lý. React
+JS sử dụng Virtual DOM (DOM ảo) để cải thiện vấn đề này.Virtual DOM là một
+object Javascript, mỗi object chứa đầy đủ thông tin cần thiết để tạo ra một DOM,
+khi dữ liệu thay đổi nó sẽ tính toán sự thay đổi giữa object và tree thật, điều này sẽ
+giúp tối ưu hoá việc re-render DOM tree thật.
+Với nền tảng web hiện đại bây giờ có một yếu tố rất rất quan trọng ảnh huởng trực
+tiếp đến sự thành công của trang web đấy chính là giao diện. Trong quá trình phát
+triển chúng ta đã quá quen với những framework như là Bootstrap, Foundation,
+Material UI, Ant Design, ...Nhưng những framework này có khả năng tùy biến
+không cao, gần như nếu không thay đổi gì thì gần như là các trang web sẽ có giao
+diện y hệt mặc định của framework. Còn nếu muốn tùy biến lại giao diện ta lại phải
+viết lại các class và viết lại các thuộc tính css cho chúng.Nhưng với TailwindCSS,
+chỉ dựa vào các class đã được tạo ra ta vẫn có thể tùy biến các thuộc tính css 1 cách
+tự do, nhanh chóng và không cần tạo thêm class cũng như viết thêm file css.
+TailwindCSS là một utility-first CSS framework, nó cũng giống như Bootstrap,
+nó có những class built-in mà chúng ta có thể dùng. Tailwind CSS có nhiều các
+class bao gồm các thuộc tính CSS khác nhau và quan trọng, chúng ta có thể dễ
+dàng mở rộng tạo mới ra những class bằng chính những class của nó.
+Ưu điểm nhìn thấy rõ nhất của Tailwind CSS đấy là:Người sử dụng có thể
+không cần phải viết đến 1 dòng css nào mà vẫn có giao diện tùy biến theo mong
+muốn;Cách đặt tên class dễ hiểu, 1 class đại diện cho 1 thuộc tính. Tailwind CSS
+có gần như đủ gần 85 phần trăm thuộc tính css.Dễ cài đặt, dễ sử dụng, document
+của Tailwind rất dễ hiểu. Tailwind CSS phù hợp cho các dự án nhỏ, người dùng tuỳ
+biến nhiều, cần làm nhanh giao diện.
+State là thế mạnh của react nhưng nó cũng đem lại nhiều sự phiền phức. Thông
+thường các state sẽ được truyền qua các component thông props của component
+con. Nếu ứng dụng nhỏ thì không vấn đề gì nhưng nếu ứng dụng to và gồm nhiều
+component thì việc truyền state qua hằng chục component hay truyền state từ 
+NodeJS (hay Node) không phải là một ngôn ngữ, thư viện hay một framework,
+Node là môi trường thực thi (Runtime Environment) cho ·JavaScript. Mặc dù JS
+thường cần trình duyệt để hoạt động, nhưng Node.js tạo các cài đặt phù hợp để JS
+chạy bên ngoài trình duyệt.
+Các đặc điểm của NodeJs phải kể đến như: Node.js là một mã nguồn mở,
+một môi trường cho các máy chủ và ứng dụng mạng;Node.js sử dụng Google V8
+JavaScript engine để thực thi mã, và một tỷ lệ lớn các mô-đun cơ bản được viết
+bằng JavaScript Các ứng dụng node.js thì được viết bằn JavaScript; Node.js chứa
+một thư viện built-in cho phép các ứng dụng hoạt động như một Webserver mà
+không cần phần mềm như Nginx, Apache HTTP Server hoặc IIS; Node.js cung
+cấp kiến trúc hướng sự kiện (event-driven) và non-blocking I/O API, tối ưu hóa
+thông lượng của ứng dụng và có khả năng mở rộng cao; Mọi hàm trong Node.js là
+không đồng bộ (asynchronous). Do đó, các tác vụ đều được xử lý và thực thi ở chế
+Expressjs là một framework mã nguồn mở miễn phí cho Node.js. Express.js
+được sử dụng trong thiết kế và xây dựng các ứng dụng web một cách đơn giản và
+Vì Express js chỉ yêu cầu ngôn ngữ lập trình Javascript nên việc xây dựng các
+ứng dụng web và API trở nên đơn giản hơn với các lập trình viên và nhà phát
+triển.Expressjs cũng là một khuôn khổ của Node.js do đó hầu hết các mã code đã
+được viết sẵn cho các lập trình viên có thể làm việc.
+Nhờ có Expressjs mà các nhà lập trình có thể dễ dàng tạo các ứng dụng 1 web,
+nhiều web hoặc kết hợp. Do có dung lượng khá nhẹ, Expressjs giúp cho việc tổ
+chức các ứng dụng web thành một kiến trúc MVC có tổ chức hơn.Để có thể sử
+dụng được mã nguồn này, chúng ta cần phải biết về Javascript và HTML.
+Expressjs cũng là một phần của công nghệ giúp quản lý các ứng dụng web một
+cách dễ dàng hơn hay còn được gọi là ngăn xếp phần mềm MEAN.Nhờ có thư viện
+Javascript của Express js đã giúp cho các nhà lập trình xây dựng nên các ứng dụng
+web hiệu quả và nhanh chóng hơn. Expressjs cũng được sử dụng để nâng cao các
+Trên thực tế, nếu không sử dụng Express.js, bạn sẽ phải thực hiện rất nhiều bước
+lập trình phức tạp để xây dựng nên một API hiệu quả. Express js đã giúp cho việc
+lập trình trong Node.js trở nên dễ dàng hơn và có nhiều tính năng mới bổ sung.
+MySQL là một hệ thống quản trị cơ sở dữ liệu mã nguồn mở (gọi tắt là RDBMS)
+hoạt động theo mô hình client-server. Với RDBMS là viết tắt của Relational Database
+Management System. Mỗi cơ sở dữ liệu có thể có nhiều bảng quan hệ chứa dữ liệu.
+MySQL cũng có cùng một cách truy xuất và mã lệnh tương tự với ngôn ngữ SQL.
+MySQL được phát hành từ thập niên 90s.
+Ưu điểm của MySQL: Dễ sử dụng: MySQL là cơ sở dữ liệu tốc độ cao, ổn định,
+dễ sử dụng và hoạt động trên nhiều hệ điều hành cung cấp một hệ thống lớn các
+hàm tiện ích rất mạnh;Độ bảo mật cao: MySQL rất thích hợp cho các ứng dụng có
+truy cập CSDL trên Internet khi sở hữu nhiều nhiều tính năng bảo mật thậm chí là
+ở cấp cao;Đa tính năng: MySQL hỗ trợ rất nhiều chức năng SQL được mong chờ
+từ một hệ quản trị cơ sở dữ liệu quan hệ cả trực tiếp lẫn gián tiếp ;Khả năng mở
+rộng và mạnh mẽ: MySQL có thể xử lý rất nhiều dữ liệu và hơn thế nữa nó có thể
+được mở rộng nếu cần thiết; Nhanh chóng: Việc đưa ra một số tiêu chuẩn cho phép
+MySQL để làm việc rất hiệu quả và tiết kiệm chi phí, do đó nó làm tăng tốc độ
+Prisma là một Object Relational Mapping (ORMs) được dùng để xây dựng các
+máy chủ như GraphQL Server, RESTful APIs, microservice, ... Prisma đơn giản
+là 1 layer nằm giữa Webserver và Database. Prisma giúp chúng ta giao tiếp với db
+một cách dễ dàng hơn.
+Prisma bao gồm ba phần chính:
+Prisma Client : Trình tạo truy vấn an toàn và được tạo tự động cho Node.js và
+Prisma Migrate : Một hệ thống di chuyển và mô hình hóa dữ liệu khai báo.
+Prisma Studio : Một GUI để xem và chỉnh sửa dữ liệu trong cơ sở dữ liệu của
+Trải qua nhiều thập kỉ, REST đã trở thành một tiêu chuẩn cho thiết kế Web
+API. REST có những ý tưởng rất tuyệt vời như là stateless servers hay là structured
+access to resources. Tuy nhiên REST APIs vẫn còn chưa linh hoạt để bắt kịp với
+những yêu cầu thay đổi nhanh chóng phía client. GraphQL được phát triển để đáp
+ứng nhu cầu linh hoạt hơn và hiệu quả hơn. Nó giải quyết nhiều những thiếu sót
+và kém hiệu quả mà developer đã trải nghiệm được sau một thời gian làm việc với
+GraphQL là ngôn ngữ thao tác và truy vấn dữ liệu nguồn mở cho API, cung cấp
+cho client 1 cách thức dễ dàng để request chính xác những gì họ cần, giúp việc phát
+triển API dễ dàng hơn theo thời gian. GraphQL được Facebook phát triển nội bộ
+vào năm 2012 trước khi phát hành công khai vào năm 2015.
+GraphQL bao gồm 3 điểm đặc trưng bao gồm: Cho phép client xác định chính
+xác những dữ liệu gì họ cần; GraphQL làm cho việc tổng hợp dữ liệu từ nhiều
+nguồn dễ dàng hơn; Sử dụng một type system để khai báo dữ liệu.
+Ưu điểm của graphql: GraphQL schema tự động tạo ra nguồn đáng tin cậy trong
+ứng dụng của GraphQL; Chỉ với một request, client có thể nguồn thông tin họ cần
+làm giảm số lượng requests; Hỗ trợ tối đa việc kiểm soát và xử lý data type. Từ đó
+có thể hạn chế sự sai lệch trong giao tiếp giữa server và client; Giúp ứng dụng có
+thể phát triển thêm API mà không làm ảnh hưởng đến các truy vấn đã có; Không
+yêu cầu một kiến trúc ứng dụng cụ thể mà vẫn hoạt động như một Rest API; Đồng
+thời bạn có thể làm việc với các công cụ API hiện có.
+Bên cạnh đó graphql vẫn còn tồn tại 1 số khuyết điểm: Nhiều extension mã
+nguồn mở của GraphQL không tương thích hoạt động được với Rest API; Nhiều
+truy vấn bị GraphQL chuyển lên server; Và điều này khiến server chịu thêm nhiều
+công việc và trở nên phức tạp hơn; Công việc để triển khai GraphQL và server sẽ
+có thể nhiều hơn việc phát triển một Rest API; Bộ nhớ đệm phức tạp hơn rất nhiều
+lần khi so với Rest. Người viết API sẽ có thể phải đảm nhiệm cả việc bảo trì cho
+Mặc dù vậy em vẫn quyết định sử dụng graphql vì sự tường minh của các request.
+Tất cả các tham số và kiểu dữ liệu đều được khai báo 1 cách chặt chẽ khiến cho
+việc gửi và nhận api dễ dàng hơn. Mặc dù việc thiết lập và cài đặt phức tạp hơn rest
+API nhưng để phát triển và bảo trì thì em nghĩ là nó xứng đáng với công sức mình
+Apollo Server Apollo Server là một triển khai máy chủ GraphQL cho JavaScript,
+đặc biệt là cho Node.js.
+Bcryptjs Bcryptjs là một dạng thư viện cung cấp hash function thường sử dụng
+để mã hóa password với mục đích tăng cường bảo mật.
+Sendgrid Sendgrid là phần mềm tiếp thị qua Email, Sendgrid cung cấp giải
+pháp Email dựa trên nền tảng đám mây, thay thế cho các Email truyền thống.
+Pusher Thư viện cung cấp khả năng gửi push notification (Thông báo đẩy) trên
+Twilio Twilio là dịch vụ cho phép xây dựng ứng dụng liên quan đến việc gửi và
+nhận các tin nhắn và cuộc gọi trên điện thoại.
+Whatmyuseragent.com whatmyuseragent cung cấp api giúp xác định thông
+tin về loại trình duyệt, loại điện thoại cũng như hệ điều hành dựa trên dữ liệu từ
+useragent lưu trên trình duyệt.
+ip-api.com ip-api.com cung cấp api miễn phí giúp truy xuất các thông tin về vị
+trí địa lý của người dùng như tên quốc gia, vùng lãnh thổ,... từ địa chỉ IP của họ.
+phần riêng biệt: Bao gồm tracking-package, frontend và backend. Các phần này sẽ
+giao tiếp với nhau qua api trên nền tảng grapQL.
+Phía backend sẽ được cài đặt apollo server giúp đảm nhận việc xử lý các request
+dữ liệu tại client sẽ được lấy từ context Provider trực tiếp từ component con mà
+không cần thông qua component cha. Dữ liệu từ phía server sẽ được lấy qua apollo
+model tương ứng theo file schema của prisma. Khi web server nhận được request từ
+client nó sẽ forward cho apolloserver. Apolloserver dựa theo file shcema của grapql
+mà xác định request đó cần xử lý như thế nào và forward cho resolver. Resolver có
+nhiệm vụ xử lý các request từ phía client, các request này được chia làm 2 loại
+chính: 1. Query: các request yêu cầu đọc dữ liệu; 2. Mutation: các request yêu cầu
+ghi dữ liệu. Rồi tiếp theo thông qua prisma mà đọc ghi dữ liệu tương ứng trong cơ
+lượt truy cập và người sử dụng
+điều hướng sang các chức năng khác. Ở giữa màn hình là các biểu đồ cột . Phía
+trên biểu đồ là nút download giúp người dùng download dữ liệu về máy mình dưới
+thanh điều hướng sang các chức năng khác. Ở giữa màn hình là các biểu đồ cột .
+Phía trên biểu đồ là nút download giúp người dùng download dữ liệu về máy mình
+phải là thanh điều hướng sang các chức năng khác. Ở giữa màn hình là các biểu đồ
+cột . Phía trên biểu đồ là nút download giúp người dùng download dữ liệu về máy
+mình dưới dạng file csv
+là thanh điều hướng sang các chức năng khác. Ở giữa màn hình là các ô input để
+nhập nội dung email và lọc các người dùng muốn gửi email.
+phải là thanh điều hướng sang các chức năng khác. Ở giữa màn hình là các ô input
+để nhập nội dung thông báo và lọc các người dùng muốn gửi thông báo.
+phải là thanh điều hướng sang các chức năng khác. Ở giữa màn hình là các ô input
+để nhập nội dung tin nhắn và lọc các người dùng muốn gửi tin nhắn.
+thanh điều hướng sang các chức năng khác. Ở giữa màn hình là các ô input để nhập
+các thuộc tính của project.
+khi đã được thống nhất dữ liệu.
+Chức năng xem các báo cáo
+server, server sau đó hiển thị dữ liệu thu thập được như hình trên. Trên cùng là dữ liệu về số
+lượt truy cập và người dùng mới trong ngày. Bên dưới phía tay trái là biểu đồ thể hiện lượt
+truy cập và người dùng trong 7 ngày gần nhất. Phía bên tay phải là bảng thể hiện các nguồn
+mà người dùng biết đến trang web
+từng quốc gia. Phía bên tay phải là biểu đồ thể hiện số lượng người dùng được phân chia theo
+của website. Phía bên tay phải thể hiện bounce-rate và scorll-rate của website.
+Chức năng tải về các báo cáo
+cáo số lượng người dùng truy cập được phân chia theo các loại trình duyệt.
+Chức năng thống nhất dữ liệu người dùng
+dùng sẽ được hiển thị.
+Chức năng gửi thông báo, email, , sms cho người dùng
+
+Vấn đề về xác thực người dùng ẩn danh Lâu nay để xác thực người dùng thì
+phương pháp phổ biến nhất chính là dùng cookie. Cookie là một đoạn văn bản mà
+một Web server có thể lưu trên ổ cứng của người dùng với các tệp được trang web
+người dùng truy cập tạo ra. Cookie cho phép website lưu thông tin của người dùng
+trên máy tính và sau đó lấy lại nó. Các mẩu thông tin sẽ được lưu dưới dạng cặp
+tên – giá trị (name-value).
+Cookie được chia thành 2 loại: first-party cookies: do trang web người dùng truy
+cập tạo ra, trang web được hiển thị trên thanh địa chỉ. Cookie bên thứ nhất được
+thu thập bởi Session Cookie và Persistent Cookie. Với first-party cookie, các trang
+web có thể duy trì trạng thái đăng nhập, ghi nhớ tùy chọn và cung cấp nội dung
+phù hợp với vị trí và thói quen của người dùng.
+third-party cookies: do các trang web khác tạo ra. Trên trang web mà người dùng
+truy cập chứa các nội dung như quảng cáo hoặc hình ảnh được sở hữu bởi bên thứ
+ba. Đây là Cookie cho phép tiếp thị và quảng cáo.
+Với các tools, hệ thống thu thập dữ liệu hay tiếp thị quảng cáo thì third-party
+cookies rất quan trọng. Theo như google thì có thể trong cuối năm 2023 họ sẽ
+không hỗ trợ và loại bỏ đi third-party cookies. Google không phải công ty đầu tiên
+đưa ra quyết định này, trước đó safari và firefox đã có những biện pháp, quy định
+chặt chẽ về cookie để tăng cường bảo mật cho người dùng. Trong bối cảnh này thì
+các nhà tiếp thị cần những giải pháp thay thế khác, và 1 trong số đó là browser
+fingerprint. Ở đồ án này, em đã sử dụng công nghệ này để có thể xác thực được
+browser fingerprint là công nghệ dựa theo các cấu hình, cài đặt của trình duyệt
+mà người dùng truy cập từ đó tạo ra 1 mã hash dùng để làm id giúp xác thực người
+dùng đó. Các thông số phải kể đến như loại, phiên bản trình duyệt, loại, phiên bản
+hệ điều hành, ngôn ngữ, độ phân giải màn hình, màu sắc, phông chữ trình duyệt hỗ
+trợ, .... Có thể thấy càng dùng thông số để hash thì càng có thể làm tăng độ chính
+xác của id. Tuy các thông số này nhiều nhưng tỷ lệ để 2 người trên thế giới có
+thiết lập thông số trình duyệt giống nhau không phải là thấp. Vì thế những thông
+số thông thường này là chưa đủ.
+Để tăng độ chính xác ta phải sử dụng thêm các thông số đặc biệt khác, tiêu biểu
+như là Canvas Fingerprinting. Canvas Fingerprinting bản thân nó cũng được coi là
+1 loại browser fingerprint. Canvas Fingerprinting sử dụng thẻ canvas của html5 để
+vẽ nên 1 hình bất kỳ trên trình duyệt mà không hiển thị nó cho người dùng. Hình
+vẽ được tạo ra sẽ không giống nhau hoàn toàn do phụ thuộc kiến trúc của cpu cũng
+Ngoài ra còn 1 thông số khác khá hữu dụng, đó là thông tin và các extension
+được cài đặt trên trình duyệt. Mặc dù cách này khá hay nhưng dò người dùng có
+thể cài đặt hoặc xóa extension sau 1 khoảng thời gian và cách này cũng không phải
+sử dụng api chính thống của trình duyệt nên em không áp dụng.
+Kết quả là sau khi áp dụng kỹ thuật browser fingerprint em đã thu được id giống
+nhau kể cả khi người dùng sử dụng chế độ ẩn danh hay tắt cookie.
+So với các hệ thống tracking, analytic, crm, hay cdp,... lớn hiện nay thì đồ án này
+quả thật vẫn còn nhiều thiếu sót. Nhưng trái lại thì hệ thống của em đơn giản và dễ
+dàng tích hợp nên khá phù hợp cho các website nhỏ và vừa. Mặc dù không được
+nhiều tính năng như các hệ thống lớn khác nhưng những tính năng mà hệ thống
+này có có thể nói là đủ dùng.
+Khi làm đồ án, bản thân em đã đạt được những kết quả sau:
+•Học được cách thiết kế 1 hệ thống từ đầu đến cuối.
+•Học được cách tự tiềm kiếm tài liệu, sách tham khảo ở nhiều nguồn uy tín.
+•Biết được cách triển khai 1 hệ thống thật trên vps.
+•Rèn luyện được kỹ năng viết báo cáo 1 cách đầy đủ và chi tiết.
+•Nâng cao kỹ năng quản lý thời gian để giải quyết công .
+•Hiểu được thêm nhiều kiến thức và các công nghệ hiện tại.
+Hệ thống của em còn nhiều thiếu sót nên cần phải cải thiện nhiều.
+•Trước hết là giao diện và trải nghiệm người dùng cần phải được nâng cao.
+•Từ các dữ liệu đã thu thập được cần phải tìm ra được nhiều thông tin có giá trị
+•Cấu trúc và logic của code nhiều chỗ còn chưa hợp lý cần phải được sửa lại.
+Tiếp đó là hướng phát triển thêm các tính năng mới:
+•Tiến hành thu thập thêm nhiều dữ liệu có ích từ người dùng hơn.
+•Phát triển tính năng tự động hóa marketing trên nền tảng các chức năng gửi
+thông báo, email, sms cho người dùng.
+•Cải thiện doc để giúp người dùng cài đặt hệ thống dễ dàng hơn .
+•Hướng tới tự xây dụng 1 smtp server để giúp mỗi website đều có một email

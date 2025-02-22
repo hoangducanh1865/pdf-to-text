@@ -1,0 +1,824 @@
+
+" Nếu em về qua phố nhỏ Bách Khoa
+Nhớ gửi cho tôi chùm bằng lăng cuối hạ
+Nơi bè bạn ngày đêm hối hả
+Mùa thi cuối cùng, mai hết tuổi sinh viên. "
+Chiều mùa thu tháng 8, rảo bước chân vội vã qua những con đường mang tên Bách
+Khoa để tránh những cơn mưa bất chợt. Bỗng nhận ra quãng thời gian còn được
+làm sinh viên của mình không còn dài nữa, “sắp đến lúc phải ra đi và bỏ lại những
+gì đã trải qua”. Vậy là thoáng chốc đã 5 năm đã trôi qua, 5 năm được sống, được
+học tập, được là một sinh viên Bách Khoa.
+Cảm ơn đại gia đình đã luôn động viên, tin tưởng, là chỗ dựa tinh thần của con
+trong suốt quá trình học tập.
+Để viết lên được những dòng này, em xin gửi lời cảm ơn chân thành đến cô Nguyễn
+Thị Oanh, giảng viên khoa Khoa học máy tính – Trường Công nghệ Thông tin
+và Truyền thông đã luôn tận tình, quan tâm, hướng dẫn em hoàn thành đồ án tốt
+Em cũng xin gửi lời cảm ơn đến toàn bộ thầy cô của Đại học Bách Khoa Hà Nội
+nói chung và Trường Công nghệ Thông tin và Truyền thông nói riêng đã tạo điều
+kiện cơ sở vật chất, truyền đạt nhiều kiến thức và kinh nghiệm vô giá tạo nền tảng
+cho cuộc sống của em sau này.
+Cảm ơn anh Thịnh, anh Tâm, anh Công, anh Cam và anh Viên trong công ty cổ
+phần ThinkLABs đã tạo điều kiện thời gian, quan tâm và động viên em hoàn thành
+Cuối cùng, xin gửi lời cảm ơn đến những người bạn đã cùng tôi trải qua những
+ngày tháng sinh viên khó khăn, cảm ơn Shin đã dành cả thanh xuân để đồng hành,
+chia sẻ cùng mình trong suốt quãng thời gian qua.
+Cảm ơn Bách Khoa! Cảm ơn vì tất cả những gì đã qua.
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Ung thư đại trực tràng (CRC) là bệnh ác tính thường gặp thứ ba ở nam và thứ hai
+ở nữ, và là nguyên nhân phổ biến thứ ba gây tử vong do ung thư. CRC có thể được
+ngăn ngừa bằng cách theo dõi nội soi thường quy và cắt bỏ polyp. Tuy nhiên, quá
+trình nội soi phát hiện polyp phụ thuộc vào nhiều yếu tố như chất lượng hệ thống
+trang thiết bị, quy trình nội soi, môi trường làm việc và kinh nghiệm của bác sỹ. Do
+đó, việc áp dụng công nghệ mới như các kỹ thuật nội soi tăng cường hình ảnh, dây
+soi với góc mở vi trường rộng hay ứng dụng công nghệ thông tin đặc biệt là xây
+dựng các thuật toán trí tuệ nhân tạo được kỳ vọng hỗ trợ bác sỹ trong chẩn đoán
+và điều trị ung thư đại tràng, cải thiện độ chính xác, giảm thiểu việc bỏ sót polyp
+trong quá trình nội soi.
+Đồ án hướng tới xây dựng mô hình trí tuệ nhân tạo sử dụng kiến trúc mạng học
+sâu cho bài toán phân vùng polyp trên ảnh nội soi đại tràng. Để xây dựng một mô
+hình mạng hiệu quả, trong đồ án tập trung tìm hiểu kiến trúc và cách tích hợp 3
+mô-đun: (i) Mô-đun mã hóa sử dụng Mix Transformer (MiT) để trích xuất đặc
+trưng của ảnh đầu vào. Đây là kiến trúc mạng hiệu quả, đang ngày càng được sử
+dụng phổ biến để thay thế kiến trúc mạng nơron tích chập truyền thống bởi khả
+năng trích xuất đặc trưng toàn cục và xử lý vấn đề phụ thuộc xa thông qua cơ chế
+chú ý (self-attention). (ii) Mô-đun giải mã tích hợp thông tin từ các đặc trưng cho
+ra bởi mô-đun mã hóa với sự trợ giúp của cơ chế chú ý theo cả chiều sâu và chiều
+không gian nhằm tạo ra bản đồ đặc trưng toàn cục, bản đồ đặc trưng này có khả
+năng xấp xỉ được vị trí tương đối và hình dạng của polyp. (iii) Mô-đun tinh chỉnh
+đặc trưng sử dụng cơ chế chú ý ngược kết hợp với 4 đặc trưng cho ra bởi kiến trúc
+MiT tại 4 giai đoạn của mạng nhằm tìm ra các chi tiết còn thiếu, tinh chỉnh vùng
+biên của polyp, bổ sung thông tin cho bản đồ đặc trưng toàn cục nhằm tạo ra kết
+quả dự đoán cuối cùng đáng tin cậy hơn.
+Thực nghiệm cho thấy mô hình đề xuất đạt kết quả tốt trên cả khả năng học và
+khả năng tống quát hóa. Đồng thời, số lượng tham số và độ phức tạp tính toán đều
+nhỏ hơn các phương pháp phân vùng polyp dựa trên Transformer hiện tại.
+Trong chương này sẽ trình bày ngữ cảnh của bài toán, tổng quan một số giải
+pháp hiện tại và các thách thức còn tồn tại. Từ đó đặt ra mục tiêu và định hướng
+giải pháp trong đồ án để giải quyết bài toán.
+Hiện nay Việt Nam là một quốc gia có tỷ lệ dân số khá đông khoảng hơn 98
+triệu dân, gánh nặng bệnh tật tương đối lớn đặc biệt là các bệnh lý về tiêu hóa, gan
+mật. Tuy nhiên, khả năng đáp ứng của các cơ sở y tế còn rất nhiều hạn chế về kỹ
+thuật cũng như đội ngũ y tế. Theo ước tính, số lượng bác sỹ nội soi tiêu hóa chỉ đáp
+ứng được nhu cầu của 5-10% dân số1. Điều này đặt ra những thách thức to lớn đối
+với việc chẩn đoán chính xác và điều trị bệnh.
+Ung thư đại tràng (CRC) là nguyên nhân phổ biến thứ ba gây tử vong liên quan
+đến ung thư trên thế giới, chiếm 5.8% tổng số ca tử vong do ung thư vào năm 2018.
+Ung thư đại tràng thường bắt đầu lành tính (gọi là polyp). Polyp không phải là u
+nhưng là một tổn thương có hình dạng giống như một khối u, có cuống hoặc không,
+do niêm mạc đại tràng và tổ chức dưới niêm mạc tăng sinh tạo thành. Polyp không
+phải là ung thư và hầu hết là vô hại nhưng chúng có thể phát triển thành ung thư
+sau một thời gian dài, gây tử vong khi được tìm thấy ở giai đoạn muộn của nó. Hình
+Ngăn ngừa CRC bằng tầm soát polyp thường xuyên, xét nghiệm sàng lọc và loại
+bỏ các tổn thương u tuyến đại tràng là rất quan trọng và đã trở thành một trong
+những ưu tiên sức khỏe trên toàn thế giới. Nội soi đại tràng là một phương pháp
+tầm soát phổ biến, hiệu quả để phát hiện polyp bởi nó có thể đồng thời cung cấp
+thông tin về vị trí và hình dạng của polyp, từ đó tiến hành sàng lọc, phát hiện và loại
+bỏ sớm trước khi chúng phát triển thành CRC. Một nghiên cứu đã theo dõi hơn 314
+nghìn ca nội soi đại tràng gần đây cho thấy, trong 10 nam giới thì tỷ lệ phát hiện u
+tuyến trong đại tràng tăng mỗi 1% sẽ giúp bệnh nhân giảm 3% tiến triển thành ung
+thư đại tràng và nội soi đại tràng đã góp phần giảm 30% tỉ lệ mắc ung thư đại trực
+tràng [1]. Tuy nhiên, quá trình nội soi đại tràng yêu cầu thiết bị kỹ thuật đắt tiền
+và đội ngũ bác sỹ được đào tạo bài bản. Trong quá trình nội soi, một ống dài linh
+hoạt mềm và nhỏ gọn gọi là ống nội soi (colonoscope) đầu có gắn máy quay phim
+và đèn soi được đưa vào đại tràng, hình ảnh thu được trong quá trình nội soi được
+phóng đại trên màn hình màu có độ nét cao, cho phép bác sỹ xem xét bên trong của
+toàn bộ đại tràng. Chất lượng của quá trình nội soi phụ thuộc vào tay nghề, kinh
+nghiệm và sự tập trung của các bác sĩ nội soi. Các nghiên cứu gần đây chỉ ra rằng
+tỉ lệ polyp bị bỏ sót trong quá trình nội soi tương đối cao, dao động từ 20-47% bởi
+ba nguyên nhân chính: (i) Polyp có hình dạng, kích thước, màu sắc và kết cấu đa
+dạng ngay cả khi các polyp thuộc cùng một loại. (ii) Trong ảnh nội soi, đường biên
+ranh giới giữa polyp và vùng niêm mạc xung quanh nó không rõ ràng (hay vùng
+chứa polyp có màu sắc khá tương đồng với màu của vùng không chứa polyp). (iii)
+Trong quá trình nội soi, điều kiện ánh sáng khác nhau hay quá trình chuẩn bị ruột
+không sạch, xuất hiện bọt hoặc dịch nhầy cũng gây nên trở ngại lớn trong phát hiện
+Do đó, ứng dụng công nghệ thông tin, đặc biệt là xây dựng các thuật toán trí tuệ
+nhân tạo trong phát hiện và phân vùng polyp trên ảnh nội soi là hướng đi cần thiết
+đặt ra cho ngành y học bởi những lợi ích to lớn trong việc hỗ trợ bác sĩ cải thiện
+độ chính xác, giảm thiểu việc bỏ sót polyp trong quá trình nội soi, đồng thời nâng
+cao năng lực của phòng khám trong khi vẫn duy trì được chất lượng chẩn đoán, sử
+dụng tối ưu các nguồn lực y tế còn đang thiếu hụt hiện nay.
+Các phương pháp học máy truyền thống phân vùng polyp chủ yếu dựa trên các
+đặc trưng mức thấp như thông tin kết cấu, đặc điểm hình thái hoặc phân cụm điểm
+ảnh. Tuy nhiên, những phương pháp này thường có hiệu quả phân vùng thấp và khả
+năng tổng quát hóa không tốt. Với sự phát triển của việc ứng dụng học sâu trong
+phân tích ảnh y tế, bài toán phân vùng polyp ngày càng đạt được những kết quả
+hứa hẹn. Cụ thể, các kiến trúc có hình dạng chữ U kết hợp giữa mạng tích chập làm
+nhiệm vụ mã hóa và mạng giải chập làm nhiệm vụ giải mã đã đạt được hiệu năng
+đáng kể khi tận dụng được các đặc trưng ở nhiều mức khác nhau để tái tạo kết quả
+phân vùng có độ phân giải cao. PraNet [2] hướng tới xây dựng một kiến trúc mạng
+mới là sự kết hợp của 3 thành phần: (i) phần mã hóa nhằm trích xuất đặc trưng,
+(ii) phần giải mã nhằm đưa ra dự đoán ban đầu hình dạng của polyp và (iii) cơ chế
+chú ý ngược nhằm tinh chỉnh dự đoán. TransUNet [3], TransFuse [4], Polyp-PVT
+[5] là những nghiên cứu kết hợp những ưu điểm của CNN và Transformer nhằm
+nâng cao khả năng trích xuất và biểu diễn đặc trưng. Những kiến trúc này đạt được
+độ chính xác và khả năng tổng quát hóa vượt trội so với các phương pháp truyền
+thống. Tuy nhiên, bài toán phân vùng polyp vẫn còn tồn tại một số thách thức: (i)
+Polyp được hình thành từ các tế bào phát triển bất thường bên trong đại tràng, do
+đó màu sắc và kết cấu của vùng chứa polyp khá tương đồng với vùng niêm mạc
+xung quanh dẫn đến khó phân vùng chính xác, đặc biệt là vùng biên của polyp, (ii)
+Ảnh bị nhiễu trong quá trình nội soi hoặc quá trình thu thập dữ liệu do ống kính
+cần quay trong ruột để thu được ảnh polyp ở nhiều góc khác nhau dẫn đến có thể
+gây ra hiện tượng nhòe chuyển động và các vấn đề về độ phản xạ, làm tăng đáng kể
+độ khó trong việc phát hiện polyp, (iii) Có những trường hợp diện tích của polyp
+chỉ chiếm một phần rất nhỏ trong ảnh, (iv) Khả năng tổng quát hóa của mô hình
+trên các nguồn dữ liệu khác nhau.
+Mục tiêu của đồ án là xây dựng một mô hình mạng nơron nhân tạo có khả năng
+phân vùng polyp tự động từ ảnh nội soi đại tràng với độ chính xác cao, có khả năng
+tổng quát hóa tốt trên các bộ dữ liệu đa dạng, đồng thời có kích thước lưu trữ nhỏ
+và độ phức tạp tính toán thấp.
+Dựa trên những nghiên cứu gần đây: ViT [6], Segformer [7], DeiT [8], PVT
+[9], Swin [10] đã cho thấy kết quả đầy hứa hẹn khi áp dụng Transformer vào các
+tác vụ xử lý ảnh. Trong đồ án này sử dụng kiến trúc dựa trên Transformer là Mix
+Transformer để trích xuất đặc trưng ảnh, tạo ra đặc trưng ở nhiều mức và nhiều tỉ
+lệ khác nhau. Để kết hợp hiệu quả các đặc trưng này, đồ án đề xuất mô-đun giải mã
+tích hợp song song các đặc trưng với sự trợ giúp của cơ chế chú ý theo cả chiều sâu
+và chiều không gian nhằm tạo bản đồ đặc trưng toàn cục có khả năng xác định được
+vị trí tương đối và hình dạng của polyp. Đồng thời sử dụng mô-đun chú ý ngược
+(Reverse Attention) và trích xuất đặc trưng kim tự tháp theo kênh (Channel-wise
+Feature Pyramid) nhằm cải thiện kết quả phân vùng tại biên của polyp và nâng cao
+độ chính xác khi phân vùng ảnh nội soi chứa polyp có kích thước nhỏ.
+Đồ án này có 3 đóng góp chính như sau:
+1. Tìm hiểu kiến trúc mô hình của các phương pháp đã có cho bài toán phân
+vùng polyp trên ảnh nội soi.
+2. Đề xuất mô hình phân vùng polyp bao gồm kết hợp của ba thành phần: mô-
+đun mã hóa sử dụng kiến trúc Transformer làm bộ khung trích xuất đặc trưng
+thay vì CNN truyền thống; mô-đun giải mã giải mã kết hợp song song các đặc
+trưng với sự hỗ trợ của cơ chế chú ý theo cả chiều sâu và chiều không gian;
+mô-đun tinh chỉnh đặc trưng sử dụng cơ chế chú ý ngược áp dụng lên cả 4 đặc
+trưng cho ra tại 4 giai đoạn của kiến trúc Transformer.
+3. Đánh giá và phân tích hiệu năng của mô hình đề xuất trên các tập dữ liệu mở
+về ảnh nội soi polyp đại tràng.
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau:
+Chương 2 trình bày về cơ sở lý thuyết nền tảng, bao gồm tổng quan bài toán
+phân vùng ảnh, các kiến thức cơ bản của mạng nơron tích chập và các phương
+pháp tính tích chập phổ biến. Chương này cũng giới thiệu về Transformer
+truyền thống được ứng dụng cho bài toán xử lý ngôn ngữ tự nhiên và Vision
+Transformer được ứng dụng cho bài toán phân loại ảnh.
+Chương 3 trình bày chi tiết kiến trúc mô hình đề xuất, bao gồm mô-đun mã
+hóa, mô-đun giải mã và mô-đun tinh chỉnh đặc trưng. Trong chương này cũng
+đưa ra hàm mất mát cần tối ưu, hàm mất mát này là sự kết hợp giữa Binary
+Cross-entropy và mean IoU có trọng số được đánh cho từng điểm ảnh.
+Chương 4 trình bày về các độ đo đánh giá hiệu năng của mô hình, thông số
+các bộ dữ liệu sử dụng, phương pháp huấn luyện mô hình đề xuất, các phương
+pháp thực hiện thí nghiệm và các kết quả thực nghiệm định tính và định lượng.
+Chương 5 tổng kết các kết quả đạt được trong đồ án, rút ra kết luận và định
+hướng hướng phát triển trong tương lai.
+Trong chương 1 đã đưa ra các khó khăn, thách thức và hướng tiếp cận để giải
+quyết bài toán. Trong chương này sẽ trình bày một số khái niệm cơ bản, tổng quan
+về bài toán phân vùng ảnh, mạng nơron tích chập và một số phương pháp tính tích
+chập thông dụng được sử dụng trong các kiến trúc mạng giải quyết bài toán phân
+vùng ảnh. Trong chương 2 cũng giới thiệu kiến trúc Transformer truyền thống cho
+bài toán xử lý ngôn ngữ tự nhiên và việc áp dụng Transformer cho bài toán phân
+loại ảnh trong kiến trúc của Vision Transformer. Đồng thời, chương 2 cũng giới
+thiệu một vài nghiên cứu liên quan giải quyết bài toán phân vùng polyp trên ảnh
+Phân vùng ảnh (hay phân đoạn ảnh) là một phương pháp mà trong đó hình ảnh
+kỹ thuật số được chia thành nhiều nhóm con khác nhau gọi là segment. Hay nói
+một cách dễ hiểu, phân vùng ảnh là thực hiện phân chia một bức ảnh thành nhiều
+vùng khác nhau bằng việc gán nhãn cho từng điểm ảnh của bức ảnh, các điểm ảnh
+thuộc cùng một nhãn sẽ có những đặc tính giống nhau về màu sắc, cường độ hoặc
+kết cấu của ảnh. Đây là lớp bài toán quan trọng tạo bước tiền đề của quá trình xử lý
+dữ liệu hình ảnh. Mục tiêu của phân vùng ảnh là để đơn giản hóa hoặc thay đổi biểu
+diễn của bức ảnh, kết quả phân vùng tốt sẽ tạo điều kiện thuận lợi cho các khâu xử
+lý về sau, giúp cho quá trình phân tích bức ảnh trở nên đơn giản hơn. Thông qua
+phân vùng ảnh giúp ta hiểu được nội dung của một bức ảnh ở mức độ sâu khi biết
+được đồng thời: vị trí của vật thể trong ảnh, hình dạng của vật thể và từng điểm ảnh
+nào thuộc về vật thể nào.
+Có hai dạng chính của bài toán phân vùng ảnh là phân vùng ngữ nghĩa (semantic
+segmentation) và phân vùng cá thể (instance segmentation). Trong đó, phân vùng
+ngữ nghĩa sẽ phân vùng ảnh theo những nhãn khác nhau mà không phân biệt sự
+khác nhau giữa các đối tượng trong cùng một nhãn; phân vùng cá thể sẽ phân vùng
+ảnh chi tiết đến từng đối tượng trong mỗi nhãn. Sự khác nhau giữa hai dạng bài
+toán này được minh họa ở Hình 2.1:
+(ii) Phân vùng dựa trên cạnh (Edge Based Segmentation): cạnh trong một hình
+ảnh là những vị trí không liên tục hay có sự biến đổi đột ngột về cường độ
+sáng, màu sắc hay kết cấu. Để phát hiện cạnh, ta có thể dùng các toán tử như
+Sobel, Laplace, Canny, . . . , những toán tử này cung cấp thông tin cả về “độ
+lớn” và “hướng” của cạnh. Cuối cùng, để thu được kết quả phân vùng cần thực
+hiện một số bước bổ sung bao gồm: liên kết các cạnh liền kề và kết hợp chúng
+để hình thành nên phân vùng chứa đối tượng.
+(iii) Phân vùng dựa trên khu vực (Region-Based Segmentation): một vùng hay
+khu vực được định nghĩa là một nhóm các điểm ảnh kết nối với nhau và có các
+thuộc tính tương đồng về cường độ, màu sắc,... Phương pháp này làm việc khá
+hiệu quả trong trường hợp ảnh bị nhiễu, có thể được thực hiện thông qua hai
+phương pháp chính: phát triển khu vực (region growing method) hoặc phân
+tách và hợp nhất khu vực (region splitting and merging method).
+(iv) Phân vùng dựa trên kỹ thuật phân cụm (Clustering Based Segmentation): phân
+cụm là một thuật toán học máy không giám sát được sử dụng phổ biến trong
+phân vùng ảnh. Một trong những thuật toán phân cụm thường được ứng dụng
+cho bài toán phân vùng ảnh là K-means. Thuật toán này sẽ phân cụm cường
+độ điểm ảnh trên ảnh thành K cụm, sau đó giá trị của mỗi điểm ảnh này sẽ
+được thay thế bởi giá trị tâm cụm nhằm phân vùng hình ảnh. Điểm hạn chế
+của thuật toán này là tốn kém chi phí tính toán, vì khi huấn luyện cần tính
+khoảng cách từ tâm cụm tới toàn bộ các điểm ảnh trong ảnh, đồng thời siêu
+tham số K được chọn là không chắc chắn.
+(v) Phân vùng dựa trên mạng nơron nhân tạo (Artificial Neural Network Based
+Segmentation): phương pháp này sử dụng trí tuệ nhân tạo để tự động phân tích
+hình ảnh. Mạng nơron tích chập được sử dụng khá phổ biến trong phân vùng
+ảnh vì chúng có thể xác định, xử lý dữ liệu hình ảnh một cách nhanh chóng,
+hiệu quả và mang lại độ chính xác cao nhờ tận dụng được ưu thế của dữ liệu
+lớn và khả năng trích chọn đặc trưng tự động.
+Mạng nơron tích chập (Convolutional neural networks), còn được biết đến với
+tên CNN, được sử dụng lần đầu tiên vào cuối những năm 1998 bởi Yann LeCun và
+các cộng sự cho bài toán phân loại chữ số viết tay và đạt được hiệu quả cao. Với
+sự bùng nổ của dữ liệu và khả năng tính toán của phần cứng, CNN đã dần được
+sử dụng để thay thế các phương pháp tạo đặc trưng thủ công và các thuật toán học
+máy truyền thống, ngày càng được ứng dụng phổ biến trong nhiều lĩnh vực như thị
+giác máy tính, hệ thống gợi ý, xử lý ngôn ngữ tự nhiên, xử lý âm thanh và phân tích
+dữ liệu chuỗi thời gian.
+Về cơ bản thiết kế của một mạng nơron tích chập bao gồm 5 thành phần như
+được minh họa trong Hình 2.2: (i) ảnh đầu vào, (ii) tầng tích chập sử dụng các bộ
+lọc để trích xuất đặc trưng, (iii) tầng kích hoạt giúp tăng tính phi tuyến cho mạng,
+(iv) tầng gộp (pooling) giúp giảm chi phí tính toán, đồng thời tăng tính bất biến
+của không gian và (v) tầng kết nối đầy đủ nhằm tìm ra phân phối xác suất, tối ưu
+hóa mục tiêu của mạng.
+Trong mạng nơron tích chập, trọng số của các bộ lọc được học một cách tự động.
+Mục tiêu của phép tích chập là trích xuất đặc trưng như các đường, cạnh, thông tin
+kết cấu,. . . từ ảnh đầu vào. Mạng nơron tích chập không nhất thiết chỉ giới hạn
+trong một lớp tích chập. Thông thường, lớp tích chập đầu tiên chịu trách nhiệm
+nắm bắt các đặc trưng mức thấp như màu sắc, hướng dốc gradient,. . . với các lớp
+tích chập được thêm vào, mô hình sẽ nắm bắt các đặc trưng ngữ nghĩa cấp cao,
+mang đến cho chúng ta một mạng lưới nơron tích chập có sự hiểu biết toàn diện về
+hình ảnh trong bộ dữ liệu, tương tự như cách con người nhìn nhận về hình ảnh.
+Mạng nơron tích chập có hai tính chất quan trọng là: kết nối cục bộ và chia sẻ
+tham số. Khác với các mạng nơron thông thường, mạng nơron tích chập không kết
+nối tới toàn bộ hình ảnh mà chỉ kết nối tới từng vùng địa phương (local region)
+hoặc vùng nhận thức (receptive field) có kích thước bằng kích thước bộ lọc tích
+chập. Do đó, mỗi thành phần đầu ra chỉ phụ thuộc vào bộ phát hiện đặc trưng và
+một phần nhỏ của ảnh đầu vào thay vì toàn bộ bức ảnh. Các vùng địa phương này
+sẽ được chia sẻ chung một bộ tham số có tác dụng nhận thức đặc trưng của bộ lọc.
+Nhờ những tính chất này mà mạng nơron tích chập có nhiều ưu điểm nổi bật so với
+mạng nơron thông thường. Bên cạnh hiệu năng cao trên số lượng mẫu cần thiết để
+đạt được đủ độ chính xác, các mạng nơron tích chập thường có hiệu quả tính toán
+hơn, bởi đòi hỏi ít tham số và dễ thực thi song song trên nhiều GPU hơn các kiến
+trúc mạng kết nối đầy đủ.
+Tích chập là một khái niệm đóng vai trò quan trọng và xuất hiện sớm trong xử
+lý tín hiệu số nhằm biến đổi thông tin đầu vào thông qua một phép tích chập với bộ
+lọc để trả về đầu ra là một tín hiệu mới. Tín hiệu mới này sẽ làm giảm những đặc
+trưng mà bộ lọc không quan tâm và chỉ giữ lại những đặc trưng chính quan trọng.
+Trong phần này sẽ trình bày một số phương pháp tính tích chập phổ biến được áp
+dụng cho bài toán phân vùng ảnh.
+a, Tích chập thông thường
+Tích chập thông dụng nhất là tích chập hai chiều, được áp dụng trên ma trận đầu
+vào và ma trận bộ lọc hai chiều (xem hình minh họa 2.3). Kết quả của phép tích
+chập giữa một ma trận XϵRH×Wvới một bộ lọc FϵRF×Flà một ma trận Y ϵRA×B
+sẽ trải qua những bước sau:
+Bước 1: tính tích chập tại một điểm: tại vị trí đầu tiên trên cùng của ma trận
+đầu vào, ta sẽ trích ra một ma trận con XsubϵRF×Fcó kích thước bằng với kích
+thước của bộ lọc. Giá trị y11trên Y là tích chập của Xsubvới F, được tính như
+j=1xijfij(trong đó: chỉ số ma trận được quy ước bắt đầu
+Bước 2: tiến hành trượt bộ lọc theo chiều từ trái qua phải, từ trên xuống dưới
+với bước nhảy S, ta sẽ tính được các giá trị yijtiếp theo.
+Nếu kích thước của ma trận đầu vào là nh×nwvà kích thước của bộ lọc tích
+chập là fh×fw, kích thước của đặc trưng đầu ra sẽ là:
+Trong trường hợp ảnh đầu vào có 3 kênh RGB, phép tính tích chập cũng được
+thực hiện một cách tương tự nhưng thay vì 2 chiều, bộ lọc được sử dụng sẽ có 3
+chiều. Hình 2.4minh họa quá trình thực hiện tích chập 3 chiều. Trong đó, ảnh đầu
+vào là một ma trận 3 chiều có kích thước 6×6×3, ta áp dụng lên ảnh hai bộ lọc,
+mỗi bộ lọc có kích thước 3×3×3và bước nhảy tính tích chập bằng 1 để thu được
+hai đặc trưng có kích thước 4×4. Hai đặc trưng này được kết hợp với nhau để thu
+được đặc trưng đầu ra cuối cùng có kích thước 4×4×2.
+b, Tích chập dãn nở (Dilation Convolution)
+Tích chập dãn nở là một kỹ thuật thực hiện bỏ qua các điểm ảnh của ma trận đầu
+vào một cách xen kẽ, hay nói cách khác, phương pháp này thực hiện làm dãn nở bộ
+lọc bằng cách chèn thêm khoảng trống giữa các phần tử của bộ lọc trong khi thực
+hiện phép tích chập. Khi tỉ lệ dãn nở bằng 1, tích chập dãn nở chính là tích chập
+thông thường. Hình 2.5minh họa tích chập dãn nở với tỉ lệ dãn nở bằng 2.
+Phép tích chập này giúp mở rộng trường tiếp nhận cục bộ, lấy được nhiều thông
+tin hơn từ ảnh đầu vào mà không tăng độ phức tạp tính toán. Tích chập dãn nở có
+thể được sử dụng để thay thế phép gộp (pooling), giúp giảm bộ nhớ tiêu thụ và
+không làm mất độ phân giải của đặc trưng đầu ra.
+c, Tích chập tách biệt chiều sâu (Depth-wise convolution)
+Độ sâu là một trong những nguyên nhân chính dẫn tới sự gia tăng số lượng tham
+số của mô hình. Tích chập tách biệt chiều sâu sẽ tìm cách loại bỏ sự phụ thuộc vào
+độ sâu khi tích chập mà vẫn tạo ra được đặc trưng đầu ra có kích thước tương đương
+so với tích chập thông thường. Để làm được điều này, tích chập tách biệt chiều sâu
+sẽ áp dụng lên mỗi kênh của ma trận đầu vào một bộ lọc tích chập khác nhau và
+hoàn toàn không chia sẻ trọng số. Kết quả đầu ra sẽ áp dụng tích chập điểm với bộ
+lọc kích thước 1×1để thu được ma trận đặc trưng có chiều sâu mong muốn. Hình
+Tích chập tách biệt chiều sâu có một số ưu điểm như: (i) khả năng nhận diện
+đặc trưng tốt hơn bởi quá trình học được tách biệt theo từng kênh và từng bộ lọc.
+•Nhánh giải mã: nhận đầu vào là kết quả của nhánh mã hóa, nhánh này nhằm
+mục đích tìm ra phân phối xác suất từ các đặc trưng học được từ nhánh mã hóa
+để xác định kết quả đầu ra. Nhánh giải mã cũng là tổng hợp xếp chồng của 6
+khối. Kiến trúc tương tự như các khối của nhánh mã hóa, ngoại trừ tầng con
+đầu tiên được thiết kế để mô hình không nhìn thấy được các từ trong tương lai.
+•Vị trí và thứ tự của các từ là những phần quan trọng thiết yếu của bất kỳ ngôn
+ngữ nào. Tuy nhiên, Transformer xử lý các từ song song, toàn bộ câu đầu vào
+được truyền vào mô hình cùng một thời điểm, do đó bản thân mô hình không
+có bất kỳ thông tin nào về vị trí thứ tự cho từng từ. Vì vậy, cần có cơ chế mã
+hóa để đưa thông tin thứ tự của các từ vào mô hình Transformer và trong bài
+báo, nhóm tác giả gọi cách mã hóa đó là mã hóa vị trí (position encoding). Để
+tính giá trị mã hóa vị trí tại chiều vector tương ứng, tại vị trí chẵn tác giả sử
+dụng hàm sin, tại vị trí lẻ tác giả sử dụng hàm cos theo công thức:
+–t: chỉ số của từ hiện tại
+–i: chỉ số của chiều trong vector mã hóa
+–d: kích thước của vector mã hóa
+Cơ chế chú ý (self-attention) : cơ chế này chính là một phần cốt yếu đóng góp
+nên sự thành công của Transformer thông qua việc giúp mô hình tăng khả năng
+tập trung hay chú ý vào những phần quan trọng, trong khi làm mờ đi những thông
+tin không liên quan. Với bài toán dịch máy sử dụng mạng nơron hồi tiếp, mô-đun
+mã hóa phải nén tất cả thông tin của một câu thành một vector biểu diễn duy nhất,
+chứa toàn bộ thông tin cần thiết để mô-đun giải mã có thể dịch thành câu đích. Tuy
+nhiên, những câu dài sẽ không được dịch chính xác vì thông tin không được lưu
+trữ đủ trong một vector biểu diễn duy nhất. Cũng tương tự như trong bài toán sinh
+mô tả cho ảnh, mô hình CNN cần lưu trữ thông tin của toàn bộ bức ảnh thành một
+vector duy nhất, rồi sau đó mô-đun giải mã sẽ phát sinh câu mô tả dựa theo thông
+tin lưu trong vector này, tuy nhiên, vector này có thể không chứa đủ thông tin để
+phát sinh cho toàn bộ câu mô tả. Để giải quyết vấn đề này, sử dụng cơ chế chú ý cho
+phép mô hình có thể tập trung chú ý vào từng phần của câu hoặc bức ảnh một cách
+rõ ràng, từ đó thông tin không cần phải nén vào một vector biểu diễn duy nhất.
+Quá trình tính ma trận chú ý được tổng hợp trong công thức:
+Attention (Q, K, V ) =softmax
+Trong đó: đầu vào bao gồm ba ma trận Q (query), K (key) và V (value). Phép nhân
+hai ma trận Q×KTsẽ cho ra ma trận trọng số chú ý (mức độ chú ý giữa các cặp
+từ). Sau đó, chia cho√dknhằm mục đích tránh tràn số và sử dụng hàm softmax để
+tính phân phối xác suất cho ma trận trọng số chú ý. Cuối cùng, nhân kết quả với ma
+trận V để đưa ra vector đại diện cuối cùng.
+Mạng nơron tích chập đã đạt được những thành công đáng kể trong lĩnh vực
+thị giác máy tính, tuy nhiên các nghiên cứu gần đây chỉ ra rằng kiến trúc mạng
+Transformer và cơ chế chú ý cũng hoạt động tốt cho xử lý ảnh, hơn thế nữa còn
+mang lại hiệu năng vượt trội trong nhiều tác vụ. Trong đó ViT [6] là nghiên cứu
+tiên phong chứng minh rằng kiến trúc Transformer hoàn toàn có thể thay thế cho
+CNN truyền thống trong tác vụ phân loại ảnh.
+ViT được thiết kế cho bài toán phân loại ảnh, kiến trúc mạng bao gồm 3 phần
+chính như được minh họa trong Hình 2.8: (i) Phép chiếu tuyến tính (Linear Projection of Flattened Patches). (ii) Mô-đun mã hóa là kiến trúc thuần Transformer. (iii)
+Mô-đun giải mã là khối perceptron đa tầng.
+Với các mô hình CNN truyền thống cho bài toán phân loại ảnh, đầu vào cho mô
+hình là toàn bộ ảnh với kích thước cố định. Tuy nhiên ViT có cách xử lý khác, với
+mỗi ảnh đầu vào ViT chia ảnh ra thành các phần nhỏ có kích thước bằng nhau gọi
+là các patch. ViT xử lý các phần này như các từ trong một câu bằng cách đưa các
+phần qua một tầng tuyến tính để thu được vector nhúng cho từng phần. Tiếp theo
+đó, đưa qua mô-đun mã hóa của Transformer để thu được vector bối cảnh (context
+vector) và cuối cùng, đưa qua khối perceptron đa tầng để thu được xác suất đầu ra
+tương ứng với các lớp.
+Kết quả thực nghiệm đã chứng minh phương pháp xử lý trong ViT giúp giảm
+đáng kể nguồn lực tính toán và đạt độ chính xác vượt trội so với mô hình CNN hiện
+đại tương tự (chẳng hạn như ResNet). Tuy nhiên, nhược điểm chính của ViT là yêu
+cầu bộ dữ liệu có kích thước tương đối lớn để duy trì hiệu năng, trong khi đó, các
+bộ dữ liệu mở về y tế thường có kích thước khá nhỏ, chẳng hạn bộ dữ liệu Kvasir
+chỉ chứa 1000 ảnh về nội soi đại tràng dù đây là bộ dữ liệu mở có kích thước lớn
+nhất cho bài toán phân vùng polyp.
+Phương pháp phân vùng polyp truyền thống: các phương pháp truyền thống
+phân vùng polyp chủ yếu dựa trên các đặc trưng mức thấp như thông tin kết cấu
+[12], đặc điểm hình thái [13] hoặc phân cụm điểm ảnh [14]. Tuy nhiên, do đặc
+điểm về độ đa dạng của dữ liệu và độ tương đồng cao giữa vùng có chứa polyp và
+vùng niêm mạc xung quanh nó, những phương pháp truyền thống này có hiệu quả
+thấp và tính tổng quát hóa không cao, mô hình thường phát hiện thiếu hoặc sai với
+Phương pháp phân vùng polyp dựa trên học sâu: Với sự phát triển của việc
+ứng dụng học sâu trong phân tích ảnh y tế, bài toán phân vùng polyp ngày càng đạt
+được những kết quả hứa hẹn. Hầu hết các phương pháp phổ biến phân vùng polyp
+đại tràng trong những năm gần đây đều sử dụng mạng nơron tích chập. U-Net [15]
+là một kiến trúc CNN tiên phong trong xử lý ảnh y tế, kiến trúc này là sự kết hợp
+của hai nhánh: nhánh mã hóa và nhánh giải mã. Nhánh mã hóa có nhiệm vụ trích
+xuất đặc trưng đa mức từ ảnh đầu vào. Kết quả của nhánh mã hóa được đưa vào
+nhánh giải mã để tiếp tục trích xuất đặc trưng ở mức cao hơn, đồng thời tăng dần
+độ phân giải về kích thước ảnh gốc ban đầu để sinh ra nhãn phân vùng. Đầu ra các
+lớp của nhánh mã hóa là các đặc trưng mức thấp được chuyển trực tiếp sang lớp
+tương ứng của nhánh giải mã qua các kết nối tắt. Nhờ vậy, thông tin giàu ngữ cảnh
+ở nhánh giải mã sẽ được kết hợp với các thông tin chi tiết ở mức thấp. Hai nhánh
+này được kết nối theo hình dạng chữ U nên kiến trúc mạng có tên U-Net (xem
+[16], DoubleUnet [17], ResUNet++ [18] được cải tiến để mang lại hiệu năng cao
+hơn. Những kiến trúc này đã dần thay thế hoàn toàn các phương pháp phân vùng
+truyền thống bởi mang lại hiệu năng vượt trội. Tuy nhiên, kết quả thực nghiệm cho
+thấy kiến trúc mã hóa – giải mã U-Net cho kết quả không tốt khi phân vùng các
+đối tượng có kích thước nhỏ, đặc biệt trong ảnh nội soi đại tràng, diện tích polyp
+thường chiếm một tỉ lệ rất nhỏ trong ảnh.
+Khác với các phương pháp dựa trên U-Net, kiến trúc PraNet [2] sử dụng mô-đun
+giải mã từng phần để tích hợp các đặc trưng ở mức ngữ nghĩa cao nhằm tạo ra bản
+đồ đặc trưng toàn cục (global feature map), đồng thời sử dụng mô-đun chú ý ngược
+nhằm tinh chỉnh đặc trưng và khai thác thêm thông tin về biên của polyp, bổ sung
+những thông tin này vào bản đồ đặc trưng toàn cục để tạo ra kết quả dự đoán cuối
+cùng. HarDNet-MSEG [19], CaraNet [20] là hai kiến trúc khác được nghiên cứu
+để cải tiến độ chính xác của PraNet. Trong đó, HarDNet-MSEG đề xuất kiến trúc
+mã hóa và giải mã đơn giản hơn, thay thế bộ khung trích xuất đặc trưng (backbone)
+Res2Net bởi HardNet mang lại độ chính xác cao hơn, đồng thời xóa bỏ cơ chế
+chú ý trong kiến trúc nhằm cải thiện tốc độ suy luận. Tuy có tốc độ suy luận thời
+gian thực ngay cả trên các thiết bị biên phổ thông nhưng độ chính xác của PraNet
+và HardNet-MSEG vẫn còn hạn chế trên các ảnh polyp có kích thước nhỏ. Nhóm
+tác giả CaraNet đã cải tiến PraNet bằng cách tích hợp thêm mô-đun trích xuất đặc
+trưng kim tự tháp theo kênh (CFP) nhằm biểu diễn đặc trưng ở nhiều tỉ lệ khác
+nhau và cơ chế chú ý theo trục (axial attention) trong mô-đun chú ý ngược để nâng
+cao độ chính xác hơn nữa trong phát hiện biên của polyp. Nhờ các đóng góp này,
+CaraNet đạt độ chính xác vượt xa các phương pháp tiên tiến nhất hiện tại trên đồng
+thời bộ dữ liệu ảnh polyp thông thường và bộ dữ liệu ảnh polyp có kích thước nhỏ.
+TransFuse [4] là kiến trúc mạng mới được thiết kế để tận dụng và kết hợp những
+ưu điểm của CNN và Transformer. TransFuse trích xuất đặc trưng đồng thời từ
+hai nhánh mã hóa song song là CNN (ResNet) và Transformer (DeiT), nhờ đó
+TransFuse có thể trích xuất được cả đặc trưng ở mức cục bộ và đặc trưng ở mức
+toàn cục. Các đặc trưng này sẽ được kết hợp với nhau một cách hiệu quả thông
+qua mô-đun BiFusion tạo nên đặc trưng mới có khả năng biểu diễn mạnh mẽ. Gần
+đây, đồng nhóm tác giả của PraNet cũng xây dựng một kiến trúc mạng mới có tên
+Polyp-PVT [5] cho bài toán phân vùng polyp. Kiến trúc này sử dụng bộ khung
+PVTv2 để trích xuất đặc trưng, bộ khung này là một kiến trúc Transformer, được
+thiết kế theo cấu trúc kim tự tháp nhằm trích xuất đặc trưng ở nhiều mức và nhiều
+tỉ lệ khác nhau (multi-scale feature). Đồng thời, trong bài báo cũng thiết kế mô-đun
+giải mã để kết hợp hiệu quả các đặc trưng cho ra bởi phần mã hóa. Mô-đun giải mã
+này bao gồm 3 phần: (i) CFM - thu thập thông tin ngữ nghĩa và tìm ra vị trí tương
+đối của polyp thông qua việc tích hợp liên tục các đặc trưng mức cao. (ii) CIM -
+tìm ra thông tin quan trọng từ đặc trưng mức thấp như thông tin kết cấu, màu sắc
+hay cạnh nhờ sử dụng cơ chế chú ý thông qua mô-đun CBAM; (iii) SAM - mô-đun
+này kết hợp các đặc trưng mức thấp cho ra bởi CIM và đặc trưng mức cao cho ra
+bởi CFM sử dụng graph convolutional để tạo ra kết quả dự đoán cuối cùng. Những
+phương pháp này đều cho kết quả thực nghiệm vượt trội đáng kể so với các phương
+pháp trước đó, điều này cho thấy sự hiệu quả và những hướng đi đầy triển vọng khi
+áp dụng kiến trúc Transformer vào các tác vụ thị giác máy tính.
+Kết chương: trong chương này đã trình bày khái niệm và các phương pháp cơ
+bản để giải quyết bài toán phân vùng ảnh, giới thiệu 3 phương pháp tính tích chập
+bao gồm: tích chập thông thường, tích chập dãn nở và tích chập tách biệt chiều sâu.
+Các phương pháp tích chập này được sử dụng phổ biến trong các kiến trúc mạng
+nơron cho bài toán phân vùng ảnh. Từ kết quả phân tích các nghiên cứu liên quan
+cho thấy tiềm năng của việc ứng dụng Transformer vào các tác vụ thị giác máy tính,
+trong đồ án này cũng sử dụng bộ khung dựa trên Transformer là Mix Transformer
+nhằm trích xuất đặc trưng ảnh. Đồng thời, tích hợp vào mô hình các mô-đun như
+CBAM và chú ý ngược nhằm tinh chỉnh đặc trưng, tăng độ chính xác dự đoán. Phần
+này được trình bày chi tiết trong chương 3.
+Trong chương 2 đã trình bày các kiến thức cơ sở về bài toán phân vùng ảnh.
+Chương này sẽ trình bày chi tiết 3 mô-đun được tích hợp trong mô hình đề xuất,
+bao gồm: mô-đun mã hóa, mô-đun giải mã và mô-đun tinh chỉnh đặc trưng. Cuối
+cùng, sẽ định nghĩa hàm mất mát mà mô hình cần tối ưu.
+Như được thể hiện trong Hình 3.1, kiến trúc mô hình đề xuất bao gồm kết hợp
+của 3 thành phần: mô-đun mã hóa, mô-đun giải mã và mô-đun tinh chỉnh đặc trưng:
+Cụ thể, mô-đun mã hóa sử dụng kiến trúc Mix Transformer (MiT) nhằm trích
+xuất đặc trưng toàn cục và mô hình hóa sự phụ thuộc xa của đặc trưng ở nhiều tỉ lệ
+khác nhau từ ảnh đầu vào. Mô-đun giải mã tích hợp các đặc trưng cho ra bởi MiT
+nhằm tạo ra bản đồ đặc trưng toàn cục xấp xỉ hình dạng và vị trí của polyp. Mô-đun
+tinh chỉnh đặc trưng được thiết kế để tinh chỉnh bản đồ đặc trưng toàn cục, khám
+phá các thông tin còn thiếu, đặc biệt là vùng biên của polyp.
+Dựa trên những nghiên cứu gần đây: ViT [6], Segformer [7], DeiT [8], PVT [9],
+Swin [10] đã cho thấy kết quả đầy hứa hẹn khi áp dụng Transformer vào các tác
+vụ xử lý ảnh. Trong đồ án này, thay vì sử dụng các kiến trúc CNN truyền thống,
+sẽ sử dụng kiến trúc dựa trên Transformer là Mix Transformer (MiT) để trích xuất
+đặc trưng ảnh, tạo ra đặc trưng ở nhiều mức và nhiều tỉ lệ khác nhau. Kiến trúc này
+được đề xuất trong bài báo SegFormer [7].
+Như đã trình bày trong Mục 2.4, kiến trúc ViT chỉ áp dụng cho bài toán phân
+loại ảnh, khó áp dụng trực triếp cho các bài toán phân loại ở mức độ điểm ảnh như
+tác vụ phát hiện vật thể (object detection) hoặc phân vùng ảnh (segmentation). Bên
+cạnh đó, ViT cũng tồn tại một số nhược điểm như: các đặc trưng cho ra có kích
+thước chiều không gian giống nhau (single-scale) và có độ phân giải thấp bởi ViT
+chia ảnh đầu vào thành các phần có kích thước lớn (16x16). Đồng thời, chi phí tính
+toán và bộ nhớ lưu trữ tương đối lớn với ảnh đầu vào có kích thước phổ biến.
+Để khắc phục những nhược điểm này, MiT là một kiến trúc Transformer được
+nghiên cứu để làm bộ khung trích xuất đặc trưng thay thế CNN truyền thống ở
+nhiều tác vụ phía sau, bao gồm dự đoán ở cả mức ảnh cũng như dự đoán ở mức
+điểm ảnh, bằng các đóng góp: (i) Chia ảnh thành các phần có kích thước nhỏ hơn
+(chẳng hạn 4x4 điểm ảnh ở mỗi phần) nhằm học được khả năng biểu diễn có độ
+phân giải cao, điều này khá cần thiết cho các tác vụ dự đoán ở mức điểm ảnh. Đồng
+thời, các phần chồng lấn lên nhau nhằm bảo toàn được thông tin có tính liên tục
+cục bộ. (ii) Kiến trúc mạng được xây dựng theo cấu trúc kim tự tháp có kích thước
+chiều không gian của đặc trưng giảm dần ở các tầng sâu hơn. Điều này giúp giảm
+đáng kể chi phí tính toán, đồng thời trích xuất được cả đặc trưng thô có độ phân
+giải cao và đặc trưng tinh có độ phân giải thấp. (iii) Thiết kế cơ chế chú ý hiệu
+quả nhằm giảm độ phức tạp và chi phí tính toán. (iv) Loại bỏ cơ chế mã hóa vị trí
+(position encoding - PE) trong Transformer truyền thống. Do trong quá trình huấn
+luyện, độ phân giải của PE có kích thước cố định, do đó nếu trong quá trình thực
+hiện kiểm tra hoặc suy luận, ảnh có độ phân giải khác với quá trình huấn luyện,
+các trọng số trong PE phải được nội suy, điều này gây giảm độ chính xác. Kiến trúc
+MiT đề xuất một mô-đun kết hợp giữa phép tích chập và tầng kết nối đầy đủ nhằm
+cung cấp thông tin vị trí cho mô hình, đồng thời có thể thích nghi với ảnh đầu vào
+có độ phân giải bất kỳ mà không ảnh hưởng đến hiệu năng của mô hình.
+Tổng quan kiến trúc MiT được thể hiện trong Hình 3.2. Kiến trúc được chia
+thành 4 giai đoạn, mỗi giai đoạn là sự kết hợp của mô-đun tạo vector nhúng cho
+các phần của ảnh (overlapping patch embedding) và mô-đun mã hóa Transformer.
+Do được thiết kế theo cấu trúc kim tự tháp, độ phân giải của các đặc trưng giảm
+dần qua từng giai đoạn, nhờ đó tạo ra đặc trưng ở nhiều mức và nhiều tỉ lệ khác
+nhau (multi-scale feature), điều này phù hợp cho các tác vụ dự đoán mức điểm ảnh,
+giúp tăng độ chính xác khi phát hiện được đối tượng ở nhiều tỉ lệ khác nhau. Cụ
+thể, với một ảnh đầu vào, mô-đun này sẽ cho ra 4 đặc trưng {F1, F2, F3, F4}, có kích
+thước chiều không gian lần lượt bằng1
+32	kích thước ảnh đầu vào. 4 đặc
+trưng này bao gồm F1là đặc trưng thô (đặc trưng mức thấp) có độ phân giải cao
+chứa thông tin chi tiết về hình dạng của polyp và F2, F3, F4là những đặc trưng tinh
+(đặc trưng ngữ nghĩa mức cao) có độ phân giải thấp, kết hợp những đặc trưng này
+thường tăng hiệu năng đáng kể của bài toán phân vùng ngữ nghĩa.
+Chi tiết kiến trúc MiT:
+•Tạo vector nhúng (overlapping patch embedding): trong kiến trúc ViT, ảnh
+đầu vào được chia thành các phần không chồng lấn lên nhau, do đó không bảo
+toàn được thông tin có tính liên tục cục bộ xung quanh mỗi phần. Để xử lý vấn
+đề này, MiT được thiết kế sao cho các phần ảnh liền kề chồng lấn nhau bởi một
+nửa diện tích (xem Hình 3.3). Nếu ảnh đầu vào có kích thước H×W×C, mỗi
+phần ảnh có kích thước P×P×C, dẫn đến kết quả đầu ra ảnh sẽ được chia
+P2phần. Trong thực nghiệm, để chia ảnh thành các phần chồng lấn
+và thu được vector nhúng của mỗi phần, ta sử dụng một phép tích chập có sải
+bước (stride) S, bộ lọc có kích thước 2×S−1và đệm (padding) có kích thước
+S−1nhằm tạo ra đặc trưng có kích thước bằng với kích thước khi không thực
+hiện chồng lấn các phần của ảnh.
+•Mô-đun mã hóa Transformer ở giai đoạn i có Li khối xếp chồng lên nhau,
+mỗi khối là sự kết hợp giữa một tầng chú ý đa đầu (multi-head attention layer)
+và một tầng tích chập kết hợp với kết nối đầy đủ (convolutional feed-forward
+Trong mô-đun mã hóa Transformer của MiT, nút thắt trong quá trình tính toán
+nằm ở cơ chế chú ý, đồng thời MiT cần xử lý đặc trưng có độ phân giải cao hay
+phụ thuộc xa, nhóm tác giả đề xuất sử dụng mô-đun chú ý giảm chiều không
+gian (spatial-reduction attention - SRA) trong phần mã hóa nhằm giảm chi phí
+tính toán. Trong SRA, hai ma trận K và V được giảm chiều không gian với tỉ
+lệ R trước khi thực hiện tính ma trận chú ý.
+Với cơ chế chú ý trong Transformer truyền thống:
+→Khi đó, độ phức tạp tính toán sẽ là: O 
+Với cơ chế chú ý giảm chiều không gian (SRA):
+→Khi đó, độ phức tạp tính toán sẽ là: O
+•Do đã bỏ đi PE, nhóm tác giả SegFormer [7] đề xuất mô-đun Mix-FFN là sự
+kết hợp giữa phép tính tích chập và tầng kết nối đầy đủ (xem Hình 3.6). Bằng
+kết quả thực nghiệm, nhóm tác giả cho thấy phép tích chập 3x3 cung cấp thông
+tin về vị trí cho Transformer một cách hiệu quả, đồng thời sử dụng phép tích
+chập tách biệt chiều sâu (depth-wise convolution) giúp giảm đáng kể số lượng
+tham số và cải thiện hiệu năng.
+Một số ưu điểm của kiến trúc MiT: (i) CNN truyền thống tạo ra trường tiếp nhận
+cục bộ (local receptive field), trong khi đó MiT luôn tạo ra trường tiếp nhận toàn
+cục (global receptive field), điều này phù hợp hơn với các bài toán phát hiện vật
+thể hay phân vùng ảnh. Tuy nhiên, nó cũng cho thấy những hạn chế trong việc tìm
+ra các đặc trưng chi tiết, đặc biệt trong xử lý ảnh y tế. (ii) MiT kế thừa những ưu
+điểm của cả CNN và Transformer, giúp tạo ra một bộ khung trích xuất đặc trưng
+linh hoạt cho các tác vụ thị giác máy tính, có thể được sử dụng trực tiếp thay thế
+cho các bộ khung CNN. (iii) Kiến trúc kim tự tháp và SRA giúp giảm chi phí tính
+toán, đồng thời giúp MiT linh hoạt hơn trong học đặc trưng ở nhiều mức và nhiều
+tỉ lệ khác nhau. (iv) Đưa ra đặc trưng có độ phân giải cao, điều này khá quan trọng
+cho các tác vụ dự đoán ở mức điểm ảnh.
+MiT được thiết kế gồm 6 phiên bản ký hiệu từ B0 đến B5, các phiên bản này có
+kiến trúc giống nhau, chỉ khác nhau về siêu tham số (xem Hình 3.7). Trong đó:
+•K: kích thước mỗi phần ảnh trong mô-đun overlapping patch embedding
+•S: kích thước sải bước (stride) trong mô-đun overlapping patch embedding
+•P: kích thước đệm (padding) trong mô-đun overlapping patch embedding
+•C: số kênh (channel) của đầu ra
+•L: số khối mã hóa xếp chồng lên nhau
+•R: tỉ lệ giảm chiều trong mô-đun chú ý giảm chiều không gian (SRA)
+•N: số lượng đầu (head) trong tầng chú ý đa đầu (multi-head attention)
+•E: tỉ lệ mở rộng của tầng kết nối đầy đủ (feed-forward)
+Để cân bằng giữa độ chính xác và thời gian suy luận, trong kiến trúc đề xuất
+sử dụng Mix Transformer phiên bản MiT-B3, phiên bản này có 44.725.696 tham
+số và số lượng phép tính dấu phẩy động là 17.884 GFLOPs. Trọng số khởi tạo của
+mạng sử dụng trọng số được tiền huấn luyện trên bộ dữ liệu ImageNet.
+Dựa trên mô-đun giải mã MLP được giới thiệu trong bài báo SegFormer [7]. Chi
+tiết kiến trúc của mô-đun này được biểu diễn ở Hình 3.8. Trong bài báo đã chứng
+minh đây là một kiến trúc mạng nhẹ (lightweight network) được thiết kế đơn giản
+nhằm tận dụng được ưu điểm từ các đặc trưng cho ra bởi kiến trúc MiT là có trường
+tiếp nhận cục bộ lớn nhờ cấu trúc phân tầng và tạo ra đặc trưng toàn cục. Cụ thể,
+với các đặc trưng cho ra bởi MiT, cơ chế chú ý tại các tầng thấp hơn có xu hướng
+duy trì tính cục bộ, trong khi tại các tầng cao hơn có xu hướng phi cục bộ cao. Với
+bài toán phân vùng ngữ nghĩa, việc duy trì trường tiếp nhận lớn để trích xuất hiệu
+quả thông tin ngữ cảnh là một vấn đề trọng tâm. Mô-đun này tích hợp thông tin từ
+các tầng khác nhau, do đó tích hợp được cả thông tin chú ý cục bộ (local attention)
+và thông tin chú ý toàn cục (global attention) để tạo ra các biểu diễn đặc trưng
+Tuy nhiên, do tồn tại sự tương quan thấp giữa các đặc trưng tại các tầng khác
+nhau của cấu trúc kim tự tháp, tích hợp các đặc trưng này một cách song song như
+được thiết kế ban đầu trong bài báo SegFormer [7] có thể tạo ra lỗ hổng thông tin.
+Do đó trong đồ án này đề xuất tích hợp thêm mô-đun CBAM nhằm tìm ra các đặc
+trưng quan trọng cần chú ý trước khi thực hiện tích hợp. Mô-đun CBAM là cơ chế
+chú ý thuần CNN, đây cũng là một kiến trúc mạng nhẹ, chỉ bao gồm các lớp tích
+chập, có số lượng tham số nhỏ, dễ dàng tích hợp vào kiến trúc mạng cơ sở. Mô-đun
+này có thể đánh trọng số thể hiện độ quan trọng của đặc trưng theo cả chiều không
+gian và chiều sâu (được trình bày chi tiết trong Mục 3.3.2).
+Chi tiết kiến trúc mô-đun giải mã đề xuất được thể hiện ở Hình 3.9. Mô-đun giải
+mã này bao gồm 4 bước thực hiện chính:
+Bước 1: các đặc trưng ở nhiều tỉ lệ khác nhau Fiđược cho ra bởi mô-đun mã
+hóa MiT lần lượt được đưa qua mô-đun CBAM để tinh chỉnh đặc trưng và
+perceptron đa tầng để đồng nhất số chiều sâu. Trong đồ án này, các đặc trưng
+được đồng nhất về chiều sâu có độ lớn 256.
+Bước 2: các đặc trưng được chỉnh lại kích thước sử dụng toán tử nội suy song
+tuyến (bilinear interpolation) sao cho kích thước chiều không gian bằng1
+với kích thước ảnh huấn luyện, tiếp đó 4 đặc trưng được nối với nhau theo
+Bước 3: sử dụng một tầng tích chập để hợp nhất đặc trưng vừa được nối với
+Bước 4: đưa qua một tầng tích chập khác để dự đoán ra bản đồ đặc trưng toàn
+4×Ncls(Nclslà số lớp cần phân vùng).
+Kiến trúc CBAM [21] được thiết kế lấy cảm hứng từ cơ chế chú ý, nhằm tinh
+chỉnh đặc trưng và cải thiện khả năng biểu diễn thông tin tại vùng chứa đối tượng
+cần chú ý (hay đối tượng đích). CBAM trích xuất thông tin từ đặc trưng bằng cách
+pha trộn thông tin từ cả miền không gian và miền chiều sâu. Kiến trúc CBAM là sự
+kết hợp của hai mô-đun: chú ý theo kênh (channel attention module - CAM) và chú
+ý theo không gian (spatial attention module - SAM). Tổng quan kiến trúc CBAM
+được minh họa trong Hình 3.10:
+Khác với cơ chế chú ý của Transformer, CBAM là một mô-đun thuần CNN, chỉ
+bao gồm các lớp tích chập. CBAM được thiết kế sao cho số lượng tham số và số
+phép tính cần tính nhỏ (light-weight network) mà vẫn mang lại hiệu năng cao, đồng
+thời có thể dễ dàng tích hợp vào kiến trúc mạng cơ sở nhằm tinh chỉnh đặc trưng
+được cho ra bởi tầng tích chập bất kỳ (xem Hình 3.11).
+a, Mô-đun chú ý theo kênh (CAM)
+Mô-đun này được xây dựng nhằm mục đích khai thác mối liên hệ giữa các kênh
+của đặc trưng. Mỗi kênh này có nhiệm vụ lưu trữ các đặc trưng khác nhau từ ảnh
+đầu vào, CAM tập trung tìm ra đặc trưng nào có ý nghĩa bằng cách đánh trọng số
+Mc(F) =σ(MLP (AvgPool (F)) +MLP (MaxPool (F)))
+Chi tiết cơ chế hoạt động của mô-đun được minh họa trong Hình 3.12và tổng hợp
+trong công thức ( 3.1), bao gồm 3 bước chính:
+Bước 1: với mỗi kênh của đặc trưng đầu vào, áp dụng đồng thời hai toán tử
+gộp trung bình toàn cục (Global Average Pooling - GAP) và gộp cực đại toàn
+cục (Global Max Pooling - GMP), dẫn đến sau khi thực hiện mỗi toán tử, mỗi
+kênh sẽ bị nén thành một số vô hướng. Nếu đặc trưng đầu vào có C kênh, sau
+khi áp dụng hai toán tử này sẽ thu được hai vector, mỗi vector có kích thước
+[1x1xC]. GAP được sử dụng nhằm tạo ra thông tin kết hợp từ chiều không
+gian, trong khi đó sử dụng GMP nhằm bảo toàn thông tin kết cấu như cạnh
+hay biên của đối tượng.
+Bước 2: hai vector được tạo bởi GAP và GMP được đưa qua một mạng perceptron đa tầng có chia sẻ trọng số, kết quả đầu ra cũng tạo được hai vector có
+Bước 3: hai vector vừa tạo ra được cộng với nhau tương ứng từng phần tử, sau
+đó đưa qua hàm kích hoạt Sigmoid nhằm đưa giá trị về đoạn [0, 1]. Cuối cùng
+ta thu được một vector có kích thước [1x1xC] với ý nghĩa lưu giữ trọng số độ
+quan trọng mỗi kênh của đặc trưng.
+b, Mô-đun chú ý theo không gian (SAM)
+Mô-đun này tập trung tìm ra vị trí nào trên đặc trưng chứa thông tin quan trọng
+cần chú ý bằng cách đánh trọng số cho mỗi điểm ảnh trên bản đồ đặc trưng.
+Chi tiết cơ chế hoạt động của mô-đun được minh họa trong Hình 3.13và tổng hợp
+trong công thức ( 3.2), bao gồm 2 bước chính:
+Bước 1: đặc trưng đầu vào đồng thời được đưa qua toán tử gộp cực đại (Max
+Pooling - MP) và gộp trung bình (Average Pooling - AP), hai toán tử này được
+thực hiện theo chiều sâu của đặc trưng. Do đó, nếu đặc trưng đầu vào có kích
+thước [HxWxC] (C là số kênh), sau mỗi toán tử trên sẽ thu được đặc trưng đầu
+ra có kích thước [HxWx1].
+Bước 2: hai đặc trưng đầu ra sau khi thực hiện MP và AP được nối với nhau
+theo chiều sâu, thu được đặc trưng mới có kích thước [HxWx2]. Tiếp theo đó
+đưa qua một tầng tích chập với kích thước kernel=7 và padding=3 nhằm tạo
+ra đặc trưng đầu ra có kích thước chiều không gian không đổi và kích thước
+chiều sâu giảm về 1. Cuối cùng, đặc trưng đầu ra này được đưa qua hàm kích
+hoạt Sigmoid nhằm đưa giá trị trọng số về đoạn [0, 1], thu được đặc trưng có
+kích thước [HxWx1] với ý nghĩa lưu giữ trọng số độ quan trọng của từng điểm
+Trong quá trình nội soi đại tràng, bước đầu tiên bác sỹ nội soi sẽ xác định vị trí
+tương đối của polyp, sau đó xem xét cẩn thận vùng niêm mạc xung quanh để đánh
+nhãn polyp một cách chính xác nhất.
+Bản đồ đặc trưng toàn cục cho ra bởi mô-đun giải mã chỉ xác định được vị trí
+tương đối của polyp mà không mang nhiều thông tin cấu trúc chi tiết. Do đó, dựa
+theo phân tích của quá trình nội soi thực tế, trong đồ án này sử dụng mô-đun tinh
+chỉnh đặc trưng nhằm tinh chỉnh bản đồ đặc trưng toàn cục để đạt được độ chính
+xác và cho ra kết quả dự đoán hoàn thiện hơn. Mô-đun tinh chỉnh được thiết kế
+bao gồm hai mô-đun con: đặc trưng kim tự tháp theo kênh (channel-wise feature
+pyramid - CFP) và chú ý ngược (reverse attention - RA) (xem Hình 3.14).
+Kiến trúc trích xuất đặc trưng kim tự tháp (Feature Pyramid) được sử dụng rộng
+rãi trong các mô hình học sâu, đặc biệt trong tác vụ thị giác máy tính thực hiện
+dự đoán ở mức điểm ảnh bởi khả năng biểu diễn đặc trưng ở nhiều tỉ lệ khác
+nhau. Trong bài báo CFPNet [22] đã đề xuất mô-đun trích xuất đặc trưng kim tự
+tháp theo kênh (Channel-wise Feature Pyramid) lấy ý tưởng từ những ưu điểm của
+mạng Inception và tích chập dãn nở. Việc học song song và áp dụng tích chập dãn
+nở giúp mạng có thể học được nhiều chi tiết hơn, lấy được nhiều đặc trưng ở nhiều
+tỉ lệ khác nhau, trích xuất đặc trưng có trường tiếp nhận cục bộ lớn trong khi bảo
+toàn số lượng tham số cần học. Đây là một mô-đun cân bằng được cả 3 yếu tố: hiệu
+năng, kích thước và tốc độ. Kết quả thực nghiệm cho thấy CFP đạt được cải tiến
+đáng kể trong tác vụ thị giác máy tính đối với ảnh thông thường và ảnh y tế.
+Tổng quan kiến trúc mô-đun CFP:
+Với C là số chiều sâu của đặc trưng đầu vào, ta sẽ áp dụng một tầng tích chập
+sao cho kết quả đặc trưng đầu ra sẽ có chiều sâu là C/K. Đặc trưng này sẽ được
+song song đưa qua K kênh, mỗi kênh là một mô-đun FP có tỉ lệ tích chập dãn nở
+r khác nhau. Thông thường K được chọn bằng 4 và tỉ lệ tích chập dãn nở ở mỗi
+kênh{r1, r2, r3, r4}={1,2,4,8}. Ngoài ra, mô-đun FP chỉ đơn thuần bao gồm 3
+tầng tích chập dãn nở xếp chồng lên nhau, đầu ra của cả 3 tầng được nối với nhau
+theo chiều sâu để tạo kết quả cuối cùng (xem Hình 3.15 (b) ) . Trong CFP, kể từ đầu
+ra tại mô-đun FP thứ 2 sẽ được kết hợp với đầu ra của mô-đun FP tại bước trước
+thông qua toán tử cộng tương ứng từng phần tử. Sau khi hoàn thành K mô-đun FP,
+các kết quả đầu ra của K mô-đun FP này sẽ được nối với nhau theo chiều sâu (xem
+Phương pháp này được trình bày chi tiết trong bài báo Reverse Attention for
+Salient Object Detection [23], được tích hợp vào kiến trúc mạng cho bài toán phát
+hiện đối tượng nổi bật trong ảnh (Salient Object Detection- SOD). Với bài toán
+phân vùng ngữ nghĩa ảnh, mô hình cần phân vùng tất cả đối tượng trong ảnh, trong
+khi đó, SOD nhằm mục đích tìm vị trí và phân vùng đối tượng nổi bật hay thu hút
+nhất trong ảnh. RA được thiết kế nhằm tinh chỉnh bản đồ đặc trưng, giúp kiến trúc
+mạng tập trung học biểu diễn các phần thông tin chưa được khám phá, đặc biệt là
+Tổng quan mô-đun RA được minh họa trong Hình 3.16. Đầu vào của mô-đun
+RA gồm hai phần: (i) bản đồ đặc trưng F: chứa đặc trưng của đối tượng và (ii) đầu
+ra biên S i-1: là kết quả dự đoán của mô hình tại bước trước đó, kết quả này đang cần
+Cơ chế hoạt động của mô-đun RA:
+•Tạo mặt nạ bằng cách xóa đi vùng dự đoán của S i-1(hay vùng đối tượng đã
+được phát hiện từ đầu ra của bước trước) thông qua công thức:
+•Mặt nạ vừa tạo ra được nhân với bản đồ đặc trưng F bằng toán tử nhân tương
+ứng từng phần tử nhằm đóng băng thông tin đã được học trước đó, buộc mạng
+tập trung học để tìm ra thông tin tại vùng đối tượng chưa được phát hiện, giúp
+khám phá ra các phần đối tượng bị thiếu. Nhờ thiết kế này mà mạng có thể
+học được tốt chi tiết phần biên của đối tượng.
+Đầu ra của mô-đun RA là đặc trưng chứa thông tin còn thiếu nhằm bổ sung cho
+đầu ra dự đoán của bước trước. Do đó ta cần một kết nối phần dư kết hợp đầu ra
+của mô-đun RA và đầu ra của bước trước thông qua toán tử cộng tương ứng từng
+phần tử để thu được kết quả cuối cùng đã được tinh chỉnh (xem Hình 3.17).
+dự đoán của bước trước Si−1.
+Trong PraNet [2] và CaraNet [20] cũng đề xuất mô-đun tinh chỉnh đặc trưng,
+nhưng chỉ thực hiện tinh chỉnh tại 3 đặc trưng ở mức cao nhất cho ra bởi mô-đun
+mã hóa. Tuy nhiên, em nhận thấy tại các đặc trưng mức thấp đầu tiên của mô-đun
+mã hóa thường giàu thông tin chi tiết như thông tin kết cấu, màu sắc hay thông tin
+về cạnh. Do đó trong đồ án này đề xuất thực hiện tinh chỉnh tại cả 4 đặc trưng cho
+ra bởi mô-đun mã hóa.
+Hàm mất mát là sự kết hợp giữa Binary Cross-Entropy (BCE) và mean Intersection over Union (mIoU). Trong đó, BCE nhằm tính toán sự mất mát cục bộ (hay ở
+mức điểm ảnh), đo sự khác nhau giữa phân phối dự đoán của mô hình và phân phối
+thực; mIoU nhằm tính toán sự mất mát toàn cục, đo sự khác nhau giữa nhãn phân
+vùng dự đoán và nhãn thực. Đồng thời có sử dụng trọng số cho từng điểm ảnh và
+trọng số này tập trung hơn vào các điểm ảnh là biên của polyp.
+•yijlà giá trị nhãn thực (ground truth) tại điểm ảnh (i, j)
+•byijlà giá trị mô hình dự đoán tại điểm ảnh (i, j)
+•Aijlà vùng diện tích lân cận xung quanh điểm ảnh (i, j)
+•wijước tính độ quan trọng của điểm ảnh (i, j) bằng cách đo độ khác biệt giữa
+giá trị nhãn thực và giá trị các điểm ảnh lân cận xung quanh (i, j). wijcàng lớn
+thể hiện điểm ảnh này có sự khác biệt đáng kể với các điểm ảnh xung quanh,
+tức điểm ảnh này là đường biên hoặc nằm gần biên của polyp.
+Hàm mất mát được áp dụng lên bản đồ đặc trưng toàn cục Sgvà cả 4 đầu ra của
+mô-đun tinh chỉnh đặc trưng {S1, S2, S3, S4}(xem Hình 3.1). Trước khi tính toán
+hàm mất mát, các đầu ra này được chỉnh lại kích thước sao cho có cùng kích thước
+với nhãn thực thông qua phép nội suy song tuyến. Do đó, hàm mất mát tổng thể
+của mô hình sẽ là:
+Kết chương: trong chương này đã trình bày chi tiết 3 mô-đun của mô hình đề
+xuất. Mô-đun mã hóa sử dụng Mix-Transformer; mô-đun giải mã tích hợp song
+song các đặc trưng cho ra bởi mô-đun mã hóa với sự hỗ trợ của CBAM nhằm tạo
+bản đồ đặc trưng toàn cục; mô-đun tinh chỉnh đặc trưng là sự kết hợp giữa kiến trúc
+CFP và RA nhằm tinh chỉnh bản đồ đặc trưng toàn cục, tập trung hơn vào các phần
+thông tin chưa được khám phá, đặc biệt là biên của polyp. Chương này cũng định
+nghĩa hàm mất mát cần tối ưu, hàm mất mát này là sự kết hợp giữa IoU và BCE,
+trong đó có sử dụng trọng số cho từng điểm ảnh nhằm mục đích tập trung hơn vào
+các điểm ảnh là biên của polyp.
+Trong chương 3 đã trình bày chi tiết về mô hình đề xuất. Chương 4 này sẽ trình
+bày các độ đo hiệu năng của mô hình, bộ dữ liệu sử dụng, phương pháp thực nghiệm
+nhằm so sánh, đánh giá mô hình đề xuất với các mô hình khác và chứng minh sự
+hiệu quả của các mô-đun trong mô hình đề xuất.
+Để đánh giá hiệu năng của một mô hình phân vùng ảnh, thông thường sẽ sử
+dụng một số độ đo phổ biến như: Intersection over Union (Jaccard Index) hoặc
+Intersection over Union (IoU), cũng được biết đến là độ đo Jaccard index, đây
+là một độ đo được sử dụng phổ biến và hiệu quả trong phân vùng ngữ nghĩa. IoU
+được tính bằng cách lấy diện tích vùng chồng lấn của nhãn dự đoán và nhãn thực
+chia cho vùng diện tích hợp nhất của cả hai nhãn (xem hình minh họa 4.1).
+IoU có độ lớn nằm trong đoạn [0, 1], với 0 có nghĩa nhãn dự đoán và nhãn thực
+không có vùng chồng lấn, 1 có nghĩa là nhãn dự đoán và nhãn thực chồng lấn hoàn
+IoU được tính toán cho mỗi phân lớp riêng biệt, nếu nhãn dự đoán có nhiều lớp,
+ta sẽ tính giá trị trung bình của IoU theo công thức ( 4.1):
+Trong đó c là số lượng các phân lớp
+Dice coefficient là độ đo có liên hệ chặt chẽ và tương quan dương với IoU, độ đo
+này được tính bằng cách lấy 2 lần diện tích chồng lấn giữa nhãn dự đoán và nhãn
+thực chia cho tổng diện tích của hai nhãn (xem hình minh họa 4.2).
+Dice coefficient cũng có độ lớn nằm trong đoạn [0, 1], với 0 có nghĩa nhãn dự
+đoán và nhãn thực không có vùng chồng lấn, 1 có nghĩa là nhãn dự đoán và nhãn
+thực chồng lấn hoàn toàn.
+Dice và IoU có công thức và cách tính toán gần như tương tự nhau, tuy nhiên sự
+khác biệt của hai độ đo này thể hiện khi tính trung bình trên tổng thể bộ dữ liệu.
+IoU có xu hướng phạt nặng hơn với các điểm ảnh bị phân loại sai. Mối liên hệ giữa
+IoU và Dice được thể hiện trong công thức ( 4.2):
+Xét về khía cạnh ma trận nhầm lẫn, các độ đo có thể được biểu diễn lại như trong
+công thức ( 4.3) và (4.4):
+•iinlà giá trị điểm ảnh đầu vào
+•mclà giá trị trung bình tại kênh c
+•sclà giá trị độ lệch chuẩn tại kênh c
+•ioutlà giá trị điểm ảnh sau khi chuẩn hóa
+Ngoại trừ trọng số khởi tạo của mô-đun mã hóa MiT sử dụng trọng số được
+tiền huấn luyện trên bộ dữ liệu ImageNet, hai mô-đun còn lại là mô-đun giải mã
+và mô-đun tinh chỉnh đặc trưng sử dụng phương pháp khởi tạo He normal. Ngoài
+ra, sử dụng chiến lược huấn luyện ở nhiều tỉ lệ ảnh khác nhau. Trong đó, ảnh đầu
+vào được sử dụng ở các tỉ lệ (0.75, 1, 1.25). Phương pháp tối ưu sử dụng thuật toán
+Adam với tốc độ học (learning rate) khởi tạo bằng 1e-4. Đồng thời, giá trị tốc độ
+học giảm dần qua mỗi epoch theo hàm số:
+lr,các trường hợp còn lại,elà chỉ số epoch hiện tại
+Trong quá trình lan truyền ngược cập nhật trọng số, sử dụng kỹ thuật gradient
+clipping nhằm mục đích giới hạn giá trị gradient sao cho luôn nằm trong đoạn
+Phương pháp thực nghiệm : để đánh giá hiệu năng của mô hình đề xuất, trong đồ
+án thực hiện huấn luyện mô hình sử dụng dữ liệu là sự kết hợp của hai tập Kvasir và
+CVC-ClinicDB, với mỗi tập sẽ trích ra 80% dữ liệu cho tập huấn luyện và 10% dữ
+liệu cho tập phát triển. Sau đó, sẽ sử dụng 10% dữ liệu còn lại của hai tập Kvasir
+và CVC-ClinicDB để đánh giá khả năng học của mô hình. Cụ thể, tập dữ liệu huấn
+luyện sẽ bao gồm 1305 ảnh, tập phát triển bao gồm 145 ảnh và tập kiểm tra đánh
+giá khả năng học của mô hình bao gồm 100 ảnh của Kvasir và 62 ảnh của CVC-
+ClinicDB. Mặt khác, sử dụng toàn bộ các tập CVC-ColonDB, ETIS và tập kiểm tra
+của EndoScene (CVC-T) - đây là các tập dữ liệu mà mô hình không sử dụng trong
+quá trình huấn luyện, do đó sử dụng các tập này nhằm đánh giá khả năng tổng quát
+hóa của mô hình. Việc huấn luyện và kiểm định mô hình được thực hiện 5 lần, kết
+quả thí nghiệm thu được bằng cách tính trung bình các kết quả của 5 lần chạy.
+Kết quả thực nghiệm được so sánh với các mô hình tiên tiến nhất (SOTA) cho bài
+toán phân vùng polyp trên ảnh nội soi, bao gồm 9 mô hình: U-Net [15], UNet++
+[16], SFA [29], PraNet [2], CaraNet [20], HarDNet-MSEG [19], TransUNet [3],
+TransFuse [4] và Polyp-PVT [5]. Trong đó, U-Net, UNet++, SFA, PraNet, CaraNet,
+khác trên một số ảnh nội soi polyp phức tạp, chẳng hạn ảnh có độ tương phản thấp
+giữa vùng chứa polyp và vùng niêm mạc xung quanh, ảnh bị nhòe, ảnh có vùng đổ
+bóng, hay có kết cấu đa dạng, ... Có thể nhận thấy rằng, mô hình đề xuất có hai ưu
+điểm so với các mô hình khác: (i) Mô hình có khả năng nhận diện và phân vùng
+ổn định, thích ứng với dữ liệu trong các điều kiện khác nhau, chẳng hạn trong các
+điều kiện ánh sáng đa dạng, độ tương phản, phản chiếu khác nhau. (ii) Mô hình
+đề xuất cho ra kết quả phân vùng ít nhiễu hơn so với các phương pháp khác. Đồng
+thời, các kết quả phân vùng của mô hình có tính nhất quán bên trong và vùng biên
+của polyp được dự đoán gần với nhãn thực tế hơn.
+Mặc dù mô hình đề xuất đạt được một số cải thiện đáng kể so với các mô hình
+trước đây, tuy nhiên vẫn tồn tại một số trường hợp cho hiệu năng không được tốt.
+hình đề xuất. Chương sau sẽ rút ra kết luận, nêu lên ưu, nhược điểm của mô hình
+và đề ra hướng phát triển trong tương lai.
+Trên đây em đã trình bày nội dung đồ án “Phân vùng Polyp trên ảnh nội soi dựa
+trên kiến trúc Transformer” mà em đã thực hiện dưới sự hướng dẫn của TS. Nguyễn
+Thị Oanh. Đồ án đã hoàn thành các yêu cầu đề ra và đạt được một số kết quả nhất
+định. Vì thời gian nghiên cứu, tìm hiểu ngắn và còn nhiều hạn chế về trang thiết
+bị huấn luyện mô hình nên trong đồ án chỉ hoàn thành ở mức cơ bản và không thể
+tránh khỏi một vài thiếu sót khi trình bày và đánh giá vấn đề. Rất mong nhận được
+sự góp ý, đánh giá của các thầy cô bộ môn để đề tài của em thêm hoàn thiện hơn.
+Trong đồ án đã thực hiện tìm hiểu kiến trúc và xây dựng mô hình mạng nơron
+có khả năng phân vùng polyp từ ảnh nội soi đại tràng đạt độ chính xác cao, kích
+thước lưu trữ nhỏ và độ phức tạp tính toán thấp. Mô hình được xây dựng là sự kết
+hợp của ba thành phần: mô-đun mã hóa trích xuất đặc trưng ảnh đầu vào sử dụng
+Mix Transformer, mô-đun giải mã tạo bản đồ đặc trưng toàn cục bằng cách kết hợp
+song song các đặc trưng với sự hỗ trợ của cơ chế chú ý theo cả chiều sâu và chiều
+không gian (CBAM), mô-đun tinh chỉnh đặc trưng là sự kết hợp giữa trích xuất đặc
+trưng kim tự tháp theo kênh (CFP) và cơ chế chú ý ngược (RA).
+Kết quả thực nghiệm cho thấy mô hình đề xuất đạt kết quả tốt trên cả 5 tập dữ
+liệu đánh giá mà không cần sử dụng bất kỳ phép hậu xử lý nào. Đồng thời, đạt độ
+chính xác cao không những trên các mẫu dữ liệu ảnh polyp có kích thước lớn mà
+còn trên các các mẫu dữ liệu chứa polyp có kích thước nhỏ hoặc rất nhỏ. Thêm vào
+đó, mô hình mạng đề xuất có số lượng tham số và số lượng phép tính dấu phẩy
+động (FLOPs) đều thấp hơn so với các kiến trúc mạng SOTA gần đây cho bài toán
+Mặc dù đạt được những cải tiến đáng kể nhưng mô hình vẫn còn tồn tại một số
+hạn chế có thể kể đến như: chưa xử lý được hiện tượng nhận nhầm là polyp trong
+các trường hợp ảnh nội soi có nhiễu, xảy ra vấn đề nhòe chuyển động hay vùng
+niêm mạc bình thường nhưng có ánh sáng phản chiếu đến. Độ chính xác phân vùng
+chưa cao ở những vùng đổ bóng hay vùng giao giữa ánh sáng và bóng tối.
+Mô hình đề xuất tồn tại một số tiềm năng đáng kể để tối ưu hóa mô hình. Chẳng
+hạn, sử dụng toán tử nội suy song tuyến để thay đổi kích thước đặc trưng dẫn đến
+không thể tránh khỏi xảy ra mất mát thông tin. Có thể cải tiến bằng cách thay thế
+toán tử nội suy song tuyến bằng một tầng tích chập có kích thước bộ lọc phù hợp.
+Ngoài ra, bộ khung trích xuất đặc trưng MiT sử dụng trọng số khởi tạo được tiền
+huấn luyện trên bộ dữ liệu ImageNet, đây là bộ dữ liệu chứa ảnh tự nhiên nên có
+tính chất khá khác với ảnh nội soi y tế.
+Trong tương lai để cải tiến hơn nữa, có thể thiết kế chiến lược tăng cường dữ
+liệu, nghiên cứu cách kết hợp mô hình đề xuất với các phương pháp học bán giám
+sát để giải quyết vấn đề khan hiếm nguồn dữ liệu y tế hay các phương pháp học
+thích ứng miền để nâng cao khả năng tổng quát hóa của mô hình trên các miền dữ
+liệu đa dạng, chẳng hạn trên các hệ thống máy, các chế độ ánh sáng nội soi khác
