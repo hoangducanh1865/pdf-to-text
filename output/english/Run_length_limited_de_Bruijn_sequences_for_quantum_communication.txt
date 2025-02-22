@@ -1,0 +1,740 @@
+
+First and foremost, I would like to express my sincere gratitude to the subject teachers at Hanoi University of Science and Technology for their continuous
+guidance throughout my study, especially ones from School of Information and
+Communication Technology. During the past three and a half years, I have learned
+from them needed knowledge for pursuing later stages in my Computer Science
+I thankfully acknowledge the support of Prof. Huynh Thi Thanh Binh, who
+accepted me into MSO Lab and guided me in the first steps of my research career.
+My appreciation also extends to my laboratory colleagues, I’m very happy to have
+had the opportunity to collaborate with all of you, especially M.Sc. Tran Ba Trung,
+who introduced and invited me to joint work with him on our very first theoretical
+topic. I would also like to send my sincerity to other members of MSO Lab, Dr.
+Nguyen Thi My Binh, M.Sc. Nguyen Hong Ngoc, Tran Cong Dao, Tran Huy
+Hung and Nguyen Dac Tam. Dr.Binh and M.Sc Ngoc supported me a lot when I
+first joint our lab. Brothers Dao, Hung, and Tam lent a hand to review my thesis.
+I also cherish the moment of doing my thesis under the supervision of Dr. Tran
+Vinh Duc. Though time is short, but his style in research inspired me so much.
+Taking my first step in doing theoretical research, I owe a great debt of gratitude
+to Dr. Ta Duy Hoang (ENS de Lyon) and Dr. Vu Van Khu (National University
+of Singapore) for training and mentoring me during the working on various problems including ones in this thesis. Without their support (both professionally and
+personally), it would not have been possible for this work to progress as far as it
+I’m also grateful to FPT Young Talent’s members, especially Do Hoang Khanh,
+Lai Ngoc Tan, and Thanh La. I’ll always remember the late night we spent together
+sharing our stories and our plans. I had known the way to find my answer to ”Who
+am I going to be? How do I want to live in the next 10 years? 20 years? . . . ?” since
+In Bach Khoa Street Workout, my gratitude goes to Xuan Nam, Duc Anh, and
+Thanh Hai. We’ve trained and shared our experiences in SW, life and work as
+My student’s life must be harder without the following idiots: Phan Viet Hoang,
+Phi Phuc , Khanh Doan, Ng Duc Long, Tran Anh, Ba Tan, and Hong Sang. They
+are my best friends for the last four years.
+I’m also very grateful to my aunt Hang and uncle Lich, who always look after
+me just like my mom and dad.
+Last but not least, this thesis is dedicated to my parents for the two decades of
+your love and support. I would not have come this far without your loving weight
+Quantum key distribution (Quantum key distribution) is a secure communication enabling two parties to produce a shared random secret key known only to
+them. Current commercial deployed QKD systems have transmission range restricted to under 1000 km because they rely on optical fiber. The alternative method,
+satellite QKD, is able to overcome this issue but faces a new challenge caused by
+noisy environments and swift relative motion between the transmitter and receiver.
+Therefore, a classical channel, which actually is a timing and synchronization
+system, is used along with the quantum channel. In such systems, Peide Zhang
+.et.al proposed to transmit a positioning sequence (also known as a de Bruijn sequence). To consider the timing jitter performance, a long period of no-pulses
+should be forbidden. In Peide Zhang’s method, two pulse slots are used to represent a single bit (on-on is 1and on-off is 0) so that one can avoid two consecutive
+no-pulses. However, the above scheme, called Hybrid de Bruijn (Hybrid de Bruijn)
+code, requires 2npulse slots to represent a de Bruijn sequence of length nand it
+needs to receive a sub-sequence of 2 lognpulse slots to locate its position.
+Observe that it is possible to use less redundant pulse slots to achieve both goals:
+to synchronize accurately and to avoid a long period of no-pulses, in this thesis,
+Run length limited de Bruijn sequences are designed in which each binary bit is
+represented by only one pulse slot, 1is on and 0is off. The RdB sequences are
+shown to be more general and efficient than the previous work.
+This thesis provides the first explicit formula for the maximal length of the run
+length limited de Bruijn sequences. Furthermore, using Lyndon words, an efficient
+construction of a run length limited de Bruijn sequence with the maximal length is
+presented. In addition, a sub-linear decoding algorithm that can locate the position
+of an arbitrary substring is also provided.
+A de Bruijn sequence, or a positioning sequence, (of order k) is a binary sequence in which every possible length- kstring appears exactly once as a substring.
+The uses of de Bruijn sequences have been found in various fields. Recently, a
+novel application of positioning sequences has been found in quantum communication by Zhang, Oi, Lowndes, et al. They adopt such sequences into HdB sequences to develop a system for synchronizing in quantum channels. Though having shown advantages against other methods [1], such implementation still has
+drawbacks and there is room for improvements. This thesis focuses on designing a new constrained de Bruijn sequence and proving its efficiency against HdB
+Chapter 1 first briefly introduces the QKD protocol, along with the reasonable
+motivation to study the synchronization mechanisms in satellite quantum channels. Among such mechanisms, the timing and synchronization system proposed
+by Zhang, Oi, Lowndes, et al. in [1] is analyzed to recognize its disadvantages.
+The main results of this thesis, which aim to improve those weaknesses, are summarized. The organization of the whole thesis is given at the end of this chapter.
+Symmetric, public-key (asymmetric), and hash-based cryptography are fundamental pillars of modern cryptography. While symmetric schemes and hash functions are less vulnerable to quantum attacks, the asymmetric schemes based on
+factoring or solving the discrete logarithm problem, for example, Rivest-ShamirAdelman (RSA), Elliptic Curve Cryptography, are completely broken by a quantum adversary via Shor’s algorithm [2]. Currently deployed public key cryptosystems are used to establish a common secret key between two parties. Doing the
+same jobs, QKD enables two parties to produce a shared random secret key known
+only to them. Moreover, QKD can guarantee the security of communication links
+making them immune to quantum computer-based attacks [3].
+The first invented QKD protocols are BB84 [4], and E91 [5]. Since 2005, QKD
+has been initially implemented in real life. For example, in 2005, the University of Geneva and Corning Inc used a fiber optic wire of 307km. In 2007, Los
+Alamos National Laboratory and the National Institute of Standards and Technology (NIST) used the BB84 protocol over a 148.7 km optical fiber. In 2018,
+Quantum Xchange launched the first quantum network in the U.S., offering 1,000
+km of fiber optic cable and 19 colocation centers along the Boston-to-Washington,
+D.C., corridor and metro hubs. However, due to the intrinsic exponential losses
+over optical fiber, the deployed QKD systems’ range is restricted to under 1000
+km. So as to establish intercontinental secure communication links, which usually
+require a range over 1000 km, satellite QKD has been proposed as an alternative,
+with the pioneering Micius satellite. In these systems, the transmitter (satellite) and
+the receiver (optical ground station) relentlessly exchange information after measuring the quantum states. But transmitting faint quantum optical pulses between a
+satellite and the Earth is challenging due to high channel losses cause by volatility
+environments and rapid relative motion between two parties.
+To deal with this problem, reliable and efficient timing and synchronization
+systems have been proposed in [6], [7]. In this system, a classical channel is used
+along with the quantum channel, because of its advantage in synchronization.
+Based on that concept, in [1], a de Bruijn based timing and synchronization
+system is introduced using a beacon with an on-off model. In this model, a de
+Bruijn sequence is transmitted from the satellite to the ground for synchronization.
+The superiority of this system relies on the intrinsic property of the positioning
+sequence, which is self-located. However, in dBTS, the method [1] use requires
+2pulse slots to modulate 1bit to balance encoding sequence with timing jitter
+performance. Consequently, the (information) rate of the transmitted sequence,
+called HdB sequence is 0.5. The formal definition of information rate is given
+section 2.1.2. This quantity is usually expected to be as high as possible.
+Moreover, to generate positioning sequences, dBTS applies Linear feedback
+shift register algorithm, which is fast, but depends on finding a suitable primitive
+polynomial first. To determine the location of a subsequence in the whole positioning sequence, the system uses a look up table, which is a costly approach. More
+details about the generate algorithm, look-up table, and the analysis of this system
+are presented in the next chapter.
+Such flaws of Zhang, Oi, Lowndes, et al. ’s system, fortunately, can still be
+improved. That is the goal this thesis aims to. The main task here is to design a
+code satisfying the constraints of dBTS system.
+Problem Statement : Designing a high rate sequence that is capable of positioning and avoids long periods with no pulse
+This problem is similar to constructing a constrained positioning sequence. In
+this thesis, RdB are developed. The longest RdB sequences, not only have a high
+rate but also are generated and decoded rapidly. In summary, the contributions of
+this thesis are listed as follows:
+• Proposing a new kind of sequence (RdB), more efficient (higher rate, more
+general and adaptive) than HdB sequences.
+• Determining the length of the longest RdB sequences.
+• Determining the maximal asymptotic rate of RdB sequences.
+• Providing fast encoder and decoder based on state-of-the-art algorithms.
+The rest of this thesis is organized as follows. Chapter 2 gives a brief introduction to coding theory and the application of de Bruijn sequences in such a research
+area. Other important results surrounding de Bruijn sequences and their generalizations are also provided. Chapter 3 describes precisely the proposed run length
+limited de Bruijn sequence. For more understanding, the graph presentation of
+such sequences is presented. Chapter 4 studies the properties of the longest run
+length limited de Bruijn sequence. This chapter answers the major questions: How
+long is that sequence? What is its rate and maximal asymptotic rate? How to generate the longest run length limited de Bruijn sequence of order k? Also, how to
+locate the position of each length ksub-string of such a sequence?
+Source coding plays the role of changing the message source to a code that
+is suitable for transmitting through the channel. For example, ASCII code is a
+source coding standard converting each character to a byte of 8 bits is an example
+of source coding. Another way to think about source coding is to treat it as a
+compress-decompress process. At the transmitter, the source encoder compresses
+the message for the purpose of economizing on the length of the transmission. At
+the other end, the source decoder decompresses the received signal or sequence.
+The commonly used compression algorithms include Huffman code used in JPEG,
+MPEG, MP3 files, Lempel-Ziv code used in ZIP files, . . . .
+Because of physical and engineering limitations, channels are not ideal: their
+output may differ from their input because of noise or manufacturing defects. The
+transmitted message may become distorted and the receiver might not realize that
+the message was corrupted. Additionally, there are applications, such as magnetic
+and optical mass storage media, where certain patterns are not allowed to appear
+in the channel’s bit stream. The main role of channel coding is to overcome such
+limitations by encoding the message again after the source coding while maintaining the channel as transparent as possible from the source and destination points of
+Section 2.1.1 has introduced basic ideas of coding theory. In the next section,
+this thesis provides the commonly used notations and terminologies of this research
+The most essential element of coding theory is codeword , which is a sequence
+of code symbols taken from a code alphabet
+Definition 1 (Code Alphabet) .A code alphabet is set Σ ={a1, a2, . . . , a q}of size
+q. The elements of Σare called code symbols, letters, and bits if q= 2. Aq-ary
+word of length nover Σis a sequence (or string) w=w1w2. . . w n∈Σnwith each
+In practice, the size of a code alphabet is often the size of a finite field, which
+is the power of a prime number. Hence, for simplicity, Σcan be treated as a set of
+the first qnon-negative integers without ambiguity. More particularly, the notation
+Σ = 0 ,1,2, . . . , q −1can be used instead.
+Definition 2 (Code and Codeword) .Aq-ary block code Cover Σis a nonempty set
+Cofq−arywords of the same length n. Each element of Cis called a codeword
+The study of a code Cinvolves the following process in an example of channel
+coding. Suppose that ΣandΣ′are finite input and output of the channel respectively. Let m, taken out of Mpossible information words, be a message input to the
+channel encoder. Through a desired channel encoder, the message mis mapped to
+a longer codeword c∈Σn. The word cis transmitted through the channel, become
+y∈Σ′n. After receiving y, the role of the channel decoder is to produce codeword
+ˆcand a decoded information word ˆu, aiming to have c=ˆcandu=ˆu. Consequently, the mapping at the channel encoder needs to be one-to-one, and the size
+of the code Cis the maximal possible number of messages, or |C|=M.
+Observe that, using code C, it takes a sequence of length nto encode a sequence
+of length log|Σ|(|C|). In other words, n−log|Σ|(|C|)”redundant” bits were added
+to the message so that the channel can achieve its goal. Accordingly, a quantity
+concerning this redundancy was introduced, called (information) rate .
+Definition 3 (Information rate) .The (information) rate of a code Cover an alphabet of size qis defined as:
+Works in coding theory, including this thesis, are interested in designing codes
+with a high rate, along with efficient encoder, and decoder, that can be used in
+Based on their motive or their intrinsic properties, codes are categorized into
+linear codes, constrained codes, error-correcting codes, and error-detecting codes,
+. . .. This thesis focus on the combination of a constrained code, run length limited,
+and positioning code. A brief introduction to constrained code is given in the next
+Constrained Code is a sub-field of Coding theory, studies to design codes satisfying given constrained. The inspiration for the research of constrained codes
+comes from real problems. The transmitted data needs to follow some given standards which are necessary for the code to surmount the flaw of the environment.
+For instance, in CD disc storage, errors tend to occur when there is a sequence of
+many consecutive 0bits. Consequently, it’s crucial to construct codes that should
+avoid a long sequence of 0bits. A famous code invented to overcome this challenge
+is Run length limited code by Immink [9]. RLL codes are defined by 2parameters: d, k, and denoted by (d, k)-RLL, where dandkare two non-negative integers
+such that d⩽k. A finite length binary sequence is said to satisfy the (d, k)-RLL
+constraint if its number of 0’s between 2consecutive 1bits is at least dand at most
+An illustration is a convenient way to begin understanding things. In constrained
+code, a graph, usually called a labeled graph, is a helpful visualization technique.
+More particularly, a labeled graph is a directed graph with its vertices and edges
+labeled. Vertices in the labeled graph are also called states. And the start and end
+vertices of a directed edge are called initial and terminal states respectively. Given
+a state v, in-edges of vare edges treating vas a terminal state. Similarly, out-edges
+ofvare edges taking vas an initial state.
+For example, the graph in figure 2.2 represents a (d, k)-RLL code. It can be
+verified that a sequence wsatisfies the (d, k)-RLL constraint if and only if a path
+whose edge labeling is wexists in the graph.
+Labeled graphs are however more than just visualization tools. Using the finite
+state splitting algorithm, they become encoders. In a constrained system, a very
+common problem is designing an encoding algorithm, which maps arbitrary user
+sequences into sequences obeying the constraints. Nevertheless, it’s crucial to note
+that there are many kinds of encoders, depending on their objectives. For instance,
+there are encoders not taking any sequences as input, their goal is just to generate
+sequences satisfying given constraints. Such encoders are focused on in this thesis.
+Besides constrained code, another combinatorial object drawing much attentions in coding theory is positioning code, also known by the name de Bruijn code.
+The formal definition of this code and its important results are presented in the next
+A de Bruijn sequence (of order k), sometimes called a positioning sequence,
+over an alphabet Σ, is a sequence of symbols of Σsuch that all subsequences over
+Σof length kappear exactly once. This section first explains how to use a graph to
+represent de Bruijn sequences, and then introduces methods to generate or decode
+such sequences. Important results on the granddaddy, one of the most interesting
+de Bruijn sequences, which play a significant role in this work, are also given.
+Since the first time introduced in 1946 by de Bruijn himself, the de Bruijn graph
+and its related sequences have been well-studied and generalized under numerous names, including positioning sequences, m-sequences, shift register sequences
+[10]–[14]. The goal of de Bruijn was to find a recursive algorithm to enumerate
+the number of cyclic binary sequences of length 2ksuch that each binary k-tuple
+appears as a window of length kexactly once in each sequence.
+The first results in the de Bruijn graph focused on the alphabet of size 2. Later,
+in 1951, van Aardenne-Ehrenfest and de Bruijn [15] generalized the enumeration
+result for any arbitrary alphabet of finite size q, using a generalized graph for an
+Definition 4 (de Bruijn graph) .Formally, the de Bruijn Graph of order k,Gkis
+a directed graph with qk−1vertices, each one is represented by a word of length
+k−1over an alphabet Σwith qletters. A directed edge from the vertex x=
+(x0, x1, . . . , x k−2)to the vertex y= (y1, y2, . . . , y k−1), represented by the symbol
+xk, where xi, yi∈Σ, if and only if xi=yifor all 1⩽i⩽k−2. We call this edge xk
+the out-edge of x, and the in-edge of y. Progressively, the in-degree and out-degree
+of a vertex xare the numbers of in-edges and out-edges of xrespectively.
+Deduced from the definition, the in-degree and out-degree of each vertex are q.
+Thus, a de Bruijn graph is an Eulerian graph. Figure 2.3 gives an illustration for
+Path : Apath in the graph is a sequence of edges: e0, e1, . . . , e nsuch that the
+terminal vertex of edge eiis the the initial vertex of edge ei+1for all 0⩽i⩽n−1.
+Asimple path is a path going through each edge at most one time. Each longest
+simple path in a de Bruijn graph is an Eulerian cycle. A sequence formed by concatenating the symbol of each edge in the longest simple path in Gkis called a
+(cyclic) de Bruijn sequence of order k. All the strings of length kappear exactly
+once in each such de Bruijn sequence. The acyclic version of the de Bruijn sequence can be obtained by prepending the sequence representing the first vertex in
+the corresponding Eulerian cycle to the cyclic one.
+Example 2.1. Consider an Eulerian cycle starting at vertex 000, then the symbols
+representing the following edges 0,1,0,1,0,0,1,1,1,0,1,1,0,0,0form a de Bruijn
+sequence order 4. Adding 000to its beginning results in an acylic one:
+The number of longest simple path in Gk, and also the number of de Bruijn
+sequences, have been proved in [15] to beq!qk−1
+Example 2.2. Forq= 2, k= 4, there are 16distinct de Bruijn sequences. From
+figure 2.3, those de Bruijn sequences are found and listed as follows:
+Encoding de Bruijn sequences concerns generating an arbitrary de Bruijn sequence or a de Bruijn sequence satisfying some given constraints. Finding a de
+Bruijn sequence is equivalent to seeking an Eulerian cycle in a de Bruijn graph.
+In [16], [17], efficient algorithms to find Eulerian cycles are presented. Especially,
+the approach in [16] can be used to generate all binary de Bruijn sequences. However, since the graph must be stored, applying such algorithms to find a positioning
+Besides the graph-based approach, there are other well-known methods to construct such sequences, including LFSR, recursive methods, greedy methods, and
+The idea of LFSR is to design a feedback function fmapping length kstrings to
+{0,1}. Starting with an initial length kstring, fis repeatedly applied to the last k
+symbols of the current string to generate the next symbol until the maximal length
+of a de Bruijn sequence is reached. If fis linear, then, the function F(α) =αf(α)
+is said to be a LFSR, where αis a length kstring. LFSRs based on primitive
+polynomials generate maximal length sequences (positioning sequences) having
+length 2k−1that miss only the all 0string. The downside of this method is that
+it’s compulsory to find a primitive polynomial first.
+De Bruijn sequences can also be constructed via recursion by applying Lempel’s
+D-morphism D:{0,1}m→ {0,1}m−1which maps a string α=α1α2. . . α mto
+β=β1β2. . . β m−1, where each bi=ai+ai+1(mod 2). Nevertheless, an exponential
+amount of space is also required by these recursive strategies.
+Surprisingly, greedy approaches are also able to generate de Bruijn sequences.
+The greedy construction starts with a seed string, then repeatedly applies some
+greedy rule to determine the next symbol of a sequence. The algorithm stops when
+it is impossible to add another symbol without creating a duplicate substring of
+length k, or some termination condition is reached. The different explicit greedy
+An order kbinary de Bruijn sequence is eventually an U-cycle of the set of all
+length kbinary strings. The studies of U-cycle are concerned with the existence
+and construction of U-cycles for many combinatorial objects such as strings, permutations, partitions, subsets, multisets, lattice paths, vector spaces weak orders,
+etc [28]–[33]. Section 2.3.1 provides results for permutations, partitions, and subsets of a set of ndistinct symbols, where nis a positive integer. These results were
+first summarized by Chung, Diaconis, and Graham in [28].
+Consider the set Snof all n!permutations of {1,2, . . . , n }. With each value of
+n, setSnmay not always contain any U-cycles, such as n= 3. All 6permutations
+of{1,2,3}areS3={123,132,213,231,312,321}, and the longest cycle in S3one
+can travel is of length 4, for instance, 123→231→312→123, which still lacks
+However, if order-isomorphism is allowed instead of requiring exact matches,
+U-cycles of Snexists. More precisely, an U-cycle Un= (a0, a1, . . . , a n!−1),ai∈
+{1,2, . . . , N }, for Snisn!-tuple such that each element of Snis order-isomorphic
+to exactly one block (ai+1, . . . , a i+n), where ai=aj≡i( mod n!). Here, two n-tuples
+a= (a1, a2, . . . , a n)andb= (b1, b2, . . . , b n)are called order-isomorphic, written as
+a∼b, ifai< aj⇔bi< bjfor all 0< i, j⩽n. An example of U-cycle for S3is :
+1 4 5 2 4 3
+By order-isomorphism, each 3-tuple in the above U-cycles can be mapped into
+and hence, the equivalent cycle is 123→231→312→132→312→213→123.
+The construction of de Bruijn graphs can be imitated to construct the transition
+graph for Sn. Each permutation plays the role of a vertex. Their suffix of length n−
+1is analyzed to establish its edges to other permutations. Takes the vertex 231ofS
+as an example. From its suffix 31, one can go to 312. But since order-isomorphism
+is accepted, and note that 31∼21∼32, there are also edges connecting 231to213
+and321. The whole transition graph of S3is shown in figure 2.4.
+It is proved that the transition graph of Snis Hamiltonian, and a Hamiltonian
+cycle in the transition graph corresponds to an U-cycle in Sn. Now, the key question
+is how to represent a U-cycle of an Hamiltonian cycle, like the sequence 1 4 5 2 4 3
+represents 123→231→312→132→312→213→123. Even with S3, is5
+the smallest number of distinct symbols necessary for an U-cycle. More generally,
+how many distinct symbols does an U-cycle of Snuse at least?
+Actually, in S3, one can do better with 4symbols. For example, the sequence
+1 4 2 3 4 2 is the representation of a Hamiltonian cycle:
+The following sequence is an example with 5symbols for S4:
+1 2 3 4 1 2 5 3 4 1 5 3 2 1 4 5 3 2 4 1 3 2 5 4
+LetN(n)be the minimum number required for an U-cycle of Sn, it is proved
+N(2) = 2 , N(3) = 4 , N(4) = 5 and n+ 1⩽N(n)⩽6nforn⩾5
+Fan Chung believes that the equation happens at n+ 1. However, their belief
+remains an unsolved conjecture until now.
+Conjecture 1. N(n) =n+ 1.
+Constructing transition graph is also help finding U-cycle for the set of Pnof
+partitions of the set {1,2, . . . , n }. The partitions can be represented by sequence of
+length n(a0, a1, . . . , a n), where ai=ajindicates the i-th element and j-th element
+are in the same group of the partition. The transition graph of Pnis illustrated in
+The transition graph of Pnis proved to be Hamiltonian by showing that it can
+be clustered to be an Eulerian graph.
+It is more challenging to study the familyn
+kof all k-element subsets of a set of
+ndistinct elements {0,1, . . . , n −1}. This thesis provides an example of an U-cycle
+for the case n= 5, k= 2:
+1 3 2 5 4 2 1 5 3 4
+The question about the condition for the existence of the universal cycle for
+such a family is still not answered completely. The difficulty here is that a trankisn’t able to be defined explicitly. This issue is caused by the
+distinguishing feature of an k-set. More precisely, a k-element subset might occur
+in any k!possible order in the U-cycle, but it is only allowed to occur once. Fan
+Chung and Graham made a conjecture on this problem and the first person who
+can solve it would earn a prize awarded by the author’s conjecture.
+Conjecture 2 (Fan Chung’s conjecture) .Universal cycle forn
+It’s easy to see that conjecture 2 is true for k= 1,2. Effort on this question has
+just cracked completely the cases k= 3,4,5(with some aid of a computer), and
+k= 6whenever nandkare relatively prime( [34], [35]). For k⩾7, and k= 6
+when nandkare not relatively prime, conjecture 2 remains open.
+Besides studying the existence of U-cycle on different kinds of sets, designing
+algorithms that create universal cycles is also concerned.
+There are researches focusing on using generalized the FKM algorithm and
+greedy algorithm to create universal cycles for a class of sets. Moreno proved
+that this method works for the set of rotations of the lexicographically largest i
+necklace [36]. The aperiodic strings in the set of all k-ary strings of length ncan
+be generated the same way as shown by Au in [37]. All these results are later generalized by Joe Sawada et.al in [38]. More particularly, let Sbe the set of length n
+k-ary strings such that the following closure conditions are obeyed:
+• The set of strings Sis closed under rotation.
+• Its subset of necklaces is closed under replacing any suffix of length ibyki.
+Then, the greedy and FKM algorithm create the lexicographically smallest universal cycle of S. Several such classes Sare listed in example 2.4.
+Example 2.4. Recall that Σq={1,2,3, . . . , q }is a code alphabet of size q, and Σn
+is the set of q-ary sequences of length nover alphabet Σ. The following sets satisfy
+the closure conditions for the existence of universal cycles proved by Sawada [38].
+qis a set of length nstrings with sum over all of its
+symbol at least s, where sis a given constant.
+qcontains the strings with at least lqcopies of q, where
+•Frequency of i < q :S∈Σn
+qcontains the strings with at most uicopies of
+i < q . Here, uiis a given constant.
+qcontains the strings that do not contain a given
+q−1, for some m⩾1, as a cyclic substring.
+•Union and Intersection : Let S1andS2be2set obeying the closure conditions, then both S1∪S2andS1∩S2also satisfy those conditions.
+Note that, in example 2.4, the union and intersection of the proper sets Sallow
+to combine the previous results to create more interesting classes of sets that have
+Section 2.3 has provides different research directions and results on the universal cycle, which is a generalization of de Bruijn sequences. The applications of de
+Bruijn sequences and their generalizations will be presented in the next section.
+The reason why the de Bruijn graph, its sequence, and its generalizations are
+having so much attention is due to their diverse important applications. Very soon
+after the formal definition of this graph was given birth, one of its first applications
+was found in the introduction of shift-register sequences in general and linear feedback registers in particular [39]. Throughout the years, these types of sequences
+and graphs have found a variety of applications.
+In cryptography, for example, the Baltimore Hilton Inn used de Bruijn sequences
+to install a cipher lock system for each of its rooms in lieu of the conventional
+key-lock system [12]. The low-cost n-stage shift register was used to generate
+maximum-length pseudorandom sequences in stream cipher, though later, this method
+was proved to be vulnerable to known-plaintext attack [40].
+De Bruijn sequences also opened a new field of research surrounding their complexity. Agnes Hui Chan et.al studied the complexity and the distribution of the
+complexities of de Bruijn sequences [41]. Especially, for binary sequences with
+period 2n, they come up with a fast algorithm determining its complexity [42]. Edwin on himself analyzed the structure and complexity of nonlinear binary sequence
+generators [43]. Tuvi et.al studied the error linear complexity spectrum of binary
+sequences with period 2n[44]. Also Tuvi, in his joint work with Lampel [45],
+found a construction of the de Bruijn sequence to show that the lower bound of its
+complexity ( 2n−1+n) is attainable for all n.
+In [46], A.Lampel and M.Cohn are interested in designing a universal test sequence for VLSI (very large-scale integration chip). A binary sequence is called
+(s, t)-universal, s > t , if when shifted through a register of length s, it exercises
+every subset of tregister positions. Their proposed method was concatenating a
+set of de Bruijn sequences of appropriate length. In [47], Zeev Barzilai .et.al also
+demonstrated an application of de Bruijn sequence in VLSI self-testing.
+There are also other applications requiring a two-dimensional version of de
+Bruijn sequences. And the research about the two-dimensional generalization of de
+Bruijn sequences comes to call. One well-known version is called pseudo-random
+arrays. In 1976, Mac Williams and Neil Sloane [48] gave a simple description
+of pseudo-random arrays and studied several of their nice properties. In 1988,
+Tuvi [49], represented a new version of pseudo-random arrays to construct perfect maps. In another approach by Bruck Stein [50], he combined a de Bruijn
+sequence and a half de Bruijn sequence to study its robust and self-location properties. Studies [51]–[55] used pseudo-random arrays to with applications to robust
+undetectable digital watermarking of two-dimensional test images, and structured
+More surprisingly, de Bruijn’s modern applications are even combined with biology, like genome assembly as part of DNA sequencing. For example, Chaisson
+et.al [56] described a new tool, EULER-USR, for assembling mate-paired short
+reads and used it to analyze the question of whether the read length matters. Compeau et.al [57] represented a method using the de Bruijn graph for genome assembly. In 2001, Pevzner et.al [58] abandoned the classical “overlap - layout -
+consensus” approach in favor of a new Eulerian Superpath approach, that, for the
+first time, resolves the problem of repeats in fragment assembly. Later on, in 2003,
+Yu Zhang and Michael Waterman [59], adapted Pevzner’s method to global multiple alignment for DNA sequences. In DNA storage, Han Mao et.al [60], [61]
+studied codes and their rates for DNA sequence profiles. Their studies were based
+on the de Brujn graph.
+In some new memory technologies, mainly in racetrack memories, and other
+ones which can be viewed as an l-read channel, synchronization errors (which are
+shift errors known also as deletions and sticky insertions) occur. By proposing a
+new de Bruijn-based schema, using a locally-constrained de Bruijn sequence to
+construct such code, Chee et.al. [62] are able to increase the rate of codes that
+correct the synchronization errors. Locally constrained de Bruijn sequences and
+codes (sets of sequences) are of interest in their own right from both practical and
+Recently, in 2021, a novel application of the de Bruijn sequence has been found
+in quantum communication. Generally, to transmit quantum information between
+a satellite and the ground station, a timing and synchronization system has been
+used. Having observed that the intrinsic properties of the positioning sequence are
+very suitable for this system, Zhang, Oi, Lowndes, et al. [1] have modulated it into
+HdB sequence to transmit along the quantum channel. Their system is analyzed in
+In satellite QKD, the quantum information is synchronized by transmitting along
+with the classical one. Figure 2.6 shows a high-level view of this schematic.
+At the beacon source, a de Bruijn sequence is modulated before transmitting to
+The encode process happens at the satellite, where it uses the LFSR algorithm
+In this chapter, new constrained de Bruijn sequences are introduced. Since a
+de Bruijn sequence is self-located, the run length limited constraint is the only
+requirement remaining that this sequence needs to satisfy to be used in the dBTS
+system. Therefore, combining a positioning sequence and a run length limited
+sequence is a natural solution. That is also how this thesis gave birth to the name:
+Run length limited de Bruijn sequence. Besides, just like other constrained codes,
+a convenient way to apprehend a code is using a labeled graph. Hence, the graph
+presentation of these sequences is also provided.
+Letn, k, s, q be some positive integers and Σq={0,1,2, . . . , q −1}be an alphabet of size q. Asequence s= (s1, s2, . . . , s n)∈Σn
+qis over an alphabet Σ, that is,
+si∈Σq. This thesis only focuses on the case q= 2and thus drops qin the notation
+for simplicity. Sequence s=s1s2. . . s n∈Σnis also written without ambiguity.
+The window (substring) (si, si+1, . . . , s j)is denoted by s[i, j].
+Given two sequences x=x1x2. . . x mandy=y1y2. . . y n, denote the concatenation of xandyto be xy=x1x2. . . x my1y2. . . y n, and denote xkthe concatenation
+ofkcopies of x. It is said that xis smaller than y, denoted x<y, if there is an
+index t⩾1, such that xi=yi,∀i⩽t, and xt+1< yt+1. Note that empty sequence
+Definition 6. A sequence s= (s1, s2, . . . , s n)is called a s-run length limited (RLL)
+sequence of length nif each run of 0’s in the sequence shas length at most s, or in
+other words, the sequence sdoes not contain s+ 1consecutive 0’s as a substring.
+A set of s-RLL sequences of length nis called a s-RLL code and denoted C(n, s).
+Denote W(n, s)the set of all s-RLL sequences of length nand note that W(n, s)
+is the maximal s-RLL code. The s-RLL code C(n, s)and the cardinality |W(n, s)|
+has been well-studied in the literature [63], [64]. This thesis presents the recursive
+formula of |W(n, s)|with proof.
+Lemma 1 (Cardinality of W(n, s)).Letn, sbe two non-negative integers. Then
+Proof. For the first equation, when n⩽s, all sequences of length nbelong to
+For further demonstration, the next section presents the graph presentation for
+In this section, a labeled graph, called (k, s)-RdB graph, is used to represent
+(k, s)-RdB sequences. Just like a de Bruijn graph of order k, any simple path in
+(k, s)-Rdb graph represents a (k, s)-RdB sequence.
+A(k, s)-RdB graph can be achieved by eliminating all the vertices containing
+more than sconsecutive letter 0in the de Bruijn graph Gk. As a result, the vertices
+of a(k, s)-RdB graph are represented by binary sequences of length k−1which
+The illustration for de Bruijn graph of order 4,G4, was given in figure 2.3. To
+obtain (4,1)-Rdb graph from there, vertices 000,001,100are deleted. Figure 3.1
+Denote the (k, s)-RdB graph to be Gk,s= (Vk−1,s, Ek,s), where Vk−1,sis the set
+of all vertices and Ek,sis the set of all edges. The following lemmas determining
+Lemma 2 (Number of vertices ).
+Proof. This proof is deduced directly from the construction of Gk,ssince its set of
+all vertices is the set of all length k−1sequences containing at most sconsecutive
+Lemma 3 (Number of edges ).
+Proof. Observe that for both x,y∈W(k−1, s), if there is an edge from vertex
+x= (x1, . . . , x k−1)to vertex y=y1, . . . , y k−1, then (x1, . . . , x k−1, yk−1)∈W(k, s).
+Besides, for each s-RLL sequence x= (x1, . . . , x k)∈W(k, s), its prefix and
+suffix, (x1, . . . , x k−1)and(x2, . . . , x k), are both s-RLL sequence of length k−1.
+Hence, they represent two vertices in the graph Gk,sand their connecting edge is
+represented by the sequence x.
+So, there is 1−1correspondence between Ek,sandW(k, s). This results inEk,s=|W(k, s)|.
+Example 3.2. According to lemma 2 and lemma 3, (4,1)-RdB graph hasV3,1=
+|W(3,1)|= 5, andE4,1=|W(4,1)|= 8. These results can be verified by counting
+the number of vertices and edges in figure 3.1.
+Letu= (u1, u2, . . . , u k−1)andv= (v1, v2, . . . , v k−1)be arbitrary vertices in RdB
+graph. Starting at v, the following sequence of edges’ labels (1, u1, u2, . . . , u k−1)
+apparently forms a proper path going from vtouin RdB graph. Similarly, the
+sequence of edges’ labels (1, v1, v2, . . . , v k−1)beginning at uis also a directed path
+from utov. This is sufficient to conclude that the connectivity of RdB graphs is
+Chapter 4 concerns in determining the rate of RdB sequence. Besides, designing
+efficient encoder and decoder for a longest RdB sequence are also critical contriTo calculate the rate and maximal asymptotic rate of RdB sequence, first, results
+on the maximal length of a RdB sequence are presented. After that, efficient algorithms to generate a longest RdB sequence and locate any sub-sequence in such
+The rate of de Bruijn sequences can be determined by understanding its longest
+length. Section 4.2 provides a formal definition of rate and maximal asymptotic
+rate of the de Bruijn sequence. This section concerns finding the longest simple
+path in Gk,s, which corresponds to the longest (k, s)-RdB sequence.
+LetN(k, s)is the maximal length of a (k, s)-RdB sequence, and ℓ(Gk,s)be the
+length of the longest simple path in Gk,s. Recall that a length lsimple path in Gk,s
+is equivalent to a (k, s)-RdB sequence of length l+k−1. Therefore, N(k, s) =
+The de Bruijn graph Gkis actually an Eulerian graph because each vertex has
+exactly two in-coming edges and two out-coming edges. This results in its longest
+path visiting each edge exactly once and has a length of 2k. However, (k, s)-RdB
+graph Gk,sdoesn’t have the same property since the in-degree and out-degree of
+each vertex can be one or two. Thus, a simple path that visits all edges of the graph
+To overcome this issue, the upper bound U(k, s)for the length of the longest
+simple path is first determined in this section. Then, U(k, s) =U(k, s) +k−1
+is the upper bound for the length of longest (k, s)-RdB sequence. This work later
+proves that such bound can be achieved by proposing an efficient encoder returning
+a sequence of length U(k, s)in section 4.3.1. Hence, it’s sufficient to conclude that
+the upper bound U(k, s)is also the length of the longest simple path. In other
+words, ℓ(Gk,s) =U(k, s), and N(k, s) =U(k, s)
+Before deriving the explicit formula of maximal length, it’s necessary to analyze
+more meticulously the in-degree and out-degree of all vertices. Given 0⩽i, j⩽s,
+x:x∈Vk−1,s,x[1, i+ 1] = 0i1,
+i,j is the set of all vertices in Gk,ssatisfying the first i+ 1letters are
+(0,0, . . . , 0,1)and the last j+ 1letters are (1,0,0, . . . , 0). Lemma 4 summaries the
+i,j the helps finding U(k, s).
+Lemma 4 (Properties of Vk−1,s
+i,j=Vk−1,s(=|W(k−1, s)|).
+3. The in-degree and out-degree of each vertex in Vk−1,s
+4. The in-degree and out-degree of each vertex in Vk−1,s
+i,j is exactly 1for all 0⩽
+s,i(0⩽i⩽s−1), their in-degree is exactly one and
+their out-degree is exactly two.
+i,s(0⩽i⩽s−1), their in-degree is exactly two and
+their out-degree is exactly one.
+i,j , its subsequence, x[i+ 1, k−2−j], can be any
+sequence of length k−i−j−3such that more than sconsecutive letter 0’s is
+forbidden. Hence x[i+ 1, k−2−j]∈W(k−i−j−3, s). Reversely, given
+an arbitrary sequence y∈W(k−i−j−3, s), the string 0i1y10jis a sequence
+i,j . It comes to the conclusion that there is a bijection from Vk−1,s
+W(k−i−j−3, s). In other word,Vk−1,s
+i′,j′=∅with (i, j)̸= (i′, j′), and i, jcannot exceed s, thus,
+3. The properties from (3)to(6)can be deduced directly by considering the
+prefix and suffix of each element in those sets.
+Theorem1 (Longest simple path ).LetC= min ( s−1, k−s−2). The length of
+the longest path in Gk,s,ℓ(Gk,s), is equal to U(k, s), where:
+U(k, s) =|W(k, s)| − CX
+As mentioned above, proof of theorem 1 is divided into 2 parts. While the first
+one claims ℓ(Gk,s)⩽U(k, s), the second one shows that there exists a sequence
+can achieve the length of U(k, s)+k−1. This section provides the proof of the first
+part (lemma 5). Proof for the second part is available in section 4.3.
+Lemma 5. The longest simple path in Gk,s’s length cannot exceed U(k, s), that is,
+The following definitions and claims are essential to prove lemma 5.
+Definition 8 (Balance and unbalanced vertex) .A vertex with the quantity of incoming edge equal to the quantity of out-coming edge is called a balanced vertex.
+A vertex is left-unbalanced if it has 2edges coming in and 1edges coming out.
+Reversely, a vertex is right-unbalanced if it has 1edge coming in and 2edges
+Recall that a path is defined to be a sequence of edges. A vertex vis said to be
+(lying) in or belong to a path P, denoted by v∈P, ifvhas edges in P. It’s also
+fair to say that Pgoes through v. Besides, vis called the end (or the start) vertex
+ofPif its last (first) edge ends (begins) at v.
+Suppose Pto be a longest simple path in Gk,s. In other word, Pachieves the
+length ℓ(Gk,s). Some observations about Pare given in the following claims.
+Claim 1. All the vertices in P, if not a start or end vertex, must have the number
+of in-edges and out-edges equal in P.
+Proof. Letvbe a vertex in P,vis neither start nor end vertex. Then whenever P
+comes to vby an in-edge, it must go out of vby an out-edge. So the claim 1 is
+Claim 2. Every balance vertex in Phas their quantity of in-edges and out-edges
+inPequal, even if one of them is the start or end vertex.
+Proof. Letvbe a balanced vertex and Pgoes through v. Ifvis neither end nor
+start vertex, by claim 2, vhas the number of in-edges and out-edges in Pequal.
+Without loss of generality, assume that vis the start vertex. This results in the
+number of out-edges of vbeing equal or has 1edges more than its number of ou
+edges. If these two quantities are equal, the proof is done. Otherwise, denote e′to
+be one of v’s in-edges not belonging to P. Then the path P1={e′}∪Pbeginning
+ate′is a proper simple path RdB graph, but longer than P, which contradicts to
+the assumption about the longest property of P.
+Claim 3. Letu= 0s1x1t0jbe a right-unbalanced vertex. Then the shortest path
+going from uto an arbitrary left-unbalanced vertex lengthen s−j.
+Proof. A left-unbalanced vertex is represented by a sequence whose suffix of length
+sis filled by 0. Hence, a path from uto a left-unbalanced vertex must contain at
+least s−jedges labeled 0. In fact, a path of length s−jconnecting uto a leftunbalanced vertex exists, which is the path of all 0labeled edges. This path comes
+Proof for lemma 5. Define 1x1tto be a sequence of length tsuch that start and end
+letters are both 1. Let
+be the set of all left-unbalanced vertices
+Letv= 0j1x1t0sbe an arbitrary vertex in Lsuch that visn’t the end-vertex of
+1. It can be proved that there is a path Pvof length s−jsatisfying all of its edges
+not lying in Pand its end-vertex is v. The path Pvis constructed backwardly
+Starts with Pv=∅. As vhas2in-edges and 1out-edges, there’s at least 1
+in-edge evofvnot lying in P. Of course, ev’s label is 0. Adds evtoPv. Let
+a10j1x1t0s−1=π(ev)be the initial state of ev. Ifπ(ev)is a balance vertex, then
+by the claim 2, there also must be at least 1in-edge of π(ev)not lying in P.
+Continue adding this edge to the head of Pv. Denote a2a10j1x10s−2to be the
+initial state of this edge. Now, Pvcan be represented as below:
+Ifl=s−j, the proof is done. Otherwise, it’s obvious that
+is balance, hence, by claim 2, it also has at least 1in-edge not lying in P, and
+one can continue adding such edge to the head of Pv.
+2. It can be shown that for each u, v∈Lsuch that neither unorvis the end
+vertex of the last edge of P, paths PuandPvare edge-disjoint.
+Represent Pu= [eu,1, eu,2,···, eu,i],Pv= [ev,1, ev,2,···, ev,j]. Assume to the
+contrary that ∃t⩽i, l⩽jsatisfying eu,t=ev,l. Without loss of generalization,
+we suppose that i−t⩽j−l. As all edges in PuandPvare labeled 0, we must
+Ifl+i−t=j, we have PuandPvhave the same last edge but different
+terminal states, which is impossible. Otherwise, the path ev,l+i−t+1,···, ev,jis
+the path connecting utov. But the length of this path is smaller than s, which
+Summary, for each vertex in Lsuch that visn’t the end-vertex of the last edge
+in pathP, there is a path Pvof length s−jsatisfying all of its edges not lying in P
+and takes vto be its end-vertex. Moreover, all these such paths are edge-disjoint,
+and there can be only 1end-vertex of the last edge in path ℓ(Gk,s), the total edges
+of all such path Puis:
+i=0(s−i)|W(k−s−i−3, s)| −sedges not lying in P. As
+the number of edges in (k, s)-RdB is |W(k, s)|, the length of the longest path P
+Define U(k, s) =U(k, s)+(k−1), thenU(k, s)is length of the longest (k, s)-RdB
+For every (k, s)-RdB sequence, their rate is defined as follows:
+Definition 9 (Rate) .Denote R(xk,s)to be the rate of a (k, s)-RdB sequence xk,s,
+where the base of logarithm function is |Σ|= 2.
+The rates of sequences are the proportion of the data stream that is useful (nonredundant), which tell how much useful information is transmitted. The sequence’s
+rate actually originates from the information rate. Recall that, in definition 3, the
+rateRCof a code Cconsisting of length n q-ary sequences is RC=logq(|C|)
+(k, s)-RdB sequence xk,sis considered to be a code Ck,s, each of its size kwindows
+is treated as a codeword. The size of Ck,sis exactly the length of xk,sminus k, but
+the offset kcan be omitted under log calculation. Hence:
+. That is to say, R(xk,s)is eventually a kind of information rate.
+Note that, a high rate is usually preferred. Accordingly, with each given pair
+(k, s), the maximal rate of all (k, s)-RdB sequence is defined.
+Definition 10 (Maximal rate) .Given kands, the maximal rate Rk,sof all (k, s)-
+The maximal asymptotic rate is concerned in case kappears to be very large.
+Definition 11 (Maximal asymptotic rate) .Denote Rsto be the maximal asymptotic
+rate of (k, s)-RdB sequences, then:
+Having the explicit formula of N(k, s)determined makes it easier to calculate
+the maximal asymptotic rate of the (k, s)-RdB sequence. The following equation
+is a direct consequence of theorem 1:
+N(k, s) =|W(k, s)| − CX
+Theorem 2 below shows that the rate of (k,1)-RdB sequence is better than the
+rate of HdB sequence. Therefore, it’s able to use (k,1)-RdB sequence for the system in [1] instead to increase the rate, speed of encoding, and decoding of the
+Proof. Substitute s= 1into expression 4.5 gives N(k,1) =|W(k,1)|−|W(k−4,1)|,
+and recall that {|W(k,1)|}is a Fibonacci sequence with:
+consequently, it’s able to write:
+Note that ϕis the largest root of equation x2−x−1 = 0 . Based on that observation, the prediction here is that if ωis the root of equation:
+xs+1−xs−. . .−x−1 = 0 (4.7)
+satisfying |ω|is the largest, the maximal asymptotic rate Rs= log( |ω|). Fortunately,
+this is proved to be true in the following theorem, the generalization of theorem 2.
+Theorem3 (Maximal asymptotic rate of RdB sequence) .Letsbe a positive integer.
+Proof. The root ωis actually a Pisot number. More particularly, ωis the only
+positive roots of 4.7 lying in the interval (1,2), the other roots are in the open disk
+{z∈C,|z|<1}. Also, note that xs+1−xs−. . .−x−1 = 0 is the characteristic
+equation of W(k, s). Therefore, with kbig enough, |W(k, s)|can be estimated as
+As stated in lemma 6, it can be decomposed in lexicographically order into
+This thesis observes that it is able to append a prefix to a suffix of k-MdB to
+obtain a (k, s)-RdB sequence, i.e., in the cycle representing k-MdB, there are arcs
+representing (k, s)-RdB sequences. To illustrate this idea, figure 4.1 gives an example for k= 6ands= 2, where the blue arc and the red arc indicate the prefix
+and the suffix respectively. Any substring of the concatenation of the prefix and
+suffix is a (6,2)-RdB sequence.
+More precisely, the construction is described as follows:
+Construction 1. Letx= (x1, . . . , x n)be the k-MdB constructed from Lemma 6
+anduk,s= 0s+11k−s−1be a Lyndon word of length ksatisfying the first s+ 1letters
+are all 0’s and the last k−s−1letters are all 1’s. By the intrinsic property of de
+Bruijn sequences, there exists only one index isuch that uk,s=x[i, i+k−1] =
+(xi, . . . , x i+k−1). Denote the word ck,s= (xi+1, . . . , x n,0,0, . . . , 0), obtained by
+adding sletters 0to the end of the suffix of x, from index i+1to the end. Theorem
+4 below claims that ck,sis a(k, s)-RdB sequence.
+This thesis later proves that ck,sis even the longest (k, s)-RdB sequence.
+Denote Ł nto be the set of all Lyndon words of length n, and Ł(n)=∪d|n|Łdto
+the concatenation of suffix and prefix in the picture is a (6,2)-RdB sequence.
+be the set of all Lyndon words whose lengths are divisors of n. The formal encoder
+to construct a (k, s)-RdB sequence is given in algorithm 1.
+Algorithm 1: Encode (k,s)-RLL dBs
+Input : k, and descending ordered set Ł(n).
+/*remove the first letter of w, which is 0,
+and add sletters 0to the end */
+The set Ł(n)in lexicographically order can be generated in constant amortized
+time by applying FKM algorithm (analyzed in [27]), or by another algorithm developed by Duval in [65]. In algorithm 1, the most consuming time step is to produce
+the set Ł(n), and hence, its complexity is the complexity of the algorithm used to
+Here presents an example for k= 6ands= 2.
+Example 4.3 (Construction of (6,2)-RdB sequence) .The suffix:
+00111 001011 001101 001111 01 010111 011 011111 1
+is taken from the granddaddy of order 6given above. Adding 2letter 0to the end
+00111 00 001011 001101 001111 01 010111 011 011111 1 00
+which is indeed a (6,2)-RdB sequence.
+Now, theorem 4 proves that the Construction 1 always return a (k, s)-RdB seTheorem 4. The sequence ck,sobtained from Construction 1 is a (k, s)-RdB seProof. First, it’s necessary to show that each substring of length kappears at most
+once in ck,s. Note that the granddaddy sequence xobtained from Lemma 6 is a
+cyclic de Bruijn sequence, and ck,sis actually a substring of x. Hence, ck,sjust
+contains each substring of size kat most once.
+Now, claiming that ck,sdoesn’t contain any patterns 0s+1will complete the theorem. This can be proved by considering the property of Lyndon words. It’s obvious
+to see that uk,s= 0s+11k−s−1is the largest Lyndon word containing s+ 1consecutive symbols 0. Hence, every Lyndon word decomposed from ck,sdoesn’t take 0s+1
+as a substring. Moreover, the last symbol of all Lyndon words but 0is1. Therefore,
+0s+1will not appear in the combination of Lyndon words larger than uk,s. Adding
+0s1k−s−1to the beginning and sletters 0to the end of this combination resulting
+inck,swon’t change this property. So, it’s able to conclude that ck,sis indeed a
+In [1], the Hybrid de Bruijn sequence of order kafter being received needs to be
+decoded for correcting errors. More particularly, it’s necessary to indicate the exact
+location of an arbitrary sequence of length kin the Hybrid de Bruijn sequence. To
+do that, they proposed to use a look-up table, which is an exponential complex
+Similarly, it’s essential for this work to decode ck,s. In 2016, Kociumaka, Radoszewski, and Rytter presented the first sub-linear decoding algorithm DKRR for
+the minimal de Bruijn sequences. And since ck,sis a substring of a minimal de
+Bruijn sequence, it’s able to modify DKRR to decode ck,sin sub-linear time.
+Leti=DKRR(uk,s)be the position of the word uk,sin the granddaddy sequence
+of order kx. Recall that, from Construction 1, we have ck,s= (xi+1, . . . , x n,0s).
+Thus, for each length kword vlying in ck,s, its location in ck,sis to location of v
+inxminus j, unless they are of the form 1j0k−jfor all 1⩽j⩽swhich appear
+at the end of ck,s. The formal description of our decoding algorithm is shown in
+Algorithm 2: Decode (k,s)-RdB ck,s
+Input : A word v= (v1, . . . , v k)of length k
+Output: a is the location of vinck,s
+/*DKRR is the decoder of the minimal de Bruijn
+This section gives proof for the claim stated in section 4.1, that is, the encoder
+produces sequence ck,swhose length equals to to upper bound U(k, s), and thus,
+ck,sis the longest the (k, s)-RdB sequence. In order to do so, ck,s’s length, denoted
+byℓ(ck,s), is needed calculating first. It’s then essential to show that ℓ(ck,s)is equal
+toU(k, s)by some algebraic transformations.
+Given a word u, denote ⟨u⟩to be its minimal rotation. For instance, the minimal
+rotation of 010110 is 001011, or, the minimal rotation of 010101 is itself. For every
+to be the set of all sequence of length |v|satisfying their minimal rotation doesn’t
+exceed v. The following example 4.4 lists all element of S(v)withv= 01101 .
+Example 4.4 (Example of S(v)).Given v= 01101 , all sequence of length |v|= 
+whose minimal rotations are at most vis:
+00001 ,00010 ,00100 ,01000 ,10000 ,
+00011 ,00110 ,01100 ,11000 ,10001 ,
+00111 ,01110 ,11100 ,11001 ,10011	
+Ifvis a Lyndon word, Lemma 29 in [23] tells that the cardinality of S(v),|S(v)|,
+equals to the length of the prefix of the granddaddy sequence x, from the beginning
+to the sub-string v. Recall that uk,sis also a Lyndon word, one has:
+⇔ℓ(ck,s) = 2k+ (k−1) +s−S(uk,s) (4.9)
+This brings the idea determining ℓ(ck,s)by computing the size of the set S(uk,s).
+Lemma 7. LetAt= 2t−2for all t >1,A1= 1, and M= max ( k−s, s+ 3). Then:
+Proof. Leti, jbe two non-negative integers such that i+j < k , denote:
+to be the set of all words in S(uk,s)satisfying its prefix of length i+ 1is0i1and its
+suffix of length j+ 1is10j.
+Since S(uk,s)is the disjoint union of 0kand all sets Ui,jfori, j⩾0andi+j < k ,
+If we fix 1⩽t⩽k, there are k−t+ 1pairs (i, j)such that t=k−i−j. If
+i+j⩽sthen the sub-string 1x1tmust contain s+ 1consecutive 0’s (consequently,
+k−i−1−(i+ 2) + 1 ⩾s+ 1⇒t=k−i−j⩾s+ 3), and therefore, |Ui,j|=
+where M= max( s+ 3, k−s).
+Ifk > i +j > s then the sub-string (xi+2, . . . , x k−j−1)can be any word of length
+t−2and thus |Ui,j|=At= 2t−2. Hence:
+From Equations (4.11), (4.12), (4.13), we get the result in Lemma 7.
+Combining the results from Lemma 7 and equation 4.9 gives:
+ℓ(ck,s) = 2k+k+s−2− C1− C2
+where C1andC2are defined in Equation 4.12 and 4.13. It’s now ready to prove the
+following lemma, which states that the proposed construction is optimal.
+Lemma 8. The length the sequence ck,sreturned from Construction 1 is optimal,
+Proof. Equation 4.14 is equivalent to:
+2k+k+s−2− C1− C2=|W(k, s)| − CX
+⇔2k−(1 +C1+C2) =|W(k, s)| − CX
+First, the value of CandMis necessarily explicated by considering the relation
+between kands. In short, there are 3following cases:
+M=s+ 3, C=s−1ifk= 2s+ 2, s < k −
+Case 1 :M=k−s, C =s−1when s+ 3⩽k−s. The equation needing to be
+In the right hand side, recall that |C(t−2, s)|= 2t−2− |W(t−2, s)|, so:
+t=1(k−t+ 1)Atcan be easily shown to be equal to 2k)
+⇔ |W(k, s)| − s−1X
+i=1|W(k−i, s)| ∀k > s
+=|W(k−1, s)|+|W(k−2, s)|+···+|W(k−s−1, s)| ∀k > s
+Therefore, when k⩾2s+ 3, the following system of equations is obtained:
+|W(k−1, s)|= |W(k−2, s)|+|W(k−3, s)|+···+|W(k−s−2, s)|
+|W(k−2, s)|= |W(k−3, s)|+|W(k−4, s)|+···+|W(k−s−3, s)|
+|W(k−s−1, s)|=|W(k−s−2, s)|+|W(k−s−3, s)|+···+|W(k−2s−2, s)|
+Adding side by side the above equations results in the equation (∗), which is needed
+Case 2 :M=s+ 3, C=s−1when k= 2s+ 2, s < k −1. The LHS is the same
+as in the first case, meanwhile, the RHS is :
+t=s+3(k−t+ 1)|W(t−2, s)| −(s+ 1)2s!
+what’s left to be proved is similar to the first case.
+Case 3 :M=s+ 3, C=k−s−2when s+ 2⩽k⩽2s+ 1. Again, the RHS is
+t=k−s(k−t+ 1)|W(t−2, s)|, and the LHS is:
+The situation is quite similar to the first case, and recall that : |W(n, s)|= 2s∀0⩽
+|W(k−1, s)| =|W(k−2, s)|+|W(k−3, s)|+. . .+|W(k−s−2, s)|
+|W(k−2, s)| =|W(k−3, s)|+|W(k−4, s)|+. . .+|W(k−s−3, s)|
+|W(k−t, s)| =|W(k−t−1, s)|+|W(k−t−2, s)|+. . .+|W(k−t−s−1, s)|,
+|W(k−t−1, s)|=|W(k−t−2, s)|+|W(k−t−3, s)|+. . .+|W(0, s)|+|W(−1, s)|
+|W(k−s−1, s)| =|W(k−s−2, s)|+|W(k−s−3, s)|+. . .+|W(−1, s)|
+Once again, adding side by side the above equations gives (∗∗).
+In conclusion, in all 3cases, the correctness of equation 4.15 is verified, hence,
+In this thesis, Run length limited de Bruijn sequences are introduced and studied
+to replace Hybrid de Bruijn sequence in dBTS system. Compare to HdB sequences,
+RdB sequences not only have a higher rate but are also more general and adaptive.
+The main results of this thesis include the explicit formula of the maximal length
+and maximal asymptotic rate of RdB sequences. To achieve such length and rate,
+an encoding algorithm is presented. This thesis also provides proof of the optimality of the encoder. To locate the position of a proper substring in the whole
+encoded sequence, a decoding algorithm is proposed based on the decoder of the
+granddaddy sequence. The encoder and decoder are both based on state-of-theart algorithms. The encoder’s complexity is constant amortized time per symbol,
+and the decoder’s complexity is sub-linear with respect to the length of the RdB
+In future work, it’s critical to analyze deeper about the RdB sequence under
+some other constraints like weight constraint or local constraint. The current results right now just focus on the alphabet of size 2. The study of the more general
+alphabet will raise many more questions in combinatorics and algorithm. Especially, results for the alphabet of size 4will be valuable in the research of DNA
+storage as well as DNA sequencing, a very interesting field recently.
+1. Yeow Meng Chee, Duc Tu Dao, Tien Long Nguyen , Duy Hoang Ta, Van
+Khu Vu. ”Run Length Limited de Bruijn Sequences for Quantum Communications”, The 2022 IEEE International Symposium on Information Theory.
+2. Tran Ba Trung, Lijun Chang, Nguyen Tien Long , Kai Yao, Huynh Thi Thanh
+Binh. ”Verification-Free Approaches to Efficient Locally Densest Subgraph
+Discovery”, The 39th IEEE International Conference on Data Engineering.

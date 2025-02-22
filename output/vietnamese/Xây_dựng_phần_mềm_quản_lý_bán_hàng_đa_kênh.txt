@@ -1,0 +1,642 @@
+
+Họ và tên sinh viên: Vũ Văn Dũng
+Điện thoại liên lạc: 0326200500
+Hệ đào tạo: Đại học chính quy
+Đồ án tốt nghiệp (ĐATN) được thực hiện tại: Trường Đại học Bách
+Thời gian làm ĐATN: Từ ngày 04/06/2020 đến ngày 08/08/2021
+Xây dựng, đề xuất và triển khai phần mềm quản lý bán hàng đa kênh. Sử dụng
+các phương pháp, công nghệ để cải thiện hiệu năng và khả năng mở rộng của hệ
+Tìm hiểu đánh giá về thực trạng phần mềm quản lý bán hàng
+Phân tích xây dựng các chức năng cơ bản của phần mềm
+Thực nghiệm, đánh giá và tìm hiểu các công nghệ xây dựng, tối ưu phần mềm
+Tôi – Vũ Văn Dũng – cam kết ĐATN này là công trình nghiên cứu của bản thân
+tôi dưới sự hướng dẫn của PGS. TS. Lã Thế Vinh. Các kết quả nêu trong ĐATN
+là trung thực, không sao chép toàn văn của bất kỳ công trình nào khác.
+Hà Nội, ngày 08 tháng 08 năm 202
+5. Xác nhận của giáo viên hướng dẫn về mức độ hoàn thành của ĐATN và cho
+Hà Nội, ngày 08 tháng 08 năm 2022
+PGS. TS. Lã Thế Vinh
+Tôi xin chân thành cảm ơn toàn thể thầy cô trong trường Đại học Bách Khoa Hà
+Nội đặc biệt là các thầy cô trong Viện Công nghệ thông tin và truyền thông đã chỉ
+dạy cho tôi kiến thức về các môn đại cương, chuyên ngành, giúp tôi có nền tảng và
+kiến thức chung lẫn chuyên ngành trong suốt những năm học tập và rèn luyện tại
+Tôi xin chân thành cảm ơn thầy hướng dẫn khóa luận của tôi là thầy PGS. TS. Lã
+Thế Vinh, đã tận tình chỉ bảo, hướng dẫn, động viên tôi trong suốt quá trình thực
+hiện đồ án tốt nghiệp này. Tôi xin chân thành cảm ơn, các anh chị cấp trên, các bạn
+đồng nghiệp trong đội ngũ nhân phiên phát triển ứng dụng của Công ty Pancake
+Tôi cũng xin chân thành cảm ơn gia đình, người thân và bạn bè đã quan tâm, động
+viên và giúp đỡ tôi trong suốt thời gian học tập và thực hiện đồ án tốt nghiệp này.
+Tôi xin chân thành cảm ơn!
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Phần mềm quản lý bán hàng là một hệ thống được sử dụng để giảm chi phí hoạt
+động đồng thời thúc đẩy hoạt động kinh doanh. Lợi ích của phần mềm quản lý bán
+hàng bao gồm giao nhiệm vụ cho nhân viên, quản lý luồng công việc, và theo dõi
+tiến độ công việc,. . . cùng điểm qua những lợi ích tuyệt vời từ việc sử dụng phần
+mềm quản lý bán hàng.
+Trong phạm vi đồ án, tác giả đề xuất xây dựng một phần mềm quản lý bán hàng đa
+kênh dựa trên cơ sở là những phần mềm đã có, từ đó nâng cấp bằng những công
+nghệ mới giúp cải thiện hiệu năng của phần mềm nhằm nâng cao tính bảo mật dữ
+liệu và khả năng mở rộng của toàn bộ hệ thống.
+Nội dung đồ án gồm những phần sau:
+Chương 1: Giới thiệu đề tài
+Đặt vấn đề về tầm quan trọng của phần mềm, từ đó đưa ra mục tiêu và hướng tiếp
+Chương 2: Khảo sát và phân tích yêu cầu
+Đưa ra các khảo sát về thực trạng của phần mềm và phân tích các chức năng cần có
+Chương 3: Công nghệ sử dụng
+Các công nghệ nền tảng để xây dựng phần mềm
+Chương 4: Thực nghiệm và đánh giá
+Quá trình thực nghiệm, đánh giá và nhận xét kết quả thu được
+Chương 5: Các giải pháp và đóng góp nổi bật
+Các công nghệ, giải pháp giúp tối ưu, cải thiện hiệu năng phần mềm
+Chương 6: Kết luận và hướng phát triển
+Tổng kết đóng góp của đồ án, khó khăn trong quá trình thực hiện và đưa ra hướng
+phát triển trong tương lai.
+Ngày nay, thương mại điện tử ở Việt Nam đang được Nhà nước và Chính phủ
+rất quan tâm và đặt mục tiêu thúc đẩy phát triển mạnh mẽ. Với sự phát triển vượt
+bậc của công nghệ cả trong lẫn ngoài nước, càng có thêm nhiều lý do để các doanh
+nghiệp quan tâm đến ứng dụng thương mại điện tử. Thương mại điện tử làm cho
+một tổ chức kinh doanh không bị tụt hậu trong cuộc đua công nghệ. Tuy nhiên,
+hiện nay Việt Nam chưa có nhiều doanh nghiệp ứng dụng đúng đắn thương mại
+điện tử vào hoạt động kinh doanh của mình.
+Hiện nay, các kỹ thuật và công cụ để thiết lập ứng dụng vào thương mại điện tử
+vẫn chưa được áp dụng rộng rãi trong các doanh nghiệp.Không chỉ vậy, gần đây với
+sự bùng nổ của mua sắm online thì việc quản lý khách hàng cũng như quản lý sản
+phẩm là một thách thức lớn đối với nhiều chủ doanh nghiệp bán hàng trên nhiều
+nền tảng cùng một lúc.
+Bài toán đặt ra ở đây là một nền tảng có tập chung có thể quản lý mọi thông tin
+từ các nguồn mạng xã hội, sàn thương mại điện tử đổ về sẽ giúp doanh nghiệp tiết
+kiệm nhiều thời gian quản lý và chi phí điều hành doanh nghiệp.
+Thương mại điện tử là một lĩnh vực mới trong vài năm trở lại đây nên các ứng
+dụng quản lý bán hàng đa kênh hiện nay còn khá hạn chế. Bên cạnh đó, để quản lý
+tệp khách mua hàng, chăm sóc lại khách đã mua cũng như quản lý tồn kho của sản
+phẩm trong cùng một ứng dụng hiện nay chưa có nhiều ứng dụng đáp ứng được
+yêu cầu của doanh nghiệp.
+Vì vậy cách giải quyết những vấn đề tồn đọng vừa đưa ra là một phần mềm quản
+lý, lớn hơn là hệ sinh thái các phần mềm bổ trợ cho nhau nhằm phục vụ, quản lý về
+mọi mặt thông tin về buôn bán thương mại điện tử. Điều này sẽ giúp doanh nghiệp
+tối ưu hóa được quy trình làm việc, tiết kiệm chi phí và nhân công, từ đó cải thiện
+doanh thu và lợi nhuận.
+Để xây dựng một phần mềm quản lý cũng như hệ thống quản lý bán hàng như
+trên cần một hệ thống lớn, luôn sẵn sàng và có khả năng mở rộng ngoài ra cần một
+đội ngũ lớn có nhiều kinh nghiệm. Trên thực tế, phần mềm quản lý bán hàng đòi
+hỏi một hệ thống phục vụ realtime có khả năng chịu lỗi, và có khả năng mở rộng
+lớn. Vì vậy đội ngũ của tôi đã lựa chọn một số công nghệ đáp ứng các yêu cầu trên
+và có cộng đồng đông đảo nhiều lập trình viên sử dụng. Ở phần này, chúng tôi đã
+lựa chọn một hệ thống lưu trữ cơ sở dự liệu có khả năng mở rộng theo chiều ngang
+để tối ưu hóa tốc độ truy vấn và có khả năng phân tích realtime, công nghệ này sẽ
+được nhắc đến cụ thể ở chương sau.
+Ngoài ra, việc lựa chọn ngôn ngữ lập trình phù hợp, phần mềm quản lý source
+code cũng là những yếu tố quan trọng trong quá trình xây dựng phần mềm của đội
+ngũ chúng tôi. Ngôn ngữ lập trình được chọn xây dựng và biên dịch dựa trên nền
+tảng máy ảo để tối ưu tốc độ và đáp ứng khả năng xử lý lỗi của hệ thống.
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2 trình bày về khảo sát hiện trạng của phần mềm từ đó đưa ra các phân
+tích và đánh giá về yêu cầu của phầm mềm quản lý bán hàng. Từ đó khái quát hóa
+các tính năng chính mà phần mềm cần có. Trong chương này cũng gồm các Use
+case và đặc tả chức năng nhằm phân tích chi tiết một số chức năng quan trọng của
+Trong chương 3 là những công nghệ nền tảng được sử dụng trong đồ án. Các
+công cụ này được lựa chọn dựa trên tính phù hợp, đề cao khả năng mở rộng của hệ
+Kiến trúc hệ thống đóng vai trò vô cùng quan trọng khi triển khai một hệ thống
+lớn nên việc chọn một kiến trúc phù hợp sẽ được nêu rõ trong Chương 4 của đồ án.
+Ngoài ra chương này còn trình bày thiết kế chi tiết về cơ sở dữ liệu, các thư viện
+chính mà hệ thống sử dụng.
+Chương 5 là những đóng góp nổi bật, những công nghệ hay mà đồ án đã sử dụng
+giúp cải thiện được nhiều vấn đề mà các phầm mềm khác còn tồn đọng.
+Cuối cùng là Chương 6 nêu ra kết luận và trình bày những hướng phát triển mới
+Trong thời đại công nghệ 4.0, khi xu hướng mua hàng online trở thành hình thức
+thương mại phổ biến nhất, các doanh nghiệp bắt đầu gặp phải những vấn đề khó
+nhằn trong hoạt động kinh doanh trực tuyến. Điều này đòi hỏi sự hỗ trợ của các
+công cụ với tính năng tiện ích vượt trội, và đây chính là lúc phần mềm quản lý bán
+Phần mềm quản lý bán hàng là hệ thống các công cụ được lập trình với những
+tính năng thông minh ưu việt, có khả năng hỗ trợ doanh nghiệp thực hiện toàn bộ
+các công đoạn của quá trình bán hàng và quản lý bán hàng một cách hiệu quả, toàn
+diện và nhanh chóng nhất. Bao gồm:
+Quản lý hàng hóa, kho hàng và tình trạng xuất – nhập kho hàng
+Quản lý hoạt động bán hàng trên cả nền tảng online lẫn offline
+Tạo lập và quản lý đơn hàng
+Quản lý thông tin và hoạt động của nhân viên cũng như các đối tác
+Quản lý thông tin khách hàng và các kế hoạch khuyến mãi, hậu mãi
+Thống kê lịch sử mua hàng, tồn kho, báo cáo tài chính
+Với các công cụ và cách thức xử lý truyền thống, doanh nghiệp phải mất quá
+nhiều thời gian, nhân lực và chi phí cho hoạt động quản lý bán hàng nhưng vẫn
+không tránh khỏi các sai sót. Nhưng giờ đây, bạn có thể hoàn toàn yên tâm vì mọi
+số liệu đều được xử lý một cách tự động, với độ chính xác tuyệt đối.
+Đối với doanh nghiệp, hệ thống quản lý bán hàng là một trong những công cụ
+hỗ trợ đắc lực cho quá trình phát triển kinh doanh. Không chỉ giúp tiết kiệm tối
+đa thời gian và chi phí cho công tác cập nhật, theo dõi, thống kê, xử lý số liệu,. . .
+mỗi ngày, mà nó còn đảm bảo hiệu quả trong việc tính toán một khối lượng dữ liệu
+khổng lồ chỉ trong thời gian ngắn.
+Bên cạnh đó, doanh nghiệp còn có thể sử dụng phần mềm để tập trung tất cả các
+nguồn lực về một mối để lưu trữ thông tin và quản lý tập trung hiệu quả hơn. Từ
+đó, nâng cao sự gắn kết và phối hợp giữa các phòng ban, giúp quá trình vận hành
+kinh doanh diễn ra mượt mà và mang lại hiệu suất cao nhất.
+Một ưu điểm nổi bật của phần mềm quản lý bán hàng là tính linh hoạt và khả
+năng áp dụng không giới hạn. Đặc biệt, doanh nghiệp không cần hệ thống máy
+móc cồng kềnh, các phương thức tính toán bằng não lỗi thời hay lo sợ thất lạc dữ
+liệu nữa. Vì tất cả đều được xử lý nhanh gọn và lưu trữ với độ bảo mật cao nhất.
+Một phần mềm quản lý kinh doanh không chỉ dừng lại ở các tính năng quản
+lý cơ bản. Nó cần đáp ứng được nhiều yêu cầu hơn thế nữa. Ví dụ như tích hợp
+phương thức thanh toán thông minh, hình thức vận chuyển đa dạng hay khả năng
+kết nối với các thiết bị khác để tối đa hóa hiệu quả bán hàng tại chỗ.
+Ưu điểm nổi bật khi sử dụng phần mềm Pancake POS
+Với những tính năng ưu việt vừa liệt kê bên trên, sở hữu giải pháp quản lý bán
+hàng Pancake POS sẽ mang đến cho doanh nghiệp rất nhiều lợi ích thiết thực.
+Đầu tiên và dễ thấy nhất, chúng ta có thể bỏ qua hệ thống máy móc cồng kềnh,
+tốn kém, cũng như các phương thức quản lý truyền thống rườm rà nhưng hiệu quả
+mang lại không khả quan là mấy.
+Các tính năng có sẵn trong Pancake POS sẽ giúp doanh nghiệp quản lý toàn bộ
+hoạt động kinh doanh dễ dàng, nhanh chóng hơn chỉ với vài thao tác đơn giản trên
+giao diện phần mềm thân thiện, trực quan và dễ sử dụng. Từ đó, tiết kiệm tối đa
+công sức và nguồn nhân lực, đồng thời đẩy mạnh hiệu quả bán hàng đến mức cao
+Các chức năng chính trong phần mềm quản lý bán hàng Pancake POS:
+Quản lý cửa hàng: Mỗi người dùng được tạo nhiều cửa hàng, có thể đặt tên, sửa
+xóa thông tin cửa hàng. Cấu hình các thuộc tính đặc thù như quốc gia kinh doanh,
+tiền tệ, phương thức thanh toán...
+Quản lý đơn hàng: Cho phép tạo đơn thủ công, hoặc cấu hình tạo đơn tự động,
+đồng bộ đơn hàng từ website, Facebook, các sàn thương mại điện tử. Đơn hàng có
+thể liên kết với các đơn vị vận chuyển và cập nhật trạng thái theo hành trình.
+Quản lý khách hàng của cửa hàng: Lưu trữ thông tin những khách đã mua hàng
+như tên, ngày sinh, số điện thoại. Mỗi khách hàng gồm một hoặc nhiều đơn hàng.
+Khách hàng sẽ bao gồm với những tính năng quản lý công nợ, quản lý điểm thưởng.
+Quản lý sản phẩm: Cho phép nhập liệu thông tin, thuộc tính sản phẩm, danh
+mục. Có thể nhập liệu từ các nguồn excel, đồng bộ với các sàn thương mại điện tử
+Shopee, Lazada, TikTok. Sản phẩm liên kết các thông tin tồn kho, lưu lại log xuất
+Quản lý nhân viên: Nhân viên gồm các thông tin tên, ID, email, các quyền của
+nhân viên, ngoài ra nhân viên còn thuộc quản lý của các bộ phận và các kho
+Quản lý kho: Gồm các thông tin cơ bản như tên, địa chỉ, ID. Có những thao tác
+thêm, sửa, xóa. Kho gồm các sản phẩm thuộc kho, có thể tạo phiếu xuất nhập và
+kiểm kho, báo cáo tồn kho theo ngày. Quản lý hệ thống lô kệ trong kho.
+Các tác nhân gồm người dùng và nhân viên:
+Người dùng thường là quản trị viên. Sau khi đăng nhập vào hệ thống sẽ có thông
+tin quản lý về người dùng, người dùng có quyền quản lý các cửa hàng, đơn hàng,
+kho, sản phẩm, khách hàng. Người dùng có quyền quản lý nhân viên và phân quyền
+Nhân viên có hầu như các quyền như người dùng, nhưng sẽ phụ thuộc vào quyền
+mà người dùng cài đặt theo mỗi cừa hàng cho từng nhân viên. Có thể nhân viên có
+quyền quản lý đơn hàng ở cửa hàng nhưng lại không có quyền quản lý kho hàng.
+Một số use case chính của hệ thống là: Quản lý nhân viên, quản lý tài khoản,
+quản lý đơn hàng, quản lý cửa hàng, quản lý kho, quản lý sản phẩm và quản lý
+khách hàng. Các chức năng của use case này đã được mô tả qua trong phần Tổng
+Sau khi đăng nhập chủ cửa hàng (Admin) có thể quản lý các thông tin về tài
+khoản. Sửa thông tin tài khoản như tên, avatar, ngôn ngữ. Liên kết với tài khoản
+Quản lý đơn hàng bao gồm các tính năng cơ bản thêm, sửa, xóa, lọc tìm kiếm
+đơn hàng. Đồng bộ đơn hàng từ các nền tảng thương mại điện tử. Tác nhân ở đây
+là nhân viên của cửa hàng có thể là Admin hoặc employee có quyền.
+Tác nhân tham gia vào use case quản lý sản phẩm là chủ cửa hàng (Admin) hoặc
+nhân viên trong cửa hàng nếu được Admin phân quyền quản lý sản phẩm. Quản lý
+sản phẩm gồm các hành động thêm, sửa, xóa, lọc, tìm kiếm sản phẩm. Quản lý sản
+phẩm bao gồm quản lý danh mục, đơn vị tính, thẻ sản phẩm và đơn vị cung cấp.
+Quản lý kho hàng gồm tác nhân Admin là nhân viên có quyền trong cửa hàng.
+Bao gồm các chức năng thêm sửa xóa kho hàng. Ngoài ra quản lý kho hàng bao
+Quản lý nhập hàng: Thêm, sửa, xóa phiếu nhập hàng
+Quản lý xuất hàng: Thêm, sửa, xóa phiếu xuất hàng
+Quản lý kiểm hàng: Thêm, sửa, xóa phiếu kiểm hàng
+Quản lý chuyển kho: Thêm, sửa, xóa phiếu chuyển giữa các kho
+Quản lý khách hàng cũng bao gồm tác nhân là chủ cửa hàng và nhân viên có
+quyền quản lý. Sau khi đăng nhập thì tác nhân có quyền thêm, sửa, xóa khách hàng.
+Ngoài ra quản lý khách hàng bao gồm quản lý công nợ khách hàng và quản lý danh
+sách lịch sử gọi cho khách hàng.
+Tên Use case: Manage orders
+Tác nhân: Quản trị viện
+Tiền điều kiện: Cần phải đăng nhập vào hệ thống
+Luồng sự kiện: Use case này bắt đầu khi quản trị viên chọn phần quản lý thông
+(1) Hiển thị danh sách đơn hàng của cửa hàng mà quản trị viên đã truy cập, có
+thể thực hiện các thao tác thêm, sửa, xóa, lọc, tìm kiếm đơn hàng
+(2) Người quản lý nhấn vào danh sách đơn hàng để xem chi tiết thông tin của
+Tên Use case: Manage customers
+Tác nhân: Quản trị viện
+Tiền điều kiện: Cần phải đăng nhập vào hệ thống
+Luồng sự kiện: Use case này bắt đầu khi quản trị viên chọn phần quản lý thông
+(1) Hiển thị danh sách khách hàng của cửa hàng mà quản trị viên đã truy cập,
+có thể thực hiện các thao tác thêm, sửa, xóa, lọc, tìm kiếm khách hàng
+(2) Người quản lý nhấn vào danh sách khách hàng để xem chi tiết thông tin của
+(1) Quản trị viên thao tác bấm vào quản lý công nợ khách hàng hoặc quản lý
+lịch sử cuộc gọi từ khách hàng
+Phù hợp với các kích thước màn hình khác nhau (máy tính xách tay, điện thoại
+Các chức năng phải rõ ràng và dễ sử dụng.
+Mã nguồn phải được viết khoa học để dễ bảo trì.
+Đảm bảo an toàn dữ liệu người mua hàng của cửa hàng.
+React là một thư viện của JavaScript để xây dựng giao diện người dùng. Nhằm
+mục đích hỗ trợ việc xây dựng những thành phần (components) UI có tính tương
+tác cao, sử dụng trạng thái (state) và được sử dụng nhiều lần.
+Một trong những điểm hấp dẫn của React là thư viện này không chỉ hoạt động
+trên phía client, mà còn được render trên server và có thể kết nối với nhau. React
+so sánh sự thay đổi giữa các giá trị của lần render này với lần render trước và cập
+nhật ít thay đổi nhất trên DOM.
+Tại sao lựa chọn React
+Dễ dàng tạo các ứng dụng động: React giúp tạo các ứng dụng web động dễ dàng
+hơn vì nó yêu cầu ít mã hóa hơn và cung cấp nhiều chức năng hơn.
+Cải thiện hiệu suất: React sử dụng Virtual DOM, do đó tạo các ứng dụng web
+nhanh hơn. Virtual DOM so sánh trạng thái trước đó của các thành phần và chỉ cập
+nhật các mục trong DOM thực đã được thay đổi.
+Các thành phần có thể tái sử dụng: Các thành phần là khối xây dựng của bất kỳ
+ứng dụng React nào và một ứng dụng đơn lẻ thường bao gồm nhiều thành phần.
+Các thành phần này có logic và điều khiển của chúng và chúng có thể được sử dụng
+lại trong toàn bộ ứng dụng, do đó làm giảm đáng kể thời gian phát triển của ứng
+Luồng dữ liệu một chiều: React tuân theo luồng dữ liệu một chiều. Điều này có
+nghĩa là khi thiết kế một ứng dụng React, các nhà phát triển thường lồng các thành
+phần con vào bên trong các thành phần mẹ. Vì dữ liệu chảy theo một hướng nên
+việc gỡ lỗi trở nên dễ dàng hơn và biết được vị trí xảy ra sự cố trong ứng dụng tại
+thời điểm được đề cập.
+Nó có thể được sử dụng để phát triển cả ứng dụng web và ứng dụng dành cho
+Các công cụ chuyên dụng để gỡ lỗi dễ dàng: Facebook đã phát hành một tiện
+ích mở rộng của Chrome có thể được sử dụng để gỡ lỗi các ứng dụng React. Điều
+này làm cho quá trình gỡ lỗi các ứng dụng web React nhanh hơn và dễ dàng hơn.
+Virtual Document Object Model (DOM)
+DOM ảo (VDOM) là một khái niệm lập trình trong đó một biểu diễn lý tưởng
+hay còn gọi là “ảo” của giao diện người dùng được lưu trong bộ nhớ và được đồng
+bộ hóa với DOM “thực”. Thao tác DOM thực về cơ bản chậm hơn so với thao tác
+DOM ảo. Khi trạng thái của một đối tượng thay đổi, Virtual DOM chỉ cập nhật đối
+tượng đó trong DOM thực thay vì tất cả chúng.
+Document Object Model (DOM) coi một tài liệu XML hoặc HTML như một
+cấu trúc cây, trong đó mỗi nút là một đối tượng đại diện cho một phần của tài liệu.
+Khi trạng thái của một đối tượng thay đổi trong ứng dụng React, VDOM sẽ được
+cập nhật. Sau đó, nó so sánh trạng thái trước đó của nó và sau đó chỉ cập nhật các
+đối tượng đó trong DOM thực thay vì cập nhật tất cả các đối tượng.
+Điều này làm cho mọi thứ di chuyển nhanh chóng, đặc biệt là khi so sánh với
+các công nghệ front-end khác phải cập nhật từng đối tượng ngay cả khi chỉ một đối
+tượng thay đổi trong ứng dụng web.
+Vì React sử dụng liên kết dữ liệu một chiều, nên tất cả các hoạt động luôn ở
+dạng mô-đun và nhanh chóng. Hơn nữa, luồng dữ liệu một chiều có nghĩa là chúng
+ta thường lồng các thành phần con bên trong các thành phần mẹ khi phát triển một
+JSX là một phần mở rộng cú pháp JavaScript. Đó là một thuật ngữ được sử dụng
+trong React để mô tả giao diện người dùng trông như thế nào. Bạn có thể viết cấu
+trúc HTML trong cùng một tệp như mã JavaScript bằng cách sử dụng JSX.
+const greet = <h1>Hello, name</h1>;
+Đoạn mã trên cho thấy cách JSX được triển khai trong React. Nó không phải là
+một chuỗi hay HTML. Thay vào đó, nó nhúng HTML vào mã JavaScript.
+Các component là các khối xây dựng bao gồm một ứng dụng React đại diện cho
+một phần của giao diện người dùng. React tách giao diện người dùng thành nhiều
+component, giúp việc gỡ lỗi trở nên dễ tiếp cận hơn và mỗi component có một bộ
+thuộc tính và chức năng riêng. Dưới đây là một số tính năng của Component:
+Khả năng sử dụng lại: Một component được sử dụng trong một khu vực của ứng
+dụng có thể được sử dụng lại trong một khu vực khác. Điều này giúp đẩy nhanh
+Các component lồng nhau: Một component có thể chứa một số component khác.
+Phương thức kết xuất: Ở dạng tối thiểu, một component phải xác định một
+phương thức kết xuất chỉ định cách thành phần kết xuất với DOM.
+Thuộc tính props: Một thành component có thể nhận được props. Đây là những
+thuộc tính được cha của nó truyền vào để chỉ định các giá trị cho component con.
+Props là viết tắt của Properties (thuộc tính) trong React, cho phép người dùng
+truyền các đối số hoặc dữ liệu cho các thành phần. Các props này giúp làm cho các
+thành phần năng động hơn. Props trong một component là chỉ đọc và không thể
+State là một đối tượng lưu trữ các giá trị thuộc tính cho những thuộc tính được
+gán cho một thành phần có thể thay đổi theo thời gian. State có thể được thay đổi
+do hành động của người dùng hoặc các thay đổi trong mạng. React kết xuất thành
+phần đó cho trình duyệt bất cứ khi nào trạng thái của một đối tượng thay đổi.
+Elixir là một ngôn ngữ chức năng (functional), được nhập động (dynamically
+typed), được xây dựng trên máy ảo của Erlang và biên dịch thành mã bytecode của
+Ngôn ngữ lập trình Elixir kết hợp lập trình chức năng với trạng thái bất biến và
+cách tiếp cận dựa trên tác nhân để đồng thời theo một cú pháp gọn gàng, hiện đại.
+Và nó chạy trên máy ảo Erlang phân tán, hiệu suất cao, công nghiệp.
+Các tính năng chính của Elixir
+Được xây dựng trên máy ảo Erlang. Elixir có quyền truy cập vào tất cả các công
+cụ đồng thời mà Erlang có quyền truy cập, khiến nó trở thành một trong những
+ngôn ngữ hiện đại mạnh mẽ nhất để xây dựng các hệ thống phân tán, có thể mở
+Elixir là một trong những ngôn ngữ định hướng năng suất và ngắn gọn nhất hiện
+có, nhưng nó thiếu hiệu suất và tính đồng thời. Erlang VM giải quyết cả hai vấn đề
+Cấu trúc dữ liệu không thay đổi giúp đồng thời khá nhiều, và đối sánh mẫu rất
+tốt để viết mã khai báo.
+Có kiểu gõ động (dynamically typed). Điều này làm tăng tốc độ phát triển cho
+các ứng dụng web đơn giản. Các kiểu tĩnh có thể được giới thiệu trong Elixir thông
+qua các tệp kiểu chữ.
+Lợi ích khi sử dụng Elixir
+Elixir được xây dựng dựa trên BEAM, Erlang VM, và nó có chung những điểm
+trừu tượng đã làm cho Erlang trở thành một trong những lựa chọn tốt nhất cho các
+ứng dụng đồng thời, khối lượng lớn. tương tự với Erlang, Elixir được thừa hưởng
+Tính đồng thời (Concurrency). Elixir sử dụng các luồng thực thi nhẹ. Chúng
+được tách biệt, chạy trên tất cả các CPU và giao tiếp thông qua các tin nhắn. Cùng
+với tính bất biến của dữ liệu đến từ bản chất chức năng của ngôn ngữ, điều này làm
+cho việc viết các chương trình đồng thời trong Elixir trở nên bớt khó khăn hơn.
+Khả năng mở rộng (Scalability). Các tiến trình tương tự này cho phép mở rộng
+quy mô hệ thống một cách dễ dàng, theo chiều ngang hoặc theo chiều dọc.
+Độ tin cậy (Reliability). Elixir có một cách tiếp cận độc đáo để chịu lỗi. Trong
+khi mọi thứ đôi khi không thể tránh khỏi lỗi trong quá trình sản xuất, các quy trình
+nhẹ có thể được khởi động lại nhanh chóng bởi hệ thống giám sát. Điều này giải
+quyết hầu hết các lỗi không phải do lỗi nghiêm trọng trong quá trình phát triển
+Lập trình hàm là một mô hình lập trình xử lý các chương trình như đánh giá các
+hàm toán học và tránh những thứ như dữ liệu có thể thay đổi và trạng thái thay đổi.
+Hỗ trợ và tận dụng những thứ như đối sánh mẫu, các hàm bậc cao hơn và kiểu viết
+mã khai báo, và điều đó đi kèm với nhiều lợi ích:
+Khả năng bảo trì tốt hơn
+Kiểm tra và gỡ lỗi rõ ràng hơn
+Xử lý dễ dàng hơn các chương trình đồng thời
+Trừu tượng cấp cao giúp viết và hiểu mã đơn giản hơn
+Phoenix dễ sử dụng với mọi kiến trúc MVC web framework, và nó cũng được
+sao lưu bởi BEAM. Nó cho phép một người tạo ra các ứng dụng web một cách hiệu
+quả trong khi không ảnh hưởng đến tốc độ hoặc khả năng bảo trì.
+Ngoài ra, các quy trình của Elixir / Erlang phù hợp để giải quyết các vấn đề
+về tính đồng thời và khả năng mở rộng trong các dịch vụ web. Mặc dù các kênh
+Phoenix có thể đạt được 2 triệu kết nối websocket trên một hộp duy nhất, nhưng
+dung lượng có thể được nhân lên bằng cách phân phối lưu lượng đến nhiều nút hơn.
+PostgreSQL là một cơ sở dữ liệu quan hệ. Nó lưu trữ các điểm dữ liệu trong các
+hàng, với các cột là các thuộc tính dữ liệu khác nhau. Một bảng lưu trữ nhiều hàng
+liên quan. Cơ sở dữ liệu quan hệ là loại cơ sở dữ liệu phổ biến nhất được sử dụng.
+Nó khác biệt với việc tập trung vào tích hợp và khả năng mở rộng. Nó hoạt động
+với nhiều công nghệ khác và phù hợp với các tiêu chuẩn cơ sở dữ liệu khác nhau,
+đảm bảo nó có thể mở rộng được.
+Tại sao sử dụng PostgreSQL
+Một cơ sở dữ liệu cấp doanh nghiệp, PostgreSQL tự hào có các tính năng phức
+tạp như Kiểm soát đồng thời nhiều phiên bản (MVCC), khôi phục tại thời điểm,
+không gian bảng, sao chép không đồng bộ, giao dịch lồng nhau, sao lưu trực tuyến
+/ nóng, trình lập kế hoạch / tối ưu hóa truy vấn phức tạp và ghi nhật ký trước cho
+PostgreSQL hoạt động trên hầu hết các hệ điều hành phổ biến - hầu như tất cả
+các bản phân phối Linux và Unix, Windows, Mac OS X. Bản chất nguồn mở của
+nó giúp dễ dàng nâng cấp hoặc mở rộng. Trong PostgreSQL, bạn có thể xác định
+kiểu dữ liệu của riêng mình, xây dựng các hàm tùy chỉnh và thậm chí viết mã bằng
+ngôn ngữ lập trình khác mà không cần biên dịch lại cơ sở dữ liệu.
+Một cơ sở dữ liệu đáng tin cậy
+PostgreSQL không chỉ là quan hệ, mà còn là đối tượng-quan hệ và hỗ trợ các
+cấu trúc phức tạp và nhiều loại dữ liệu được tích hợp sẵn và do người dùng xác
+Nó cung cấp dung lượng dữ liệu lớn và được tin cậy vì tính toàn vẹn của dữ liệu.
+Điều này mang lại cho nó một số lợi thế so với các cơ sở dữ liệu SQL mã nguồn mở
+khác như MySQL, MariaDB và Firebird. PostgreSQL đi kèm với nhiều tính năng
+nhằm giúp các nhà phát triển xây dựng ứng dụng, quản trị viên để bảo vệ tính toàn
+vẹn của dữ liệu và xây dựng môi trường chịu lỗi.
+Cung cấp cho người dùng một số lượng lớn các chức năng. Những điều này giúp
+các lập trình viên tạo các ứng dụng mới, quản trị viên bảo vệ tính toàn vẹn của dữ
+liệu tốt hơn và các nhà phát triển xây dựng các môi trường linh hoạt và an toàn.
+PostgreSQL cung cấp cho người dùng khả năng quản lý dữ liệu, bất kể cơ sở dữ
+liệu lớn như thế nào.
+Một cơ sở dữ liệu có khả năng mở rộng
+Ngoài việc miễn phí và mã nguồn mở, PostgreSQL có khả năng mở rộng cao.
+Có hai lĩnh vực mà PostgreSQL tỏa sáng khi người dùng cần cấu hình và kiểm soát
+cơ sở dữ liệu của họ. Đầu tiên, nó tuân thủ ở mức độ cao với các tiêu chuẩn SQL.
+Điều này làm tăng khả năng tương tác của nó với các ứng dụng khác.
+Thứ hai, PostgreSQL cung cấp cho người dùng quyền kiểm soát siêu dữ liệu.
+PostgreSQL có thể mở rộng được vì hoạt động của nó là theo hướng danh mục.
+Một điểm khác biệt chính giữa PostgreSQL và các hệ thống cơ sở dữ liệu quan
+hệ tiêu chuẩn là PostgreSQL lưu trữ nhiều thông tin hơn trong danh mục của nó:
+không chỉ thông tin về bảng và cột, mà còn thông tin về kiểu dữ liệu, hàm, phương
+Người dùng có thể sửa đổi các bảng này và vì PostgreSQL dựa trên hoạt động
+của nó trên các bảng này, điều này có nghĩa là PostgreSQL có thể được mở rộng
+bởi người dùng. Để so sánh, các hệ thống cơ sở dữ liệu thông thường chỉ có thể
+được mở rộng bằng cách thay đổi các thủ tục được mã hóa cứng trong mã nguồn
+hoặc bằng cách tải các mô-đun do nhà cung cấp DBMS viết riêng.
+MVC (Model-View-Controller) là một mẫu thiết kế kiến trúc khuyến khích tổ
+chức ứng dụng được cải tiến thông qua việc tách biệt các mối quan tâm. Nó chia
+một ứng dụng tương tác thành ba thành phần: Model / View và Controller.
+Nó thực thi cách ly dữ liệu kinh doanh (Models) khỏi giao diện người dùng
+(Views), với thành phần thứ ba (Controllers) quản lý logic, người dùng nhập và
+điều phối cả mô hình và chế độ xem theo cách truyền thống. Mục tiêu của MVC là
+giúp cấu trúc các mối quan tâm riêng biệt của một ứng dụng thành ba phần:
+Model chịu trách nhiệm quản lý dữ liệu của ứng dụng. Nó nhận đầu vào của
+người dùng từ bộ điều khiển. Model chứa các phương thức để xử lý dữ liệu đến từ
+View có nghĩa là bản trình bày của mô hình ở một định dạng cụ thể. Là nơi sẽ
+hiển thị các dữ liệu đến với người dùng. Phần View chứa tất cả các chức năng mà
+người dùng có thể tương tác được như nút bấm hoặc một thao tác kéo thả.
+Controller phản hồi đầu vào của người dùng và thực hiện các tương tác trên các
+đối tượng mô hình dữ liệu. Bộ điều khiển nhận đầu vào, xác nhận tùy chọn và sau
+đó chuyển đầu vào cho mô hình. Phần Controller được ví như bộ não của ứng dụng.
+Controller sử dụng để liên kết hai phần model và view với nhau bằng cách cập nhật
+các dữ liệu ở phần model từ các event của phần view.
+Mục đích của việc lựa chọn kiến trúc MVC
+Như đã đề cập ở trên, kiến trúc MVC giúp chúng ta phân tách các khía cạnh khác
+nhau của ứng dụng (logic đầu vào, logic nghiệp vụ và GUI), đồng thời cung cấp
+một khớp nối lỏng lẻo giữa các phần tử này.Do đó, logic thông tin có thể tái sử dụng
+nhiều nhất thuộc về model, GUI thuộc về view. Logic đầu vào thuộc controller.Sự
+tách biệt này giúp chúng ta quản lý khi xây dựng một ứng dụng phức tạp vì nó cho
+phép ta tập trung vào một khía cạnh của việc triển khai tại một thời điểm.
+MVC tách các thành phần khác nhau của một ứng dụng, các nhà phát triển có
+thể làm việc song song trên các thành phần khác nhau mà không ảnh hưởng hoặc
+Khả năng tái sử dụng. Chế độ xem giống nhau (hoặc tương tự) cho một ứng
+dụng có thể được cấu trúc lại cho một ứng dụng khác với dữ liệu khác vì chế độ
+xem chỉ đơn giản là xử lý cách dữ liệu được hiển thị cho người dùng.
+Khả năng mở rộng. Nếu ứng dụng của chúng ta bắt đầu gặp vấn đề về hiệu suất
+do truy cập cơ sở dữ liệu chậm, bạn có thể nâng cấp phần cứng chạy cơ sở dữ liệu
+mà không bị ảnh hưởng đến các thành phần khác. Vì các thành phần có mức độ
+phụ thuộc vào nhau thấp, việc thực hiện các thay đổi đối với một (để sửa lỗi hoặc
+thay đổi chức năng) không ảnh hưởng đến các thành phần khác
+Bản chất của khuôn khổ MVC là có sự liên kết thấp giữa các model, view hoặc
+Áp dụng kiến trúc MVC vào ứng dụng
+Phần Model chủ yếu xử lý việc xác thực dữ liệu, lược đồ của nó, mối quan hệ của
+nó với các mô hình khác và cách nó được trình bày. Việc chỉ định lược đồ (schema)
+trong model nó cho phép chúng ta dễ dàng tạo các trường ảo, là các trường không
+được lưu giữ trong cơ sở dữ liệu.
+Ở đây chúng ta khai báo bốn trường trong bảng users: name, email, password,
+và password-hash. Và "password" là được cài dặt là trường ảo.
+Điều này cho phép chúng ta thiết lập và lấy trường này mà không cần lưu các
+thay đổi vào cơ sở dữ liệu. Điều này rất hữu ích vì chúng ta sẽ có logic để chuyển đổi
+mật khẩu đó thành một hàm băm, mà chúng ta sẽ lưu vào trường “password-hash”
+và sau đó lưu vào cơ sở dữ liệu.
+Phần View chịu trách nhiệm kết xuất các mẫu và cung cấp các chức năng giúp
+dữ liệu thô dễ sử dụng hơn cho các mẫu. Ở đây trong hàm render có trể trả về JSON
+cho front-end xử lý dữ liệu.
+Controller xử lý các logic thêm, sửa, xóa dữ liệu, các hàm xử lý tính toán thông
+qua việc gọi model để lấy các trường từ database.
+Để xây dựng một ứng dụng web hoàn toàn hoạt động hiệu quả, các mã code và
+thành phần phải được viết và kiểm tra một cách cẩn thận. Code phải rõ ràng và đơn
+giản để đọc và dễ hiểu. Qua đó cần chọn lựa các thư viện và công cụ thích hợp với
+Figma là công cụ được ra mắt vào năm 2016, với giao diện thân thiện và tính
+dễ sử dụng, Figma đã nhanh chóng nổi lên và trở thành một công cụ thiết kế giao
+diện người dùng phổ biến trong cộng đồng công nghệ toàn cầu. Một số thương hiệu
+lớn sử dụng Figma cho tới thời điểm hiện tại có thể kể đến như Microsoft, Twitter,
+Khác với những công cụ thiết kế trước đây, Figma được thiết kế trên nền tảng
+đám mây. Đây là công cụ có tính năng tương tự như Sketch, ưu điểm nổi bật của
+công cụ là khả năng tương tác thời gian thực, cho phép hỗ trợ làm việc nhóm tốt
+hơn. Designer, Leader, Developer và thậm chí là cả khách hàng có thể tương tác,
+trao đổi trực tiếp với nhau thông qua tính năng comment giúp quá trình làm việc
+Webpack là một module bundler cho phép viết bất kỳ định dạng module nào
+(cũng có thể kết hợp), sau đó biên dịch cho trình duyệt. Webpack phân tách mã
+dựa trên cách nó được sử dụng trong ứng dụng và với phân tích trách nhiệm theo
+module này, việc quản lý, gỡ lỗi, xác minh và kiểm tra mã trở nên dễ dàng.
+Một số tính năng nổi bật của Webpack là:
+Giúp cho cho project dễ dàng quản lý.
+Theo dõi các thay đổi và chạy lại các tác vụ.
+Phân chia các module và chỉ load khi cần; Đóng gói tất cả file nguồn thành một
+file duy nhất, nhờ vào loader mà có thể biên dịch các loại file khác nhau.
+Có thể chạy chuyển đổi Babel sang ES5, cho phép bạn sử dụng các tính năng
+JavaScript mới nhất mà không cần lo lắng về sự hỗ trợ của trình duyệt.
+Có thể chạy như một development webserver.
+Ant Design là tập hợp các components của React được xây dựng theo chuẩn thiết
+kế của Ant UED Team. Tương tự như chuẩn Material Design, Ant cung cấp hầu
+hết các component thông dụng trong ứng dụng web hiện đại, như Layout, Button,
+Redux là một kho chứa trạng thái mà có thể dự đoán được cho các ứng dụng
+JavaScript. Nó giúp bạn viết các ứng dụng hoạt động nhất quán, chạy trong các
+môi trường khác nhau (client, server và native) và dễ kiểm tra.
+Nói một cách đơn giản, Redux là một công cụ quản lý trạng thái. Mặc dù nó chủ
+yếu được sử dụng để React, nhưng nó có thể được sử dụng với bất kỳ khung hoặc
+thư viện JavaScript nào khác. Nó có dung lượng nhẹ ở 2KB, vì vậy bạn không phải
+lo lắng về việc nó làm cho kích thước nội dung ứng dụng của bạn lớn hơn.
+Với Redux, trạng thái của ứng dụng của bạn được lưu trong một store và mỗi
+thành phần có thể truy cập vào bất kỳ trạng thái nào mà nó cần từ store này. Hãy đi
+sâu hơn một chút để biết lý do tại sao bạn có thể cần một công cụ quản lý state.
+Chúng ta có một component view (React) gửi một hành động để lưu trữ, store
+sẽ chuyển hành động đó cho reducer với thông tin về trạng thái hiện tại. Sau đó,
+reducer sẽ gửi lại trạng thái mới dựa trên hành động, sau đó store sẽ cập nhật trạng
+thái của nó. Sau khi cập nhật store, chế độ xem thành phần sẽ nhận dữ liệu mới và
+hiển thị lại. Store thường chứa trạng thái của nó với kiểu không thay đổi được để
+ngăn việc thay đổi dữ liệu bên ngoài Redux.
+Qua sơ đồ quan hệ giữa các thực thể phía trên chúng ta có thể thấy mối quan hệ
+tương quan giữa các thực thể có trong hệ thống. Một Users có thể quản lý nhiều
+Shops. Một Users tương ứng với một Employees có trong Shops. Một Shops sẽ bao
+gồm nhiều Employees, Products, Orders, Customers, Warehouses. Và tương ứng
+với một Orders chỉ có một Customers và một Warehouses. Một Orders có thể có
+Ta xác định được các thực thể trong cơ sở dữ liệu, dưới đây là vài thực thể chính
+users: Lưu trữ thông tin về người dùng.
+shops: Lưu trữ thông tin, cấu hình về các gian hàng.
+orders: Lưu trữ thông tin về đơn hàng.
+customers: Lưu trữ thông tin về khách mua hàng.
+products: Lưu trữ thông tin về sản phẩm.
+Quản lý đơn hàng gồm các đơn hàng có trong cửa hàng, có thể lựa chọn các
+thông tin quan trọng để hiển thị ra bảng. Phía trên cùng là thanh tìm kiếm, lọc đơn
+hàng và các nút để thao tác với đơn hàng như: In đơn, cập nhật hàng loạt, xuất
+Giao diện tạo đơn hàng
+Giao diện tạo đơn chia ra làm các thành phần chính là: Thông tin sản phẩm,
+Thông tin thanh toán, Thông tin khách hàng, Địa chỉ khách hàng, Thông tin đơn vị
+vận chuyển và hàng nút thông tin cuối cùng để lưu, in đơn hàng.
+Quản lý sản phẩm gồm các sản phẩm có trong cửa hàng, có thể lựa chọn các
+thông tin quan trọng để hiển thị ra bảng. Phía trên cùng là thanh tìm kiếm, lọc sản
+phẩm và các nút thao tác với sản phẩm. Quản lý danh mục, thẻ sản phẩm, nhóm
+đơn vị tính. Hiển thị tổng giá trị sản phẩm, tồn kho.
+Chi tiết thông tin khách hàng
+Giao diện này là chi tiết thông tin của khách mua hàng trong phần quản lý danh
+sách khách hàng. Gồm các thông tin cơ bản của khách hàng và thông tin quản lý
+đơn hàng đã mua cũng như công nợ, lịch sử cuộc gọi của khách hàng.
+Giao diện tích hợp kênh bán
+Người dùng có thể cấu hình các tài khoản từ các sản thương mại điện tử để đồng
+bộ các thông tin về sản phẩm, đơn hàng về cửa hàng Pancake POS.
+Giao diện tích hợp thanh toán
+Ở đây người quản lý cấu hình thông tin tài khoản thanh toán doanh nghiệp của
+MoMo và VNpay để thực hiện các giao dịch thanh toán trực tuyến. Lịch sử các
+giao dịch của cửa hàng cũng được thống kê ở đây.
+Giao diện quản lý nhân viên của cửa hàng, có thể tìm kiếm nhân viên, thêm
+nhân viên vào cửa hàng. Ngoài ra cho phép phân quyền nhân viên, phân nhân viên
+vào các bộ phận, kho hàng có trong cửa hàng.
+Giao diện thể hiện tổng quan thống kê của ứng dụng từ doanh thu, lợi nhuận
+được so sánh theo thời gian có thể lựa chọn, đến thông tin lượng hàng tồn kho,
+Trong quá trình xây dựng và mở rộng phần mềm quản lý bán hàng, thì đơn hàng
+sẽ là nội dung chính mà doanh nghiệp chú ý đến. Vì vậy khối lượng công việc và
+dữ liệu để xử lý về các vấn đề liên quan đến đơn hàng vô cùng lớn. Cụ thể số lượng
+bản ghi được lưu trong cơ sở dữ liệu hiện tại là hơn 925 triệu bản ghi. Câu hỏi đặt
+ra là làm sao để cải thiện tốc độ đọc các bản ghi từ cơ sở dữ liệu để đem lại tốc độ
+tối ưu nhất cho việc quản lý đơn hàng của doanh nghiệp.
+Vấn đề gặp phải khi query từ bảng đơn hàng là tốc độ query với những trường
+được đánh index theo PosgreSQl thì tương đối nhanh nhưng những trường không
+đánh index thì rất lâu (có thể mất vài chục phút). Mà không thể tạo index với tất cả
+các trường vì số lượng trường trong bảng đơn hàng ngày càng mở rộng và những
+vấn đề liên quan khi lấy dữ liệu từ các trường ảo (ví dụ: tính tổng giữa các trường
+hoặc join vào các bảng liên quan để lấy dữ liệu).
+Giải pháp mà đội ngũ của chúng tôi lựa chọn là Elasticsearch để giải quyết bài
+toán đề trên. Sau đây là tổng quan về Elasticsearch, cách thức hoạt động mà chúng
+tôi đã áp dụng vào phần mềm
+Elasticsearch là một công cụ phân tích và tìm kiếm mã nguồn mở, phân tán được
+xây dựng trên Apache Lucene và được phát triển bằng Java. Nó bắt đầu như một
+phiên bản có thể mở rộng của khung tìm kiếm nguồn mở Lucene, sau đó thêm khả
+năng mở rộng các chỉ số Lucene theo chiều ngang.
+Elasticsearch cho phép chúng ta lưu trữ, tìm kiếm và phân tích khối lượng dữ
+liệu khổng lồ một cách nhanh chóng, gần thời gian thực và đưa ra câu trả lời chỉ
+trong mili giây. Nó có thể đạt được phản hồi tìm kiếm nhanh chóng vì thay vì tìm
+kiếm văn bản trực tiếp, nó sẽ tìm kiếm một chỉ mục.
+Nó sử dụng cấu trúc dựa trên tài liệu thay vì bảng và lược đồ và đi kèm với
+các API REST mở rộng để lưu trữ và tìm kiếm dữ liệu. Về cốt lõi, bạn có thể coi
+Elasticsearch như một máy chủ có thể xử lý các yêu cầu JSON và trả lại cho bạn
+Elasticsearch hoạt động như thế nào
+Elasticsearch được xây dựng để hoạt động như một Clould Server và có tìm
+kiếm thông qua cơ chế RESTfull. Từ đây lập trình viên tạo ra các HTTP Request
+gửi đến server Elasticsearch theo dữ liệu dạng JSON. Các dữ liệu này được lưu và
+đánh theo Index (chỉ mục) giúp tìm kiếm đem lại hiệu quả cao.
+Trong đồ án, dữ liệu trong bảng đơn hàng (khoảng 100 trường dữ liệu cơ sở)
+dược phân tich, xử lý và đánh chỉ mục và gọi đến HTTP request để đẩy lên ElasticTìm kiếm dữ liệu nhanh chóng, mạnh mẽ vì xây dựng trên nền tảng Apache
+Có khả năng mở rộng theo chiều ngang
+Tối ưu tìm kiếm. Cho phép tìm kiếm sai chính tả theo sai số nhất định, hỗ trợ
+Hỗ trợ việc tìm kiếm bằng việc đặc tả các câu truy vấn phức tạp một cách cụ thể
+Vì elasticsearch được thiết kế chỉ phù hợp cho mục đich tìm kiếm nên về những
+nhiệm vụ CRUD sẽ kém so với các lại database như MySQL, PosgreSQL,...
+Không đảm bảo toàn vẹn dữ liệu. Tức là khi thực hiện các hành động cập nhật
+bản ghi hàng loạt mà bị sai logic sẽ dẫn tới mất mát dữ liệu.
+Không phù hợp với các hệ thống cập nhật dữ liệu một cách thường xuyên vì việc
+đánh lại index sẽ rất tốn kém.
+Thống kê dữ liệu đơn hàng một cách nhanh chóng từ việc tính tổng giá trị tất cả
+đơn hàng, phân loại đơn hàng theo trạng thái của đơn và lọc tất cả các trường có
+trong đơn hàng nhanh chóng (realtime).
+Elasticsearch cho phép tìm kiếm dữ liệu sai chính tả theo sai số nhất định bằng
+hàm "fuzzy" có khả năng tìm gần đúng theo giá trị đầu vào. Chúng tôi đã áp dụng
+vào để tìm kiếm các nội dung như ghi chú, thông tin sản phẩm có trong đơn hàng.
+Có thể lấy data từ các trường ảo nhanh chóng (đã nêu ở vấn đề bài toán). Thao
+tác lấy dữ liệu đồng thời nhiều thành phần trong đơn hàng mà ko ảnh hưởng tới
+hiệu năng của việc tìm kiếm.
+Một trong những vấn đề tiếp theo khi làm việc với phần đơn hàng của phần
+mềm quản lý là làm thế nào để hiển thị nhiều nhất số lượng đơn hàng trên một
+trang. Điều này giúp cho khách hàng dễ dàng thao tác mà không cần phải chọn lần
+lượt các đơn hàng ở các trang khác nhau để thao tác cập nhật hàng loạt.
+Bài toán đặt ra ở đây làm sao để hiển thị hàng nghìn đơn hàng, mỗi đơn hàng lại
+có đến trăm trường dữ liệu mà tối ưu nhất về hiệu năng hiển thị. Như đã nói trong
+phần công nghệ React sử dụng DOM ảo, mỗi lần component thay đổi trạng thái thì
+tất cả dữ liệu đơn hàng sẽ đẩy lên để so sánh với DOM xem phần DOM nào cần
+cập nhật. Vì vậy mối lần thao tác làm phần đơn hàng render lại sẽ mất rất nhiều
+thời gian để hiển thị list đơn hàng này.
+Để giải quyết bài toán trên thì chúng ta cần hiển thị danh sách đơn một cách
+nhanh nhất những đơn đã được nạp vào DOM, trong khi đó chờ các đơn hàng khác
+tải lền và render tiếp trên DOM. Cụ thể thay vì render 1000 đơn hàng cùng lúc thì
+chúng ta sẽ render 30 đơn hàng một lần và các đơn hàng sau sẽ hiển thị lần lượt khi
+chúng ta thực hiện scroll. Tức là khi scroll đến đâu thì hiển thị đến đó
+Một trong những thư viện hiệu quả cho giải pháp nêu trên là React Virtualized.
+Virtualized là một kỹ thuật mà chỉ hiển thị những gì có thể nhìn thấy được
+(thường trong một màn hình). Được sử dụng trong một danh sách có nhiều phần
+tử mà có thể thao tác scroll trong danh sách đó và chỉ hiển thị những phần tử được
+nhìn thấy trong cửa sổ scrollable.
+Virtualized là một giải pháp hữu ích để hiển thị danh sách dữ liệu lớn mà đem
+lại hiệu xuất hiển thị cao.
+Khi hàng nghìn khách hàng đồng loạt thực hiện thao tác từ ứng dụng thì lượng
+request tới server rất lớn gây ra tình trạng chậm, quá tải thậm chí mất request.
+Xử lý các vấn đề về bất đồng bộ cũng như thực hiện song song các tác vụ dưới
+back-end cũng gặp một số vấn đề gây ra khoảng thời gian đợi lớn cho người dùng.
+Ví dụ như việc đơn hàng đang được liên kết với sàn thương mại điện tử TikTok
+shop, dữ liệu từ sàn đổ về, đồng thời người dùng thao tác cập nhật từ phần mềm.
+Khi này xảy ra vấn đề tổng hợp lại dữ liệu để cập nhật vào cơ sở dữ liệu.
+RabbitMQ là một giải pháp hữu hiệu cho việc thực hiện các thao tác xử lý hàng
+đợi, thực hiện các công việc đa luồng nhằm đồng bộ hóa dữ liệu một cách song
+RabbitMQ là một AMQP message broker. Là một chương trình trung gian được
+xây dựng với mục đích liên kết các ứng dụng với nhau, giao tiếp một cách dễ dàng.
+Sử dụng giao thức AMQP (Advanced Message Queue Protocol) để có thể gửi dữ
+liệu thông qua cơ chế hàng đợi.
+Tin nhắn không được xuất bản trực tiếp vào hàng đợi, thay vào đó, Producer gửi
+tin nhắn đến exchange. Exchange chịu trách nhiệm định tuyến các thông điệp đến
+các hàng đợi khác nhau với sự trợ giúp của các ràng buộc (binding) và khóa định
+tuyến (routing key). Một ràng buộc là một liên kết giữa một hàng đợi và một trao
+Đầu tiên, Producer xuất bản một tin nhắn cho exchange. Khi tạo exchange, kiểu
+exchange được chỉ định (Direct, Topic, Fanout) nhằm phân loại tin nhắn.
+Tiếp theo, exchange được tin nhắn và bây giờ chịu trách nhiệm định tuyến tin
+nhắn. Exchange phân loại các thuộc tính tin nhắn khác nhau, ví dụ như khóa định
+tuyến, tùy thuộc vào loại trao đổi.
+Các ràng buộc phải được tạo từ exchange đến hàng đợi. Trao đổi định tuyến
+thông điệp vào hàng đợi sẽ tùy thuộc vào thuộc tính của tin nhắn.
+Cuối cùng, các tin nhắn ở trong hàng đợi cho đến khi chúng được xử lý bởi
+Trên đây là cơ chế hoạt động của RabbitMQ.
+Một số tính năng nổi bật của RabbitMQ
+Cho phép các ứng dụng phần mềm kết nối và mở rộng quy mô. Các ứng dụng
+có thể kết nối với nhau, như các thành phần của một ứng dụng lớn hơn hoặc với các
+thiết bị và dữ liệu của người dùng. Nhắn tin không đồng bộ, tách ứng dụng bằng
+cách tách dữ liệu gửi và nhận.
+Cung cấp nhiều tính năng cho hiệu suất bằng độ tin cậy, bao gồm tính bền bỉ,
+xác nhận giao hàng, xác nhận của người phát hành và tính khả dụng cao.
+Hỗ trợ các hàng đợi và luồng được nhân rộng. các máy trong một cụm, đảm bảo
+rằng ngay cả trong trường hợp lỗi phần cứng, các thông báo vẫn an toàn miễn là có
+phần lớn các nút cụm trực tuyến.
+Đối với các máy chủ cần được kết nối lỏng lẻo và không đáng tin cậy hơn mức
+cho phép phân cụm, RabbitMQ sẽ cung cấp mô hình liên kết.
+RabbitMQ đi kèm với giao diện người dùng quản lý dễ sử dụng cho phép chúng
+ta theo dõi và kiểm soát mọi khía cạnh của nhà môi giới tin nhắn.
+Nếu hệ thống nhắn tin của chúng ta hoạt động sai, RabbitMQ cung cấp hỗ trợ
+theo dõi để cho phép tìm hiểu điều gì đang xảy ra.
+Đồ án đã trình bày tương đối đầy đủ về quá trình xây dựng và hoàn thiện phần
+mềm quản lý bán hàng, tác giả đã trình bày những khảo sát về thực trạng của phần
+mềm quản lý bán hàng, từ đó đưa ra tổng quan các chức năng và thiết kế kiến trúc
+mà phần mềm cần có, bao gồm:
+Các Use case đặc tả chức năng chính của phầm mềm
+Công nghệ nền tảng được sử dụng
+Cách xây dựng và lựa chọn kiến trúc hệ thống phần mềm
+Mặc dù hệ thống đã đạt được mục tiêu ban đầu nhưng hệ thống còn tồn đọng
+nhiều vấn đề về hiệu năng cũng như các tính năng mới bổ sung để hoàn thiện phần
+mềm. Một số tính năng bổ sung thêm trong tương lại
+Tích hợp thêm các phương thức thanh toán hấp dẫn để kéo thêm khách mua
+hàng như phương thức trả góp.
+Đồng bộ thêm các sàn thương mại điện tử lớn để mở rộng tệp khách hàng như
+Cải thiện lại giao diện người dùng để phù hợp, tối ưu cho các người dùng mới.
+Việc triển khai xây dựng ứng dụng quản lý bán hàng bước đầu đã đạt được những
+thành quả nhất định. Ứng dụng đã được xây dựng thành công, đáp ứng được nhu
+cầu của bài toán (hỗ trợ các nhà quản lý có thể quản lý thông tin của doanh nghiệp
+Việc ứng dụng công nghệ vào trong lĩnh vực quản lý giúp cho công việc trở nên
+đơn giản và trực quan hơn rất nhiều so với cách làm truyền thống trước đây từ đó
+giúp công ty tiết kiệm chi phí, nâng cao năng suất.
+Ứng dụng cơ bản đã đáp ứng các yêu cầu của khách hàng và có những cải tiến
+so với ứng dụng tiền nhiệm là khác về mặt hiệu năng và giao diện.

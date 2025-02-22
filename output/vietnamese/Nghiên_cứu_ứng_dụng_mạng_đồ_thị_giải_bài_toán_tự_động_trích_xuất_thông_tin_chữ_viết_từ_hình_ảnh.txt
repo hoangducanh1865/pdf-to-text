@@ -1,0 +1,723 @@
+
+Để hoàn thành đồ án tốt nghiệp này, em xin cảm ơn đến các thầy cô, gia đình và
+bạn bè, những người đã giúp đỡ và động viên em trong thời gian vừa qua. Nay đã
+sắp kết thúc quãng đường là sinh viên đại học Bách khoa Hà Nội.
+Đầu tiên, em xin gửi lời cảm ơn đến cô TS. Nguyễn Phi Lê – giảng viên trực
+tiếp hướng dẫn em hoàn thành đồ án này. Cô là người đam mê với công việc, luôn
+quan tâm đến sinh viên. Trong kỳ cuối cùng để thực hiện đồ án tốt nghiệp này, cô
+luôn khuyến khích sinh viên lên lab nhiều buổi nhất có thể để tập trung hơn. Nhờ
+sự hướng dẫn nhiệt tình của cô, đồ án tốt nghiệp (ĐATN) của em đã hoàn thành
+Tiếp theo, con xin gửi lời cảm ơn đến bố mẹ, gia đình. Thời gian học đại học có
+rất nhiều khó khăn, tuy nhiên với sự động viên của bố mẹ đã tiếp thêm động lực để
+con hoàn thành quãng đường sinh viên.
+Cuối cùng, tôi xin gửi lời cảm ơn đến tất cả những người bạn đã trải qua quãng
+đời sinh viên với bao niềm vui, nỗi buồn. Việc gặp gỡ và quen biết các bạn là niềm
+vinh hạnh đối với tôi.
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Trong lĩnh vực thị giác máy tính, những tác vụ như định vị chữ viết và nhận diện
+chữ viết đã trở nên tốt với những mô hình mạng nơ-ron học sâu. Trong ứng dụng
+của OCR (Optical Character Recognition - nhận diện kí tự quang học), một lớp
+bài toán trích xuất thông tin trong tài liệu có nhiều ứng dụng trong thực tế, chẳng
+hạn như hóa đơn, đơn thuốc, etc. Đối với lớp bài toán này, có những hướng tiếp
+cận khác nhau như phương pháp sử dụng tập luật, phương pháp sử dụng những mô
+hình ngôn ngữ tương tự bài toán phân loại văn bản. Tuy nhiên, những phương pháp
+trên không có tính tổng quát đối với nhiều định dạng của tài liệu. Vì vậy, em đề
+xuất một giải pháp hoàn chỉnh cho bài toán trích xuất thông tin từ ảnh văn bản, cụ
+thể là đơn thuốc, nhận đầu vào là hình ảnh định dạng bất kỳ, trả về thông tin về các
+trường chuẩn đoán bệnh, tên thuốc, số lượng, cách dùng, ngày tháng. Giải pháp của
+em bao gồm 3 khối chính: khối tiền xử lý gồm mô hình BERT, khối mạng nơ-ron
+đồ thị GraphSAGE và khối hậu xử lý gồm các lớp mạng phân loại. Em sử dụng
+hàm mất mát tiêu điểm để huấn luyện mô hình. Ngoài ra, để tăng độ chính xác của
+phần nhận diện chữ viết, em đề xuất một thuật toán tiền xử lý tài liệu, giúp tài liệu
+có thể được nắn chỉnh thẳng, sử dụng bài toán tìm bao lồi và tìm hình chữ nhật có
+diện tích nhỏ nhất bao quanh bao lồi.
+Đóng góp chính của đồ án tốt nghiệp gồm 3 phần: mô hình trích xuất thông tin
+trong tài liệu, phương pháp tiền xử lý dữ liệu nghiêng và trang web trích xuất thông
+tin từ đơn thuốc tiếng Việt. Để đánh giá hiệu quả của mô hình đề xuất, em so sánh
+mô hình đề xuất trên 3 bộ dữ liệu liên quan đến bài toán trích xuất thông tin trong
+tài liệu như là bộ dữ liệu SROIE, bộ dữ liệu FUNSD và bộ dữ liệu đơn thuốc bệnh
+viện của Việt Nam. Kết quả cho thấy, mô hình đề xuất có hiệu suất vượt trội mô
+hình PICK [1] 3/3 bộ dữ liệu.
+In the field of computer vision, tasks such as text localization, text recognition have
+become better with deep learning models. In application of OCR (Optical Charac-
+ter Recognition), a class of problems of extracting information from documents
+(such as invoices, prescriptions, etc) have many practical use. In order to deal with
+this class of problems, there are different approaches, for example the rule-base
+method, the NLP-base method. However, the above methods are not universal to
+many document formats. Therefore, i propose a complete solution to the problem
+of extracting information from text images, namely prescriptions, taking as input an
+image of any format, returning information about diagnose, medical name, quan-
+tity, usage, date. My solution consists of 3 main blocks: a pre-processing block
+consisting of a BERT model, a graph neural network block consisting of Graph-
+SAGE Conv and a post-processing block consisting of classifier network layers.
+I use the focal loss function to train the model. In addition, to increase the accu-
+racy of the text recognition model, I propose a document pre-processing algorithm,
+which helps the document to be straightened based on the problem of finding con-
+vex hull and a minimum area rectangle around the convex hull.
+The main contribution of this graduation project consists of 3 parts: an infor-
+mation extraction model from documents, a data pre-processing method, a website
+for extracting information from Vietnamese prescriptions. To evaluate the effec-
+tiveness of this deep learning model, I compared the proposed model on 3 datasets
+related to the information extraction problem in documents such as the SROIE
+dataset, the FUNSD dataset and the Vietnamese prescription dataset. The results
+show that the proposed model has superior performance to the PICK model in 3/
+
+Hiện nay, chuyển đổi số trong cuộc Cách mạng công nghiệp 4.0 đang diễn ra
+trong tất cả các lĩnh vực kinh tế xã hội nhằm thay đổi phương thức quản lý, vận
+hành, mô hình sản xuất, kinh doanh. Việc số hóa những giấy tờ như thủ tục hành
+chính, hóa đơn bán hàng, đơn thuốc sẽ giúp nhà nước, doanh nghiệp có thể tận
+dụng được nền tảng công nghệ thông tin được xây dựng cho dữ liệu điện tử một
+cách thuận tiện và nhanh chóng, giảm được thời gian so với việc xem xét, rà soát
+những thông tin đó trên giấy. Trong phạm vi của đồ án này, em tập trung vào giải
+quyết việc số hóa những thông tin quan trọng trong một đơn thuốc, được định nghĩa
+là bài toán trích xuất thông tin từ ảnh tài liệu.
+Bài toán trích xuất thông tin từ ảnh tài liệu là một lớp bài toán con trong lĩnh vực
+nhận diện ký tự quang học (thường được gọi là bài toán OCR - Optical Character
+Recognition). Mục tiêu của bài toán này là việc phân loại các hộp văn bản vào
+những trường thông tin tương ứng được định nghĩa trong từng loại tài liệu. Trong
+bộ dữ liệu đơn thuốc thu thập từ bệnh viện Việt Nam, những trường thông tin bao
+gồm: diagnose (chuẩn đoán), medical name (tên thuốc), quantity (số lượng), usage
+(cách dùng), date (ngày tháng). Để thực hiện được bài toán này, cần phải thực hiện
+được hai bài toán trước đó là định vị và nhận diện văn bản. Đầu ra của hai bài toán
+là đầu vào của bài toán trích xuất thông tin trong tài liệu.
+Trong lĩnh vực thị giác máy tính, có nhiều mô hình đạt được những thành tựu
+lớn với những tác vụ như định vị văn bản và nhận diện văn bản. Tuy nhiên, tác vụ
+trích xuất thông tin trong tài liệu là một thử thách lớn vì nó phụ thuộc vào cách bố
+trí của mẫu tài liệu. Trong bài toán này, thực tế có nhiều hướng tiếp cận khác nhau
+như: Phương pháp dựa trên mẫu tài liệu, sử dụng các tập luật được xây dựng dựa
+trên các hộp văn bản và sự phân bố của các hộp văn bản trên tài liệu, phương pháp
+dựa trên mô hình xử lý ngôn ngữ tự nhiên, sử dụng những đặc trưng về văn bản của
+hộp văn bản, phương pháp dựa trên mạng lưới thần kinh đồ thị, sử dụng những đặc
+trưng về văn bản, hình ảnh và đặc trưng về mặt không gian giữa các hộp văn bản.
+Phương pháp dựa trên mẫu tài liệu [2] [3] [4] : phương pháp sử dụng các tập
+luật áp dụng lên tài liệu có cấu trúc cố định, không thay đổi nhiều về cách bố trí
+cách trình bày, tiếp theo áp dụng những kỹ thuật regrex, text/ keyword matching để
+xác định nhãn của những trường thông tin tương ứng. Ưu điểm của phương pháp
+dựa vào mẫu tài liệu là dễ tiếp cận nếu chỉ áp dụng với số lượng mẫu nhỏ, cố định.
+Ngược lại, nhược điểm của phương pháp là cần tạo tập luật riêng biệt cho từng loại
+mẫu tài liệu, mất thời gian tạo thêm luật mới với một mẫu tài liệu mới xuất hiện.
+Ngoài ra còn một nhược điểm khi tiếp cận theo phương pháp này là tập luật sẽ phụ
+thuộc vào cách viết của từng người.
+Đầu vào: Văn bản + Tọa độ của hộp văn bản →Tập luật →Đầu ra: nhãn của
+Phương pháp dựa trên mô hình xử lý ngôn ngữ tự nhiên [5]: phương pháp sử
+dụng các thông tin văn bản vào mô hình phân loại văn bản để phân loại, xác định
+nhãn của những trường thông tin tương ứng. Một mô hình phân loại văn bản hay
+được sử dụng trong học máy là mô hình Na ¨ıve Bayes Classifier for Multinomial
+Models [5], sử dụng như một phương pháp cơ sở trong phân loại văn bản. Ưu điểm
+của phương pháp dựa trên mô hình xử lý ngôn ngữ tự nhiên là khả năng áp dụng
+đối với dữ liệu mới cao hơn so với phương pháp dựa trên mẫu tài liệu đề cập trên.
+Nhược điểm của phương pháp này là phụ thuộc nhiều vào cách bố trí của mẫu tài
+liệu, hạn chế nhiều đối với dữ liệu dạng bảng biểu, không tận dụng được những
+thông tin liên quan đến tọa độ của văn bản trên tài liệu. Ví dụ, trong một đơn thuốc
+có bảng chứa danh sách thuốc cần uống, 2 trường thông tin là STT, quantity (số
+lượng) có nội dung tương đối giống nhau, với phương pháp dựa trên mô hình xử
+lý ngôn ngữ tự nhiên, chỉ sử dụng thông tin liên quan đến nội dung văn bản mà bỏ
+qua thông tin về tọa độ của văn bản, sẽ khó phân loại, xác định được nhãn của các
+trường thông tin tương ứng.
+Đầu vào: Văn bản →Mô hình phân loại văn bản →Đầu ra: nhãn của hộp văn
+Phương pháp dựa trên mạng nơ-ron đồ thị [1]: phương pháp sử dụng các thông
+tin văn bản và các thông tin tọa độ vào mô hình mạng nơ-ron đồ thị để phân loại,
+xác định nhãn của những trường thông tin tương ứng. Trong bài toán trích xuất
+thông tin quan trọng từ tài liệu bán cấu trúc như đơn thuốc, hóa đơn. . . thì những
+thông tin về tọa độ của văn bản (những thông tin về không gian của văn bản) là
+các thông tin quan trọng để có thể hiểu được ngữ cảnh của văn bản. Từ đó, những
+mạng nơ-ron tích chập hay mạng nơ-ron đồ thị trong lĩnh vực thị giác máy tính
+được sử dụng để xử lý và trích rút mối quan hệ giữa các hộp văn bản tài liệu. Sự
+kết hợp của mô hình xử lý ngôn ngữ tự nhiên và mô hình mạng nơ-ron tích chập,
+mạng nơ-ron đồ thị giúp khai thác được thêm thông tin từ các hộp văn bản, khắc
+phục được nhược điểm của phương pháp dựa trên mô hình xử lý ngôn ngữ tự nhiên
+đã đề cập ở trên. Những nghiên cứu trước đó sử dụng mạng nơ-ron đồ thị để giải
+quyết bài toán trích xuất thông tin từ tài liệu, đồng thời sử dụng hai thông tin về
+ngữ nghĩa của văn bản và hình ảnh trong tài liệu. Do vậy, đây là một mô hình cơ sở
+để chúng tôi có thể so sánh và cải thiện.
+Đầu vào: Văn bản + Tọa độ của hộp văn bản →Mô hình mạng nơ-ron đồ thị
+→Đầu ra: nhãn của hộp văn bản
+Kỹ thuật huấn luyện sẵn (pre-training) được sử dụng phổ biến trong tác vụ xử lý
+ngôn ngữ tự nhiên và thị giác máy tính. Mô hình huấn luyện sẵn BERT [6] cũng sử
+dụng kỹ thuật này và có kết quả vượt trội trong tất cả các tác vụ liên quan đến ngôn
+ngữ tự nhiên. Từ đó, em tận dụng điểm mạnh này, đưa văn bản trong hộp văn bản
+đã được định vị và nhận diện bởi mô hình định vị và nhận diện văn bản trong ảnh
+ngữ cảnh, qua mô hình huấn luyện sẵn BERT để thu được những vec-tơ nhúng ngữ
+nghĩa chứa nhiều thông tin hơn so với những phương pháp trước đó như RNN [7],
+LSTM [8]. Bên cạnh đó, mô hình đề xuất sử dụng mạng nơ-ron đồ thị nhằm học
+thông tin của nút bao gồm đặc trưng về văn bản và tọa độ.
+Để đánh giá hiệu năng của mô hình đề xuất, em đã thực hiện huấn luyện trên 3
+bộ dữ liệu (bộ dữ liệu SROIE, bộ dữ liệu FUNSD, bộ dữ liệu đơn thuốc). Em cũng
+so sánh kết quả của mô hình đề xuất với mô hình PICK [1] và mô hình không chứa
+mô-đun mạng nơ-ron đồ thị, so sánh độ hội tụ của hàm mất mát tiêu điểm và hàm
+mất mát balanced cross entropy. Từ kết quả so sánh, mô hình đề xuất cho thấy sự
+hiệu quả tốt hơn khi so sánh với mô hình cơ sở 3/3 bộ dữ liệu chuẩn, mô hình đề
+xuất sử dụng hàm mất mát tiêu điểm có tốc độ hội tụ nhanh hơn so với hàm mất
+mát balanced cross entropy. Ngoài thay đổi về mặt mô hình của bài toán trích xuất
+thông tin trong tài liệu, em đã đề xuất phương pháp sử dụng bao lồi để xử lý những
+trường hợp ảnh tài liệu nghiêng trong thực tế.
+Đồ án của em có ba đóng góp chính sau:
+1. Đề xuất một phương pháp tiền xử lý tài liệu nghiêng. Em nhận thấy, trong
+những tài liệu như hóa đơn, đơn thuốc, etc, phần chính giữa của tài liệu là nội
+dung của văn bản cần xử lý, còn lại phần còn lại của tài liệu không thực sự cần
+thiết trong bài toán trích xuất thông tin. Do đó, phương pháp cắt ảnh theo bao
+lồi của những hộp văn bản được phát hiện trong ảnh tài liệu được đề xuất.
+2. Đề xuất một mô hình mạng nơ-ron đồ thị trích xuất thông tin trong tài liệu.
+Mô hình đề xuất sử dụng những thông tin như văn bản và tọa độ của văn bản
+một cách đầy đủ và hiệu quả như một biểu diễn ngữ nghĩa tốt giúp phân loại
+nhãn của các trường thông tin tương ứng.
+3. Xây dựng trang web trích xuất thông tin của đơn thuốc tiếng Việt
+Phần còn lại của đồ án được tổ chức như sau. Trong chương 2, em giới thiệu một
+số nghiên cứu liên quan trong bài toán trích xuất thông tin trong tài liệu và các kiến
+thức nền tảng và cơ sở lý thuyết phục vụ cho quá trình nghiên cứu đồ án. Chương
+3 mô tả chi tiết mô hình đề xuất và phương pháp tiền xử lý tài liệu nghiêng. Trong
+mô hình đề xuất trích xuất thông tin trong tài liệu bao gồm mô hình xử lý ngôn ngữ
+tự nhiên BERT, mạng nơ-ron đồ thị và hàm mất mát tiêu điểm. Phương pháp tiền
+xử lý tài liệu nghiêng dựa trên khái niệm về bao lồi và bài toán tìm hình chữ nhật
+nhỏ nhất bao quanh bao lồi. Chương 4, em đưa ra các phân tích lý thuyết về mặt
+toán học nhằm chứng minh sự hiệu quả của hàm mất mát tiêu điểm trong việc xử
+lý vấn đề mất cân bằng dữ liệu. Chương 5 trình bày kết quả thí nghiệm đánh giá
+hiệu năng của mô hình đề xuất. Cuối cùng, em trình bài các kết luận và hướng phát
+triển của đồ án ở chương 6.
+Trong phần này, em trình bày các kiến thức nền tảng liên quan đến đồ án của em.
+Cụ thể, trong chương này, em trình bày về học máy cơ bản, mô hình huấn luyện sẵn
+BERT, mô hình mạng nơ-ron đồ thị GraphSAGE, thư viện xử lý hình ảnh OpenCV,
+bài toán nhận diện ký tự quang học (OCR). Trong chương tiếp theo, em sẽ trình
+bày về giải pháp đề xuất của em.
+Không chỉ dừng lại ở việc định vị và nhận diện văn bản, mà quan trọng hơn
+là phải bóc tách được các thông tin. Ví dụ, đối với một hóa đơn thì cần bóc tách
+được tên từng loại hàng hóa, giá cả, thuế, etc. Đây là một bài toán khó và trước đây
+thường được giải quyết bằng cách xây dựng các tập luật. Ví dụ, mô hình [2] [3] [4]
+với cách tiếp cận bằng tập luật giải quyết bài toán trích xuất thông tin từ tài liệu.
+Tuy nhiên, việc dựa vào những tập luật như vậy sẽ không có tính bao quát, không
+đối ứng được khi thay đổi các mẫu giấy tờ. Khi đi sâu nghiên cứu bài toán, em
+nhận thấy, mặc dù các chi tiết cụ thể trong các mẫu giấy tờ thay đổi, nhưng quan
+hệ tương đối về mặt không gian, vị trí của các thành phần trong một loại văn bản
+thường có tính nhất quán. Ví dụ: chẩn đoán bệnh thường nằm phía trên của danh
+sách các thuốc trong ảnh đơn thuốc. Chính vì thế, trong đồ án của em, em tập trung
+nghiên cứu ứng dụng mạng nơ-ron đồ thị để giải quyết bài toán trích xuất thông tin
+Trong lĩnh vực thị giác máy tính, bài toán OCR đã quen thuộc với giới nghiên
+cứu, có nhiều mô hình đạt kết quả tốt cho bài toán nhận diện văn bản trong ảnh
+khung cảnh [9], [10], [11], bài toán phát hiện văn bản trong ảnh khung cảnh [12],
+[13], [14]. Và một bài toán tiếp theo trong OCR cũng được quan tâm đó là bài
+toán trích xuất thông tin văn bản từ ảnh tài liệu [15], [16], [17], [18], [1]. Những
+nghiên cứu hiện tại nhận thấy vai trò quan trọng của việc sử dụng đặc trưng về văn
+bản lẫn đặc trưng về tọa độ văn bản của tài liệu để cải thiện độ chính xác của bài
+toán trích xuất thông tin từ tài liệu. Tuy nhiên, phần lớn các phương pháp tập trung
+vào đặc trưng về văn bản thông qua những bộ trích xuất đặc trưng khác nhau như
+mạng nơ-ron hồi quy (RNN) hay mạng nơ-ron tích chập (CNN) [19], [20]. Mô hình
+[21] dùng mạng mã hóa- giải mã (encoder - decoder) dự đoán mặt nạ phân đoạn
+(segmentation mask) và hộp giới hạn (bounding box). Điều này cho thấy [21] đang
+chỉ tập trung vào những đặc trưng về mặt hình ảnh, không chú ý đến đặc trưng về
+văn bản. Bên cạnh đó, [3] là một phương pháp sử dụng đầy đủ các đặc trưng để hỗ
+trợ việc trích xuất thông tin, tuy nhiên những đặc trưng đó thường được con người
+tự thiết kế, hoặc phù hợp với nhiệm vụ cụ thể, vì vậy không có tính mở rộng cho
+các loại tài liệu khác nhau. Trong bài báo [1] đề xuất một mô hình sử dụng kết
+hợp mô hình Transformer để thu được vec-tơ nhúng chứa thông tin ngữ nghĩa của
+văn bản bên trong các hộp văn bản, mô hình mạng nơ-ron tích chập để thu được
+vec-tơ đặc trưng về hình ảnh của tài liệu, mô hình mạng nơ-ron đồ thị với đầu vào
+là vec-tơ tổng hợp bởi vec-tơ văn bản và vec-tơ hình ảnh. Tuy nhiên, hiệu quả của
+mô hình [1] đối với những tài liệu có nhiều hộp văn bản (bộ dữ liệu FUNSD, bộ dữ
+liệu đơn thuốc Việt Nam) không tốt.
+Học máy (machine learning) là một lĩnh vực của ngành trí tuệ nhân tạo giúp giải
+quyết những vấn đề trong mọi lĩnh vực bằng cách cho phép hệ thống tự học từ dữ
+liệu. Trong học máy, chia thành hai nhánh chính:
+1. Học có giám sát: mô hình hóa một tập dữ liệu có sẵn những ví dụ đã được gán
+2. Học không giám sát: mô hình hóa một tập dữ liệu không có sẵn những ví dụ
+Trong bài toán phân loại nhị phân có khái niệm lớp dữ liệu cần xác định đúng là
+lớp Positive (dương tính) và lớp dữ liệu còn lại là lớp Negative (âm tính). Có 4 định
+nghĩa True Positive (dự đoán đúng là dương tính), False Negative (dự đoán sai là
+âm tính), False Positive (dự đoán sai là dương tính), True Negative (dự đoán đúng
+Độ đo Precision : tính bằng tỷ lệ giữa True Positive và tổng của True Positive và
+False Positive – tổng số điểm được phân loại là lớp Positive.
+Độ đo Recall : tính bằng tỷ lệ giữa True Positive và tổng của True Positive và
+False Negative – tổng số điểm thực sự thuộc lớp Positive. Công thức toán học:
+Độ đo F1 score : còn được gọi là trung bình điều hòa của hai đại lượng Precision
+và Recall. Công thức toán học:
+Trong bài toán phân loại nhiều lớp, coi lần lượt một lớp là Positive và các lớp
+còn lại là Negative để tính các Precision, Recall tương ứng.
+Batch Normalization là một kỹ thuật huấn luyện mạng nơ-ron bằng cách chuẩn
+hóa các đầu vào thành một lớp mạng theo từng lô nhỏ. Phương pháp chuẩn hóa này
+giúp chuẩn hóa các vec-tơ đặc trưng (đầu ra của một lớp mạng sau khi qua các hàm
+kích hoạt) về phân phối chuẩn (giá trị trung bình bằng 0 và độ lệch chuẩn bằng 1).
+Đầu vào: Lô nhỏ B={x1..m}và tham số γ,β
+Đầu ra: tập hợp những vec-tơ đã được chuẩn hóa
+Tác động của phương pháp Batch Normalization lên việc huấn luyện mô hình
+•Giả sử một lớp mạng y=Wx+b, đạo hàm của đầu ra ytheo trọng số Wbị
+ảnh hưởng bởi đầu vào x. Nếu đầu vào xcó độ lớn không ổn định thì mô hình
+sẽ không ổn định. Batch Normalization có thể tăng độ ổn định khi huấn luyện
+•Giảm được hiện tượng quá khớp (overfitting)
+•Không cần sử dụng nhiều lớp mạng Dropout
+•Tăng tốc độ học (learning rate) khi huấn luyện mô hình nơ-ron
+Hàm softmax là hàm số tính toán khả năng xuất hiện của một lớp trong tổng số
+tất cả các lớp có thể xuất hiện. Xác suất này được dùng để xác định lớp mục tiêu
+cho đầu vào của bài toán. Một vec-tơ nchiều có giá trị thực bất kỳ sau khi đi qua
+hàm softmax, thành vec-tơ nchiều có giá trị thực trong khoảng (0, 1] có tổng bằng
+1. Trong học sâu, hàm softmax được sử dụng ở nhiều lớp mạng, trong đó có lớp
+mạng cuối cùng của bài toán phân loại nhiều lớp.
+Trong đó: σlà hàm softmax;− →zlà vec-tơ đầu vào; elà hàm lũy thừa tiêu chuẩn;
+Klà số lớp cần phân loại
+Mô hình BERT [6] là mô hình biểu diễn mã hóa 2 chiều từ kĩ thuật Transformer.
+Mô hình hoặc được sử dụng để trích xuất đặc trưng ngôn ngữ chất lượng cao từ dữ
+liệu văn bản, hoặc được tinh chỉnh (fine-tune) phù hợp với những nhiệm vụ khác
+nhau như phân loại, trả lời câu hỏi,etc. Hình 2.2 mô tả kiến trúc của mô hình BERT.
+Cơ chế chú ý (attention) của kiến trúc Transformer là cơ chế truyền toàn bộ các từ
+trong câu văn bản đồng thời. Do đó, Transformer được xem là mô hình huấn luyện
+đầu vào theo hai chiều, giúp mô hình học bối cảnh của một từ dựa trên tất cả những
+Với mô hình huấn luyện sẵn BERT, có thể lấy vec-tơ nhúng của một câu văn bản
+đầu vào để thực hiện tác vụ khác nhau của bài toán cụ thể.
+Hiện nay, mô hình huấn luyện sẵn BERT có rất nhiều phiên bản khác nhau phụ
+thuộc theo 3 tham số trong kiến trúc Transformer là số lượng những khối lớp mạng
+con (block sub-layers) (L), kích thước của vec-tơ nhúng (hidden size) (H), Số lượng
+head trong multi-head layer (A). Tên gọi của 2 kiến trúc bao gồm:
+•BERT BASE (L=12, H=768, A=12)
+•BERT LARGE (L=24, H=1024, A=16)
+Mô hình mạng nơ-ron đồ thị GraphSAGE là một framework cho việc học biểu
+diễn quy nạp trên đồ thị cỡ lớn. GraphSAGE được sử dụng để sinh ra vec-tơ biểu
+diễn thấp chiều từ các nút.
+Inductive learning là quá trình học từ các tập huấn luyện suy ra các quy luật
+chung rồi áp dụng các quy luật chung đó vào tập kiểm thử. Với cách học như này,
+mô hình không cần huấn luyện lại khi có dữ liệu mới, chưa từng xuất hiện trong
+tập huấn luyện nên phù hợp với việc giải các bài toán tổng quát hóa cao.
+Các đặc trưng của đối tượng được biểu diễn thành các đặc trưng của nút và
+nhúng vào đồ thị đã cho thấy được hiệu quả trong nhiều tác vụ dự đoán. Tuy vậy
+những phương pháp transductive learning như GCN kém hiệu quả khi xuất hiện
+những nút mới, chưa xuất hiện trong tập huấn luyện.
+Vấn đề này đã được mô hình mạng nơ-ron đồ thị GraphSAGE [22] giải quyết.
+Ý tưởng chính của mô hình là thuật toán tạo ra các vec-tơ nhúng cho nút mới chưa
+huấn luyện. Giải thuật thực hiện huấn luyện hàm tổng hợp (mean, max, lstm) giúp
+nút hiện tại có thể tổng hợp được thông tin từ các nút lân cận.
+Giải thuật sinh ma trận embedding:
+toán tìm bao lồi. Ý tưởng của thuật toán như việc đi qua các điểm với một dải băng.
+Đầu vào: Cho một tập hợp nđiểm S=s0, s1, ..., s n
+Đầu ra: Một tập hợp điểm nằm trên bao lồi H
+1. Chọn điểm h0là điểm thấp nhất bên phải của tập S. Thêm điểm h0vào tập H.
+Gán điểm t0bằng điểm h0(2.5a)
+2. Gán điểm t1bằng điểm s0. Với mỗi điểm p∈S, nếu pnằm ở bên phải của
+hướng thẳng từ t0đếnt1, thì gán điểm t1bằng điểm p. Sau bước 2, không có
+điểm nào nằm bên phải của hướng thẳng từ t0đếnt1(2.5b)
+3. Nếu điểm t1bằng điểm h0(2.5d) thì đã hoàn thành việc tìm tập H. Ngược lại,
+thêm điểm t1vào tập H, gán điểm t0bằng điểm t1, và quay lại bước 2 (2.5c)
+Perspective Transformation (chuyển đổi góc nhìn) là một phương pháp thay
+đổi góc nhìn của một ảnh hoặc một video nhất định để hiểu rõ hơn về thông tin cần
+Đối với những ảnh tài liệu nghiêng, cần thiết phải thực hiện thay đổi góc nhìn,
+giúp mô hình định vị và nhận diện văn bản hoạt động tốt hơn, Và mô hình mạng
+nơ-ron đồ thị cũng sẽ học được thông tin về tọa độ một cách đơn giản hơn với
+những hộp giới hạn có độ nghiêng nhỏ.
+Trong đó: (x, y)là điểm đầu vào; (´x,´y)là điểm thu được sau khi biến đổi;"
+định nghĩa sự biến đổi (xoay, mở rộng);"
+là vector dịch (translation vector);
+là vector chiếu (projection vector)
+OCR là thuật ngữ về nhận diện ký tự quang học có nhiều ứng dụng thực tế như
+số hóa các tài liệu, xe tự hành, etc. OCR có những bài toán điển hình như mô hình
+định vị văn bản và mô hình nhận diện văn bản.
+CRAFT [12] là một mô hình dùng để phát hiện vùng văn bản trong ảnh. Trong
+việc phát hiện văn bản do mô hình này thực hiện thì vùng văn bản được tính từ
+vùng ký tự và vùng kết nối giữa các ký tự thay vì phát hiện bằng phương pháp phát
+hiện đối tượng thông thường.
+VGG-16 và các lớp skip connection và đầu ra là region score vàaffinity score .
+Mô hình CRAFT được huấn luyện bằng ảnh tổng hợp với cấp độ ký tự. Tạo bản
+đồ nhiệt (heatmap) để biểu diễn nhãn của sự thật nền tảng (ground truth label) là
+region score và affinity score
+Có 3 bước để tạo bản đồ nhiệt (heatmap):
+2. Tính toán ma trận chuyển đổi góc nhìn (perspective transform) giữa Gaussian
+map và mỗi hộp ký tự.
+3. Dùng ma trận tìm được để chuyển bản đồ Gaussian về hình dạng của hộp ký
+tự. Đối với affinity score, nối hai đường chéo của hộp ký tự tạo thành 2 tam
+giác phía trên và phía dưới. Và một affinity box có đỉnh là tâm của 4 cái tam
+giác của 2 hộp ký tự liền kề.
+Phương pháp học giám sát yếu : không giống như bộ dữ liệu tổng hợp, ảnh thực
+có nhãn ở cấp độ từ. Mục tiêu là tách các ký tự từ mỗi wordbox này. Khi một ảnh
+thực tế được đưa vào mô hình, tạm thời sẽ dự đoán điểm số của vùng ký tự của các
+từ đã được cắt ra nhằm tạo ra hộp giới hạn mức độ ký tự. Để biểu diễn độ tin cậy
+dự đoán của mô hình tạm thời, giá trị của bản đồ tin cậy (confidence map) ở mỗi
+hộp từ (word-box) là tỷ lệ của số lượng ký tự bóc tách được và số lượng ký tự của
+sự thật nền tảng (ground truth), giá trị này được dùng để tính độ mất mát và cập
+1. Đầu tiên, cắt những hộp từ (word-box) ra, sau đó dùng mô hình tạm thời để
+2. Tiếp theo, dùng thuật toán watershed để tách các ký tự ra nhằm tạo ra hộp giới
+hạn mức độ ký tự.
+3. Cuối cùng, tọa độ của các hộp ký tự sẽ được chuyển lại về tạo độ trong ảnh
+thực. Pseudo-ground truth cho region score và affinity score sẽ được tạo ra
+giống như ở bước trên.
+Với phương pháp học giám sát yếu, mô hình được huấn luyện với các pseudoGTs không hoàn hảo, tức là các nhãn bị sai, điều này dễ dẫn đến đầu ra vùng ký tự
+bị mờ. Để giải quyết điều này, chất lượng của pseudo-GTs được tính toán theo độ
+dài của mỗi từ. Với R(w)vàl(w)là vùng của hộp giới hạn và độ dài của từ của mẫu
+w.lc(w)là tổng số lượng ký tự được dự đoán, thì độ tin cậy sconf(x)được tính dựa
+Với phương pháp huấn luyện, mục tiêu là region score và affinity score được dự
+đoán từ mạng nơ-ron sẽ càng gần vớ sự thật nền tảng (ground truth), nên hàm mất
+mát MSE được sử dụng trong mô hình CRAFT:
+Trong đó Sr(p),Sa(p)là region/affinity score groundtruth; S∗
+gion/affinity score dự đoán từ mô hình. Bên cạnh đó, ta chỉ muốn học ít đối với
+các groundtruth không có độ tin cậy cao, nên đặt Sc(p)như một trọng số kiểm soát
+Mô hình nhận diện văn bản (hình 2.9) được đề cập đến ở phần này là VGG-
+Seq2seq. Mô hình bao gồm 2 phần:
+1. Phần bóc tách đặc trưng từ ảnh, thành các vec-tơ đầu vào của phần tiếp theo
+2. Phần sử dụng mô hình mạng sequence to sequence được lấy ý tưởng từ bài
+Phần thứ nhất: sử dụng cấu trúc mạng VGG đơn giản phù hợp với kích thước ảnh
+Phần thứ hai: sử dụng mô hình sequence to sequence gồm:
+•Với bộ mã hóa nhận đầu vào là đầu ra của mạng VGG sau đó được đi qua lớp
+BiLSTM. BiLSTM giúp các vec-tơ đầu ra có được thông tin ngữ cảnh. Đầu
+ra của mạng BiLSTM được cho đi qua lớp mạng tầng kết nối đầy đủ (fully
+connected layer) trở thành đầu ra của bộ mã hóa.
+•Với bộ giải mã sử dụng cơ chế chú ý (attention). Chữ cái ở vị trí thứ tđược tính
+bằng cách: Sử dụng trạng thái ẩn (hidden state) của bước thời gian thứ t−1
+đóng vai trò như query và đầu ra của bộ mã hóa đóng vai trò vừa là keyvừa
+làvalue trong cơ chế chú ý (attention). Đầu ra của cơ chế chú ý (attention) ta
+được một vec-tơ được nối với vec-tơ nhúng của từ thứ t−1sau đó qua mạng
+hồi quy (RNN) thu được rnn output vàhidden state . Hidden state được sử
+dụng trong quá trình sinh ra từ thứ t+ 1còn rnn output được đi qua lớp mạng
+linear, softmax và từ thứ tchính là từ có xác suất lớn nhất.
+Trong chương nay, em trình bày ngữ cảnh của bài toán trích xuất thông tin
+trong tài liệu dựa vào hướng tiếp cận mạng nơ-ron đồ thị. Em cũng trình bày những
+nghiên cứu tương tự và các kiến thức cơ bản liên quan đến học máy cơ bản như tham
+số đánh giá, độ đo Precision, Recall, F1-score, lớp mạng Batch Normalization,
+hàm softmax. Bên cạnh đó, mô hình huấn luyện sẵn BERT, mô hình mạng đồ
+thị GraphSage, convex hull (bao lồi), perspective transformation (chuyển đổi góc
+nhìn), mô hình định vị văn bản CRAFT, mô hình nhận diện văn bản VGG-Seq2seq.
+Những kiến thức này sẽ liên quan đến phương pháp đề xuất trong chương tiếp theo.
+Luồng xử lý đối với bài toán tự động trích xuất thông tin từ ảnh văn bản là từ
+ảnh đơn thuốc đầu vào, em sử dụng mô hình định vị văn bản để lấy được tọa độ
+của những hộp văn bản, sau đó, nếu ảnh bị nghiêng sẽ đi qua thuật toán tiền xử lý
+ảnh nghiêng để thu được văn bản và tọa độ của văn bản của ảnh sau khi nắn chỉnh.
+Thuật toán tiền xử lý ảnh nghiêng dựa trên bài toán tìm bao lồi và hình chữ nhật
+có diện tích nhỏ nhất bao quanh bao lồi. Tiếp theo, những thông tin trên được đưa
+qua mô hình trích xuất thông tin trong tài liệu sử dụng mạng nơ-ron đồ thị giúp
+phân loại văn bản vào các trường thông tin tương ứng. Trong mô hình đề xuất, em
+sử dụng mô hình BERT, mô hình mạng nơ-ron đồ thị GraphSAGE và hàm mất mát
+tiêu điểm. Bên cạnh việc xây dựng mô hình học sâu, em cũng phát triển một trang
+web đơn giản giúp trích xuất thông tin từ đơn thuốc tiếng Việt.
+Đối với những tài liệu như hóa đơn hay đơn thuốc, trên thực tế tồn tại nhiều ảnh
+tài liệu nghiêng và có những phần sau (background) phức tạp xung quanh, tạo ra
+thử thách lớn cho việc cải thiện độ chính xác của mô hình phát hiện, nhận diện văn
+bản. Không chỉ vậy, tài liệu nghiêng cũng ảnh hưởng nhiều đến việc xây dựng cạnh
+của đồ thị bằng vị trí tương đối giữa các hộp văn bản trong mô hình mạng nơ-ron
+đồ thị. Trước đó, những phương pháp sử dụng mô hình học sâu như [23], [24] đã
+tiếp cận theo hướng định vị tài liệu như phát hiện điểm đặc trưng sao cho góc của
+tài liệu là bốn điểm góc phía trên bên trái, phía trên bên phải, phía dưới bên phải,
+phía dưới bên trái. Những phương pháp trên thường được dùng để xử lý đối với tài
+liệu bị nghiêng trong những hệ thống trích xuất thông tin, tuy nhiên, trong trường
+hợp ảnh chụp tài liệu bị nghiêng và mất đi một vài góc, mô hình học sâu phát hiện
+4 góc không còn hiệu quả.
+Trong hình bên trái của 3.1, có thể thấy ảnh đã bị mất 2 điểm TL (góc phía trên
+bên trái), BL (góc phía dưới bên trái), khiến các mô hình học sâu phát hiện 4 góc
+gặp khó khăn. Nhận thấy, đặc trưng của ảnh chứa tài liệu (hóa đơn, đơn thuốc ...)
+là phần văn bản nằm gọn ở bên trong tài liệu. Vì vậy, em đã đề xuất một phương
+pháp dựa vào những văn bản bên trong tài liệu để thực hiện phép biến đổi góc nhìn
+(perspective transformation). Phương pháp được tóm lược bằng 4 bước như sau:
+1. Dùng mô hình học sâu phát hiện văn bản để xác định vị trí của hộp văn bản
+(giả sử tài liệu có n hộp văn bản, có tất cả 4∗nđiểm thuộc vùng chứa văn bản)
+3. Tìm một hình chữ nhật có diện tích nhỏ nhất bao quanh bao lồi tìm được tại
+4. Từ 4 điểm của hình chữ nhật có diện tích nhỏ nhất, thực hiện biến đổi góc nhìn
+hình phát hiện văn bản tìm được. Hình chính giữa của 3.2 trực quan hóa bao lồi của
+4∗nđiểm. Hình bên phải của 3.2 trực quan hóa 4 điểm góc của hình chữ nhật có
+diện tích nhỏ nhất bao quanh bao lồi.
+Sau khi xác định được 4 điểm trên tài liệu nghiêng, hình bên phải của 3.1 là kết
+quả của phép biến đổi góc nhìn. Sau khi sử dụng phép biến đổi góc nhìn, thu được
+ảnh chỉ chứa vùng văn bản, bỏ qua bối cảnh phức tạp bên ngoài.
+Nhận thấy, phương pháp này rất phù hợp với những tài liệu giàu thông tin về văn
+bản, bởi vì nếu tài liệu thỏa mãn điều đó sẽ có số lượng điểm đủ lớn, dẫn đến việc
+tìm bao lồi và hình chữ nhật có diện tích nhỏ nhất bao quanh bao lồi có tính hiệu
+quả và độ chính xác cao.
+Phương pháp tìm hình chữ nhật có diện tích nhỏ nhất bao quanh bao lồi:
+•Tính toán hướng cạnh với hàm arctan
+•Xoay phần bao lồi băng cách sử dụng hướng này để dễ dàng tính toán diện
+tích hình chữ nhật giới hạn với tối thiểu/tối đa của x/y của phần bao lồi đã
+•Lưu trữ hướng tương ứng với diện tích tối thiểu được tìm thấy
+3. Trả lại hình chữ nhật tương ứng với diện tích tối thiểu tìm được
+Mô hình sẽ lấy dữ liệu đầu vào là giá trị của các hộp văn bản bao gồm văn bản,
+tọa độ của văn bản đi qua mô hình huấn luyện sẵn BERT, thu được vec-tơ nhúng
+biểu diễn ngữ nghĩa của những văn bản trong tài liệu. Đối với thông tin liên quan
+đến tọa độ của văn bản, em đã chuẩn hóa bằng cách chia cho độ rộng và chiều cao
+của ảnh tài liệu. Tạo vec-tơ đầu vào cho mô-đun mạng nơ-ron đồ thị giúp phân tích
+và học mối quan hệ của những hộp văn bản trong tài liệu. Và sau đó, qua khối cuối
+cùng để phân loại nhiều lớp.
+Đối với một mô hình liên quan đến lĩnh vực xử lý ngôn ngữ tự nhiên thì kiến
+trúc Transformer đang rất phổ biến. Cụ thể ở đây là mô hình BERT – mô hình biểu
+diễn từ theo 2 chiều sử dụng kiến trúc Transformer. Mô hình BERT đạt rất nhiều
+kết quả tốt trên các tác vụ xử lý ngôn ngữ tự nhiên khi so sánh với những phương
+pháp trước đó như RNN [7], LSTM [8], GRU [25].
+BERT tokenizer chia câu văn thành những mã thông báo (tokens). Sau đó, các ký
+tự đặc biệt như ký tự CLS ở vị trí ban đầu, ký tự SEP ở vị trí cuối cùng được thêm
+vào.Bước tiếp theo là sẽ thay thế những mã thông báo đó bằng những id đại diện
+cho mã thông báo trong bảng nhúng (embedding table).
+Môt vec-tơ sau khi được xử lý bởi tokenizer có thể qua mô hình BERT thu được
+đầu ra là một vec-tơ của mỗi mã thông báo đầu vào, được tạo thành từ 768 số thực
+đối với phiên bản BASE.
+Nghiên cứu ngày càng tăng về học sâu đã dẫn đến việc sử dụng các phương pháp
+dựa trên mạng học sâu được áp dụng cho đồ thị. Với mạng học sâu, việc mô hình
+hóa các cấu trúc phi tuyến tính trở nên dễ dàng hơn, vì vậy deep-autoencoders được
+sử dụng để giảm số chiều.
+Dựa trên những thông tin tương quan giữa những hộp văn bản trong tài liệu như
+hóa đơn, đơn thuốc, mô hình hóa chúng như một đồ thị đã cho phép nhà nghiên
+cứu hiểu về dữ liệu một cách hệ thống.
+Mô hình đề xuất trong đồ án này tiếp cận theo hướng phân loại nút mạng trong
+đồ thị (node classification). Mô hình mạng nơ-ron đồ thị giải quyết bài toán trích
+xuất thông tin trong tài liệu gồm 3 mô-đun chính như sau:
+Ở module này, từ thông tin văn bản của hộp văn bản, thu được vec-tơ nhúng
+khi đưa qua mô hình huấn luyện sẵn BERT. Tiếp đó, đưa qua các lớp mạng Linear và Activation để giảm chiều của vec-tơ nhúng. Cho một câu văn bản si=
+, vec-tơ nhúng của câu văn được định nghĩa như sau:
+1:TlàTtừ đầu vào của câu văn thứ i;te(i)là đầu ra của mô hình BERT; Θbenc
+là tham số của mô hình BERT
+Trong ảnh tài liệu, Ncâu văn được mã hóa một cách độc lập nhau thu được N
+Bên cạnh đó, có những đặc trưng như độ dài của văn bản, số lượng ký tự là chữ số
+trong văn bản, tọa độ của hộp văn bản là những đặc trưng được em xem xét cho mô
+hình mạng nơ-ron đồ thị. Cụ thể, trong những bộ dữ liệu hiện tại, có những trường
+thông tin chứa chữ số nên đặc trưng mới cũng sẽ được mô hình đề xuất học trong
+Cách xây dựng đồ thị G= (V, E)như sau:
+•Nút của đồ thị được xây dựng dựa trên đặc trưng đã thu được ở trên.
+•Cạnh của đồ thị được xây dựng dựa trên 2 yếu tố:
+1. Thông tin về mối quan hệ giữa các hộp văn bản của bộ dữ liệu (nếu có)
+2. Tìm kiếm 4 hộp văn bản xung quanh (trên, dưới, trái, phải) của hộp văn
+Mô-đun mạng nơ-ron đồ thị:
+Trong mô-đun trước, những đặc trưng trên được kết hợp lại, làm đầu vào cho
+mô-đun mạng đồ thị này. Trong mô-đun này, chứa Llớp mạng GraphSage Conv để
+học được vec-tơ biểu diễn của nút mạng chứa thông tin của hộp văn bản bằng việc
+tổng hợp thông tin từ các nút hàng xóm. Việc tổng hợp những thông tin từ các nút
+hàng xóm cũng rất quan trọng bởi vì giúp mô hình tổng quát hóa được đối với dữ
+liệu chưa từng nhìn thấy. Em sử dụng hàm tổng hợp trung bình cộng để huấn luyện
+Nhận thấy sự quan trọng từ thông tin của vec-tơ nhúng văn bản mang lại, em
+thực hiện nối vec-tơ nhúng văn bản và vec-tơ đặc trưng đồ thị tạo thành một vec-tơ
+tổng hợp, làm đầu vào cho mô-đun tiếp theo.
+Mô-đun hậu xử lý: Trong mô-đun này, em sử dụng lớp mạng tuyến tính (Linear),
+Batch Normalization liên tiếp nhau để có thể giúp phân loại được nhãn của hộp
+văn bản trong tài liệu. Em sử dụng lớp mạng Batch Normalization ở giữa hai lớp
+mạng tuyến tính (Linear) để tránh hiện tượng quá khớp, tăng tốc độ học khi huấn
+luyện mô hình mạng nơ-ron đề xuất. Mô hình của mô-đun hậu xử lý này giống với
+Perceptron Đa tầng (MLP), đầu vào của mạng MLP là vec-tơ ˆxido mô-đun trước
+truyền tới, đầu ra của mạng MLP là vec-tơ chứa qchiều với qlà số lớp cần phân
+loại của bài toán. Ở lớp mạng cuối cùng, đi qua hàm softmax thu được xác xuất
+của những lớp của mẫu t, từ đó, lấy ra lớp có xác xuất lớn nhất.
+bằng (lớp other có số mẫu lớn nhất khoảng hơn 8000 mẫu). Sự mất cân bằng này sẽ
+dẫn đến hiện tượng học quá khớp đối với những lớp xuất hiện nhiều trong ảnh tài
+liệu và không khớp đối với những lớp xuất hiện ít trong ảnh tài liệu. Vì vậy, em đề
+xuất sử dụng hàm mất mát tiêu điểm [26] trong mô hình đề cuất nhằm giảm thiểu
+sự mất cân bằng.Tác dụng của hàm mất mát tiêu điểm là việc giảm sự ảnh hưởng
+của những lớp có số lượng mẫu lớn và tập trung đến việc huấn luyện những lớp có
+số lượng mẫu ít hơn. Công thức toán học:
+Trong đó: ptlà giá trị xác suất dự đoán của mẫu t;α, γlà hai siêu tham số của hàm
+Hàm entropy chéo cân bằng (balanced cross entropy) [27] là hàm số cân bằng
+được tỷ lệ phân phối của mẫu dựa vào siêu tham số α. Tuy nhiên, hàm số này chưa
+thay đổi được suy giảm độ dốc. Đối với bộ dữ liệu mất cân bằng như hình 3.8, suy
+giảm độ dốc trong hàm mất mát bị ảnh hưởng lớn bởi những lớp có tần xuất xuất
+hiện nhiều khi huấn luyện mô hình, nghĩa là đạo hàm do những lớp có tần xuất
+xuất hiện lớn sẽ đóng góp nhiều hơn vào việc thay đổi hàm mất mát so với những
+lớp có tần xuất xuất hiện ít hơn. Bên cạnh đó, trọng số αcủa hàm balanced cross
+entropy không giúp tập trung vào các mẫu khó dự đoán trong các lớp.
+tung là số mẫu trong tập huấn luyện
+Ví dụ, đối với lớp chẩn đoán (diagnose) của bộ dữ liệu đơn thuốc tiếng Việt
+có độ dài văn bản không ổn định, nếu sử dụng hàm balanced cross entropy, tất cả
+những mẫu trong lớp chẩn đoán có cùng một trọng số, điều này dẫn đến việc mô
+hình chưa tập trung đúng và đủ vào những mẫu khó học (độ dài văn bản lớn) của
+Hàm mất mát tiêu điểm là hàm số điều chỉnh một cách triệt để, gia tăng sự ảnh
+hưởng của mẫu khó dự đoán (thường nằm trong lớp dữ liệu xuất hiện ít) lên suy
+giảm độ dốc. Bên cạnh đó, hàm mất mát tiêu điểm cũng giúp mô hình tập trung
+trực tiếp vào những mẫu khó dự đoán. Nhân tử điều chỉnh (1−pt)γtác động lên
+hàm mất mát và độ dốc đạo hàm vì (1−pt)γtỷ lệ nghịch với pt, khi ptlớn (đối với
+mẫu dễ dự đoán), nhân tử trên nhỏ, dẫn đến mức độ đóng góp vào hàm mất mát
+không đáng kể và ngược lại khi ptnhỏ (đối với mẫu khó dự đoán), đóng góp vào
+hàm mất mát nhiều hơn. Giả sử, trường hợp dễ dự đoán có xác xuất pt= 0.9và
+trường hợp khó dự đoán có xác xuất pt= 0.1thì tỷ lệ chênh lệch đóng góp vào hàm
+mất mát với siêu tham số γ= 1là:
+Trong chương này, em đã trình bày về những đóng góp chính của đồ án tốt
+nghiệp, cụ thể là phương pháp xử lý tài liệu nghiêng dựa trên khái niệm bao lồi
+và phép chuyển đổi góc nhìn. Phương pháp này giúp tiền xử lý những ảnh tài liệu
+nghiêng. Đóng góp thứ 2 là mạng nơ-ron đề xuất. Trong mô hình đề xuất này, mô
+hình BERT giúp lấy được vec-tơ nhúng ngữ nghĩa của văn bản đầu vào, kết hợp
+những thông tin về mặt không gian, tọa độ của những hộp văn bản, tạo ra những
+đặc trưng đồ thị, giúp mô hình không chỉ học được ý nghĩa về mặt văn bản mà còn
+học được tương quan giữa những hộp văn bản trong tài liệu. Ngoài ra, trong mô
+hình đề xuất sử hàm mất mát tiêu điểm thay vì hàm balanced cross entropy, giúp
+tốc độ hội tụ của mô hình nhanh hơn. Những thực nghiệm về mô hình mạng nơ-ron
+đồ thị đề xuất được trình bày trong chương tiếp theo.
+Trong phần này, em sẽ trình bày về phương pháp thí nghiệm và các kết quả thực
+nghiệm có được khi so sánh mô hình đề xuất và mô hình cơ sở.
+Em đã sử dụng mô hình mạng nơ-ron đồ thị PICK, mô hình huấn luyện sẵn
+BERT cho bài toán phân loại văn bản làm mô hình cơ sở để so sánh với mô hình
+đề xuất. Khi so sánh kết quả với mô hình PICK, có thể kiểm chứng được hiệu quả
+của mô hình đề xuất vì hai mô hình có cùng hướng tiếp cận với mạng nơ-ron đồ
+thị. Khi so sánh với mô hình huấn luyện sẵn BERT với tác vụ phân loại văn bản,
+có thể kiểm chứng được độ hiệu quả của mô-đun mạng nơ-ron đồ thị và hàm mất
+mát tiêu điểm. Bảy thí nghiệm em thực hiện bao gồm:
+•1 thí nghiệm chạy mô hình PICK với tập dữ liệu đơn thuốc tiếng Việt
+•3 thí nghiệm chạy mô hình đề xuất trên 3 bộ dữ liệu nêu trên
+•2 thí nghiệm chạy mô hình đề xuất thiếu mô-đun đồ thị (hay còn gọi là mô
+hình huấn luyện sẵn BERT cho tác vụ phân loại văn bản) trên bộ dữ liệu đơn
+thuốc tiếng Việt và bộ dữ liệu SROIE
+•1 thí nghiệm chạy mô hình đề xuất với hàm mất mát balanced cross entropy
+Mô hình mạng nơ-ron đề xuất: Em cài đặt mô hình đề xuất bằng ngôn ngữ
+lập trình Python và thư viện Deep-learning Pytorch, thư viện hỗ trợ việc xây dựng
+mạng nơ-ron đồ thị Pytorch Geometric, thư viện Transformer chứa mô hình huấn
+luyện sẵn BERT. Em sử dụng card đồ họa NVIDIA RTX 2080 Ti với 12 Gb RAM
+để huấn luyện, kiểm thử mô hình đề xuất.
+Em sử dụng mô hình RoBERTa Tokenizer để biến đổi các từ trong câu văn bản
+thành các id tương ứng lấy từ bảng nhúng (embedding table), sau đó dùng mô hình
+huấn luyện sẵn RoBERTa phiên bản BASE với cấu hình mặc định L= 12 , H=
+768, A= 12 để lấy vec-tơ nhúng của văn bản, kết hợp cùng thông tin tọa độ (sau khi
+chuẩn hóa) thành một đặc trưng tổng hợp , làm đầu vào của mạng nơ-ron đồ thị.
+Phần mạng nơ-ron đồ thị, em sử dụng 2 lớp mạng GraphSage Conv nối tiếp nhau
+để học tương quan giữa những hộp văn bản trên tài liệu bán cấu trúc như hóa đơn,
+đơn thuốc, etc. Mô hình mạng nơ-ron đồ thị GraphSAGE có đề xuất 3 hàm tổng
+hợp như hàm trung bình cộng (mean), hàm cực đại (max) và lớp mạng LSTM. Em
+sử dụng hàm tổng hợp là hàm trung bình cộng, để lấy trung bình cộng của thông
+tin giữa những nút mạng hàng xóm, giúp mô hình có thể học tốt hơn đối với dữ liệu
+Sau khi vec-tơ tổng hợp đi qua mạng nơ-ron đồ thị thu được một vec-tơ đặc
+trưng đồ thị, em kết hợp cùng vec-tơ nhúng lúc đầu tạo thành một vec-tơ tổng hợp
+làm đầu vào của khối hậu xử lý của mạng đề xuất. Điều này lấy ý tưởng của mạng
+Resnet giúp cho lớp mạng không quên được đặc trưng của vec-tơ nhúng văn bản.
+Đối với hàm mất mát tiêu điểm, em chọn siêu tham số γ= 1giúp điều chỉnh sự
+cân bằng của các lớp trong bộ dữ liệu tiếng Việt. Thật vậy, cách sử dụng hàm mất
+mát tiêu điểm giúp mô hình có thể tập trung vào những mẫu khó dự đoán, cải thiện
+Mô hình được huấn luyện với phương pháp tối ưu AdamW để cập nhật trọng số
+với siêu tham số lr= 0.0005. Em cũng điều chỉnh siêu tham số lrtrong quá trình
+huấn luyện sử dụng tham số num−warmup −step= 1000 , giúp giảm tác động của
+việc đi lệch hướng mô hình khi tiếp xúc với những dữ liệu mới.
+Cách tăng cường dữ liệu huấn luyện: em sử dụng những đơn thuốc đã được
+gán nhãn, với những trường thông tin quan trọng để thêm vào những template đơn
+thuốc bệnh viện thu thập từ internet. Em làm theo các bước: xây dựng bộ template
+word của đơn thuốc bệnh viện, thêm các trường thông tin quan trọng vào template,
+chuyển đổi thành file ảnh. Cuối cùng từ file ảnh sẽ gán nhãn tự động bằng code.
+Phương pháp tiền xử lý tài liệu nghiêng: Em sử dụng mô hình phát hiện văn
+bản CRAFT nhằm phát hiện tọa độ của những hộp văn bản trong tài liệu. Tiếp theo,
+dựa trên tất cả những điểm phát hiện được từ những hộp văn bản trên, dùng thư viện
+scipy để tìm được bao lồi của chúng. Khi đã có một tập đỉnh của bao lồi, dùng thư
+viện MinimumBoundingBox được cung cấp bằng mã nguồn mở trên github để tìm
+được 4 điểm của hình chữ nhật có diện tích nhỏ nhất xung quanh bao lồi đó với ý
+tưởng được trình bày ở chương 2. Và tìm ra ma trận của phép chuyển đổi góc nhìn
+giúp biến đổi hình ảnh nghiêng thành một hình ảnh có độ nghiêng nhỏ hơn trước,
+giúp mô hình nhận diện văn bản trong ảnh tài liệu có thể nhận diện tốt hơn. Những
+tọa độ của hộp văn bản được thành tọa độ mới trên ảnh tài liệu được áp dụng bởi
+phép biến đổi góc nhìn.
+Cụ thể, đối với hàm biến đổi ảnh với 4 điểm, các bước thực hiện như sau: sắp
+xếp 4 điểm của hình chữ nhật có diện tích nhỏ nhất bao quanh bao lồi theo chiểu
+kim đồng hồ với thứ tự điểm góc phía trên bên trái, điểm góc phía trên bên phải,
+điểm góc phía dưới bên phải, điểm góc phía dưới bên trái. Tiếp theo, tính độ rộng
+và chiều cao lớn nhất của hình tạo bởi 4 điểm trên, và thiết lập tọa độ của 4 điểm
+mới trên ảnh tài liệu sau khi áp dụng phép chuyển đổi góc nhìn, đó là điểm góc
+tiếng Việt, từ đơn thuốc trên, có thể thấy chẩn đoán bệnh nằm ở phía trên so với
+những trường thông tin quan trong khác. Tiếp đến là danh sách thuốc bao gồm tên
+thuốc, số lượng và cách dùng tương ứng. Thông tin ngày tháng kê đơn thuốc sẽ
+nằm gần cuối của đơn thuốc.
+Bộ dữ liệu bao gồm 626 ảnh huấn luyện và 347 ảnh kiểm thử. Mỗi hóa đơn bao
+gồm các dòng thông tin hộp văn bản và transcript tương ứng. Mỗi hóa đơn được
+gán nhãn với 4 kiểu thông tin là company, date, address, total và 1 nhãn other. Bộ
+dữ liệu này chủ yếu chứa chữ số và ký tự tiếng Anh. Bộ dữ liệu này có bố cục thay
+đổi với cấu trúc phức tạp.
+này nằm ở hộp văn bản có nhãn là total. Trên mỗi tờ hóa đơn, có nhiều hộp văn bản
+có nhiều nội dung văn bản chứa chữ số, giống như hộp văn bản có nhãn total phân
+bố ở nhiều vị trí khác nhau.
+Trên hai đồ thị biểu diễn giá trị của hai hàm mất mát trên hai tập dữ liệu, có thể
+thấy hàm mất mát tiêu điểm luôn có giá trị nhỏ hơn so với hàm mất mát balanced
+cross entropy. Vì vậy, trên bộ dữ liệu đơn thuốc tiếng Việt, mô hình sử dụng hàm
+mất mát tiêu điểm với siêu tham số γ= 1có tốc độ hội tụ nhanh hơn mô hình sử
+dụng hàm mất mát balanced cross entropy.
+Trên bộ dữ liệu đơn thuốc tiếng Việt, hình 4.6.1 cho thấy kết quả confusion
+matrix của mô hình đề xuất trên tập kiểm thử. Hình 4.6.2 cho thấy kết quả confusion
+matrix của mô hình PICK trên tập kiểm thử. Em thấy kết quả của những trường
+Chẩn đoán bệnh ,Tên thuốc ,Ngày tháng của mô hình đề xuất khá hiệu quả.
+xuất, hình dưới là mô hình PICK
+Trong chương này, em đã trình bày về phương pháp thí nghiệm, cách cài đặt đề
+xuất về xử lý tài liệu nghiêng, tham số đánh giá, bộ dữ liệu sử dụng cho bài toán
+trích xuất thông tin từ tài liệu (gồm bộ dữ liệu SROIE, bộ dữ liệu FUNSD, bộ dữ
+liệu tiếng Việt) và kết quả thực nghiệm đối với các bộ dữ liệu đó.
+Trong chương này, em trình bày về trang web trích xuất thông tin từ đơn thuốc
+tiếng Việt. Trang web này cho phép người dùng tải lên một hình ảnh đơn thuốc và
+kết quả trả về là các trường thông tin liên quan đến đơn thuốc đó bao gồm chẩn
+đoán bệnh, tên thuốc, số lượng, cách dùng và ngày tháng.
+Em viết một trang web giúp trích xuất thông tin từ đơn thuốc tiếng Việt. Trang
+web sử dụng một API có chức năng nhận ảnh đầu vào là một đơn thuốc tiếng Việt
+và trả về đầu ra là thông tin liên quan đến chẩn đoán bệnh và danh sách các thuốc
+quả của mô hình đề xuất trả về bao gồm thông tin về chẩn đoán bệnh, và danh sách
+các thuốc (tên thuốc, số lượng, cách dùng). Nhìn trên hình này, nút mũi tên màu
+trắng xanh cho phép người dùng tải ảnh trên máy tính cá nhân lên, sau đó, nếu ảnh
+đơn thuốc của người dùng đã thẳng và đẹp thì có thể sử dụng tùy chọn None hoặc
+nếu ảnh đơn thuốc của người dùng bị nghiêng thì có thể sử dụng tùy chọn Convex
+Hull và ấn nút TRY DEMO để hoàn thành. Sau đó, dữ liệu hình ảnh đơn thuốc sẽ
+được truyền về server để xử lý và trả về kết quả.
+Và hình 5.2 cho biết giao diện trang web bao gồm 1 hình ảnh kết quả do API trả
+về. Trong hình ảnh kết quả do API trả về chứa những hộp văn bản của đơn thuốc
+Các web framework đại diện cho một tập hợp các thư viện và mô-đun cho phép
+các nhà phát triển web viết mã, không cần lo lắng về các chi tiết cấp thấp như giao
+WSGI là kỹ thuật của giao diện chung giữa máy chủ web và trang web. Giao
+diện cổng máy chủ web WSGI được sử dụng như tiêu chuẩn trong việc phát triển
+trang web bằng ngôn ngữ lập trình Python.
+Werkzeug là bộ công cụ WSGI, thực hiện yêu cầu, phản hồi và các tiện ích, cho
+phép xây dựng một web framework. Flask sử dụng Werkzeug làm một trong những
+Jinja 2 là một template engine phổ biến cho ngôn ngữ lập trình Python. Hệ
+thống web template kết hợp một giao diện mẫu với một nguồn dữ liệu cụ thể để
+hiển thị một trang web động.
+Flask là một web framework được viết bằng ngôn ngữ lập trình Python. Flask
+dựa trên bộ công cụ Werkzeg WSGI và template engine (công cụ tách mã HTML)
+Jinja2. Flask là một micro web framework của ngôn ngữ lập trình Python không
+cần bất kỳ thư viện hoặc công cụ cụ thể. Flask cũng không có lớp trừu tượng hóa
+cơ sở dữ liệu, các thư viện xây dựng sẵn dựa trên bên thứ ba có sẵn và các hàm phổ
+biến hoặc các phương thức xác thực mẫu. Fask là một bộ lưu trữ giúp lập trình viên
+tạo ra các trang web dễ dàng hơn, có thể mở rộng, hiệu quả và có thể bảo trì bằng
+cách cung cấp code hoặc tiện ích mở rộng có thể sử dụng lại cho các nhiệm vụ phổ
+Đoạn code mẫu của chương trình Hello World được viết bằng ngôn ngữ Flask:
+Listing 5.1: Đoạn code viết bằng Flask
+from f l a s k import F l a s k
+app = F l a s k ( __name__ )
+@app . r o u t e ( ’ / ’ )
+def h e l l o _ w o r l d ( ) :
+return ’ Hello World ! ’
+i f__name__ == ’ __main__ ’ :
+app . run ( )
+Khi chạy file app.py , chỉ cần chạy câu lệnh flask run hoặc python app.py ,
+Flask mở cổng (default port) 5000, và nội dung trang web sẽ nằm ở đường dẫn
+API của hệ thống trích xuất thông tin từ đơn thuốc được thực hiện theo cách
+1. Phát hiện và nhận diện văn bản trong ảnh đơn thuốc
+2. Chuyển đổi góc nhìn để thu được ảnh có độ nghiêng nhỏ nhờ bao lồi và phép
+3. Đưa qua mô hình mạng nơ-ron đề xuất thu được nhãn của hộp văn bản trong
+tập hợp nhãn được định nghĩa sẵn
+4. Sử dụng tập luật dựa vào vị trí của các hộp văn bản để trả về chẩn đoán bệnh
+và danh sách các thuốc (tên thuốc, số lượng, cách dùng) kèm theo ảnh visulize
+Trang web trích xuất thông tin từ đơn thuốc tiếng Việt được viết theo framework
+Flask. Em sử dụng Flask vì dễ dàng ghép phần mô hình đề xuất vào giao diện mẫu
+tạo ra một trang web có thể thực hành với chức năng cần thiết.
+Trong chương này, em đã trình bày về chức năng, giao diện của trang web cũng
+như công nghệ được sử dụng khi xây dựng trang web này. Trong chương tiếp theo,
+em sẽ trình bày về kết luận và hướng phát triển.
+Trong phạm vi của đồ án tốt nghiệp, em đã thực hiện được ba đóng góp như sau:
+1. Đề xuất phương pháp xử lý tài liệu nghiêng dựa trên thuật toán tìm bao lồi và
+hình chữ nhật có diện tích nhỏ nhất bao quanh bao lồi.
+2. Đề xuất mô hình mạng nơ-ron đồ thị kết hợp với mô hình huấn luyện sẵn
+BERT, hàm mất mát tiêu điểm cho bài toán trích xuất thông tin trong tài liệu
+như hóa đơn, đơn thuốc
+3. Trang web trích xuất thông tin từ đơn thuốc tiếng Việt
+Đối với đóng góp thứ nhất, việc xử lý tài liệu nghiêng là cần thiết trong bài toán
+này. Bởi vì nó không chỉ giúp cải thiện độ chính xác trong khi phát hiện văn bản và
+nhận diện văn bản mà còn giúp tọa độ của những hộp văn bản trở nên dễ dàng học
+hơn trong mạng đồ thị. Thật vậy, cách thực hiện của phương pháp này bao gồm:
+tính toán những đỉnh thuộc bao lồi của những điểm góc của nhộp giới hạn được
+phát hiện bởi mô hình phát hiện văn bản CRAFT, sau đấy từ những điểm thuộc bao
+lồi thì tìm được hình chữ nhật có diện tích nhỏ nhất xung quanh bao lồi. Tiếp theo,
+sử dụng thuật toán chuyển đổi góc nhìn để biến đổi hình ảnh tài liệu nghiêng thành
+hình ảnh thẳng và tập trung vào những thông tin cần thiết (text).
+Đối với đóng góp thứ hai, việc xây dựng mô hình trích xuất thông tin từ tài liệu
+cấu trúc như đơn thuốc và hóa đơn, bao gồm ba mô-đun chính: mô-đun tiền xử lý,
+mô-đun mạng nơ-ron đồ thị, mô-đun hậu xử lý. Trong mô-đun đầu tiên, một đồ thị
+được xây dựng bởi thông tin của những hộp văn bản. Nút mạng của đồ thị là thông
+tin văn bản trong hộp văn bản được cho qua mô hình huấn luyện sẵn RoBERTa để
+thu được vec-tơ ngữ nghĩa kết hợp với thông tin độ dài, thông tin về chữ số. Cạnh
+của đồ thị đó là việc kết nối nút hiện tại với 4 nút gần nhất nằm trên, dưới, trái, phải.
+Tiếp theo, là mô-đun mạng nơ-ron đồ thị, em sử dụng mô hình mạng GraphSAGE
+với nguyên lý tổng hợp thông tin của nút hiện tại với thông tin của các nút lân cận.
+Và sau đó những thông tin về đặc trưng đồ thị kết hợp với vec-tơ ngữ nghĩa do mô
+hình RoBERTa tạo ra trước đó, tạo ra vec-tơ tổng hợp, đưa qua mô-đun mạng MLP
+để phân loại ra những lớp tương ứng. Ngoài ra, em nhận thấy việc sử dụng hàm
+mất mát tiêu điểm có tốc độ hội tụ nhanh hơn so với hàm mất mát entropy chéo cân
+bằng. Bởi vì thành phần (1−pt)γtỷ lệ nghịch với pt, nên đối với những mẫu khó
+dự đoán có xác xuất ptnhỏ, giúp tăng sự ảnh hưởng của những mẫu này vào hàm
+mất mát, ngược lại, những mẫu dễ dự đoán có xác xuất ptlớn thì sự ảnh hưởng của
+những mẫu này vào hàm mất mát là không đáng kể.
+Đối với đóng góp thứ ba, việc trích xuất thông tin từ đơn thuốc tiếng Việt được
+thực hiện từ việc tải lên hình ảnh của đơn thuốc, chọn các tùy chọn tương ứng
+(None vàConvex hull ) và xác nhận gửi hình ảnh về server để xử lý, và kết quả cuối
+cùng là thông tin về chẩn đoán bệnh, danh sách các thuốc trong đơn và hình ảnh
+của đơn thuốc sau khi visualize các hộp văn bản chứa nội dung quan trọng.
+Ngoài những thông tin liên quan đến văn bản, chữ số, độ dài của văn bản, cách
+xây dựng cạnh của đồ thị thì đặc trưng về hình ảnh đơn thuốc cũng là một đặc trưng
+đáng để xem xét, thêm vào mô hình. Tuy nhiên, trong phạm vị đồ án này, đặc trưng
+về hình ảnh của đơn thuốc đã chưa được thêm vào.
+Từ những hạn chế nêu trên, trong tương lai, em cũng sẽ thử nghiệm và đánh giá
+độ quan trọng của đặc trưng về mặt hình ảnh để thêm vào mô hình đề xuất nếu
+CÁC CÔNG BỐ KHOA HỌC
+1. Tran Bao Hieu, Hoang Duc Viet, Nguyen Manh Hiep , Pham Ngoc Bao Anh,
+Nguyen Duc Anh, Hoang Gia Bao, Hai-Phong Bui, Thanh Hung Nguyen, Phi Le
+Nguyen, Thi-Lan Le, “MC-OCR Challenge 2021: A Multi-modal Approach for
+Mobile-Captured Vietnamese Receipts Recognition”, The 15th IEEE-RIVF International Conference on Computing and Communication Technologies, RIVF 202

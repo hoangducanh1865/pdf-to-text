@@ -1,0 +1,452 @@
+
+Lời đầu tiên, em xin gửi lời cảm ơn sâu sắc đến TS.Trịnh Anh Phúc . Thầy là
+người đã hướng dẫn, giúp đỡ em rất nhiều trong quá trình nghiên cứu, thực hiện và
+Em cũng xin cảm ơn tới tất cả thầy cô đã chỉ dạy cho em những kiến thức quý
+báu trong suốt quá trình học tập, cung cấp một hành trang thiết thực cho tương lai
+Cuối cùng, em xin cảm ơn gia đình, bạn bè, đồng nghiệp - những người luôn ở
+bên cạnh, cổ vũ và động viên tinh thần, giúp em vượt qua những khó khăn trong
+suốt quá trình học tập tại đại học Bách Khoa Hà Nội.
+Do thời gian có hạn, cũng như kiến thức chuyên môn còn non kém, ĐATN của
+em sẽ không tránh khỏi những thiết sót và hạn chế. Em rất mong nhận được những
+đánh giá, nhận xét từ thầy cô và các bạn, để từ đấy nhận thấy những ưu, nhược điểm
+của bản thân, đúc kết và xây dựng kinh nghiệm làm việc một cách vững vàng hơn.
+Em xin chân thành cảm ơn!
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Hiện nay, công nghệ blockchain trở thành xu hướng của toàn cầu và cơn sốt
+mang tên game NFT nổi lên trong giới đầu tư tiền ảo. Game NFT là dòng game
+được xây dựng và phát triển trên nền tảng công nghệ blockchain token hóa tài sản
+trong game. Mỗi game sử dụng đồng tiền điện tử riêng và chúng có thể quy đổi
+thành tiền thật thông qua sàn giao dịch điện tử. Thể loại game này cho phép người
+chơi có thu nhập thực tế dưới dạng non-fungible token (NFT). Token trong NFT
+game có tác dụng mua bán vật phẩm game, staking vật phẩm/token thưởng, nâng
+cấp trải nghiệm game, cùng nhiều tiện ích khác. Nguyên nhân quan trọng nhất làm
+cho game NFT phát triển là do ảnh hưởng của COVID-19, hàng triệu người thất
+nghiệp, và chuyển sang hình thức kiếm tiền online. Game play-to-earn đáp ứng
+được nhu cầu này, hình thức vừa chơi vừa kiếm tiền đang được rất nhiều người trên
+Nắm bắt xu hướng toàn cầu, đồ án tốt nghiệp này hướng tới xây dựng một ứng
+dụng game NFT với kịch bản là Flappy bird quen thuộc. Mục đích của đồ án nhằm
+nghiên cứu cách module hóa cho game NFT và nghiên cứu nền kinh tế thị trường
+của game. Tạo cơ sở cho việc về sau phát triển những tựa game lôi cuốn, trải nghiệm
+thú vị để có thể thu hút được cộng đồng game thủ toàn cầu.
+DANH MỤC TỪ VIẾT TẮT
+Viết tắt Tên tiếng Anh Tên tiếng Việt
+faceGiao diện lập trình ứng dụng
+FBT Flappy Bird token Tên một loại tiền điện tử
+EVM Ethereum Vitual Machine Máy ảo của Ethereum
+JSX JavaScript XML Một cú pháp mở rộng
+IDO Initail DEX Offering Phân phôi coin lần đầu trên sàn
+NFT Non-fungible token Tài sản không thể thay thế
+ĐATN Đồ án tốt nghiệp
+Bird Vật phẩm chim trong game
+BirdBox Vật phẩm hộp trong game
+Mint Box Tạo ra một hộp đựng Bird
+Transfer Chuyển token vào ví trong game
+Claim Chuyển token ra ví ngoài
+NFT Một loại tài sản số hiện diện trên một chuỗi số
+Crypto Một loại tiền điển tử
+GameFi Sự kết hợp giữa Game và tài chính
+Ví on-chain Mội loại ví lưu trữ tiền điện tử trên Blockchain
+Ví in-game Một loại ví lưu trữ tiền điện tử trong Game
+Labor to Earn Các mô hình kiếm tiền
+Learn to Earn Participate to Earn Học tập và tham dự để kiếm tiền
+Create to Earn Tạo sản phẩm để kiếm tiền
+Play to Earn hay GameFi Chơi game để kiếm tiền
+StackingHành động khoá một lượng coin nhất định để
+được phần thưởng từ chúng.
+Decentralized, fully-decentralized Phi tập trung
+Semi-decentralized Nửa tập trung, nửa không tập trung
+Seed phraseMột tập hợp các từ khoá dùng để truy cập
+Approve Chấp thuận cho mint hộp
+Swap Trao đổi tiền điện tử
+Pool IDO Thanh khoản trên sàn phi tập trung khi mới mở
+
+Trong quá trình phát triển và xây dựng phần mềm, bước khởi đầu sẽ là xác định
+được nhưng vẫn đề, xác định được mục tiêu đề tài và định hướng phát trình của
+dự án. Chương 1 sẽ làm rõ các yêu cầu đặt ra cũng như các tính năng sẽ xây dựng
+Khi công nghệ tự động hóa và trí tuệ nhân tạo ngày càng phát triển, nhiều người
+lo lắng về tương lai việc làm. Nếu hàng triệu người lao động mất việc, họ sẽ làm gì
+để nuôi sống bản thân và gia đình?
+Đây không phải là nỗi lo vô căn cứ. Theo một báo cáo từ PricewaterhouseCoop-
+ers - một trong bốn công ty kiểm toán hàng đầu thế giới hiện nay, vào giữa 2030,
+1/3 công việc của chúng ta có nguy cơ bị máy móc thay thế. Những lao động tay
+nghề hạn chế sẽ là lực lượng dễ bị đẩy ra bên lề xã hội nhất. Nỗi lo mất việc do máy
+móc lên ngôi đã hiện diện trong lịch sử loài người từ hàng trăm năm trước. Trong
+mỗi bước ngoặt của xã hội, nhiều người lại đối mặt với sự thay đổi việc làm không
+Trước nỗi lo mất việc của người lao động do quá trình tự động hóa, các nhà kinh
+tế học nói rằng không cần phải lo lắng. Công nghệ loại bỏ việc làm cũ nhưng cũng
+sẽ tạo ra việc làm mới, mặc dù chúng ta phải trải qua một quá trình điều chỉnh đau
+đớn. Điều này đã được chứng minh qua các cuộc Cách mạng công nghiệp trong
+Mặc dù đại dịch COVID-19 tước đi công việc của nhiều người, nhưng cũng đã
+đẩy nhanh làn sóng phát triển công nghệ, thúc đẩy quá trình chuyển đổi xã hội sang
+thời đại của cuộc Cách mạng công nghiệp 4.0. Trong làn sóng đổi mới này, công
+nghệ blockchain trong nền kinh tế crypto đã giới thiệu những hình thức công việc
+“Các nền kinh tế crypto đã bắt đầu định hình tương lai việc làm của chúng ta.
+Chúng xóa nhòa ranh giới giữa việc chơi, học, tương tác và sáng tạo bằng cách
+cung cấp quyền sở hữu và tạo ra thu nhập,” - Stephen McKeon, Giáo sư tại Đại học
+Edward Castronova - giáo sư truyền thông tại Đại học Indiana Bloomington,
+người nổi tiếng với công trình nghiên cứu về nền kinh tế của các thế giới tổng hợp,
+đã đưa ra hai dự đoán trong bài viết: “Thuê người chơi game: Gaming và tương lai
+của công việc kỹ năng thấp”:
+Trong vòng 5 năm tới, một số công ty gaming sẽ trả tiền để người chơi chơi
+Trong vòng 10 năm tới, trả tiền cho người chơi sẽ trở thành mô hình doanh thu
+tiêu chuẩn trong ngành công nghiệp gaming. Các khoản thanh toán sẽ nằm dưới
+dạng crypto hoặc tiền mặt [2].
+Không thể phủ nhận rằng GameFi đang là một đề xuất hấp dẫn dành cho những
+người thất nghiệp hoặc lao động tay nghề thấp. Đặc biệt, đối với giới trẻ, đây là một
+trong số ít lĩnh vực mà họ có lợi thế so với những người lớn tuổi nhiều kinh nghiệm
+nhờ vào kỹ năng sử dụng công nghệ và quỹ thời gian tương đối dồi dào của họ.
+Hơn nữa, GameFi cho phép mọi người chuyển đổi thời gian lãng phí thành thu
+nhập một cách tương đối dễ dàng. Giờ đây, mọi người có thể dùng thời gian chờ xe
+buýt hoặc xếp hàng tại ngân hàng để kiếm thêm một ít tiền. Thay vì lướt TikTok
+hoặc xem YouTube, mọi người có thể chơi game để kiếm tiền.
+Từ những nhu cầu thực tế kể trên, em đã thực hiện đề tài "Ứng dụng NFT
+vào game Flappy bird”. Mục đích của đề tài là để nghiên cứu cách xây dựng một
+GameFi và nghiên cứu nền kinh tế trong game NFT.
+Với những vấn đề đã trình bày trong phần 1.1, em đặt ra mục tiêu là xây dựng
+một ứng dụng game chạy trên cả hai hệ điều hành là Android và iOS. Game sẽ
+giúp người dùng giải trí đồng thời kiếm tiền thông qua việc chơi game hay là đầu
+tư token hoặc là mua bán Bird trong game.
+đồng token FBT để mua BirdBox. Ứng dụng cung cấp chức năng quản lý ví của
+người dùng. Người dùng có thể xem trực tiếp ví ngay trong ứng dụng. Các chức
+năng chính của ứng dụng là:
+(1) : Thêm ví on-Chain: Người dùng có thể thêm được ví MetaMask vào game và
+sử dụng tiền để mua BirdBox
+(2) : Mint Box, xem BirdBox: Người dùng sẽ dùng tiền trong ví để tạo ra BirdBox
+(3) : Chuyển BirdBox và token vào ví in-game
+(4) : Claim token: Người dùng sẽ chuyển tiền từ trong game ra ví on-chain
+(5) : Tạo ví in-game
+(6) : Xem Bird, mở Box, huỷ bán
+(7) : Chơi game, trả thưởng
+(8) : Mua, bán Bird
+(9) : Xem bảng xếp hạng
+Sản phẩm sẽ có các chức năng như: (i) Tạo ra token FBT (Flappy Bird Token -
+đồng tiền lưu hành trong game), (ii) xử lý hoạt động trả thưởng khi chơi game, (iii)
+chuyển tiền khi mua bán trên chợ, (iv) triển khai dự án trên Binance Smart Chain
+Testnet... Với mục tiêu đáp ứng nhu cầu của người chơi, ứng dụng sẽ cố gắng tối đa
+các tính năng cần có cũng như tương thích với các thiết bị. Tuy nhiên, do thời gian
+của đồ án có hạn nên ứng dụng sẽ được triển khai trên nền tảng mobile trước, sau
+này có thời gian sẽ phát triển và mở rộng trên nền tảng website.
+Mã nguồn của ứng dụng sẽ chia làm ba phần: smart contract - xử lý các nghiệp
+vụ có kết nối đến blockchain, backend – xử lý các nghiệp vụ logic, kết nối với dữ
+liệu để thực hiện các tính năng; và frontend – hiển thị dữ liệu, tương tác với người
+Phần smart contract sẽ được xây dựng trên nền tảng Ethereum, sử dụng ngôn ngữ
+lập trình Solidity [3]. Phần backend sẽ được xây dựng trên NodeJs, sử dụng ngôn
+ngữ lập trình JavaScript [4]. Với ưu điểm nhanh hơn và nhẹ hơn của JavaScript so
+với các ngôn ngữ lập trình khác, ứng dụng xây dựng sẽ đảm bảo một hiệu năng tốt
+nhất cho người dùng. Cơ sở dữ liệu sẽ được lưu trữ bằng cơ sở dữ liệu MongoDB.
+Phần frontend sử dụng thư viện React Native. Ứng dụng có thể chạy trên cả iOS và
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2 trình bày về khảo sát hiện trạng đề tài, tổng quan các chức năng trong
+hệ thống đồng thời đặc tả một số use case chính.
+Trong Chương 3, em sẽ trình bày về các công nghệ và công cụ được sử dụng
+Chương 4 sẽ trình bày chi tiết về phân tích thiết kế hệ thống và trình bày sâu hơn
+về luồng hoạt động của một số nghiệp vụ chính trong hệ thống, thiết kế giao diện,
+cơ sở dữ liệu và cuối cùng là triển khai hệ thống.
+Trong Chương 5 em sẽ trình bày nội dung về các giải pháp và đóng góp nổi bật
+nhất cũng như cách giải quyết các khó khăn trong quá trình thực hiện đồ án.
+Trong Chương 6 em sẽ kết luận đồ án, sau đó trình bày các ưu nhược điểm của
+hệ thống, những gì em đã và chưa làm được trong đồ án tốt nghiệp lần này. Đồng
+thời, em sẽ đề xuất các định hướng mà em muốn phát triển hệ thống trong tương
+Với những yêu cầu đã đặt ra ở chương 1, chương 2 sẽ khảo sát hiện trạng thực
+tế, làm rõ các bước phân tích, yêu cầu phi chức năng của ứng dụng.
+Hiện nay những mô hình Labor to Earn mới bao gồm: (i)Learn to Earn & Par-
+ticipate to Earn [5], (ii) Create to Earn, (iii) Play to Earn [6] hay GameFi [7]. Tiêu
+biểu nhất cho hiện tượng GameFi này chính là Axie Infinity [8].
+Axie Infinity là một trò chơi dựa trên blockchain, trong đó người chơi mua
+những con quái vật dễ thương gọi là Axies và đem chúng đi chiến đấu. Người chơi
+giành chiến thắng trong các trận đấu này hoặc hoàn thành nhiệm vụ hàng ngày sẽ
+kiếm được một loại tiền tệ trong game, gọi là Smooth Love Portion (SLP). SLP có
+thể được đổi thành fiat (tiền pháp định).
+Theo Coindesk, tính đến tháng 7/2021, trung bình một người chơi Axie Infinity
+có thể kiếm được khoảng 4,500 SLP/tháng ( = $800 ). Trò chơi đã có sự tăng trưởng
+lớn từ 30,000 người chơi game hàng ngày trong tháng 4/2021 lên hơn 1 triệu vào
+tháng 8, với hầu hết người chơi đến từ các thị trường mới nổi như Philippines,
+Trên thực tế, có rất nhiều người Philippines đã bỏ việc để chơi Axie Infinity
+hàng giờ đồng hồ mỗi ngày vì nó trả “lương” tốt hơn. Thậm chí, một số người kiếm
+được gấp 3 lần so với thu nhập bình thường của họ.
+Axie Infinity đại diện cho một mô hình kinh doanh mới dựa trên blockchain,
+nơi những người sáng tạo trò chơi chia sẻ doanh thu của họ với người chơi. Mỗi đô
+la mà người chơi kiếm được vốn có thể đi thẳng vào túi những nhà phát triển. Thế
+nhưng, thay vì tính phí truy cập, bán quảng cáo hay buộc người dùng mua in-app
+và giữ tất cả lợi nhuận cho riêng mình, các nhà phát triển Axie quyết định chia sẻ
+lợi nhuận với người chơi, hy vọng rằng trò chơi sẽ được ứng dụng rộng rãi.
+Mặc dù một số người cho rằng nền kinh tế của trò chơi không bền vững, nhưng
+cho đến nay chiến lược này vẫn đang hiệu quả: 60% người chơi biết về Axie do
+được bạn bè hay thành viên trong gia đình giới thiệu, và trò chơi đang trên đà tạo
+ra doanh thu hơn 1 tỷ đô trong năm 2021.
+Hệ thống gồm có 2 tác nhân là quản trị viên, người dùng.
+Để vào ứng dụng, người dùng cần sử dụng tài khoản email để đăng nhập, hệ
+thống sẽ gửi mã code xác nhận về email mà người dùng nhập. Sau khi xác thực mã
+code thành công, người dùng sẽ phải thêm ví hoặc tạo ví mới. Sau khi thêm ví/ tạo
+ví thành công, người dùng sẽ dùng đồng FBT token trong ví để mua BirdBox NFT.
+Sau khi mua BirdBox thành công, người dùng có thể mở BirdBox để nhận được
+Bird có các thuộc tính khác nhau. Khi có Bird, người dùng sẽ tham gia chơi game
+để kiếm token. Ngoài ra, người dùng còn có thể mua hoặc đặt bán Bird ở chợ, xem
+bảng xếp hạng xếp theo số token người chơi kiếm được. Quản trị viên có chức năng
+quản lý các tài khoản người dùng, danh sách Bird của người dùng, danh sách ví của
+người dùng, số token người chơi kiếm được.
+Usecase quản lý người dùng thực hiện bởi quản trị viên. Quản lý người dùng bao
+gồm thêm người dùng, sửa thông tin người dùng, tìm kiếm người dùng, xóa người
+dùng. Hình 2.2 mô tả usecase quản lý người dùng:
+Usecase quản lý tiền người dùng thực hiện bởi quản trị viên. Quản lý tiền người
+dùng bao gồm xem tiền người dùng, khóa tiền người dùng, xếp hạng. Hình 2.3 mô
+tả usecase quản lý tiền người dùng:
+Usecase quản lý thanh khoản thực hiện bởi quản trị viên. Quản lý người dùng
+bao gồm thêm thanh khoản, xem thanh khoản, xóa thanh khoản. Hình 2.4 mô tả
+usecase quản lý thanh khoản:
+Usecase quản lý Bird thực hiện bởi quản trị viên. Quản lý Bird bao gồm thêm
+Bird, sửa Bird, xem Bird, xóa Bird. Hình 2.5 mô tả usecase quản lý Bird:
+Usecase quản lý chợ thực hiện bởi quản trị viên. Quản lý chợ bao gồm thêm Bird
+lên chợ, sửa Bird bán trên chợ, xóa Bird bán trên chợ, xem Bird bán trên chợ. Hình
+dụng tài khoản email để đăng nhập, hệ thống sẽ gửi mã code xác nhận về email mà
+người dùng nhập. Sau khi xác thực mã code thành công, người dùng sẽ phải thêm
+ví hoặc tạo ví mới. Sau khi thêm ví/ tạo ví thành công, người dùng sẽ dùng đồng
+FBT token trong ví để mua BirdBox NFT. Sau khi mua BirdBox thành công, người
+dùng có thể mở BirdBox để nhận được Bird có các thuộc tính khác nhau. Khi có
+Bird, người dùng sẽ tham gia chơi game để kiếm token. Ngoài ra, người dùng còn
+có thể mua hoặc đặt bán Bird ở chợ, xem bảng xếp hạng xếp theo số token người
+Để có thể thực hiện được chính xác, hiệu quả các tính năng người sử dụng yêu
+cầu, giai đoạn phân tích và thiết kế kiến trúc là rất cần thiết. Phân tích và thiết kế
+sẽ mang đến bức tranh toàn cảnh của ứng dụng xây dựng, hiểu rõ ưu, nhược điểm
+của các giải pháp để tìm ra hướng đi tối ưu. Chương 3 sẽ làm rõ về các công nghệ
+sử dụng phát triển ứng dụng.
+Blockchain [9] là một cơ sở dữ liệu phân cấp lưu trữ thông tin trong các khối(block)
+được liên kết với nhau bằng mã hóa và mở rộng theo thời gian để tạo thành một
+chuỗi(chain). Mỗi khối trong Blockchain sẽ được liên kết với khối trước đó, chứa
+thông tin về thời gian khởi tạo kèm một mã thời gian và dữ liệu giao dịch.
+Blockchain có thể được xem là một cuốn sổ cái điện tử được phân phối trên
+nhiều máy tính khác nhau, lưu trữ mọi thông tin giao dịch và đảm bảo các thông
+tin đó không thể bị thay đổi dưới bất kỳ hình thức nào.
+Cấu trúc của một Blockchain gồm khối(block) và chuỗi các giao dịch.
+Đây là nền tảng trọng tâm. Các giao dịch thể hiện các hoạt động chuyển nhượng
+hoặc thay đổi giá trị tài sản hữu hình hoặc vô hình giữa các bạn.
+Mỗi khối gồm 3 thành phần: Dữ liệu(data), mã hàm băm(hash) và mà hàm băm
+•Dữ liệu: Các bản ghi dữ liệu đã được xác thực của người dùng được bảo vệ
+bằng thuật toán mã hóa tùy thuộc vào từng blockchain.
+•Mã hàm băm(hash): Là chuỗi các ký tự và số được tạo một các ngẫu nhiên và
+không giống nhau. Nó đại diện riêng cho block đó và được mã hóa bằng thuật
+toán mã hóa. Mã hash dùng để phát hiện sự thay đổi trong các khối.
+•Mã băm của khối trước (previous hash): Nó dùng để các khối liên kề nhận biết
+được khối nào trước khối nào sau và nối với nhau.
+NFT là viết tắt của Non-fungible Token, là loại token có tính độc nhất và không
+thể bị thay thế bởi những token khác. Đây có thể là tài sản ảo hoặc phiên bản mã
+hóa của tài sản trong thế giới thực. Vì mỗi NFT là duy nhất và chúng không thể
+hoán đổi cho nhau, nên chúng có thể hoạt động như bằng chứng xác thực và quyền
+sở hữu lĩnh vực kỹ thuật số.
+Nhưng các Non-fungible Token thì đại diện cho những vật phẩm hay tài sản có
+giá trị sưu tầm khác nhau, chính vì thế NFT được ứng dụng bởi các nghệ sĩ, họa
+sĩ hay nhà phát triển game để token hóa các sản phẩm của mình và biết chúng trở
+Token là đồng tiền điện tử. Nó được tạo ra trên Blockchain đã có sẵn nhờ tạo ra
+các hợp đồng thông minh, phổ biết nhất là Ethereum.
+•Tích hợp Smart Contracts để tạo ra Token đơn giản
+•Đa dạng hoá chức năng như: bỏ phiếu, nhận lãi, Stacking
+•Đơn giản hoá quy trình sử dụng, không cần phải mất nhiều bước để bảo mật
+thông tin mà vẫn giao dịch và thanh toán nhanh chóng
+Smart contract (hay hợp đồng thông minh) là các chương trình chạy trên blockchain.
+Hợp đồng thông minh cũng giống như một hợp đồng kỹ thuật số bị bắt buộc thực
+hiện bởi một bộ quy tắc cụ thể. Các quy tắc này do bộ mã máy tính xác định trước
+mà tất cả các nút (node) trong mạng đều phải sao chép và thực thi các quy tắc đó.
+Về bản chất, Smart contract chỉ là một đoạn mã chạy trên hệ thống phân tán
+(blockchain), cho phép tạo ra các giao thức Permissionless (tức là không cần trao
+quyền). Điều đó có nghĩa là:
+•Hai bên trong hợp đồng có thể đưa ra các cam kết thông qua blockchain mà
+không cần phải biết danh tính hay tin tưởng lẫn nhau.
+•Họ có thể đảm bảo rằng nếu các điều kiện của hợp đồng không được thỏa
+mãn, hợp đồng sẽ không được thực thi.
+Ngoài ra, việc sử dụng hợp đồng thông minh loại bỏ nhu cầu đối với bên trung
+gian, giúp giảm đáng kể chi phí hoạt động.
+Mỗi blockchain có một phương pháp triển khai hợp đồng thông mình khác nhau,
+ví dụ trên Cosmos có WASM , Polkadot có ink!,... Trong đó nổi bật nhật vẫn là
+Smart contract chạy trên máy ảo của Ethereum( Ethereum Virtual Machine - EVM
+Trên Ethereum [16], các Smart Contract chịu trách nhiệm thực thi và quản lý các
+hoạt động diễn ra trên blockchain khi những người dùng tương tác với nhau. Bất kỳ
+địa chỉ nào không phải là smart contract đều được là Tài khoản độc lập (Externally
+Owned Account - EOA). Do đó, smart contract sẽ do máy tính kiểm soát và EOA
+do người dùng kiểm soát.
+Smart contract Ethereum bao gồm một mã hợp đồng và hai khóa công khai [17]:
+•Khóa công khai thứ nhất là khóa do người tạo hợp đồng cung cấp.
+•Khóa còn lại đại diện cho chính hợp đồng, khóa này có vai trò như một mã
+định danh kỹ thuật số duy nhất cho mỗi smart contract.
+Smart contract được triển khai thông qua giao dịch blockchain và chúng chỉ
+được kích hoạt khi một Tài khoản độc lập (EOA) hoặc các smart contract khác call
+chúng. Tuy nhiên, kích hoạt đầu tiên luôn từ phía EOA (người dùng).
+Ưu và nhược điểm của Smart Contract
+•Hợp đồng thông minh là một bộ mã có thể lập trình, có khả năng tùy chỉnh cao
+và có thể được thiết kế theo nhiều cách khác nhau để có thể cung cấp nhiều
+loại dịch vụ và giải pháp.
+•Ngoài ra, hợp đồng thông minh là các chương trình phi tập trung và tự thực
+hiện(self-executing), chúng giúp tăng tính minh bạch và giảm chi phí hoạt
+động. Nếu được triển khai đúng cách, chúng cũng có thể tăng hiệu quả vận
+hành và giảm chi phí hành chính.
+•Smart Contract dựa trên hệ thống blockchain nên không thể sửa đổi và can
+thiệp. Một khi Smart Contract được viết ra, nếu muốn thay đổi chỉ có cách
+viết lại một hợp đồng mới. Tính chất không thể thay đổi là một ưu điểm lớn,
+tuy nhiên trong một số trường hợp có thể là nhược điểm.
+NodeJs là một platform tạo môi trường để thực thi ngôn ngữ Javascript phía máy
+chủ. Với việc hỗ trợ xử lý bất đồng độ, cùng với tích hợp Google V8 engine , việc
+biên dịch mã nguồn của máy chủ sẽ trở nên nhanh hơn, mềm dẻo hơn, cũng như
+đảm bảo tính mở rộng sau này.
+Để tạo dựng một bộ khung cấu trúc của ứng dụng thì NodeJs cần tích hợp thêm
+các framework bên trong nó. Với ưu thế mềm dẻo, tối ưu hóa và linh hoạt, Express
+framework [18] là lựa chọn phổ biến hàng đầu để tích hợp với NodeJs.
+Các ưu điểm nổi bật khi sử dụng Express kết hợp với NodeJS có thể kể đến như
+•Đảm bảo tính đơn giản, dễ điều chỉnh theo yêu cầu sử dụng.
+•Hoạt động dựa trên URL và phương thức HTTP, hỗ trợ định nghĩa các route
+•Hỗ trợ biên dịch các trang HTML động qua các view engine (EJS, Pug và
+•Hỗ trợ việc viết REST API phía máy chủ.
+•Hệ thống quản lý thư viện đa dạng, phong phú, dễ dàng cài đặt và tích hợp các
+thư viện cần thiết. (thông qua Node package manager) .
+Việc kết hợp giữa NodeJs và Express Framework tạo nên bộ khung vững chắc
+phía máy chủ. Không chỉ tiết kiệm thời gian khi xây dựng website, sự kết hợp còn
+giúp giảm thiểu các yêu cầu phải xử lý lên phía máy chủ, mang đến trải nghiệm tối
+Mọi dữ liệu khách hàng khi sử dụng ứng dụng cần được lưu trữ một cách tối ưu
+và hiệu quả. Vì vậy, việc lựa chọn một hệ quản trị dữ liệu tối ưu thực sự rất cần
+Hiện nay, mô hình lưu trữ dữ liệu được chia thành 2 loại chính: mô hình dữ liệu
+quan hệ RDBMS (Relational Database Management System) và mô hình dữ liệu
+phi quan hệ NoSQL [20] (Not only SQL).
+Mô hình dữ liêu quan hệ (tiêu biểu là hệ quản trị dữ liệu MySQL) có tiêu chí
+ràng buộc dữ liệu rất mạnh mẽ. Mọi dữ liệu khi truy xuất cơ sở dữ liệu quan hệ đều
+được kiểm tra ràng buộc chặt chẽ. Điều này sẽ đảm bảo tính toàn vẹn cho dữ liệu.
+Trái ngược với mô hình dữ liệu quan hệ là mô hình dữ liệu phi quan hệ (tiêu biểu
+là hệ quản trị dữ liệu MongoDB). Khi sử dụng cơ sở dữ liệu phi quan hệ, mọi dữ
+liệu khi truy xuất sẽ không bị ràng buộc về quan hệ, vì vậy thời gian truy xuất các
+dữ liệu độc lập sẽ nhanh hơn so với cơ sở dữ liệu quan hệ. Tuy nhiên, trong trường
+hợp dữ liệu cần truy xuất liên quan đến các dữ liệu khác, cơ sở dữ liệu quan hệ lại
+phát huy tính hiệu quả của nó.
+Khi xây dựng ứng dụng game, lựa chọn cơ sở dữ liệu phi quan hệ MongoDB,
+đảm bảo thời gian truy cập nhanh nhất, kết hợp thư viện SocketIO mang đến tính
+chất “real-time” cho việc chơi game.
+Được phát triển bởi Facebook, React Native là một framework hướng đến phát
+triển ứng dụng di động đa nền tảng. Với sự trợ giúp của React Native, lập trình viên
+(developer) có thể sử dụng JavaScript để tạo ra mobile apps (ứng dụng di động) hỗ
+trợ cho cả nền tảng Android và iOS.
+React Native sở hữu rất nhiều ưu điểm tuyệt vời. Cụ thể là:
+•Có thể tái sử dụng code.
+•Cộng đồng người dùng lớn
+•Tính ổn định và tối ưu
+Tuy nhiên nó vẫn tồn tại những nhược điểm sau:
+•Hiệu năng kém hơn so với Native App.
+•Bảo mật chưa thật sự tốt do dùng JavaScript. Do sử dụng JavaScript, người
+dùng cũng sẽ bị ảnh hưởng bởi những đặc điểm của JavaScript: dễ làm dễ sai,
+dẫn đến khó duy trì về sau.
+•Tùy biến chưa thật sự tốt ở một số module.
+•Không thích hợp cho các app cần năng lực tính toán cao (hash, crypto, etc).
+Với những gì đã phân tích trong chương 2 và công nghệ đã lựa chọn được ở
+chương 3. Trong chương 4 sẽ trình bày nội dung về thiết kế, ứng dụng sẽ được triển
+khai xây dựng và kiểm thử.
+được chia thành 2 khối, đảm nhận các nhiệm vụ khác nhau. Front-end có vai trò:
+nhận các yêu cầu của người dùng, gửi các yêu cầu đó đến Back-end và nhận các kết
+quả xử lý từ Back-end, trả về cho người dùng. Khối Back-end sẽ bao gồm server và
+smart contract. Trong đó server là nơi sẽ nhận các yêu cầu từ Front-end và gọi đến
+Blockchain thông qua Smart Contract.
+Sự phụ thuộc gói của ứng dụng được thể hiện qua Hình 10, trong đó:
+•Gói views: là nơi lưu trữ các template để hiển thị dữ liệu. Dữ liệu hiển thị được
+nhận từ API hoặc nhận trực tiếp từ các controller.
+•Gói routes: chia thành web và api. Các route web là những route chịu trách
+nhiệm cho hiển thị dữ liệu từ controller. Các route api sẽ nhận dữ liệu từ
+controller, sau đấy hiển thị lên view.
+•Gói controllers: xử lý các request từ routes. Các dữ liệu nhận từ request sẽ
+được kiểm tra, xử lý trước khi chuyển cho Service.
+•Gói services: Nhận dữ liệu từ controller, sử dụng dữ liệu từ config và model
+(nếu cần thiết), chịu trách nhiệm truy vấn và xử lý đối với cơ sở dữ liệu.
+Ngoài các gói chính trên, khi xây dựng ứng dụng đặt lịch khám bệnh, còn có
+thêm các gói: lang (hiển thị ngôn ngữ), helper (các hàm dùng chung), migration,
+seeder (tạo bảng và dữ liệu mẫu cho database)
+sagas, routes, controllers, models, trong đó views là package chứa các lớp bao có
+chức năng tương tác với người dùng, sagas là package chứa các lớp có chức năng
+nhận yêu cầu của lớp bao và tương tác với server, routes là package chứa các lớp
+định nghĩa các đầu api, controllers là package chứa các lớp xử lý nghiệp vụ tương
+ứng với các chức năng, models là package chứa các lớp thực thể tương ứng với các
+bảng trong cơ sở dữ liệu.
+a, Thiết kế thành phần giao diện màn hình thêm ví on-chain
+Màn hình thêm ví on-chain được chia thành 4 thành phần con như Hình 4.4. Bao
+•Nút back: Thành phần nút có chức năng quay lại màn trước đó.
+•Mã code: Thành phần text input để người dùng nhập vào mã code.
+•Seed Phrase: Thành phần text input để người dùng nhập vào cụm từ khôi phục
+•Nút Import: Thành phần nút có chức năng gửi yêu cầu import ví.
+b, Thiết kế thành phần giao diện màn hình Ví on-chain
+Màn hình Ví on-chain được chia thành 4 thành phần con như Hình 4.5. Bao
+•Các chức năng ví: Thành phần các nút: nút nhận token, chuyển token, swap
+•Số token: Thành phần hiển thị số token đang có trong ví.
+•Nút Mint Box: Thành phần nút có chức năng điều hướng đến màn mint box.
+•Nút My boxes: Thành phần nút có chức năng điều hướng đến màn danh sách
+box của tài khoản ví.
+c, Thiết kế thành phần giao diện màn hình Mint Box
+Màn hình Mint Box được chia thành 2 thành phần con như Hình 4.6. Bao gồm:
+•Nút back: Thành phần nút có chức năng quay lại màn trước đó.
+•Danh sách các loại Box: Thành phần hiển thị 3 loại Box với 3 giá tiền khác
+nhau để người dùng mua và mint.
+d, Thiết kế thành phần giao diện màn hình Chợ
+Màn hình Chợ được chia thành 2 thành phần con như Hình 4.7. Bao gồm:
+•Filter: Thành phần có chức năng chọn các loại filter theo giá bán, theo sao của
+•Danh sách Bird trên chợ: Thành phần hiển thị danh sách Bird được đăng bán
+a, Usecase thêm ví on-chain
+dùng có thể mở các hộp Bird đã mình từ ví rồi chuyển vào trong ứng dụng để mở
+hộp và nhận được Bird để có thể chơi kiếm tiền.
+thể thêm ví hoặc tạo ví on-chain mới.
+
+
+Trong chương 5 sẽ làm nổi bật nhưng giải pháp đã sử dụng và nhưng đóng góp
+của giải pháp đó cho dự án.
+Trong game NFT thì phần không thể thiếu đó là Smart Contract.
+Smart Contract (hay Hợp đồng thông minh) là các chương trình chạy trên blockchain.
+Hợp đồng thông minh cũng giống như một hợp đồng kỹ thuật số bị bắt buộc thực
+hiện bởi một bộ quy tắc cụ thể. Các quy tắc này do bộ mã máy tính xác định trước
+mà tất cả các nút (node) trong mạng đều phải sao chép và thực thi các quy tắc đó.
+Về bản chất, Smart Contract chỉ là một đoạn mã chạy trên một hệ thống phân
+tán (blockchain), cho phép tạo ra các giao thức Permissionless (tức là không cần
+trao quyền). Điều đó có nghĩa là:
+•Hai bên trong hợp đồng có thể đưa ra các cam kết thông qua blockchain mà
+không cần phải biết về danh tính hay tin tưởng lẫn nhau.
+•Họ có thể đảm bảo rằng nếu các điều kiện của hợp đồng không được thỏa
+mãn, hợp đồng sẽ không được thực thi.
+Ngoài ra, việc sử dụng hợp đồng thông minh loại bỏ nhu cầu đối với các bên
+trung gian, giúp giảm đáng kể chi phí hoạt động.
+Đối với game truyền thống thì việc thanh toán sẽ phải qua bên thứ ba. Vì vậy em
+tạo ra một FBT token làm đồng tiền cho game Flappy Bird . Nó là một đồng tiền
+điện tử vì nó rất tiện lợi. Khi đó có thể nạp, rút tiền, mua bán Bird, mint Box. . . với
+đồng tiền này mà không cần bất kỳ bên nào. Và khi cần FBT token không chỉ là
+mua bán trong game. Người dùng có thể chuyển, bán , swap sang bất kỳ một đồng
+tiền điện tử nào một cách dễ dàng ngoài ứng dụng.
+Để phát hành nhân vật thì những người làm game đều sẽ có những cách phát
+hành nhân vật riêng của họ. Như game truyền thông thì thường sẽ là người dùng
+nạp tiền vào vào mua nhân vật mình muốn rồi sau đó chơi. Để tăng tính thú vị cho
+game thì em quyết định NFT nhân vật của mình vào một cái hộp. Khi đó người
+dùng sẽ phải dùng tiền FBT token và một ít phí BNB để mint box. Khi đó sẽ tạo ra
+một Box NFT chứa nhân vật bên trong. Và khi mint box thành công người dùng có
+thể chuyển, bán cho người khác hoặc là sẽ chuyển vào game rồi mở hộp đó ra lấy
+Trong phần game khi người dùng chơi game, tiền thưởng sẽ được trả ngay lập
+tức khi người dùng vướt qua chứng ngại vật. Thường các game sẽ được trả thường
+khi kết thúc trò chơi nhưng như vậy, khi người dùng đang chơi mất mạng hoặc
+thoát đột ngột sẽ không nhận được thưởng khi đang vượt qua chứng ngại vật. Vì
+vậy chúng ta cần xử lý "real- time" là trả thường ngay khi người dùng qua chướng
+Trong dự án này, sử dụng cơ chế 2 ví là ví in-app và ví on-chain. Để bắt đầu chơi
+game, người dùng cần import ví on-chain vào hệ thống. Sau đó người dùng chuyển
+token từ ví on-chain vào ví in-app. Để mua Bird trên chợ, người dùng sẽ mua bằng
+token có trong ví in-app. Người dùng cũng có thể chuyển token từ ví in-app về ví
+on-chain. Khi sử dụng ví in-game người dùng sẽ không phải trả phí trong mạng
+lưới Blockchian. Như vậy sẽ giúp người dùng giảm phí giao dịch và tăng tốc độ
+Cùng với sự hướng dẫn của TS. Trịnh Anh Phúc, em đã xây dựng được ứng
+dụng game NFT Flappy Bird. Ứng dụng game đã đáp ứng được những chức năng
+cơ bản của một game NFT hiện nay. Trong quá trình xây dựng ứng dụng game NFT
+Flappy Bird, em đã học được quy trình xây dựng một game NFT và hiểu được về
+ứng dụng của blockchain trong lĩnh vực GameFi.
+Các ưu điểm nổi bật của ứng dụng xây dựng có thể kể đến như là :
+•Hệ thống tích hợp ví vào trong game giúp người dùng có thể gửi tiền điện tử
+vào ví để nạp tiền vào tài khoản chi tiêu của họ.
+•Play to Earn: Người dùng cần sở hữu tối thiểu 1 Bird có thể chơi game và nhận
+•Thị trường giao dịch NFT trong ứng dụng: Người dùng có thể giao dịch NFT
+của họ trên thị trường giao dịch.
+•Hoán đổi trong ứng dụng: Người dùng có thể hoán đổi token thưởng nhận
+được từ game sane các loại tiền điện tử khác.
+Tuy nhiên, trong quá trình xây dựng ứng dụng, do thời gian và kinh phí không
+cho phép, ứng dụng vẫn còn những nhược điểm như là :
+•Khi vào game, còn mất thời gian để khởi tạo dữ liệu dẫn đến trải nghiệm người
+•Chưa xây dựng ứng dụng web.
+Trong tương lai, khi ứng dụng được đầu tư thời gian cũng như kinh phí xây dựng,
+em dự định sẽ mở rộng theo các hướng sau:
+•Triển khai các contract lên mainnet của Binace Smart Chain
+•Tích hợp được nhiều các chain khác của EVM
+•Xây dựng cộng đồng: tạo pool IDO, phát hành token cho cộng đồng,. . .
+•Tối ưu code để chạy nhanh hơn khi mới vào app
+•Xây dựng game trên cả nền tảng web để tăng thêm lựa chọn cho người dùng.

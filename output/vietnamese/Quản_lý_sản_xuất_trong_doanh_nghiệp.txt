@@ -1,0 +1,516 @@
+
+Với mỗi thế hệ sinh viên quãng thời gian học đại học luôn là giai đoạn vô cùng
+quan trọng trên con đường trưởng thành. Em rất may mắn được học tập và phát
+triển dưới môi trường tuyệt vời của trường Đại Học Bách Khoa Hà Nội. Qua 5 năm
+học, trước khi em phải bước tiếp giai đoạn mới của cuộc đời, em xin gửi lời cảm
+ơn tới tất cả mọi người đã đồng hành cùng em trong suốt cuộc đời sinh sinh viên
+Đầu tiên em xin gửi lời cảm ơn đến gia đình, bạn bè đã luôn là hậu phương vững
+chắc cho em . Gia đình đã luôn ở bên cạnh động viên, hỗ trợ em cả về vật chất và
+đặc biệt là tinh thần trong suốt quãng đường sinh viên. Bạn bè luôn là người đồng
+hành chia sẻ kiến thức, cùng sẻ chia vui buồn trong quá trình học tập.
+Tiếp theo, em xin gửi lời cảm ơn chân thành đến các thầy cô giảng viên khoa
+Công nghệ thông tin Trường Đại Học Bách Khoa Hà Nội. Các thầy cô đã luôn tận
+tâm truyền dạy cho em những kiến thức chuyên ngành cũng như các bài học cuộc
+sống là hành trang không thể thiếu cho em trên đoạn đường phía trước.
+Đặc biệt em xin gửi lời cảm ơn sâu sắc đến thầy TS. Trịnh Tuấn Đạt, thầy luôn
+hướng dẫn chỉ bảo tận tình không chỉ về nội dung đồ án mà còn về kiến thức kỹ
+thuật giúp em hoàn thiện đồ án một cách tốt nhất. Em cũng xin gửi lời cảm ơn
+đến cô TS. Vũ Thị Hương Giang đã luôn nhiệt tình tư vấn, giúp đỡ em hoàn thiện
+nghiệp vụ của đồ án.
+Cuối cùng em xin gửi lời cảm ơn đến Công ty Cổ phần Công nghệ An toàn
+thông tin và truyền thông Việt Nam (VNIST) đã tạo cơ hội cho em thực tập cũng
+như phát triển phần mềm trong lĩnh vực chuyển đổi số doanh nghiệp giúp em có
+nhiều kiến thức về công nghệ cũng như quy trình thực tiễn. Trong quá trình làm đồ
+án, do hạn chế về thời gian cũng như trình độ chuyên môn của bản thân nên ĐATN
+sẽ không thể tránh những thiếu sót. Em rất mong nhận được các đánh giá, góp ý từ
+thầy cô để đồ án của em được hoàn thiện hơn. Em xin chân thành cảm ơn !
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Hiện nay, làn sóng chuyển đổi số doanh nghiệp đang trở thành xu hướng toàn cầu
+đối với các doanh nghiệp. Nhờ ứng dụng công nghệ thông tin thay cho các công cụ
+quản lý truyền thống sử dụng giấy bút các doanh nghiệp có thể nâng cao năng suất
+lao động, chất lượng sản phẩm,... lên rất nhiều lần. Đặc biệt với các doanh nghiệp
+sản xuất việc ứng dụng chuyển đổi số giúp giải quyết nhiều vấn đề nan giải như
+quản lý lượng tồn kho, dự báo nhu cầu sản xuất, . . .
+Nắm bắt được nhu cầu quan trọng đó trên thị trường hiện nay đã có rất nhiều phần
+mềm giúp đỡ các doanh nghiệp trong việc quản lý sản xuất tiêu biểu như SmartBiz,
+FOSO.ERP, FaceWorks,... Các phần mềm này đã hỗ trợ giám đốc sản xuất trong
+việc lên kế hoạch sản xuất, hoạch định nguyên vật liệu nhưng chưa có sự giao tiếp
+đến hai bộ phận quan trọng khác trong quy trình sản xuất là bộ phận đơn hàng và
+bộ phận kho, chưa có dự báo nhu cầu tiêu thụ, các sản phẩm cần sản xuất để phục
+vụ nhu cầu của khách hàng nhanh chóng.
+Hiểu được sự quan trọng của các chức năng mà các phần mềm hiện nay chưa
+đáp ứng được, ĐATN đã xây dựng phần mềm “Chuyển đổi số doanh nghiệp: Quản
+lý sản xuất “.Với hai phương thức (i) sản xuất để tồn kho, (ii) sản xuất theo đơn đặt
+hàng, phần mềm cung cấp quy trình tạo kế hoạch sản xuất tối ưu với từng phương
+thức. Phần mềm còn kết nối với bộ phận bán hàng và bộ phận quản lý kho giúp
+việc quản lý sản xuất trở lên linh hoạt, tạo quy trình sản xuất hoàn thiện.
+Phần mềm được tích hợp vào hệ thống “Không gian làm việc số” DXClan.com
+của công ty Cổ phần Công nghệ An toàn thông tin và Truyền thông Việt Nam
+VNIST. Phần mềm tập trung xây dựng quy trình sản xuất tối ưu, gợi ý số lượng các
+sản phẩm cần sản xuất. Các đóng góp chính trong ĐATN là (i) Xây dựng quy trình
+sản xuất tối ưu , (ii) Dự báo nhu cầu tiêu thụ sản phẩm, gợi ý số lượng sản phẩm
+cần sản xuất cho phương thức sản xuất để tồn kho, (iii) Liên thông với bộ phận bán
+hàng và bộ phận kho.
+
+Việc ứng dụng công nghệ thông tin thay cho các hoạt động quản lý truyền thống
+đang được thực hiện tại rất nhiều các doanh nghiệp. Theo báo cáo "Chỉ số phát
+triển kỹ thuật số của doanh nghiệp vừa và nhỏ khu vực châu Á - Thái Bình Dương"
+1của Cisco thực hiện trên 1340 doanh nghiệp trong khu vực nói chung và 50 doanh
+nghiệp Việt Nam nói riêng, các doanh nghiệp Việt Nam đang đầu tư vào các lĩnh
+vực công nghệ thông tin như công nghệ đám mây (18%), an ninh mạng (12,7%),
+nâng cấp phần mềm, phần cứng để chuyển đổi số (10,7%).
+Ứng dụng công nghệ thông tin đem lại nhiều lợi ích cho doanh nghiệp. Thứ nhất,
+nó công nghệ giúp các doanh nghiệp tăng năng suất lao động. Theo nghiên cứu
+“Giải mã những ảnh hưởng kinh tế của Chuyển Đổi Số tại khu vực Châu Á Thái
+Bình Dương”2do Microsoft và IDC Châu Á/Thái Bình Dương thực hiện, trong
+năm 2017 các doanh nghiệp được khảo sát tăng năng suất lao động 15% trong khi
+chi phí giảm 13% và sẽ còn gia tăng hiệu quả nhờ ứng dụng công nghệ thông tin.
+Ngoài ra việc ứng dụng công nghệ thông tin còn có khả năng lưu trữ thông tin lâu
+dài, dễ dàng tìm kiếm thông tin trong quá khứ, gia tăng tính bảo mật vốn là vấn đề
+nan giải với các doanh nghiệp sử dụng các phương pháp quản lý truyền thống.
+Việc ứng dụng CNTT còn đặc biệt cấp thiết với các doanh nghiệp sản xuất. Các
+doanh nghiệp này chịu tác động lớn do dịch bệnh Covid-19. Nhiều cơ hội bán hàng
+bị bỏ lỡ, thiệt hại uy tín đến từ việc không đáp ứng được nhu cầu dịch vụ, ... Những
+khó khăn này buộc các doanh nghiệp sản xuất phải có các biện pháp thay đổi trong
+việc quản lý doanh nghiệp. Trong đó ứng dụng CNTT chuyển đổi số doanh nghiệp
+là giải pháp vững bền và hiệu quả.
+Doanh nghiệp sản xuất luôn quan tâm đến bài toán tối ưu lượng hàng hoá cần
+sản xuất nhằm duy trì chuỗi cung ứng không bị gián đoạn, đáp ứng nhu cầu đa
+dạng của khách hàng. Phần mềm Quản lý sản xuất giúp doanh nghiệp giải quyết
+bài toán tối ưu lượng hàng hoá cần sản xuất nhờ các chức năng (i) Tạo và quản lý
+kế hoạch sản xuất theo quy trình khép kín từ đặt hàng đến sản xuất, lưu kho, giao
+hàng, (ii) Dự báo nhu cầu tiêu thụ sản phẩm của khách hàng, (iii) Gợi ý số lượng
+sản phẩm cần sản xuất, (iv) Liên kết với các bộ phận bán hàng và bộ phận kho.
+Hiện nay trên thị trường có rất nhiều phần mềm hỗ trợ quản lý sản xuất như:
+SmartBiz3, FOSO.ERP4, FaceWorks5, . . . Những phần mềm này hướng tới xây
+dựng và quản lý kế hoạch sản xuất theo 2 chiến lược cơ bản : Sản xuất để tồn kho
+(MTS - Make to stock) và Sản xuất theo đơn đặt hàng (MTO - Make to order).
+MTS là phương thức sản xuất truyền thống được doanh nghiệp sử dụng để sản
+xuất hàng tồn kho phù hợp với dự báo về cầu sản phẩm của người tiêu dùng. Một
+công ty sử dụng MTS sẽ ước tính sản phẩm của họ có thể thu hút được bao nhiêu
+đơn đặt hàng, và sau đó cung cấp đủ hàng tồn kho để đáp ứng số đơn đặt hàng đó.
+MTO là phương thức sản xuất cho phép người tiêu dùng mua những sản phẩm
+được tùy chỉnh theo thông số kỹ thuật mà họ mong muốn. Trong quy trình sản xuất
+này, việc sản xuất một mặt hàng chỉ bắt đầu được tiến hành sau khi nhận được đơn
+đặt hàng của khách hàng.
+Các phần mềm hiện nay hỗ trợ cả MTS và MTO, nhưng còn nhiều hạn chế.
+Công việc lập kế hoạch sản xuất xử lý tách riêng giữa hai phương pháp MTS và
+MTO mà không có sự kết hợp giữa hai phương pháp, dẫn đến kế hoạch sản xuất
+chưa được tối ưu và linh hoạt. Các phần mềm cũng chưa hỗ trợ gợi ý số lượng sản
+phẩm cần sản xuất nên doanh nghiệp phải dựa hoàn toàn vào kinh nghiệm bản thần
+để lên kế hoạch sản xuất sản phẩm để lưu kho. Ngoài ra việc liên thông với các bộ
+phận bán hàng và bộ phận kho cũng chưa được các phần mềm chú trọng nhiều.
+ĐATN đã khảo sát các phần mềm quản lý sản xuất trên thị trường. Để xây dựng
+kế hoạch sản xuất linh hoạt ĐATN xây dựng quy trình tạo kế hoạch sản xuất kết
+hợp giữa hai phương pháp MTS và MTO.
+Để giải quyết vấn đề tối ưu lượng hàng hoá sản xuất để tồn kho. ĐATN sử dụng
+mô hình Holt-Winter[1] để dự báo nhu cầu tiêu thụ hàng hoá của từng sản phẩm
+trong tương lai. Dựa vào dự báo nhu cầu tiêu thụ hàng hoá, số lượng hàng hoá đang
+sản xuất, và số lượng hàng hoá tồn kho, phần mềm phát triển trong ĐATN sẽ tính
+toán và đưa ra gợi ý số lượng sản phẩm cần sản xuất cho người sử dụng.
+ĐATN thực hiện liên thông với hai bộ phận quản lý đơn hàng, quản lý kho để
+tạo thành quy trình sản xuất khép kín từ quá trình đặt hàng, sản xuất, và nhập kho
+thành phẩm. Việc cung cấp các thông tin cần thiết giữa các bộ phận giúp quá trình
+sản xuất giảm thiểu các rủi ro như thiếu nguyên vật liệu hay sản xuất dư thừa. Ngoài
+ra ĐATN còn xây dựng thêm hai chức năng chung giữa các bộ phận (i) Quản lý
+đơn mua nguyên vật liệu, (ii) Tạo phiếu nhập kho thành phẩm.
+Phần mềm được xây dựng theo mô hình client-server giao tiếp với nhau thông
+qua Restful API. Client sử dụng công nghệ ReactJS và Redux giúp xây dựng Single
+Page Application nhằm gia tăng tốc độ tải trang web, gia tăng trải nghiệm người
+dùng. Server sử dụng công nghệ NodeJS kết hợp ExpressJS có khả năng xử lý dữ
+liệu mạnh mẽ do xử lý bất đồng bộ. Cơ sở dữ liệu sử dụng là MongoDB đem lại
+hiệu suất và khả năng mở rộng cao.
+ĐATN được tích hợp vào modue Quản lý sản xuất của hệ thống DXClan6- Giải
+pháp không gian làm việc số cho doanh nghiệp của Công ty Cổ phần Công nghệ
+An toàn thông tin và truyền thông Việt Nam (VNIST). Đóng góp chính của đồ án
+là (i) Xây dựng quy trình sản xuất tối ưu cho phương thức sản xuất theo đơn đặt
+hàng, (ii) Dự báo nhu cầu tiêu thụ sản phẩm, gợi ý số lượng sản phẩm cần sản xuất
+cho phương thức sản xuất để tồn kho, (iii) Liên thông bộ phận sản xuất với bộ phận
+bán hàng và bộ phận kho.
+Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2: Khảo sát nhu cầu chuyển đổi số của các doanh nghiệp và khảo sát
+các phần mềm hỗ trợ quản lý sản xuất trên thị trường. Từ đó đưa ra hạn chế của các
+phần mềm và cải thiện trong ĐATN.
+Chương 3: Giới thiệu về các công nghệ sử dụng để xây dựng phần mềm quản lý
+sản xuất, đồng thời đưa ra các ưu điểm khi sử dụng các công nghệ này.
+Chương 4: Trình bày về cách thức phát triển và triển khai phần mềm. Phần mềm
+được phát triển theo quy trình tuần tự: (i) Thiết kế kiến trúc, (ii) Thiết kế chi tiết,
+(iii) Xây dựng ứng dụng, (iv) Kiểm thử, (v) Triển khai.
+Chương 5: Trình bày các giải pháp và đóng góp nổi bật trong ĐATN. Các giải
+pháp này giúp giải quyết các vấn đề tồn tại trên các phần mềm quản lý sản xuất
+đã khảo sát. Từ đó thể hiện được lợi ích của các giải pháp khi sử dụng phần mềm
+Chương 6: Tổng hợp kết quả đã đạt được và những điểm còn thiếu sót cũng như
+hướng phát triển ĐATN trong tương lai.
+(i) Nhân viên bộ phận sản xuất: có thể quản lý kế hoạch sản xuất, lệnh sản xuất, lô
+hàng sản xuất, phiếu đề nghị mua nguyên vật liệu, lịch sản xuất, đơn hàng sản xuất
+và có thể xem bảng tin gợi ý sản xuất để tồn kho.
+(ii) Giám đốc sản xuất: có tất cả các chức năng của nhân viên bộ phận sản xuất và
+có thế quản lý xưởng sản xuất, nhà máy sản xuất.
+sản xuất có thể xem danh sách kế hoạch sản xuất, xem chi tiết kế hoạch sản xuất,
+tạo kế hoạch sản xuất, sửa kế hoạch sản xuất, huỷ kế hoạch sản xuất. Trưởng phòng
+sản xuất có thêm chức năng phê duyệt kế hoạch sản xuất.
+sản xuất có thể xem danh sách đơn hàng sản xuất, xem chi tiết đơn hàng sản xuất,
+tạo kế hoạch sản xuất cho đơn hàn. Trưởng phòng sản xuất có thêm chức năng phê
+duyệt kế hoạch sản xuất cho đơn hàng.
+sản xuất có thể xem danh sách lô hàng sản xuất, xem chi tiết lô hàng sản xuất, chỉnh
+sửa và tạo phiếu nhập kho cho lô hàng sản xuất.
+Mã TS001 Tên Quản lý phiếu đề nghị mua nguyên vật liệu
+Tác nhân Trưởng phòng kế hoạch, giám đốc sản xuất
+Tiền điều kiện Đăng nhập thành công và có chức vụ là trưởng phòng
+kế hoạch hoặc giám đốc sản xuất
+Luồng sự kiện chínhSTT Thực hiện Hành động
+nghị mua nguyên vật liệu
+nghị mua nguyên vật liệu
+nghị mua nguyên vật liệu
+nghị mua nguyên vật liệu
+Luồng sự kiện thay thếSTT Thực hiện Hành động
+Phần mềm cần hiển thị đầy đủ thông tin cần thiết với người sử dụng trong khi vẫn
+cần đảm bảo tốc độ tải trang cao. Cần có phân quyền cho người sử dụng đề đảm
+bảo chỉ được truy cập các tài nguyên cho phép. Mã nguồn cần xây dựng để có tính
+tái sử dụng và khả năng mở rộng cao.
+Giao diện thân thiện với người dùng nhờ sử dụng nhiều icon thông dụng và màu
+sắc đơn có tính đồng bộ cao. Hiển thị tốt trên nhiều thiết bị với độ phân giải khác
+nhau. Ngoài ra còn hỗ trợ đa ngôn ngữ để phục vụ nhu cầu đa dạng của người dùng.
+Phần mềm sử dụng nhiều phương thức đảm bảo bảo mật thông tin nhạy cảm cho
+người sử dụng như (i) xác thực phiên đăng nhập người dùng bằng Json web token
+và Browser fingerprint, (ii) server dùng middleware để kiểm tra tất cả các request
+trước khi xử lý, (iii) không lưu các thông tin nhạy cảm như mật khẩu ở trên trình
+duyệt, (iv) hỗ trợ cơ chế sao lưu dữ liệu
+ReactJS[2] hay React là một thư viện Javascript mã nguồn mở được phát triển
+bới Facebook nhằm hỗ trợ các lập trình viên tạo giao diện người dùng. ReactJS
+hướng tới việc xây dựng giao diện từ các thành phần thành phần riêng lẻ. Việc tập
+trung xây dựng các thành phần này giúp lập trình viên dễ dàng xây dựng một giao
+diện phức tạp từ những thành phần nhỏ, đồng thời tăng tính tái sử dụng cho mã
+ReactJS xây dựng trang web theo Single page application, sản phẩm chỉ sử dụng
+một trang duy nhất được cấu tạo từ nhiều thành phần. Khi sử dụng các chức năng
+khác nhau chỉ có thành phần trong trang thay đổi còn trang web không cần tải lại.
+Kiến trúc này giúp tốc độ duyệt web nhanh hơn, trải nghiệm mượt mà hơn.
+ReactJS cho phép lập trình viên sử dụng cú pháp JSX để xây dựng giao diện sản
+phẩm. JSX là một cú pháp mở rộng kết hợp của XML và JavaScript. JSX giúp lập
+trình viên xây dựng các thành phần giao diện ngay trong các tệp JavaScript. Điều
+này khiến việc lập trình trở nên nhanh chóng và trực quan.
+Ngoài ra ReactJS còn kết hợp được với rất nhiều các thư viện hiện đại khác giúp
+việc xây dựng giao diện trở nên linh hoạt, đơn giản.
+Redux[3] là một thư viện JavaScript mã nguồn mở giúp quản lý các state cục bộ
+cho các ứng dụng JavaScript. Redux ra đời lấy cảm hứng từ tư tưởng của ngôn ngữ
+Elm và kiến trúc Flux của Facebook nên các ứng dụng xây dựng bởi ReactJS coi
+Redux như một lựa chọn hàng đầu để quản lý các state cục bộ.
+Các thành phần trong một ứng dụng được xây dựng bởi ReactJS chỉ có thể trao
+đổi dữ liệu tuần tự từ thành phần cha xuống thành phần con. Khi ứng dụng được
+mở rộng, số lượng thành phần ngày càng nhiều, việc trao đổi dữ liệu giữa các thành
+phần tuần tự như vậy sẽ rất phức tạp. Redux giúp giải quyết vấn đề này bằng cách
+lưu trữ toàn bộ dữ liệu cục bộ vào một kho lưu trữ gọi là store. Các thành phần
+trong ứng dụng sẽ tương tác với dữ liệu thông qua store. Hình 3.1 so sánh quá trình
+trao đổi dữ liệu giữa các thành phần trong ứng dụng khi sử dụng và không sử dụng
+Node.js[4] hay Nodejs là một môi trường runtime chạy JavaScript đa nền tảng
+và có mã nguồn mở, được sử dụng để chạy các ứng dụng web bên ngoài trình duyệt
+Node.js được xây dựng dựa vào nền tảng V8 JavaScript Engine - một trình thông
+dịch thực thi mã JavaScript viết bởi C++ nên việc thực thi chương trình rất nhanh.
+Node.js có khả năng xử lý hàng nghìn yêu cầu đồng thời nhờ cơ chế xử lý quy
+trình bất đồng bộ. Các yêu cầu tiếp theo được xử lý cùng với yêu cầu đầu tiên.
+Không có quy trình nào chặn một quy trình khác.
+Ngoài ra, Node.js còn có một kho thư viện khổng lồ được quản lý bới một công
+cụ tạo và quản lý các thư viện đi cùng Node.js là NPM (Node package manager).
+NPM quản lý chia sẻ hàng trăm nghìn các thư viện được chia sẻ bởi cộng đồng lập
+trình viên JavaScript. Nó giúp cho các dự án mới tránh phải viết lại các thành phần
+cơ bản, các thư viện lập trình hay thậm chí cả các framework.
+Expressjs hay Express là một framework mã nguồn mở miễn phí cho Node.js.
+Express giúp xây dựng một máy chủ web hoạt động trên Node.js một cách đơn giản
+và nhanh chóng. Expressjs cung cấp các phương thức giúp lập trình viên xây dựng
+các API dễ dàng động thời có tính mở rộng cao, dễ bảo trì.Ngoài ra, Expressjs còn
+rất nhỏ gọn không làm phình to dung lượng của mã nguồn sản phẩm.
+MongoDB[4] là một cơ sở dữ liệu mã nguồn mở và là cơ sở dữ liệu NoSQL
+được viết bằng C++. Do là cơ sở dữ liệu NoSQL nên MongoDB sử dụng nhiều mô
+hình dữ liệu để truy cập và quản lý dữ liệu. MongoDB được tối ưu hóa dành riêng
+cho các ứng dụng yêu cầu mô hình dữ liệu linh hoạt có lượng dữ liệu lớn và độ trễ
+thấp, có thể đạt được bằng cách giảm bớt một số hạn chế về tính nhất quán của dữ
+liệu của các cơ sở dữ liệu khác.
+MongoDB chia các nhóm các dữ liệu thuộc cùng loại thành các collection. Sự
+khác nhau giữa collection với table trong các loại cơ sở dữ liệu quan hệ đó là
+collection không có ràng buộc, quan hệ với collection khác. Mỗi dữ liệu trong
+collection không cố định về số trường như row trong table. Do đó MongoDB có
+tính sẵn sàng cao, hiệu suất lớn và dễ dàng mở rộng lưu trữ.
+Phẩn mềm quản lý sản xuất sử dụng Hệ quản trị cơ sở dữ liệu MongoDB do các
+ưu điểm phù hợp như tốc độ truy vấn cao, các kiểu dữ liệu đa dạng cũng như dễ
+dàng mở rộng cơ sở dữ liệu.
+ĐATN sử dụng kết hợp các công nghệ ReactJS xây dựng Frontend, Node.js,
+Expressjs xây dựng Backend và MongoDB là hệ quản trị cơ sở dữ liệu. Tập hợp
+các công nghệ xây dựng ứng dụng web này được gọi là MERN stack. Hình 3.2 mô
+tả cấu trúc của một ứng dụng web được xây dựng bởi MERN stack.
+Ưu điểm của việc sử dụng MERN stack để phát triển một ứng dụng web hoàn
+chỉnh là việc phát triển phân chia tách biệt frontend và backend. Việc phát triển
+tách biệt hai phần này giúp việc viết mã nguồn tường minh, đơn giản hơn. Ngoài
+ra lập trình viên chỉ cần dùng duy nhất một ngôn ngữ lập trình là JavaScript để xây
+dựng ứng dụng, giúp việc học tập cách sử dụng công nghệ cũng như phát triển, bảo
+trì và mở rộng ứng dụng đơn giản hơn.
+Phần mềm được xây dựng theo mô hình web client-server. Client cung cấp giao
+diện của phần mềm cho người dùng. Server cung cấp và điều khiển các tiến trình
+truy cập vào tài nguyên của hệ thống. Client giao tiếp với server bằng giao thức
+truyền thông HTTP. Khi cần truy cập tài nguyên hệ thống client sẽ gửi yêu cầu đến
+server thông qua các Restful API mà server cung cấp, server sẽ xử lý các yêu cầu
+và trả về dữ liệu dạng json cho client. Hình 4.1 mô tả quá trình giao tiếp giữa client
+Thư mục node_modules chứa các thư viện JavaScript cần dùng trong phần mềm.
+Thư mục public chứa file HTML cơ sở và các hình ảnh. Thư mục src chứa các
+chức năng chính của ứng dụng. Trong thư mục src có các thư mục (i) commoncomponents - chứa các giao diện sử dụng thường xuyên nhằm mục đích tái sử
+dụng, (ii) helpers - chứa các hàm xử lý dữ liệu sử dụng thường xuyên, (iii) lang -
+chứa file ngôn ngữ nhằm mục đích chuyển đổi ngôn ngữ hiển thị trên giao diện, (iv)
+layouts - chứa các file định hình bố cục của trang web, (v) react-routes - chứa các
+file định tuyến trang web, (vii) redux - kho lưu trữ các state dùng trong toàn phần
+mềm, (vii) modules - chứa các chức năng chính của phần mềm. Trong modules có
+các thư mục (i) manufacturing - chứa giao diện quản lý sản xuất, (ii) order - chứa
+giao diện quản lý các đơn hàng.
+Phần server bao gồm các thư mục (i) helpers - chứa các hàm xử lý dữ liệu sử
+dụng thường xuyên, (ii) logs - chứa thông tin về các request đã nhận từ client, (iii)
+middleware - chứa các phương thức trung gian nhằm xác thực các request gửi đến
+server, (iv) node-modules - chứa các thư viện JavaScript cần dùng trong phần mềm,
+(v) seed - chứa dữ liệu khởi tạo của phần mềm, (vi) models - chứa cấu trúc dữ liệu
+của các thành phần trong phần mềm, (vii) modules - chứa các chức năng chính của
+phần mềm. Trong modules có (i) manufacturing - chức năng quản lý sản xuất, (ii)
+order - chức năng quản lý kho.
+phía client. Gói manufacturing-plan gồm 2 gói (i) components và (ii) redux. Gói
+components chứa các giao diện (i) PlanManagementTable - danh sách các kế hoạch
+sản xuất, (ii) PlanCreateForm - giao diện tạo kế hoạch, (iii) PlanDetailForm - giao
+diện xem chi tiết kế hoạch, (iv) PlanEditForm - giao diện chỉnh sửa kế hoạch. Gói
+redux quản lý các state cục bộ dùng trong chức năng quản lý kế hoạch sản xuất.
+xuất phía server. Gói manufacturing-plan gồm (i) manufacturingPlanRoute - định
+tuyến các API CRUD kế hoạch sản xuất, (ii) manufacturingPlanController - xử lý
+các request từ client và quy định cấu trúc của dữ liệu trả về client, (iii) manufacturingPlanService - xử lý các nghiệp vụ logic, tương tác với model. Gói models gồm
+manufacturingModel - định nghĩa cấu trúc dữ liệu của đối tượng kế hoạch sản xuất.
+Phần mềm được thiết kế để hiển thị tối ưu giao diện trên màn hình của laptop
+và máy tính để bàn. Bên cạnh đó giao diện cũng đáp ứng hiển thị đầy đủ thông tin
+trên các màn hình nhỏ hơn như tablet hay điện thoại di động.
+Màu sắc sử dụng được chuẩn hoá để thể hiện rõ ràng chức năng của từng phần.
+Màu xanh lá cây được dùng cho các chức năng thêm mới, màu vàng dùng cho các
+chức năng chỉnh sửa và màu đỏ dùng cho các chức năng xoá, báo lỗi. Giao diện có
+sự tương tác với người dùng. Các biểu tượng thông dụng giúp người dùng dễ dàng
+nhận biết các chức năng. Khi người dùng thực hiện xong các công việc sẽ có thông
+Giao diện chung của tất cả các màn hình sẽ bao gồm 4 phần (i) header - tiêu đề
+trang, (ii) footer - thông tin cuối trang, (iii) sidebar - danh sách các trang chức năng,
+(iv) content - phần nội dung riêng của mỗi trang. Hình 4.6 mô tả thiết kế chung
+của tất cả các màn hình. Hình 4.7 mô tả thiết kế giao diện của màn hình quản lý kế
+Dưới đây ĐATN xin trình bày thiết kế chi tiết các thuộc tính và phương thức
+cho hai lớp chủ đạo là (i) manufacturingPlanCreateForm - tạo kế hoạch sản xuất
+và (ii) goodReceiptCreateForm - tạo phiếu nhập kho theo lô sản xuất. Hình 4.8
+và 4.9 lần lượt là thiết kế chi tiết lớp cho 2 lớp manufacturingPlanCreateForm,
+handleStartDateChange Date void Thay đổi thời gian bắt
+đầu sản xuất dự kiến
+handleEndDateChange Date void Thay đổi thời gian kết
+thúc sản xuất dự kiến
+handleDescriptionChange String void Thay đổi mô tả kế
+handleAddGood Object void Thêm sản phẩm mới
+handleEditGood Object void Chỉnh sửa sản phẩm
+handleDeleteGood int void Xoá sản phẩm trong
+handleManufacturingCommandChange void void Thay đổi danh sách
+setCurrentStep int void Thay đổi bước tạo kế
+isStepValid void void Kiểm tra bước tạo kế
+hoạch hiện tại đã hoàn
+isFormValid void void Kiểm tra form tạo
+kế hoạch sản xuất đã
+save void void Gửi yêu cầu tạo kế
+responsibles Array Danh sách người thực
+description String Mô tả của phiếu
+goods Arrays Danh sách sản phẩm
+status int Trạng thái phiếu
+receiver Object Thông tin người giao
+manufacturingLot String Id của lô hàng cần
+Tên phương thức Đầu vào Đầu ra Ý nghĩa
+useEffect void void React hook để kiểm
+nent mỗi khi có state
+handleStockChange String void Thay đổi kho nhập
+handleApproverChange Array void Thay đổi danh sách
+handleAccountableChange Array void Thay đổi danh sách
+handleResponsibleChange Array void Thay đổi danh sách
+handleDescriptionChange String void Thay đổi mô tả phiếu
+handleGoodChange Array void Thay đổi danh sách
+handleReceiverChange Object void Thay đổi thông tin
+isFormValid void void Kiểm tra form tạo
+đơn nhập kho đã hoàn
+save void void Gửi yêu cầu tạo đơn
+Tên thực thể Ý nghĩa của thực thể
+SalesOrder Đơn hàng kinh doanh
+ManufacturingPlan Kế hoạch sản xuất
+ManufacturingLot Lô hàng sản xuất
+ManufacturingWork Nhà máy sản xuất
+User Người dùng hệ thống
+Bill Phiếu đề nghị trong kho
+b, Thiết kế chi tiết cơ sở dữ liệu
+Thiết kế cơ sở dữ liệu collection SalesOrder
+
+
+Thiết kế cơ sở dữ liệu ManufacturingPlan
+Thiết kế cơ sở dữ liệu ManufacturingCommand
+Thiết kế cơ sở dữ liệu ManufacturingLot
+Thiết kế cơ sở dữ liệu ManufacturingMill
+Thiết kế cơ sở dữ liệu ManufacturingWork
+Thiết kế cơ sở dữ liệu Good
+Thiết kế cơ sở dữ liệu User
+Thiết kế cơ sở dữ liệu Bill
+
+Thiết kế cơ sở dữ liệu Stock
+Chức năng tạo kế hoạch sản xuất được chia thành 3 bước được thực hiện lần lượt (i)
+Thêm các sản phẩm vào kế hoạch sản xuất, (ii) Chia kế hoạch sản xuất thành các
+lệnh sản xuất, (iii) Phân lịch thực hiện cho từng lệnh sản xuất. Hình 4.11 là bước
+thêm sản phẩm vào kế hoạch sản xuất
+xuất sẽ sản xuất một loại sản phẩm. Mỗi lệnh sản xuất có người phụ trách nguyên
+vật liệu, người giám sát thực hiện và người kiểm định chất lượng.
+phân lịch thực hiện một xưởng sản xuất và các công nhân trong xưởng đó.
+xong một lệnh sản xuất sẽ tạo ra lô hàng sản xuất tương ứng.
+Mỗi lô hàng sản xuất cần được vận chuyển đến kho hàng để hoàn thành thủ tục
+nhập kho. Hình 4.15 mô tả chức năng thêm phiếu nhập kho cho lô hàng.
+Các doanh nghiệp sản xuất luôn mong muốn hoàn thành số lượng đơn đặt hàng
+nhiều nhất có thể. Ngoài đem lại lợi nhuận cho doanh nghiệp hoàn thành nhiều đơn
+đặt hàng còn giúp gia tăng uy tín của doanh nghiệp với khách hàng.
+Để cung cấp đủ số lượng hàng hóa trong đơn hàng doanh nghiệp thường lập kế
+hoạch sản xuất theo hai phương pháp cơ bản là MTS: Make To Stock – Sản Xuất
+Để Tồn Kho và MTO: Make To Order – Sản Xuất Theo Đơn Đặt Hàng. MTS là
+phương thức sản xuất mà doanh nghiệp sản xuất sản phẩm trước khi khách hàng
+có nhu cầu. Sản phẩm được lưu kho, sau đó được đem phân phối và bán cho khách
+hàng. MTO là phương thức sản xuất mà doanh nghiệp chỉ sản xuất ra sản phẩm
+khi khách hàng có đơn đặt hàng cho doanh nghiệp. Sản phẩm MTO thường mang
+giá trị cao, thời gian làm ra sản phẩm dài hơn, sản phẩm có thể bị lỗi thời theo thời
+Các phần mềm hỗ trợ quản lý sản xuất hiện nay đang tách riêng chức năng tạo
+kế hoạch sản xuất theo MTS và MTO. Trong trường hợp tồn kho không đáp ứng
+đủ nhu cầu đơn hàng, doanh nghiệp sẽ sản xuất theo phương thức MTO( sản xuất
+mới toàn bộ số lượng hàng hoá trong đơn hàng). Nhược điểm của cách làm này là
+sẽ làm tăng thời gian chờ đợi hàng của khách hàng và không tối ưu số lượng hàng
+Để giải quyết vấn đề này, ĐATN sẽ xây dựng quy trình tạo kế hoạch sản xuất
+kết hợp giữa cả hai phương thức MTS và MTO nhằm giúp kế hoạch sản xuất linh
+hoạt, đáp ứng nhu cầu đa dạng của khách hàng
+Để giải quyết vấn đề số lượng sản phẩm cần sản xuất trong đơn hàng ĐATN
+cung cấp quy trình tạo kế hoạch sản xuất khi có đơn đặt hàng. Hình 5.1 mô tả quy
+trình tạo kế hoạch sản xuất khi có đơn đặt hàng
+Mô tả các bước trong Quy trình tạo kế hoạch sản xuất khi có đơn đặt hàng như
+Bước 1: Tạo đơn hàng kinh doanh. Khi thêm sản phẩm vào đơn hàng kinh
+doanh, nhân viên bán hàng sẽ cung cấp số lượng bán và số lượng xuất từ tồn kho
+cho từng sản phẩm. Số lượng xuất từ tồn kho là số lượng sản phẩm có thể giao cho
+khách hàng ngay lập tức từ kho mà không cần sản xuất mới. Trong trường hợp tồn
+kho không đủ cung cấp cho đơn hàng khách hàng vẫn có thể nhận được một số
+lượng hàng hoá trước giúp giảm thời gian chờ đợi của khách hàng. Hình 5.2 là giao
+diện thêm sản phẩm vào đơn bán hàng.
+Bước 2: Yêu cầu tạo kế hoạch sản xuất cho đơn hàng. Với đơn hàng chưa xuất
+kho đủ số lượng hàng hoá, nhân viên bán hàng có thể yêu cầu bộ phận sản xuất lên
+kế hoạch sản xuất cho số lượng hàng hoá còn thiếu. Hình 5.3 là giao diện yêu cầu
+tạo kế hoạch sản xuất cho đơn hàng.
+Bước 3: Tạo kế hoạch sản xuất cho đơn hàng. Bộ phận sản xuất có thể tạo kế
+hoạch sản xuất cho đơn hàng đã có yêu cầu. Danh sách và số lượng sản phẩm cần
+sản xuất thêm đã được thêm sẵn trong kế hoạch sản xuất. Sau khi tạo xong kế hoạch
+sản xuất đơn hàng sẽ được cập nhật thời gian hoàn thành sản xuất dự kiến. Hình
+Bước 4: Yêu cầu sản xuất cho đơn hàng. Sau khi đơn hàng đã được tạo kế hoạch
+sản xuất nhân viên bộ phận bán hàng có thể biết được thời gian dự kiến hoàn thành
+sản xuất. Nhờ đó, nhân viên bộ phận bán hàng có thể trao đổi thời gian dự định
+giao hàng với khách hàng.Nếu khách hàng đồng ý với thời gian đó,nhân viên bộ
+phận bán hàng sẽ yêu cầu thực hiện sản xuất còn nếu không sẽ huỷ đơn hàng Hình
+Với các sản phẩm có nhu cầu tiêu thụ ổn định các nhà sản xuất thường sản xuất
+theo phương thức MTS. Sản phẩm được sản xuất trong một giai đoạn sản xuất sẽ
+được nhập kho để phục vụ các đơn hàng trong giai đoạn sản xuất tiếp theo. Phương
+pháp này giúp các nhà sản xuất có thể đáp ứng các đơn hàng ngay lập tức, cung
+ứng liên tục và tạo thiện cảm với khách hàng.
+Bài toán đặt ra cho phương pháp này là cần sản xuất thêm bao nhiêu sản phẩm
+để đáp ứng nhu cầu của khách hàng. Nếu số lượng sản phẩm tồn kho quá nhiều
+so với nhu cầu của khách hàng sẽ tiêu tốn nhiều chi phí bảo quản lưu kho cho sản
+phẩm. Nếu số lượng sản phẩm tồn kho quá ít so với nhu cầu của khách hàng sẽ tốn
+thời gian chờ đợi sản xuất thêm sản phẩm của khách hàng.
+Để có thể gợi ý số lượng sản phẩm sản xuất để tồn kho trước tiên phải dự báo
+được nhu cầu tiêu thụ sản phẩm của khách hàng trong giai đoạn tới. Từ dự báo tính
+được kết hợp với các thông tin số lượng hàng tồn kho, số lượng sản phẩm đang sản
+xuất,... ĐATN sẽ tính toán số lượng sản phẩm cần sản xuất thêm trong giai đoạn
+Đặc điểm của các sản phẩm sản xuất tồn kho là thời gian sản xuất sản phẩm
+không lớn nên chu kỳ sản xuất cũng không quá dài. Chu kỳ sản xuất cũng phải
+đủ dài có thể nhận thấy số lượng sản phẩm sản xuất biến động qua các giai đoạn.
+ĐATN chia giai đoạn sản xuất theo từng tháng, sản phẩm sản xuất tồn kho trong
+tháng hiện tại sẽ được phục vụ cho nhu cầu đặt hàng trong tháng kế tiếp.
+ĐATN sử dụng mô hình Holt-Winters để dự báo nhu cầu tiêu thụ cho từng sản
+phẩm trong tháng kế tiếp với thông qua dữ liệu tiêu thụ thực tế trong quá khứ. Từ
+dự báo đó, ĐATN đưa ra công thức và tính toán gợi ý số lượng sản phẩm cần sản
+xuất thêm trong tháng hiện tại.
+Mô hình Holt-Winters là một mô hình dự báo theo chuỗi thời gian. Dự báo chuỗi
+thời gian là dự báo giá trị tương lai của một biến nào đó bằng cách phân tích số liệu
+quá khứ và hiện tại của chính biến số đó. Áp dụng vào ĐATN, thông qua mô hình
+Holt-Winters hệ thống có thể dự báo nhu cầu tiêu thụ của sản phẩm trong tháng tới
+với đầu vào là lịch sử tiêu thụ của sản phẩm đó trong quá khứ.
+Ưu điểm của Mô hình Holt-Winters là cần ít dữ liệu trong quá khứ và có thể áp
+dụng cho chuỗi dữ liệu có tính xu hướng và mùa vụ.
+Mô hình dựa trên phương pháp làm mịn cho 3 yếu tố cơ bản: mức độ E, xu
+hướng B và thời vụ S dựa trên 3 hàng số làm mịn tương ứng là α,β,γ. Công thức
+của mô hình trong [1]:
+dYt+n- Giá trị dự báo tại giai đoạn t+n
+Yt- Giá trị thực tế tại giai đoạn t
+Et- Mức độ của đối tượng dự báo tại giai đoạn t
+Bt- Tính xu hướng đối tượng dự báo tại giai đoạn t
+SS- Tính mùa vụ đối tượng dự báo tại giai đoạn t
+p - Chu kỳ của mùa vụ (p=12 với dự báo theo tháng)
+α,β,γ- Hệ số làm mịn (từ 0 đến 1)
+b, Ứng dụng mô hình Holt-Winters trong ĐATN
+Hệ thống ứng dụng mô hình Holt-Winters dự báo nhu cầu tiêu thụ của sản phẩm
+trong các tháng kế tiếp như sau:
+Input : Dữ liệu tiêu thụ sản phẩm thực tế trong quá khứ theo từng tháng được tổng
+hợp qua các đơn hàng.
+Ouput : Dự báo nhu cầu tiêu thụ của sản phẩm trong các tháng kế tiếp
+Bước 1 : Xác định hệ số làm mịn của mô hình
+Sai số bình phương trung bình MSE là một tiêu chí đánh giá sai số dự báo, là chênh
+lệch giữa giá trị thực (dữ liệu) và giá trị dự báo nhằm đánh giá chất lượng hay sự
+phù hợp của mô hình dự báo tại cùng một thời điểm.
+Việc xác định hệ số α,β,γdựa trên MSE của dự báo. Bởi lẽ, MSE càng bé thì dự
+báo càng cho ra kết quả chính xác.
+bYi- Giá trị dự báo tại giai đoạn i
+Yi- Giá trị thực tế tại giai đoạn i
+n - Số giai đoạn trong dữ liệu quá khứ
+Bước 2 :Dự báo nhu cầu tiêu thụ Sau khi tìm được hệ số α,β,γlần lượt tính được
+Yt,Et,Bt,dYt+ntheo công thức (2) ,(3), (4), (1)
+mô hình Holt Winter với dữ liệu đầu vào là số lượng tiêu thụ thực tế của sản phẩm
+Từ kết quả dự báo nhu cầu tiêu thụ sản phẩm của tháng tiếp theo, em đưa ra công
+thức gợi ý số lượng cần sản xuất thêm trong tháng với từng sản phẩm.
+Công thức tính số lượng cần sản xuất thêm trong tháng với từng sản phẩm:
+Số lượng cần sản xuất thêm = Số lượng dự báo tiêu thụ trong tháng tới - ( Số
+lượng tồn kho - Số lượng tồn kho để kinh doanh trong tháng hiện tại) - Số lượng
+Với mỗi doanh nghiệp sản xuất, bộ phận sản xuất, bộ phận kinh doanh và bộ
+phận kho cũng là 3 thành phần cốt lõi tạo thành một quy trình sản xuất khép kín
+từ lên đơn hàng đến sản xuất và nhập kho. Bộ phận bán hàng nắm vai trò quản lý
+các đơn bán hàng, mua hàng, đề nghị sản xuất cho các đơn hàng. Bộ phận sản xuất
+nhận yêu cầu từ bộ phận bán hàng lên kế hoạch, thực hiện sản xuất và đề nghị nhập
+kho sản phẩm đã hoàn thành sản xuất. Bộ phận kho quản lý số lượng và nơi lưu trữ
+các nguyên vật liệu và thành phẩm.
+Trong một quy trình sản xuất phải có liên thông giữa ba bộ phận để giải quyết
+các vấn đề (i) trao đổi thông tin giữa ba bộ phận và (ii) xây dựng chức năng chung
+a, Trao đổi thông tin cần thiết giữa các bô phận
+Ba bộ phận sản xuất, kinh doanh, kho luôn phải trao đổi các thông tin cần thiết
+với nghiệp vụ của mỗi module để đảm bảo tính nhất quán trong dữ liệu và hạn chế
+rủi ro. Bộ phận kinh doanh cần biết thông tin về số lượng hàng tồn kho để xác định
+có cần thiết lập kế hoạch sản xuất cho đơn hàng không. Hình 5.8 là giao diện thêm
+sản phẩm vào đơn hàng kinh doanh trong đó có thông tin về số lượng tồn kho của
+Bộ phận sản xuất cần biết danh sách số lượng đơn hàng yêu cầu sản xuất để
+nhanh chóng tạo kế hoạch sản xuất cho đơn hàng, giảm khả năng lỡ đơn hàng.
+đơn hàng được sắp xếp theo thứ tự ưu tiên giảm dần.
+b, Xây dựng các chức năng tạo phiếu đề nghị đến các bộ phận kinh
+doanh và bộ phận kho
+Với chức năng mua sắm nguyên vật liệu, bộ phận sản xuất có thể xác định cần
+mua bao nhiêu nguyên vật liệu để phục vụ sản xuất, bộ phận kinh doanh sẽ liên hệ
+với nhà phân phối đề nhập nguyên liệu về. ĐATN xây dựng chức năng tạo phiếu
+đề nghị mua nguyên vật liệu được tạo bộ phận sản xuất. Bộ phận kinh doanh sẽ lên
+đơn mua sắm nguyên vật liệu từ đề nghị của bộ phận sản xuất. Hình 5.10 là giao
+diện thêm phiếu đề nghị mua nguyên vật liệu.
+Trước khi thực hiện lệnh sản xuất, bộ phận sản xuất cần nhận nguyên vật liệu từ
+bộ phận kho. Sau khi hoàn lệnh sản xuất bộ phận sản xuất cần vận chuyển sản phẩm
+đến kho để lưu trữ. ĐATN xây dựng các chức năng tạo phiếu xuất kho nguyên vật
+liệu và tạo phiếu nhập kho sản phẩm cho lô hàng sản xuất.Hình 5.10 là giao diện
+thêm phiếu đề nghị xuất kho nguyên vật liệu và hình 5.12 là giao diện thêm phiếu
+đề nghị nhập kho cho lô hàng sản xuất.
+
+ĐATN đã khắc phục được hạn chế của các phần mềm Quản lý sản xuất trên thị
+trường. ĐATN đã được tích hợp vào modue Quản lý sản xuất của hệ thống DXClan
+1- Giải pháp không gian làm việc số cho doanh nghiệp của Công ty Cổ phần Công
+nghệ An toàn thông tin và truyền thông Việt Nam (VNIST). Các chức năng chính
+là (i) Quản lý kế hoạch sản xuất, (ii) Quản lý đơn hàng sản xuất, (iii) Quản lý lệnh
+sản xuất, (iv) Quản lý lô hàng sản xuât, (v) Quản lý đơn mua nguyên vật liệu, (vi)
+Gợi ý số lượng sản phẩm cần sản xuất.
+Tuy nhiên, ĐATN vẫn còn có hạn chế là chưa có chức năng tạo kế hoạch sản
+xuất tự động. Thuật toán dự báo được áp dụng chưa đa dạng, chưa có chức năng
+cái thiện độ chính xác của dự báo.
+Trong quá trình làm đồ án, em có học hỏi được cách sử dụng các công nghệ mới
+như MERN Stack. Việc phát triển và tích hợp ĐATN vào hệ thống DXClan cũng
+giúp em học hỏi được cách xây dựng một sản phẩm thực tế.
+Trong tương lai phần mềm cần có chức năng phân tích các tài nguyên sản xuất
+hiện có để hỗ trợ tạo kế hoạch sản xuất tự động. ĐATN cũng cần thêm các mô hình
+dự báo nhu cầu tiêu thụ sản phẩm để có sự so sánh độ chính xác giữa các mô hình.
+Đồng thời cũng cần thêm các tham số ảnh hưởng đến nhu cầu tiêu thụ và loại bỏ
+tính ngẫu nhiêu để dự báo chính xác hơn.

@@ -1,0 +1,789 @@
+
+Họ và tên sinh viên: Dương Huệ Linh
+Điện thoại liên lạc: 0868372366
+Hệ đào tạo: Đai học chính quy
+Tôi – Dương Huệ Linh – cam kết Đồ án Tốt nghiệp (ĐATN) là công trình nghiên
+cứu của bản thân tôi dưới sự hướng dẫn của Tiến sĩ Đỗ Bá Lâm . Các kết quả nêu
+trong ĐATN là trung thực, là thành quả của riêng tôi, không sao chép theo bất kỳ
+công trình nào khác. Tất cả những tham khảo trong ĐATN – bao gồm hình ảnh,
+bảng biểu, số liệu, và các câu từ trích dẫn – đều được ghi rõ ràng và đầy đủ nguồn
+gốc trong danh mục tài liệu tham khảo. Tôi xin hoàn toàn chịu trách nhiệm với dù
+chỉ một sao chép vi phạm quy chế của nhà trường.
+Hà Nội, ngày 07 tháng 08 năm 202
+Đề tài “Xây dựng cơ sở tri thức ngữ nghĩa và chatbot về du lịch Hà Nội” là nội
+dung tôi chọn để nghiên cứu và làm đồ án tốt nghiệp sau bốn năm theo học đại học
+chuyên ngành Công nghệ thông tin tại Đại học Bách Khoa Hà Nội.
+Lời đầu tiên, tôi xin chân thành gửi lời cảm ơn đến các thầy giáo, cô giáo trong
+Trường Công nghệ Thông tin và Truyền thông đã tận tình giảng dạy, truyền đạt
+những kiến thức cơ sở và chuyên ngành, quan tâm, giúp đỡ tôi trong suốt quá trình
+Đặc biệt, tôi xin được bày tỏ lòng biết ơn sâu sắc tới thầy giáo TS. Đỗ Bá Lâm
+thuộc bộ môn Hệ thống thông tin. Thầy đã trực tiếp chỉ bảo, định hướng, góp ý và
+giúp đỡ tận tình trong suốt quá trình nghiên cứu để tôi có thể hoàn thiện đồ án này.
+Cuối cùng, tôi xin được gửi lời cảm ơn chân thành tới gia đình, bạn bè đã động
+viên, đóng góp ý kiến và giúp đỡ trong quá trình học tập, nghiên cứu và hoàn thành
+TÓM TẮT NỘI DUNG ĐỒ ÁN
+Đồ án ”Xây dựng cơ sở tri thức ngữ nghĩa và chatbot về du lịch Hà Nội” tập trung
+nghiên cứu và thực hiện xây dựng cơ sở tri thức ngữ nghĩa về du lịch lễ hội ở Hà
+Nội, từ đó phát triển hệ thống tra cứu và hỏi đáp sử dụng kho tri thức đã phát triển ở
+trên. Trong quá trình hoàn thành đồ án, tôi đã thực hiện các công việc: thu thập dữ
+liêu, xây dựng cơ sở tri thức về du lịch Hà Nội, xây dựng chatbot, xây dựng website
+tra cứu thông tin. Tôi đã sử dụng Python Selenium để crawl dữ liệu, Protégé để lưu
+trữ cơ sở tri thức và dịch vụ xử lý ngôn ngữ tự nhiên LUIS để huấn luyện chatbot.
+Hệ thống sau khi hoàn thành hoạt động tương đối ổn định, đáp ứng được các yêu
+cầu đề ra, thể hiện được ưu điểm của web ngữ nghĩa như khả năng suy diễn và tính
+linh hoạt trong sử dụng dữ liệu.
+Hà Nội có vị trí và địa thế đẹp, thuận lợi, là Thủ đô, trung tâm chính trị, kinh
+tế, vˇan hoá, khoa học và đầu mối giao thông quan trọng của cả nước. Trải qua hơn
+cố, thăng trầm của riêng mảnh đất này và của chung đất nước, vì thế Hà Nội thực
+sự trở thành nơi lắng hồn núi sông ngàn năm, nơi hội tụ, kết tinh và lan tỏa các giá
+trị văn hóa của Việt Nam. Được thừa hưởng truyền thống cùng những giá trị văn
+hiến ấy, đồng thời luôn có ý thức bảo tồn và phát huy những giá trị văn hóa tốt đẹp,
+Hà Nội vững bước trên con đường phát triển và hội nhập như hiện nay, vừa là mảnh
+đất đậm đà bản sắc văn hóa, vừa là Thủ đô năng động, hiện đại. Tính đến cuối năm
+2015, Hà Nội có 5.922 di tích lịch sử văn hoá, trong đó có 2.396 di tích đã được
+xếp hạng là di tích quốc gia, di tích quốc gia đặc biệt, di sản thế giới. Hà Nội có
+bảo vệ; trong đó, có 1.206 lễ hội; 215 tập quán xã hội và tín ngưỡng; 175 nghề thủ
+công truyền thống; 106 di sản về tri thức dân gian; 79 nghệ thuật trình diễn dân
+gian; 14 di sản về ngữ văn dân gian. Không chỉ nổi tiếng với lịch sử lâu đời, giàu
+bản sắc, văn hóa truyền thống dân tộc, vùng đất này còn được biết đến là một thành
+phố năng động và hiện đại, một đô thị sôi động từ sáng tới khuya, là trung tâm kinh
+tế hiện đại, phát triển lớn của cả nước và khu vực. Với những lợi thế trên, ngành
+du lịch Thủ đô trong những năm qua đã liên tục phát triển, tạo dấu ấn. Năm 2019,
+Hà Nội đã đón gần 29 triệu lượt khách, tăng 10,1% so với năm 2018. Trong đó có
+hơn 7 triệu lượt khách quốc tế (tăng 17%), khách nội địa đạt gần 22 triệu lượt (tăng
+8%), tổng thu từ khách du lịch đạt 103.807 tỷ đồng (tăng 34%).
+Tiềm năng phát triển du lịch lớn cũng đồng nghĩa với nhu cầu tìm kiếm thông
+tin của người dùng ngày càng tăng cao. Tuy nhiên với lượng thông tin khổng lồ như
+hiện nay trên web thì việc tìm kiếm tri thức mất khá nhiều thời gian và công sức.
+Web ngữ nghĩa đã ra đời nhằm giải quyết vấn đề trên. Web ngữ nghĩa là hệ thống
+các thông tin được định nghĩa một cách rõ ràng nhằm mục đích giúp máy tính có
+thể hiểu được ngữ nghĩa, từ đó việc tìm kiếm thông tin cũng dễ dàng và chính xác
+Ngoài ra, Chatbot cũng là một công cụ hữu ích hỗ trợ tra cứu thông tin dễ dàng
+và thuận tiện. Hiện nay Chatbot đang ngày càng trở nên phổ biến trong tất cả các
+lĩnh vực và đặc biệt là trong lĩnh vực du lịch, nhà hàng và ăn uống. Chatbot đem
+đến nhiều lợi ích cho cả doanh nghiệp du lịch và khách hàng. Với khả năng truy
+cập thông tin nhanh chóng, kết nối tức thì với hệ sinh thái địa phương, chatbot góp
+phần mang đến chuyến du lịch an toàn và trải nghiệm vượt trội.
+Do vậy, trong đồ án lần này em đã chọn đề tài ”Xây dựng cơ sở tri thức ngữ
+nghĩa và chatbot về du lịch Hà Nội”.
+Đề tài hướng đến xây dựng một Ontology về các địa điểm du lịch, từ đó xây
+dựng hệ thống tra cứu và hỏi đáp về các thông tin liên quan đến du lịch ở Hà Nội.
+Phương pháp lý thuyết: Nghiên cứu tìm hiểu về web ngữ nghĩa cũng như các
+công cụ để có thể xây dựng và truy vấn cơ sở tri thức ngữ nghĩa. Tìm hiểu các công
+nghệ để xây dựng chatbot.
+Phương pháp thực nghiệm: Thu thập và xử lý các dữ liệu liên quan đến du lịch
+Hà Nội. Tiến hành cài đặt hệ thống.
+Đồ án tập trung nghiên cứu thông tin các địa điểm du lịch ở Hà Nội, cơ sở lý
+thuyết về web ngữ nghĩa, cơ sở lý thuyết chatbot và cách xây dựng chatbot.
+Xây dựng Ontology lưu trữ tập dữ liệu về các địa điểm du lịch ở Hà Nội và
+các thông tin liên quan như lễ hội, âm thực, khách sạn, quán ăn, quán cafe, siêu
+thị,. . . Khai thác các tính năng về truy xuất dữ liệu trong Ontology và xây dựng hệ
+thống cho phép người dùng tra cứu và hỏi đáp các thông tin liên quan đến du lịch
+Chương 2 trình bày 2 phần chính là cơ sở lý thuyết của Web ngữ nghĩa và giới
+thiệu về chatbot. Đây là những kiến thức nền tảng giúp tôi có cái nhìn tổng quan
+về Web ngữ nghĩa và chatbot cũng là bước đầu tiên trong quá trình tìm hiểu để xây
+Sau khi đã trang bị được những kiến thức cần thiết từ Chương 2. Chương 3 trình
+bày quá trình phân tích thiết kế, từng bước xây dựng hệ thống. Từ giai đoạn thu
+thập dữ liệu đến tạo Ontology, cài đặt chatbot và website được nêu rõ các bước tiến
+hành cùng với công nghệ sử dụng.
+Từ những phân tích thiết kế trong chương 3, chương 4 trình bày những kết quả
+đạt được trong từng giai đoạn, tổng kết cả quá trình tìm hiểu và thực hành.
+Qua kết quả nghiên cứu, phân tích và thực nghiệm, chương 5 kết luận rút ra
+những gì đã đạt được trong quá trình làm đồ án, kết quả hệ thống và hướng phát
+Theo Tim Berners-Lee (cha đẻ của WWW, URI, HTML và HTTP), Web ngữ
+nghĩa là một mở rộng của Web hiện tại trong đó ý nghĩa của thông tin được thiết lập
+tường minh, mở ra khả năng cộng tác tốt hơn giữa người và máy tính [1]. Semantic
+Web là một phương pháp cho phép định nghĩa và liên kết dữ liệu một cách có ngữ
+nghĩa hơn nhằm phục vụ cho máy tính có thể “hiểu” được. Ngoài ra, Semantic Web
+còn cung cấp một môi trường chia sẻ và xử lý dữ liệu tự động bằng máy tính [2].
+Một ví dụ về ứng dụng tìm kiếm của Semantic Web là Google Knowledge Graph
+- cơ sở tri thức được Google và các dịch vụ của nó sử dụng để nâng cao kết quả của
+công cụ tìm kiếm với thông tin được thu thập từ nhiều nguồn khác nhau.
+Khi tìm kiếm trên google từ khóa "văn miếu quốc tử giám", dữ liệu (mô tả, địa
+chỉ, thời gian mở cửa, ...) hiển thị ngay tại trang tìm kiếm mà không cần truy cập
+vào bất kỳ đường dẫn nào. Để làm được điều này thì Search Engine của Google
+phải áp dụng công cụ tìm kiếm ngữ nghĩa và Website mang thông tin phải được mô
+hình hóa thành dữ liệu ngữ nghĩa.
+Một số ưu điểm của Web ngữ nghĩa:
+•Máy có thể hiểu được thông tin trên Web: Web hiện hành chỉ cho con người
+đọc chứ không dành cho máy hiểu. Semantic Web tạo ra Web mà cả người và
+máy đều có thể hiểu [3].
+•Thông tin được tìm kiếm nhanh chóng và chính xác hơn: Với Semantic
+Web, việc tìm kiếm thông tin trở nên dễ dàng hơn khi mọi thứ được đặt trong
+ngữ cảnh. Mục tiêu của Semantic Web chính là phát triển các tiêu chuẩn và
+kĩ thuật giúp máy tính hiểu nhiều thông tin trên Web, tìm ra các thông tin dồi
+dào hơn, tích hợp, duyệt dữ liệu, và tự động hóa các thao tác. Semantic Web
+không chỉ giúp chúng ta tìm kiếm thông tin chính xác hơn mà còn khiến cho
+máy tính có thể tích hợp thông tin từ nhiều nguồn khác nhau, biết so sánh các
+thông tin với nhau [3].
+•Dữ liệu liên kết động: Với Semantic Web, chúng ta có thể kết hợp các thông
+tin đã được mô tả và giàu ngữ nghĩa với bất kì nguồn dữ liệu nào. Không chỉ
+cung cấp các URI cho tài liệu như đã làm trong quá khứ mà còn cho con người,
+các khái niệm, các mối liên hệ [3].
+Semantic Web là một tập hợp/ một ngăn xếp các chuẩn. Các lớp trong kiến trúc
+của Semantic Web phối hợp với nhau để đảm bảo độ an toàn và tối ưu giá trị của
+Unicode và URI là lớp đầu tiên trong kiến trúc Web ngữ nghĩa, giữ vai trò nền
+tảng, cung cấp phương tiện nhằm định danh các tài nguyên trong Semantic Web.
+Tài nguyên ở đây có thể là bất cứ thứ gì có danh tính chẳng hạn như một trang web,
+một tài liệu, một hình ảnh hay một người.
+•Unicode được coi là tiêu chuẩn chung trong hệ thống mã hóa, đại diện cho tất
+cả các ngôn ngữ khác nhau trên thế giới.
+•URI (Uniform Resource Identifier) là những chuỗi ký tự tham chiếu đến để
+nhận dạng và định danh tài nguyên.
+Lớp XML, NS và XMLSchema
+Lớp này cung cấp khả năng tích hợp các định nghĩa Semantic Web với các
+chuẩn XML. XML (Extensible Markup Language) là ngôn ngữ đánh dấu mở rộng,
+có chức năng truyền dữ liệu và mô tả nhiều loại dữ liệu khác nhau. XML cho phép
+người dùng tự định nghĩa cấu trúc, có thể được sử dụng để biên soạn các tài liệu
+Web, phù hợp để chia sẻ trong môi trường Internet. NS (Name Space) là cơ chế đặt
+tên các đối tượng để tránh vấn đề trùng lặp. XSD (XML Schema Definition) được
+sử dụng để định nghĩa kiểu phần tử, thuộc tính và dữ liệu, mô tả cấu trúc và nội
+dung của dữ liệu XML.
+RDF (Resource Description Framework) là một mô hình dữ liệu cho phép biểu
+diễn các phát biểu ngữ nghĩa về dữ liệu. RDFSchema cung cấp bộ từ vựng mô tả
+một cách có ngữ nghĩa về các lớp và thuộc tính của tài nguyên RDF, tổng quát hóa
+phân cấp các thuộc tính và lớp đó, thêm vào khả năng bổ sung một số dữ liệu ở
+Ontology là tập hợp khái niệm và quan hệ giữa chúng trong một miền tri thức.
+Ontology được xây dựng dựa trên RDFS, và cung cấp một bộ từ vựng lớn hơn,
+cũng như có cú pháp đa dạng hơn RDFS [5].
+Lớp Logic cung cấp các biểu diễn tri thức, luật suy diễn, đưa ra kết luận dựa
+trên các điều kiện đầu vào.
+Lớp Proof hỗ trợ kiểm tra tính đúng đắn và hợp lệ của các suy diễn.
+Lớp Digital Signature được sử dụng để định danh tài liệu.
+Lớp Trust cung cấp một cơ chế để đánh giá mức độ tin tưởng, đáng tin cậy của
+RDF là một mô hình dữ liệu được sử dụng để mô tả khái niệm hoặc mô hình hóa
+thông tin được diễn dịch trong các tài nguyên web, sử dụng trong các định dạng cú
+Các khái niệm cơ bản trong RDF:
+•Tài nguyên (Resources): Tài nguyên là đối tượng mà chúng ta muốn mô tả,
+mọi tài nguyên đều có URI để định danh.
+•Thuộc tính (Properties): Thuộc tính là một loại tài nguyên đặc biệt dùng để
+mô tả mối quan hệ giữa các tài nguyên. Thuộc tính trong RDF cũng được xác
+•Phát biểu (Statements): Phát biểu là các mô tả về dữ kiệu. Mỗi phát biểu là
+một bộ ba chủ thể - thuộc tính - giá trị.
+– Chủ thể (Subject): Chủ thể là thành phần thông tin đang được mô tả.
+– Thuộc tính (Predicate): Thuộc tính của chủ thể đang được mô tả.
+– Giá trị (Object): Xác định giá trị của thuộc tính của chủ thể đang được
+<http://www.example.org/terms/creation-date> "August 8, 2022" .
+•Chủ thể: là URL http://www.example.org/index.html
+•Thuộc tính: là URL http://www.example.org/terms/creation-date
+•Giá trị: chuỗi "August 8, 2022"
+RDF Schema cung cấp các nguyên tắc mô hình hóa để tổ chức các đối tượng
+Web thành hệ thống phân cấp. RDFS làm giàu thêm ngữ nghĩa bằng cách bổ sung
+các từ vựng để mô tả các lớp và thuộc tính, các mối quan hệ của lớp con và lớp con
+cũng như các giới hạn về miền và phạm vi. RDF Schema được xây dựng dựa trên
+Một số từ khóa RDFS đưa ra, đồng thời quy ước ý nghĩa tương thích với mô
+rdfs:Class : Tập hợp các tài nguyên có những thuộc tính chung.
+rdfs:subClassOf : Các lớp được liên kết bởi quan hệ subClassOf có thể tạo
+thành một cấu trúc phân cấp.
+•Từ khóa cho thuộc tính
+rdfs:domain vàrdfs:range : Các giới hạn miền và phạm vi cho phép hạn chế
+các tài nguyên có thể áp dụng thuộc tính và giá trị của thuộc tính.
+rdfs:subPropertyOf : Tạo quan hệ phân cấp cho các thuộc tính.
+rdfs:Resource : Lớp của tất cả các tài nguyên.
+rdfs:Literal : Lớp của tất cả các hằng giá trị (chuỗi).
+rdfs:Datatype: Gắn tài nguyên với kiểu dữ liệu của nó.
+Ontology cung cấp một bộ từ vựng chung bao gồm các khái niệm, các thuộc
+tính quan trọng và mối quan hệ giữa các khái niệm và các thuộc tính này [7]. Ngoài
+bộ từ vựng, ontology còn cung cấp các ràng buộc, đôi khi các ràng buộc này được
+coi như các giả định cơ sở về ý nghĩa mong muốn của bộ từ vựng, nó được sử dụng
+trong một miền mà có thể được giao tiếp giữa người và các hệ thống ứng dụng phân
+Các thành phần của Ontology:
+•Lớp (Classes): Tập hợp các đối tượng có chung thuộc tính.
+•Thuộc tính (Properties): Thuộc tính mô tả tính chất, đặc điểm của các đối
+tượng hay mối liên hệ giữa các đối tượng.
+•Thể hiện (Individuals): Các thể hiện là các thành phần cơ bản nền tảng của
+một Ontology, là đối tượng đại diện cho lớp.
+•Mệnh đề (Axioms): Mệnh đề là một biểu diễn về mối quan hệ giữa các khái
+niệm và các vai trò.
+•Ràng buộc (Restrictions): Cung cấp mô tả về những ràng buộc của các thuộc
+•Quan hệ (Relations): Cung cấp mô tả về mối liên hệ giữa các đối tượnng
+Khả năng diễn đạt của RDF và RDF Schema vẫn còn hạn chế, việc giao tiếp trên
+Web ngữ nghĩa sẽ đòi hỏi nhiều mô tả phức tạp hơn RDF và RDF Schema cung
+cấp. Điều này dẫn đến nhu cầu tìm ra một ngôn ngữ chung, phong phú hơn để mô
+tả Ontology. Năm 2001, OWL (Ontology Web Language) được DAML+OIL phát
+triển và xây dựng dựa trên cơ sở RDF để biểu diễn những tri thức đa dạng và phức
+tạp về các đối tượng, các lớp, và các mối quan hệ. OWL trở thành quy chuẩn W3C
+năm 2004, phiên bản tiếp theo là OWL 2 được phát hành vào năm 2009 và cập nhật
+phiên bản 2 năm 2012 [8]. W3C chia OWL thành ba tầng/ngôn ngữ, mỗi ngôn ngữ
+nhỏ hướng tới đáp ứng các nhu cầu sử dụng khác nhau.
+•OWL Full : Sử dụng tất cả các thành phần của OWL, cho phép các thành phần
+này kết hợp tùy ý với RDF và lược đồ RDF. OWL Full hoàn toàn tương thích
+với RDF, về cả cú pháp và ngữ nghĩa, khả năng diễn đạt mạnh, phạm vi suy
+•OWL DL (Description Logic) : Là một tập con của OWL Full, giới hạn ứng
+dụng các thành phần từ OWL và RDF, hỗ trợ suy diễn hiệu quả nhưng mất
+tính tương thích với RDF.
+•OWL Lite : Tập con của OWL DL, với nhiều giới hạn hơn nữa, đơn giản đối
+với người dùng nhưng khả năng diễn đạt hạn chế.
+OWL sử dụng cú pháp RDF/XML và có ngữ nghĩa hình thức được xây dựng
+trên cơ sở lô-gic bậc nhất. Một số thành phần cơ bản trong tài liệu OWL:
+Phần tử gốc của tài liệu OWL là rdf:RDF , chứa các khai báo về các thuật ngữ
+< r d f :RDF
+xmlns : owl =" h t t p : / / www. w3 . org / 2 0 0 2 / 0 7 / owl #"
+xmlns : r d f =" h t t p : / / www. w3 . org /1999/02/22 −rdf−syntax −ns #"
+xmlns : r d f s =" h t t p : / / www. w3 . org / 2 0 0 0 / 0 1 / rdf −schema #"
+xmlns : xsd =" h t t p : / / www. w3 . org / 2 0 0 1 / XMLSchema#">
+Ontology header owl:Ontology mô tả trạng thái của Ontology hiện tại, bao
+gồm các thông tin như nhãn, phiên bản, liên kết với Ontology khác,...
+<owl : Ontology r d f : about ="" >
+<owl : v e r s i o n I n f o > . . . </ owl : v e r s i o n I n f o >
+< r d f s : comment > . . . < / r d f s : comment>
+<owl : i m p o r t s r d f : r e s o u r c e = " . . . " / >
+< r d f s : l a b e l > . . . < / r d f s : l a b e l >
+</ owl : Ontology >
+Các lớp được định nghĩa bằng cú pháp owl:Class . Chúng ta có thể tạo các quan
+hệ cha con giữa các lớp thông qua thuộc tính rdfs:subClassOf . Tất cả các lớp
+owl đều là rdfs:subClassOf củaowl:Thing ,owl:Nothing làrdfs:subClassOf
+của tất cả các lớp owl.
+<owl : C l a s s r d f : about ="# quanCafe ">
+< r d f s : subClassOf r d f : r e s o u r c e ="#diemAnUong "/ >
+</ owl : Class >
+OWL có hai loại thuộc tính:
+–Object properties: Thuộc tính đối tượng gắn các đối tượng với các đối
+<owl : O b j e c t P r o p e r t y r d f : about ="# thuocQuanHuyen ">
+< r d f s : domain r d f : r e s o u r c e =#diemDuLich "/ >
+< r d f s : range r d f : r e s o u r c e ="# quanHuyen "/ >
+</ owl : O b j e c t P r o p e r t y >
+–Datatype properties: Thuộc tính kiểu dữ liệu gắn các đối tượng với kiểu
+<owl : D a t a t y p e P r o p e r t y r d f : about ="# tenQuanHuyen ">
+< r d f s : domain r d f : r e s o u r c e ="# quanHuyen "/ >
+< r d f s : range r d f : r e s o u r c e =
+" h t t p : / / www. w3 . org / 2 0 0 1 / XMLSchema# s t r i n g "/ >
+</ owl : D a t a t y p e P r o p e r t y >
+SPARQL (SPARQL Protocol And RDF Query Language) là một ngôn ngữ truy
+vấn RDF, tên của nó là viết tắt của giao thức SPARQL và ngôn ngữ truy vấn RDF.
+SPARQL được tạo ra là một chuẩn để truy cập dữ liệu RDF và được coi là một
+trong những công nghệ chủ chốt của Semantic Web [9].
+Ngôn ngữ SPARQL có bốn hình thức truy vấn khác nhau cho các mục đích khác
+Chatbot là một chương trình máy tính mà con người dùng có thể giao tiếp với
+máy thông qua các ứng dụng nhắn tin. Chatbot sẽ sử dụng trí tuệ nhân tạo và xử
+lý ngôn ngữ tự nhiên để phân tích những gì con người nói hoặc nhập vào, xác định
+yêu cầu được đưa ra và phản hồi lại.
+Ngày nay, công nghệ chatbot hầu như có mặt ở khắp mọi nơi, một số ứng dụng
+phổ biến của chatbot có thể kể đến như trợ lý ảo (Siri của Apple, Trợ lý Google,
+Amazon Alexa,..), bán hàng, chăm sóc khách hàng, cập nhật tin tức, tìm kiếm
+thông tin, thanh toán trực tuyến,...Nhờ khả năng hoạt động 24/7, tự động hóa các
+quy trình, công suất xử lý lớn, chatbot giúp cho con người tiết kiệm đáng kể thời
+gian, chi phí và nâng cao năng suất lao động.
+Kiến trúc của chatbot phụ thuộc vào nhiều yếu tố khác nhau như trường hợp sử
+dụng, miền, loại chatbot,... Tuy nhiên, quy trình hội thoại cơ bản vẫn giống nhau.
+Dưới đây là một số thành phần quan trọng của chatbot:
+Hệ thống hỏi đáp có nhiệm vụ trả lời các câu hỏi của người dùng. Hệ thống
+này bao gồm các thành phần: huấn luyện thủ công (manual training) và huấn
+luyện tự động (automated training).
+Huấn luyện thủ công là biên soạn danh sách câu hỏi và câu trả lời tương ứng
+giúp chatbot nhanh chóng xác định câu trả lời của các câu hỏi có liên quan
+Huấn luyện tự động là tải lên các tài liệu nghiệp vụ, chẳng hạn như tài liệu
+về chính sách và và các loại hỏi đáp khác, đồng thời hướng dẫn bot tự huấn
+luyện. Từ những tài liệu này, hệ thống tạo ra một danh sách các câu hỏi và câu
+trả lời. Nhờ vậy mà chatbot có thể trả lời chúng một cách trôi chảy và nhanh
+Môi trường chịu trách nhiệm chính trong việc diễn giải ngữ cảnh trong thông
+điệp của người dùng bằng cách sử dụng xử lý ngôn ngữ tự nhiên (NLP).
+NLP Engine là thành phần cốt lõi của kiến trúc chatbot. Nó diễn giải những gì
+người dùng nói và chuyển đổi thành các đầu vào có cấu trúc mà hệ thống có
+thể xử lý. Công cụ NLP sử dụng các thuật toán học máy nâng cao để xác định
+ý định của người dùng và sau đó đối sánh nó với danh sách ý định được hỗ trợ
+NLP Engine có hai thành phần:
+–Phân loại ý định (intent classifier): Công cụ phân loại ý định ánh xạ thông
+tin người dùng yêu cầu và loại hành động được thực hiện bởi phần mềm.
+–Trích xuất thực thể (entity extractor): Công cụ trích xuất thực thể chịu
+trách nhiệm xác định các từ khóa quan trọng từ truy vấn của người dùng
+nhằm xác định những gì người dùng đang tìm kiếm.
+Ngoài ra, NLP cũng có thể được mở rộng để bao gồm cơ chế phản hồi và học
+có nguyên tắc giúp chatbot giao tiếp hiệu quả theo nhiều ngữ cảnh khác nhau.
+–Cơ chế phản hồi (feedback mechanism): Hệ thống nhận phản hồi từ người
+dùng để đánh giá xem bot có hoạt động hiệu quả trong cuộc trò chuyện
+hay không và người dùng có hài lòng với phản hồi của bot hay không.
+Phần học này có thể được tích hợp vào chính chatbot. Điều này thúc đẩy
+bot học hỏi từ những sai lầm và tự sửa chữa trong các cuộc trò chuyện
+–Học có nguyên tắc (policy learning): Nguyên tắc giúp chatbot đem lại trải
+nghiệm hài lòng tổng thể cho người dùng cuối thông qua việc tạo ra các
+chuỗi hành động hợp lý để điều hướng cuộc trò chuyện một cách mạch lạc
+và thỏa mãn người dùng. Chatbot cố gắng học hỏi từ sự tương tác trước
+đó của người dùng và theo dõi luồng trò chuyện mà nó đã có với những
+người dùng tương tự trong quá khứ. Từ đó chatbot lưu trữ thông tin, hiểu
+rõ về hành vi và phương thức giao tiếp của người dùng để hoạt động hiệu
+Hệ thống mà người dùng tương tác với chatbot. Một số hệ thống phổ biến như:
+Facebook Messenger, WhatsApp Business, Slack, Google Hangouts, trang
+web hoặc ứng dụng di động,...
+Máy chủ xử lý các yêu cầu lưu lượng truy cập của người dùng và định tuyến
+chúng đến các thành phần thích hợp. Phản hồi từ các thành phần bên trong
+thường được chuyển qua máy chủ lưu lượng đến Front-End Systems.
+Chatbot có thể được tích hợp với các hệ thống phụ trợ như CRM, cơ sở dữ
+liệu, ứng dụng thanh toán, lịch và nhiều công cụ khác, để nâng cao khả năng
+của chatbot, tăng trải nghiệm người dùng.
+Quá trình xây dựng Chabot gồm các bước: Xác định ý định người dùng: Xác
+định ý định người dùng (Intent) khi tương tác với hệ thống thông qua câu hỏi hay
+câu truy vấn của người dùng.
+Trích xuất thông tin: Trích xuất các thông tin liên quan đến đối tượng, bổ nghĩa
+cho một ý định qua việc nhận biết các Entity. Danh sách các entity đã được khai
+báo và huấn luyện từ trước.
+Ví dụ: Người dùng có ý định hỏi "thông tin của danh lam thắng cảnh", intent
+này có thể thể hiện qua một số câu hỏi như :"thông tin Thành Cổ Loa?", "Thành Cổ
+Loa là gì?", "Thành Cổ Loa ở đâu?",...Trong câu trên "Thành Cổ Loa" đóng vai trò
+là thể hiện của entity "địa điểm du lịch", từ đó hệ thống có thể truy xuất ra thông
+tin liên quan đến địa điểm
+Quản lý hội thoại: Quản lý hội thoại để đảm bảo việc trao đổi giữa người và
+máy được thông suốt. Dựa trên đầu vào của người dùng (câu nói hoặc đoạn chat),
+mô đun NLU tạo ra biểu diễn ngữ nghĩa cho đầu vào đó. Sau đó mô đun quản lý
+hội thoại chịu trách nhiệm điều chỉnh toàn bộ cấu trúc của cuộc đối thoại, nhận đầu
+vào từ mô đun NLU, duy trì một số loại trạng thái, xử lý logic và quyết định hành
+động tiếp theo cần phản hồi lại cho người dùng là gì, sau đó chuyển đầu ra cho mô
+đun NLG. Thông thường, các kiến trúc dựa trên frame-based hoặc finite state được
+sử dụng bởi hầu hết các mô đun quản lý hội thoại.
+Một số ưu điểm khi sử dụng Ontology ứng dụng vào Chatbot
+•Khả năng tìm kiếm: Ontology biểu diễn các khái niệm trong các lĩnh vực khác
+nhau và tập trung vào mối quan hệ giữa chúng. Những khái niệm này có thể
+được sử dụng trực tiếp trong chatbot, để tìm ra các từ ghép, từ đồng nghĩa và
+các quan hệ khác giữa các khái niệm. Dựa vào nguồn dữ liệu phong phú, các
+bot tìm kiếm có thể cung cấp nội dung phù hợp nhất cho người. Semantic web
+không chỉ cải thiện tìm kiếm truyền thống mà còn tạo điều kiện cho hành trình
+trải nghiệm người dùng thông minh và liền mạch hơn.
+•Khả năng suy diễn: Ontology có lợi thế là các khái niệm được kết nối với nhau
+thành một biểu đồ, cho phép máy tính tìm kiếm và sử dụng các quy tắc lập
+luận hay thậm chí là suy diễn để tìm ra các lập luận mới. Nhờ vậy, chatbot có
+thể khám phá các đường dẫn hội thoại một cách linh hoạt hơn, tăng khả năng
+suy diễn ngữ nghĩa cho Chatbot.
+•Dữ liệu phân cấp: Trong Ontology, các khái niệm được nhóm lại với nhau
+thông qua các nhãn cho phép phân biệt các cấp độ tri thức khác nhau, từ đó
+chatbot có thể dễ dàng tham vấn vào từng mức độ tùy theo yêu cầu sử dụng.
+•Cú pháp đơn giản: Cơ sở tri thức có tính linh hoạt, mềm dẻo, dễ dàng thực
+hiện các thao tác tìm kiếm, thêm, sửa, xóa.
+Ví dụ: Khi người dùng muốn tìm các địa điểm du lịch và khách sạn ở cùng
+một huyện, thay vì phải liên kết các bảng với nhau như trong cơ sở dữ liệu
+quan hệ, với SPARQL ta chỉ cần truy vấn đơn giản:
+?x : tenQuanHuyen ? nameDi .
+?y : tenDiemDuLich ?name ;
+? z : tenKhachSan ?nameHo ;
+FILTER ( regex ( l c a s e ( ? nameDi ) , " huyen Quoc Oai " )
+Ngoài ra khi người dùng muốn xóa một bảng trong cơ sở dữ liệu quan hệ, nếu
+bảng đó có liên kết khóa ngoại từ một bảng khác thì cần thực hiện xóa khóa
+ngoại trước hoặc cần lần lượt xóa các bảng theo một thứ tự nhất định. Trong
+Ontology, thao tác này được thực hiện dễ dàng hơn nhiều, khi người dùng xóa
+một thể hiện, các thể hiện có quan hệ với nó sẽ tự động xóa các thuộc tính
+quan hệ mà không gặp bất kỳ lỗi, xung đột nào.
+•Khả năng chia sẻ: Dễ dàng chia sẻ thông tin giữa các cơ sở tri thức không
+đồng nhất nhờ cấu trúc thông tin độc lập không có các ràng buộc như cơ sở dữ
+Các bước xây dựng hệ thống:
+Bước 1: Tìm kiếm dữ liệu về du lịch Hà Nội từ các trang web như Wikipedia,
+Google Travel hay các trang web du lịch Hà Nội, tiến hành Crawl dữ liệu và lưu lại
+Bước 2: Dựa trên dữ liệu thu thập được ở bước 1, thiết kế và xây dựng Ontology
+về du lịch Hà Nội.
+Bước 3: Tiến hành chuyển đổi dữ liệu đã thu thập được ở bước 1 sang dạng dữ
+liệu ngữ nghĩa theo Ontology đã xây dựng ở bước 2.
+Bước 4: Thiết kế và xây dựng Chatbot hỏi đáp về du lịch Hà Nội. Tiến hành xác
+định ý định, trích rút thông tin từ truy vấn của người dùng, sử dụng SPARQL để
+truy vấn Ontology đã xây dựng ở bước 3 và phản hồi lại người dùng.
+Bước 5: Xây dựng trang web biểu diễn ontology.
+Thu thập dữ liệu: Tìm kiếm các thông tin, bài viết trên các trang web như
+Wikipedia, Google Travel hay các trang web du lịch Hà Nội sau đó lưu trữ dữ
+liệu dưới dạng bảng trong excel sử dụng thư viện Python Selenium.
+Xử lý dữ liệu: Sau khi thu thập dữ liệu từ các trang web, tiến hành chỉnh sửa các
+thông tin sai, trích xuất ra các đối tượng cần thiết.
+Tạo cơ sở tri thức: Các đối tượng sau khi trích xuất được chuyển đổi sang dạng
+bộ ba RDF dựa trên Ontology đã thiết kế và tạo ra các thể hiện của Ontology, tập
+hợp tất cả các bộ ba RDF tạo thành cơ sở tri thức.
+Hiểu ngôn ngữ tự nhiên (NLU): Sử dụng LUIS (Language Understanding Intelligent
+Service) huấn luyện bot để nhận diện ý định (intent) và xác định các thực thể
+Sinh ngôn ngữ tự nhiên (NLG): NLG (Natural Language Generation) chuyển
+đổi dữ liệu có cấu trúc thành ngôn ngữ tự nhiên, tự động tạo phản hồi cho người
+dùng dựa vào các lớp, thuộc tính và thể hiện trong Ontology.
+Truy vấn SPRAQL: Sử dụng thư viện RDFLib, một thư viện Python hỗ trợ làm
+việc với RDF để truy vấn SPARQL.
+Cơ sở tri thức: Ontology sẽ được xây dựng theo các bước mô tả ở phần 3.2.1.
+Website thiết kế theo kiến trúc MVC (Model – View – Controller). MVC là một
+mẫu thiết kế (design pattern) được sử dụng phổ biến để tạo cấu trúc cho nhiều trang
+web, ứng dụng. MVC chia một ứng dụng thành ba phần tương tác được với nhau để
+tách biệt giữa cách thức mà thông tin được xử lý nội hàm và phần thông tin được
+trình bày và tiếp nhận từ phía người dùng [11].
+Controller: Quản lý các tương tác từ người dùng để xử lý các thao tác logic liên
+Model: Thiết lập logic cho dữ liệu của ứng dụng, chứa các phương thức xử lý dữ
+liệu, truy xuất dữ liệu.
+View: Các thành phần dùng để hiển thị giao diện người dùng, nhận tương tác
+trực tiếp từ người dùng, view thường được tạo dựa vào thông tin dữ liệu model.
+Thu thập dữ liệu là một giai đoạn có ý nghĩa vô cùng quan trọng đối với quá
+trình nghiên cứu khoa học. Việc thu thập dữ liệu thường tốn nhiều thời gian, công
+sức và chi phí. Dữ liệu được thu thập cần đảm bảo tính chính xác và trung thực, số
+lượng và chất lượng để duy trì tính toàn vẹn của nghiên cứu.
+Để đảm bảo các yêu cầu trên, tôi đã lựa chọn thu thập khoảng 75 bài viết về các
+địa điểm du lịch được đăng trên cổng thông tin điện tử Wikipedia cùng với dữ liệu
+về lễ hội, đặc sản, khách sạn, siêu thị, quán ăn,...trên địa bàn thành phố Hà Nội.
+Ngoài ra thực hiện thu thập bài viết từ một vài trang web khác trên Internet. Các
+nguồn dữ liệu chính được sử dụng:
+Dữ liệu sau khi thu thập được lưu trữ dưới dạng bảng trong excel.
+Dữ liệu sau khi thu thập cần trích rút để lấy các thực thể cần thiết. Cột địa chỉ
+cần tách ra để lấy thông tin phường/ xã và quận/ huyện/ thị xã.
+Sử dụng tiện ích mở rộng của Excel - Geocoding by SmartMonkey để trích xuất
+kinh độ và vĩ độ từ địa chỉ ban đầu.
+Ontology mô tả một cách có ngữ nghĩa các thông tin liên quan đến các du lịch
+ở Hà Nội. Ontology hướng đến đối tượng là tất cả những ai có mong muốn tìm
+hiểu về du lịch ở Hà Nội, hay muốn đi du lịch ở Hà Nội. Phạm vi của Ontology sẽ
+được xây dựng bao gồm thông tin của địa điểm du lịch, lễ hội, đặc sản, khách sạn,
+chợ, siêu thị,quán ăn, quán bar, quán cafe... Trong tương lai, Ontology có khả năng
+mở rộng với nhiều dữ liệu hơn, tăng phạm vi tìm kiếm và phục vụ được nhiều đối
+Ontology về du lịch được xây dựng, định nghĩa thông qua các lớp sau:
+–LớpdiemDuLich là lớp lưu trữ dữ liệu về các địa điểm du lịch.
+–Lớp được gán nhãn: <rdfs:label>điểm du lịch</rdfs:label>
+–LớpleHoi là lớp lưu trữ dữ liệu về các lễ hội ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>lễ hội</rdfs:label>
+–LớpdacSan là lớp lưu trữ dữ liệu về các đặc sản ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>đặc sản</rdfs:label>
+–LớpphuongXa là lớp lưu trữ dữ liệu về các phường, xã ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>phường xã</rdfs:label>
+–LớpquanHuyen là lớp lưu trữ dữ liệu về các quận, huyện, thị xã ở Hà
+–Lớp được gán nhãn: <rdfs:label>quận huyện</rdfs:label>
+–LớpdiemMuaSam là lớp lưu trữ dữ liệu về các địa điểm phục vụ cho
+–Lớp được gán nhãn: <rdfs:label>địa điểm mua sắm</rdfs:label>
+–LớpdiemAnUong là lớp lưu trữ dữ liệu về các địa điểm phục vụ cho việc
+–Lớp được gán nhãn: <rdfs:label>địa điểm ăn uống</rdfs:label>
+–LớpdiemNghiNgoi là lớp lưu trữ dữ liệu về các địa điểm phục vụ cho
+–Lớp được gán nhãn: <rdfs:label>địa điểm nghỉ ngơi</rdfs:label>
+–Lớpcholà lớp con của lớp diemMuaSam và lưu trữ thông tin về các chợ
+–Lớp được gán nhãn: <rdfs:label> chợ</rdfs:label>
+–LớpsieuThi là lớp con của lớp diemMuaSam và lưu trữ thông tin về các
+siêu thị ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>siêu thị</rdfs:label>
+–LớpquanAn là lớp con của lớp diemAnUong và lưu trữ thông tin về các
+nhà hàng, quán ăn ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>quán ăn</rdfs:label>
+–LớpquanBar là lớp con của lớp diemAnUong và lưu trữ thông tin về các
+quán bar ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>quán bar</rdfs:label>
+–LớpquanCafe là lớp con của lớp diemAnUong và lưu trữ thông tin về
+các quán cafe ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>quán cafe</rdfs:label>
+–LớpkhachSan là lớp con của lớp diemNghiNgoi và lưu trữ thông tin về
+các khách sạn ở Hà Nội.
+–Lớp được gán nhãn: <rdfs:label>khách sạn</rdfs:label>
+c, Thuộc tính trong Ontology
+–Domain: diemDuLich, leHoi, dacSan, khachSan, cho, sieuThi, quanAn,
+–Domain: diemDuLich, leHoi, dacSan, khachSan, cho, sieuThi, quanAn,
+•Domain: diemDuLich - Các thuộc tính mô tả thông tin về địa điểm gồm
+–Thuộc tính tenDiemDuLich : tên địa điểm du lịch.
+–Thuộc tính tenKhac : tên gọi khác.
+–Thuộc tính moTa : giới thiệu về địa điểm du lịch.
+–Thuộc tính diaChi : địa chỉ của địa điểm du lịch.
+–Thuộc tính loaiDiaDiem : loại địa điểm du lịch (bảo tàng, di tích lịch sử,
+–Thuộc tính thoiGian : thời gian đóng mở cửa.
+–Thuộc tính gia: giá vé tham quan.
+–Thuộc tính lat: vĩ độ của địa điểm du lịch.
+–Thuộc tính lng: kinh độ của địa điểm du lịch.
+–Thuộc tính sdt: số điện thoại liên hệ.
+–Thuộc tính mail: địa chỉ mail liên hệ.
+–Thuộc tính website : địa chỉ website của địa điểm du lịch.
+•Domain: leHoi - Các thuộc tính mô tả thông tin về lễ hội gồm
+–Thuộc tính tenLeHoi : tên lễ hội.
+–Thuộc tính moTa : giới thiệu về lễ hội.
+–Thuộc tính diaChi : địa chỉ diễn ra lễ hội.
+–Thuộc tính thoiGian : thời gian diễn ra lễ hội.
+–Thuộc tính lat: vĩ độ của địa điểm diễn ra lễ hội.
+–Thuộc tính lng: kinh độ của địa điểm diễn ra lễ hội.
+•Domain: dacSan - Các thuộc tính mô tả thông tin về đặc sản gồm
+–Thuộc tính tenDacSan : tên đặc sản.
+–Thuộc tính tenKhac : tên khác của đặc sản.
+–Thuộc tính moTa : giới thiệu về dặc sản.
+–Thuộc tính diaChi : địa chỉ của đặc sản.
+–Thuộc tính lat: vĩ độ của địa điểm có đặc sản.
+–Thuộc tính lng: kinh độ của địa điểm có đặc sản.
+•Domain: khachSan - Các thuộc tính mô tả thông tin về khách sạn gồm
+–Thuộc tính tenKhachSan : tên khách sạn.
+–Thuộc tính diaChi : địa chỉ của khách sạn.
+–Thuộc tính gia: giá phòng trung bình trong 1 đêm.
+–Thuộc tính lat: vĩ độ của khách sạn.
+–Thuộc tính lng: kinh độ của khách sạn.
+–Thuộc tính sdt: số điện thoại liên hệ.
+•Domain: cho - Các thuộc tính mô tả thông tin về chợ gồm
+–Thuộc tính tenCho : tên chợ.
+–Thuộc tính diaChi : địa chỉ của chợ.
+–Thuộc tính lat: vĩ độ của chợ.
+–Thuộc tính lng: kinh độ của chợ.
+•Domain: sieuThi - Các thuộc tính mô tả thông tin về siêu thị gồm
+–Thuộc tính tenSieuThi : tên siêu thị.
+–Thuộc tính diaChi : địa chỉ của siêu thị.
+–Thuộc tính lat: vĩ độ của siêu thị.
+–Thuộc tính lng: kinh độ của siêu thị.
+–Thuộc tính thoiGian : thời gian đóng mở cửa.
+–Thuộc tính sdt: số điện thoại liên hệ.
+•Domain: quanAn - Các thuộc tính mô tả thông tin về quán ăn gồm
+–Thuộc tính tenQuanAn : tên nhà hàng, quán ăn.
+–Thuộc tính diaChi : địa chỉ của quán ănị.
+–Thuộc tính lat: vĩ độ của quán ăn.
+–Thuộc tính lng: kinh độ của quán ăn.
+–Thuộc tính thoiGian : thời gian đóng mở cửa.
+–Thuộc tính sdt: số điện thoại liên hệ.
+•Domain: quanBar - Các thuộc tính mô tả thông tin về quán bar gồm
+–Thuộc tính tenQuanBar : tên quán bar.
+–Thuộc tính diaChi : địa chỉ của quán bar.
+–Thuộc tính lat: vĩ độ của quán bar.
+–Thuộc tính lng: kinh độ của quán bar.
+–Thuộc tính thoiGian : thời gian đóng mở cửa.
+–Thuộc tính sdt: số điện thoại liên hệ.
+•Domain: quanCafe - Các thuộc tính mô tả thông tin về quán cafe gồm
+–Thuộc tính tenCafe : tên quán cafe.
+–Thuộc tính diaChi : địa chỉ của quán cafe.
+–Thuộc tính lat: vĩ độ của quán cafe.
+–Thuộc tính lng: kinh độ của quán cafe.
+–Thuộc tính thoiGian : thời gian đóng mở cửa.
+–Thuộc tính sdt: số điện thoại liên hệ.
+Dữ liệu về địa điểm du lịch, lễ hội, đặc sản, khách sạn, chợ, siêu thị, quán ăn,
+quán bar, quán cafe đã được lưu vào các trang bảng tính (các file excel định dạng
+.xlxs) sau bước xử lý dữ liệu.
+Để chuyển đổi dữ liệu từ bảng tính vào Ontology, ta sử dụng Cellfie - Protégé
+Desktop plugin hỗ trợ đọc dữ liệu từ các trang bảng tính vào cơ sở tri thức dựa trên
+luật được định nghĩa trước. Ngoài ra, Protégé còn hỗ trợ lưu lại các luật đã tạo dưới
+dạng file JSON để tái sử dụng trong những lần thêm dữ liệu tiếp theo.
+Dữ liệu Liên kết (Linked Data) là tập hợp các nguyên tắc thiết kế cho việc chia
+sẻ dữ liệu được liên kết với nhau trên Web, và phải đảm bảo máy tính hiểu được.
+Dữ liệu Mở (Open Data) là dữ liệu mà bất kỳ ai đều có thể sử dụng và phân phối.
+Các tập hợp dữ liệu vừa mở và vừa có liên kết là Dữ liệu Mở Liên kết (Linked Open
+Data). Năm 2010, Tim Berners-Lee đã gợi ý mô hình 5 sao cho Dữ liệu Mở Liên
+•One-star (*): Dữ liệu sẵn sàng trên Web, ở bất kỳ định dạng nào, nhưng với
+một giấy phép mở. Người dùng có thể xem, tìm kiếm, lưu trữ, thay đổi dữ liệu
+và chia sẻ dữ liệu đó với bất kỳ ai.
+•Two-star (**): Dữ liệu mở phải là dữ liệu có cấu trúc mà máy đọc được, ví dụ,
+định dạng CSV, Json, Excel. Người sử dụng dữ liệu mở 2 sao có thể làm bất
+kỳ điều gì họ muốn như với dữ liệu mở 1. Hơn nữa, họ có thể xử lý dữ liệu
+bằng phần mềm độc quyền (Excel) và chuyển đổi nó sang định dạng có cấu
+•Three-star (***): Dữ liệu sử dụng các định dạng mở (CSV, JSON) thay vì định
+•Four-star (****): Dữ liệu mở chỉ dùng các chuẩn của W3C như RDF, SPARQL.
+Mỗi mục dữ liệu có URI tương ứng.
+•Five-star (*****): Dữ liệu được liên kết với các nguồn dữ liệu khác. Dữ liệu
+Mở Liên kết (Linked Open Data) 5 sao là dữ liệu mở sẵn sàng trên Web được
+kết nối với các dữ liệu khác.
+Trong đồ án này, tôi đã lựa chọn tích hợp dữ liệu trong Ontology với dữ liệu mở
+liên kết 5 sao trên DBpedia - một dự án tận dụng nguồn lực cộng đồng để trích xuất
+thông tin có cấu trúc từ Wikipedia và làm cho các thông tin này sẵn sàng trên Web
+để cung cấp cho các ứng dụng khác [13]. Việc liên kết với nguồn dữ liệu mở phong
+phú như DBpedia sẽ giúp bổ sung và nâng cao chất lượng của cơ sở tri thức.
+Đầu tiên, thực hiện truy vấn trên Sparql Endpoint của DBpedia để trích xuất ra
+các URI cần thiết. Ví dụ câu truy vấn để lấy ra các di tích lịch sử ở Hà Nội.
+DBpedia cho phép người dùng lưu kết quả dưới nhiều định dạng như HTML,
+XML, JSON, Turtle, RDF/XML, N-Triples,... Kết quả của câu truy vấn dưới dạng
+Sau khi so khớp kết quả, tạo liên kết giữa các mục dữ liệu có liên quan trong
+Ontology và DBpedia thông qua thuộc tính owl:sameAs . Ví dụ địa điểm du lịch
+"Đền Quán Thánh" sau khi tạo liên kết.
+a, Chức năng "Xem thông tin"
+Mô tả: Chức năng cung cấp thông tin liên quan đến một địa điểm (địa điểm du
+lịch, khách sạn, chợ, siêu thị, quán ăn, quán bar, quán cafe), lễ hội hay đặc sản.
+Các thông tin trên sẽ được hiển thị khi người dùng nhập tên của đối tượng. Đối
+với những đối tượng có nhiều tên gọi, trong quá trình thu thập thông tin cũng sẽ cố
+gắng thu thập các tên gọi khác để tăng khả năng tìm kiếm.
+Ví dụ: Khi nhập "thông tin tenDiemDuLich ", kết quả sẽ trả về các thông tin:
+•Tên địa điểm du lịch.
+•Địa chỉ của địa điểm du lịch.
+•Mô tả về địa điểm du lịch.
+b, Chức năng "Tìm kiếm thông tin"
+Mô tả: Tìm kiếm đối tượng mà người dùng quan tâm dựa trên thông tin liên
+•Địa điểm du lịch: tìm theo quận/ huyện, phường/xã, loại địa điểm, lễ hội, đặc
+•Lễ hội: tìm theo quận/ huyện, phường/xã, địa điểm du lịch.
+•Đặc sản: tìm theo quận/ huyện, phường/xã, địa điểm du lịch.
+•Khách sạn: tìm theo quận/ huyện, phường/xã.
+•Chợ: tìm theo quận/ huyện, phường/xã.
+•Siêu thị: tìm theo quận/ huyện, phường/xã.
+•Quán ăn: tìm theo quận/ huyện, phường/xã.
+•Quán bar: tìm theo quận/ huyện, phường/xã.
+•Quán cafe: tìm theo quận/ huyện, phường/xã.
+Ví dụ: Khi tìm kiếm địa điểm du lịch theo quận huyện - "địa điểm du lịch ở quận
+Hoàn Kiếm", chatbot trả về danh sách các địa điểm theo yêu cầu.
+Kịch bản Chatbot với người dùng được mô tả qua sơ đồ dưới đây:
+LUIS là một dịch vụ AI, lưu trữ các đoạn hội thoại trên nền tảng đám mây và
+áp dụng trí thông minh của máy để tùy chỉnh vào văn bản, ngôn ngữ tự nhiên, cách
+trò chuyện của người dùng để dự đoán ý nghĩa tổng thể, và đưa ra các thông tin chi
+tiết, liên quan, giúp quá trình trò chuyện trở nên dễ dàng, tự nhiên, linh hoạt hơn.
+Sử dụng dịch vụ LUIS (https://www.luis.ai) để định nghĩa và huấn luyện các ý định
+và thuộc tính phục vụ cho việc nhận dạng các thông tin cần thiết từ người dùng.
+Ví dụ: Tìm kiếm các địa điểm du lịch thông qua loại địa điểm
+Để trích xuất được thông tin từ người dùng, ta cần tiến hành huấn luyện, xác
+định danh sách các thực thể có thể xuất hiện trong câu hội thoại.
+Ví dụ với entity: “loaiDiaDiem"
+Sử dụng thư viện Python RDFLib (Dan Krech) để truy vấn SPARQL. RDFLib
+là thư viện Python dành cho làm việc với RDF , một ngôn ngữ đơn giản nhưng
+mạnh mẽ để biểu diễn thông tin. Thông qua thư viện này, Python là một trong
+những ngôn ngữ thao tác RDF chính, ngôn ngữ còn lại là Java. Thư viện này chứa
+các trình phân tích cú pháp / tuần tự hóa cho hầu hết tất cả các tuần tự hóa RDF đã
+biết, chẳng hạn như RDF / XML, Turtle, N-Triples và JSON-LD,... Thư viện cũng
+chứa cả phần kết thúc trong bộ nhớ và phần cuối Graph trong bộ nhớ để lưu trữ
+thông tin RDF và nhiều hàm tiện lợi để khai báo không gian tên đồ thị, truy vấn
+Ví dụ về câu truy vấn vào file data.owl để lấy thông tin địa điểm du lịch "thành
+import r d f e x t r a s
+r d f e x t r a s . r e g i s t e r p l u g i n s ( )
+import r d f l i b
+g = r d f l i b . Graph ( )
+f i l e n a m e = " d a t a / d a t a . owl "
+g . p a r s e ( filename , format = ’xml ’ )
+v a l u e = " thanh co l o a "
+query = " " " PREFIX owl : < h t t p : / / www. w3 . org / 2 0 0 2 / 0 7 / owl#>
+PREFIX r d f : < h t t p : / / www. w3 . org /1999/02/22 −rdf−syntax −ns #>
+PREFIX xml : < h t t p : / / www. w3 . org /XML/ 1 9 9 8 / namespace >
+PREFIX xsd : < h t t p : / / www. w3 . org / 2 0 0 1 / XMLSchema#>
+PREFIX r d f s : < h t t p : / / www. w3 . org / 2 0 0 0 / 0 1 / rdf −schema#>
+< h t t p : / / www. semanticweb . org / a d m i n i s t r a t o r / o n t o l o g i e s
+/ 2 0 2 2 / 4 / u n t i t l e d −ontology −28#>
+SELECT DISTINCT ?name ?nameEx ? l o c a t i o n ? i n f o
+?x ex : tenDiemDuLich ?name ;
+ex : diaChi ? l o c a t i o n ;
+ex : moTa ? i n f o .
+OPTIONAL{? x ex : tenKhac ?nameEx}
+FILTER ( l c a s e ( ? name ) = \ " " " " + v a l u e + " " " \ " | |
+l c a s e ( ? nameEx ) = \ " " " " + v a l u e + " " " \ " )
+rows = g . query ( query )
+f o r row i n rows :
+p r i n t ( row . name )
+p r i n t ( row . l o c a t i o n )
+p r i n t ( row . i n f o )
+Kết quả của câu truy vấn:
+a, Chức năng "Xem thông tin"
+Dựa tên đối tượng mà Chatbot trích xuất được từ thông tin do người dùng cung
+cấp, hệ thống thực hiện truy vấn trong cơ sở dữ liệu tìm ra đối tượng tương ứng.Ví
+dụ mẫu câu truy vấn SPARQL lấy thông tin lễ hội trong đó value là tên lễ hội mà
+query = " " " PREFIX owl : < h t t p : / / www. w3 . org / 2 0 0 2 / 0 7 / owl#>
+PREFIX r d f : < h t t p : / / www. w3 . org /1999/02/22 −rdf−syntax −ns #>
+PREFIX xml : < h t t p : / / www. w3 . org /XML/ 1 9 9 8 / namespace >
+PREFIX xsd : < h t t p : / / www. w3 . org / 2 0 0 1 / XMLSchema#>
+PREFIX r d f s : < h t t p : / / www. w3 . org / 2 0 0 0 / 0 1 / rdf −schema#>
+< h t t p : / / www. semanticweb . org / a d m i n i s t r a t o r / o n t o l o g i e s
+/ 2 0 2 2 / 4 / u n t i t l e d −ontology −28#>
+SELECT DISTINCT ?name ? l o c a t i o n ? time ? i n f o
+?x ex : tenLeHoi ?name ;
+ex : diaChi ? l o c a t i o n ;
+ex : t h o i G i a n ? time ;
+ex : moTa ? i n f o .
+FILTER ( l c a s e ( ? name ) = \ " " " " + v a l u e + " " " \ " )
+LIMIT 1 " " "
+b, Chức năng "Tìm kiếm thông tin"
+Chatbot thực hiện truy vấn tìm đối tượng mà người dùng yêu cầu dựa vào các
+thông tin liên quan xoay quanh. Ví dụ mẫu câu truy vấn SPARQL tìm địa điểm du
+lịch thông qua tên lễ hội trong đó value là tên lễ hội mà người dùng nhập vào.
+query = " " " PREFIX owl : < h t t p : / / www. w3 . org / 2 0 0 2 / 0 7 / owl#>
+PREFIX r d f : < h t t p : / / www. w3 . org /1999/02/22 −rdf−syntax −ns #>
+PREFIX xml : < h t t p : / / www. w3 . org /XML/ 1 9 9 8 / namespace >
+PREFIX xsd : < h t t p : / / www. w3 . org / 2 0 0 1 / XMLSchema#>
+PREFIX r d f s : < h t t p : / / www. w3 . org / 2 0 0 0 / 0 1 / rdf −schema#>
+< h t t p : / / www. semanticweb . org / a d m i n i s t r a t o r / o n t o l o g i e s
+/ 2 0 2 2 / 4 / u n t i t l e d −ontology −28#>
+?y ex : tenLeHoi ? nameFe ;
+ex : taiDiemDuLich ?x .
+?x ex : tenDiemDuLich ?name .
+FILTER ( regex ( l c a s e ( ? nameFe ) , \ " " " " + v a l u e + " " " \ " ) )
+a, Chức năng "Xem thông tin"
+b, Chức năng "Truy vấn SPARQL"
+Protégé là một nền tảng mã nguồn mở miễn phí cung cấp cho người dùng một
+bộ công cụ để xây dựng các mô hình và các ứng dụng dựa trên cơ sở tri thức với
+Protégé cung cấp hai phiên bản là WebProtégé dành cho website và Protégé
+Desktop dành cho ứng dụng trên máy tính.
+Trong đồ án tốt nghiệp này, tôi lựa chọn sử dụng Protégé Desktop - một môi
+trường phát triển Ontology phong phú về tính năng với sự hỗ trợ đầy đủ cho ngôn
+ngữ OWL 2 mới nhất và kết nối trực tiếp tới các trình lập luận logic mô tả như
+Một số chức năng chính được sử dụng trong phạm vi đồ án:
+•Tạo mới một project trong Protégé và lưu trữ dưới nhiều định dạng như RDF/XML,
+•Xây dựng các lớp, thuộc tính và thể hiện cho Ontology đã tạo thông qua các
+tab Classes, Object properties, Data properties, Individuals mà ứng dụng đã
+•Nhập dữ liệu tự động thông qua Cellfie plugin.
+•Thêm luật suy diễn thông qua ngôn ngữ luật cho Web ngữ nghĩa - SWRL.
+Language Understanding Intelligent Service (LUIS) là một dịch vụ AI, lưu trữ
+các đoạn hội thoại trên nền tảng đám mây và áp dụng học máy để tùy chỉnh vào
+văn bản, ngôn ngữ tự nhiên, cách trò chuyện của người dùng để dự đoán ý nghĩa
+tổng thể, và đưa ra các thông tin chi tiết, liên quan, giúp quá trình trò chuyện trở
+nên dễ dàng, tự nhiên, linh hoạt hơn.[14]
+Vòng đời phát triển ứng dụng:
+•Xác định các tình huống mà người dùng có thể sử dụng từ đó xây dựng hệ
+thống intents (ý định của người dùng) và entities (thực thể cần trích xuất).
+•Tạo các câu ví dụ mô phỏng các câu đầu vào từ người dùng.
+•Chọn chế độ huấn luyện và kiểm tra kết quả.
+•Triển khai mô hình và sử dụng nó trong các ứng dụng Bots hay các ứng dụng
+Cuối cùng, tiến hành xử lý dữ liệu, trích xuất ra các dữ liệu cần thiết, chuyển địa
+chỉ thành tọa độ để hiển thị trên bản đồ nhờ Geocoding by SmartMonkey.
+a, Kết quả xây dựng lớp và thuộc tính của Ontology
+
+b, Kết quả xây dựng cơ sở tri thức
+Dữ liệu sau khi thu thập được thêm vào Ontology sử dụng Cellfie của Protégé.
+Dưới đây là minh họa các thể hiện của lớp địa điểm du lịch và các thuộc tính, quan
+hệ của một thể hiện cụ thể trong lớp địa điểm du lịch.
+c, Tổng kết về cơ sở tri thức
+Kết quả xây dựng cơ sở tri thức về du lịch tại Hà Nội:
+•Tổng số bộ ba RDF: 2045
+•Tổng số thuộc tính đối tượng: 5
+•Tổng số thuộc tính giá trị: 22
+•Tổng số thể hiện: 2500
+a, Lời chào hệ thống
+b, Chức năng "Xem thông tin"
+Sau khi người dùng chọn chức năng "Xem thông tin", Chatbot sẽ yêu cầu người
+dùng nhập thông tin tài nguyên và Chatbot sẽ cung cấp các thông tin về tài nguyên
+Chatbot còn hỗ trợ tìm kiếm với tên khác nếu địa điểm du lịch có nhiều tên khác
+Minh họa chức năng xem thông tin của một số tài nguyên khác.
+
+
+
+c, Chức năng "Tìm kiếm thông tin"
+Chức năng hỗ trở tìm kiếm thông tin các tài nguyên thông qua các thông tin liên
+quan như địa chỉ, loại hình, lễ hội, đặc sản và địa điểm du lịch hoạt động trong lễ
+
+
+
+
+
+
+
+Trang web cho phép người dùng chọn biểu tượng để xem thông tin tài nguyên
+hoặc chọn SPARQL để truy vấn dữ liệu.
+a, Chức năng "Xem thông tin"
+Sau khi danh sách tài nguyên được hiển thị, người dùng có thể chọn tài nguyên
+muốn xem hoặc tìm kiếm tài nguyên trên thanh Search.
+Trang thông tin chi tiết của tài nguyên được minh họa trong hình dưới đây.
+
+b, Chức năng "Truy vấn SPARQL"
+Chức năng truy vấn cho phép người dùng nhập vào truy vấn bằng ngôn ngữ
+SPARQL và trả về thông tin dưới dạng bảng.
+Ví dụ về một truy vấn SPARQL lấy ra tên, địa chỉ, vĩ độ, kinh độ của các chợ
+trong cơ sở tri thức.
+Kết quả trang web trả về được minh họa trong hình dưới đây.
+Đồ án "Xây dựng cơ sở tri thức ngữ nghĩa và chatbot về du lịch Hà Nội" đã hoàn
+thành được các mục tiêu được đặt ra ban đầu.
+Về mặt lý thuyết, đồ án đã nêu ra được những nét đặc trưng và ưu thế của công
+nghệ Web ngữ nghĩa; cách lưu trữ dữ liệu có ngữ nghĩa RDF; tìm hiểu về khái niệm
+Ontology, các thành phàn và công cụ để xây dựng Ontology; tìm hiểu cách sử dụng
+ngôn ngữ SPARQL để truy vấn RDF; nắm được các kiến thức cơ bản về chatbot
+như khái niệm, thành phần kiến trúc hay cách xây dựng một chatbot.
+Đối với kết quả thực nghiệm, đồ án đã thành công xây dựng cơ sở tri thức ngữ
+nghĩa về du lịch ở Hà Nội và hệ thống tra cứu, hỏi đáp sử dụng kho tri thức đã xây
+dựng. Cơ sở tri thức lưu trữ một lượng thông tin tương đối đầy đủ về địa điểm (địa
+điểm du lịch, khách sạn, chợ, siêu thị, quán ăn, quán bar, quán cafe), lễ hội và đặc
+sản ở Hà Nội. Các dữ liệu này được thu thập chủ yếu từ Wikipedia, Google Travel
+và được chuyển đổi sang dạng ngữ nghĩa bằng các mô tả về lớp, quan hệ và thuộc
+tính trong Ontology. Sau khi hoàn thành việc xây dựng cơ sở tri thức, tôi tiến hành
+tìm hiểu cách xây dựng chatbot và công nghệ xử lý chatbot sử dụng dịch vụ xử lý
+ngôn ngữ tự nhiên LUIS. Chatbot gồm hai chức năng chính là xem thông tin và
+tìm kiếm thông tin liên quan đến du lịch cho phép người dùng tìm kiếm địa điểm
+du lịch cùng với các tiện ích xung quanh như quán ăn, khách sạn, siêu thị,... Trang
+web tra cứu thông tin được hoàn thành sau cùng với hai chức năng là xem thông
+tin và truy vấn SPARQL, biểu diễn cơ sở tri thức một cách rõ ràng và chi tiết giúp
+người dùng truy vấn thông tin dễ dàng hơn. Hệ thống sau khi hoàn tất hoạt động
+tương đối ổn định, đáp ứng được những yêu cầu phân tích thiết kế đặt ra. Công
+nghệ web ngữ nghĩa đã chứng minh được ưu điểm của mình là khả năng suy diễn
+và tính linh hoạt trong sử dụng dữ liệu giúp hệ thống tìm kiếm và thao tác thông
+tin với độ chính xác cao hơn.
+Ngoài ra, quá trình nghiên cứu lý thuyết và xây dựng hệ thống còn giúp tôi học
+hỏi được các kiến thức, công nghệ mới như Web ngữ nghĩa, dịch vụ xử lý ngôn ngữ
+tự nhiên LUIS, Python Selenium,... Tôi cũng tích lũy được thêm kinh nghiệm trong
+việc nghiên cứu khoa học và nâng cao một số kỹ năng như đọc tài liệu, phân tích
+và giải quyết vấn đề, cách lập luận và trình bày một báo cáo khoa học.
+Bên cạnh những thành công đạt được, đồ án vẫn còn một số hạn chế. Lượng dữ
+liệu chưa đủ lớn, chưa tận dụng được tối đa ưu thế của Web ngữ nghĩa. Khả năng
+tương tác của chatbot còn khá giới hạn, cần xây dựng thông minh hơn để tăng trải
+nghiệm người dùng. Trang web chỉ ở mức độ cơ bản, còn cần cải thiện tính năng.
+Trong khuôn khổ đồ án này, đề tài chỉ dừng lại ở tìm hiểu, nghiên cứu và bước
+đầu xây dựng ứng dụng với quy mô nhỏ. Trong tương lai, đồ án có thể mở rộng để
+xây dựng hệ thống tra cứu và hỏi đáp thông tin du lịch ở Việt Nam hay thậm chí là
+toàn thế giới với đầy đủ tính năng hơn, đáng tin cậy và thân thiện với người dùng.
+Cơ sở tri thức về du lịch có khả năng mở rộng rất lớn. Thay vì chỉ thu thập dữ
+liệu du lịch ở Hà Nội, hệ thống có thể mở rộng phạm vi địa lý thành du lịch Việt
+Nam hay toàn thế giới. Tăng số lượng lớp, thuộc tính trong cơ sở tri thức để cung
+cấp nhiều thông tin liên quan hơn và nâng cao khả năng suy diễn. Ví dụ, lớp "khách
+sạn" có thể bổ sung thêm thuộc tính "hạng của khách sạn", "loại phòng",... hay lớp
+"quán ăn" có thể bổ sung thêm thuộc tính "thực đơn", "đánh giá",...
+Cùng với sự mở rộng của cơ sở tri thức, hệ thống tra cứu và hỏi đáp cũng có khả
+năng bổ sung thêm nhiều chức năng mới để người dùng có thể trải nghiệm. Chatbot
+có thể thêm ý định và cải thiện độ chính xác nhờ sự gia tăng của dữ liệu. Thu thập
+các câu đầu vào của người dùng để huấn luyện chatbot, tạo ra nhiều kịch bản mới.
+Trang web có thể phát triển một số tính năng mới như cho phép các cá nhân hay tổ
+chức đăng ký thêm thông tin vào cơ sở tri thức như khách sạn, nhà hàng,...;liên kết
+với các trang web khác để làm giàu nguồn dữ liệu,...
