@@ -65,6 +65,6 @@ def pdf_to_text(pdf_path, output_txt):
     print("✅ PDF converted to text successfully!")
 
 if __name__ == "__main__":
-    pdf_path = "/Users/trannguyenmyanh/Documents/pdf_to_text/test_input/input1.pdf"
-    output_txt = "/Users/trannguyenmyanh/Documents/pdf_to_text/test_output/output1.txt"
+    pdf_path = "/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/test input/input1.pdf"
+    output_txt = "/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/test output/output1.txt"
     pdf_to_text(pdf_path, output_txt)
