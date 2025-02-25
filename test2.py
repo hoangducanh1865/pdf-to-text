@@ -1,7 +1,6 @@
 import PyPDF2
 import re
 import os
-
 so_la_ma_co_hai_chu = ['ii', 'iv', 'vi', 'ix']
 so_la_ma_co_ba_chu = ['iii', 'vii']
 so_la_ma_co_bon_chu = ['viii']
@@ -167,22 +166,17 @@ def get_file_name(pdf_path):
 #     return text.strip()
 
 def clean_line(line):
-    """Thực hiện bước làm sạch dữ liệu văn bản."""
-    # Loại bỏ nhiều dấu phẩy đầu dòng
+
     line = re.sub(r'^[„",]+', '', line, flags=re.MULTILINE)
 
-    # Loại bỏ dấu đầu dòng (•, -, ●, ◦, →)
     line = re.sub(r'^\s*[-•●◦→]\s*', '', line, flags=re.MULTILINE)
 
-    # Loại bỏ các tham chiếu dạng [1], [2]...
     line = re.sub(r'\[\d+\]', '', line)
 
-    # Loại bỏ các URL
     line = re.sub(r'http[s]?://\S+', '', line)
 
-    # Loại bỏ các newline dư thừa (> 2 lần xuống dòng)
+    # Ghép dòng bị xuống hàng do lỗi chuyển đổi PDF
     line = re.sub(r'\n{3,}', '\n\n', line)
-
     return line
 
 def pdf_to_text(pdf_path, output_txt):
@@ -255,8 +249,8 @@ def pdf_to_text(pdf_path, output_txt):
         print(f"❌ Failed to convert {pdf_path}: {e}")
 
 if __name__ == "__main__":
-    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/test input'
-    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/vietnamese'
+    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/english'
+    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/english'
     
     for pdf_file in os.listdir(input_dir):
         if pdf_file.endswith('.pdf'):
