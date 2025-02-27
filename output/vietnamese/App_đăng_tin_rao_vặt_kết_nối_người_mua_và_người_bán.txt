@@ -1,416 +1,156 @@
-
-Họ và tên sinh viên : Bùi Minh Tuấn
-Điện thoại liên lạc : 0932333703
-Lớp : KHMT 04 - K62
-Hệ đào tạo : Chính quy
-Tôi – Bùi Minh Tuấn – cam kết Đồ án Tốt nghiệp (ĐATN) là công trình nghiên
-cứu của bản thân tôi dưới sự hướng dẫn của TS. Nguyễn Nhất Hải . Các kết quả
-nêu trong ĐATN là trung thực, là thành quả của riêng tôi, không sao chép theo bất
-kỳ công trình nào khác. Tất cả những tham khảo trong ĐATN – bao gồm hình ảnh,
-bảng biểu, số liệu, và các câu từ trích dẫn – đều được ghi rõ ràng và đầy đủ nguồn
-gốc trong danh mục tài liệu tham khảo. Tôi xin hoàn toàn chịu trách nhiệm với dù
-chỉ một sao chép vi phạm quy chế của nhà trường.
-Hà Nội, ngày 30 tháng 7 năm 202
-Trong suốt quá trình thực hiện đồ án tốt nghiệp, em đã nhận được sự giúp đỡ , quan
-tâm hướng dẫn của thầy cô hướng dẫn cùng với sự động viên giúp đỡ của bạn bè
-Em xin gửi lời cảm ơn tới TS. Nguyễn Nhất Hải. Thầy đã chấp nhận đề tài của
-em, tận tình giúp đỡ, hướng dẫn em hoàn thành đồ án tốt nghiệp của mình.
-Bên cạnh đấy, em cũng xin gửi lời cảm ơn tới thầy cô trường CNTT && TT đã
-tận tình chỉ bảo, dạy cho em nền tảng kiến thức để em có thể hoàn thành đồ án tốt
-nghiệp này. Em xin chân thành cảm ơn gia đình, bạn bè đã luôn động viên, chia sẻ
-với em trong suốt 5 năm học ở trường cũng như quá trình hoàn thành đồ án.
-Tuy nhiên , trong quá trình hoàn thiện đồ án, do kiến thức còn hạn chế, nên đồ
-án của em không thể tránh khỏi sai sót. Em rất mong nhận được sự góp ý chân
-thành của các thầy cô và hội đồng tốt nghiệp để đề tài của em được đầy đủ và hoàn
-Em xin chân thành cảm ơn.
-TÓM TẮT NỘI DUNG ĐỒ ÁN
-Trong cuộc sống hiện nay, nhu cầu mua bán các mặt hàng , sản phẩm cả cũ và
-mới đều rất lớn. Mọi người có nhiều sản phẩm không còn dùng đến, có thể là đồ
-cũ cần bán nhưng lại không tìm được đối tượng mua. và cũng có nhiều trường hợp,
-những người mua có nhu cầu mua những sản phẩm đấy, với mức giá rẻ hơn các sản
-phẩm mới trên thị trường. Đặc biệt trong thời gian hiện nay, sau đại dịch COVID ,
-khả năng tài chính của người mua còn hạn hẹp.
-Vì vậy, việc kết nối các nhu cầu giữa người mua và người bán là sẽ đảm bảo thoả
-mãn nhu cầu giữa hai bên. Hiện tại trên thị trường có rất nhiều app về đăng tin rao
-vặt, nhưng hiện tại chưa tập trung vào vấn đề là hướng đến người dùng là sinh viên
-với nhiều sản phẩm riêng biệt như giáo trình học tập, ... Để giải quyết vấn đề này,
-em đã đề xuất xây dựng hệ thông đăng tin rao vặt kết nối người mua và người bán.
-Em tập trung xây dựng app trên thiết bị di động và hệ thống server. Kết quả mong
-muốn của đồ án là một hệ thống với ứng dụng di động có thể giải quyết được vấn
-đề ở trên. Sau cùng Kết quả đạt được đó là ứng dụng đáp ứng đầy đủ các tiêu chí
-chức năng và phi chức năng đề ra. Đồng thời , ứng dụng có khả năng mở rộng, bảo
-
-Trong cuộc sống hiện đại,nhu cầu mua bán hàng hoá, sản phẩm của mọi người
-là rất lớn.Riêng đối với sinh viên , nhu cầu một số hàng hoá sẽ nhiều hơn như các
-đồ dùng học tập,đồ điện tử, hàng tiêu dùng,.... Tuy nhiên với việc thiếu thông tin
-thị trường, việc mua các sản phẩm cần thiết trên với giá tốt thường gặp nhiều khó
-khăn. Bên cạnh đấy, có nhiều người bán có những sản phẩm, đồ dùng không dùng
-đến có nhu cầu bán nhưng họ gặp khó khăn trong việc tìm kiếm người mua.
-Xuất phát từ nhu cầu thực tế trên, đồ án muốn tạo ra hệ thống có thể đáp ứng
-việc kết nối giữa người mua và người bán sản phẩm, đồ dùng , đặc biệt là với sinh
-viên, đối tượng với nguồn tài chính eo hẹp. Đồ án hướng tới đem lại lợi ích cho mọi
-người khi tham gia hệ thống,đối với người mua là tìm được sản phẩm mình muốn
-với thời gian và mức giá tốt nhất, còn đối với người bán là bán được sản phẩm của
-mình với mức giá tốt mà không tốn quá nhiều thời gian.Bên phát triển ứng dụng
-tìm kiếm doanh thu từ phía người đăng tin.
-Hiện nay, trên thị trường hiện tại, đã có các ứng dụng về đăng tin rao mặt, tuy
-nhiên các app này chưa triệt để trong việc hỗ trợ đăng tin rao vặt là đồ cũ và người
-đăng tin là sinh viên. Ứng dụng sẽ cung cấp các tính năng chủ yếu việc kết nối giữa
-người mua và người bán với cùng sản phẩm qua các chức năng đăng bài, quản lí
-tin, thông báo,các chức năng kết nối người dùng : chat, gọi điện ,... Ứng dụng sẽ
-sử dụng mô hình C2C, người dùng giao dịch với nhau, không qua bên trung gian.
-Nhiệm vụ của ứng dụng sẽ là cung cấp các kết nối để người mua và người bán tìm
-thấy nhu cầu của họ.Ứng dụng sẽ không có trách nhiệm về các giao dịch liên quan
-đến vấn đề mua bán các sản phẩm.
-Người bán và người mua đều là người dùng cuối của hệ thống. Ở đây đồ án của
-em phân kịch bản sử dụng theo vai trò, nhu cầu của người dùng.
-•Người mua có thể thực hiện các chức năng đối với tài khoản như đăng kí ,
-•Người mua có thể quản lí thông tin cá nhân như xem thông tin, thay đổi thông
-•Người mua xem các bài tin ưu tiên và tin đăng thường.
-•Người mua tìm kiếm, lọc các tin đăng về sản phẩm mà mình cần mua , có thể
-tham gia đánh giá tin đăng mà mình mua.
-•Người mua có thể lưu , xoá, chọn lại lịch sử tìm kiếm tin của mình.
-•Người mua có thể xem thông tin chi tiết tin, lưu tin, báo cáo tin đăng.
-•Người mua có thể gửi thông báo mua sản phẩm, gọi điện hoặc nhắn tin SMS.
-•Người mua có thể tạo phòng Chat, tìm kiếm, xoá phòng Chat, nhắn tin cho
-•Người mua xem thông tin cá nhân của người bán và theo dõi người bán, quản
-lí danh sách bạn bè.
-•Người bán có thể thực hiện các chức năng đối với tài khoản như đăng kí , đăng
-•Người bán có thể quản lí thông tin cá nhân như xem thông tin, thay đổi thông
-•Người bán có thể đăng tin.
-•Người bán có thể quản lí vòng đời tin đăng của mình như gia hạn, huỷ, bán tin
-•Người bán có thể thực hiện các chức năng kết nối với người mua tương tự như
-người mua như nhắn tin, chat, gọi điện,...
-•Người bán quản lí danh sách bạn bè.
-Đồ án định ứng giải quyết vấn đề bằng việc xây dựng hệ thống mobile app sử
-dụng công nghệ đa nền tảng Flutter và hệ thống server Spring boot.
-Công nghệ Flutter được sử dụng nhắm mục đích có thể chạy ứng dụng trên nhiều
-nền tảng từ web, desktop cho đến mobile app.Spring boot được lựa chọn bởi vì thời
-gian xây dựng ứng dụng nhanh, dễ dàng khi không phải cấu hình server .
-•Giao diện được thiết kế nhất quán, các phần cùng nhóm chức năng được nhóm
-•Giao diện phải đơn giản, trực quan và dễ nhìn.
-•ứng dụng được thiết kế theo nguyên tắc phản hồi. Các thông báo , thành phần
-giao diện dễ hiểu và giống nhau trong toàn ứng dụng.
-•Tối ưu hoá UX để tăng trải nghiệm người dùng.
+1.1 Đặt vấn đề Trong cuộc sống hiện đại,nhu cầu mua bán hàng hoá, sản phẩm của mọi người là rất lớn.Riêng đối với sinh viên , nhu cầu một số hàng hoá sẽ nhiều hơn như các đồ dùng học tập,đồ điện tử, hàng tiêu dùng,.... Tuy nhiên với việc thiếu thông tin thị trường, việc mua các sản phẩm cần thiết trên với giá tốt thường gặp nhiều khó khăn. Bên cạnh đấy, có nhiều người bán có những sản phẩm, đồ dùng không dùng đến có nhu cầu bán nhưng họ gặp khó khăn trong việc tìm kiếm người mua.
+Xuất phát từ nhu cầu thực tế trên, đồ án muốn tạo ra hệ thống có thể đáp ứng việc kết nối giữa người mua và người bán sản phẩm, đồ dùng , đặc biệt là với sinh viên, đối tượng với nguồn tài chính eo hẹp. Đồ án hướng tới đem lại lợi ích cho mọi người khi tham gia hệ thống,đối với người mua là tìm được sản phẩm mình muốn với thời gian và mức giá tốt nhất, còn đối với người bán là bán được sản phẩm của mình với mức giá tốt mà không tốn quá nhiều thời gian.Bên phát triển ứng dụng tìm kiếm doanh thu từ phía người đăng tin.
+1.2 Mục tiêu và phạm vi đề tài 1.2.1 Mục tiêu Hiện nay, trên thị trường hiện tại, đã có các ứng dụng về đăng tin rao mặt, tuy nhiên các app này chưa triệt để trong việc hỗ trợ đăng tin rao vặt là đồ cũ và người đăng tin là sinh viên. Ứng dụng sẽ cung cấp các tính năng chủ yếu việc kết nối giữa người mua và người bán với cùng sản phẩm qua các chức năng đăng bài, quản lí tin, thông báo,các chức năng kết nối người dùng : chat, gọi điện ,... Ứng dụng sẽ sử dụng mô hình C2C, người dùng giao dịch với nhau, không qua bên trung gian.
+Nhiệm vụ của ứng dụng sẽ là cung cấp các kết nối để người mua và người bán tìm thấy nhu cầu của họ.Ứng dụng sẽ không có trách nhiệm về các giao dịch liên quan đến vấn đề mua bán các sản phẩm.
+1.2.2 Phạm vi đề tài Người bán và người mua đều là người dùng cuối của hệ thống. Ở đây đồ án của em phân kịch bản sử dụng theo vai trò, nhu cầu của người dùng.
+a, Người mua Người mua có thể thực hiện các chức năng đối với tài khoản như đăng kí , đăng nhập,đăng xuất,...
+Người mua có thể quản lí thông tin cá nhân như xem thông tin, thay đổi thông tin cá nhân,...
+1•Người mua xem các bài tin ưu tiên và tin đăng thường.
+Người mua tìm kiếm, lọc các tin đăng về sản phẩm mà mình cần mua , có thể tham gia đánh giá tin đăng mà mình mua.
+Người mua có thể lưu , xoá, chọn lại lịch sử tìm kiếm tin của mình.
+Người mua có thể xem thông tin chi tiết tin, lưu tin, báo cáo tin đăng.
+Người mua có thể gửi thông báo mua sản phẩm, gọi điện hoặc nhắn tin SMS.
+Người mua có thể tạo phòng Chat, tìm kiếm, xoá phòng Chat, nhắn tin cho người bán.
+Người mua xem thông tin cá nhân của người bán và theo dõi người bán, quản lí danh sách bạn bè.
+b, Người bán Người bán có thể thực hiện các chức năng đối với tài khoản như đăng kí , đăng nhập,đăng xuất,...
+Người bán có thể quản lí thông tin cá nhân như xem thông tin, thay đổi thông tin cá nhân,...
+Người bán có thể đăng tin.
+Người bán có thể quản lí vòng đời tin đăng của mình như gia hạn, huỷ, bán tin đăng.
+Người bán có thể thực hiện các chức năng kết nối với người mua tương tự như người mua như nhắn tin, chat, gọi điện,...
+Người bán quản lí danh sách bạn bè.
+1.3 Định hướng giải pháp 1.3.1 Giải quyết vấn đề Đồ án định ứng giải quyết vấn đề bằng việc xây dựng hệ thống mobile app sử dụng công nghệ đa nền tảng Flutter và hệ thống server Spring boot.
+1.3.2 Mô tả giải pháp Công nghệ Flutter được sử dụng nhắm mục đích có thể chạy ứng dụng trên nhiều nền tảng từ web, desktop cho đến mobile app.Spring boot được lựa chọn bởi vì thời gian xây dựng ứng dụng nhanh, dễ dàng khi không phải cấu hình server .
+1.3.3 Kết quả đạt được Về ứng dụng Mobile:
+Giao diện được thiết kế nhất quán, các phần cùng nhóm chức năng được nhóm 2lại với nhau Giao diện phải đơn giản, trực quan và dễ nhìn.
+ứng dụng được thiết kế theo nguyên tắc phản hồi. Các thông báo , thành phần giao diện dễ hiểu và giống nhau trong toàn ứng dụng.
+Tối ưu hoá UX để tăng trải nghiệm người dùng.
 Về hệ thống Server :
-•Hệ thống phản hồi nhanh các yêu cầu của người dùng trong thời gian không
-•Đối với các chức năng yêu cầu xử lí thời gian thực như nhắn tin, hệ thống phải
-đảm bảo được về tốc độ
-•Hệ thống phải được thiết kế và lập trình để có thể dễ dàng cho việc bảo trì và
-nâng cấp các tính năng sau này.
-Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
-Chương 2 : Khảo sát và phân tích yêu cầu. Chương này trình bày đóng góp về
-khảo sát hiện trạng thị trường hiện nay, đưa ra các góc nhìn về tổng quan trước năng
-của hệ thống thông qua các biểu đồ use case. Chương này cũng sẽ trình bày các quy
-trình nghiệp vụ quan trọng của ứng dụng, đồng thời đặc tả các use case đã được
-nêu ra trong chương. Cuối cùng, các yêu cầu về giao diện, hệ thống, hiệu năng và
-các yêu cầu phi chức năng khác của ứng dụng sẽ được trình bày trong chương này.
-Trong Chương 3, sẽ giới thiệu về các công nghệ được sử dụng trong đồ án, lí do
-tại sao chọn công nghệ đó, có giải pháp thay thế cho các công nghệ được lựa chọn
-đấy không và đưa ra giải thích sự phù hợp của công nghệ đối với đề tài ứng dụng.
-Chương 4: Kết quả thực nghiệm. Ở chương này,sẽ trình bày về mô hình kiến
-trúc phần mềm được lựa chọn bao gồm về kiến trúc tổng quan MVC , thiết kế tổng
-quan và chi tiết gói . Bên cạnh đấy, chương này cũng trình bày về thiết kế giao diện
-bao gồm đặc tả các thông tin về màn hình và các hình ảnh minh hoạ thiết kế. Tiếp
-theo, để giải thích rõ cho các thiết kế tổng quan ở trên,chương sẽ trình bày thiết kế
-lớp bao gồm các biểu đồ hoạt động và biểu đồ lớp cho các chức năng quan trọng,
-thiết kế cơ sở dữ liệu, bao gồm sơ đồ thực thể liên kết và đặc tả các bảng dữ liệu.
-Cuối cùng, trong chương này sẽ trình bày về kết quả đạt được, minh hoạt các chức
-năng chính, kiểm thử và triển khai ứng dụng.
-Chương 5: Các giải pháp và đóng góp nổi bật. Trong chương này sẽ trình bày về
-các đóng góp nổi bật của sinh viên trong ứng dụng này, đấy chính là sử dụng stomp
-socket để thực hiện chức năng chat thời gian thực.
-Chương 6: Kết luận và hướng phát triển, chương này sẽ trình bày các điểm yếu cố
-hữu của đồ án và hướng phát triển trong tương lai.
-
-
-
-
-
-a, Quy trình đăng nhập
-b, Quy trình đăng kí
-c, Quy trình đăng tin
-d, Quy trình gia hạn
-e, Quy trình thay đổi địa chỉ
-Tên ca sử dụng Đăng kí
-Mô tả Người dùng đăng kí tài khoản
-hoạtNgười dùng chọn nút đăng kí ở màn hình đăng nhập khi vào App
-dùngChọn nút đăng kí ở màn hình đăng nhập
-2 Hệ thống Hệ thống hiển thị giao diện đăng kí
-dùngNhập họ và tên của mình
-4 Hệ thống Kiểm tra định dạng tên và họ của người
-6 Hệ thống Hệ thống hiển thị giao diện nhập thông
-dùngNhập số điện thoại và mật khẩu
-8 Hệ thống Kiểm tra định dạng số điện thoại và mật
-10 Hệ thống Hệ thống hiển thị giao diện nhập thông
-dùngChọn ngày sinh và giới tính và chọn tiếp
-12 Hệ thống Hiển thị trang đăng ký
-13 Hệ thống Kiểm tra thông tin và chuyển sang màn
-•Yêu cầu về độ tin cậy
-–Các thông tin cá nhân người dùng được tuyệt đối bảo mật
-–Thông tin về các tin đăng, đoạn tin nhắn ... đều được bảo mật đối với bên
-–Chỉ có quản trị viên mới có quyền can thiệp vào dữ liệu tin đăng ....
-•Yêu cầu về vận hành
-–Hệ thống có thể chạy được trên nhiều nền tảng như mobile, web, des
-Dart [1] là một ngôn ngữ hướng đối tượng được tối ưu hóa cho ứng dụng client
-để phát triển các ứng dụng nhanh trên mọi nền tảng. Mục tiêu của nó là cung cấp
-ngôn ngữ lập trình hiệu quả nhất để phát triển đa nền tảng (web, di động, máy tính
-để bàn) kết hợp với nền tảng thời gian chạy thực thi linh hoạt cho các khuôn khổ
-ứng dụng từ một mã nguồn duy nhất.
-Dart cũng là nền tảng của Flutter. Dart cung cấp ngôn ngữ và thời gian chạy
-cung cấp năng lượng cho các ứng dụng Flutter, nhưng Dart cũng hỗ trợ nhiều tác
-vụ cốt lõi của nhà phát triển như phân tích và kiểm tra mã.
+Hệ thống phản hồi nhanh các yêu cầu của người dùng trong thời gian không quá 10 giây.
+Đối với các chức năng yêu cầu xử lí thời gian thực như nhắn tin, hệ thống phải đảm bảo được về tốc độ Hệ thống phải được thiết kế và lập trình để có thể dễ dàng cho việc bảo trì và nâng cấp các tính năng sau này.
+1.4 Bố cục đồ án Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau.
+Chương 2 : Khảo sát và phân tích yêu cầu. Chương này trình bày đóng góp về khảo sát hiện trạng thị trường hiện nay, đưa ra các góc nhìn về tổng quan trước năng của hệ thống thông qua các biểu đồ use case. Chương này cũng sẽ trình bày các quy trình nghiệp vụ quan trọng của ứng dụng, đồng thời đặc tả các use case đã được nêu ra trong chương. Cuối cùng, các yêu cầu về giao diện, hệ thống, hiệu năng và các yêu cầu phi chức năng khác của ứng dụng sẽ được trình bày trong chương này.
+Trong Chương 3, sẽ giới thiệu về các công nghệ được sử dụng trong đồ án, lí do tại sao chọn công nghệ đó, có giải pháp thay thế cho các công nghệ được lựa chọn đấy không và đưa ra giải thích sự phù hợp của công nghệ đối với đề tài ứng dụng.
+Chương 4: Kết quả thực nghiệm. Ở chương này,sẽ trình bày về mô hình kiến trúc phần mềm được lựa chọn bao gồm về kiến trúc tổng quan MVC , thiết kế tổng quan và chi tiết gói . Bên cạnh đấy, chương này cũng trình bày về thiết kế giao diện bao gồm đặc tả các thông tin về màn hình và các hình ảnh minh hoạ thiết kế. Tiếp theo, để giải thích rõ cho các thiết kế tổng quan ở trên,chương sẽ trình bày thiết kế lớp bao gồm các biểu đồ hoạt động và biểu đồ lớp cho các chức năng quan trọng, thiết kế cơ sở dữ liệu, bao gồm sơ đồ thực thể liên kết và đặc tả các bảng dữ liệu.
+Cuối cùng, trong chương này sẽ trình bày về kết quả đạt được, minh hoạt các chức năng chính, kiểm thử và triển khai ứng dụng.
+Chương 5: Các giải pháp và đóng góp nổi bật. Trong chương này sẽ trình bày về các đóng góp nổi bật của sinh viên trong ứng dụng này, đấy chính là sử dụng stomp 3socket để thực hiện chức năng chat thời gian thực.
+Chương 6: Kết luận và hướng phát triển, chương này sẽ trình bày các điểm yếu cố hữu của đồ án và hướng phát triển trong tương lai.
+42.1 Khảo sát hiện trạng 2.1.1 Khách hàng Sau đại dịch COVID hiện nay, khi cuộc sống dần trở lại bình thường mới, thì nhu cầu hàng hoá , mua bán sản phẩm ngày càng gia tăng. Việc sử dụng các ứng dụng công nghệ thông tin có vai trò ngày càng quan trọng trong lĩnh vực này, giúp giảm thời gian , tăng hiệu quả của việc mua bán sản phẩm. Vì vậy, việc phát triển ứng dụng với mục đích kết nối các nhu cầu này với nhau sẽ là một cơ hội tốt để đem lại lợi ích cho người phát triển ứng dụng và người tham gia hệ thống.Đặc biệt với đối tượng là sinh viên, những người có nguồn tài chính eo hẹp,thu nhập thấp, có thể mua được những sản phẩm phù hợp với bản thân mình với giá cả phù hợp.
+2.1.2 Các hệ thống đã có Về lĩnh vực đăng tin rao vặt, trên thị trường đã có nhiều sản phẩm cung cấp các tính năng và dịch vụ tương tự như:
+Chợ tốt : là một sàn thương mại điện tử hỗn hợp dành cho cả sản phẩm cũ và sản phẩm mới cho tất cả mọi người. Chợ tốt sử dụng mô hình rao vặt C2C.
+Chợ tốt có rất nhiều chuyên mục như Đồ điện tử, Thú cưng,.... Tuy nhiên, với tình trạng các thông tin tiêu cực, hoặc tình trạng lừa đảo vẫn còn xuất hiện trên ứng dụng này. Thách thức lớn nhất đấy của ứng dụng đấy là xác thực thông tin của bài đăng được đăng lên hệ thống Trang đăng tin : App trang đăng tin hoạt động ổn định, các sản phẩm đa dạng.
+Tuy nhiên , về giao diện của App còn chưa tốt, trải nghiệm người dùng còn thấp.Cũng giống như chợ tốt, thách thức lớn nhất chính là xác thực bài đăng.
+Tuy nhiên, bài đăng ở ứng dụng này có độ tin cậy thấp hơn chợ tốt, do không được kiểm duyệt kĩ càng.
+Aladin : Điểm mạnh của app là mua bán dễ dàng, nhanh chóng. Danh mục các mặt hàng được bán và cấm bán rõ ràng. Trao đổi thông tin giữa người mua và người bán đơn giản. App hướng tới cộng đồng khi đăng sản phẩm có thể chọn mức giá 0 đồng.
+52.2 Tổng quan chức năng 2.2.1 Biểu đồ use case tổng quát Hình 2.1: Biểu đồ use case tổng quát 2.2.2 Biểu đồ use case phân rã kết nối người mua và người bán Hình 2.2: Biểu đồ use case phân rã kết nối người mua và người bán 62.2.3 Biểu đồ use case phân rã quản lí tin đăng cá nhân Hình 2.3: Biểu đồ use case phân rã quản lí tin đăng cá nhân 2.2.4 Biểu đồ use case phân rã quản lí bài đăng Hình 2.4: Biểu đồ use case phân rã quản lí bài đăng 72.2.5 Biểu đồ use case phân rã quản lí danh sách bạn bè Hình 2.5: Biểu đồ use case phân rã quản lí danh sách bạn bè 2.2.6 Biểu đồ use case phân rã quản lí thông báo Hình 2.6: Biểu đồ use case phân rã quản lí thông báo 82.2.7 Biểu đồ use case phân rã quản lí thông tin cá nhân Hình 2.7: Biểu đồ use case phân rã quản lí thông tin cá nhân 2.2.8 Biểu đồ use case phân rã xem bài đăng Hình 2.8: Biểu đồ use case phân rã xem bài đăng 92.2.9 Biểu đồ use case phân rã xem chi tiết bài đăng Hình 2.9: Biểu đồ use case phân rã xem chi tiết bài đăng 102.2.10 Quy trình nghiệp vụ a, Quy trình đăng nhập Hình 2.10: Quy trình đăng nhập 11b, Quy trình đăng kí Hình 2.11: Quy trình đăng kí 12c, Quy trình đăng tin Hình 2.12: Quy trình đăng tin 13d, Quy trình gia hạn Hình 2.13: Quy trình gia hạn 14e, Quy trình thay đổi địa chỉ Hình 2.14: Quy trình thay đổi địa chỉ 2.3 Đặc tả chức năng 2.3.1 Đặc tả ca sử dụng đăng ký Tên ca sử dụng Đăng kí Mô tả Người dùng đăng kí tài khoản Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn nút đăng kí ở màn hình đăng nhập khi vào App 15Điều kiện tiên quyếtKhông có Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn nút đăng kí ở màn hình đăng nhập 2 Hệ thống Hệ thống hiển thị giao diện đăng kí 3 Người dùngNhập họ và tên của mình 4 Hệ thống Kiểm tra định dạng tên và họ của người dùng 5 Người dùngẤn nút tiếp theo 6 Hệ thống Hệ thống hiển thị giao diện nhập thông tin tài khoản 7 Người dùngNhập số điện thoại và mật khẩu 8 Hệ thống Kiểm tra định dạng số điện thoại và mật khẩu 9 Người dùngẤn nút tiếp theo 10 Hệ thống Hệ thống hiển thị giao diện nhập thông tin người dùng 11 Người dùngChọn ngày sinh và giới tính và chọn tiếp theo 12 Hệ thống Hiển thị trang đăng ký 13 Người dùngChọn nút đăng kí 13 Hệ thống Kiểm tra thông tin và chuyển sang màn hình Home 16Luồng sự kiện phụSTT Thực hiện bởiHành động 4a Hệ thống Thông báo lỗi : Tên không hợp lệ 4b Hệ thống Thông báo lỗi : Họ không hợp lệ 8a Hệ thống Thông báo lỗi : Số điện thoại không hợp lệ 8b Hệ thống Thông báo lỗi : Mật khẩu không hợp lệ 13a Hệ thống Thông báo lỗi :Số điện thoại đã được sử dụng Sự kiên sau Thông báo đăng kí thành công Bảng 2.1: Đặc tả ca sử dụng đăng kí tài khoản 2.3.2 Đặc tả ca sử dụng đăng nhập Tên ca sử dụng Đăng nhập Mô tả Người dùng đăng nhập tài khoản Tác nhân Người dùng Sự kiện kích hoạtNgười dùng mở app Điều kiện tiên quyếtKhông có Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngNhập số điện thoại 2 Người dùngNhập mật khẩu 3 Người dùngẤn nút đăng nhập 4 Hệ thống Kiểm tra định dạng số điện thoại và mật khẩu 5 Hệ thống Kiểm tra mật khẩu và số điện thoại 6 Hệ thống Đăng nhập thành công. Hệ thống hiển thị màn hình trang Home 17Luồng sự kiện phụSTT Thực hiện bởiHành động 4a Hệ thống Thông báo lỗi : Số điện thoại hoặc mật khẩu không hợp lệ 5a Hệ thống Thông báo lỗi : Số điện thoại không chính xác 5b Hệ thống Thông báo lỗi : Mật khẩu không chính xác Sự kiên sau Hệ thống hiển thị màn hình trang Home Bảng 2.2: Đặc tả ca sử dụng đăng nhập 2.3.3 Đặc tả ca sử dụng đăng tin Tên ca sử dụng Đăng tin Mô tả Người dùng đăng tin của mình Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn tab đăng tin Điều kiện tiên quyếtNgười dùng đăng nhập Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn danh mục của tin đăng 2 Hệ thống Hiển thị giao diện màn hình nhập thông tin bài đăng 3 Người dùngNhập thông tin cần thiết cho tin đăng 4 Hệ thống Ấn đăng tin 5 Hệ thống Kiểm tra thông tin của tin đăng 6 Hệ thống Lưu bài đăng và thông báo đăng tin thành công 18Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Thông báo lỗi : Chọn danh mục bài đăng là bắt buộc 5a Hệ thống Thông báo lỗi : Thông tin tin đăng không hợp lệ Sự kiên sau Hiển thị màn hình quản lí tin đăng Bảng 2.3: Đặc tả ca sử dụng đăng tin 2.3.4 Đặc tả ca sử dụng thay đổi địa chỉ Tên ca sử dụng Thay đổi địa chỉ Mô tả Người dùng thay đổi địa chỉ mặc định của mình Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn nút xem thông tin cá nhân Điều kiện tiên quyếtNgười dùng đăng nhập Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn nút thay đổi thông tin cá nhân 2 Hệ thống Hiển thị thay đổi thông tin cá nhân 3 Người dùngẤn nút địa chỉ 4 Hệ thống Hiển thị danh sách địa chỉ 5 Người dùngChọn địa chỉ 6 Hệ thống Lưu địa chỉ được chọn và quay trở lại màn hình thay đổi địa chỉ 19Luồng sự kiện phụSTT Thực hiện bởiHành động 4a Hệ thống Hiển thị danh sách địa chỉ trống 5a Người dùngThêm địa chỉ 6a Người dùngChọn thông tin địa chỉ 7 Người dùngẤn thêm địa chỉ 8 Hệ thống Kiểm tra thông tin địa chỉ 9 Hệ thống Lưu địa chỉ được chọn và quay trở lại màn hình thay đổi địa chỉ Sự kiên sau Quay lại màn hình trang thay đổi địa chỉ Bảng 2.4: Đặc tả ca sử dụng thay đổi địa chỉ 2.3.5 Đặc tả ca sử dụng gia hạn tin đăng Tên ca sử dụng Gia hạn tin đăng Mô tả Người dùng gia hạn tin đăng của mình Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn nút gia hạn tin đăng Điều kiện tiên quyếtNgười dùng đăng nhập 20Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn danh sách tin đăng cần gia hạn 2 Hệ thống Hiển thị danh sách tin đăng cần gia hạn 3 Người dùngChọn nút gia hạn tin đăng 4 Hệ thống Kiểm tra điều kiện gia hạn tin đăng 5 Hệ thống Gia hạn bài đăng thành công 6 Hệ thống Gửi thông báo và hiển thị màn hình quản lí tin đăng Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Hiển thị danh sách tin đăng cần gia hạn trống 5a Hệ thống Thông báo lỗi : điều kiện gia hạn tin đăng không hợp lệ Sự kiên sau Thông báo gia hạn tin đăng thành công Bảng 2.5: Đặc tả ca sử dụng gia hạn tin đăng 2.3.6 Đặc tả ca sử dụng đánh giá tin đăng Tên ca sử dụng Đánh giá tin đăng Mô tả Người mua đánh giá tin đăng mình mua Tác nhân Người mua Sự kiện kích hoạtNgười đăng bài chọn xem danh sách đánh giá tin đăng Điều kiện tiên quyếtNgười đăng tin đồng ý bán cho người gửi yêu cầu mua 21Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người muaChọn danh sách tin đăng cần đánh giá 2 Hệ thống Hiển thị danh sách tin đăng cần đánh giá 3 Người muaChọn tin đăng cần đánh giá 4 Hệ thống Hiển thị giao diện đánh giá 5 Người muaĐánh giá tin đăng 6 Người muaẤn gửi đánh giá tin đăng 7 Hệ thống Thông báo đánh giá tin đăng thành công Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Hiển thị danh sách tin đăng cần đánh giá trống 7a Hệ thống Thông báo lỗi : đánh giá tin đăng không hợp lệ Sự kiên sau Thông báo đánh giá tin đăng thành công Bảng 2.6: Đặc tả ca sử dụng đánh giá tin đăng 2.3.7 Đặc tả ca sử dụng nhắn tin cho người dùng Tên ca sử dụng Nhắn tin cho người dùng Mô tả Người mua và người bán nhắn tin cho nhau Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn room chat mà mình cần nhắn tin Điều kiện tiên quyếtPhòng chat giữa 2 người cần nhắn tin đã có 22Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn phòng chat mà mình cần nhắn tin 2 Hệ thống Lấy thông tin phòng chat và hiển thị giao diện phòng chat 3 Người dùngNhập tin nhắn (dạng text) hoặc chọn các dạng khác (video, image) 4 Người dùngẤn gửi tin nhắn 5 Hệ thống Kiểm tra tính hợp lệ của nội dung tin nhắn 6 Hệ thống Lưu tin nhắn và gửi tin nhắn lại cho người nhận 7 Hệ thống Hiển thị tin nhắn mới trên màn hình Luồng sự kiện phụSTT Thực hiện bởiHành động 5a Hệ thống Thông báo lỗi : tin nhắn gửi đi không hợp lệ yêu cầu gửi lại tin nhắn 6a Người dùngNgười dùng gửi lại tin nhắn Sự kiên sau Giao diện phòng chat với tin nhắn mới được thêm vào Bảng 2.7: Đặc tả ca sử dụng nhắn tin với người dùng 2.3.8 Đặc tả ca sử dụng tìm kiếm tin đăng Tên ca sử dụng Tìm kiếm tin đăng Mô tả Người dùng tìm kiếm tin đăng Tác nhân Người dùng Sự kiện kích hoạtNgười dùng vào màn hình Home Điều kiện tiên quyếtNgười dùng đăng nhập 23Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn icon Tìm kiếm trong màn hình Home 2 Hệ thống Hiển thị màn hình Tìm kiếm 3 Người dùngNhập từ khoá cần tìm kiếm 4 Hệ thống Kiểm tra từ khoá tìm kiếm 5 Hệ thống Tìm kiếm tên tin đăng theo từ khoá 6 Hệ thống Hiển thị danh sách tin đăng trên màn hình Luồng sự kiện phụSTT Thực hiện bởiHành động 4a Hệ thống Thông báo lỗi : từ khoá tìm kiếm không hợp lệ 6a Hệ thống Thông báo: Không tìm thấy tin đăng với từ khoá tìm kiếm Sự kiên sau Không có Bảng 2.8: Đặc tả ca sử dụng tìm kiếm tin đăng 2.3.9 Đặc tả ca sử dụng lọc tin đăng Tên ca sử dụng Lọc tin đăng Mô tả Người dùng lọc tin đăng Tác nhân Người dùng Sự kiện kích hoạtNgười dùng vào màn hình Home Điều kiện tiên quyếtNgười dùng đăng nhập 24Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn danh mục tin trong màn hình Home 2 Hệ thống Hiển thị màn hình lọc tin đăng 3 Người dùngChọn danh mục sản phẩm mà mình muốn lọc 4 Người dùngChọn các điều kiện lọc 5 Hệ thống Lọc tin đăng theo các điều kiện mà người dùng chọn 6 Hệ thống Hiển thị danh sách bài đăng trên màn hình Luồng sự kiện phụSTT Thực hiện bởiHành động 6a Hệ thống Thông báo: Không tìm thấy tin đăng với các điều kiện lọc Sự kiên sau Không có Bảng 2.9: Đặc tả ca sử dụng lọc tin đăng 2.3.10 Đặc tả ca sử dụng theo dõi người dùng Tên ca sử dụng Theo dõi người dùng Mô tả Người dùng ấn theo dõi người đăng tin Tác nhân Người dùng Sự kiện kích hoạtNgười dùng vào màn hình Home Điều kiện tiên quyếtNgười dùng đăng nhập 25Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn tin đăng ở màn hình Home 2 Hệ thống Hiển thị màn hình chi tiết tin đăng 3 Người dùngChọn nút xem thông tin người đăng 4 Hệ thống Hiển thị giao diện chi tiết thông tin người đăng 5 Người dùngẤn nút theo dõi người đăng tin 6 Hệ thống Thông báo theo dõi thành công Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Thông báo lỗi: Lấy thông tin bài đăng thất bại 4a Hệ thống Thông báo lỗi: lấy thông tin người dùng thất bại 6a Hệ thống Thông báo lỗi: Thông báo theo dõi người dùng thất bại Sự kiên sau Không có Bảng 2.10: Đặc tả ca sử dụng theo dõi người dùng 2.3.11 Đặc tả ca sử dụng xem chi tiết tin đăng Tên ca sử dụng Xem chi tiết tin đăng Mô tả Người dùng xem chi tiết tin Tác nhân Người dùng Sự kiện kích hoạtNgười dùng vào màn hình Home Điều kiện tiên quyếtNgười dùng đăng nhập 26Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn tin đăng mình cần xem ở danh sách tin màn hình Home 2 Hệ thống Trả về thông tin chi tiết tin mà người dùng chọn 3 Hệ thống Hiển thị màn hình chi tiết tin Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Thông báo lỗi: Tin đăng không thể hiển thị Sự kiên sau Không có Bảng 2.11: Đặc tả ca sử dụng xem chi tiết tin đăng 2.3.12 Đặc tả ca sử dụng lưu tin Tên ca sử dụng Lưu tin đăng Mô tả Người dùng lưu tin đăng mình thích Tác nhân Người dùng Sự kiện kích hoạtNgười dùng vào màn hình Home Điều kiện tiên quyếtNgười dùng đăng nhập 27Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn tin đăng mình cần xem ở danh sách tin màn hình Home 2 Hệ thống Trả về thông tin chi tiết tin mà người dùng chọn 3 Hệ thống Hiển thị màn hình chi tiết tin 4 Người dùngChọn nút lưu tin 5 Hệ thống Kiểm tra yêu cầu lưu tin 6 Hệ thống Thông báo lưu tin thành công Luồng sự kiện phụSTT Thực hiện bởiHành động 5a Hệ thống Thông báo : Tin đăng đã được lưu Sự kiên sau Không có Bảng 2.12: Đặc tả ca sử dụng lưu tin đăng 2.3.13 Đặc tả ca sử dụng tìm kiếm phòng chat Tên ca sử dụng Tìm kiếm phòng chat Mô tả Người dùng tìm kiếm phòng chat Tác nhân Người dùng Sự kiện kích hoạtNgười dùng vào màn hình Home Điều kiện tiên quyếtNgười dùng đăng nhập 28Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn Icon Chat ở màn hình Home 2 Hệ thống Hiển thị màn hình danh sách nhắn tin 3 Người dùngNhập từ khoá tìm kiếm 4 Hệ thống Kiểm tra từ khoá tìm kiếm 5 Hệ thống Tìm kiếm phòng chat theo từ khoá 6 Hệ thống Hiển thị danh sách phòng chat theo từ khoá Luồng sự kiện phụSTT Thực hiện bởiHành động 4a Hệ thống Thông báo lỗi: Từ khoá tìm kiếm không hợp lệ 6a Hệ thống Thông báo : Không tìm thấy kết quả nào Sự kiên sau Không có Bảng 2.13: Đặc tả ca sử dụng tìm kiếm phòng chat 2.3.14 Đặc tả ca sử dụng thay đổi mật khẩu Tên ca sử dụng Thay đổi mật khẩu Mô tả Người dùng thay đổi mật khẩu Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn vào màn hình chỉnh sửa thông tin cá nhân Điều kiện tiên quyếtNgười dùng đăng nhập 29Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn thay đổi mật khẩu 2 Hệ thống Hiển thị màn hình thay đổi mật khẩu 3 Người dùngNhập mật khẩu cũ và mật khẩu mới 4 Hệ thống Kiểm tra mật khẩu mới 5 Hệ thống Thay đổi mật khẩu 6 Hệ thống Thông báo mật khẩu đã được thay đổi thành công Luồng sự kiện phụSTT Thực hiện bởiHành động 4a Hệ thống Thông báo lỗi: Mật khẩu cũ không đúng 4b Hệ thống Thông báo lỗi: Mật khẩu mới không hợp lệ Sự kiên sau Không có Bảng 2.14: Đặc tả ca sử dụng sử dụng thay đổi mật khẩu 2.3.15 Đặc tả ca sử dụng xoá phòng nhắn tin Tên ca sử dụng Xoá phòng nhắn tin Mô tả Người dùng xoá phòng nhắn tin Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn vào phòng nhắn tin mình xoá Điều kiện tiên quyếtNgười dùng đăng nhập 30Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn phòng nhắn tin mình cần xoá 2 Hệ thống Hiển thị màn hình chi tiết phòng nhắn tin 3 Người dùngChọn nút mở rộng 4 Hệ thống Hiển thị các lựa chọn nút mở rộng 5 Người dùngChọn nút xoá phòng nhắn tin 6 Hệ thống Xoá phòng nhắn tin và thông báo thành công Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Thông báo lỗi: Không lấy được thông tin phòng nhắn tin Sự kiên sau Cập nhật lại danh sách phòng nhắn tin sau khi xoá Bảng 2.15: Đặc tả ca sử dụng xoá phòng nhắn tin 2.3.16 Đặc tả ca sử dụng báo cáo tin đăng Tên ca sử dụng Báo cáo tin đăng Mô tả Người dùng báo cáo tin đăng Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn vào tin đăng mình cần xem Điều kiện tiên quyếtNgười dùng đăng nhập 31Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn tin đăng mình cần xem 2 Hệ thống Hiển thị màn hình chi tiết tin đăng 3 Người dùngChọn nút báo cáo tin 4 Hệ thống Hiển thị màn hình báo cáo tin 5 Người dùngNhập thông tin báo cáo tin 6 Hệ thống Kiểm tra hợp lệ của thông tin 7 Hệ thống Lưu lại thông tin báo cáo và hiển thị thông báo thành công Luồng sự kiện phụSTT Thực hiện bởiHành động 2a Hệ thống Thông báo lỗi: Không lấy được thông tin chi tiết tin đăng 6a Hệ thống Thông báo lỗi: Nội dung báo cáo không hợp lệ Sự kiên sau Không có Bảng 2.16: Đặc tả ca sử dụng báo cáo tin đăng 2.3.17 Đặc tả ca sử dụng huỷ tin đăng Tên ca sử dụng Huỷ tin đăng Mô tả Người bán huỷ tin đăng Tác nhân Người bán Sự kiện kích hoạtNgười bán chọn tab quản lí tin đăng của mình Điều kiện tiên quyếtNgười bán đăng nhập 32Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người bán Chọn tab tin đang đăng 2 Hệ thống Hiển thị màn hình chi tiết tin đăng 3 Người bán Chọn nút huỷ tin mình muốn huỷ 4 Hệ thống Hiển thị thông báo xác nhận 5 Người bán Chọn đồng ý 6 Hệ thống Tin chuyển về trạng thái đã huỷ Luồng sự kiện phụSTT Thực hiện bởiHành động 5a Người bán Chọn quay lại 6a Hệ thống Quay về màn hình danh sách tin đang đăng Sự kiên sau Không có Bảng 2.17: Đặc tả ca sử dụng huỷ tin đăng 2.3.18 Đặc tả ca sử dụng thay đổi ảnh đại diện Tên ca sử dụng Thay đổi ảnh đại diện Mô tả Người dùng thay đổi ảnh đại diện Tác nhân Người dùng Sự kiện kích hoạtNgười dùng chọn vào nút xem thông tin cá nhân Điều kiện tiên quyếtNgười dùng đăng nhập 33Luồng sự kiên chínhSTT Thực hiện bởiHành động 1 Người dùngChọn nút Camera ở trên ảnh đại diện 2 Hệ thống Hiển thị màn hình yêu cầu chọn ảnh từ bộ nhớ 3 Người dùngChọn nút đồng ý 4 Hệ thống Hiển thị màn hình danh sách ảnh 5 Người dùngChọn ảnh mình cần thay 6 Hệ thống Kiểm tra dung lượng ảnh 7 Hệ thống Thay đổi ảnh đại diện Luồng sự kiện phụSTT Thực hiện bởiHành động 3a Người dùngChọn không đồng ý 4a Hệ thống Hiển thị màn hình thông tin cá nhân 4a Hệ thống Thông báo lỗi : dung lượng ảnh quá lớn Sự kiên sau Thông báo thay đổi ảnh thành công Bảng 2.18: Đặc tả ca sử dụng thay đổi ảnh đại diện 2.4 Yêu cầu phi chức năng Yêu cầu về giao diện –Giao diện trực quan, đơn giản, dễ nhìn, dễ tiếp cận, đáp ứng đầy đủ tính năng –Trải nghiệm người dùng tốt –Hỗ trợ hiển thị với đa màn hình và ổn định trên nhiều thiết bị Yêu cầu về hiệu năng –Hệ thống hoạt động ổn định –Hệ thống phản hồi người dùng với thời gian không quá 10 giây 34•Yêu cầu về độ tin cậy –Các thông tin cá nhân người dùng được tuyệt đối bảo mật –Thông tin về các tin đăng, đoạn tin nhắn ... đều được bảo mật đối với bên ngoài –Chỉ có quản trị viên mới có quyền can thiệp vào dữ liệu tin đăng ....
+Yêu cầu về vận hành–Hệ thống có thể chạy được trên nhiều nền tảng như mobile, web, desk top,...
+353.1 Dart 3.1.1 Dart là gì? Dart  là một ngôn ngữ hướng đối tượng được tối ưu hóa cho ứng dụng client để phát triển các ứng dụng nhanh trên mọi nền tảng. Mục tiêu của nó là cung cấp ngôn ngữ lập trình hiệu quả nhất để phát triển đa nền tảng (web, di động, máy tính để bàn) kết hợp với nền tảng thời gian chạy thực thi linh hoạt cho các khuôn khổ ứng dụng từ một mã nguồn duy nhất.
+Dart cũng là nền tảng của Flutter. Dart cung cấp ngôn ngữ và thời gian chạy cung cấp năng lượng cho các ứng dụng Flutter, nhưng Dart cũng hỗ trợ nhiều tác vụ cốt lõi của nhà phát triển như phân tích và kiểm tra mã.
 Phiên bản sử dụng là 2.16.2 (stable) windown x64.
-Lập trình app sử dụng trên nền tảng framework là Flutter sử dụng ngôn ngữ
-Hướng tiếp cận thay thế có thể được chọn là JavaScirpt (React Native). Dart
-được chọn sử dụng trong đồ án này vì Flutter sử dụng Dart và Dart là một ngôn
-ngữ hướng đối tượng tương tự như Java , giúp dễ dàng trong việc bảo trì và nâng
-cấp hệ thống so với JavaScript.
-Flutter [2] là một khung phần mềm mã nguồn mở của Google để xây dựng các
-ứng dụng đa nền tảng(web, di động , windowns,...), từ một mã nguồn duy nhất .Mã
-Flutter biên dịch sang mã máy ARM hoặc Intel cũng như JavaScript, để có hiệu
-suất nhanh trên mọi thiết bị. Flutter hỗ trợ Hot Reload cho phép cập nhật mã và
-xem các thay đổi gần như ngay lập tức mà không mất các trạng thái của ứng dụng.
-Flutter kiểm soát mọi pixel để tạo ra các giao diện thích ứng với bất kì màn hình
+3.1.2 Mục đích sử dụng Lập trình app sử dụng trên nền tảng framework là Flutter sử dụng ngôn ngữ Dart.
+3.1.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Hướng tiếp cận thay thế có thể được chọn là JavaScirpt (React Native). Dart được chọn sử dụng trong đồ án này vì Flutter sử dụng Dart và Dart là một ngôn ngữ hướng đối tượng tương tự như Java , giúp dễ dàng trong việc bảo trì và nâng cấp hệ thống so với JavaScript.
+3.2 Flutter 3.2.1 Flutter là gì? Flutter  là một khung phần mềm mã nguồn mở của Google để xây dựng các ứng dụng đa nền tảng(web, di động , windowns,...), từ một mã nguồn duy nhất .Mã Flutter biên dịch sang mã máy ARM hoặc Intel cũng như JavaScript, để có hiệu suất nhanh trên mọi thiết bị. Flutter hỗ trợ Hot Reload cho phép cập nhật mã và xem các thay đổi gần như ngay lập tức mà không mất các trạng thái của ứng dụng.
+Flutter kiểm soát mọi pixel để tạo ra các giao diện thích ứng với bất kì màn hình nào.
 Phiên bản sử dụng là Flutter 2.10.4 •channel stable .
-Flutter là framework để phát triển ứng dụng app.
-Hướng tiếp cận thay thế có thể được chọn là React Native. Flutter được lựa chọn
-trong đồ án này vì Flutter có nhiều ưu điểm nổi trội hơn React Native như là hiệu
-năng cao và có thể chạy trên nhiều môi trường hơn so với React Native.
-MySQL [3], hệ quản trị cơ sở dữ liệu SQL nguồn mở phổ biến nhất, được phát
-triển, phân phối và hỗ trợ bởi Oracle Corporation. MySQL là một hệ quản trị cơ sở
-dữ liệu quan hệ.Các dữ liệu được lưu trữ trong các bảng riêng biệt thay vì đặt tất cả
-trong một kho lưu trữ lớn.
-Phần mềm MySQL là Mã nguồn mở . Máy chủ cơ sở dữ liệu MySQL rất nhanh,
-đáng tin cậy, có thể mở rộng và dễ sử dụng.MySQL sử dụng SQL là ngôn ngữ để
-truy cập cơ sở dữ liệu. Phiên bản sử dụng là 8.0.
-MySql được sử dụng trong đồ án là hệ quản trị cơ sở dữ liệu cho hệ thống ứng
-Hướng tiếp cận thay thế có thể được chọn là SQL Sever hoặc PostgreSQL.
-MySql được chọn sử dụng trong đồ án này vì MySql dễ cài đặt, dễ sử dụng, tính ổn
-định và tốc độ cao.
-Java [4] là một ngôn ngữ lập trình và nền tảng máy tính được phát hành lần đầu
-tiên bởi Sun Microsystems vào năm 1995.Nó là một ngôn ngữ lập trình hướng đối
-tượng, dựa trên lớp được thiết kế để có càng ít phụ thuộc thực thi càng tốt. Java
-mục đích chung cho phép các nhà phát triển ứng dụng viết một lần, chạy ở mọi nơi
-(WORA, nghĩa là mã Java đã biên dịch có thể chạy trên tất cả các nền tảng hỗ trợ
-Java mà không cần biên dịch lại.
-Phiên bản sử dụng là Java 11
-Java được sử dụng làm ngôn ngữ lập trình chính để xây dựng nên các Restful
-Hướng tiếp cận thay thế có thể được chọn là JavaScirpt. Java được chọn sử dụng
-trong đồ án này bởi tính hướng đối tượng của nó, tốc độ cũng như sự ổn định được
-Spring Boot [5] là một dự án phát triển bởi JAV (ngôn ngữ java) trong hệ sinh
-thái Spring frameworkSpring Boot giúp bạn dễ dàng tạo các Ứng dụng , độc lập
-mà bạn có thể "chỉ cần chạy". Đặc trưng của Spring Boot là tạo ra các ứng dụng
-Spring độc lập , nhúng trực tiếp Tomcat.
-•Cung cấp các thư viện ban đầu được xác định để đơn giản hóa cấu hình xây
-•Tự động định cấu hình thư viện Spring và bên thứ 3 bất cứ khi nào có thể.
-•Cung cấp các tính năng sẵn sàng cho sản xuất như chỉ số, kiểm tra tình trạng
-và cấu hình bên ngoài
-•Hoàn toàn không tạo mã và không yêu cầu cấu hình XML
-Phiên bản sử dụng là 2.6.5
-Spring Boot được dùng để xây dựng các Restful API , nhận, xử lí các yêu cầu từ
-Hướng tiếp cận thay thế có thể được chọn là Express Framework. SpringBoot
-được lựa chọn bởi vì sự đơn gian trong việc cài đặt và triển khai, không mất quá
-nhiều thời gian cho việc cấu hình thay vào đấy, dành thời gian cho các tính năng.
+3.2.2 Mục đích sử dụng Flutter là framework để phát triển ứng dụng app.
+363.2.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Hướng tiếp cận thay thế có thể được chọn là React Native. Flutter được lựa chọn trong đồ án này vì Flutter có nhiều ưu điểm nổi trội hơn React Native như là hiệu năng cao và có thể chạy trên nhiều môi trường hơn so với React Native.
+3.3 My SQL 3.3.1 MySQL là gì? MySQL , hệ quản trị cơ sở dữ liệu SQL nguồn mở phổ biến nhất, được phát triển, phân phối và hỗ trợ bởi Oracle Corporation. MySQL là một hệ quản trị cơ sở dữ liệu quan hệ.Các dữ liệu được lưu trữ trong các bảng riêng biệt thay vì đặt tất cả trong một kho lưu trữ lớn.
+Phần mềm MySQL là Mã nguồn mở . Máy chủ cơ sở dữ liệu MySQL rất nhanh, đáng tin cậy, có thể mở rộng và dễ sử dụng.MySQL sử dụng SQL là ngôn ngữ để truy cập cơ sở dữ liệu. Phiên bản sử dụng là 8.0.
+3.3.2 Mục đích sử dụng MySql được sử dụng trong đồ án là hệ quản trị cơ sở dữ liệu cho hệ thống ứng dụng.
+3.3.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Hướng tiếp cận thay thế có thể được chọn là SQL Sever hoặc PostgreSQL.
+MySql được chọn sử dụng trong đồ án này vì MySql dễ cài đặt, dễ sử dụng, tính ổn định và tốc độ cao.
+3.4 Java 3.4.1 Java là gì? Java  là một ngôn ngữ lập trình và nền tảng máy tính được phát hành lần đầu tiên bởi Sun Microsystems vào năm 1995.Nó là một ngôn ngữ lập trình hướng đối tượng, dựa trên lớp được thiết kế để có càng ít phụ thuộc thực thi càng tốt. Java mục đích chung cho phép các nhà phát triển ứng dụng viết một lần, chạy ở mọi nơi (WORA, nghĩa là mã Java đã biên dịch có thể chạy trên tất cả các nền tảng hỗ trợ Java mà không cần biên dịch lại.
+Phiên bản sử dụng là Java 11 3.4.2 Mục đích sử dụng Java được sử dụng làm ngôn ngữ lập trình chính để xây dựng nên các Restful API.
+373.4.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Hướng tiếp cận thay thế có thể được chọn là JavaScirpt. Java được chọn sử dụng trong đồ án này bởi tính hướng đối tượng của nó, tốc độ cũng như sự ổn định được đảm bảo.
+3.5 Spring Boot 3.5.1 Spring Boot là gì? Spring Boot  là một dự án phát triển bởi JAV (ngôn ngữ java) trong hệ sinh thái Spring frameworkSpring Boot giúp bạn dễ dàng tạo các Ứng dụng , độc lập mà bạn có thể "chỉ cần chạy". Đặc trưng của Spring Boot là tạo ra các ứng dụng Spring độc lập , nhúng trực tiếp Tomcat.
+Cung cấp các thư viện ban đầu được xác định để đơn giản hóa cấu hình xây dựng của bạn.
+Tự động định cấu hình thư viện Spring và bên thứ 3 bất cứ khi nào có thể.
+Cung cấp các tính năng sẵn sàng cho sản xuất như chỉ số, kiểm tra tình trạng và cấu hình bên ngoài Hoàn toàn không tạo mã và không yêu cầu cấu hình XML Phiên bản sử dụng là 2.6.5 3.5.2 Mục đích sử dụng Spring Boot được dùng để xây dựng các Restful API , nhận, xử lí các yêu cầu từ phía App.
+3.5.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Hướng tiếp cận thay thế có thể được chọn là Express Framework. SpringBoot được lựa chọn bởi vì sự đơn gian trong việc cài đặt và triển khai, không mất quá nhiều thời gian cho việc cấu hình thay vào đấy, dành thời gian cho các tính năng.
 Spring Boot hướng tới các tính năng ứng dụng so với Express JS.
-Cloud Storage [6] cho Firebase được xây dựng để lưu trữ và truy vấn nội dung
-do người dùng tạo, chẳng hạn như ảnh hoặc video. Cloud Storage của Firebase là
-một dịch vụ lưu trữ đối tượng mạnh mẽ, đơn giản và tiết kiệm chi phí được xây
-Cloud Storage được sử dụng như là server thứ 3 để lưu ảnh và video.
-Cloud Storage được lựa chọn trong đồ án do chi phí thấp , cũng như sự ổn định
-AWS là là nền tảng dịch vụ đám mây an toàn, mang đến khả năng tính toán, lưu
-Amazon Elastic Beanstalk [7] là một dịch vụ dễ sử dụng để triển khai và mở rộng
-các ứng dụng và dịch vụ web được phát triển bằng Java, .NET, PHP, Node.js,
-Python, Ruby, Go và Docker trên các máy chủ quen thuộc như Apache, Nginx,
-Lập trình viên chỉ cần tải lên file mã nguồn của mình và Elastic Beanstalk tự động
-xử lý việc triển khai, từ cung cấp dung lượng, cân bằng tải, tự động mở rộng quy
-mô đến theo dõi tình trạng ứng dụng. Đồng thời, lập trình viên giữ toàn quyền kiểm
-soát các tài nguyên AWS cung cấp năng lượng cho ứng dụng của mình và có thể
-truy cập các tài nguyên cơ bản bất kỳ lúc nào.
-Không có phí bổ sung cho Elastic Beanstalk - người dùng chỉ trả tiền cho các tài
-nguyên AWS cần thiết để lưu trữ và chạy các ứng dụng của họ.
-Elastic Beanstalk được sử dụng để chạy server Spring Boot của đồ án.
-Hướng tiếp cận thay thế có thể được chọn là Heroku. Elastic Beanstalk hoàn
-toàn miễn phí, phí chỉ được tính dựa trên lưu trữ, xử lí dữ liệu trên hệ thống.
-Amazon Relational Database Service (Amazon RDS) [8] là một dịch vụ được
-quản lý giúp lập trình viên dễ dàng thiết lập, vận hành và thay đổi quy mô cơ sở dữ
-liệu quan hệ trên đám mây. Dịch vụ này cung cấp tính năng hiệu quả về chi phí và
-có thể thay đổi quy mô, trong khi vẫn quản lý được các tác vụ quản trị cơ sở dữ liệu
-tiêu tốn nhiều thời gian, giúp lập trình viên thoải mái tập trung vào các ứng dụng
-và công việc của họ.
-Amazon RDS cho phép lập trình viên truy cập các tính năng của một cơ sở dữ
-liệu quen thuộc như MySQL, MariaDB, Oracle, SQL Server hay PostgreSQL.
-Amazon RDS được sử dụng để lưu trữ , truy vấn dữ liệu của đồ án.
-Amazon RDS ngoài cung cấp các tính năng ổn định, còn cung cấp rất nhiều các
-gói chi phí phù hợp với từng nhu cầu khác nhau của người dùng.
-STOMP [9] là một giao thức con hoạt động trên WebSocket cấp thấp hơn, được
-tích hợp và sử dụng trong Spring Boot.
-STOMP được sử dụng để gửi và nhận các yêu cầu trong thời gian thực, được sử
+3.6 CloudStorage 3.6.1 Firebase là gì? Cloud Storage  cho Firebase được xây dựng để lưu trữ và truy vấn nội dung do người dùng tạo, chẳng hạn như ảnh hoặc video. Cloud Storage của Firebase là một dịch vụ lưu trữ đối tượng mạnh mẽ, đơn giản và tiết kiệm chi phí được xây dựng bởi Google.
+3.6.2 Mục đích sử dụng Cloud Storage được sử dụng như là server thứ 3 để lưu ảnh và video.
+383.6.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Cloud Storage được lựa chọn trong đồ án do chi phí thấp , cũng như sự ổn định cao,...
+3.7 Elastic Beanstalk 3.7.1 AWS là gì? AWS là là nền tảng dịch vụ đám mây an toàn, mang đến khả năng tính toán, lưu trữ storage, database, network.
+Amazon Elastic Beanstalk  là một dịch vụ dễ sử dụng để triển khai và mở rộng các ứng dụng và dịch vụ web được phát triển bằng Java, .NET, PHP, Node.js, Python, Ruby, Go và Docker trên các máy chủ quen thuộc như Apache, Nginx, Passenger và IIS.
+Lập trình viên chỉ cần tải lên file mã nguồn của mình và Elastic Beanstalk tự động xử lý việc triển khai, từ cung cấp dung lượng, cân bằng tải, tự động mở rộng quy mô đến theo dõi tình trạng ứng dụng. Đồng thời, lập trình viên giữ toàn quyền kiểm soát các tài nguyên AWS cung cấp năng lượng cho ứng dụng của mình và có thể truy cập các tài nguyên cơ bản bất kỳ lúc nào.
+Không có phí bổ sung cho Elastic Beanstalk - người dùng chỉ trả tiền cho các tài nguyên AWS cần thiết để lưu trữ và chạy các ứng dụng của họ.
+3.7.2 Mục đích sử dụng Elastic Beanstalk được sử dụng để chạy server Spring Boot của đồ án.
+3.7.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Hướng tiếp cận thay thế có thể được chọn là Heroku. Elastic Beanstalk hoàn toàn miễn phí, phí chỉ được tính dựa trên lưu trữ, xử lí dữ liệu trên hệ thống.
+3.8 Amazon RDS 3.8.1 Amazon RDS là gì? Amazon Relational Database Service (Amazon RDS)  là một dịch vụ được quản lý giúp lập trình viên dễ dàng thiết lập, vận hành và thay đổi quy mô cơ sở dữ liệu quan hệ trên đám mây. Dịch vụ này cung cấp tính năng hiệu quả về chi phí và có thể thay đổi quy mô, trong khi vẫn quản lý được các tác vụ quản trị cơ sở dữ liệu tiêu tốn nhiều thời gian, giúp lập trình viên thoải mái tập trung vào các ứng dụng và công việc của họ.
+Amazon RDS cho phép lập trình viên truy cập các tính năng của một cơ sở dữ liệu quen thuộc như MySQL, MariaDB, Oracle, SQL Server hay PostgreSQL.
+393.8.2 Mục đích sử dụng Amazon RDS được sử dụng để lưu trữ , truy vấn dữ liệu của đồ án.
+3.8.3 Hướng tiếp cận thay thế và giải thích sự lựa chọn Amazon RDS ngoài cung cấp các tính năng ổn định, còn cung cấp rất nhiều các gói chi phí phù hợp với từng nhu cầu khác nhau của người dùng.
+3.9 STOMP 3.9.1 STOMP là gì? STOMP  là một giao thức con hoạt động trên WebSocket cấp thấp hơn, được tích hợp và sử dụng trong Spring Boot.
+3.9.2 Mục đích sử dụng STOMP được sử dụng để gửi và nhận các yêu cầu trong thời gian thực, được sử dụng trong Chat.
 Phiên bản sử dụng là 5.2.2.
-a, Mô tả kiến trúc tổng quan
-Trong đồ án này, em sử dụng kiến trúc ba lớp MVC.
-•View : Phần này có nhiệm vụ tương tác với người dùng, ghi nhận và phản hồi
-các hành vi của người dùng, gửi các yêu cầu đến Controller.
-•Controller: Là bộ phận xử lí yêu cầu người dùng thao tác trên ứng dụng thông
-•Model: Là bộ phận thực hiện các chức năng liên quan đến cơ sở dữ liệu như
-đọc, ghi ,sửa , xoá.
-b, Mô tả kiến trúc ứng dụng
-•View (App) : Phần này có nhiệm vụ hiển thị thông tin, nhận các tương tác của
-người dùng và gửi đến Controller.
-•Controller (App): Là bộ phận xử lí yêu cầu người dùng thao tác trên ứng dụng
-thông qua thành phần View, xử lí dữ liệu nhận được từ Repository va hiển thị
-•Repository(App) : Là bộ phận thực hiện các chức năng kết nối với server thông
-•Service (Server) : Phần này có nhiệm vụ xử lí logic, các yêu cầu, từ phía ứng
-•Controller (Server): Là bộ phận nhận các yêu cầu từ phía ứng dụng gửi lên và
-•Repository(Server) : Là bộ phận thực hiện các chức năng kết nối với database,
-thực hiện truy vấn dữ liệu.
-
-Thông tin màn hình mà ứng dụng hướng tới : màn hình điện thoại di động
-•Độ phân giải màn hình : 1440x2560:560 dpi.
-•Kích thước màn hình : 5,5 inch.
-•Font chữ : Sarabun Google Fonts.
-a, Một số hình ảnh minh hoạ thiết kế giao diện
-
-
-
-
-
-
-a, Thiết kế đánh giá tin đăng
-b, Thiết kế thay đổi địa chỉ
-c, Thiết kế đăng nhập
-d, Thiết kế đăng kí
-e, Thiết kế đăng bài
-f, Thiết kế gia hạn tin đăng
-g, Thiết kế tìm kiếm tin đăng
-h, Thiết kế xem chi tiết tin đăng
-i, Thiết kế báo cáo tin đăng
-j, Thiết kế theo dõi người dùng
-a, Sơ đồ thực thể liên kết
-Do việc thể hiện các thuộc tính vào biểu đồ thực thể liên kết này sẽ làm cho khó
-theo dõi và không đủ diện tích để có thể thể hiện được hết. Vì vậy, các thuộc tính
-của các thực thể sẽ được em trình bày chi tiết trong sơ đồ ER Diagrams, còn lại ở
-sơ đồ này , em chỉ trình bày các thực thể và các mối quan hệ giữa chúng.
-b, Giao diện màn hình đăng ký
-c, Giao diện màn hình thêm tin đăng
-
-d, Giao diện màn hình thêm địa chỉ
-e, Giao diện màn hình xem thông tin người khác
-f, Giao diện màn hình chỉnh sửa thông tin cá nhân
-g, Giao diện màn hình nhắn tin
-h, Giao diện màn hình phòng chat
-i, Giao diện màn hình chi tiết bài đăng
-j, Giao diện màn hình lọc tin đăng
-k, Giao diện màn hình tìm kiếm tin đăng
-l, Giao diện màn hình báo cáo tin đăng
-m, Giao diện màn hình màn Home
-n, Giao diện màn hình danh sách địa chỉ
-o, Giao diện màn hình danh sách bạn bè
-p, Giao diện màn hình danh sách thông báo
-q, Giao diện màn hình quản lí bài đăng
-a, Lựa chọn mô hình
-AWS Elastic Beanstalk là một dịch vụ dễ sử dụng để triển khai và mở rộng các
-ứng dụng web và dịch vụ được phát triển bằng Java, .NET, PHP, Node.js, Python,
-Ruby, Go và Docker trên những máy chủ quen thuộc như Apache, Nginx, Passenger
-Việc cần làm chỉ là tải mã của bạn lên và Elastic Beanstalk sẽ tự động xử lý
-việc triển khai, từ cung cấp công suất, cân bằng tải, tự động điều chỉnh quy mô đến
-giám sát trạng thái ứng dụng. Đồng thời, bạn vẫn có toàn quyền kiểm những tài
-nguyên AWS vận hành ứng dụng của bạn và có thể truy cập các tài nguyên quan
-trọng vào bất kỳ lúc nào.
-Không tính thêm phí khi sử dụng Elastic Beanstalk – bạn chỉ phải trả phí cho
-những tài nguyên AWS mà bạn cần để lưu trữ và chạy ứng dụng của mình.
-RDS là viết tắt của Amazon Relational Database Service là một web service cho
-phép bạn dễ dàng setup thao tác, scale cơ sở dữ liệu quan hệ trên AWS Cloud.
-b, Cách thức triển khai
-Việc đâu tiền cần làm là : Build file Jar của Source Code Spring Boot
-Để làm được việc này, ta cần chạy lệnh mvn clean install. Sau khi chạy một thời
-gian thì hệ thống sẽ tạo ra file Jar ở thư mục target như hình ảnh minh hoạ.
-Tiếp theo , em sẽ truy cập vào AWS, chọn location ở Singapore để có thể tối ưu
-tốc độ của các request. Truy cập vào RDS và khởi tạo database.
-Sau đấy, cài đặt các thông số và phiên bản cho RDS.
-Tiếp theo, ta cài đặt các thông tin admin của database.
-Cuối cùng, ta cần phải cài đặt địa chỉ ip ở mục security cho database.
-Sau đấy, em chọn Elastic Beanstalk của AWS để khởi tạo môi trường cho ứng
-dụng, cần phải nhập thông tin ứng dụng, cơ sở dữ liệu và upload file jar của đồ án
-Kêt quả cần đạt được khi hệ thống thống báo Health là OK có nghĩa là đã deploy
-thành công.Từ các phiên bản sau, khi muốn update một version, em chỉ cần build
-file Jar và upload file lên môi trường .
-a, Cách bước triển khai
-Đầu tiên, em sẽ tạo ra file apk của đồ án bằng cách chạy lệnh fluttter build apk.
-File apk sinh ra ở thư mục build của đồ án.
-Do hệ thống đang trong quá trình phát triển và thử nghiệm , nên hiện tại em
-chưa đưa lên trên CH Play.
-Để người mua và người bán có thể trao đổi thông tin về tin đăng nhiều hơn,
-ngoài các hình thức như gọi điện , SMS hay gửi thông báo mua sản phẩm thì nhắn
-tin là một hình thức không thể thiếu. Chức năng nhắn tin đòi hỏi thời gian phản hồi
-của hệ thống nhanh, chính xác, ổn định. Đối với các loại tin nhắn dạng video hay
-ảnh thì cũng đòi hỏi các yêu cầu tương tự như trên. Vì vậy, trong đồ án, em đã sử
-dụng công nghệ Web Socket cho chức năng này.
-Socket IO là một thư viện rất nổi tiếng để xử lí các trường hợp xảy ra trong thời
-gian thực. Tuy nhiên, do lựa chọn của em, Server được viết trên framework Spring
-Boot nên không thể sử dụng thư viện này.Spring Boot đã cung cấp một thư viện
-khác có chức năng tương tự như Socket IO đó là STOMP. Stream Text-Oriented
-Messaging Protocol (STOMP) [9] là một giao thức trực tuyến cho phép tương tác
-giữa máy khách và máy chủ. STOMP định nghĩa một cách thức cho client giao
-tiếp sử dụng ngữ nghĩa nhắn tin. Ngữ nghĩa này được ánh xạ vào các Web Socket
-b, stomp dart client là gì
-Stomp dart client [10] là thư viện này cung cấp một triển khai cho một ứng
-dụng khách STOMP kết nối với một máy chủ từ xa. Nó sẽ hoạt động cho cả dart và
-c, Mô tả hoạt động luồng chức năng
-•Ở app người gửi, đầu tiên, khi khởi tạo hàm Main của app , sẽ khởi tạo Socket
-và Stream Chat Message. Trong đó, Stream Chat Mesage là một stream của
-Flutter, có nhiệm vụ truyền dữ liệu nhận được sang Chat Controller của màn
-hình Chat. Dưới đây là ảnh minh hoạ về khởi tạo Socket và StreamController
-•Khi người dùng nhập tin nhắn và ấn gửi,App sẽ kiểm tra tính hợp lệ của tin
-nhắn, với mỗi tin nhắn, em đã quy định chỉ mang một dạng text, video, hoặc
-ảnh,.. Mỗi tin nhắn chỉ có một ảnh hoặc một video duy nhất.
-•Ở Server, Chat Controller sẽ nhận request từ App và chuyển tới ChatService,
-ChatService sẽ gọi hàm save của ChatRepository để lưu vào database và đồng
-thời trả về dữ liệu tin nhắn trên Socket.
-•Ở app của người nhận, do các tin nhắn đều được gửi lên Socket , vì vậy, ở trên
-Socket này , còn có những tin nhắn không cùng Room Chat của người gửi và
-người nhận. Vì thế, khi lắng nghe ở Socket , em đã lọc theo Room Id của tin
-nhắn, để tìm được tin nhắn chính xác.Hàm onSocket được khởi tạo ngay đầu
-tiên khi người dùng vào màn hình Chat.Sau khi tin nhắn được thêm vào danh
-sách tin nhắn, các widget sẽ được tự build và hiển thị nội dung tin nhắn.
-•Đối với trường hợp, tin nhắn là các định dạng Media như ảnh hay video,... thì
-các File này sẽ được kiểm tra về dung lượng sau đấy đưa lên Firebase Storage
-để lưu trữ. Firebase sẽ trả về URL của các file này. Sau đấy , thì em sẽ xem
-các url này như tin nhắn dạng text để xử lí.
-Việc lập trình thành công chức năng Chat giúp cho người mua và người bán có
-thêm một kênh thông tin liên lạc, trao đổi về sản phẩm một cách nhanh nhất và
-hoàn toàn miễn phí so với gọi điện hoặc nhắn tin SMS. Chức năng này cũng là một
-phần quan trọng về mục đích của ứng dụng được tạo ra đó là kết nối nhu cầu giữa
-người mua và người bán.
-Qua kiểm thử chức năng, chức năng hoạt động tốt với thời gian nhận được tin
-nhắn với tốc độ mạng cao là không quá 3 giây.
-Trong suốt quá trình thực hiện đồ án tốt nghiệp, em đã đạt được các yêu cầu về
-chức năng và phi chức năng khi khảo sát đồ án đặt ra.
-Những điểm mà em còn chưa làm được trong đồ án này là
-•Chức năng duyệt bài đăng chưa được xây dựng. Khi người dùng đăng bài, cần
-có người hoặc hệ thống duyệt bài đăng, để tránh các bài đăng không đúng sự
-thật về sản phẩm hay các bài đăng có nội dung phản cảm , trái với pháp luật,
-hay thuần phong mỹ tục.
-•Chức năng liên quan đến thanh toán khi đăng bài. App sử dụng một loại điểm
-để có thể đăng bài hoặc sử dụng một số chức năng khác.
-•Chức năng xác thức tài khoản sử dụng OTP.
-•Chức năng thông báo Push Notification.
-•Hoàn thiện ứng dụng để có thể phát hành trên CH Play.
-Tổng hợp những bài học kinh nghiệm mà em rút ra được
-•Quản lí cấu trúc phần mềm, quản lí code, phân chia module, tái sử dụng mã
-nguồn. Bằng cách áp dụng những kiến thức đã được học ở môn mẫu thiết kế
-•Kiến thức về BackEnd, một hệ thống Backend hoạt động như thế nào,thiết kế,
-lập trình một API .
-•Kỹ năng, tư duy thiết kế hướng đối tượng trong phát triển phần mềm.
-•Kỹ năng quản lí thời gian, sắp xếp và phân chia công việc.
-Trong phần này, sinh viên trình bày định hướng công việc trong tương lai để
-hoàn thiện sản phẩm hoặc nghiên cứu của mình.
-Trước tiên, sinh viên trình bày các công việc cần thiết để hoàn thiện các chức
-năng/nhiệm vụ đã làm. Sau đó sinh viên phân tích các hướng đi mới cho phép cải
-thiện và nâng cấp các chức năng/nhiệm vụ đã làm.
-Trong tương lai, để hoàn thiện sản phẩm của mình, em cần đảm bảo để App và
-hệ thống hoạt động ổn định
-•Cần phải xây dựng trang Admin để có thể thực hiện chức năng duyệt bài.
-•Nghiên cứu , tích hợp chức năng thanh toán, nạp điểm cho tài khoản.
-•Xây dựng hệ thống xác thực số điện thoại bằng mã OTP.
-•Hoàn thiện để có thể đưa ứng dụng phát hành trên CH Play.
+404.1 Thiết kế kiến trúc 4.1.1 Lựa chọn kiến trúc phần mềm a, Mô tả kiến trúc tổng quan Trong đồ án này, em sử dụng kiến trúc ba lớp MVC.
+Hình 4.1: Biểu đồ mô hình MVC View : Phần này có nhiệm vụ tương tác với người dùng, ghi nhận và phản hồi các hành vi của người dùng, gửi các yêu cầu đến Controller.
+Controller: Là bộ phận xử lí yêu cầu người dùng thao tác trên ứng dụng thông qua thành phần View.
+Model: Là bộ phận thực hiện các chức năng liên quan đến cơ sở dữ liệu như đọc, ghi ,sửa , xoá.
+41b, Mô tả kiến trúc ứng dụng Hình 4.2: Biểu đồ mô hình kiến trúc ứng dụng View (App) : Phần này có nhiệm vụ hiển thị thông tin, nhận các tương tác của người dùng và gửi đến Controller.
+Controller (App): Là bộ phận xử lí yêu cầu người dùng thao tác trên ứng dụng thông qua thành phần View, xử lí dữ liệu nhận được từ Repository va hiển thị chúng.
+Repository(App) : Là bộ phận thực hiện các chức năng kết nối với server thông qua các Restful API.
+Service (Server) : Phần này có nhiệm vụ xử lí logic, các yêu cầu, từ phía ứng dụng.
+Controller (Server): Là bộ phận nhận các yêu cầu từ phía ứng dụng gửi lên và chuyển cho Service.
+Repository(Server) : Là bộ phận thực hiện các chức năng kết nối với database, thực hiện truy vấn dữ liệu.
+424.1.2 Thiết kế tổng quan Hình 4.3: Biểu đồ phụ thuộc gói tổng quan 4.1.3 Thiết kế chi tiết gói Hình 4.4: Biểu đồ chi tiết gói chi tiết nhắn tin 43Hình 4.5: Biểu đồ chi tiết gói chi tiết tin đăng 4.2 Thiết kế chi tiết 4.2.1 Thiết kế giao diện Thông tin màn hình mà ứng dụng hướng tới : màn hình điện thoại di động Độ phân giải màn hình : 1440x2560:560 dpi.
+Kích thước màn hình : 5,5 inch.
+Font chữ : Sarabun Google Fonts.
+44a, Một số hình ảnh minh hoạ thiết kế giao diện Hình 4.6: Giao diện màn hình đăng nhập 45Hình 4.7: Giao diện màn hình đăng ký 1 Hình 4.8: Giao diện màn hình đăng ký 2 46Hình 4.9: Giao diện màn hình đăng ký 3 Hình 4.10: Giao diện màn hình đăng ký 4 47Hình 4.11: Giao diện màn hình Home Hình 4.12: Giao diện màn hình Home (tiếp theo) 48Hình 4.13: Giao diện màn hình thêm địa chỉ Hình 4.14: Giao diện màn hình chọn danh mục chính 49Hình 4.15: Giao diện màn hình chọn danh mục phụ Hình 4.16: Giao diện màn hình thông tin tin đăng 50Hình 4.17: Giao diện màn hình thông tin tin đăng Hình 4.18: Giao diện màn hình danh sách phòng chat 51Hình 4.19: Giao diện màn hình nhắn tin 4.2.2 Thiết kế lớp a, Thiết kế đánh giá tin đăng Hình 4.20: Biểu đồ hoạt động đánh giá tin đăng 52Hình 4.21: Biểu đồ lớp đánh giá tin đăng b, Thiết kế thay đổi địa chỉ Hình 4.22: Biểu đồ hoạt động thay đổi địa chỉ 53Hình 4.23: Biểu đồ lớp thay đổi địa chỉ c, Thiết kế đăng nhập Hình 4.24: Biểu đồ hoạt động đăng nhập 54Hình 4.25: Biểu đồ lớp đăng nhập d, Thiết kế đăng kí Hình 4.26: Biểu đồ hoạt động đăng kí 55Hình 4.27: Biểu đồ lớp đăng kí e, Thiết kế đăng bài Hình 4.28: Biểu đồ hoạt động đăng bài 56Hình 4.29: Biểu đồ lớp đăng bài f, Thiết kế gia hạn tin đăng Hình 4.30: Biểu đồ hoạt động gia hạn tin đăng 57Hình 4.31: Biểu đồ lớp gia hạn tin đăng g, Thiết kế tìm kiếm tin đăng Hình 4.32: Biểu đồ hoạt động tìm kiếm tin đăng 58Hình 4.33: Biểu đồ lớp tìm kiếm tin đăng h, Thiết kế xem chi tiết tin đăng Hình 4.34: Biểu đồ hoạt động xem chi tiết tin đăng 59Hình 4.35: Biểu đồ lớp xem chi tiết tin đăng i, Thiết kế báo cáo tin đăng Hình 4.36: Biểu đồ hoạt động báo cáo tin đăng 60Hình 4.37: Biểu đồ lớp báo cáo tin đăng j, Thiết kế theo dõi người dùng Hình 4.38: Biểu đồ theo dõi người dùng 61Hình 4.39: Biểu đồ theo dõi người dùng 4.2.3 Thiết kế cơ sở dữ liệu a, Sơ đồ thực thể liên kết Do việc thể hiện các thuộc tính vào biểu đồ thực thể liên kết này sẽ làm cho khó theo dõi và không đủ diện tích để có thể thể hiện được hết. Vì vậy, các thuộc tính của các thực thể sẽ được em trình bày chi tiết trong sơ đồ ER Diagrams, còn lại ở sơ đồ này , em chỉ trình bày các thực thể và các mối quan hệ giữa chúng.
+Hình 4.40: Sơ đồ thực thể liên kết 62b, Sơ đồ ER Hình 4.41: Sơ đồ ER 4.2.4 Chi tiết bảng a, Bảng “Address” Address STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID địa chỉ 2 user_id(FK) bignit(20) ÌD user 3 district_id(FK) int(11) ID quận , huyện 4 province_id(FK) int(11) ID tỉnh, thành 5 ward_id(FK) int(11) ID xã phường Bảng 4.1: Bảng “users” 63b, Bảng “Post” Post STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID tin đăng 2 category_main_id(FK) bignit(20) ÌD danh mục chính 3 sub_category_id(FK) int(11) ID danh mục phụ 4 address_id(FK) int(11) ID địa chỉ 5 user_id(FK) bigint(20) ID người dùng 6 condition_of_use Varchar(255) Điều kiện sử dụng 7 content Varchar(800) Nội dung tin đăng 8 create_time Varchar(255) thời gian tạo tin 9 edit_time Varchar(255) Thời gian sửa bài 10 form_use Varchar(255) Chât lượng sản phẩm 11 liked Int(11) Số lượt like 12 money Int(11) Giá tiền sản phẩm 13 title Varchar(255) Tiêu đề 14 watch Int(11) Lượt xem sản phẩm 15 priority Bit(1) Độ ưu tiên 16 address Varchar(255) Địa chỉ 17 is_expried Bit(1) Có hết hạn không 18 rating Double Đánh giá tin đăng 19 state Int(11) Trạng thái tin 20 text_rating Varchar(255) Đánh giá tin 21 user_id_sell Bigint(20) Id user mua Bảng 4.2: Bảng “Post” 64c, Bảng “User” User STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID User 2 address Varchar(255) Địa chỉ 3 avatar Varchar(255) Địa chỉ avatar 4 birth_day Varchar(255) Ngày sinh 5 city Varchar(255) Thành phố 6 country Varchar(255) Quốc gia 7 created Varchar(255) Thời gian tạo tài khoản 8 description Varchar(255) Mô tả 9 first_name Varchar(255) Họ 10 is_blocked Bit(1) khoá tài khoản 11 last_name Varchar(255) Tên 12 online Bit(1) online 13 uuid Varchar(255) uuid người dùng 14 phone_number Varchar(255) Số điện thoại 15 sex Int(11) Giới tính 16 follower Int(11) số ngườiđược theo dõi 17 following_user Int(11) Số người đang theo dõi 18 rating Double đánh giá 19 email Varchar(255) Email 20 point Int(11) Số điểm người dùng 21 selected_address_id Int(11) id địa chỉ chọn Bảng 4.3: Bảng “users” d, Bảng “Province” Province STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID Tỉnh, Thành 2 _name Varchar(50) Địa chỉ 3 _code Varchar(20) Mã code Bảng 4.4: Bảng “Province” 65e, Bảng “District” District STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID Quận, Huyện 2 _name Varchar(100) Địa chỉ 3 _prefix Varchar(20) Tiền tố 4 _province_id Int(10) Id Tỉnh Bảng 4.5: Bảng “District” f, Bảng “Ward” Ward STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID Xã, phường 2 _name Varchar(100) Địa chỉ 3 _prefix Varchar(20) Tiền tố 4 _province_id Int(10) Id Tỉnh 5 _district_id Int(10) Id huyện Bảng 4.6: Bảng “Ward” g, Bảng “BlackListToken” BlackListToken STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) BigInt(20) ID 2 create_at DateTime Thời gian tạo token 3 token Varchar(255) Token Bảng 4.7: Bảng “BlackListToken” h, Bảng “CategoryMain” CategoryMain STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID danh mục chính 2 _name Varchar(100) Tên danh mục Bảng 4.8: Bảng “CategoryMain” 66i, Bảng “SubCategory” SubCategory STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) int(11) ID Xã, phường 2 _name Varchar(100) Địa chỉ 3 _main_id Varchar(20) Id danh mục chính Bảng 4.9: Bảng “SubCategory” j, Bảng “Media” Media STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID Media 2 post_id(FK) Bigint(20) Id tin đăng 3 chat_mesage_id(FK) Bigint(20) Id tin nhắn 4 file_donwload_url Varchar(1000) Link url 5 file_name Varchar(255) tên file 6 file_type Varchar(255) loại file Bảng 4.10: Bảng “Media” k, Bảng “Likes” Likes STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 user_id(PK) Bigint(20) ID User 2 post_id(PK) Bigint(20) Id tin đăng Bảng 4.11: Bảng “Likes” l, Bảng “Purchase” Purchase STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 user_id(PK) Bigint(20) ID User 2 post_id(PK) Bigint(20) Id tin đăng Bảng 4.12: Bảng “Purchase” 67m, Bảng “Watches” Watches STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 user_id(PK) Bigint(20) ID User 2 post_id(PK) Bigint(20) Id tin đăng Bảng 4.13: Bảng “Watches” n, Bảng “ReportPost” ReportPost STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID tin báo cáo 2 details Varchar(1000) Nội dung báo cáo 3 Subject Varchar(255) Tiêu đề 4 post_id(FK) Bigint(20) Id tin đăng 4 user_id(FK) Bigint(20) Id user Bảng 4.14: Bảng “ReportPost” o, Bảng “Rating” Rating STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID rating 2 rating Double Đánh giá 3 text_rating Varchar(255) Đánh giá dạng text 4 post_id(FK) Bigint(20) Id tin đăng 4 user_id(FK) Bigint(20) Id user Bảng 4.15: Bảng “Rating” 68p, Bảng “Notification” Notification STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID Thông báo 2 avatar_user Varchar(255) Link avatar user 3 date_time Varchar(255) Thời gian thông báo 4 name Varchar(255) Tên người thông báo 5 tittle_post Varchar(255) Tiêu đề bài đăng 6 type_notification Int(11) Loại thông báo 7 is_reading Bit(1) Kiểm tra đọc thông báo 8 is_user_create Bigint(20) Người tạo thông báo 9 post_id(FK) Bigint(20) Id tin đăng Bảng 4.16: Bảng “Notification” q, Bảng “ChatRoom” ChatRoom STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID ChatRoom 2 create_time Varchar(255) Thời gian tạo room 3 post_id Bigint(20) Id tin đăng Bảng 4.17: Bảng “ChatRoom” r, Bảng “ChatRooms” ChatRooms STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 chatroom_id(PK) Bigint(20) ID ChatRoom 2 user_id(PK) Bigint(20) Id user Bảng 4.18: Bảng “ChatRooms” 69s, Bảng “ChatMessage” ChatMessage STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID tin nhắn 2 date_time Varchar(255) Thời gian nhắn tin 3 message Varchar(255) nội dung tin nhắn 4 is_reading Bit(1) Tin đã được đọc chưa 5 type Varchar(255) loại tin 6 chatroom_id Bigint(20) Id chat room 7 user_id Bigint(20) Id user Bảng 4.19: Bảng “ChatMessage” t, Bảng “tblfriend” tblfriend STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 friend_id(PK) Bigint(20) ID bạn bè 2 user_id(PK) Bigint(20) Id user Bảng 4.20: Bảng “tblfriend” u, Bảng “NotificationUser” NotificationUser STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 notification_id(PK) Bigint(20) ID Thông báo 2 user_id(PK) Bigint(20) Id user Bảng 4.21: Bảng “NotificationUser” v, Bảng “SearchPost” SearchPost STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID tìm kiếm tin 2 user_id(FK) Bigint(20) Id user 3 search_text Varchar(255) nội dung tìm kiếm Bảng 4.22: Bảng “SearchPost” 70w, Bảng “Login” Login STT Tên thuộc tính Kiểu dữ liệu Mô tả 1 id(PK) Bigint(20) ID login 2 user_id Bigint(20) id user 3 password Varchar(255) Mật khẩu mã hoá 4 token Varchar(255) Token 5 phone_number Bigint(20) Số điện thoại Bảng 4.23: Bảng “Login” 714.3 Xây dựng ứng dụng 4.3.1 Thư viện và công cụ sử dụng Mục đích Công cụ Địa chỉ URL IDE lập trình App Android Studio 2021.2.1 oid.com/studio/ IDE Server IntelliJ IDEACommu nity Edition 2021.3.3 com/idea/ Mobile Frontend FrameworkFlutter 2.10.4 channel stable Mobile FrontendLanguageDart 2.6.12(sta ble) Server Restful API Spring boot 2.6.5 ojects/spring-boot Server Restful API LanguageJava 11  /java/technologies/jav ase/jdk11-archive-do wnloads.html/GUI for Database MySQL Work bench 8.0.29 downloads/workbench/ Managed relational database serviceAmazone RDS  1.console.aws.amazo n.com/rds/home?regio n=ap-southeast-1#Get tingStarted:
+API Development PostMan  m/ Online Server Amazon Elastic Beanstalk 1.console.aws.amazo n.com/elasticbeansta lk/home?region=ap-sou theast-1#/welcome/ Bảng 4.24: Danh sách thư viện và công cụ sử dụng 4.3.2 Kết quả đạt được Hệ thống phần mềm đã được thiết kế đáp ứng các yêu cầu chức năng và phi chức năng đã được đề cập ở chương 2.
+Các mã nguồn đều được triển khai ổn định thông qua dịch vụ của AWS .
+72Thống kê Thông tin Giá trị App Số dòng code 18500 App Số lớp 178 App Số gói 69 App Dung lượng toàn bộ mã nguồn24MB Server API Số dòng code 7000 Server API Số lớp 125 Server API Số gói 25 Server API Dung lượng toàn bộ mã nguồn45MB Bảng 4.25: Thống kê thông tin về ứng dụng 4.3.3 Minh họa các chức năng chính a, Giao diện màn hình đăng nhập Hình 4.42: Giao diện màn hình đăng nhập 73b, Giao diện màn hình đăng ký Hình 4.43: Giao diện màn hình đăng ký tên Hình 4.44: Giao diện màn hình đăng ký thông tin tài khoản 74Hình 4.45: Giao diện màn hình đăng ký giới tính c, Giao diện màn hình thêm tin đăng Hình 4.46: Giao diện màn hình chọn danh mục chính 75Hình 4.47: Giao diện màn hình chọn danh mục phụ Hình 4.48: Giao diện màn hình thêm thông tin bài đăng 76Hình 4.49: Giao diện màn hình thêm thông tin bài đăng d, Giao diện màn hình thêm địa chỉ Hình 4.50: Giao diện màn hình thêm địa chỉ 77e, Giao diện màn hình xem thông tin người khác Hình 4.51: Giao diện màn hình xem thông tin người khác f, Giao diện màn hình chỉnh sửa thông tin cá nhân Hình 4.52: Giao diện màn hình chỉnh sửa thông tin cá nhân 78Hình 4.53: Giao diện màn hình chỉnh sửa thông tin email g, Giao diện màn hình nhắn tin Hình 4.54: Giao diện màn hình nhắn tin 79h, Giao diện màn hình phòng chat Hình 4.55: Giao diện màn hình phòng chat i, Giao diện màn hình chi tiết bài đăng Hình 4.56: Giao diện màn hình chi tiết bài đăng 80Hình 4.57: Giao diện màn hình chi tiết bài đăng j, Giao diện màn hình lọc tin đăng Hình 4.58: Giao diện màn hình lọc tin đăng 81k, Giao diện màn hình tìm kiếm tin đăng Hình 4.59: Giao diện màn hình tìm kiếm tin đăng l, Giao diện màn hình báo cáo tin đăng Hình 4.60: Giao diện màn hình báo cáo tin đăng 82m, Giao diện màn hình màn Home Hình 4.61: Giao diện màn hình màn hình Home Hình 4.62: Giao diện màn hình màn hình Home 83n, Giao diện màn hình danh sách địa chỉ Hình 4.63: Giao diện màn hình danh sách địa chỉ o, Giao diện màn hình danh sách bạn bè Hình 4.64: Giao diện màn hình danh sách bạn bè 84p, Giao diện màn hình danh sách thông báo Hình 4.65: Giao diện màn hình danh sách thông báo q, Giao diện màn hình quản lí bài đăng Hình 4.66: Giao diện màn hình quản lí bài đăng 854.4 Triển khai 4.4.1 Mô hình triển khai server api a, Lựa chọn mô hình AWS Elastic Beanstalk là một dịch vụ dễ sử dụng để triển khai và mở rộng các ứng dụng web và dịch vụ được phát triển bằng Java, .NET, PHP, Node.js, Python, Ruby, Go và Docker trên những máy chủ quen thuộc như Apache, Nginx, Passenger và IIS.
+Việc cần làm chỉ là tải mã của bạn lên và Elastic Beanstalk sẽ tự động xử lý việc triển khai, từ cung cấp công suất, cân bằng tải, tự động điều chỉnh quy mô đến giám sát trạng thái ứng dụng. Đồng thời, bạn vẫn có toàn quyền kiểm những tài nguyên AWS vận hành ứng dụng của bạn và có thể truy cập các tài nguyên quan trọng vào bất kỳ lúc nào.
+Không tính thêm phí khi sử dụng Elastic Beanstalk – bạn chỉ phải trả phí cho những tài nguyên AWS mà bạn cần để lưu trữ và chạy ứng dụng của mình.
+RDS là viết tắt của Amazon Relational Database Service là một web service cho phép bạn dễ dàng setup thao tác, scale cơ sở dữ liệu quan hệ trên AWS Cloud.
+b, Cách thức triển khai Việc đâu tiền cần làm là : Build file Jar của Source Code Spring Boot Để làm được việc này, ta cần chạy lệnh mvn clean install. Sau khi chạy một thời gian thì hệ thống sẽ tạo ra file Jar ở thư mục target như hình ảnh minh hoạ.
+Hình 4.67: Minh hoạ build file Jar đồ án 86Hình 4.68: Minh hoạ vị trí file Jar Tiếp theo , em sẽ truy cập vào AWS, chọn location ở Singapore để có thể tối ưu tốc độ của các request. Truy cập vào RDS và khởi tạo database.
+Hình 4.69: Minh hoạ khởi tạo database Sau đấy, cài đặt các thông số và phiên bản cho RDS.
+87Hình 4.70: Minh hoạ cài đặt thông số RDS Tiếp theo, ta cài đặt các thông tin admin của database.
+Hình 4.71: Minh hoạ thêm thông tin Admin Cuối cùng, ta cần phải cài đặt địa chỉ ip ở mục security cho database.
+88Hình 4.72: Minh hoạ cài đặt địa chỉ ip Sau đấy, em chọn Elastic Beanstalk của AWS để khởi tạo môi trường cho ứng dụng, cần phải nhập thông tin ứng dụng, cơ sở dữ liệu và upload file jar của đồ án lên hệ thống.
+Hình 4.73: Minh hoạ cài đặt môi trường cho ứng dụng Kêt quả cần đạt được khi hệ thống thống báo Health là OK có nghĩa là đã deploy thành công.Từ các phiên bản sau, khi muốn update một version, em chỉ cần build file Jar và upload file lên môi trường .
+Hình 4.74: Minh hoạ cài đặt môi trường cho ứng dụng 894.4.2 Mô hình triển khai app a, Cách bước triển khai Đầu tiên, em sẽ tạo ra file apk của đồ án bằng cách chạy lệnh fluttter build apk.
+Hình 4.75: Minh hoạ tạo ra file apk cho đồ án File apk sinh ra ở thư mục build của đồ án.
+Hình 4.76: Minh hoạ vị trí file apk của đồ án Do hệ thống đang trong quá trình phát triển và thử nghiệm , nên hiện tại em chưa đưa lên trên CH Play.
+905.1 Chức năng nhắn tin thời gian thực 5.1.1 Vấn đề Để người mua và người bán có thể trao đổi thông tin về tin đăng nhiều hơn, ngoài các hình thức như gọi điện , SMS hay gửi thông báo mua sản phẩm thì nhắn tin là một hình thức không thể thiếu. Chức năng nhắn tin đòi hỏi thời gian phản hồi của hệ thống nhanh, chính xác, ổn định. Đối với các loại tin nhắn dạng video hay ảnh thì cũng đòi hỏi các yêu cầu tương tự như trên. Vì vậy, trong đồ án, em đã sử dụng công nghệ Web Socket cho chức năng này.
+5.1.2 Giải pháp a, STOMP là gì? Socket IO là một thư viện rất nổi tiếng để xử lí các trường hợp xảy ra trong thời gian thực. Tuy nhiên, do lựa chọn của em, Server được viết trên framework Spring Boot nên không thể sử dụng thư viện này.Spring Boot đã cung cấp một thư viện khác có chức năng tương tự như Socket IO đó là STOMP. Stream Text-Oriented Messaging Protocol (STOMP)  là một giao thức trực tuyến cho phép tương tác giữa máy khách và máy chủ. STOMP định nghĩa một cách thức cho client giao tiếp sử dụng ngữ nghĩa nhắn tin. Ngữ nghĩa này được ánh xạ vào các Web Socket Frames.
+b, stomp dart client là gì Stomp dart client  là thư viện này cung cấp một triển khai cho một ứng dụng khách STOMP kết nối với một máy chủ từ xa. Nó sẽ hoạt động cho cả dart và flutter.
+91c, Mô tả hoạt động luồng chức năng Hình 5.1: Mô tả luồn hoạt động chức năng Ở app người gửi, đầu tiên, khi khởi tạo hàm Main của app , sẽ khởi tạo Socket và Stream Chat Message. Trong đó, Stream Chat Mesage là một stream của Flutter, có nhiệm vụ truyền dữ liệu nhận được sang Chat Controller của màn hình Chat. Dưới đây là ảnh minh hoạ về khởi tạo Socket và StreamController Chat.
+Hình 5.2: Khởi tạo Controller và Socket 92•Khi người dùng nhập tin nhắn và ấn gửi,App sẽ kiểm tra tính hợp lệ của tin nhắn, với mỗi tin nhắn, em đã quy định chỉ mang một dạng text, video, hoặc ảnh,.. Mỗi tin nhắn chỉ có một ảnh hoặc một video duy nhất.
+Hình 5.3: Gửi tin nhắn Hình 5.4: Hàm gửi tin nhắn sử dụng Stomp Socket Client Ở Server, Chat Controller sẽ nhận request từ App và chuyển tới ChatService, ChatService sẽ gọi hàm save của ChatRepository để lưu vào database và đồng thời trả về dữ liệu tin nhắn trên Socket.
+Hình 5.5: Hàm nhận tin nhắn ở Server 93•Ở app của người nhận, do các tin nhắn đều được gửi lên Socket , vì vậy, ở trên Socket này , còn có những tin nhắn không cùng Room Chat của người gửi và người nhận. Vì thế, khi lắng nghe ở Socket , em đã lọc theo Room Id của tin nhắn, để tìm được tin nhắn chính xác.Hàm onSocket được khởi tạo ngay đầu tiên khi người dùng vào màn hình Chat.Sau khi tin nhắn được thêm vào danh sách tin nhắn, các widget sẽ được tự build và hiển thị nội dung tin nhắn.
+Hình 5.6: Lọc và hiển thị tin nhắn Đối với trường hợp, tin nhắn là các định dạng Media như ảnh hay video,... thì các File này sẽ được kiểm tra về dung lượng sau đấy đưa lên Firebase Storage để lưu trữ. Firebase sẽ trả về URL của các file này. Sau đấy , thì em sẽ xem các url này như tin nhắn dạng text để xử lí.
+Hình 5.7: Lấy địa chỉ URL Media 5.1.3 Kêt quả đạt được Việc lập trình thành công chức năng Chat giúp cho người mua và người bán có thêm một kênh thông tin liên lạc, trao đổi về sản phẩm một cách nhanh nhất và 94hoàn toàn miễn phí so với gọi điện hoặc nhắn tin SMS. Chức năng này cũng là một phần quan trọng về mục đích của ứng dụng được tạo ra đó là kết nối nhu cầu giữa người mua và người bán.
+Qua kiểm thử chức năng, chức năng hoạt động tốt với thời gian nhận được tin nhắn với tốc độ mạng cao là không quá 3 giây.
+956.1 Kết luận Trong suốt quá trình thực hiện đồ án tốt nghiệp, em đã đạt được các yêu cầu về chức năng và phi chức năng khi khảo sát đồ án đặt ra.
+Những điểm mà em còn chưa làm được trong đồ án này là Chức năng duyệt bài đăng chưa được xây dựng. Khi người dùng đăng bài, cần có người hoặc hệ thống duyệt bài đăng, để tránh các bài đăng không đúng sự thật về sản phẩm hay các bài đăng có nội dung phản cảm , trái với pháp luật, hay thuần phong mỹ tục.
+Chức năng liên quan đến thanh toán khi đăng bài. App sử dụng một loại điểm để có thể đăng bài hoặc sử dụng một số chức năng khác.
+Chức năng xác thức tài khoản sử dụng OTP.
+Chức năng thông báo Push Notification.
+Hoàn thiện ứng dụng để có thể phát hành trên CH Play.
+Tổng hợp những bài học kinh nghiệm mà em rút ra được Quản lí cấu trúc phần mềm, quản lí code, phân chia module, tái sử dụng mã nguồn. Bằng cách áp dụng những kiến thức đã được học ở môn mẫu thiết kế phần mềm.
+Kiến thức về BackEnd, một hệ thống Backend hoạt động như thế nào,thiết kế, lập trình một API .
+Kỹ năng, tư duy thiết kế hướng đối tượng trong phát triển phần mềm.
+Kỹ năng quản lí thời gian, sắp xếp và phân chia công việc.
+6.2 Hướng phát triển Trong phần này, sinh viên trình bày định hướng công việc trong tương lai để hoàn thiện sản phẩm hoặc nghiên cứu của mình.
+Trước tiên, sinh viên trình bày các công việc cần thiết để hoàn thiện các chức năng/nhiệm vụ đã làm. Sau đó sinh viên phân tích các hướng đi mới cho phép cải thiện và nâng cấp các chức năng/nhiệm vụ đã làm.
+Trong tương lai, để hoàn thiện sản phẩm của mình, em cần đảm bảo để App và hệ thống hoạt động ổn định Cần phải xây dựng trang Admin để có thể thực hiện chức năng duyệt bài.
+96•Nghiên cứu , tích hợp chức năng thanh toán, nạp điểm cho tài khoản.
+Xây dựng hệ thống xác thực số điện thoại bằng mã OTP.
+Hoàn thiện để có thể đưa ứng dụng phát hành trên CH Play.
+97 The Flutter Team at Google, Dart:the language . [On]. Available: https:
+//dart.dev/overview (visited on 07/31/2022).
+——, Flutter . [Online]. Available:  (visited on 07/31/2022).
+Oracle, What is mysql? [On]. Available: https : / / dev. mysql .
+com/doc/refman/8.0/en/what-is-mysql.html (visited on 07/31/2022).
+——, What is java . [Online]. Available:  download/help/whatis_java.html (visited on 07/31/2022).
+The Spring Team, Springboot overview . [On]. Available: https:// spring.io/projects/spring-boot (visited on 07/31/2022).
+Google, Cloud stogare for firebase . [On]. Available:  google.com/docs/storage (visited on 07/31/2022).
+Amazon, Aws elastic beanstalk . [On]. Available:  com/elasticbeanstalk/?nc1=h_ls (visited on 07/31/2022).
+——, Amazon rds . [Online]. Available:  vi/rds/faqs/ (visited on 07/31/2022).
+The Spring Team, Using websocket to build an interactive web application .
+[Online]. Available:  stomp-websocket/ (visited on 07/31/2022).
+blackhorse-one, Stomp dart . [Online]. Available:  packages/stomp_dart_client (visited on 07/31/2022).
+98

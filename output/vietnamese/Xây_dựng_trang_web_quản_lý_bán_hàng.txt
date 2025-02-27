@@ -1,754 +1,302 @@
-
-Trong thời gian làm đồ án tốt nghiệp, em đã nhận được nhiều sự giúp đỡ, đóng
-góp ý kiến và chỉ bảo nhiệt tình của thầy cô, gia đình và bạn bè.
-Em xin gửi lời cảm ơn chân thành đến TS. Bùi Thị Mai Anh, giảng viên Trường
-Công nghệ Thông tin và Truyền thông - ĐH Bách khoa Hà Nội người đã tận tình
-hướng dẫn, chỉ bảo em trong suốt quá trình làm đồ án tốt nghiệp.
-Em cũng xin được gửi lời cảm ơn tới các thầy cô Trường Công nghệ thông tin
-và Truyền thông nói riêng và các thầy cô trong toàn thể Nhà trường nói chung, đã
-tạo điều kiện cho em được phát triển bản thân trong suốt 5 năm qua. Sự hướng dẫn
-và kiến thức thầy cô mang lại đã giúp cho em trưởng thành lên rất nhiều, và có
-đẩy đủ hành trang để sẵn sàng bước vào thị trường lao động. Năm năm học tập và
-rèn luyện dưới mái trường Bách Khoa sẽ là những ngày tháng không thể nào quên
-Cuối cùng, em xin chân thành cảm ơn gia đình và bạn bè, đã luôn tạo điều kiện,
-quan tâm, giúp đỡ, động viên em trong suốt quá trình học tập và hoàn thành khoá
-Vì thời gian có hạn, trình độ hiểu biết của bản thân còn nhiều hạn chế. Cho nên
-trong đồ án không tránh khỏi những thiếu sót, em rất mong nhận được sự đóng góp
-ý kiến của tất cả các thầy cô giáo cũng như các bạn bè để đồ án của em được hoàn
-Em xin chân thành cảm ơn.
-Hà Nội, ngày tháng năm
-TÓM TẮT NỘI DUNG ĐỒ ÁN
-Trong bối cảnh ngành bán lẻ đang phát triển vô cùng mạnh mẽ cùng với sự hỗ
-trợ của công nghệ hiện đại, các phần mềm quản lý bán hàng đã trở thành công cụ
-không thể thiếu đối với những chủ kinh doanh, kể cả họ kinh doanh online hay
-offline. Phần mềm quản lý bán hàng có ưu điểm là dễ sử dụng hơn phương pháp
-quản lý thủ công truyền thống giúp tiết kiệm thời gian, công sức tổng hợp sổ sách,
-tra cứu excel với những danh sách dài những con số.
-Chính vì vậy, em đã quyết định lựa chọn đề tài " Xây dựng trang web quản lý
-bán hàng " nhằm giúp chủ cửa hàng quản lý việc kinh doanh trở nên hiệu quả và
-chính xác hơn nhằm tiết kiệm thời gian, chi phí, kiểm soát được tình trạng của cửa
-hàng và tránh được sai sót trong quá trình bán hàng. Phần mềm cung cấp các tính
-năng chính như: (i) Quản lý đơn hàng, (ii) Quản lý sản phẩm, (iii) Quản lý kho
-hàng, (iv) Quản lý nhà cung cấp, (v) Quản lý thông báo, (vi) Xem báo cáo. Qua
-những tính năng trên, phần mềm sẽ hỗ trợ người dùng quản lý chi tiết tình hình
-kinh doanh của cửa hàng một cách nhanh chóng và tiết kiệm.
-Để có thể thực hiện được điều này, Đồ án là sự kết hợp giữa framework Laravel
-và Livewire giúp trang web thân thiện hơn với người sử dụng, cùng với đó là xây
-dựng hệ thống cơ sở dữ liệu để lưu trữ và truy xuất thông tin một cách hiệu quả.
-Viết tắt Tiếng Anh Tiếng Việt
-HTML HyperText Markup Language Ngôn ngữ đánh dấu siêu văn bản
-CRM Customer Relationship Management Quản lý quan hệ khách hàng
-CRUD Create Read Update Delete Thêm Đọc Sửa Xóa
-SEO Search Engine Optimization Tối ưu hóa công cụ tìm kiếm
-URL Uniform Resource Locator Định vị tài nguyên thống nhất
-CNTT Công nghệ thông tin
-ĐATN Đồ án tốt nghiệp
-BCDT Báo cáo doanh thu
-Trong kỷ nguyên 4.0, sự phát triển của công nghệ số ảnh hưởng mạnh mẽ tới
-tất cả mọi lĩnh vực, các doanh nghiệp cần nắm bắt mọi chuyển động công nghệ
-để theo kịp sự phát triển của thời đại. Dưới bối cảnh đó, các giải pháp công nghệ
-hỗ trợ quản lý đang thể hiện ưu thế mạnh mẽ của mình và ngày càng khẳng định
-vai trò quan trọng trong lĩnh vực quản trị doanh nghiệp. Đối với các nhà bán lẻ,
-phần mềm CRM là lựa chọn hàng đầu và dần trở thành hệ thống cốt lõi của doanh
-nghiệp trong kỷ nguyên công nghệ bởi:
-Cải thiện việc quản lý quan hệ khách hàng : (i) Phần mềm CRM giúp tích hợp
-các kênh bán hàng vào hệ thống. Đồng bộ quy trình quản lý dữ liệu thông tin, nâng
-cao trải nghiệm của khách hàng đối với doanh nghiệp. (ii) Hệ thống CRM giúp cho
-doanh nghiệp nắm toàn bộ thông tin về khách hàng như nhân khẩu học, thị hiếu,
-nhu cầu, các thông tin phản hồi của khách hàng, khả năng tương tác. . . Từ đó giúp
-cho doanh nghiệp có những chiến lược, chính sách phù hợp với nhu cầu của khách
-hàng, xác định được các khách hàng tiềm năng một cách hiệu quả hơn nhờ vào
-những thông tin của từng nhóm khách hàng. (iii) Tăng khả năng tiếp cận, tương tác
-để thuyết phục khách hàng sử dụng các sản phẩm, dịch vụ của doanh nghiệp. Nhờ
-việc đưa thương hiệu tới gần khách hàng hơn mà doanh nghiệp có thể đưa ra nhiều
-sản phẩm thay thế hoặc cải tiến sản phẩm sao cho phù hợp.
-Nâng cao năng suất làm việc : (i) Chức năng tự động hóa của CRM giúp tự động
-cập nhật và điều phối dữ liệu khách hàng. Phần mềm sẽ hoàn thành các trường dữ
-liệu và cung cấp các gợi ý chính xác dựa trên những thông tin đã thu thập. (ii) Nhờ
-việc lựa chọn đúng thời điểm và các chuẩn đoán về nhu cầu của khách hàng, doanh
-thu của doanh nghiệp đã được đẩy mạnh. Các doanh nghiệp áp dụng thành công
-hệ thống đều tăng doanh thu lên đến 30 - 50%. (iii) Nhờ có chức năng tự động hóa
-tiếp thị cũng như đo lường giúp doanh nghiệp thay thế các quy trình kinh doanh
-thủ công, lạc hậu. Tiết kiệm chi phí và thời gian khi chỉ cần từ 1 đến 2 nhân viên
-cũng có thể dễ dàng tương tác với hàng nghìn khách hàng.
-Quản lý bán hàng là việc quản trị tình hình kinh doanh của một công ty, hay chủ
-cửa hàng nào đó gọi chung là doanh nghiệp. Việc quản lý của một doanh nghiệp
-thông thường bao gồm những công việc sau: (i) Tính toán thu chi, cân đối đầu vào
-đầu ra; (ii) Tính toán và báo cáo lượng hàng tồn kho; (iii) Tính toán các số liệu về
-nhân sự và kế hoạch nhân sự; (iv) Các thống kê để báo cáo thuế; (v) Quản lý đơn
-hàng; (vi) Quản lý sản phẩm.
-Hiện nay, phần mềm quản lý bán hàng đang là xu hướng trong quản lý kinh
-doanh. Sau đại dịch covid, các doanh nghiệp đã có sự quan tâm cao hơn cho việc
-sử dụng công nghệ vào quản lý kinh doanh, trong đó việc tích hợp các phần mềm
-quản lý bán hàng để tối ưu quy trình bán hàng là điều đang được quan tâm. Nó
-mang lại một số lợi ích thiết yếu như: Tối ưu hóa năng suất làm việc, giảm thiểu rủi
-ro về sai số khi tính toán thủ công, giảm tải chi phí vận hành doanh nghiệp do phải
-thuê nhiều nhân viên, lưu trữ dữ liệu kinh doanh vô cùng lớn của doanh nghiệp
-trong nhiều năm, tính toán xử lý báo cáo một cách nhanh chóng và có thể truy cập
-từ bất cứ đâu, bất cứ lúc nào để sử dụng.
-Với những lợi ích mà phần mềm quản lý bán hàng mang lại, đây là một phần
-mềm hữu ích giúp cho doanh nghiệp quản lý mọi hoạt động kinh doanh, tạo ra lợi
-thế các đối thủ cạnh tranh với mức chi phí tối ưu nhất.
-Từ nội dung đã trình bày ở phần trước, sử dụng phần mềm quản lý bán hàng
-mang lại rất nhiều lợi ích nhờ vào khả năng lưu trữ, xử lý dữ liệu của phần mềm.
-Trên thị trường hiên nay, đã có những hệ thống Quản lý bán hàng (như Kiotviet,
-Sapo, Hararetail, nhanh.vn...) tuy nhiên các phần mềm này vẫn chưa hỗ trợ nhiều
-cho người dùng về các phản hồi của khách hàng về sản phẩm, về hệ thống.
-Nhắm vào điểm thiếu sót đó, bên cạnh những tính năng cơ bản về quản lý bán
-hàng, đồ án tốt nghiệp này còn đặt mục tiêu giúp người dùng có thể tiếp nhận và xử
-lý các phản hồi của khách hàng thông qua email, website một cách nhanh chóng;
-qua đó giúp cho việc kinh doanh trở nên thuận lợi, đem lại nhiều kết quả tốt hơn.
-Để đáp ứng được mục tiêu đề ra, phần mềm quản lý bán hàng cần có một cơ
-sở dữ liệu để lưu trữ thông tin đơn hàng, thông tin khách hàng và các thông tin
-cần thiết khác. Bên cạnh đó, hệ thống cần có khả năng nhận thông báo qua email,
-website để xử lý các phản hồi của khách hàng lên hệ thống.
-Chính vì vậy, qua quá trình tìm hiểu và đánh giá các công nghệ khác nhau, em
-quyết định sử dụng Laravel để phát triển phần mềm quản lý bán hàng hàng này.
-Laravel cung cấp (i) blade template engine để phát triển giao diện, (ii) framework
-package Livewire để tăng trải nghiệm của người dùng, (iii) package mail, imap để
-gửi nhận email và rất nhiều các package tiện lợi khác giúp cho việc phát triển sản
-phẩm trở nên dễ dàng và nhanh chóng.
-Phần còn lại của báo cáo Đồ án tốt nghiệp sẽ được trình bày theo bố cục như
-•Chương 2: Từ các vấn đề đã được đưa ra từ chương 1, chương 2 sẽ phân tích
-cụ thể các chức năng và yêu cầu của ứng dụng cần phải có, dựa vào khảo sát
-mong muốn của người dùng và các sản phẩm đang có hiện nay.
-•Chương 3: Trình bày cụ thể về các công nghệ được sử dụng trong Đồ án này,
-cùng với đó là các ưu điểm và lý do sử dụng các công nghệ đó.
-•Chương 4: Từ yêu cầu về chức năng của ứng dụng, chương này sẽ trình bày
-về cách thiết kế tổng quan đến chi tiết của Hệ thống.
-•Chương 5: Các đóng góp nổi bật của bản thân trong quá trình xây dựng, phát
-•Chương 6: Tổng kết những phần đã hoàn thành trong Đồ án và định hướng
-phát triển trong tương lai.
-Hiện nay, trên thị trường đã có các phần mềm quản lý bán hàng (như Kiotviet,
-Sapo, Hararetail, nhanh.vn...) tuy nhiên các phần mềm này vẫn chưa hỗ trợ nhiều
-cho người dùng về các phản hồi của khách hàng về sản phẩm, về hệ thống mà chỉ
-dừng lại ở quản lý thông tin của các đơn hàng, xuất các báo cáo kinh doanh... Điều
-này khiến cho người sử dụng không xử lý nhanh được các bất cập của cửa hàng, của
-doanh nghiệp và đồng thời cũng không hiểu rõ mong muốn, phàn nàn của khách
-Theo quan sát thực tế và khảo sát mong muốn người dùng hiện nay, cùng với
-các đặc điểm và tính năng của phần mềm có sẵn trên thị trường, phần mềm quản lý
-bán hàng cần có các tính năng chính sau:
-•Quản lý đơn hàng: Cho phép người sử dụng thêm, sửa, xóa và xem chi tiết đơn
-hàng. Tìm kiếm danh sách đơn hàng theo một số trường như: Tên khách hàng,
-mã khách hàng, trạng thái đơn hàng, thời gian tạo đơn hàng...
-•Quản lý sản phẩm: Cho phép người sử dụng thêm, sửa, xóa và xem chi tiết sản
-phẩm. Tìm kiếm danh sách sản phẩm theo một số trường như: Tên sản phẩm,
-mã sản phẩm, loại sản phẩm. Ngoài ra, cần có thêm tính năng import file giúp
-tạo sản phẩm nhanh hơn.
-•Xem báo cáo thu, chi: Thống kê doanh thu chi tiết, tổng hợp theo từng khách
-hàng trong hệ thống. Cho phép tìm kiếm theo tên khách hàng, mã khách hàng,
-thời gian và có thể export ra file excel các báo cáo thống kê này.
-•Thống kê, xử lý các phản hồi của khách hàng lên hệ thống: Tổng hợp các phản
-hồi của khách hàng qua email, website và phân loại để người dùng có thể dễ
-•Quản lý nhà cung cấp: Cho phép người sử dụng có thể thêm, sửa, xóa nhà
-cung cấp và thanh toán các đơn nhập hàng chưa hoàn tất. Tìm kiếm danh sách
-nhà cung cấp theo một số trường như: Tên nhà cung cấp, mã nhà cung cấp.
-•Quản lý kho: Cho phép người sử dụng có thể thêm, sửa, xóa kho hàng; thống
-kê tồn kho, nhập hàng và xuất hàng hỏng. Tìm kiếm danh sách kho hàng theo
-một số trường như: Tên kho hàng, mã kho hàng, địa chỉ.
-•Thông báo tự động hàng ngày: Thông báo doanh thu, số đơn hàng bán được
-tự động hàng ngày cho người dùng.
-Hệ thống gồm có 3 tác nhân chính đó là Khách hàng, Nhân viên và Admin. Khi
-khách hàng đến mua sản phẩm trong cửa hàng, nhân viên sẽ tạo đơn hàng, thêm
-sản phẩm, số lượng sản phẩm vào trong đơn hàng và thêm mới đơn hàng vào trong
-hệ thống. Ngoài ra, nhân viên còn có thể tạo mới sản phẩm, xem tồn kho của cửa
-hàng và nhập hàng về. Admin ngoài có các chức năng của nhân viên, còn có thể
-xem báo cáo thu, chi của cửa hàng, quản lý các thông báo hàng ngày và quản lý các
-phản hồi của khách hàng.
-Hệ thống gồm có các usecase chính sau (i) usecase quản lý đơn hàng: Giúp nhân
-viên có thể tạo mới đơn hàng và quản lý các trạng thái của đơn hàng. (ii) usecase
-quản lý sản phẩm: Giúp nhân viên thêm các phẩm mới vào cửa hàng, chỉnh sửa
-thông tin sản phẩm. (iii) usecase quản lý kho: Giúp nhân viên quản lý tồn kho,
-nhập hàng về cửa hàng. (iv) usecase quản lý nhà cung cấp: Giúp nhân viên quản lý
-các nhà cung cấp sản phẩm của cửa hàng, thanh toán các khoản nợ khi nhập hàng.
-(v) usecase xem báo cáo: Hỗ trợ chủ cửa hàng xem các báo cáo thu, chi, báo cáo
-doanh thu của nhân viên, các sản phẩm bán chạy trong tháng. (vi) Quản lý thông
-báo: Giúp chủ cửa hàng bật, tắt thông báo, quản lý thời gian gửi thông báo trong
-ngày của hệ thống. (vii) Quản lý phản hồi KH: Quản lý các phản hồi từ email của
-khách hàng, cấu hình email nhận phản hồi, cấu hình luật tạo phản hồi.
-Usecase quản lý đơn hàng gồm các chức năng chính như sau (i) CRUD đơn
-hàng: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách đơn hàng; (ii) Tìm kiếm
-đơn hàng: cho phép tìm kiếm đơn hàng; (iii) Export danh sách đơn hàng: Cho phép
-xuất file excel danh sách đơn hàng theo điều kiện tìm kiếm.
-Usecase quản lý sản phẩm gồm các chức năng chính như sau (i) CRUD sản
-phẩm: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách sản phẩm; (ii) Tìm kiếm
-sảm phẩm: cho phép tìm kiếm sản phẩm; (iii) Export danh sách sản phẩm: Cho
-phép xuất file excel danh sách sản phẩm theo điều kiện tìm kiếm; (iv) Import sản
-phẩm: thêm mới danh sách sản phẩm bằng file excel theo mẫu có sẵn.
-Usecase quản lý kho gồm các chức năng chính như sau (i) CRUD kho: cho phép
-tạo mới, chỉnh sửa, xóa, xem danh sách kho hàng; (ii) Tìm kiếm kho: cho phép tìm
-kiếm kho hàng; (iii) Thống kê tồn kho: cho phép xem số lượng sản phẩm còn trong
-kho; (iv) Nhập hàng: cho phép thêm sản phẩm vào trong kho.
-Usecase quản lý nhà cung cấp gồm các chức năng chính như sau (i) CRUD nhà
-cung cấp: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách nhà cung cấp; (ii) Quản
-lý nhập hàng: Cho phép xem lịch sử thanh toán mỗi lần nhập hàng về, thanh toán
-đơn nhập hàng còn thiếu; (iii) Tìm kiếm nhà cung cấp: cho phép tìm kiếm nhà cung
-Usecase xem báo cáo gồm các chức năng chính như sau (i) Tổng hợp thu, chi:
-Cho phép xem báo cáo tổng hợp thu, chi, xuất file excel báo cáo tổng hợp; (ii) Chi
-tiết thu, chi: Cho phép xem báo cáo chi tiết thu, chi, xuất file excel báo cáo chi tiết;
-(iii) Doanh thu nhân viên: Cho phép xem báo cáo doanh thu theo từng nhân viên,
-xuất file excel báo cáo doanh thu theo từng nhân viên; (iv) Dashboard: Cho phép
-xem biểu đồ doanh thu tháng, các đơn hàng trong ngày và top sản phẩm bán chạy
-Usecase quản lý thông báo gồm các chức năng chính như sau (i) Quản lý thông
-báo messenger: Cho phép bật tắt thông báo, cấu hình thời gian gửi thông báo, kiểm
-tra kết nối đến messenger, cho phép người dùng nhắn tin qua messenger để lấy các
-thông tin cần thiết về cửa hàng như doanh thu, số đơn hàng bán được; (ii) Quản lý
-thông báo email: Cho phép bật tắt thông báo, cấu hình thời gian gửi thông báo, cấu
-hình thông tin email gửi thông báo.
-Usecase quản lý phản hồi từ khách hàng gồm các chức năng chính như sau (i)
-CRUD luật tạo phản hồi: Cho phép cấu hình các điều kiện để thêm các phản hồi
-từ email vào hệ thống (ví dụ như tiêu đề chứa từ khóa [phan hoi]); (ii) Cấu hình
-Email nhận phản hồi: Cho phép người dùng thay đổi cấu hình Email nhận phản hồi
-từ khách hàng, kiểm tra kết nối đến Email; (iii) Xem danh sách phản hồi: Xem màn
-hình danh sách các phản hồi đã được tạo, người dùng có thể tìm kiếm, chuyển trạng
-thái và tải các file đính kèm từ các phản hồi này; (iv) Đồng bộ phản hồi từ email:
-Cập nhật ngay lập tức các phản hồi về ứng dụng (Hệ thống đang chạy schedule
-đồng bộ 10 phút mỗi lần).
-Yêu cầu hiệu năng : (i) Hệ thống phải ở trạng thái khả dụng 24 giờ mỗi ngày
-(365 ngày mỗi năm); (ii) Thời gian phản hồi trong các tương tác giữa hệ thống và
-người dùng phải ít hơn ba giây; (iii) Thay đổi trong cơ sở dữ liệu phải được cập
-nhật cho tất cả người dùng sử dụng hệ thống trong ít hơn hai giây.
-Yêu cầu bảo mật : (i) Cần phải đăng nhập để sử dụng hệ thống; (ii) Người dùng
-chỉ được sử dụng các tính năng nếu được cấp quyền; (iii) Người dùng không phải
-quản lý thì chỉ có thể các xem đơn hàng do mình tạo ra.
-Độ tin cậy, tính bảo trì : (i) Hệ thống không phát sinh các lỗi nghiêm trọng; (ii)
-Các lỗi phát sinh phải được sửa chữa trong ít hơn 1 ngày.
-Trải nghiệm người dùng: (i) Các trang giao diện quản lý trực quan và dễ sử
-dụng; (ii) Hệ thống cần hiển thị dữ liệu một cách dễ nhìn, dễ hiểu.
-Laravel là một PHP Web Framework miễn phí, mã nguồn mở, được tạo bởi
-Taylor Otwell và dành cho việc phát triển các ứng dụng web theo mô hình kiến
-trúc mô hình MVC và dựa trên Symfony PHP Framework. Một số tính năng của
-Laravel như là sử dụng hệ thống đóng gói module, quản lý package (Composer), hỗ
-trợ nhiều hệ quản trị CSDL quan hệ (MySQL, MariaDB, SQLite, PostgreSQL. . . ),
-các tiện ích hỗ trợ triển khai và bảo trì ứng dụng. Chính vì thế, laravel trở nên thông
-dụng và rất hữu ích trong việc tạo ra các phần mềm web được cá nhân hóa một cách
-nhanh chóng và hiệu quả.
-So sánh với các framework khác của php, laravel có các ưu điểm đáng chú ý sau:
-•Sử dụng các tính năng mới nhất của PHP: Một trong những tính năng làm cho
-PHP Lararel framework trở nên nổi bật hơn tất cả đó là nó sử dụng tất cả các
-tính năng mới nhất của PHP từ đó khiến việc lập trình trở nên nhanh chóng và
-•Tài liệu đầy đủ: Tài liệu của Laravel rất thân thiện với các nhà phát triển. Tất
-cả các phiên bản Laravel đều được phát hành cùng các tài liệu phù hợp, giúp
-tìm thấy những giải thích chi tiết về coding style, methods và classes nhanh
-•Artisan: Đây là một công cụ được cung cấp bởi Laravel web development. Lập
-trình viên tương tác với framework bằng cách sử dụng dòng lệnh tạo và quản
-lý Laravel web development project environment. Artisan là một công cụ tích
-hợp được cung cấp bởi Laravel giúp lập trình viên giải quyết các công việc
-mang tính lặp đi lặp lại nhàm chán.
-•Bảo mật: Laravel web development đảm bảo an toàn cho ứng dụng web. Nó
-sử dụng mật khẩu băm Bcrypt và không lưu mật khẩu ở dạng văn bản thuần
-túy. SQL statement được sử dụng bởi Laravel khiến cho các injection attack
-khó tiếp cận được. Laravel cung cấp một phương pháp đơn giản để thoát khỏi
-user input, tránh injection của thẻ script (<script>).
-•Cộng đồng phát triển mạnh: Một trong những yếu tố nổi bật của Laravel, đóng
-góp cho sự phát triển và thành công của nó là cộng đồng giảng dạy, hỗ trợ tuyệt
-•Tính năng caching: Caching (bộ nhớ đệm) là một kỹ thuật để lưu trữ dữ liệu
-trong một vị trí lưu trữ tạm thời và có thể được lấy ra một cách nhanh chóng
-khi cần thiết. Laravel lưu gần như tất cả dữ liệu từ View đến routes. Điều này
-giúp Laravel giảm thời gian xử lý và tăng hiệu suất.
-So với các PHP framework khác, framework Laravel bộc lộ khá ít nhược điểm.
-Vấn đề lớn nhất có thể kể đến của framework này là thiếu sự liên kết giữa các phiên
-bản, nếu cố cập nhật code, có thể khiến cho ứng dụng bị gián đoạn hoặc phá vỡ.
-Bên cạnh đó, framework laravel cũng quá nặng cho ứng dụng di động, khiến việc
-tải trang trở nên chậm chạp.
-•Do Laravel là một nền tảng ứng dụng web PHP mã nguồn mở nên nó hoàn
-toàn miễn phí để sử dụng và cài đặt; ngoài ra Laravel có khả năng phát triển
-các ứng dụng web lớn, phức tạp với khả năng bảo trì code nhanh chóng.
-•Laravel hiện tại là một trong những ngôn ngữ backend phổ biến nhất bên cạnh
-các ngôn ngữ khác như Django, Express JS, Ruby on Rials.
-•Hỗ trợ kiến trúc MVC: Laravel hỗ trợ kiến trúc MVC giúp nâng cao hiệu
-suất, tối ưu hóa tài nguyên và cung cấp nhiều chức năng như: routing, cache,
-Livewire là một full-stack framework cho Laravel giúp việc xây dựng các giao
-diện động trở nên đơn giản hơn. Đây là một lựa chọn tuyệt vời nếu muốn xây dựng
-một SPA nhanh chóng, hơn nữa Livewire tương đối đơn giản, dễ hiểu để áp dụng
-•Khi một tương tác xảy ra giữa người dùng và ứng dụng, Livewire sẽ thực hiện
-gửi request bằng AJAX tới máy chủ kèm theo dữ liệu được cập nhật.
-•Máy chủ sẽ re-render component và trả lại reponse với mã HTML mới.
-•Livewire sau đó biến đổi DOM một cách thông minh theo những mã đã thay
-Do trạng thái (giá trị của các thuộc tính) của Livewire được lưu trữ ở trình duyệt
-và được chuyển qua lại máy chủ giữa các request khiến nó dễ bị thao túng, chỉnh
-sửa ở phía frontend. Nếu không có các biện pháp bảo mật, sẽ không khó để kẻ xấu
-có thể thay đổi các trạng thái này.
-Checksum là phương pháp bảo mật cơ bản của Livewire đi cùng mỗi reponse,
-request; được sử dụng để xác thực trạng thái từ máy chủ không bị giả mạo trong
-trình duyệt. Thay vì chỉ truyền giá trị của các thuộc tính đến trình duyệt, Livewire
-sẽ thực hiện tạo một mã băm (sử dụng checksum) từ các giá trị này và gửi cùng
-reponse. Dưới đây là ví dụ về checksum của Liveiwre:
-Biện pháp bảo mật thứ 2 Livewire đưa ra là "persistent middleware". Livewire
-sẽ giữ lại tất cả các middleware về xác thực, ủy quyền trong request đầu tiên và
-áp dụng lại nó cho các request tiếp theo. Theo mặc định Livewire sẽ áp dụng các
-middleware về xác thực, ủy quyền có sẵn của Laravel là Authenticate::class và
-Một số ưu điểm nổi bật của livewire:
-•Dễ sử dụng: Ajax request và JavaScript được dùng ít hơn chính vì thế nó rất
-dễ sử dụng cho dù là người mới bắt đầu.
-•Thân thiện với SEO: Vì HTML được gửi đến trình duyệt trong lần hiển thị đầu
-•Có thể dễ dàng tích hợp vào các trang web Laravel hiện có.
-Livewire có một số nhược điểm sau đây: giảm hiệu năng của máy chủ do các
-thay đổi đều được thực hiện thông qua Ajax request; khắc phục các lỗi lâu hơn do
-sự kết hợp logic giữa cả frontend và backend.
-NodeJS là một nền tảng chạy trên engine Google Chrome V8 của google, được
-xây dựng để phát triển những ứng dụng server side. Phần core sử dụng Javascript
-và C++ cho phép xử lý với hiệu năng cao. Phù hợp với các ứng dụng xử lý nhanh,
-real time hoặc những ứng dụng cần thay đổi công nghệ nhanh. Nodejs chạy sigle
-thread nhưng có cơ chế non blocking giúp chạy bất đồng bộ và tăng khả năng xử
-Express là một web application framework dành cho NodeJS. Nó cung cấp cho
-chúng ta rất nhiều tính năng mạnh mẽ trên nền tảng web cũng như trên các ứng
-dụng di động. Express hỗ trợ các phương thức HTTP và midleware tạo ra môt API
-vô cùng mạnh mẽ và dễ sử dụng. Có thể tổng hợp một số chức năng chính của
-•Thiết lập các lớp trung gian để trả về các HTTP request.
-•Định nghĩa router cho phép sử dụng với các hành động khác nhau dựa trên
-phương thức HTTP và URL.
-•Cho phép trả về các trang HTML dựa vào các tham số.
-Trong phạm vi của đồ án, Express được sử dụng để xây dựng server chat giúp gửi
-tin nhắn messenger tự động cho người dùng.
-Nodejs phát triển mạnh mẽ và được ưa chuộng dựa trên một số lý do sau đây:
-•NodeJS là Javascript, tức là với NodeJS thì lập trình viên fullstack chỉ cần làm
-việc với một ngôn ngữ. Hơn nữa, tính ổn định của Javascript qua các phiên
-bản ES5, ES6, ES7, ES8 ngày càng hoàn thiện, ổn định và mang lại nhiều tính
-năng hơn cho lập trình viên.
-•Cộng đồng cùng với hệ sinh thái Javascript vô cùng lớn mạnh, thậm chí đang
-là cộng đồng lớn mạnh nhất theo khảo sát của stackoverflow.
-•Các dự án phát triển theo mô hình Client Server (NodeJS đứng trong vai trò
-làm các services cung cấp APIs), NodeJS rất phù hợp cho kiến trúc Microservices để đưa các bài toán lớn thành các bài toán nhỏ và có thể phát triển nhanh
-chóng và quản lý dễ dàng 1 dự án lớn.
-•Hiệu năng của NodeJS phù hợp với các hệ thống phải xử lý nhiều request
-cùng một lúc. Với mô hình non-blocking NodeJs giúp tiết kiệm khoảng thời
-gian đáng kể thay vì request phải xếp hàng chờ đợi các request trước thực hiện
-MySQL là hệ quản trị cơ sở dữ liệu nguồn mở phổ biến nhất thế giới và được
-các nhà phát triển rất ưa chuộng trong quá trình phát triển ứng dụng. MySQL hiện
-nay đã hỗ trợ hầu như mọi ngôn ngữ lập trình và hỗ trợ rất tốt đặc biệt cho các ngôn
-ngữ lập trình Web. MySQL đáp ứng hầu hết công việc trong quá trình vận hành
-của website, thích hợp cho các ứng dụng có truy cập CSDL trên internet và có thể
-giải quyết hầu hết các bài toán trong PHP.
+1.1 Đặt vấn đề 1.1.1 Sự phát triển của hệ thống CRM trong thời đại công nghệ Trong kỷ nguyên 4.0, sự phát triển của công nghệ số ảnh hưởng mạnh mẽ tới tất cả mọi lĩnh vực, các doanh nghiệp cần nắm bắt mọi chuyển động công nghệ để theo kịp sự phát triển của thời đại. Dưới bối cảnh đó, các giải pháp công nghệ hỗ trợ quản lý đang thể hiện ưu thế mạnh mẽ của mình và ngày càng khẳng định vai trò quan trọng trong lĩnh vực quản trị doanh nghiệp. Đối với các nhà bán lẻ, phần mềm CRM là lựa chọn hàng đầu và dần trở thành hệ thống cốt lõi của doanh nghiệp trong kỷ nguyên công nghệ bởi:
+Cải thiện việc quản lý quan hệ khách hàng : (i) Phần mềm CRM giúp tích hợp các kênh bán hàng vào hệ thống. Đồng bộ quy trình quản lý dữ liệu thông tin, nâng cao trải nghiệm của khách hàng đối với doanh nghiệp. (ii) Hệ thống CRM giúp cho doanh nghiệp nắm toàn bộ thông tin về khách hàng như nhân khẩu học, thị hiếu, nhu cầu, các thông tin phản hồi của khách hàng, khả năng tương tác. . . Từ đó giúp cho doanh nghiệp có những chiến lược, chính sách phù hợp với nhu cầu của khách hàng, xác định được các khách hàng tiềm năng một cách hiệu quả hơn nhờ vào những thông tin của từng nhóm khách hàng. (iii) Tăng khả năng tiếp cận, tương tác để thuyết phục khách hàng sử dụng các sản phẩm, dịch vụ của doanh nghiệp. Nhờ việc đưa thương hiệu tới gần khách hàng hơn mà doanh nghiệp có thể đưa ra nhiều sản phẩm thay thế hoặc cải tiến sản phẩm sao cho phù hợp.
+Nâng cao năng suất làm việc : (i) Chức năng tự động hóa của CRM giúp tự động cập nhật và điều phối dữ liệu khách hàng. Phần mềm sẽ hoàn thành các trường dữ liệu và cung cấp các gợi ý chính xác dựa trên những thông tin đã thu thập. (ii) Nhờ việc lựa chọn đúng thời điểm và các chuẩn đoán về nhu cầu của khách hàng, doanh thu của doanh nghiệp đã được đẩy mạnh. Các doanh nghiệp áp dụng thành công hệ thống đều tăng doanh thu lên đến 30 - 50%. (iii) Nhờ có chức năng tự động hóa tiếp thị cũng như đo lường giúp doanh nghiệp thay thế các quy trình kinh doanh thủ công, lạc hậu. Tiết kiệm chi phí và thời gian khi chỉ cần từ 1 đến 2 nhân viên cũng có thể dễ dàng tương tác với hàng nghìn khách hàng.
+1.1.2 Hệ thống quản lý bán hàng Quản lý bán hàng là việc quản trị tình hình kinh doanh của một công ty, hay chủ cửa hàng nào đó gọi chung là doanh nghiệp. Việc quản lý của một doanh nghiệp thông thường bao gồm những công việc sau: (i) Tính toán thu chi, cân đối đầu vào 1đầu ra; (ii) Tính toán và báo cáo lượng hàng tồn kho; (iii) Tính toán các số liệu về nhân sự và kế hoạch nhân sự; (iv) Các thống kê để báo cáo thuế; (v) Quản lý đơn hàng; (vi) Quản lý sản phẩm.
+Hiện nay, phần mềm quản lý bán hàng đang là xu hướng trong quản lý kinh doanh. Sau đại dịch covid, các doanh nghiệp đã có sự quan tâm cao hơn cho việc sử dụng công nghệ vào quản lý kinh doanh, trong đó việc tích hợp các phần mềm quản lý bán hàng để tối ưu quy trình bán hàng là điều đang được quan tâm. Nó mang lại một số lợi ích thiết yếu như: Tối ưu hóa năng suất làm việc, giảm thiểu rủi ro về sai số khi tính toán thủ công, giảm tải chi phí vận hành doanh nghiệp do phải thuê nhiều nhân viên, lưu trữ dữ liệu kinh doanh vô cùng lớn của doanh nghiệp trong nhiều năm, tính toán xử lý báo cáo một cách nhanh chóng và có thể truy cập từ bất cứ đâu, bất cứ lúc nào để sử dụng.
+Với những lợi ích mà phần mềm quản lý bán hàng mang lại, đây là một phần mềm hữu ích giúp cho doanh nghiệp quản lý mọi hoạt động kinh doanh, tạo ra lợi thế các đối thủ cạnh tranh với mức chi phí tối ưu nhất.
+1.2 Mục tiêu và phạm vi đề tài Từ nội dung đã trình bày ở phần trước, sử dụng phần mềm quản lý bán hàng mang lại rất nhiều lợi ích nhờ vào khả năng lưu trữ, xử lý dữ liệu của phần mềm.
+Trên thị trường hiên nay, đã có những hệ thống Quản lý bán hàng (như Kiotviet, Sapo, Hararetail, nhanh.vn...) tuy nhiên các phần mềm này vẫn chưa hỗ trợ nhiều cho người dùng về các phản hồi của khách hàng về sản phẩm, về hệ thống.
+Nhắm vào điểm thiếu sót đó, bên cạnh những tính năng cơ bản về quản lý bán hàng, đồ án tốt nghiệp này còn đặt mục tiêu giúp người dùng có thể tiếp nhận và xử lý các phản hồi của khách hàng thông qua email, website một cách nhanh chóng; qua đó giúp cho việc kinh doanh trở nên thuận lợi, đem lại nhiều kết quả tốt hơn.
+1.3 Định hướng giải pháp Để đáp ứng được mục tiêu đề ra, phần mềm quản lý bán hàng cần có một cơ sở dữ liệu để lưu trữ thông tin đơn hàng, thông tin khách hàng và các thông tin cần thiết khác. Bên cạnh đó, hệ thống cần có khả năng nhận thông báo qua email, website để xử lý các phản hồi của khách hàng lên hệ thống.
+Chính vì vậy, qua quá trình tìm hiểu và đánh giá các công nghệ khác nhau, em quyết định sử dụng Laravel để phát triển phần mềm quản lý bán hàng hàng này.
+Laravel cung cấp (i) blade template engine để phát triển giao diện, (ii) framework package Livewire để tăng trải nghiệm của người dùng, (iii) package mail, imap để gửi nhận email và rất nhiều các package tiện lợi khác giúp cho việc phát triển sản 2phẩm trở nên dễ dàng và nhanh chóng.
+1.4 Bố cục đồ án Phần còn lại của báo cáo Đồ án tốt nghiệp sẽ được trình bày theo bố cục như sau:
+Chương 2: Từ các vấn đề đã được đưa ra từ chương 1, chương 2 sẽ phân tích cụ thể các chức năng và yêu cầu của ứng dụng cần phải có, dựa vào khảo sát mong muốn của người dùng và các sản phẩm đang có hiện nay.
+Chương 3: Trình bày cụ thể về các công nghệ được sử dụng trong Đồ án này, cùng với đó là các ưu điểm và lý do sử dụng các công nghệ đó.
+Chương 4: Từ yêu cầu về chức năng của ứng dụng, chương này sẽ trình bày về cách thiết kế tổng quan đến chi tiết của Hệ thống.
+Chương 5: Các đóng góp nổi bật của bản thân trong quá trình xây dựng, phát triển sản phẩm.
+Chương 6: Tổng kết những phần đã hoàn thành trong Đồ án và định hướng phát triển trong tương lai.
+32.1 Khảo sát hiện trạng Hiện nay, trên thị trường đã có các phần mềm quản lý bán hàng (như Kiotviet, Sapo, Hararetail, nhanh.vn...) tuy nhiên các phần mềm này vẫn chưa hỗ trợ nhiều cho người dùng về các phản hồi của khách hàng về sản phẩm, về hệ thống mà chỉ dừng lại ở quản lý thông tin của các đơn hàng, xuất các báo cáo kinh doanh... Điều này khiến cho người sử dụng không xử lý nhanh được các bất cập của cửa hàng, của doanh nghiệp và đồng thời cũng không hiểu rõ mong muốn, phàn nàn của khách hàng về hệ thống.
+Theo quan sát thực tế và khảo sát mong muốn người dùng hiện nay, cùng với các đặc điểm và tính năng của phần mềm có sẵn trên thị trường, phần mềm quản lý bán hàng cần có các tính năng chính sau:
+Quản lý đơn hàng: Cho phép người sử dụng thêm, sửa, xóa và xem chi tiết đơn hàng. Tìm kiếm danh sách đơn hàng theo một số trường như: Tên khách hàng, mã khách hàng, trạng thái đơn hàng, thời gian tạo đơn hàng...
+Quản lý sản phẩm: Cho phép người sử dụng thêm, sửa, xóa và xem chi tiết sản phẩm. Tìm kiếm danh sách sản phẩm theo một số trường như: Tên sản phẩm, mã sản phẩm, loại sản phẩm. Ngoài ra, cần có thêm tính năng import file giúp tạo sản phẩm nhanh hơn.
+Xem báo cáo thu, chi: Thống kê doanh thu chi tiết, tổng hợp theo từng khách hàng trong hệ thống. Cho phép tìm kiếm theo tên khách hàng, mã khách hàng, thời gian và có thể export ra file excel các báo cáo thống kê này.
+Thống kê, xử lý các phản hồi của khách hàng lên hệ thống: Tổng hợp các phản hồi của khách hàng qua email, website và phân loại để người dùng có thể dễ dàng xử lý.
+Quản lý nhà cung cấp: Cho phép người sử dụng có thể thêm, sửa, xóa nhà cung cấp và thanh toán các đơn nhập hàng chưa hoàn tất. Tìm kiếm danh sách nhà cung cấp theo một số trường như: Tên nhà cung cấp, mã nhà cung cấp.
+Quản lý kho: Cho phép người sử dụng có thể thêm, sửa, xóa kho hàng; thống kê tồn kho, nhập hàng và xuất hàng hỏng. Tìm kiếm danh sách kho hàng theo một số trường như: Tên kho hàng, mã kho hàng, địa chỉ.
+Thông báo tự động hàng ngày: Thông báo doanh thu, số đơn hàng bán được tự động hàng ngày cho người dùng.
+42.2 Tổng quan chức năng 2.2.1 Biểu đồ use case tổng quan Hình 2.1: Biểu đồ usecase tổng quan Hệ thống gồm có 3 tác nhân chính đó là Khách hàng, Nhân viên và Admin. Khi khách hàng đến mua sản phẩm trong cửa hàng, nhân viên sẽ tạo đơn hàng, thêm sản phẩm, số lượng sản phẩm vào trong đơn hàng và thêm mới đơn hàng vào trong hệ thống. Ngoài ra, nhân viên còn có thể tạo mới sản phẩm, xem tồn kho của cửa hàng và nhập hàng về. Admin ngoài có các chức năng của nhân viên, còn có thể xem báo cáo thu, chi của cửa hàng, quản lý các thông báo hàng ngày và quản lý các phản hồi của khách hàng.
+Hệ thống gồm có các usecase chính sau (i) usecase quản lý đơn hàng: Giúp nhân viên có thể tạo mới đơn hàng và quản lý các trạng thái của đơn hàng. (ii) usecase quản lý sản phẩm: Giúp nhân viên thêm các phẩm mới vào cửa hàng, chỉnh sửa thông tin sản phẩm. (iii) usecase quản lý kho: Giúp nhân viên quản lý tồn kho, nhập hàng về cửa hàng. (iv) usecase quản lý nhà cung cấp: Giúp nhân viên quản lý các nhà cung cấp sản phẩm của cửa hàng, thanh toán các khoản nợ khi nhập hàng.
+(v) usecase xem báo cáo: Hỗ trợ chủ cửa hàng xem các báo cáo thu, chi, báo cáo doanh thu của nhân viên, các sản phẩm bán chạy trong tháng. (vi) Quản lý thông 5báo: Giúp chủ cửa hàng bật, tắt thông báo, quản lý thời gian gửi thông báo trong ngày của hệ thống. (vii) Quản lý phản hồi KH: Quản lý các phản hồi từ email của khách hàng, cấu hình email nhận phản hồi, cấu hình luật tạo phản hồi.
+2.2.2 Biểu đồ use case phân rã Quản lý đơn hàng Hình 2.2: Biểu đồ usecase phân rã Quản lý đơn hàng Usecase quản lý đơn hàng gồm các chức năng chính như sau (i) CRUD đơn hàng: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách đơn hàng; (ii) Tìm kiếm đơn hàng: cho phép tìm kiếm đơn hàng; (iii) Export danh sách đơn hàng: Cho phép xuất file excel danh sách đơn hàng theo điều kiện tìm kiếm.
+2.2.3 Biểu đồ use case phân rã Quản lý sản phẩm Hình 2.3: Biểu đồ usecase phân rã Quản lý sản phẩm 6Usecase quản lý sản phẩm gồm các chức năng chính như sau (i) CRUD sản phẩm: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách sản phẩm; (ii) Tìm kiếm sảm phẩm: cho phép tìm kiếm sản phẩm; (iii) Export danh sách sản phẩm: Cho phép xuất file excel danh sách sản phẩm theo điều kiện tìm kiếm; (iv) Import sản phẩm: thêm mới danh sách sản phẩm bằng file excel theo mẫu có sẵn.
+2.2.4 Biểu đồ use case phân rã Quản lý kho Hình 2.4: Biểu đồ usecase phân rã Quản lý kho Usecase quản lý kho gồm các chức năng chính như sau (i) CRUD kho: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách kho hàng; (ii) Tìm kiếm kho: cho phép tìm kiếm kho hàng; (iii) Thống kê tồn kho: cho phép xem số lượng sản phẩm còn trong kho; (iv) Nhập hàng: cho phép thêm sản phẩm vào trong kho.
+2.2.5 Biểu đồ use case phân rã Quản lý nhà cung cấp Hình 2.5: Biểu đồ usecase phân rã Quản lý nhà cung cấp 7Usecase quản lý nhà cung cấp gồm các chức năng chính như sau (i) CRUD nhà cung cấp: cho phép tạo mới, chỉnh sửa, xóa, xem danh sách nhà cung cấp; (ii) Quản lý nhập hàng: Cho phép xem lịch sử thanh toán mỗi lần nhập hàng về, thanh toán đơn nhập hàng còn thiếu; (iii) Tìm kiếm nhà cung cấp: cho phép tìm kiếm nhà cung cấp.
+2.2.6 Biểu đồ use case phân rã Xem báo cáo Hình 2.6: Biểu đồ usecase phân rã Xem báo cáo Usecase xem báo cáo gồm các chức năng chính như sau (i) Tổng hợp thu, chi:
+Cho phép xem báo cáo tổng hợp thu, chi, xuất file excel báo cáo tổng hợp; (ii) Chi tiết thu, chi: Cho phép xem báo cáo chi tiết thu, chi, xuất file excel báo cáo chi tiết; (iii) Doanh thu nhân viên: Cho phép xem báo cáo doanh thu theo từng nhân viên, xuất file excel báo cáo doanh thu theo từng nhân viên; (iv) Dashboard: Cho phép xem biểu đồ doanh thu tháng, các đơn hàng trong ngày và top sản phẩm bán chạy trong tháng.
+2.2.7 Biểu đồ use case phân rã Quản lý thông báo Hình 2.7: Biểu đồ usecase phân rã Quản lý thông báo 8Usecase quản lý thông báo gồm các chức năng chính như sau (i) Quản lý thông báo messenger: Cho phép bật tắt thông báo, cấu hình thời gian gửi thông báo, kiểm tra kết nối đến messenger, cho phép người dùng nhắn tin qua messenger để lấy các thông tin cần thiết về cửa hàng như doanh thu, số đơn hàng bán được; (ii) Quản lý thông báo email: Cho phép bật tắt thông báo, cấu hình thời gian gửi thông báo, cấu hình thông tin email gửi thông báo.
+2.2.8 Biểu đồ use case phân rã Quản lý phản hồi từ khách hàng Hình 2.8: Biểu đồ usecase phân rã Quản lý phản hồi từ khách hàng Usecase quản lý phản hồi từ khách hàng gồm các chức năng chính như sau (i) CRUD luật tạo phản hồi: Cho phép cấu hình các điều kiện để thêm các phản hồi từ email vào hệ thống (ví dụ như tiêu đề chứa từ khóa [phan hoi]); (ii) Cấu hình Email nhận phản hồi: Cho phép người dùng thay đổi cấu hình Email nhận phản hồi từ khách hàng, kiểm tra kết nối đến Email; (iii) Xem danh sách phản hồi: Xem màn hình danh sách các phản hồi đã được tạo, người dùng có thể tìm kiếm, chuyển trạng thái và tải các file đính kèm từ các phản hồi này; (iv) Đồng bộ phản hồi từ email:
+Cập nhật ngay lập tức các phản hồi về ứng dụng (Hệ thống đang chạy schedule đồng bộ 10 phút mỗi lần).
+92.3 Đặc tả chức năng 2.3.1 Đặc tả use case thêm mới đơn hàng Bảng 2.1: Đặc tả usecase thêm mới đơn hàng Mã Usecase UC001 Tên Usecase Thêm mới đơn hàng Mô tả Nhân viên tạo mới đơn hàng khi có khách mua hàng Tác nhân Nhân viên bán hàng, khách hàng Tiền điều kiện Khách hàng đến mua hàng Luồng sự kiện chínhSTT Thực hiện bởi Hành động 1. Khách hàng Đến mua hàng 2. Nhân viên Nhấn vào tab quản lý đơn hàng 3. Hệ thống Hiển thị danh sách đơn hàng 4. Nhân viên Nhấn vào nút tạo mới đơn hàng 5. Hệ thống Hiển thị trang tạo mới đơn hàng 6. Nhân viên Chọn khách hàng có sẵn trong hệ thống 7. Nhân viên Điền thông tin đơn hàng 8. Nhân viên Nhấn vào nút lưu 9. Hệ thống Kiểm tra thông tin nhân viên nhập 10. Hệ thống Lưu thông tin đơn hàng 11. Hệ thống Quay về trang danh sách đơn hàng và hiển thị thông báo thành công Luồng sự kiện thay thếSTT Thực hiện bởi Hành động 6a. Nhân viên Tạo mới khách hàng nếu khách hàng chưa có trong hệ thống 8b. Nhân viên Nhấn vào nút quay lại 9c. Hệ thống Thông báo lỗi: Các trường dữ liệu nhập chưa đầy đủ hoặc không đúng định dạng, yêu cầu nhân viên nhập lại Hậu điều kiện+ Nhân viên thêm đơn hàng thành công + Hệ thống lưu đơn hàng vào cơ sở dữ liệu 102.3.2 Đặc tả use case thêm mới sản phẩm Bảng 2.2: Đặc tả usecase thêm mới sản phẩm Mã Usecase UC002 Tên Usecase Thêm mới sản phẩm Mô tả Nhân viên thêm mới sản phẩm Tác nhân Nhân viên bán hàng Tiền điều kiện Có sản phẩm mới Luồng sự kiện chínhSTT Thực hiện bởi Hành động 1. Nhân viên Nhấn vào tab quản lý sản phẩm 2. Hệ thống Hiển thị danh sách sản phẩm 3. Nhân viên Nhấn vào nút tạo mới sản phẩm 4. Hệ thống Hiển thị trang tạo mới sản phẩm 5. Nhân viên Điền thông tin sản phẩm 6. Nhân viên Nhấn vào nút lưu 7. Hệ thống Kiểm tra thông tin nhân viên nhập 8. Hệ thống Lưu thông tin sản phẩm 9. Hệ thống Quay về trang danh sách sản phẩm và hiển thị thông báo thành công Luồng sự kiện thay thếSTT Thực hiện bởi Hành động 3a. Nhân viên Nhấn vào nút copy sản phẩm nếu có sản phẩm tương tự 6b. Nhân viên Nhấn vào nút quay lại 7c. Hệ thống Thông báo lỗi: Các trường dữ liệu nhập chưa đầy đủ hoặc không đúng định dạng, yêu cầu nhân viên nhập lại 7.d Hệ thống Thông báo lỗi: Mã sản phẩm đã được sử dụng cho sản phẩm khác Hậu điều kiện+ Nhân viên thêm sản phẩm thành công + Hệ thống lưu sản phẩm vào cơ sở dữ liệu 112.3.3 Đặc tả use case import sản phẩm Bảng 2.3: Đặc tả usecase import sản phẩm Mã Usecase UC003 Tên Usecase Import sản phẩm Mô tả Nhân viên tạo mới sản phẩm bằng file excel Tác nhân Nhân viên bán hàng Tiền điều kiện Có sản phẩm mới Luồng sự kiện chínhSTT Thực hiện bởi Hành động 1. Nhân viên Nhấn vào tab quản lý sản phẩm 2. Hệ thống Hiển thị danh sách sản phẩm 3. Nhân viên Nhấn vào nút tải lên từ file 4. Hệ thống Hiển thị popup thêm sản phẩm từ file excel 5. Nhân viên Điền thông tin sản phẩm vào file 6. Nhân viên Tải file excel lên popup 7. Nhân viên Nhấn vào nút lưu 8. Hệ thống Kiểm tra thông tin trong file excel 9. Hệ thống Lưu thông tin danh sách sản phẩm 10. Hệ thống Tắt popup và hiển thị thông báo thành công Luồng sự kiện thay thếSTT Thực hiện bởi Hành động 5a. Nhân viên Tải file mẫu excel về (nếu chưa có file mẫu) và điền thông tin sản phẩm vào file 7b. Nhân viên Nhấn vào nút quay lại 8c. Hệ thống Thông báo lỗi: Các trường dữ liệu nhập chưa đầy đủ hoặc không đúng định dạng, yêu cầu nhân viên nhập lại và cho phép tải file excel danh sách lỗi về.
+Hậu điều kiện+ Nhân viên thêm danh sách sản phẩm thành công + Hệ thống lưu danh sách sản phẩm vào cơ sở dữ liệu 122.3.4 Đặc tả use case nhập hàng Bảng 2.4: Đặc tả usecase nhập hàng Mã Usecase UC004 Tên Usecase Nhập hàng Mô tả Nhân viên nhập hàng về kho Tác nhân Nhân viên bán hàng Tiền điều kiện Không Luồng sự kiện chínhSTT Thực hiện bởi Hành động 1. Nhân viên Nhấn vào tab quản lý kho 2. Hệ thống Hiển thị danh sách kho hàng 3. Nhân viên Nhấn vào xem chi tiết kho hàng 4. Hệ thống Hiển thị thông tin kho hàng, danh sách sản phẩm trong kho hàng 5. Nhân viên Nhấn vào nút nhập hàng 6. Hệ thống Hiện thị popup nhập hàng 7. Nhân viên Chọn nhà cung cấp, chọn sản phẩm, số lượng sản phẩm 8. Nhân viên Nhấn vào nút lưu 9. Hệ thống Kiểm tra thông tin nhân viên nhập 10. Hệ thống Thêm sản phẩm vào kho, lưu thông tin đơn nhập hàng 11. Hệ thống Tắt popup và hiển thị thông báo thành công Luồng sự kiện thay thếSTT Thực hiện bởi Hành động 8a. Nhân viên Nhấn vào nút quay lại 9b. Hệ thống Thông báo lỗi: Các trường dữ liệu nhập chưa đầy đủ, yêu cầu nhân viên nhập lại Hậu điều kiện+ Nhân viên thêm danh sách sản phẩm vào kho hàng thành công + Hệ thống lưu đơn nhập hàng vào cơ sở dữ liệu 132.3.5 Đặc tả use case thanh toán đơn nhập hàng Bảng 2.5: Đặc tả usecase thanh toán đơn nhập hàng Mã Usecase UC005 Tên Usecase Thanh toán đơn nhập hàng Mô tả Nhân viên thanh toán đơn nhập hàng Tác nhân Nhân viên bán hàng Tiền điều kiện Có đơn nhập hàng chưa thanh toán hết Luồng sự kiện chínhSTT Thực hiện bởi Hành động 1. Nhân viên Nhấn vào tab quản lý nhà cung cấp 2. Hệ thống Hiển thị danh sách nhà cung cấp 3. Nhân viên Nhấn vào xem chi tiết nhà cung cấp 4. Hệ thống Hiển thị thông tin nhà cung cấp, danh sách phiếu nhập hàng 5. Nhân viên Chọn 1 đơn nhập hàng và nhấn vào nút thanh toán 6. Hệ thống Hiện thị popup thanh toán đơn nhập hàng 7. Nhân viên Nhập số tiền cần thanh toán và chọn ngày thanh toán 8. Nhân viên Nhấn vào nút thanh toán 9. Hệ thống Kiểm tra thông tin nhân viên nhập 10. Hệ thống Lưu thông tin thanh toán đơn nhập hàng 11. Hệ thống Tắt popup và hiển thị thông báo thành công Luồng sự kiện thay thếSTT Thực hiện bởi Hành động 8a. Nhân viên Nhấn vào nút quay lại 9b. Hệ thống Thông báo lỗi: Các trường dữ liệu nhập chưa đầy đủ, yêu cầu nhân viên nhập lại Hậu điều kiện+ Nhân viên thanh toán đơn nhập hàng thành công + Hệ thống lưu chi tiết thanh toán đơn nhập hàng vào cơ sở dữ liệu 142.3.6 Đặc tả use case xuất báo cáo doanh thu theo nhân viên Bảng 2.6: Đặc tả usecase xuất báo cáo doanh thu theo nhân viên Mã Usecase UC006 Tên Usecase Xuất báo cáo doanh thu theo nhân viên Mô tả Người quản trị muốn xuất file excel BCDT theo nhân viên Tác nhân Quản trị hệ thống Tiền điều kiện Không Luồng sự kiện chínhSTT Thực hiện bởi Hành động 1. Quản trị viên Nhấn vào tab doanh thu nhân viên 2. Hệ thống Hiển thị trang báo cáo doanh thu theo nhân viên 3. Quản trị viên Chọn khoảng thời gian muốn xuất báo cáo 4. Quản trị viên Nhấn vào nút export 5. Hệ thống Hiển thị popup để nhân viên xác nhận xuất file excel báo cáo 6. Quản trị viên Nhấn vào nút đồng ý 7. Hệ thống Trả về file excel báo cáo doanh thu theo điều kiện tìm kiếm của người dùng 8. Hệ thống Tắt popup và hiển thị thông báo thành công Luồng sự kiện thay thếSTT Thực hiện bởi Hành động 6a. Quản trị viên Nhấn vào nút quay lại Hậu điều kiện+ Người quản trị hệ thống tải về thành công file excel báo cáo doanh thu theo nhân viên 2.4 Yêu cầu phi chức năng Yêu cầu vận hành : (i) Hệ thống hoạt động trên bất kỳ trình duyệt web nào như chorme, safari, cốc cốc... (ii) Hệ thống có thể được truy cập từ bất cứ đâu; (iii) Hệ thống tự động cập nhật thông tin sản phẩm, thông tin đơn hàng, thông tin chi tiết các lần nhập hàng liên tục; (iv) Hệ thống cập nhật phản hồi của khách hàng từ email mỗi 10 phút; tự động gửi thông báo qua email, messenger hằng ngày và cho phép cấu hình thời gian gửi, bật tắt thông báo.
+15Yêu cầu hiệu năng : (i) Hệ thống phải ở trạng thái khả dụng 24 giờ mỗi ngày (365 ngày mỗi năm); (ii) Thời gian phản hồi trong các tương tác giữa hệ thống và người dùng phải ít hơn ba giây; (iii) Thay đổi trong cơ sở dữ liệu phải được cập nhật cho tất cả người dùng sử dụng hệ thống trong ít hơn hai giây.
+Yêu cầu bảo mật : (i) Cần phải đăng nhập để sử dụng hệ thống; (ii) Người dùng chỉ được sử dụng các tính năng nếu được cấp quyền; (iii) Người dùng không phải quản lý thì chỉ có thể các xem đơn hàng do mình tạo ra.
+Độ tin cậy, tính bảo trì : (i) Hệ thống không phát sinh các lỗi nghiêm trọng; (ii) Các lỗi phát sinh phải được sửa chữa trong ít hơn 1 ngày.
+Trải nghiệm người dùng: (i) Các trang giao diện quản lý trực quan và dễ sử dụng; (ii) Hệ thống cần hiển thị dữ liệu một cách dễ nhìn, dễ hiểu.
+163.1 Laravel  3.1.1 Giới thiệu Laravel là một PHP Web Framework miễn phí, mã nguồn mở, được tạo bởi Taylor Otwell và dành cho việc phát triển các ứng dụng web theo mô hình kiến trúc mô hình MVC và dựa trên Symfony PHP Framework. Một số tính năng của Laravel như là sử dụng hệ thống đóng gói module, quản lý package (Composer), hỗ trợ nhiều hệ quản trị CSDL quan hệ (MySQL, MariaDB, SQLite, PostgreSQL. . . ), các tiện ích hỗ trợ triển khai và bảo trì ứng dụng. Chính vì thế, laravel trở nên thông dụng và rất hữu ích trong việc tạo ra các phần mềm web được cá nhân hóa một cách nhanh chóng và hiệu quả.
+3.1.2 Ưu điểm So sánh với các framework khác của php, laravel có các ưu điểm đáng chú ý sau:
+Sử dụng các tính năng mới nhất của PHP: Một trong những tính năng làm cho PHP Lararel framework trở nên nổi bật hơn tất cả đó là nó sử dụng tất cả các tính năng mới nhất của PHP từ đó khiến việc lập trình trở nên nhanh chóng và dễ dàng hơn.
+Tài liệu đầy đủ: Tài liệu của Laravel rất thân thiện với các nhà phát triển. Tất cả các phiên bản Laravel đều được phát hành cùng các tài liệu phù hợp, giúp tìm thấy những giải thích chi tiết về coding style, methods và classes nhanh chóng.
+Artisan: Đây là một công cụ được cung cấp bởi Laravel web development. Lập trình viên tương tác với framework bằng cách sử dụng dòng lệnh tạo và quản lý Laravel web development project environment. Artisan là một công cụ tích hợp được cung cấp bởi Laravel giúp lập trình viên giải quyết các công việc mang tính lặp đi lặp lại nhàm chán.
+Bảo mật: Laravel web development đảm bảo an toàn cho ứng dụng web. Nó sử dụng mật khẩu băm Bcrypt và không lưu mật khẩu ở dạng văn bản thuần túy. SQL statement được sử dụng bởi Laravel khiến cho các injection attack khó tiếp cận được. Laravel cung cấp một phương pháp đơn giản để thoát khỏi user input, tránh injection của thẻ script (<script>).
+Cộng đồng phát triển mạnh: Một trong những yếu tố nổi bật của Laravel, đóng góp cho sự phát triển và thành công của nó là cộng đồng giảng dạy, hỗ trợ tuyệt vời của Laravel.
+17•Tính năng caching: Caching (bộ nhớ đệm) là một kỹ thuật để lưu trữ dữ liệu trong một vị trí lưu trữ tạm thời và có thể được lấy ra một cách nhanh chóng khi cần thiết. Laravel lưu gần như tất cả dữ liệu từ View đến routes. Điều này giúp Laravel giảm thời gian xử lý và tăng hiệu suất.
+3.1.3 Nhược điểm So với các PHP framework khác, framework Laravel bộc lộ khá ít nhược điểm.
+Vấn đề lớn nhất có thể kể đến của framework này là thiếu sự liên kết giữa các phiên bản, nếu cố cập nhật code, có thể khiến cho ứng dụng bị gián đoạn hoặc phá vỡ.
+Bên cạnh đó, framework laravel cũng quá nặng cho ứng dụng di động, khiến việc tải trang trở nên chậm chạp.
+3.1.4 Lý do lựa chọn framework Laravel Do Laravel là một nền tảng ứng dụng web PHP mã nguồn mở nên nó hoàn toàn miễn phí để sử dụng và cài đặt; ngoài ra Laravel có khả năng phát triển các ứng dụng web lớn, phức tạp với khả năng bảo trì code nhanh chóng.
+Laravel hiện tại là một trong những ngôn ngữ backend phổ biến nhất bên cạnh các ngôn ngữ khác như Django, Express JS, Ruby on Rials.
+Hỗ trợ kiến trúc MVC: Laravel hỗ trợ kiến trúc MVC giúp nâng cao hiệu suất, tối ưu hóa tài nguyên và cung cấp nhiều chức năng như: routing, cache, template engine, DB query...
+Hình 3.1: Mô hình MVC trong Laravel 3.2 Livewire  3.2.1 Giới thiệu Livewire là một full-stack framework cho Laravel giúp việc xây dựng các giao diện động trở nên đơn giản hơn. Đây là một lựa chọn tuyệt vời nếu muốn xây dựng một SPA nhanh chóng, hơn nữa Livewire tương đối đơn giản, dễ hiểu để áp dụng 18cùng tài liệu được viết chi tiết với các ví dụ cụ thể.
+Mỗi component của Livewire sẽ trải qua 1 lifecycle. Lifecycle hooks cho phép chạy các đoạn mã ở bất kỳ phần nào trong lifecycle hoặc trước khi các biến cụ thể được cập nhật. Dưới đây là các lifecycle hook của Livewire :
+Bảng 3.1: Mô tả lifecycle hooks của Livewire STT Hook Mô tả 1 boot Chạy với mỗi request, ngay sau khi component được khởi tạo nhưng lại trước khi các phương thức khác được gọi 2 booted Chạy với mỗi request, sau khi component được mount hoặc hydrate nhưng trước khi các phương thức update được gọi 3 mount Chạy 1 lần duy nhất sau khi component được khởi tạo, trước khi component render giao diện để trả lại reponse4 hydrate Chạy với mỗi request từ lần thứ 2 trở đi, trước khi com ponent render giao diện để trả lại reponse 5 updating Kích hoạt trước khi bất kỳ thuộc tính nào được cập nhật 6 updated Kích hoạt sau khi thuộc tính được cập nhật 7 updatingFoo Chạy trước khi thuộc tính $foo được cập nhật 8 updatedFoo Chạy sau khi thuộc tính $foo được cập nhật Trong các phương thức lifecycle hook trên, 2 major hooks là mount và hydrate.
+Dưới đây là lưu đồ lifecycle hooks của Livewire:
+Hình 3.2: Laravel Livewire lifecycle 3.2.2 Cách thức hoạt động Theo tài liệu chính thức của Livewire , cách thức hoạt động của package này như sau:
+Khi trang được tải lần đầu tiên, Livewire sẽ render component để trả về output cho trang web (sử dụng include trong blade template engine) 19•Khi một tương tác xảy ra giữa người dùng và ứng dụng, Livewire sẽ thực hiện gửi request bằng AJAX tới máy chủ kèm theo dữ liệu được cập nhật.
+Máy chủ sẽ re-render component và trả lại reponse với mã HTML mới.
+Livewire sau đó biến đổi DOM một cách thông minh theo những mã đã thay đổi.
+3.2.3 Các biện pháp bảo mật  Do trạng thái (giá trị của các thuộc tính) của Livewire được lưu trữ ở trình duyệt và được chuyển qua lại máy chủ giữa các request khiến nó dễ bị thao túng, chỉnh sửa ở phía frontend. Nếu không có các biện pháp bảo mật, sẽ không khó để kẻ xấu có thể thay đổi các trạng thái này.
+a, Checksum Checksum là phương pháp bảo mật cơ bản của Livewire đi cùng mỗi reponse, request; được sử dụng để xác thực trạng thái từ máy chủ không bị giả mạo trong trình duyệt. Thay vì chỉ truyền giá trị của các thuộc tính đến trình duyệt, Livewire sẽ thực hiện tạo một mã băm (sử dụng checksum) từ các giá trị này và gửi cùng reponse. Dưới đây là ví dụ về checksum của Liveiwre:
+Hình 3.3: Ví dụ checksum Livewire b, Persistent Middleware Biện pháp bảo mật thứ 2 Livewire đưa ra là "persistent middleware". Livewire sẽ giữ lại tất cả các middleware về xác thực, ủy quyền trong request đầu tiên và áp dụng lại nó cho các request tiếp theo. Theo mặc định Livewire sẽ áp dụng các middleware về xác thực, ủy quyền có sẵn của Laravel là Authenticate::class và Authorize::class.
+3.2.4 Ưu điểm Một số ưu điểm nổi bật của livewire:
+Dễ sử dụng: Ajax request và JavaScript được dùng ít hơn chính vì thế nó rất dễ sử dụng cho dù là người mới bắt đầu.
+Thân thiện với SEO: Vì HTML được gửi đến trình duyệt trong lần hiển thị đầu 20tiên.
+Hỗ trợ realtime validation.
+Có thể dễ dàng tích hợp vào các trang web Laravel hiện có.
+3.2.5 Nhược điểm Livewire có một số nhược điểm sau đây: giảm hiệu năng của máy chủ do các thay đổi đều được thực hiện thông qua Ajax request; khắc phục các lỗi lâu hơn do sự kết hợp logic giữa cả frontend và backend.
+3.3 Express NodeJS  3.3.1 Giới thiệu NodeJS là một nền tảng chạy trên engine Google Chrome V8 của google, được xây dựng để phát triển những ứng dụng server side. Phần core sử dụng Javascript và C++ cho phép xử lý với hiệu năng cao. Phù hợp với các ứng dụng xử lý nhanh, real time hoặc những ứng dụng cần thay đổi công nghệ nhanh. Nodejs chạy sigle thread nhưng có cơ chế non blocking giúp chạy bất đồng bộ và tăng khả năng xử lý.
+Express là một web application framework dành cho NodeJS. Nó cung cấp cho chúng ta rất nhiều tính năng mạnh mẽ trên nền tảng web cũng như trên các ứng dụng di động. Express hỗ trợ các phương thức HTTP và midleware tạo ra môt API vô cùng mạnh mẽ và dễ sử dụng. Có thể tổng hợp một số chức năng chính của express như sau:
+Thiết lập các lớp trung gian để trả về các HTTP request.
+Định nghĩa router cho phép sử dụng với các hành động khác nhau dựa trên phương thức HTTP và URL.
+Cho phép trả về các trang HTML dựa vào các tham số.
+Trong phạm vi của đồ án, Express được sử dụng để xây dựng server chat giúp gửi tin nhắn messenger tự động cho người dùng.
+3.3.2 Ưu điểm Nodejs phát triển mạnh mẽ và được ưa chuộng dựa trên một số lý do sau đây:
+NodeJS là Javascript, tức là với NodeJS thì lập trình viên fullstack chỉ cần làm việc với một ngôn ngữ. Hơn nữa, tính ổn định của Javascript qua các phiên bản ES5, ES6, ES7, ES8 ngày càng hoàn thiện, ổn định và mang lại nhiều tính năng hơn cho lập trình viên.
+Cộng đồng cùng với hệ sinh thái Javascript vô cùng lớn mạnh, thậm chí đang 21là cộng đồng lớn mạnh nhất theo khảo sát của stackoverflow.
+Các dự án phát triển theo mô hình Client Server (NodeJS đứng trong vai tròlàm các services cung cấp APIs), NodeJS rất phù hợp cho kiến trúc Microser vices để đưa các bài toán lớn thành các bài toán nhỏ và có thể phát triển nhanh chóng và quản lý dễ dàng 1 dự án lớn.
+Hiệu năng của NodeJS phù hợp với các hệ thống phải xử lý nhiều request cùng một lúc. Với mô hình non-blocking NodeJs giúp tiết kiệm khoảng thời gian đáng kể thay vì request phải xếp hàng chờ đợi các request trước thực hiện xong.
+3.4 Hệ quản trị cơ sở dữ liệu MySQL  3.4.1 Giới thiệu MySQL là hệ quản trị cơ sở dữ liệu nguồn mở phổ biến nhất thế giới và được các nhà phát triển rất ưa chuộng trong quá trình phát triển ứng dụng. MySQL hiện nay đã hỗ trợ hầu như mọi ngôn ngữ lập trình và hỗ trợ rất tốt đặc biệt cho các ngôn ngữ lập trình Web. MySQL đáp ứng hầu hết công việc trong quá trình vận hành của website, thích hợp cho các ứng dụng có truy cập CSDL trên internet và có thể giải quyết hầu hết các bài toán trong PHP.
 Một số đặc điểm của MySQL:
-•MySQL là một phần mềm quản trị CSDL dạng server-based (gần tương đương
-với SQL Server của Microsoft).
-•MySQL quản lý dữ liệu thông qua các CSDL, mỗi CSDL có thể có nhiều bảng
-quan hệ chứa dữ liệu.
-•MySQL có cơ chế phân quyền người sử dụng riêng, mỗi người dùng có thể
-được quản lý một hoặc nhiều CSDL khác nhau, mỗi người dùng có một tên
-truy cập (user name) và mật khẩu tương ứng để truy xuất đến CSDL.
-•Khi truy vấn tới CSDL MySQL, phải cung cấp tên truy cập và mật khẩu của
-tài khoản có quyền sử dụng CSDL đó.
-MySQL được lựa chọn sử dụng trong đồ án bởi: MySQL là sự lựa chọn thông
-dụng nhất dành cho các ứng dụng web, ứng dụng xử lý giao dịch trực tuyến và
-website thương mại điện tử. MySQL được tích hợp đầy đủ các tiện ích, dễ sử dụng,
-lại thêm khả năng giao dịch an toàn, chi phí thấp,... nên được xem là cơ sở dữ liệu
-mã nguồn mở phổ biến nhất trên thế giới. MySQL được sử dụng với mục đích nhằm
-bổ trợ PHP(ngôn ngữ chính của đồ án), Perl và nhiều ngôn ngữ khác; là nơi để lưu
-trữ những thông tin cần thiết của trang web viết bằng các ngôn ngữ lập trình trên.
-MySQL có các điểm mạnh như sau:
-•Hiệu năng cao: MySQL hỗ trợ những tiện ích tải tốc độ cao, và đặc biệt là cơ
-chế sử dụng bộ nhớ caches, do đó mang lại hiệu năng khá tốt và ổn định.
-•Mã nguồn mở: Nhờ đặc tính mã nguồn mở nên MySQL là miễn phí với hầu
-hết công việc sử dụng trong các ứng dụng, đi cùng với đó là cộng đồng phát
-•Tính linh động: MySQL chạy trên nhiều hệ thống UNIX cũng như không
-phải UNIX chẳng hạn như Windows hay OS/2. MySQL chạy được các với
-mọi phần cứng từ các máy PC ở nhà cho đến các máy server.
-•Khả năng hỗ trợ cao: MySQL hỗ trợ hầu hết các ngôn ngữ, framework và
-các thư viện ORM hiện nay.
-MySQL bị hạn chế dung lượng, cụ thể, khi số bản ghi của người dùng lớn dần,
-sẽ gây khó khăn cho việc truy xuất dữ liệu, khiến người dùng cần áp dụng nhiều
-biện pháp để tăng tốc độ chia sẻ dữ liệu như chia tải database ra nhiều server, hoặc
-So với Microsoft SQL Server hay Oracle, độ bảo mật của MySQL chưa cao
-bằng. Và quá trình Restore cũng chậm hơn. Tuy nhiên, những nhược điểm này
-không đáng kể với những hệ quản trị nội dung cỡ trung, bởi chỉ những hệ thống lớn
-hoặc rất lớn mới phát sinh các yêu cầu phức tạp hơn.
-MVC là viết tắt của cụm từ "Model-View-Controller". MVC chia thành 3 phần
-được kết nối với nhau giống như tên gọi của nó: (i) Model, (ii) View và (iii) ConModel: Là bộ phận có chức năng lưu trữ toàn bộ cơ sở dữ liệu của ứng dụng.
-Model thể hiện rõ các thao tác với cơ sở dữ liệu như cho phép xem, truy xuất, xử lý
-View: View là nơi chứa giao diện cho người sử dụng, nơi đây lưu trữ các file
-HTML, CSS. Nó bao gồm bất cứ thứ gì mà người dùng có thể nhìn thấy được.
-Controller: Là bộ phận xử lý yêu cầu của người dùng thông qua view. Controller
-sẽ truy xuất đến model và trả về dữ liệu cần thiết cho người dùng.
-Trong mô hình MVC, request sẽ được gửi đến controller thông qua biểu mẫu
-http, controller sẽ lấy dữ liệu từ model và đưa dữ liệu đến view, view sẽ render trả
-về reponse cho người dùng chứa giao diện và dữ liệu. Sự tương tác giữa view và
-model sẽ được xử lý bởi controller.
+MySQL là một phần mềm quản trị CSDL dạng server-based (gần tương đương với SQL Server của Microsoft).
+MySQL quản lý dữ liệu thông qua các CSDL, mỗi CSDL có thể có nhiều bảng quan hệ chứa dữ liệu.
+MySQL có cơ chế phân quyền người sử dụng riêng, mỗi người dùng có thể được quản lý một hoặc nhiều CSDL khác nhau, mỗi người dùng có một tên truy cập (user name) và mật khẩu tương ứng để truy xuất đến CSDL.
+Khi truy vấn tới CSDL MySQL, phải cung cấp tên truy cập và mật khẩu của tài khoản có quyền sử dụng CSDL đó.
+MySQL được lựa chọn sử dụng trong đồ án bởi: MySQL là sự lựa chọn thông dụng nhất dành cho các ứng dụng web, ứng dụng xử lý giao dịch trực tuyến và website thương mại điện tử. MySQL được tích hợp đầy đủ các tiện ích, dễ sử dụng, lại thêm khả năng giao dịch an toàn, chi phí thấp,... nên được xem là cơ sở dữ liệu mã nguồn mở phổ biến nhất trên thế giới. MySQL được sử dụng với mục đích nhằm bổ trợ PHP(ngôn ngữ chính của đồ án), Perl và nhiều ngôn ngữ khác; là nơi để lưu trữ những thông tin cần thiết của trang web viết bằng các ngôn ngữ lập trình trên.
+223.4.2 Ưu điểm MySQL có các điểm mạnh như sau:
+Hiệu năng cao: MySQL hỗ trợ những tiện ích tải tốc độ cao, và đặc biệt là cơ chế sử dụng bộ nhớ caches, do đó mang lại hiệu năng khá tốt và ổn định.
+Mã nguồn mở: Nhờ đặc tính mã nguồn mở nên MySQL là miễn phí với hầu hết công việc sử dụng trong các ứng dụng, đi cùng với đó là cộng đồng phát triển rất mạnh mẽ.
+Tính linh động: MySQL chạy trên nhiều hệ thống UNIX cũng như không phải UNIX chẳng hạn như Windows hay OS/2. MySQL chạy được các với mọi phần cứng từ các máy PC ở nhà cho đến các máy server.
+Khả năng hỗ trợ cao: MySQL hỗ trợ hầu hết các ngôn ngữ, framework và các thư viện ORM hiện nay.
+3.4.3 Nhược điểm MySQL bị hạn chế dung lượng, cụ thể, khi số bản ghi của người dùng lớn dần, sẽ gây khó khăn cho việc truy xuất dữ liệu, khiến người dùng cần áp dụng nhiều biện pháp để tăng tốc độ chia sẻ dữ liệu như chia tải database ra nhiều server, hoặc tạo cache MySQL.
+So với Microsoft SQL Server hay Oracle, độ bảo mật của MySQL chưa cao bằng. Và quá trình Restore cũng chậm hơn. Tuy nhiên, những nhược điểm này không đáng kể với những hệ quản trị nội dung cỡ trung, bởi chỉ những hệ thống lớn hoặc rất lớn mới phát sinh các yêu cầu phức tạp hơn.
+234.1 Thiết kế kiến trúc 4.1.1 Lựa chọn kiến trúc phần mềm MVC là viết tắt của cụm từ "Model-View-Controller". MVC chia thành 3 phầnđược kết nối với nhau giống như tên gọi của nó: (i) Model, (ii) View và (iii) Con troller Model: Là bộ phận có chức năng lưu trữ toàn bộ cơ sở dữ liệu của ứng dụng.
+Model thể hiện rõ các thao tác với cơ sở dữ liệu như cho phép xem, truy xuất, xử lý dữ liệu,. . .
+View: View là nơi chứa giao diện cho người sử dụng, nơi đây lưu trữ các file HTML, CSS. Nó bao gồm bất cứ thứ gì mà người dùng có thể nhìn thấy được.
+Controller: Là bộ phận xử lý yêu cầu của người dùng thông qua view. Controller sẽ truy xuất đến model và trả về dữ liệu cần thiết cho người dùng.
+Trong mô hình MVC, request sẽ được gửi đến controller thông qua biểu mẫu http, controller sẽ lấy dữ liệu từ model và đưa dữ liệu đến view, view sẽ render trả về reponse cho người dùng chứa giao diện và dữ liệu. Sự tương tác giữa view và model sẽ được xử lý bởi controller.
 Một số ưu điểm của mô hình MVC:
-•Hỗ trợ quá trình phát triển nhanh chóng: Với đặc điểm hoạt động độc lập
-của từng thành phần, các lập trình viên có thể làm việc đồng thời trên từng bộ
-phận khác nhau của mô hình này. MVC giúp tiết kiệm rất nhiều thời gian và
-•Dễ dàng thao tác chỉnh sửa: Bộ phận Model hoạt động tách biệt với View
-đồng nghĩa với việc lập trình viên có thể đưa ra các thay đổi, chỉnh sửa hoặc
-cập nhật dễ dàng ở từng bộ phận.
-•Hỗ trợ các nền tảng phát triển SEO: Với mô hình MVC, lập trình viên có
-thể dễ dàng tạo ra các mã SEO URL để thu hút lượng truy cập đối với ứng
-Với những ưu điểm nổi trội của mô hình MVC nên em quyết định sử dụng MVC
-làm kiến trúc phần mềm cho ứng dụng Quản lý bán hàng của mình. MVC cũng
-được laravel hỗ trợ mặc định, sau đây là chi tiết áp dụng mô hình MVC vào ứng
-Tầng Model: Mỗi bảng trong cơ sở dữ liệu sẽ có 1 model tương ứng được đặt
-trong folder Models. Ví dụ: (i) bảng users sẽ có model là User dùng để thêm, sửa,
-xóa dữ liệu của người dùng; (ii) bảng products sẽ có model là Product dùng để
-thêm, sửa, xóa dữ liệu của sản phẩm, ...
-Tầng Controller: Mỗi một nhiệm vụ của hệ thống sẽ có 1 controller xử lý, chịu
-trách nhiệm truy vấn dữ liệu trên model để thực thi nhiệm vụ. Ví dụ: (i) Nhiệm vụ
-quản lý đơn hàng sẽ được viết trong class OrderController; (ii) Nhiệm vụ quản lý
-sản phẩm sẽ được đặt trong class ProductController.
-Tầng View: Chịu trách nhiệm hiển thị dữ liệu được truyền đến từ model thông
-qua controller. Laravel cung cấp sẵn blade template engine rất mạnh mẽ và đơn
-giản để sử dụng. Các file được lưu trữ trong folder views, ví dụ như: (i) danh sách
-đơn hàng sẽ được viết trong file order-list; (ii) Thêm mới đơn hàng được viết trong
-file order-create; (iii) Chỉnh sửa đơn hàng được viết trong file order-edit.
-Ngoài ra, hệ thống còn sử dụng routing để nhận request từ người dùng và chuyển
-đến controller để xử lý; kết hợp với việc sử dụng package Livewire hệ thống sẽ được
-triển khai theo mô hình dưới đây:
-Hệ thống được triển khai như hình vẽ dưới đây:
-Hệ thống sẽ gồm 3 thành phần chính là: (i) Ứng dụng quản lý bán hàng: Người
-dùng sẽ đăng nhập để sử dụng hệ thống này; (ii) Chatbot server: Được triển khai
-trên heroku để gửi tin nhắn messenger cho người dùng; (iii) Database: Lưu trữ dữ
-liệu và các file của người dùng. Các package khác của hệ thống sẽ có chức năng
-•Web Browser: Sử dụng để truy cập vào hệ thống quản lý bán hàng.
-•Supplier: Quản lý nhà cung cấp của ứng dụng.
-•Payment: Quản lý đơn nhập hàng của ứng dụng.
-•Warehouse: Quản lý kho hàng của ứng dụng.
-•Order: Quản lý đơn hàng của ứng dụng.
-•Product: Quản lý sản phẩm của ứng dụng.
-•Product Infomation: Quản lý một số thông tin khác của sản phẩm như màu
-sắc, chất liệu, thương hiệu.
-•Customer: Quản lý khách hàng của ứng dụng.
-•User: Quản lý danh sách người dùng của ứng dụng.
-•Customer Feedback: Quản lý các phản hồi của khách hàng.
-•User Group: Quản lý nhóm người dùng của ứng dụng.
-•Notification: Quản lý thông báo (có thể thông báo qua messenger, email).
-•Repository: Chịu trách nhiệm thao tác với hệ quản trị cơ sở dữ liệu (MySQL)
-như: thêm, sửa, xóa bản ghi.
-•File Storage: Chịu trách nhiệm lưu trữ file của ứng dụng.
-Trong phạm vi của Đồ án này, hệ thống Quản lý bán hàng sẽ được thiết kế chạy
-trên trình duyệt web. Sau đây là thiết kế một số màn hình chính của hệ thống:
-Giao diện Danh sách đơn hàng
-Giao diện Thêm mới đơn hàng
-Giao diện Báo cáo doanh thu theo nhân viên
-Giao diện Chi tiết kho hàng
-Popup thêm mới cấu hình tạo phản hồi
-Từ yêu cầu của ứng dụng, thiết kế lớp chi tiết cho mô-đun quản lý sản phẩm
-được thiết kế như sau:
-Mô tả chi tiết các thuộc tính, phương thức trong class ProductController:
-•Excel: Hỗ trợ thao tác với file excel.
-•File: Hỗ trợ lưu trữ, download file trong hệ thống.
-•ProductModel: Sử dụng để thao tác với bảng products.
-•WarehouseModel: Sử dụng để thao tác với bảng warehouses.
-•productList(): Trả về trang danh sách sản phẩm.
-•createProduct(): Trả về trang tạo mới sản phẩm.
-•sotreProduct(): Thêm mới sản phẩm và trả về trang danh sách sản phẩm.
-•updateProduct(): Chỉnh sửa sản phẩm và trả về trang danh sách sản phẩm.
-•upload(): Thêm mới sản phẩm bằng file excel.
-•copyProduct(): Trả về trang sao chép sản phẩm.
+Hỗ trợ quá trình phát triển nhanh chóng: Với đặc điểm hoạt động độc lập của từng thành phần, các lập trình viên có thể làm việc đồng thời trên từng bộ phận khác nhau của mô hình này. MVC giúp tiết kiệm rất nhiều thời gian và công sức phát triển.
+Dễ dàng thao tác chỉnh sửa: Bộ phận Model hoạt động tách biệt với View đồng nghĩa với việc lập trình viên có thể đưa ra các thay đổi, chỉnh sửa hoặc cập nhật dễ dàng ở từng bộ phận.
+Hỗ trợ các nền tảng phát triển SEO: Với mô hình MVC, lập trình viên có thể dễ dàng tạo ra các mã SEO URL để thu hút lượng truy cập đối với ứng dụng bất kỳ.
+Với những ưu điểm nổi trội của mô hình MVC nên em quyết định sử dụng MVC làm kiến trúc phần mềm cho ứng dụng Quản lý bán hàng của mình. MVC cũng được laravel hỗ trợ mặc định, sau đây là chi tiết áp dụng mô hình MVC vào ứng dụng:
+24Tầng Model: Mỗi bảng trong cơ sở dữ liệu sẽ có 1 model tương ứng được đặt trong folder Models. Ví dụ: (i) bảng users sẽ có model là User dùng để thêm, sửa, xóa dữ liệu của người dùng; (ii) bảng products sẽ có model là Product dùng để thêm, sửa, xóa dữ liệu của sản phẩm, ...
+Tầng Controller: Mỗi một nhiệm vụ của hệ thống sẽ có 1 controller xử lý, chịu trách nhiệm truy vấn dữ liệu trên model để thực thi nhiệm vụ. Ví dụ: (i) Nhiệm vụ quản lý đơn hàng sẽ được viết trong class OrderController; (ii) Nhiệm vụ quản lý sản phẩm sẽ được đặt trong class ProductController.
+Tầng View: Chịu trách nhiệm hiển thị dữ liệu được truyền đến từ model thông qua controller. Laravel cung cấp sẵn blade template engine rất mạnh mẽ và đơn giản để sử dụng. Các file được lưu trữ trong folder views, ví dụ như: (i) danh sách đơn hàng sẽ được viết trong file order-list; (ii) Thêm mới đơn hàng được viết trong file order-create; (iii) Chỉnh sửa đơn hàng được viết trong file order-edit.
+Ngoài ra, hệ thống còn sử dụng routing để nhận request từ người dùng và chuyển đến controller để xử lý; kết hợp với việc sử dụng package Livewire hệ thống sẽ được triển khai theo mô hình dưới đây:
+Hình 4.1: Mô hình MVC sử dụng trong hệ thống 4.1.2 Thiết kế tổng quan Hệ thống được triển khai như hình vẽ dưới đây:
+25Hình 4.2: Biểu đồ phụ thuộc gói Hệ thống sẽ gồm 3 thành phần chính là: (i) Ứng dụng quản lý bán hàng: Người dùng sẽ đăng nhập để sử dụng hệ thống này; (ii) Chatbot server: Được triển khai trên heroku để gửi tin nhắn messenger cho người dùng; (iii) Database: Lưu trữ dữ liệu và các file của người dùng. Các package khác của hệ thống sẽ có chức năng như sau:
+Web Browser: Sử dụng để truy cập vào hệ thống quản lý bán hàng.
+Supplier: Quản lý nhà cung cấp của ứng dụng.
+Payment: Quản lý đơn nhập hàng của ứng dụng.
+Warehouse: Quản lý kho hàng của ứng dụng.
+Order: Quản lý đơn hàng của ứng dụng.
+Product: Quản lý sản phẩm của ứng dụng.
+Product Infomation: Quản lý một số thông tin khác của sản phẩm như màu sắc, chất liệu, thương hiệu.
+Customer: Quản lý khách hàng của ứng dụng.
+User: Quản lý danh sách người dùng của ứng dụng.
+Customer Feedback: Quản lý các phản hồi của khách hàng.
+User Group: Quản lý nhóm người dùng của ứng dụng.
+Notification: Quản lý thông báo (có thể thông báo qua messenger, email).
+Repository: Chịu trách nhiệm thao tác với hệ quản trị cơ sở dữ liệu (MySQL) 26như: thêm, sửa, xóa bản ghi.
+File Storage: Chịu trách nhiệm lưu trữ file của ứng dụng.
+4.1.3 Thiết kế chi tiết gói Hình 4.3: Thiết kế chi tiết gói quản lý sản phẩm Hình 4.4: Thiết kế chi tiết gói Quản lý đơn hàng Hình 4.5: Thiết kế chi tiết gói Quản lý thông báo 27Hình 4.6: Thiết kế chi tiết gói Quản lý đơn nhập hàng 4.2 Thiết kế chi tiết 4.2.1 Thiết kế giao diện Trong phạm vi của Đồ án này, hệ thống Quản lý bán hàng sẽ được thiết kế chạy trên trình duyệt web. Sau đây là thiết kế một số màn hình chính của hệ thống:
+Giao diện Dashboard Hình 4.7: Thiết kế giao diện Dashboard 28Giao diện Danh sách đơn hàng Hình 4.8: Thiết kế giao diện Danh sách đơn hàng Giao diện Thêm mới đơn hàng Hình 4.9: Thiết kế giao diện Thêm mới đơn hàng 29Giao diện Báo cáo doanh thu theo nhân viên Hình 4.10: Thiết kế giao diện Báo cáo doanh thu theo nhân viên Giao diện Chi tiết kho hàng Hình 4.11: Thiết kế giao diện Chi tiết kho hàng 30Popup thêm mới cấu hình tạo phản hồi Hình 4.12: Thiết kế giao diện Popup thêm mới cấu hình tạo phản hồi 4.2.2 Thiết kế lớp Từ yêu cầu của ứng dụng, thiết kế lớp chi tiết cho mô-đun quản lý sản phẩm được thiết kế như sau:
+Hình 4.13: Thiết kế lớp chi tiết cho mô-dun quản lý sản phẩm Mô tả chi tiết các thuộc tính, phương thức trong class ProductController:
+Excel: Hỗ trợ thao tác với file excel.
+31•File: Hỗ trợ lưu trữ, download file trong hệ thống.
+ProductModel: Sử dụng để thao tác với bảng products.
+WarehouseModel: Sử dụng để thao tác với bảng warehouses.
+productList(): Trả về trang danh sách sản phẩm.
+createProduct(): Trả về trang tạo mới sản phẩm.
+sotreProduct(): Thêm mới sản phẩm và trả về trang danh sách sản phẩm.
+updateProduct(): Chỉnh sửa sản phẩm và trả về trang danh sách sản phẩm.
+upload(): Thêm mới sản phẩm bằng file excel.
+copyProduct(): Trả về trang sao chép sản phẩm.
+Validate(): Validate dữ liệu.
 Mô tả chi tiết các phương thức trong class ProductModel:
-•getProductById(): Lấy thông tin sản phẩm theo id sản phẩm.
-•createProduct(): Thêm 1 sản phẩm mới vào cơ sở dữ liệu.
-•updateProduct(): Chỉnh sửa thông tin sản phẩm.
-•getAllProduct(): Trả về danh sách toàn bộ sản phẩm trong hệ thống.
-•ProductType(): Trả về loại sản phẩm.
-•ProductBrand(): Trả về thương hiệu sản phẩm.
-•ProductWarehouse(): Trả về thông tin kho hàng chứa sản phẩm.
+getProductById(): Lấy thông tin sản phẩm theo id sản phẩm.
+createProduct(): Thêm 1 sản phẩm mới vào cơ sở dữ liệu.
+updateProduct(): Chỉnh sửa thông tin sản phẩm.
+getAllProduct(): Trả về danh sách toàn bộ sản phẩm trong hệ thống.
+ProductType(): Trả về loại sản phẩm.
+ProductBrand(): Trả về thương hiệu sản phẩm.
+ProductWarehouse(): Trả về thông tin kho hàng chứa sản phẩm.
 Mô tả chi tiết các phương thức trong class WarehouseModel:
-•province(): Trả về thông tin tỉnh/thành phố của kho hàng.
-•district(): Trả về thông tin quận/huyện của kho hàng.
-•updateWarehouse(): Cập nhật thông tin kho hàng.
+province(): Trả về thông tin tỉnh/thành phố của kho hàng.
+district(): Trả về thông tin quận/huyện của kho hàng.
+updateWarehouse(): Cập nhật thông tin kho hàng.
 Mô tả chi tiết các phương thức trong class Model:
-•paginate(): Phân trang dữ liệu trả về.
-Biểu đồ trình tự Tạo mới sản phẩm
-Biểu đồ thực thể liên kết của hệ thống được triển khai như hình vẽ dưới đây:
-Hệ thống gồm có các thực thể sau đây: (i) Sản phẩm, (ii) Đơn hàng, (iii) Nhân
-viên, (iv) Khách hàng, (v) Nhà cung cấp, (vi) kho hàng và (vii) Phản hồi từ email.
+paginate(): Phân trang dữ liệu trả về.
+32Biểu đồ trình tự Tạo mới sản phẩm Hình 4.14: Biểu đồ trình tự Tạo mới sản phẩm 4.2.3 Thiết kế cơ sở dữ liệu Biểu đồ thực thể liên kết của hệ thống được triển khai như hình vẽ dưới đây:
+Hình 4.15: Biểu đồ thực thể liên kết 33Hệ thống gồm có các thực thể sau đây: (i) Sản phẩm, (ii) Đơn hàng, (iii) Nhân viên, (iv) Khách hàng, (v) Nhà cung cấp, (vi) kho hàng và (vii) Phản hồi từ email.
 Mối quan hệ giữa các thực thể trong hệ thống:
-•Một sản phẩm nằm tronng nhiều đơn hàng.
-•Một sản phẩm được chứa bởi nhiều kho hàng.
-•Một sản phẩm được cung cấp bởi nhiều nhà cung cấp.
-•Một sản phẩm được quản lý bởi nhiều nhân viên.
-•Một đơn có nhiều sản phẩm.
-•Một đơn hàng được mua bởi 1 khách hàng.
-•Một nhân viên quản lý nhiều sản phẩm.
-•Một nhân viên quản lý nhiều đơn hàng.
-•Một khách hàng mua nhiều đơn hàng.
-•Một nhà cung cấp có thể cung cấp nhiều sản phẩm.
-•Một kho hàng chứa nhiều sản phẩm.
-Từ sơ đồ thực thể liên kết trên kết hợp với việc sử dụng hệ quản trị cơ sở dữ liệu
-MySQL và thực tế sử dụng hệ thống, cơ sở dữ liệu của hệ thống được thiết kế như
-Giao diện màn hình báo cáo tổng hợp thu
-Giao diện màn hình báo cáo chi tiết thu
-Giao diện màn hình báo cáo doanh thu theo nhân viên
-Giao diện màn hình danh sách đơn hàng
-Giao diện màn hình tạo mới đơn hàng
-Giao diện màn hình sao chép sản phẩm
-Giao diện màn hình nhập hàng
-Giao diện màn hình thanh toán đơn hàng
-Giao diện màn hình cấu hình luật tạo phản hồi từ khách hàng
-Giao diện trang cá nhân
-Giao diện chỉnh sửa người dùng
-Giao diện file export excel báo cáo chi tiết thu
-Khi khách hàng muốn phản hồi về dịch vụ bán hàng (thái độ phục vụ nhân viên,
-chất lượng sản phẩm...) các phần mềm hiện tại trên thị trường chưa có nơi để khách
-hàng gửi các phản hồi này; lưu lại và phân loại để chủ cửa hàng, người quản lý xử
-lý các thông tin này một cách nhanh chóng, kịp thời. Dễ dàng nhận thấy, một số lợi
-ích mà việc quản lý phản hồi khách hàng mang lại: (i) Giúp chủ cửa hàng đưa ra
-quyết định kinh doanh đúng đắn; (ii) Giúp cửa hàng cải thiện sản phẩm, dịch vụ;
-(iii) Biết được mức độ hài lòng của khách hàng về hệ thống; (iv) Tăng trải nghiệm
-Do đó, Đồ án này đã được bổ sung chức năng quản lý phản hồi khách hàng qua
-email; cho phép khách hàng có thể gửi email phản hồi về dịch vụ bán hàng và hệ
-thống sẽ lưu trữ, phân loại để chủ cửa hàng, người quản lý có thể xử lý kịp thời, tiết
-kiệm thời gian và công sức.
-Để có thể lấy thông tin từ email, Laravel có một số thư viện hỗ trợ như Laravel
-Mailbox, Laravel Imap để kết nối và lấy thông tin từ email. Qua quá trình tìm hiểu,
-nghiên cứu Laravel Imap đã được sử dụng trong đồ án này bởi tính chất dễ cài đặt
-và ứng dụng của nó.
-Laravel Imap hỗ trợ 1 số giao thức như: Imap (mặc định), pop3, nntp và 1 số
-phương phức mã hóa nhằm bảo vệ dữ liệu như: false (không mã hóa), ssl, tls,
-starttls, notls. Tùy vào email provider (Gmail, Yahoo, Microsoft...) sẽ có các cấu
-hình tùy chỉnh khác nhau để có thể kết nối đến email và lấy nội dung email về.
-Dưới đây là ví dụ kết nối đến email outlook trong đồ án đã sử dụng để nhận email
-phản hồi của khách hàng.
-Tiếp theo, để hệ thống không lấy trùng lặp các email đã được xử lý và tăng
-hiệu năng của hệ thống thì ở đây, schedule của Laravel được sử dụng để lập lịch
-chạy lấy thông tin từ email mỗi 10 phút và lưu lại messageID của email để kiểm
-tra trùng lặp. Ngoài ra, sau khi email được lưu vào hệ thống thì sẽ được đánh dấu
-thành unseen (sử dụng function setFlag), những lần chạy sau đó sẽ không lấy lại
-Nhằm tăng trải nghiệm khi người dùng muốn đồng bộ dữ liệu trong email với hệ
-thống ngay lập tức mà không cần phải chờ 10 phút để lần cập nhật tiếp theo được
-thực hiện nên phần mềm đã được bổ sung tính năng đồng bộ thủ công để người
-dùng có thể tự cập nhật dữ liệu khi cần thiết. Sau khi đồng bộ, hệ thống sẽ trả về
-số email đã lưu vào cơ sở dữ liệu thành công.
-Tính năng cho phép người dùng có thể thay đổi cấu hình email đã được thiết
-lập nhằm khắc phục tình trạng người sử dụng không thể tùy chỉnh được thông tin
-email nhận phản hồi do Laravel lưu cứng thông tin trong file config của ứng dụng.
+Sản phẩm:
+Một sản phẩm nằm tronng nhiều đơn hàng.
+Một sản phẩm được chứa bởi nhiều kho hàng.
+Một sản phẩm được cung cấp bởi nhiều nhà cung cấp.
+Một sản phẩm được quản lý bởi nhiều nhân viên.
+Đơn hàng:
+Một đơn có nhiều sản phẩm.
+Một đơn hàng được mua bởi 1 khách hàng.
+Nhân viên:
+Một nhân viên quản lý nhiều sản phẩm.
+Một nhân viên quản lý nhiều đơn hàng.
+Khách hàng:
+Một khách hàng mua nhiều đơn hàng.
+Nhà cung cấp:
+Một nhà cung cấp có thể cung cấp nhiều sản phẩm.
+Kho hàng:
+Một kho hàng chứa nhiều sản phẩm.
+Từ sơ đồ thực thể liên kết trên kết hợp với việc sử dụng hệ quản trị cơ sở dữ liệu MySQL và thực tế sử dụng hệ thống, cơ sở dữ liệu của hệ thống được thiết kế như hình vẽ dưới đây:
+34Hình 4.16: Thiết kế cơ sở dữ liệu của hệ thống Sau đây là bảng mô tả chi tiết các chức năng, nhiệm vụ của từng bảng:
+Bảng 4.1: Mô tả chi tiết chức năng, nhiệm vụ của từng bảng STT Tên bảng Mô tả 1 Product Lưu danh sách sản phẩm 2 Order Lưu danh sách đơn hàng 3 Product Order Bảng trung gian lưu trữ giá và số lượng của từng sản phẩm trong đơn hàng 4 Customer Lưu danh sách khách hàng 5 User Lưu danh sách người dùng trong hệ thống 6 Prodcut Type Lưu tên loại sản phẩm 7 Product Brand Lưu tên thương hiệu sản phẩm 8 Product Size Lưu kích thước sản phẩm 9 Product Material Lưu chất liệu sản phẩm 10 Product Color Lưu màu sắc sản phẩm Bảng 4.1 – Còn nữa ở trang tiếp 3511 Warehouse Lưu danh sách kho hàng của hệ thống 12 Product Warehouse Bảng trung gian lưu trữ tồn kho của sản phẩm trong kho 13 Province Lưu trữ tên tỉnh, thành phố 14 District Lưu trữ tên quận, huyện 15 Supplier Lưu danh sách nhà cung cấp 16 Payment Lưu trữ thông tin nhập hàng về kho 17 Payment Product Bảng trung gian lưu trữ giá và số lượng sản phẩm trong đơn nhập hàng 18 Payment History Bảng trung gian lưu trữ thông tin của từng lần thanh toán đơn nhập hàng 19 Ticket Lưu trữ thông tin phản hồi của khách hàng qua email 20 Ticket Config Lưu trữ cấu hình luật tạo các phản hồi từ email 364.3 Xây dựng ứng dụng 4.3.1 Thư viện và công cụ sử dụng Bảng 4.2: Danh sách thư viện và công cụ sử dụng Mục đích Công cụ Địa chỉ URL IDE lập trình Visual studio code 64 bit m/ Version control Github  Cơ sở dữ liệu Mysql  Ngôn ngữ lập trình PHP 7.3  Framework cho php Laravel 7  Hỗ trợ SPA Livewire 2  /docs/2.x/quickstart Import, export excel Maatwebsite excel 3.1 om/3.1/getting-started/ Kéo thả bảng Laravel livewire tables 1.6 /laravel-livewire-tablesHỗ trợ phân quyền Spatie laravel permission 4.0 ravel-permission Debug code Laravel debugbar  laravel-debugbar Hỗ trợ làm giao diện Bootstrap 4; jQuery 1.11.3 s/4.6/getting-started/introd uction/ ; / Vẽ biểu đồ ChartJs 2.6  Multiselect Select2 4.0  elect2/releases Hiển thị thông báo Toastr 2.8  /chart.js@2.8.0 Lấy thông tin từ mail laravel-imap  works/laravel/installation 374.3.2 Kết quả đạt được Hệ thống đã có thể quản lý các đơn hàng, sản phẩm, kho hàng, nhà cung cấp, cho phép xuất báo cáo doanh thu theo khách hàng, theo nhân viên; quản lý 1 số thông tin liên quan đến sản phẩm như: chất liệu, màu sắc, kích thước, thương hiệu...
+Hệ thống còn cho phép gửi thông báo về số đơn hàng mới trong ngày, số đơn hàng chưa thanh toán, số đơn hàng chờ xử lý qua gmail, messenger và có thể tùy chỉnh bật - tắt, thời gian gửi thông báo.
+Ngoài ra, hệ thống có thể lấy được thông tin từ email, file đính kèm trong email theo điều kiện phân loại để hỗ trợ người dùng quản lý các phản hồi của khách hàng về hệ thống.
+Thống kê các thông tin về ứng dụng Bảng 4.3: Thống kê thông tin ứng dụng STT Thông tin Số liệu 1 Số dòng code 20000 2 Số lớp 145 3 Số gói 2 4 Dung lượng toàn bộ mã nguồn 128 MB 5 Dung lượng web quản lý sản phẩm 118 MB 6 Dung lượng chatbot server 10 MB 4.3.3 Minh họa các chức năng chính Sau đây là các màn hình chức năng chính, quan trọng trong hệ thống:
+Giao diện màn hình dashboard Hình 4.17: Màn hình dashboard 38Giao diện màn hình báo cáo tổng hợp thu Hình 4.18: Màn hình tổng hợp thu Giao diện màn hình báo cáo chi tiết thu Hình 4.19: Màn hình chi tiết thu Giao diện màn hình báo cáo doanh thu theo nhân viên Hình 4.20: Màn hình doanh thu theo nhân viên 39Giao diện màn hình danh sách đơn hàng Hình 4.21: Màn hình danh sách đơn hàng Giao diện màn hình tạo mới đơn hàng Hình 4.22: Màn hình tạo mới đơn hàng Giao diện màn hình sao chép sản phẩm Hình 4.23: Màn hình sao chép sản phẩm 40Giao diện màn hình nhập hàng Hình 4.24: Màn hình nhập hàng về kho Giao diện màn hình thanh toán đơn hàng Hình 4.25: Màn hình thanh toán đơn nhập hàng Giao diện màn hình cấu hình luật tạo phản hồi từ khách hàng Hình 4.26: Màn hình cấu hình luật tạo phản hồi từ khách hàng 41Giao diện trang cá nhân Hình 4.27: Giao diện trang cá nhân Giao diện chỉnh sửa người dùng Hình 4.28: Giao diện chỉnh sửa người dùng Giao diện file export excel báo cáo chi tiết thu Hình 4.29: Giao diện file excel chi tiết thu 424.4 Kiểm thử 4.4.1 Kiểm thử tạo mới sản phẩm Dữ liệu đầu vào: (i) productCode: mã sản phẩm, (ii) productName: tên sản phẩm.
+Kết quả trả về: (i) True: thông báo tạo mới sản phẩm thành công, (ii) False:
+thông báo tạo mới sản phẩm thất bại và lý do thất bại.
+productCode phải có từ 5 ký tự trở lên, không được trống và không chứa ký tự đặc biệt.
+Bảng 4.4: Kiểm thử mã sản phẩm STT Dữ liệu vào Kết quả trả về 1 productCode = Null False (Mã sản phẩm không được trống) 2 productCode = 1234 False (Mã sản phẩm phải từ 5 ký tự trở lên) 3 productCode = 12345 True (Thêm mới thành công) 4 productCode = 123456 True (Thêm mới thành công) 5 productCode = 123456@ False (Mã sản phẩm không được chứa ký tự đặc biệt) productName phải có từ 6 ký tự trở lên, không được trống và không chứa ký tự đặc biệt.
+Bảng 4.5: Kiểm thử tên sản phẩm STT Dữ liệu vào Kết quả trả về 1 productName = Null False (Tên sản phẩm không được trống) 2 productName = 1234 False (Tên sản phẩm phải từ 5 ký tự trở lên) 3 productName = 12345 True (Thêm mới thành công) 4 productName = 123456 True (Thêm mới thành công) 5 productName = 123456@ False (Tên sản phẩm không được chứa ký tự đặc biệt) 4.4.2 Kiểm thử tạo mới đơn hàng Dữ liệu đầu vào: (i) customerId: Id khách hàng, (ii) productIds : danh sách id của sản phẩm, (iii) quantities: danh sách số lượng sản phẩm tương ứng với từng sản phẩm.
+Kết quả trả về: (i) True: thông báo tạo mới đơn hàng thành công, (ii) False: thông 43báo tạo mới đơn hàng thất bại và lý do thất bại.
+customerId không được trống Bảng 4.6: Kiểm thử Id khách hàng STT Dữ liệu vào Kết quả trả về 1 customerId = Null False (Tên khách hàng không được trống) 2 customerId = 1 True (Thêm mới thành công) 3 customerId = 12 True (Thêm mới thành công) productIds không được trống Bảng 4.7: Kiểm thử danh sách id sản phẩm (đơn hàng) STT Dữ liệu vào Kết quả trả về 1 productIds = [] False (Sản phẩm bắt buộc) 2 productIds =  True (Thêm mới thành công) 3 productIds = [1, 2] True (Thêm mới thành công quantities không được trống, từng item phải có số lượng lớn hơn 0 và phải nhỏ hơn tồn kho hiện tại.
+Bảng 4.8: Kiểm thử danh sách số lượng sản phẩm (đơn hàng) STT Dữ liệu vào Kết quả trả về 1 quantities = [] False (Số lượng sản phẩm bắt buộc) 2 quantities =  False (Số lượng sản phẩm phải lớn hơn 0) 3 quantities =  True (Thêm mới thành công) 4 quantities = [1, 2] True (Thêm mới thành công) 5 quantities = [-1, 2] True (Số lượng sản phẩm phải lớn hơn 0) 6 quantities = [100, 2] True (Số lượng sản phẩm phải nhỏ hơn tồn kho) 4.4.3 Kiểm thử nhập hàng Dữ liệu đầu vào: (i) supplierId: Id nhà cung cấp, (ii) productIds: danh sách id của sản phẩm, (iii) quantities: danh sách số lượng sản phẩm tương ứng với từng sản phẩm.
+44Kết quả trả về: (i) True: thông báo tạo mới đơn hàng thành công, (ii) False: thông báo tạo mới đơn hàng thất bại và lý do thất bại.
+supplierId không được trống Bảng 4.9: Kiểm thử Id khách hàng STT Dữ liệu vào Kết quả trả về 1 supplierId = Null False (Tên nhà cung cấp không được trống) 2 supplierId = 1 True (Thêm mới thành công) 3 supplierId = 12 True (Thêm mới thành công) productIds không được trống Bảng 4.10: Kiểm thử danh sách id sản phẩm (nhập hàng) STT Dữ liệu vào Kết quả trả về 1 productIds = [] False (Sản phẩm bắt buộc) 2 productIds =  True (Thêm mới thành công) 3 productIds = [1, 2] True (Thêm mới thành công quantities không được trống, từng item phải có số lượng lớn hơn 0 và phải nhỏ hơn tồn kho hiện tại.
+Bảng 4.11: Kiểm thử danh sách số lượng sản phẩm (nhập hàng) STT Dữ liệu vào Kết quả trả về 1 quantities = [] False (Số lượng sản phẩm bắt buộc) 2 quantities =  False (Số lượng sản phẩm phải lớn hơn 0) 3 quantities =  True (Thêm mới thành công) 4 quantities = [1, 2] True (Thêm mới thành công) 5 quantities = [-1, 2] True (Số lượng sản phẩm phải lớn hơn 0) Tổng kết sau khi kiểm thử hệ thống:
+Phương pháp kiểm thử: Kiểm thử giá trị biên.
+Số testcase: 23 testcase.
+Kết quả kiểm thử: Thành công 100%.
+455.1 Quản lý phản hồi khách hàng qua email 5.1.1 Vấn đề Khi khách hàng muốn phản hồi về dịch vụ bán hàng (thái độ phục vụ nhân viên, chất lượng sản phẩm...) các phần mềm hiện tại trên thị trường chưa có nơi để khách hàng gửi các phản hồi này; lưu lại và phân loại để chủ cửa hàng, người quản lý xử lý các thông tin này một cách nhanh chóng, kịp thời. Dễ dàng nhận thấy, một số lợi ích mà việc quản lý phản hồi khách hàng mang lại: (i) Giúp chủ cửa hàng đưa ra quyết định kinh doanh đúng đắn; (ii) Giúp cửa hàng cải thiện sản phẩm, dịch vụ; (iii) Biết được mức độ hài lòng của khách hàng về hệ thống; (iv) Tăng trải nghiệm của khách hàng.
+Do đó, Đồ án này đã được bổ sung chức năng quản lý phản hồi khách hàng qua email; cho phép khách hàng có thể gửi email phản hồi về dịch vụ bán hàng và hệ thống sẽ lưu trữ, phân loại để chủ cửa hàng, người quản lý có thể xử lý kịp thời, tiết kiệm thời gian và công sức.
+5.1.2 Lấy thông tin từ email Để có thể lấy thông tin từ email, Laravel có một số thư viện hỗ trợ như Laravel Mailbox, Laravel Imap để kết nối và lấy thông tin từ email. Qua quá trình tìm hiểu, nghiên cứu Laravel Imap đã được sử dụng trong đồ án này bởi tính chất dễ cài đặt và ứng dụng của nó.
+Laravel Imap hỗ trợ 1 số giao thức như: Imap (mặc định), pop3, nntp và 1 số phương phức mã hóa nhằm bảo vệ dữ liệu như: false (không mã hóa), ssl, tls, starttls, notls. Tùy vào email provider (Gmail, Yahoo, Microsoft...) sẽ có các cấu hình tùy chỉnh khác nhau để có thể kết nối đến email và lấy nội dung email về.
+Dưới đây là ví dụ kết nối đến email outlook trong đồ án đã sử dụng để nhận email phản hồi của khách hàng.
+Hình 5.1: Cấu hình kết nối đến Email outlook 46Một số cấu hình với email providers khác:
+Bảng 5.1: Cấu hình với các email provider STT Email provider Host Port Encryption 1 Gmail imap.gmail.com 993 SSL/TLS 2 Yahoo imap.mail.yahoo.com 993 SSL 3 AOL imap.aol.com 993 SSL/TLS 4 Mailtrap smtp.mailtrap.io 993 TLS Sau khi cấu hình kết nối thành công, hệ thống đã có thể kết nối đến email. Để lấy những thông tin cần thiết của email, Laravel Imap cung cấp 1 số function để tương tác với email như:
+getSubject: Lấy tiêu đề của email.
+getHtmlBody: Lấy nội dung email.
+getFrom: Lấy email người gửi.
+getDate: Lấy thời gian khách hàng gửi email.
+getAttachments: Lấy danh sách file đính kèm với email (các file đính kèm này sẽ được lưu lại vào folder storage để hiển thị khi người sử dụng muốn xem chi tiết nội dung email và cho phép tải các file đính kèm này về).
+setFlag: Đặt cờ cho email (ví dụ như: Seen, UnSeen, Spam) Kết quả sau khi kết nối đến email và lưu trữ nội dung của email như sau:
+Hình 5.2: Nội dung email được gửi đến 47Hình 5.3: Popup xem chi tiết phản hồi của khách hàng Tiếp theo, để hệ thống không lấy trùng lặp các email đã được xử lý và tăng hiệu năng của hệ thống thì ở đây, schedule của Laravel được sử dụng để lập lịch chạy lấy thông tin từ email mỗi 10 phút và lưu lại messageID của email để kiểm tra trùng lặp. Ngoài ra, sau khi email được lưu vào hệ thống thì sẽ được đánh dấu thành unseen (sử dụng function setFlag), những lần chạy sau đó sẽ không lấy lại các email này.
+Nhằm tăng trải nghiệm khi người dùng muốn đồng bộ dữ liệu trong email với hệ thống ngay lập tức mà không cần phải chờ 10 phút để lần cập nhật tiếp theo được thực hiện nên phần mềm đã được bổ sung tính năng đồng bộ thủ công để người dùng có thể tự cập nhật dữ liệu khi cần thiết. Sau khi đồng bộ, hệ thống sẽ trả về số email đã lưu vào cơ sở dữ liệu thành công.
+5.1.3 Cấu hình email nhận Tính năng cho phép người dùng có thể thay đổi cấu hình email đã được thiết lập nhằm khắc phục tình trạng người sử dụng không thể tùy chỉnh được thông tin email nhận phản hồi do Laravel lưu cứng thông tin trong file config của ứng dụng.
 Thông tin của email sẽ được lưu trữ trong cơ sở dữ liệu và được lấy ra khi sử dụng.
-Sau khi thay đổi, người sử dụng có thể kiểm tra kết nối đến email đã được kích hoạt
-Để tăng tính bảo mật, mật khẩu của email sẽ được mã hóa trước khi lưu vào
-database và sẽ được giải mã khi sử dụng. Thuật toán mã hóa được sử dụng trong đồ
-án là AES-256-CBC (đây là thuật toán mã hóa được Laravel cung cấp mặc định)
-với key được lưu trong file .env của ứng dụng.
-Sau khi cấu hình email nhận, người dùng đã có thể tùy chỉnh email nhận phản
-hồi từ khách hàng tuy nhiên những email này chưa được phân loại là phản hồi về
-vấn đề gì (phản hồi về khách hàng, đơn hàng, cửa hàng, sản phẩm...) và vẫn chưa
-loại được những email không liên quan, email rác. Từ vấn đề đó, hệ thống cần có
-thêm cơ chế giúp phân loại email. Trong phạm vi của đồ án này, hệ thống sẽ phân
-loại email dựa trên tiêu đề theo cơ chế như sau:
-•Tiêu đề bao gồm hoặc không bao gồm các key word do người dùng nhập (điều
-•Thỏa mãn tất cả các điều kiện hoặc thỏa mãn 1 trong các điều kiện mà người
-Dựa theo cơ chế trên hệ thống đã có thể phân loại các phản hồi của khách hàng
-và hạn chế được các email rác. Ngoài ra khi mua hàng thành công, hệ thống sẽ tự
-động gửi email thông báo mua hàng thành công kèm code để khách hàng có thể
-gửi email phản hồi khi muốn phản hồi về đơn hàng vừa mua.
-Hệ thống đã có thể lấy nội dung từ email, cấu hình email nhận phản hồi từ khách
-hàng và cấu hình luật tạo phản hồi một cách đơn giản cho phép người dùng có thể
-xem, phân loại các email đến. Từ đó có thể nắm bắt được mong muốn của khách
-hàng, tình trạng của cửa hàng để đưa ra chiến lược kinh doanh phù hợp.
-Thông thường, khi tạo mới sản phẩm người dùng có thể sử dụng tính năng thêm
-mới sản phẩm đơn lẻ. Để phục vụ cho nhu cầu tạo mới sản phẩm hàng loạt hệ thống
-đã được xây dựng chức năng import sản phẩm bằng file excel cho phép tạo nhiều
-sản phẩm chỉ với một lần import file.
-File excel được lựa chọn sử dụng bởi tính phổ biến, tương dối dễ học và thuận
-tiện để lưu trữ, truyền tải dữ liệu; gần như trên bất kì máy tính cá nhân nào đều cho
-phép tạo mới và chỉnh sửa file excel.
-Để import file excel, PHP cung cấp sẵn một số hàm xử lý như là fopen để mở
-file, fget để đọc nội dung của file. Ngoài ra, còn có thư viện PhpExcelReader, cũng
-được dùng để đọc file excel; tuy nhiên điểm trừ của công cụ này là tương đối khó
-sử dụng và không hỗ trợ tải các file excel lớn lên vì nó đọc toàn bộ nội dung từ file
-excel cùng một lúc dẫn đến cạn kiệt bộ nhớ và dừng hệ thống.
-Qua quá trình tìm hiểu, package maatwebsite/excel của Laravel đã được ứng
-dụng trong đồ án này. Ưu điểm của maatwebsite/excel do Laravel Excel đưa ra là: (i)
-Dễ dàng export collections ra file excel, (ii) Có thể sử dụng blade views để export
-excel, (iii) Đọc nội dung file Excel theo từng phần và (iv) Xử lý import theo từng
-batch. Những ưu điểm trên đã giải quyết được các nhược điểm của PhpExcelReader
-là khó sử dụng và có thể gây cạn kiệt bộ nhớ.
-Tiếp theo, hệ thống cần phải validate những dữ liệu bên trong file excel như: đã
-đúng template mẫu hay chưa? các bản ghi trong file excel có trùng nhau không?
-mã sản phẩm đã tồn tại trong hệ thống chưa? hoặc là có thiếu tên sản phẩm, thiếu
-mã sản phẩm... không? giống như chức năng validate thêm mới từng sản phẩm.
-Package maatwebsite/excel cũng đã cung cấp chức năng validate qua hàm rules
-nhưng nó có nhược điểm là sẽ phải validate từng dòng trong file excel, nếu file
-excel có 100.000 bản ghi thì sẽ phải thực hiện 100.000 câu query để kiểm tra mã
-sản phẩm đã tồn tại trong hệ thống hay chưa, hoặc tên thương hiệu, màu sắc sản
-phẩn trong file excel có trùng với tên thương hiệu, màu sắc đã có trong hệ thống
-hay không. Hơn nữa, package này cũng không thể kiểm tra trùng lặp các bản ghi
-trong file excel hay cập nhật dữ liệu cho các bảng trung gian. Nhằm khắc phục
-nhược điểm trên, một bảng phụ được sử dụng để upload tất cả các bản ghi trong
-file excel; sau đó các bản ghi này được lấy ra cùng với dữ liệu đã có trong hệ thống
-để validate dữ liệu, cập nhật bảng trung gian nếu cần thiết. Từ đó giảm được số
-lượng câu lệnh truy vấn trong khi thực hiện validate dữ liệu; đảm bảo được tính
-năng validate trùng lặp các bản ghi trong file excel, đồng thời cập nhật dữ liệu cho
-Sau khi validate dữ liệu, trong trường hợp xuất hiện các lỗi sẽ có thông báo chi
-tiết các lỗi gặp phải ở dòng bao nhiêu. Người dùng có thể tải file excel có chứa
-thông báo trên để thuận tiện cho việc sửa chữa các lỗi khi validate thất bại.
-Cuối cùng, nếu validate dữ liệu thành công, hệ thống sẽ phải lưu trữ các bản ghi
-này vào database đồng thời cập nhật bảng trung gian nếu cần thiết.
-Hệ thống đã có thể tạo mới nhiều sản phẩm bằng cách sử dụng file excel, hơn
-nữa còn có thể validate dữ liệu trong file excel như khi thêm mới từng sản phẩm
-một cách nhanh chóng, cập nhật dữ liệu tồn kho và trả về chi tiết từng lỗi cụ thể
-nếu gặp phải. Ngoài ra, hệ thống còn cho phép người dùng tải file excel mẫu về
-ngay trong popup xác nhận import sản phẩm bằng file excel để tối ưu trải nghiệm
-Khi thêm các sản phẩm mới vào trong hệ thống sẽ có những sản phẩm chỉ khác
-nhau ở một số đặc điểm như: màu sắc, chất liệu, thương hiệu, kích thước... Chính
-vì vậy, để tiết kiệm thời gian, công sức cho người sử dụng thì phần mềm có thêm
-tính năng sao chép sản phẩm cho phép người dùng có thể sao chép thông tin của
-các sản phẩm cùng loại một cách nhanh chóng và thuận tiện.
-Thêm một button copy vào cột hành động trong danh sách sản phẩm. Khi ấn vào
-button sẽ chuyển sang trang sao chép sản phẩm, hiển thị thông tin của toàn bộ sản
-phẩm vừa chọn, người dùng chỉ cần thay đổi mã sản phẩm và một số trường như
-màu sắc, chất liệu, thương hiệu... để thêm sản phẩm mới một cách nhanh chóng mà
-không cần nhập các thông tin trùng lặp. Sau khi người dùng nhập xong các thông
-tin cần thiết và submit thì hệ thống sẽ validate và thêm vào cơ sở dữ liệu như khi
-tạo mới 1 sản phẩm thông thường.
-Khi chủ cửa hàng, người quản lý muốn biết thông tin 1 khách hàng bất kỳ nào
-đó trong hệ thống đã chi trả bao nhiêu tiền để mua hàng, chưa thanh toán bao nhiêu
-tiền trong một khoảng thời gian bất kỳ. Không thể để người dùng tự tìm kiếm tất cả
-các đơn hàng trong hệ thống, thống kê theo từng khách hàng để tính toán số tiền đã
-mua hàng, số tiền còn dư nợ. Như thế sẽ mất rất nhiều thời gian và công sức mỗi
-lần muốn xem tình hình kinh doanh của cửa hàng.
-Nhằm giải quyết vấn đề trên chức năng xem doanh thu chi tiết, tổng hợp theo
-khách hàng đã được xây dựng để người dùng có thể nắm bắt thông tin của cửa hàng
-một cách nhanh chóng. Sử dụng chức năng xem báo cáo mang lại một số lợi ích
-cho người sử dụng như: (i) Tiết kiệm thời gian thực hiện việc thống kê đơn hàng;
-(ii) Tiết kiệm chi phí cho việc làm báo cáo; (iii) Số liệu báo cáo chính xác không
-có các lỗi chủ quan của người dùng, đồng nhất dữ liệu do được lưu tập trung và (iv)
-Dễ dàng theo dõi ở bất nơi đâu.
-Qua quá trình tìm hiểu, tổng hợp doanh thu theo khách hàng trong hệ thống cần
-một số thông tin quan trọng như sau:
-•Thời gian bắt đầu, kết thúc: Hệ thống sẽ tìm các đơn hàng được tạo hoặc
-thay đổi trong khoảng thời gian này; người dùng có thể lựa chọn 1 số option
-có sẵn của hệ thống như: hôm nay, tuần trước, tháng trước, 3 tháng trước, 1
-năm trước hoặc tùy chỉnh thời gian bắt đầu, thời gian kết thúc vào ô tìm kiếm.
-•Chưa thanh toán đầu kỳ: Số tiền mà khách hàng chưa thanh toán trước thời
-gian bắt đầu tìm kiếm.
-•Số tiền mua hàng trong kỳ: Tổng giá trị tiền hàng mà khách hàng đã mua từ
-thời gian bắt đầu đến thời gian kết thúc.
-•Đã thanh toán trong kỳ: Số tiền mà khách hàng đã thanh toán từ thời gian
-bắt đầu đến thời gian kết thúc.
-•Số tiền còn phải thu: Số tiền mà khách hàng cần phải thanh toán sau thời
-Hơn nữa, nếu muốn xem chi tiết khách hàng đã mua những đơn hàng nào, tổng
-giá trị là bao nhiêu thì người dùng có thể nhấn vào button xem chi tiết tại cột hành
-động của mỗi bản ghi. Lúc này, màn hình sẽ hiển thị popup chi tiết doanh thu trong
-kỳ như hình vẽ dưới đây:
-Tương tự như chức năng xem doanh thu tổng hợp theo khách hàng, chức năng
-xem chi tiết cũng sẽ được tổng hợp theo từng khách hàng và cần một số thông tin
-•Thời gian bắt đầu, kết thúc: Hệ thống sẽ tìm các đơn hàng được tạo hoặc
-thay đổi trong khoảng thời gian này; người dùng có thể lựa chọn 1 số option
-có sẵn của hệ thống như: hôm nay, tuần trước, tháng trước, 3 tháng trước, 
-năm trước hoặc tùy chỉnh thời gian bắt đầu, thời gian kết thúc vào ô tìm kiếm.
-•Dư nợ đầu kỳ: Số tiền mà khách hàng chưa thanh toán trước thời gian bắt đầu
-•Giá trị đơn hàng: Tổng giá trị mà khách hàng cần phải thanh toán cho đơn
-•Giá trị thanh toán: Số tiền mà khách hàng đã thanh toán cho đơn hàng.
-•Dư nợ còn phải thu: Số tiền mà khách hàng cần phải thanh toán sau thời gian
-•Và một số thông tin khác như ngày thanh toán đơn hàng, ngày mua hàng, mã
-Để thuận tiện cho người dùng có thể quan sát, sử dụng hệ thống đã có thêm chức
-năng xuất báo cáo excel, tùy theo điều kiện tìm kiếm, sắp xếp của người dùng hệ
-thống sẽ xuất ra file excel với dữ liệu tương ứng.
-Ở đây package maatwebsite/excel của Laravel (được trình bày ở phần 6.2.2) tiếp
-tục được sử dụng để xử lý do nó tương dối dễ sử dụng và cung cấp 1 số function để
-có thể format file excel đẹp hơn giúp tăng trải nghiệm của người dùng.
-Dưới đây là file excel thông tin chi tiết doanh thu theo từng khách hàng trong
-Hệ thống đã có thể cho phép người dùng xem báo cáo doanh thu theo khách
-hàng theo khoảng thời gian tùy chỉnh, có thể sắp xếp một số trường dữ liệu như:
-Mã khách hàng, tên khách hàng, giá trị đơn hàng, giá trị thanh toán và xuất file
-excel theo điều kiện đã sắp xếp, tìm kiếm.
-Hệ thống cũng đã có chức năng xem chi tiết, tổng hợp những lần nhập hàng,
-thanh toán đơn nhập hàng theo nhà cung cấp nhưng do các phần đều tương tự với
-chức năng này nên không được trình bày ở đây.
-Khi chủ cửa hàng, người quản lý muốn biết thông tin nhân viên nào đó trong
-cửa hàng đã bán được bao nhiêu đơn hàng, doanh số là bao nhiêu trong khoảng thời
-gian bất kỳ. Tương tự như tổng hợp doanh thu theo khách hàng, sẽ mất rất nhiều
-thời gian, công sức nếu như người dùng tự tổng hợp thông tin 1 cách thủ công. Do
-đó chức năng xem doanh thu theo nhân viên được xây dựng để chủ cửa hàng, người
-quản lý có thể nắm bắt được kết quả kinh doanh của từng nhân viên một cách nhanh
-Chức năng xem báo cáo doanh thu theo nhân viên sẽ được tổng hợp theo từng
-nhân viên và cần một số thông tin quan trọng như sau:
-•Thời gian bắt đầu, kết thúc: Hệ thống sẽ tìm các đơn được tạo hoặc thay đổi
-trong khoảng thời gian này; người dùng có thể lựa chọn 1 số option có sẵn của
-hệ thống như: hôm nay, tuần trước, tháng trước, 3 tháng trước, 1 năm trước
-hoặc tùy chỉnh thời gian bắt đầu, thời gian kết thúc vào ô tìm kiếm.
-•Tiền hàng: Tổng giá vốn nhập hàng từ nhà cung cấp.
-•Doanh thu: Tổng giá trị của các đơn hàng mà nhân viên bán được trong
-khoảng thời gian được xét.
-•Số lượng đơn hàng: Tổng các đơn hàng mà nhân viên đã bán được trong
-khoảng thời gian được xét.
-•Ngoài ra, hệ thống còn có thêm biểu đồ so sánh doanh thu, tiền hàng (giá vốn)
-để người dùng có cái nhìn trực quan về tình trạng kinh doanh của cửa hàng.
-Biểu đồ dưới đây được tổng hợp theo các đơn hàng mà người dùng bán được
-trong tháng và sử dụng thư viện ChartJs để render.
-Hơn nữa, người sử dụng cũng có thể xem chi tiết mã đơn hàng, ngày tạo đơn hàng,
-giá trị đơn hàng, tiền hàng của từng nhân viên trong thời gian tìm kiếm và cũng
-có thể export file excel theo điều kiện tìm kiếm, sắp xếp. Sau khi nhấn vào button
-xem chi tiết tại cột hành động của mỗi bản ghi trên, dữ liệu chi tiết về doanh thu
-của nhân viên sẽ được hiển thị như hình vẽ dưới đây:
-Thông báo tự động là phương thức rất thuận tiện cho phép người dùng có thể
-biết tình hình kinh doanh của cửa hàng một cách thường xuyên, mọi lúc mọi nơi
-mà không cần phải đăng nhập sử dụng hệ thống. Do đó, tính năng gửi thông báo
-tự động được phát triển qua messenger và email vì 2 ứng dụng này có nhiều người
-dùng và có thể truy cập trên bất cứ nền tảng, thiết bị nào.
-Để gửi email, Laravel đã cung cấp package mailgun sử dụng Imap để có thể gửi
-mail và tùy chỉnh một số thông tin cấu hình như: (i) username, (ii) password, (iii)
-host, (iv) port, (v) encryption. Trong phạm vi đồ án này, cấu hình kết nối đến gmail
-được sử dụng như sau:
-Sau khi cài đặt package và cấu hình thành công, thì phần mềm đã có thể gửi
-email thông báo. Tuy nhiên tới đây email vẫn chưa thể tự động gửi hàng ngày cho
-chủ cửa hàng hoặc người quản lý. Do đó đồ án đã được kích hoạt thêm tính năng
-schedule của Laravel. Các cài đặt về thời gian gửi, cấu hình email gửi và trạng thái
-bật tắt thông báo sẽ do người dùng quyết định như hình vẽ dưới đây:
-Bên cạnh việc gửi email thông báo cho nhà quản lý, hệ thống còn có thêm tính
-năng gửi email tự động cho khách hàng để thông báo mua hàng thành công và yêu
-cầu phản hồi từ khách hàng. Hiện tại, hệ thống đang chạy schedule 10 phút mỗi
-lần kiểm tra xem những đơn hàng nào chưa được gửi thông báo và sẽ gửi email đến
-cho khách hàng của những đơn hàng đó.
-Facebook đã cung cấp API cho phép gửi tin nhắn messenger đến người dùng.
-Tuy nhiên facebook yêu cầu máy chủ có thể truy cập web và có hỗ trợ HTTPS cho
-webhook của facebook. Qua quá trình tìm hiểu, em quyết định sử dụng heroku [7]
-làm nền tảng triển khai server chat để call API gửi tin nhắn của facebook do heroku
-có một số ưu điểm như hỗ trợ nhiều ngôn ngữ lập trình, cung cấp cơ sở dữ liệu và
-đặc biệt là hỗ trợ triển khai code miễn phí.
-Hiện tại, hệ thống sẽ truy vấn cơ sở dữ liệu và gửi thông tin cần thiết đến cho
-server chat, sau đó server chat sẽ gửi tin nhắn cho người dùng. Ngoài ra, chức năng
-gửi thông báo qua messenger cũng được lập lịch bằng schedule để gửi thông báo
-tự động hàng ngày theo khung giờ mà người dùng tùy chỉnh và có thể bật tắt thông
-báo nếu không có nhu cầu sử dụng.
-Hệ thống cũng cho phép người sử dụng có thể nhắn tin messenger để lấy thông
-tin về doanh thu, số đơn hàng thành công của cửa hàng trong 1 ngày bất kỳ như ví
-Hệ thống đã cho phép gửi thông báo tự động qua email, messenger đến người
-dùng và cho phép cấu hình thời gian gửi, bật tắt thông báo theo mong muốn của
-người sử dụng. Hiện tại, hệ thống sẽ gửi thông tin về số đơn hàng trong ngày, số
-đơn hàng chờ xử lý, số đơn hàng chưa thanh toán cho người sử dụng.
-Ứng dụng được phát triển trong quá trình làm đồ án đã đáp ứng được các yêu
-cầu về chức năng đặt ra, đó là phát triển 1 ứng dụng web quản lý bán hàng hỗ trợ
-người dùng tối ưu hóa năng suất làm việc, giảm chi phí vận hành; tính toán xử lý
-và đưa ra báo cáo doanh thu chi tiết, tổng hợp 1 cách nhanh chóng. Bên cạnh đó,
-ứng dụng còn hỗ trợ người dùng quản lý các phản hồi của khách hàng nhằm cải
-thiện dịch vụ, đưa ra các chiến thuật kinh doanh 1 cách hiệu quả. Nhờ áp dụng các
-nguyên lý thiết kế phần mềm, phương pháp phân tích thiết kế hệ thống, ứng dụng
-được xây dựng đảm bảo khả năng dễ dàng bảo trì và mở rộng trong tương lai.
-Trong quá trình làm đồ án, em đã tương bước học và cải thiện những kỹ năng
-•Khả năng nghiên cứu, đánh giá ưu nhược điểm của các công nghệ khác
-nhau, qua đó tìm ra công nghệ phù hợp cho việc giải quyết bài toán đặt ra.
-•Kỹ năng quản lý thời gian, sắp xếp quản lý công việc để đảm bảo tiến độ
-công việc được đề ra.
-•Tìm hiểu, nghiên cứu cách gửi và nhận email trong Laravel để giải quyết bài
-toán đặt ra (gửi email thông báo cho người dùng và lấy thông tin phản hồi
-của khách hàng). Qua quá trình tìm hiểu, em quyết định sử dụng Laravel
-Mail và Laravel Imap để xử lý bài toán.
-•Học cách trển khai mã nguồn lên Heroku và sử dụng Nodejs để nhắn tin
-thông báo qua messenger cho người dùng.
-•Học cách sử dụng package Laravel Livewire để xây dựng giao diện động
-mang lại trải nghiệm tốt hơn cho người dùng.
-•Tìm hiểu cách sử dụng package Laravel Excel để xử lý xuất file báo cáo
-bằng excel và import file excel danh sách sản phẩm vào hệ thống.
-•Tìm hiểu và áp dụng các nguyên lý thiết kế, các mẫu thiết kế phần mềm để
-xậy dựng mã nguồn dễ bảo trì và mở rộng.
-•Học cách sử dụng 1 số package hữu ích khác như Laravel livewire tables,
-toast, chartJs, select2, debug bar, ... để hỗ xây dựng ứng dụng web 1 cách
-nhanh chóng và hoàn chỉnh.
-Ứng dụng được xây dựng đã đáp các ứng yêu cầu đề ra ban đầu, tuy nhiên để
-ứng dụng thêm hoàn chỉnh và có thể cạnh tranh được với các ứng dụng hiện có trên
-thị trường thì có thể phát triển, cải thiện những chức năng sau:
-•Tích hợp quét mã vạch để có thể thêm các sản phẩm vào đơn hàng 1 cách
-nhanh chóng; giúp tiết kiệm thời gian và công sức của nhân viên bán hàng.
-•Áp dụng các thuật toán Machine learning trong việc phân loại phản hồi
-khách hàng và loại bỏ các email spam, email rác.
-•Tối ưu hóa các tính năng đã có để tăng tốc độ và mang lại trải nghiệm tốt
-hơn cho người sử dụng.
-•Có thêm nhiều loại báo cáo thống kê, báo cáo tài chính, các loại biểu đồ
-để người dùng có cái nhìn trực quan hơn về cửa hàng.
-•Triển khai gửi thông báo tự động trên nhiều nền tảng khác như Zalo, Telegram, Mocha, ... để người dùng có thể thuận tiện hơn trong việc tiếp nhận
-thông báo của ứng dụng.
-•Tìm hiểu cách gửi tin nhắn SMS đến khách hàng để tăng trải nghiệm mua
-hàng, sử dụng dịch vụ của khách hàng.
-•Có thêm tính năng thanh toán qua QR code giúp khách hàng thanh toán
-đơn hàng 1 cách nhanh chóng.
+Sau khi thay đổi, người sử dụng có thể kiểm tra kết nối đến email đã được kích hoạt hay chưa.
+48Hình 5.4: Màn hình cấu hình email nhận phản hồi Để tăng tính bảo mật, mật khẩu của email sẽ được mã hóa trước khi lưu vào database và sẽ được giải mã khi sử dụng. Thuật toán mã hóa được sử dụng trong đồ án là AES-256-CBC (đây là thuật toán mã hóa được Laravel cung cấp mặc định) với key được lưu trong file .env của ứng dụng.
+5.1.4 Cấu hình luật tạo phản hồi Sau khi cấu hình email nhận, người dùng đã có thể tùy chỉnh email nhận phản hồi từ khách hàng tuy nhiên những email này chưa được phân loại là phản hồi về vấn đề gì (phản hồi về khách hàng, đơn hàng, cửa hàng, sản phẩm...) và vẫn chưa loại được những email không liên quan, email rác. Từ vấn đề đó, hệ thống cần có thêm cơ chế giúp phân loại email. Trong phạm vi của đồ án này, hệ thống sẽ phân loại email dựa trên tiêu đề theo cơ chế như sau:
+Tiêu đề bao gồm hoặc không bao gồm các key word do người dùng nhập (điều kiện).
+Thỏa mãn tất cả các điều kiện hoặc thỏa mãn 1 trong các điều kiện mà người dùng đã nhập.
+Hình 5.5: Popup cấu hình luật tạo phản hồi hàng 49Dựa theo cơ chế trên hệ thống đã có thể phân loại các phản hồi của khách hàng và hạn chế được các email rác. Ngoài ra khi mua hàng thành công, hệ thống sẽ tự động gửi email thông báo mua hàng thành công kèm code để khách hàng có thể gửi email phản hồi khi muốn phản hồi về đơn hàng vừa mua.
+5.1.5 Kết quả Hệ thống đã có thể lấy nội dung từ email, cấu hình email nhận phản hồi từ khách hàng và cấu hình luật tạo phản hồi một cách đơn giản cho phép người dùng có thể xem, phân loại các email đến. Từ đó có thể nắm bắt được mong muốn của khách hàng, tình trạng của cửa hàng để đưa ra chiến lược kinh doanh phù hợp.
+Hình 5.6: Màn hình danh sách phản hồi 5.2 Xây dựng chức năng import sản phẩm bằng file excel 5.2.1 Vấn đề Thông thường, khi tạo mới sản phẩm người dùng có thể sử dụng tính năng thêm mới sản phẩm đơn lẻ. Để phục vụ cho nhu cầu tạo mới sản phẩm hàng loạt hệ thống đã được xây dựng chức năng import sản phẩm bằng file excel cho phép tạo nhiều sản phẩm chỉ với một lần import file.
+File excel được lựa chọn sử dụng bởi tính phổ biến, tương dối dễ học và thuận tiện để lưu trữ, truyền tải dữ liệu; gần như trên bất kì máy tính cá nhân nào đều cho phép tạo mới và chỉnh sửa file excel.
+5.2.2 Giải pháp Để import file excel, PHP cung cấp sẵn một số hàm xử lý như là fopen để mở file, fget để đọc nội dung của file. Ngoài ra, còn có thư viện PhpExcelReader, cũng được dùng để đọc file excel; tuy nhiên điểm trừ của công cụ này là tương đối khó sử dụng và không hỗ trợ tải các file excel lớn lên vì nó đọc toàn bộ nội dung từ file excel cùng một lúc dẫn đến cạn kiệt bộ nhớ và dừng hệ thống.
+50Qua quá trình tìm hiểu, package maatwebsite/excel của Laravel đã được ứng dụng trong đồ án này. Ưu điểm của maatwebsite/excel do Laravel Excel đưa ra là: (i) Dễ dàng export collections ra file excel, (ii) Có thể sử dụng blade views để export excel, (iii) Đọc nội dung file Excel theo từng phần và (iv) Xử lý import theo từng batch. Những ưu điểm trên đã giải quyết được các nhược điểm của PhpExcelReader là khó sử dụng và có thể gây cạn kiệt bộ nhớ.
+Tiếp theo, hệ thống cần phải validate những dữ liệu bên trong file excel như: đã đúng template mẫu hay chưa? các bản ghi trong file excel có trùng nhau không? mã sản phẩm đã tồn tại trong hệ thống chưa? hoặc là có thiếu tên sản phẩm, thiếu mã sản phẩm... không? giống như chức năng validate thêm mới từng sản phẩm.
+Package maatwebsite/excel cũng đã cung cấp chức năng validate qua hàm rules nhưng nó có nhược điểm là sẽ phải validate từng dòng trong file excel, nếu file excel có 100.000 bản ghi thì sẽ phải thực hiện 100.000 câu query để kiểm tra mã sản phẩm đã tồn tại trong hệ thống hay chưa, hoặc tên thương hiệu, màu sắc sản phẩn trong file excel có trùng với tên thương hiệu, màu sắc đã có trong hệ thống hay không. Hơn nữa, package này cũng không thể kiểm tra trùng lặp các bản ghi trong file excel hay cập nhật dữ liệu cho các bảng trung gian. Nhằm khắc phục nhược điểm trên, một bảng phụ được sử dụng để upload tất cả các bản ghi trong file excel; sau đó các bản ghi này được lấy ra cùng với dữ liệu đã có trong hệ thống để validate dữ liệu, cập nhật bảng trung gian nếu cần thiết. Từ đó giảm được số lượng câu lệnh truy vấn trong khi thực hiện validate dữ liệu; đảm bảo được tính năng validate trùng lặp các bản ghi trong file excel, đồng thời cập nhật dữ liệu cho các bảng trung gian.
+Sau khi validate dữ liệu, trong trường hợp xuất hiện các lỗi sẽ có thông báo chi tiết các lỗi gặp phải ở dòng bao nhiêu. Người dùng có thể tải file excel có chứa thông báo trên để thuận tiện cho việc sửa chữa các lỗi khi validate thất bại.
+Hình 5.7: Danh sách lỗi khi import sản phẩm bằng file excel Cuối cùng, nếu validate dữ liệu thành công, hệ thống sẽ phải lưu trữ các bản ghi này vào database đồng thời cập nhật bảng trung gian nếu cần thiết.
+515.2.3 Kết quả Hệ thống đã có thể tạo mới nhiều sản phẩm bằng cách sử dụng file excel, hơn nữa còn có thể validate dữ liệu trong file excel như khi thêm mới từng sản phẩm một cách nhanh chóng, cập nhật dữ liệu tồn kho và trả về chi tiết từng lỗi cụ thể nếu gặp phải. Ngoài ra, hệ thống còn cho phép người dùng tải file excel mẫu về ngay trong popup xác nhận import sản phẩm bằng file excel để tối ưu trải nghiệm người dùng.
+5.3 Xây dựng chức năng sao chép sản phẩm 5.3.1 Vấn đề Khi thêm các sản phẩm mới vào trong hệ thống sẽ có những sản phẩm chỉ khác nhau ở một số đặc điểm như: màu sắc, chất liệu, thương hiệu, kích thước... Chính vì vậy, để tiết kiệm thời gian, công sức cho người sử dụng thì phần mềm có thêm tính năng sao chép sản phẩm cho phép người dùng có thể sao chép thông tin của các sản phẩm cùng loại một cách nhanh chóng và thuận tiện.
+5.3.2 Giải pháp và kết quả Thêm một button copy vào cột hành động trong danh sách sản phẩm. Khi ấn vào button sẽ chuyển sang trang sao chép sản phẩm, hiển thị thông tin của toàn bộ sản phẩm vừa chọn, người dùng chỉ cần thay đổi mã sản phẩm và một số trường như màu sắc, chất liệu, thương hiệu... để thêm sản phẩm mới một cách nhanh chóng mà không cần nhập các thông tin trùng lặp. Sau khi người dùng nhập xong các thông tin cần thiết và submit thì hệ thống sẽ validate và thêm vào cơ sở dữ liệu như khi tạo mới 1 sản phẩm thông thường.
+Hình 5.8: Màn hình sao chép sản phẩm 525.4 Xây dựng chức năng xem doanh thu theo khách hàng 5.4.1 Vấn đề Khi chủ cửa hàng, người quản lý muốn biết thông tin 1 khách hàng bất kỳ nào đó trong hệ thống đã chi trả bao nhiêu tiền để mua hàng, chưa thanh toán bao nhiêu tiền trong một khoảng thời gian bất kỳ. Không thể để người dùng tự tìm kiếm tất cả các đơn hàng trong hệ thống, thống kê theo từng khách hàng để tính toán số tiền đã mua hàng, số tiền còn dư nợ. Như thế sẽ mất rất nhiều thời gian và công sức mỗi lần muốn xem tình hình kinh doanh của cửa hàng.
+Nhằm giải quyết vấn đề trên chức năng xem doanh thu chi tiết, tổng hợp theo khách hàng đã được xây dựng để người dùng có thể nắm bắt thông tin của cửa hàng một cách nhanh chóng. Sử dụng chức năng xem báo cáo mang lại một số lợi ích cho người sử dụng như: (i) Tiết kiệm thời gian thực hiện việc thống kê đơn hàng; (ii) Tiết kiệm chi phí cho việc làm báo cáo; (iii) Số liệu báo cáo chính xác không có các lỗi chủ quan của người dùng, đồng nhất dữ liệu do được lưu tập trung và (iv) Dễ dàng theo dõi ở bất nơi đâu.
+5.4.2 Xem doanh thu tổng hợp theo khách hàng Qua quá trình tìm hiểu, tổng hợp doanh thu theo khách hàng trong hệ thống cần một số thông tin quan trọng như sau:
+Thời gian bắt đầu, kết thúc: Hệ thống sẽ tìm các đơn hàng được tạo hoặc thay đổi trong khoảng thời gian này; người dùng có thể lựa chọn 1 số option có sẵn của hệ thống như: hôm nay, tuần trước, tháng trước, 3 tháng trước, 1 năm trước hoặc tùy chỉnh thời gian bắt đầu, thời gian kết thúc vào ô tìm kiếm.
+Chưa thanh toán đầu kỳ: Số tiền mà khách hàng chưa thanh toán trước thời gian bắt đầu tìm kiếm.
+Số tiền mua hàng trong kỳ: Tổng giá trị tiền hàng mà khách hàng đã mua từ thời gian bắt đầu đến thời gian kết thúc.
+Đã thanh toán trong kỳ: Số tiền mà khách hàng đã thanh toán từ thời gian bắt đầu đến thời gian kết thúc.
+Số tiền còn phải thu: Số tiền mà khách hàng cần phải thanh toán sau thời gian kết thúc.
+53Hình 5.9: Màn hình tổng hợp doanh thu theo khách hàng Hơn nữa, nếu muốn xem chi tiết khách hàng đã mua những đơn hàng nào, tổng giá trị là bao nhiêu thì người dùng có thể nhấn vào button xem chi tiết tại cột hành động của mỗi bản ghi. Lúc này, màn hình sẽ hiển thị popup chi tiết doanh thu trong kỳ như hình vẽ dưới đây:
+Hình 5.10: Popup chi tiết doanh thu khách hàng 5.4.3 Xem doanh thu chi tiết theo khách hàng Tương tự như chức năng xem doanh thu tổng hợp theo khách hàng, chức năng xem chi tiết cũng sẽ được tổng hợp theo từng khách hàng và cần một số thông tin quan trọng như sau:
+Thời gian bắt đầu, kết thúc: Hệ thống sẽ tìm các đơn hàng được tạo hoặc thay đổi trong khoảng thời gian này; người dùng có thể lựa chọn 1 số option có sẵn của hệ thống như: hôm nay, tuần trước, tháng trước, 3 tháng trước, 1 54năm trước hoặc tùy chỉnh thời gian bắt đầu, thời gian kết thúc vào ô tìm kiếm.
+Dư nợ đầu kỳ: Số tiền mà khách hàng chưa thanh toán trước thời gian bắt đầu tìm kiếm.
+Giá trị đơn hàng: Tổng giá trị mà khách hàng cần phải thanh toán cho đơn hàng.
+Giá trị thanh toán: Số tiền mà khách hàng đã thanh toán cho đơn hàng.
+Dư nợ còn phải thu: Số tiền mà khách hàng cần phải thanh toán sau thời gian kết thúc.
+Và một số thông tin khác như ngày thanh toán đơn hàng, ngày mua hàng, mã đơn hàng.
+Hình 5.11: Màn hình chi tiết doanh thu theo khách hàng 5.4.4 Xuất báo cáo excel Để thuận tiện cho người dùng có thể quan sát, sử dụng hệ thống đã có thêm chức năng xuất báo cáo excel, tùy theo điều kiện tìm kiếm, sắp xếp của người dùng hệ thống sẽ xuất ra file excel với dữ liệu tương ứng.
+Ở đây package maatwebsite/excel của Laravel (được trình bày ở phần 6.2.2) tiếp tục được sử dụng để xử lý do nó tương dối dễ sử dụng và cung cấp 1 số function để có thể format file excel đẹp hơn giúp tăng trải nghiệm của người dùng.
+Dưới đây là file excel thông tin chi tiết doanh thu theo từng khách hàng trong ngày 18/7/2022.
+55Hình 5.12: Xuất báo cáo excel doanh thu chi tiết theo khách hàng 5.4.5 Kết quả Hệ thống đã có thể cho phép người dùng xem báo cáo doanh thu theo khách hàng theo khoảng thời gian tùy chỉnh, có thể sắp xếp một số trường dữ liệu như:
+Mã khách hàng, tên khách hàng, giá trị đơn hàng, giá trị thanh toán và xuất file excel theo điều kiện đã sắp xếp, tìm kiếm.
+Hệ thống cũng đã có chức năng xem chi tiết, tổng hợp những lần nhập hàng, thanh toán đơn nhập hàng theo nhà cung cấp nhưng do các phần đều tương tự với chức năng này nên không được trình bày ở đây.
+5.5 Xem báo cáo doanh thu theo nhân viên 5.5.1 Vấn đề Khi chủ cửa hàng, người quản lý muốn biết thông tin nhân viên nào đó trong cửa hàng đã bán được bao nhiêu đơn hàng, doanh số là bao nhiêu trong khoảng thời gian bất kỳ. Tương tự như tổng hợp doanh thu theo khách hàng, sẽ mất rất nhiều thời gian, công sức nếu như người dùng tự tổng hợp thông tin 1 cách thủ công. Do đó chức năng xem doanh thu theo nhân viên được xây dựng để chủ cửa hàng, người quản lý có thể nắm bắt được kết quả kinh doanh của từng nhân viên một cách nhanh chóng.
+5.5.2 Giải pháp Chức năng xem báo cáo doanh thu theo nhân viên sẽ được tổng hợp theo từng nhân viên và cần một số thông tin quan trọng như sau:
+Thời gian bắt đầu, kết thúc: Hệ thống sẽ tìm các đơn được tạo hoặc thay đổi trong khoảng thời gian này; người dùng có thể lựa chọn 1 số option có sẵn của hệ thống như: hôm nay, tuần trước, tháng trước, 3 tháng trước, 1 năm trước 56hoặc tùy chỉnh thời gian bắt đầu, thời gian kết thúc vào ô tìm kiếm.
+Tiền hàng: Tổng giá vốn nhập hàng từ nhà cung cấp.
+Doanh thu: Tổng giá trị của các đơn hàng mà nhân viên bán được trong khoảng thời gian được xét.
+Số lượng đơn hàng: Tổng các đơn hàng mà nhân viên đã bán được trong khoảng thời gian được xét.
+Ngoài ra, hệ thống còn có thêm biểu đồ so sánh doanh thu, tiền hàng (giá vốn) để người dùng có cái nhìn trực quan về tình trạng kinh doanh của cửa hàng.
+Biểu đồ dưới đây được tổng hợp theo các đơn hàng mà người dùng bán được trong tháng và sử dụng thư viện ChartJs để render.
+Hình 5.13: Màn hình xem báo cáo doanh thu theo nhân viên Hơn nữa, người sử dụng cũng có thể xem chi tiết mã đơn hàng, ngày tạo đơn hàng, giá trị đơn hàng, tiền hàng của từng nhân viên trong thời gian tìm kiếm và cũng có thể export file excel theo điều kiện tìm kiếm, sắp xếp. Sau khi nhấn vào button xem chi tiết tại cột hành động của mỗi bản ghi trên, dữ liệu chi tiết về doanh thu của nhân viên sẽ được hiển thị như hình vẽ dưới đây:
+57Hình 5.14: Popup chi tiết doanh thu trong kỳ của nhân viên 5.6 Thông báo tự động qua messenger, email 5.6.1 Vấn đề Thông báo tự động là phương thức rất thuận tiện cho phép người dùng có thể biết tình hình kinh doanh của cửa hàng một cách thường xuyên, mọi lúc mọi nơi mà không cần phải đăng nhập sử dụng hệ thống. Do đó, tính năng gửi thông báo tự động được phát triển qua messenger và email vì 2 ứng dụng này có nhiều người dùng và có thể truy cập trên bất cứ nền tảng, thiết bị nào.
+5.6.2 Gửi thông báo email tự động Để gửi email, Laravel đã cung cấp package mailgun sử dụng Imap để có thể gửi mail và tùy chỉnh một số thông tin cấu hình như: (i) username, (ii) password, (iii) host, (iv) port, (v) encryption. Trong phạm vi đồ án này, cấu hình kết nối đến gmail được sử dụng như sau:
+Hình 5.15: Cấu hình kết nối Gmail 58Sau khi cài đặt package và cấu hình thành công, thì phần mềm đã có thể gửi email thông báo. Tuy nhiên tới đây email vẫn chưa thể tự động gửi hàng ngày cho chủ cửa hàng hoặc người quản lý. Do đó đồ án đã được kích hoạt thêm tính năng schedule của Laravel. Các cài đặt về thời gian gửi, cấu hình email gửi và trạng thái bật tắt thông báo sẽ do người dùng quyết định như hình vẽ dưới đây:
+Hình 5.16: Cấu hình thông báo Gmail Bên cạnh việc gửi email thông báo cho nhà quản lý, hệ thống còn có thêm tính năng gửi email tự động cho khách hàng để thông báo mua hàng thành công và yêu cầu phản hồi từ khách hàng. Hiện tại, hệ thống đang chạy schedule 10 phút mỗi lần kiểm tra xem những đơn hàng nào chưa được gửi thông báo và sẽ gửi email đến cho khách hàng của những đơn hàng đó.
+5.6.3 Gửi thông báo messenger tự động Facebook đã cung cấp API cho phép gửi tin nhắn messenger đến người dùng.
+Tuy nhiên facebook yêu cầu máy chủ có thể truy cập web và có hỗ trợ HTTPS cho webhook của facebook. Qua quá trình tìm hiểu, em quyết định sử dụng heroku  làm nền tảng triển khai server chat để call API gửi tin nhắn của facebook do heroku có một số ưu điểm như hỗ trợ nhiều ngôn ngữ lập trình, cung cấp cơ sở dữ liệu và đặc biệt là hỗ trợ triển khai code miễn phí.
+Hiện tại, hệ thống sẽ truy vấn cơ sở dữ liệu và gửi thông tin cần thiết đến cho server chat, sau đó server chat sẽ gửi tin nhắn cho người dùng. Ngoài ra, chức năng gửi thông báo qua messenger cũng được lập lịch bằng schedule để gửi thông báo tự động hàng ngày theo khung giờ mà người dùng tùy chỉnh và có thể bật tắt thông báo nếu không có nhu cầu sử dụng.
+59Hình 5.17: Cấu hình thông báo messenger Hệ thống cũng cho phép người sử dụng có thể nhắn tin messenger để lấy thông tin về doanh thu, số đơn hàng thành công của cửa hàng trong 1 ngày bất kỳ như ví dụ dưới đây:
+Hình 5.18: Ví dụ lấy thông tin cửa hàng qua messenger 605.6.4 Kết quả Hệ thống đã cho phép gửi thông báo tự động qua email, messenger đến người dùng và cho phép cấu hình thời gian gửi, bật tắt thông báo theo mong muốn của người sử dụng. Hiện tại, hệ thống sẽ gửi thông tin về số đơn hàng trong ngày, số đơn hàng chờ xử lý, số đơn hàng chưa thanh toán cho người sử dụng.
+616.1 Kết luận Ứng dụng được phát triển trong quá trình làm đồ án đã đáp ứng được các yêu cầu về chức năng đặt ra, đó là phát triển 1 ứng dụng web quản lý bán hàng hỗ trợ người dùng tối ưu hóa năng suất làm việc, giảm chi phí vận hành; tính toán xử lý và đưa ra báo cáo doanh thu chi tiết, tổng hợp 1 cách nhanh chóng. Bên cạnh đó, ứng dụng còn hỗ trợ người dùng quản lý các phản hồi của khách hàng nhằm cải thiện dịch vụ, đưa ra các chiến thuật kinh doanh 1 cách hiệu quả. Nhờ áp dụng các nguyên lý thiết kế phần mềm, phương pháp phân tích thiết kế hệ thống, ứng dụng được xây dựng đảm bảo khả năng dễ dàng bảo trì và mở rộng trong tương lai.
+Trong quá trình làm đồ án, em đã tương bước học và cải thiện những kỹ năng sau:
+Khả năng nghiên cứu, đánh giá ưu nhược điểm của các công nghệ khác nhau, qua đó tìm ra công nghệ phù hợp cho việc giải quyết bài toán đặt ra.
+Kỹ năng quản lý thời gian, sắp xếp quản lý công việc để đảm bảo tiến độ công việc được đề ra.
+Tìm hiểu, nghiên cứu cách gửi và nhận email trong Laravel để giải quyết bài toán đặt ra (gửi email thông báo cho người dùng và lấy thông tin phản hồi của khách hàng). Qua quá trình tìm hiểu, em quyết định sử dụng Laravel Mail và Laravel Imap để xử lý bài toán.
+Học cách trển khai mã nguồn lên Heroku và sử dụng Nodejs để nhắn tin thông báo qua messenger cho người dùng.
+Học cách sử dụng package Laravel Livewire để xây dựng giao diện động mang lại trải nghiệm tốt hơn cho người dùng.
+Tìm hiểu cách sử dụng package Laravel Excel để xử lý xuất file báo cáo bằng excel và import file excel danh sách sản phẩm vào hệ thống.
+Tìm hiểu và áp dụng các nguyên lý thiết kế, các mẫu thiết kế phần mềm để xậy dựng mã nguồn dễ bảo trì và mở rộng.
+Học cách sử dụng 1 số package hữu ích khác như Laravel livewire tables, toast, chartJs, select2, debug bar, ... để hỗ xây dựng ứng dụng web 1 cách nhanh chóng và hoàn chỉnh.
+626.2 Hướng phát triển Ứng dụng được xây dựng đã đáp các ứng yêu cầu đề ra ban đầu, tuy nhiên để ứng dụng thêm hoàn chỉnh và có thể cạnh tranh được với các ứng dụng hiện có trên thị trường thì có thể phát triển, cải thiện những chức năng sau:
+Tích hợp quét mã vạch để có thể thêm các sản phẩm vào đơn hàng 1 cách nhanh chóng; giúp tiết kiệm thời gian và công sức của nhân viên bán hàng.
+Áp dụng các thuật toán Machine learning trong việc phân loại phản hồi khách hàng và loại bỏ các email spam, email rác.
+Tối ưu hóa các tính năng đã có để tăng tốc độ và mang lại trải nghiệm tốt hơn cho người sử dụng.
+Có thêm nhiều loại báo cáo thống kê, báo cáo tài chính, các loại biểu đồ để người dùng có cái nhìn trực quan hơn về cửa hàng.
+Triển khai gửi thông báo tự động trên nhiều nền tảng khác như Zalo, Tele gram, Mocha, ... để người dùng có thể thuận tiện hơn trong việc tiếp nhận thông báo của ứng dụng.
+Tìm hiểu cách gửi tin nhắn SMS đến khách hàng để tăng trải nghiệm mua hàng, sử dụng dịch vụ của khách hàng.
+Có thêm tính năng thanh toán qua QR code giúp khách hàng thanh toán đơn hàng 1 cách nhanh chóng.
+63Laravel docs . [Online]. Available:  x/installation (visited on 07/22/2022).
+Livewire docs . [On]. Available: https : / / laravel - livewire .
+com/ (visited on 07/22/2022).
+Livewire lifecycle-hooks . [Online]. Available:  com/docs/2.x/lifecycle-hooks (visited on 07/22/2022).
+Livewire security . [Online]. Available:  com/docs/2.x/security (visited on 07/22/2022).
+Expressjs docs . [Online]. Available:  guide/routing.html (visited on 07/22/2022).
+Mysql docs . [On]. Available: https : / / dev. mysql . com / doc / refman/8.0/en/introduction.html (visited on 07/22/2022).
+N. Middleton and R. Schneeman, Heroku: up and running: effortless applica tion deployment and scaling . O’Reilly Media, Inc., 2013.
+64
