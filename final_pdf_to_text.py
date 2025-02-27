@@ -239,13 +239,19 @@ def pdf_to_text(pdf_path, output_txt):
         
         for line in final_text.split("\n"):
             line = clean_line(line)
-            if line.endswith("-"):  
-                buffer += line[:-1]  
+
+            # Kiểm tra nếu dòng là tiêu đề mục (1.1, 1.2,...) thì xuống dòng sau tiêu đề
+            if re.match(r"^\d+\.\d+\s+\S+", line):
+                fixed_lines.append(line)  # Giữ nguyên dòng tiêu đề
+                buffer = ""  # Reset buffer để tránh nối vào dòng tiêu đề
             else:
-                buffer += " " + line  
-                if buffer.endswith(".") or buffer.endswith(":"):  
-                    fixed_lines.append(buffer.strip())
-                    buffer = ""
+                if line.endswith("-"):  
+                    buffer += line[:-1]  
+                else:
+                    buffer += " " + line  
+                    if buffer.endswith(".") or buffer.endswith(":"):  
+                        fixed_lines.append(buffer.strip())
+                        buffer = ""
 
         if buffer:  
             fixed_lines.append(buffer.strip())
@@ -262,8 +268,8 @@ def pdf_to_text(pdf_path, output_txt):
         print(f"❌ Failed to convert {pdf_path}: {e}")
 
 if __name__ == "__main__":
-    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/english'
-    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/english'
+    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/vietnamese'
+    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/'
     
     for pdf_file in os.listdir(input_dir):
         if pdf_file.endswith('.pdf'):
