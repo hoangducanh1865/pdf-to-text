@@ -227,7 +227,7 @@ def pdf_to_text(pdf_path, output_txt):
                         found_count += 1
 
                 if found_count >= 2:
-                    final_text += "\n".join(fixed_sentences[1:])  
+                    final_text += "\n".join(fixed_sentences[1:-1])  
 
         if not final_text.strip():
             print(f"❌ Không có nội dung nào được trích xuất từ {pdf_path}. Kiểm tra lại PDF hoặc điều kiện tìm kiếm.")
@@ -268,8 +268,8 @@ def pdf_to_text(pdf_path, output_txt):
         print(f"❌ Failed to convert {pdf_path}: {e}")
 
 if __name__ == "__main__":
-    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/vietnamese'
-    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/'
+    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/english'
+    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/english'
     
     for pdf_file in os.listdir(input_dir):
         if pdf_file.endswith('.pdf'):
