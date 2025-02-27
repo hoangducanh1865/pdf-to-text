@@ -27,6 +27,7 @@ ho_viet_nam = [
     "Lý", "Ly", "LÝ", "LY",
     "Đinh", "Dinh", "ĐINH", "DINH",
     "Đoàn", "Doan", "ĐOÀN", "DOAN",
+    "Doãn", "Doan", "DOÃN", "DOAN",
     "Trương", "Truong", "TRƯƠNG", "TRUONG",
     "Văn", "Van", "VĂN", "VAN",
     "Tô", "To", "TÔ", "TO",
@@ -138,6 +139,7 @@ def get_file_name(pdf_path):
                 break
             file_name += lines[i] + ' '
         file_name = file_name[:-1].replace(' ', '_')
+        file_name = file_name[:250]
         return file_name + '.txt'
 
 # def clean_text(text):
@@ -260,8 +262,8 @@ def pdf_to_text(pdf_path, output_txt):
         print(f"❌ Failed to convert {pdf_path}: {e}")
 
 if __name__ == "__main__":
-    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/vietnamese'
-    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/vietnamese'
+    input_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/input/english'
+    output_dir = '/Users/trannguyenmyanh/Documents/HUST/AUTH SCAN/pdf-to-text/output/english'
     
     for pdf_file in os.listdir(input_dir):
         if pdf_file.endswith('.pdf'):
